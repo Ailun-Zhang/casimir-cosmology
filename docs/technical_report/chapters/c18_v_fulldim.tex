@@ -1,0 +1,401 @@
+
+\section{Full-dimensional checks of the reduced zero-mode model}\label{rep:v-fulldim}
+
+The criterion of Secs.~\ref{rep:h-reduced}--\ref{rep:h-smmap} rests on a two-dimensional model of the Higgs zero mode, in which the Higgs radius $r$ and the length $s=|\bm w|$ of the hypercharge zero mode are dynamical and the nine SU(2) zero modes enter through a conditional Gaussian corrected by a fixed-$r$ diffusion Monte Carlo (DMC) shape term.
+In this section we test that reduction against the full zero-mode problem with sixteen coordinates.
+We find that, inside a gauge-invariant wall placed beyond the barrier, the full ground-state energy lies below the two-dimensional one at the same wall by $-0.0032(8)/L$ at $\lambda=-0.010$ and $-0.0034(9)/L$ at $\lambda=-0.013$, independently of the wall position and of $\lambda$ (it is $-0.0043(9)/L$ at $\lambda=0$). %
+The reduction error is therefore a constant shift of the well.
+Four independent estimates of the resulting change of the width give $\Gamma_{\rm full}/\Gamma_{\rm 2D}=0.92$--$1.03$. %
+With the slopes of the final hazard this moves the critical top mass by $+0.0046$, $+0.0075$ and $+0.0115\GeV$ at $\Pone=0.9$, $0.5$ and $0.1$, with a one-sided envelope of $+0.012$, $+0.020$ and $+0.031\GeV$, which is the ``full-dimensional validation'' item of the error budget of Sec.~\ref{rep:h-budget}. %
+The code and the archived outputs are in \texttt{higgs/05\_fulldim\_validation} of the code package~\cite{DNECv12code}; the derivation file is D123.
+
+\subsection{The full zero-mode problem}\label{sec:v18-problem}
+
+We use unit-mass coordinates $y=(\bm x,\bm w,\bm\phi)\in\mathbb R^9\times\mathbb R^3\times\mathbb R^4$: the constant SU(2) connections $x_i^a$ ($i$ spatial, $a$ adjoint), the constant hypercharge connections $w_i$, and the four real components of the Higgs zero mode, $\Phi=(\phi_0+i\phi_1,\phi_2+i\phi_3)/\sqrt2$, with $r=|\bm\phi|$ and $\Phi^\dagger\Phi=r^2/2$.
+Lengths and energies are in units of the edge $L$ (Sec.~\ref{rep:setup}).
+The Hamiltonian is
+\begin{equation}
+H=\tfrac12\,p^2+V(y),
+\label{eq:v18-H}
+\end{equation}
+with
+\begin{equation}
+V(y)=g_2^2\,v_{\rm su2}(\bm x)+\sum_{i=1}^3\bigl|\bigl(g_2\,x_i^aT^a+g_Y\,Y\,w_i\bigr)\Phi\bigr|^2+\frac{\lambda}{4}\,r^4+\Delta V_{\rm MC}(r),
+\label{eq:v18-V}
+\end{equation}
+where $T^a=\sigma^a/2$, $Y=1/2$, and
+\begin{equation}
+v_{\rm su2}(\bm x)=\frac14\sum_{i,j=1}^{3}\bigl|\bm x_i\times\bm x_j\bigr|^2
+\label{eq:v18-vsu2}
+\end{equation}
+is the magnetic energy of constant SU(2) connections, $\bm x_i$ being the adjoint three-vector of direction $i$.
+The last term of Eq.~(\ref{eq:v18-V}) is the one-loop matching of the non-zero modes of Sec.~\ref{rep:h-matching} (Coulomb gauge with the $\MSbar$ finite-volume sums), which depends on $r$ only; we evaluate it on $0\le r\le r_w$ with step $0.002$ and interpolate with a cubic spline.
+All numbers in this section use the one-loop couplings of the zero-mode calculation of Sec.~\ref{rep:zeromodes}, $g_2=0.5268$, $g_Y=0.4415$ and $y_t=0.4585$, the second-stage model without the cross terms of Sec.~\ref{rep:h-cross}, and the full width $\Gamma=-2\,{\rm Im}\,E$ in units of $1/L$. %
+
+For $\lambda<0$ the potential is unbounded from below along $r$, and the Hamiltonian~(\ref{eq:v18-H}) has no ground state; the resonance of Sec.~\ref{rep:h-reduced} is a Siegert state.
+To obtain a ground-state problem that DMC can solve we impose a Dirichlet wall at $|\bm\phi|=r_w$.
+Three properties make this wall harmless.
+\begin{enumerate}
+\item Constant SU(2)$\times$U(1)$_Y$ transformations act on $(\bm x,\bm w,\bm\phi)$ by orthogonal matrices and preserve $|\bm\phi|$, so both the wall and $H$ are gauge invariant.
+\item The region $\{|\bm\phi|<r_w\}\times\mathbb R^{12}$ is connected and the Dirichlet semigroup $e^{-tH}$ is positivity improving on it.
+The ground state is therefore unique and positive, hence invariant under every symmetry of $H$; in particular it is gauge invariant and satisfies Gauss's law without a projection.
+\item The wall is the only node of the ground state, and it is exact.
+DMC with a guiding function that vanishes on the wall therefore has no fixed-node error.
+\end{enumerate}
+Inside the wall the quartic term is bounded, $|\lambda| r^4/4\le|\lambda| r_w^4/4$, and the walled ground state exists.
+
+\subsection{Placement of the walls}\label{sec:v18-walls}
+
+We place the walls with the lowest adiabatic channel of the two-dimensional model,
+\begin{equation}
+U_{\rm ad}(r)=U_1(r)+\tfrac32\,\Omega_{\rm eff}(r),
+\label{eq:v18-Uad}
+\end{equation}
+where $U_1$ is the $r$-dependent part of the two-dimensional Hamiltonian and $\Omega_{\rm eff}$ the stiffness of $\bm w$ (Sec.~\ref{rep:h-reduced}).
+Let $r_1$ and $r_2$ be the inner and outer classical turning points at the resonance energy $\varepsilon$ and $r_{\rm top}$ the position of the barrier top.
+A wall with $r_{\rm top}<r_w<r_2$ leaves no classically allowed region below $\varepsilon$ outside the barrier, so the lowest walled state is the state localized in the well.
+Table~\ref{tab:v18-walls} lists the geometry and the walls.
+Two further walls inside the barrier top serve only the tail estimate of Sec.~\ref{sec:v18-tail}.
+
+\begin{table}[t]
+\centering
+\caption{Geometry of the lowest adiabatic channel~(\ref{eq:v18-Uad}) and positions of the walls (units of $L$). $U_{\rm ad}(r_w)-\varepsilon$ is given for the three main walls. Two inner walls, used only for the tail estimate, lie at $4.08$ and $4.32$ ($\lambda=-0.010$) and at $3.84$ and $4.08$ ($\lambda=-0.013$).}
+\label{tab:v18-walls}
+\begin{tabular}{ccccccc}
+\toprule
+$\lambda$ & $r_1$ & $r_{\rm top}$ & $U_{\rm top}$ & $r_2$ & main walls $r_w$ & $U_{\rm ad}(r_w)-\varepsilon$ \\
+\midrule
+$-0.010$ & $2.498$ & $4.344$ & $5.002$ & $5.737$ & $4.80,\ 5.12,\ 5.44$ & $0.64,\ 0.51,\ 0.26$ \\ %
+$-0.013$ & $2.510$ & $4.022$ & $4.812$ & $5.188$ & $4.40,\ 4.64,\ 4.96$ & $0.48,\ 0.38,\ 0.17$ \\ %
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[x=1.45cm,y=1.6cm,>=stealth]
+\draw[->] (0.3,0) -- (7.6,0) node[below left]{$r$};
+\draw[->] (0.3,0) -- (0.3,3.0) node[left]{$U_{\rm ad}$};
+\draw[thick,smooth] plot coordinates {(0.7,2.9) (1.0,1.6) (1.5,0.75) (2.0,0.55) (2.5,0.95) (3.2,1.85) (3.8,2.35) (4.344,2.5) (4.9,2.3) (5.4,1.75) (5.9,0.85) (6.4,0.0) (6.9,-0.9)};
+\draw[dashed] (0.85,1.05) -- (6.95,1.05) node[right]{$\varepsilon$};
+\fill (2.498,1.05) circle (1.2pt) node[below right]{$r_1$};
+\fill (5.737,1.05) circle (1.2pt) node[above right]{$r_2$};
+\draw[dotted] (4.344,0) -- (4.344,2.5);
+\node[below] at (4.344,0) {$r_{\rm top}$};
+\foreach \x in {4.80,5.12,5.44} \draw[very thick,red!70!black] (\x,-0.05) -- (\x,2.75);
+\foreach \x in {4.08,4.32} \draw[thick,blue!70!black,densely dashed] (\x,-0.05) -- (\x,2.75);
+\node[red!70!black,above] at (5.12,2.75) {main walls};
+\node[blue!70!black,above] at (3.75,2.75) {inner walls};
+\end{tikzpicture}
+\caption{Schematic of the walled problem at $\lambda=-0.010$ (not to scale). The main walls (solid) lie between the barrier top $r_{\rm top}=4.344$ and the outer turning point $r_2=5.737$ of the lowest adiabatic channel, so the lowest walled state is the well state; the inner walls (dashed), inside the barrier top, shift the energy by an amount set by the tunnelling tail and are used only for the tail-amplitude estimate of Sec.~\ref{sec:v18-tail}.}
+\label{fig:v18-walls}
+\end{figure}
+
+\subsection{Diffusion Monte Carlo inside the wall}\label{sec:v18-dmc}
+
+DMC projects the ground state by evolving in imaginary time.
+For a guiding function $\psi_T$ and the mixed density $f(y,t)=\psi_T(y)\,\psi(y,t)$ the imaginary-time Schr\"odinger equation $-\partial_t\psi=(H-E_{\rm ref})\psi$ becomes
+\begin{equation}
+-\partial_t f=-\tfrac12\nabla^2f+\nabla\cdot\bigl(f\,\bm v\bigr)+\bigl[E_L(y)-E_{\rm ref}\bigr]f,
+\qquad
+\bm v=\nabla\ln\psi_T,\qquad E_L=\frac{H\psi_T}{\psi_T},
+\label{eq:v18-fp}
+\end{equation}
+a drift--diffusion equation with branching~\cite{Foulkes:2001zz,Kosztin:1996fh}.
+As $t\to\infty$, $f\to\psi_T\psi_0$, and the mixed estimator
+\begin{equation}
+E_{\rm mix}=\frac{\int f\,E_L\,dy}{\int f\,dy}=\frac{\langle\psi_0|H|\psi_T\rangle}{\langle\psi_0|\psi_T\rangle}=E_0
+\label{eq:v18-mixed}
+\end{equation}
+is exact, because $H$ is Hermitian on functions that vanish on the wall and $\psi_0$ and $\psi_T$ obey the same Dirichlet condition.
+
+\paragraph{Guiding function.}
+We use
+\begin{equation}
+\psi_T(y)=\exp\!\Bigl(-\tfrac12a_x|\bm x|^2-\tfrac12a_w|\bm w|^2\Bigr)\,f_r(r),
+\label{eq:v18-psiT}
+\end{equation}
+with $(a_x,a_w)$ from the optimal Gaussian at $\lambda=0$ of the zero-mode calculation and $f_r$ the ground state of the radial problem
+\begin{equation}
+-\frac12\Bigl(f_r''+\frac3r\,f_r'\Bigr)+U_g(r)\,f_r=\epsilon\,f_r,\qquad f_r(r_w)=0,
+\label{eq:v18-radial}
+\end{equation}
+where $U_g=\frac\lambda4r^4+\Delta V_{\rm MC}+C_0+B_x+\delta E_{\rm DMC}+\frac32\Omega_{\rm eff}$ is the lowest adiabatic channel of the two-dimensional model without the Born--Huang term $B_w$ (Sec.~\ref{rep:h-reduced}); the factor $3/r$ is the radial Laplacian of the four Higgs components.
+We solve Eq.~(\ref{eq:v18-radial}) by finite differences with step $0.001$ and interpolate $f_r$ by a cubic spline with $f_r'(0)=0$.
+The local energy follows directly from the spline,
+\begin{equation}
+E_L(y)=\frac12\sum_ia_i-\frac12\sum_ia_i^2y_i^2-\frac{f_r''+3f_r'/r}{2f_r}+V(y),
+\label{eq:v18-EL}
+\end{equation}
+where the sums run over the twelve gauge coordinates with $a_i=a_x$ or $a_w$; it is evaluated from the same spline that drives the walkers, so the drift, the Metropolis ratio and $E_L$ are consistent.
+
+\paragraph{Moves and population.}
+Each walker moves by the short-time Green function $y'=y+\bar{\bm v}\,\tau+\sqrt\tau\,\bm\eta$, $\bm\eta$ a standard normal vector, and the move is accepted with the Reynolds--Umrigar Metropolis probability that restores detailed balance for $\psi_T^2$~\cite{Umrigar:1993dmc}.
+On the four Higgs components the drift is limited as
+\begin{equation}
+\bar{\bm v}=\frac{-1+\sqrt{1+2a\,v^2\tau}}{a\,v^2\tau}\;\bm v,\qquad a=0.5,
+\label{eq:v18-drift}
+\end{equation}
+which leaves small drifts unchanged and caps the drift near the node at the wall; the same formula is used in the forward and the reverse Green function. %
+Every proposal with $r'\ge r_w$ is rejected, since $\psi_T=0$ there; at most $2\times10^{-6}$ of the moves are rejected for this reason. %
+Branching uses the effective time step $\tau_{\rm eff}=\tau\times(\text{acceptance ratio})$, the population is fixed at $W=10^4$ walkers by systematic resampling, and $E_{\rm ref}$ is adjusted slowly. %
+
+\paragraph{Statistics and time step.}
+For every wall and every time step we run two independent shards, each with equilibration time $10$ and production time $40$.
+The seed of a shard is fixed by the SHA-256 hash of the string \texttt{T14a|name|tau|k} and recorded in its output, so that each shard can be rerun bit for bit (the package rerun of one shard is identical).
+Errors are block averages, the largest over block lengths $1$, $2$ and $4$; shards are combined with inverse-variance weights and the error is inflated when their scatter exceeds it.
+We extrapolate linearly in $\tau_{\rm eff}$ from $\tau=0.04$, $0.02$ and $0.01$; the fitted slopes are $0.02$--$0.15$ with $\chi^2\le1.6$ for one degree of freedom, and the extrapolated energy differs from the smallest-step value by at most $0.002$, which is contained in the extrapolation error. %
+After extrapolation the statistical error of a single wall is $0.0010$--$0.0025$. %
+In total the calculation uses $66$ shards (eleven walled cases, three time steps, two shards each).
+
+\subsection{The two-dimensional model at the same wall}\label{sec:v18-2d}
+
+The comparison must use the same wall in both models, because a wall below the barrier top shifts the two-dimensional energy by up to $0.024$, far more than the effect we look for.
+We discretize the two-dimensional Hamiltonian of Sec.~\ref{rep:h-reduced} (both the model with the DMC shape correction, 2D, and its Gaussian version, 2D$_{\rm G}$) with second-order finite differences in $r$ and $s$, with Dirichlet conditions at $r=r_w$ and $s=12$, at steps $h=0.08$, $0.04$ and $0.02$.
+For an energy $E(h)=E+c_2h^2+c_4h^4+O(h^6)$ the two Richardson steps
+\begin{equation}
+E^{(2)}(h)=\frac{4E(h/2)-E(h)}{3},\qquad E^{(4)}=\frac{16E^{(2)}(h/2)-E^{(2)}(h)}{15}
+\label{eq:v18-richardson}
+\end{equation}
+remove the $h^2$ and $h^4$ terms; $E^{(2)}$ and $E^{(4)}$ differ by at most $2\times10^{-6}$. %
+At $\lambda=0$ the code reproduces the finite-difference values $4.450855$ (2D) and $4.507693$ (2D$_{\rm G}$) of the reduced-model calculation, which the Numerov solver of Sec.~\ref{rep:h-reduced} gives as $4.450863$. %
+A $\pm1\sigma$ tilt of the DMC shape correction $\delta E_{\rm DMC}$ changes the two-dimensional energy by $\pm0.0025$ at $\lambda=0$ and $\pm0.0022$ at the middle walls for $\lambda<0$. %
+The full DMC contains no such correction, so the difference $\Delta\varepsilon=\varepsilon_{\rm full}-\varepsilon_{\rm 2D}$ measures the reduction error relative to the central two-dimensional model.
+
+\subsection{Results}\label{sec:v18-results}
+
+\paragraph{The benchmark at $\lambda=0$.}
+Table~\ref{tab:v18-lam0} compares the reductions of the zero-mode problem with the full-dimensional DMC value at $\lambda=0$, $4.4478(13)$, without the matching term. %
+The two-dimensional model is the only reduction within $0.004$ of the full value; the one-dimensional Gaussian reduction is $0.151$ too high, and the two Born--Oppenheimer bounds bracket the full value at $-0.014$ and $+0.098$.
+
+\begin{table}[t]
+\centering
+\caption{Ground-state energy at $\lambda=0$ (units of $1/L$; local model without the matching term) for the reductions of Sec.~\ref{rep:h-reduced}, compared with full-dimensional DMC, $4.4478(13)$.}
+\label{tab:v18-lam0}
+\begin{tabular}{lcc}
+\toprule
+Reduction & $L\varepsilon_0$ & Difference \\
+\midrule
+One-dimensional, Gaussian (with $B_r$) & $4.5985$ & $+0.151$ \\ %
+One-dimensional, exact gauge shape & $4.5434$ & $+0.096$ \\ %
+Born--Oppenheimer bound, with $B_w$ & $4.5462$ & $+0.098$ \\ %
+Born--Oppenheimer bound, without $B_w$ & $4.4334$ & $-0.014$ \\ %
+Two-dimensional, Gaussian (2D$_{\rm G}$) & $4.5077$ & $+0.060$ \\ %
+Two-dimensional (2D) & $4.4509$ & $+0.0031$ \\ %
+\quad without $B_x$ & $4.4456$ & $-0.0022$ \\ %
+\bottomrule
+\end{tabular}
+\end{table}
+
+The walled code of this section, with the wall at $r_w=9$ where it has no effect, gives
+\begin{equation}
+\varepsilon_{\rm full}(\lambda=0)=4.44659(94),
+\label{eq:v18-lam0}
+\end{equation}
+with a time-step slope of $0.083$ and $\chi^2=0.14$ for one degree of freedom. %
+The unwalled code of the zero-mode calculation gives $4.44781(132)$; the difference is $-0.0012(16)$, or $0.75\sigma$, and the combined value is $4.44700(77)$. %
+Against the two-dimensional model at the same wall ($r_w=8.96$), $\Delta\varepsilon(\lambda=0)=-0.0043(9)$, or $-0.0039(8)$ with the combined value; against 2D$_{\rm G}$ it is $-0.0611$. %
+
+\paragraph{Negative quartic coupling.}
+Tables~\ref{tab:v18-m010} and~\ref{tab:v18-m013} give the energies at every wall.
+The Siegert resonance of the two-dimensional model lies at $\varepsilon_{\rm 2D}=4.286744$ with $\Gamma_{\rm 2D}=4.1535\times10^{-4}$ for $\lambda=-0.010$, and at $4.277899$ with $\Gamma_{\rm 2D}=2.2162\times10^{-3}$ for $\lambda=-0.013$; the column ``2D wall shift'' is the difference between the walled two-dimensional energy and this Siegert value. %
+
+\begin{table}[t]
+\centering
+\caption{Walled energies at $\lambda=-0.010$ (units of $1/L$): full-dimensional DMC (extrapolated to zero time step), the two-dimensional model 2D and its Gaussian version 2D$_{\rm G}$ at the same wall (finite differences with Richardson extrapolation), their difference $\Delta\varepsilon=\varepsilon_{\rm full}-\varepsilon_{\rm 2D}$, and the shift of the 2D energy by the wall. The first two walls lie inside the barrier top.}
+\label{tab:v18-m010}
+\begin{tabular}{cccccc}
+\toprule
+$r_w$ & $\varepsilon_{\rm full}$ & $\varepsilon_{\rm 2D}$ & $\Delta\varepsilon$ & $\varepsilon_{\rm 2D_G}$ & 2D wall shift \\
+\midrule
+$4.08$ & $4.29394(145)$ & $4.298235$ & $-0.0043(15)$ & $4.352733$ & $+0.0115$ \\ %
+$4.32$ & $4.29005(96)$ & $4.293356$ & $-0.0033(10)$ & $4.347474$ & $+0.0066$ \\ %
+$4.80$ & $4.28584(103)$ & $4.288989$ & $-0.0031(10)$ & $4.342681$ & $+0.0022$ \\ %
+$5.12$ & $4.28451(145)$ & $4.287887$ & $-0.0034(14)$ & $4.341440$ & $+0.0011$ \\ %
+$5.44$ & $4.28411(203)$ & $4.287352$ & $-0.0032(20)$ & $4.340824$ & $+0.0006$ \\ %
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{As Table~\ref{tab:v18-m010}, at $\lambda=-0.013$. The first two walls lie inside the barrier top.}
+\label{tab:v18-m013}
+\begin{tabular}{cccccc}
+\toprule
+$r_w$ & $\varepsilon_{\rm full}$ & $\varepsilon_{\rm 2D}$ & $\Delta\varepsilon$ & $\varepsilon_{\rm 2D_G}$ & 2D wall shift \\
+\midrule
+$3.84$ & $4.29921(117)$ & $4.302053$ & $-0.0028(12)$ & $4.356919$ & $+0.0242$ \\ %
+$4.08$ & $4.29064(105)$ & $4.292774$ & $-0.0021(10)$ & $4.347034$ & $+0.0149$ \\ %
+$4.40$ & $4.28018(252)$ & $4.285813$ & $-0.0056(25)$ & $4.339513$ & $+0.0079$ \\ %
+$4.64$ & $4.27915(144)$ & $4.282919$ & $-0.0038(14)$ & $4.336333$ & $+0.0050$ \\ %
+$4.96$ & $4.27798(118)$ & $4.280700$ & $-0.0027(12)$ & $4.333852$ & $+0.0028$ \\ %
+\bottomrule
+\end{tabular}
+\end{table}
+
+The inverse-variance means over the three main walls are
+\begin{equation}
+\Delta\varepsilon(-0.010)=-0.00323(78),\qquad \Delta\varepsilon(-0.013)=-0.00343(86),
+\label{eq:v18-dE}
+\end{equation}
+with $\chi^2=0.02$ and $1.2$ for two degrees of freedom. %
+Three facts follow from the tables.
+First, $\Delta\varepsilon$ does not depend on the wall, although the two-dimensional wall shift itself varies from $0.0006$ to $0.008$ over the main walls and up to $0.024$ over all walls; the effect of the wall cancels in the difference.
+The inner walls agree within errors (at $\lambda=-0.013$ the innermost two are slightly smaller, $-0.0028(12)$ and $-0.0021(10)$), and there is no trend with $r_w$.
+Second, $\Delta\varepsilon$ does not depend on $\lambda$: $-0.0043(9)$, $-0.0032(8)$ and $-0.0034(9)$ at $\lambda=0$, $-0.010$ and $-0.013$.
+The reduction error is a constant shift of about $-0.0035/L$ of the well.
+Third, $\varepsilon_{\rm full}<\varepsilon_{\rm 2D_G}$ by $0.057$ at both negative couplings, so the variational bound of the Gaussian model, an upper bound for the trial family of Sec.~\ref{rep:h-reduced}, holds with the wall as well. %
+The target $|\Delta\varepsilon|\le0.005$ set before the calculation is met at the central values; the $2\sigma$ upper limits are $0.0048$ and $0.0051$. %
+
+\subsection{From the energy shift to the width: four estimates}\label{sec:v18-gamma}
+
+A shift of the well changes the width through the energy at which the particle meets the barrier.
+If the barrier is unchanged,
+\begin{equation}
+\rho\equiv\frac{\Gamma_{\rm full}}{\Gamma_{\rm 2D}}=\exp\!\Bigl(\Delta\varepsilon\,\frac{d\ln\Gamma}{d\varepsilon}\Bigr),
+\label{eq:v18-rho}
+\end{equation}
+where $d\ln\Gamma/d\varepsilon$ is the response of the two-dimensional width to a shift of the well alone.
+We test the assumption of an unchanged barrier with three further estimates that do not use Eq.~(\ref{eq:v18-rho}).
+Table~\ref{tab:v18-four} collects the four ratios.
+
+\paragraph{(i) Conversion with the well response.}
+We add $\delta\,S(r)$ with $\delta=\pm0.006$ to the two-dimensional potential, where $S(r)=1$ for $r<1.8$ and falls to zero at $r=2.4$ as a squared cosine (profile A), or falls from $1.2$ to $2.4$ (profile B); both act only inside the inner turning point $r_1\approx2.5$. %
+We compute the width with finite differences ($h=0.04$, $r\le11$, $s\le12$) and the complex absorbing potential $-i\eta(r-7)^2\theta(r-7)$, with $\eta$ at the most stable point of the Riss--Meyer criterion and held fixed for the shifted operators~\cite{Riss:1993cap}.
+The two profiles give $d\ln\Gamma/d\varepsilon=7.43$ and $7.78$ at $\lambda=-0.010$ and $6.94$ and $7.29$ at $-0.013$; the curvature of $\ln\Gamma$ in $\varepsilon$ is below $0.1\%$. %
+We take the mean and half the spread,
+\begin{equation}
+\frac{d\ln\Gamma}{d\varepsilon}=7.60(18)\ \ (\lambda=-0.010),\qquad 7.12(18)\ \ (\lambda=-0.013),
+\label{eq:v18-dlng}
+\end{equation}
+so that Eq.~(\ref{eq:v18-rho}) gives $\ln\rho=(-0.00323)(7.60)=-0.0245(59)$ and $(-0.00343)(7.12)=-0.0244(61)$, that is, $\rho=0.976(6)$ at both couplings. %
+
+\paragraph{(ii) Multidimensional adiabatic WKB.}
+The most probable escape path runs along $r$.
+We hold the transverse modes (SU(2), hypercharge and the Higgs angles) in their exact ground state at fixed $r$, whose energy is the body-frame DMC value $E^{\rm ex}_{\rm tot}(r)$ used for $\delta E_{\rm DMC}$.
+Because the transverse equilibrium stays at the origin as $r$ changes, there is no corner-cutting correction at first order, and only the Born--Huang term remains.
+The Gamow width is
+\begin{equation}
+\Gamma_{\rm WKB}=\frac{e^{-S}}{T_{\rm cl}},\qquad S=2\int_{r_1}^{r_2}\!dr\,\sqrt{2\,[U(r)-E]},
+\label{eq:v18-gamow}
+\end{equation}
+with $T_{\rm cl}$ the classical period in the well.
+For the two-dimensional model $U_{\rm 2D}=U_1+\frac32\Omega_{\rm eff}$ and $E=\varepsilon_{\rm 2D}$; for the full problem
+\begin{equation}
+U_{\rm full}=\frac{3}{8r^2}+\frac\lambda4r^4+\Delta V_{\rm MC}+E^{\rm ex}_{\rm tot}+B_r^{\rm G},\qquad E=\varepsilon_{\rm 2D}+\Delta\varepsilon,
+\label{eq:v18-Ufull}
+\end{equation}
+where $B_r^{\rm G}$ is the Gaussian Born--Huang term of the radial motion.
+Under the barrier $U_{\rm full}-U_{\rm 2D}=B_w+O(\beta'^4)\le0.005$: the two barriers coincide up to $B_w$. %
+The result, $\rho=0.937$ at both couplings, factorizes into $0.973$ from $\Delta\varepsilon$ and $0.963$ from $B_w$ under the barrier. %
+The WKB width itself is calibrated against the exact two-dimensional width: $\Gamma_{\rm WKB}/\Gamma_{\rm 2D}=1.059$ and $1.073$. %
+Its slope $-dS/dE=8.71$ and $8.29$ is about $15\%$ larger than $d\ln\Gamma/d\varepsilon$ of Eq.~(\ref{eq:v18-dlng}), because a shift of the well also changes the normalization in the well, which enters the prefactor. %
+Since $B_w$ is the spurious adiabatic term of the reduction (Sec.~\ref{rep:h-reduced}), we treat $0.937$ as the lower end of the range, not as the central value.
+
+\paragraph{(iii) Amplitude of the tunnelling tail.}\label{sec:v18-tail}
+This estimate uses only the full-dimensional data.
+In WKB the well state has the amplitude $N$ at the inner turning point and decays under the barrier as $\exp(-\int_{r_1}^{r}\kappa\,dr')$, $\kappa=\{2[U(r)-E]\}^{1/2}$.
+A Dirichlet wall at $r_w$ inside the barrier forces the tail to vanish and raises the energy by
+\begin{equation}
+\varepsilon(r_w)-\varepsilon_\infty\simeq N^2\exp\!\Bigl(-2\int_{r_1}^{r_w}\kappa\,dr\Bigr),
+\label{eq:v18-wallshift}
+\end{equation}
+while the width is $\Gamma\simeq c\,N^2\exp(-2\int_{r_1}^{r_2}\kappa\,dr)$ with the same $N$.
+If the two models have the same barrier, the ratio of their wall shifts at the same $r_w$ is
+\begin{equation}
+A\equiv\frac{\varepsilon_{\rm full}(r_w)-\varepsilon_{\rm full,\infty}}{\varepsilon_{\rm 2D}(r_w)-\varepsilon_{\rm 2D,\infty}}=\frac{N_{\rm full}^2}{N_{\rm 2D}^2}=\frac{\Gamma_{\rm full}}{\Gamma_{\rm 2D}}\,\exp\!\Bigl(2\Delta\varepsilon\int_{r_w}^{r_2}\frac{dr}{\kappa}\Bigr),
+\label{eq:v18-A}
+\end{equation}
+where the last factor accounts for the shift of the turning point, $d\kappa/dE=-1/\kappa$; for $|\Delta\varepsilon|\approx0.003$ it is about $0.99$. %
+A weighted linear fit of $\varepsilon_{\rm full}(r_w)=\varepsilon_\infty+A\,\delta\varepsilon_{\rm 2D}(r_w)$ over all five walls gives
+\begin{equation}
+A=0.92(16)\ \ (\lambda=-0.010),\qquad A=1.03(7)\ \ (\lambda=-0.013),
+\label{eq:v18-Afit}
+\end{equation}
+and the extrapolated $\varepsilon_\infty-\varepsilon_{\rm 2D}=-0.0030(9)$ and $-0.0033(10)$, in agreement with Eq.~(\ref{eq:v18-dE}). %
+This tests the barrier directly, to $16\%$ and $7\%$ at one standard deviation; the statistical error corresponds to about $\pm0.04\GeV$ in $m_c$. %
+
+\paragraph{(iv) A collective coordinate for the SU(2) width.}
+The conditional Gaussian of the SU(2) modes is optimized at every $r$; if its overall width could not follow the tunnelling, the reduction would miss a non-adiabatic effect.
+We add the width scale $\zeta=e^{-q/2}$, $q=\ln[a/a_*(r)]$, as a third coordinate: the precisions $(a_*,a_*,k_*)$ become $(a_*,a_*,k_*)\,e^{q}$, the mean $-\beta_*\bm w$ is unchanged, and $\zeta=1$ is the pointwise optimum.
+Because all Gaussian moments are known in closed form (Sec.~\ref{rep:h-reduced}), rescaling $a,k\to\zeta^{-2}a,\zeta^{-2}k$ term by term gives
+\begin{align}
+C_0(\zeta)={}&C_0+\tfrac34\bigl(2a+k+k\beta^2\bigr)\bigl(\zeta^{-2}-1\bigr)+\tfrac{3}{16}r^2\Bigl(\frac{2g_2^2}{a}+\frac{g_2^2}{k}\Bigr)\bigl(\zeta^{2}-1\bigr)\nonumber\\
+&+\Bigl(\frac{3g_2^2}{4a^2}+\frac{3g_2^2}{2ak}\Bigr)\bigl(\zeta^{4}-1\bigr),\label{eq:v18-C0zeta}\\
+\Omega_{\rm eff}^2(\zeta)={}&\Omega_{\rm eff}^2+\frac{2g_2^2\beta^2}{a}\bigl(\zeta^2-1\bigr)+\Bigl(\frac{4a\beta^2}{r^2}+\frac{k\beta'^2}{2}\Bigr)\bigl(\zeta^{-2}-1\bigr),
+\label{eq:v18-Omzeta}
+\end{align}
+where kinetic terms scale as $\zeta^{-2}$, mass terms as $\zeta^{2}$ and the quartic magnetic term as $\zeta^4$; the angular term $3(k-a)^2/(akr^2)$ is invariant, and the other terms of $U_1$ do not depend on $\zeta$.
+For the kinetic energy of $\zeta$ we take the breathing-mode mass of the time-dependent variational principle for a thawed Gaussian,
+\begin{equation}
+\mu(r)=\sum_j\sigma_j^2=3\Bigl(\frac1{a_*}+\frac1{2k_*}\Bigr),\qquad T_\zeta=-\frac{1}{2\mu}\,\partial_\zeta^2,
+\label{eq:v18-mu}
+\end{equation}
+which for a quadratic Hamiltonian equals the mass of the Gaussian overlap approximation with metric $\gamma_{\rm GOA}=\langle\partial_q\varphi|\partial_q\varphi\rangle=9/8$; we checked it on the scaling family of the one-dimensional oscillator. %
+The two-dimensional energy surface already contains the zero-point energy of the SU(2) modes, so we subtract the local ground-state energy of the $\zeta$ mode in two ways: at a reference $s_{\rm ref}^2=\min(3/2\Omega,5)$ (``ref'', which keeps the response of the SU(2) width to $\bm w$), or at every $s$ (``local'', which reduces exactly to the two-dimensional model in the Born--Oppenheimer limit and isolates the non-adiabatic effect).
+We discretize $r$ by finite differences ($h=0.05$, Dirichlet at $11$), $s$ by a sine discrete-variable representation ($N=22$, $S=12.5$) and $\zeta$ by a sine DVR on $(0,2.6)$ with $N=12$, and compare with $\zeta\equiv1$ on the same grids and with the same absorbing potential ($\eta_{\rm opt}=1.54$). %
+At $\lambda=0$, $\varepsilon_{\rm 3D}-\varepsilon_{\rm 2D}=+0.00048$ (ref) and $+0.00021$ (local). %
+For $\lambda<0$,
+\begin{equation}
+\frac{\Gamma_{\rm 3D}}{\Gamma_{\rm 2D}}=0.99998\ \text{(ref)},\ 0.99921\ \text{(local)}\ \ (\lambda=-0.010);\qquad 0.99972,\ 0.99923\ \ (\lambda=-0.013),
+\label{eq:v18-3d}
+\end{equation}
+with $\varepsilon_{\rm 3D}-\varepsilon_{\rm 2D}=+0.0005$ (ref) and $+0.0002$ (local) independent of $\lambda$. %
+Raising $N_\zeta$ to $16$, the $\zeta$ range to $3.0$ and $N_s$ to $26$ leaves the ratio at $0.9999803$ and changes $\varepsilon_{\rm 3D}$ by $2\times10^{-9}$. %
+The breathing mode has frequency $\omega_\zeta\approx2$, well above the inverse tunnelling time $\kappa\approx1$, so it follows the tunnelling adiabatically; its local zero-point energy, $1.07$--$1.50$, varies smoothly with $r$ and moves well and barrier together. %
+The residual $\Delta\varepsilon\approx-0.0035$ of the full DMC therefore comes from other SU(2) degrees of freedom (shape and anisotropy modes and their angular correlation with $\bm w$), which the full calculation contains.
+
+\begin{table}[t]
+\centering
+\caption{Four estimates of the ratio $\rho=\Gamma_{\rm full}/\Gamma_{\rm 2D}$ and the corresponding shift of the critical top mass with the slopes of the final hazard. The WKB value includes the spurious term $B_w$ under the barrier and is used as the one-sided envelope.}
+\label{tab:v18-four}
+\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Estimate & $\lambda=-0.010$ & $\lambda=-0.013$ & $\Delta m_c$ (GeV) at $\Pone=0.9/\allowbreak 0.5/\allowbreak 0.1$ \\
+\midrule
+(i) $\Delta\varepsilon\times d\ln\Gamma/d\varepsilon$ & $0.976(6)$ & $0.976(6)$ & $+0.0046/\allowbreak{+}0.0075/\allowbreak{+}0.0115$ \\ %
+(ii) WKB, $\Delta\varepsilon$ only & $0.973$ & $0.973$ & --- \\ %
+(ii) WKB, with $B_w$ & $0.937$ & $0.937$ & $+0.012/\allowbreak{+}0.020/\allowbreak{+}0.031$ \\ %
+(iii) tail amplitude $A$ & $0.92(16)$ & $1.03(7)$ & $\pm0.04$ (stat.) \\ %
+(iv) 3D model, ref & $0.99998$ & $0.99972$ & $\le+0.0002$ \\ %
+(iv) 3D model, local & $0.99921$ & $0.99923$ & $\le+0.0002$ \\ %
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Consequence for the critical mass}\label{sec:v18-mc}
+
+A ratio $\rho$ applied to the width at every node changes the hazard integral by $\ln\rho$, so the critical mass at fixed $\Pone$ moves by
+\begin{equation}
+\Delta m_c=-\frac{\ln\rho}{d\ln I/dm_t}.
+\label{eq:v18-dmc}
+\end{equation}
+The slopes of the final hazard (Sec.~\ref{rep:h-survival}) are $d\ln I/dm_t=5.269$, $3.218$ and $2.121\GeV^{-1}$ at $\Pone=0.9$, $0.5$ and $0.1$. %
+The central ratio $\rho=0.976$ gives
+\begin{equation}
+\Delta m_c=+0.0046,\ +0.0075,\ +0.0115\GeV,
+\label{eq:v18-dmc-central}
+\end{equation}
+and the envelope $\rho=0.937$ gives $+0.012$, $+0.020$ and $+0.031\GeV$. %
+The direction is stabilizing: the full problem has a slightly deeper well and therefore a slightly narrower resonance.
+The original analysis converted the same ratios with the slopes of the second-stage hazard, $5.717$ and $3.513\GeV^{-1}$, and interpolated $\rho$ linearly in $\lambda$ between the two computed couplings; this gave $+0.0043(10)$ and $+0.0070(17)\GeV$ at $\Pone=0.9$ and $0.5$, the values recorded in the code package. %
+Because $\Delta\varepsilon$ depends neither on the wall nor on $\lambda$, we apply the same ratio at every node of the hazard and at $\Pone=0.1$, where $\lambda(\mub)=-0.0152$. %
+In the error budget of Sec.~\ref{rep:h-budget} the envelope enters as the one-sided item $+0.012$, $+0.020$ and $+0.031\GeV$. %
+
+The full-dimensional comparison measures directly two items that the error estimate of the reduced model previously took from brackets: the $\pm1\sigma$ uncertainty of the DMC shape correction, which moves the two-dimensional energy by $\pm0.0022$ but does not enter $\Delta\varepsilon$, and the non-adiabatic $x$-sector term $B_x$, whose bracket $[-0.0022,+0.0031]$ at $\lambda=0$ (Table~\ref{tab:v18-lam0}) has the size of the measured shift.
+Both are replaced by Eq.~(\ref{eq:v18-dmc-central}) and its envelope; what remains of the reduced-model item is the use of fixed couplings in $\delta E_{\rm DMC}$, estimated at $\pm0.002\GeV$ (Sec.~\ref{rep:h-budget}). %
+
+\subsection{Status and limits of the check}\label{sec:v18-status}
+
+\emph{Proved within the stated Hamiltonian.} The walled ground state is unique, positive and gauge invariant, and DMC has no fixed-node error; the code reproduces the full value at $\lambda=0$ and the finite-difference two-dimensional values to $10^{-7}$; $\Delta\varepsilon$ is independent of the wall; the Gaussian variational bound holds with the wall.
+
+\emph{Conditional.} The conversion~(\ref{eq:v18-rho}) assumes that the two models differ by a shift of the well with the same barrier; estimates (ii) and (iii) support it, to $B_w\le0.005$ and to $7$--$16\%$ in the tail amplitude.
+The WKB estimate uses the Gaussian Born--Huang term and a Gamow prefactor calibrated to $6$--$7\%$.
+The translation into $m_c$ assumes that the ratio does not depend on the running of the couplings along the turn.
+The collective-coordinate model contains one collective coordinate, uses the variational mass, and omits the derivative coupling $\langle\partial_q\varphi|\partial_r\varphi\rangle$, whose size is bounded by the $B_x$ bracket: removing $B_x$ altogether changes $m_c$ by $-0.007$ and $-0.011\GeV$ at $\Pone=0.9$ and $0.5$. %
+The blind reimplementation of the reduced chain (Sec.~\ref{rep:v-blind}) computed its own DMC shape correction; within its statistical sensitivity of about $\pm0.02\GeV$ in $m_c$ it agrees with the correction of the main calculation that this section tests. %
+
+\emph{Outside this check.} The full problem is the local zero-mode Hamiltonian on $\mathbb R^{16}$ with the $r$-dependent matching; it does not contain the periodicity of large holonomies or the cross terms between zero and non-zero modes, which Sec.~\ref{rep:h-cross} treats separately, and it uses the one-loop couplings of the zero-mode calculation instead of the running couplings along the turn.
+The non-adiabatic treatment of SU(2) shape modes other than the overall width is contained in the full DMC but not in any reduced model.

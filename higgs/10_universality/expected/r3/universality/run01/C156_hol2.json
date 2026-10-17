@@ -1,0 +1,331 @@
+{
+ "AAA_dir0": {
+  "case": "AAA",
+  "dir": 0,
+  "E_trivial": [
+   -24.3142101152916,
+   -19.833604567196907
+  ],
+  "harmonic": {
+   "glob": {
+    "k3": 0,
+    "dY": 0.0,
+    "d3": 0.0,
+    "E": -24.3142101152916,
+    "higgs_min_twist": 0.0,
+    "higgs_gap": 0.0
+   },
+   "untw": {
+    "k3": 0,
+    "dY": 0.0,
+    "d3": 0.0,
+    "E": -24.3142101152916
+   },
+   "dV_untwist": 0.0,
+   "dE_vs_trivial": 0.0,
+   "dNC_vs_trivial": -0.0
+  },
+  "with_zero_modes": {
+   "glob": {
+    "k3": 0,
+    "dY": 0.0,
+    "d3": 0.05,
+    "E": -23.383743201470065,
+    "higgs_min_twist": 0.025,
+    "higgs_gap": 0.15707963267948966
+   },
+   "untw": {
+    "k3": 0,
+    "dY": 0.05,
+    "d3": 0.05,
+    "E": -23.349460047693334
+   },
+   "dV_untwist": 0.0342831537767303,
+   "dE_vs_trivial": -3.550138634273157,
+   "dNC_vs_trivial": 2.1193923720096137
+  },
+  "points": {
+   "trivial": {
+    "harmonic": -24.3142101152916,
+    "with_zero_modes": -19.833604567196907
+   },
+   "SU3centre": {
+    "harmonic": -19.665009904358595,
+    "with_zero_modes": -15.184404356263904
+   },
+   "Y=1 (=SU3xSU2 centre)": {
+    "harmonic": -16.973056932439167,
+    "with_zero_modes": -14.284780350344475
+   },
+   "SU2centre": {
+    "harmonic": -16.954561235280064,
+    "with_zero_modes": -14.266284653185371
+   }
+  }
+ },
+ "PPA_dir0": {
+  "case": "PPA",
+  "dir": 0,
+  "E_trivial": [
+   -3.5578171692103178,
+   0.9227883788843749
+  ],
+  "harmonic": {
+   "glob": {
+    "k3": 0,
+    "dY": 1.0,
+    "d3": 1.0,
+    "E": -11.448172371467914,
+    "higgs_min_twist": 0.0,
+    "higgs_gap": 0.0
+   },
+   "untw": {
+    "k3": 0,
+    "dY": 1.0,
+    "d3": 1.0,
+    "E": -11.448172371467914
+   },
+   "dV_untwist": 0.0,
+   "dE_vs_trivial": -7.890355202257596,
+   "dNC_vs_trivial": 4.71045228112194
+  },
+  "with_zero_modes": {
+   "glob": {
+    "k3": 0,
+    "dY": 0.95,
+    "d3": 0.95,
+    "E": -10.783980505513215,
+    "higgs_min_twist": 0.0,
+    "higgs_gap": 0.0
+   },
+   "untw": {
+    "k3": 0,
+    "dY": 0.95,
+    "d3": 0.95,
+    "E": -10.783980505513215
+   },
+   "dV_untwist": 0.0,
+   "dE_vs_trivial": -11.70676888439759,
+   "dNC_vs_trivial": 6.988807827092508
+  },
+  "points": {
+   "trivial": {
+    "harmonic": -3.5578171692103178,
+    "with_zero_modes": 0.9227883788843749
+   },
+   "SU3centre": {
+    "harmonic": -11.448172371467914,
+    "with_zero_modes": -6.967566823373221
+   },
+   "Y=1 (=SU3xSU2 centre)": {
+    "harmonic": -7.375040401607855,
+    "with_zero_modes": -4.686763819513162
+   },
+   "SU2centre": {
+    "harmonic": -7.268244527108795,
+    "with_zero_modes": -4.579967945014102
+   }
+  }
+ },
+ "PPA_dir2": {
+  "case": "PPA",
+  "dir": 2,
+  "E_trivial": [
+   -3.5578171692103178,
+   0.9227883788843749
+  ],
+  "harmonic": {
+   "glob": {
+    "k3": 0,
+    "dY": 0.0,
+    "d3": 0.0,
+    "E": -3.5578171692103178,
+    "higgs_min_twist": 0.0,
+    "higgs_gap": 0.0
+   },
+   "untw": {
+    "k3": 0,
+    "dY": 0.0,
+    "d3": 0.0,
+    "E": -3.5578171692103178
+   },
+   "dV_untwist": 0.0,
+   "dE_vs_trivial": 0.0,
+   "dNC_vs_trivial": -0.0
+  },
+  "with_zero_modes": {
+   "glob": {
+    "k3": 0,
+    "dY": 0.0,
+    "d3": 0.05,
+    "E": -2.553169806183403,
+    "higgs_min_twist": 0.025,
+    "higgs_gap": 0.15707963267948966
+   },
+   "untw": {
+    "k3": 0,
+    "dY": 0.05,
+    "d3": 0.05,
+    "E": -2.3951027594260355
+   },
+   "dV_untwist": 0.1580670467573677,
+   "dE_vs_trivial": -3.4759581850677783,
+   "dNC_vs_trivial": 2.075107487841896
+  },
+  "points": {
+   "trivial": {
+    "harmonic": -3.5578171692103178,
+    "with_zero_modes": 0.9227883788843749
+   },
+   "SU3centre": {
+    "harmonic": 22.504377270512705,
+    "with_zero_modes": 26.9849828186074
+   },
+   "Y=1 (=SU3xSU2 centre)": {
+    "harmonic": 25.6115258327156,
+    "with_zero_modes": 28.299802414810294
+   },
+   "SU2centre": {
+    "harmonic": 38.17844816420101,
+    "with_zero_modes": 40.8667247462957
+   }
+  }
+ },
+ "PAA_dir0": {
+  "case": "PAA",
+  "dir": 0,
+  "E_trivial": [
+   -16.534522119127367,
+   -12.053916571032675
+  ],
+  "harmonic": {
+   "glob": {
+    "k3": 0,
+    "dY": 1.0,
+    "d3": 1.0,
+    "E": -21.22071372437859,
+    "higgs_min_twist": 0.0,
+    "higgs_gap": 0.0
+   },
+   "untw": {
+    "k3": 0,
+    "dY": 1.0,
+    "d3": 1.0,
+    "E": -21.22071372437859
+   },
+   "dV_untwist": 0.0,
+   "dE_vs_trivial": -4.686191605251224,
+   "dNC_vs_trivial": 2.797603069937112
+  },
+  "with_zero_modes": {
+   "glob": {
+    "k3": 0,
+    "dY": 0.95,
+    "d3": 1.05,
+    "E": -20.465262524568143,
+    "higgs_min_twist": 0.0,
+    "higgs_gap": 0.0
+   },
+   "untw": {
+    "k3": 0,
+    "dY": 0.95,
+    "d3": 1.05,
+    "E": -20.465262524568143
+   },
+   "dV_untwist": 0.0,
+   "dE_vs_trivial": -8.411345953535468,
+   "dNC_vs_trivial": 5.021477831923267
+  },
+  "points": {
+   "trivial": {
+    "harmonic": -16.534522119127367,
+    "with_zero_modes": -12.053916571032675
+   },
+   "SU3centre": {
+    "harmonic": -21.22071372437859,
+    "with_zero_modes": -16.740108176283897
+   },
+   "Y=1 (=SU3xSU2 centre)": {
+    "harmonic": -17.49170279885012,
+    "with_zero_modes": -14.803426216755428
+   },
+   "SU2centre": {
+    "harmonic": -17.47320710169101,
+    "with_zero_modes": -14.784930519596317
+   }
+  }
+ },
+ "PAA_dir1": {
+  "case": "PAA",
+  "dir": 1,
+  "E_trivial": [
+   -16.534522119127367,
+   -12.053916571032675
+  ],
+  "harmonic": {
+   "glob": {
+    "k3": 0,
+    "dY": 0.0,
+    "d3": 0.0,
+    "E": -16.534522119127367,
+    "higgs_min_twist": 0.0,
+    "higgs_gap": 0.0
+   },
+   "untw": {
+    "k3": 0,
+    "dY": 0.0,
+    "d3": 0.0,
+    "E": -16.534522119127367
+   },
+   "dV_untwist": 0.0,
+   "dE_vs_trivial": 0.0,
+   "dNC_vs_trivial": -0.0
+  },
+  "with_zero_modes": {
+   "glob": {
+    "k3": 0,
+    "dY": 0.0,
+    "d3": 0.05,
+    "E": -15.58881677560243,
+    "higgs_min_twist": 0.025,
+    "higgs_gap": 0.15707963267948966
+   },
+   "untw": {
+    "k3": 0,
+    "dY": 0.05,
+    "d3": 0.05,
+    "E": -15.529217972357124
+   },
+   "dV_untwist": 0.05959880324530609,
+   "dE_vs_trivial": -3.5349002045697553,
+   "dNC_vs_trivial": 2.1102952028559905
+  },
+  "points": {
+   "trivial": {
+    "harmonic": -16.534522119127367,
+    "with_zero_modes": -12.053916571032675
+   },
+   "SU3centre": {
+    "harmonic": -8.85775866586789,
+    "with_zero_modes": -4.377153117773196
+   },
+   "Y=1 (=SU3xSU2 centre)": {
+    "harmonic": -6.509926738280051,
+    "with_zero_modes": -3.821650156185359
+   },
+   "SU2centre": {
+    "harmonic": -6.403130863780991,
+    "with_zero_modes": -3.714854281686298
+   }
+  }
+ },
+ "PPA_two_cycles": {
+  "trivial": -3.5578171692103178,
+  "Y=1 both": -11.74039386138731,
+  "SU3centre both": -16.865304514294273,
+  "glob both": -15.960190359664644
+ },
+ "Q_W": 2.6882765820946926,
+ "Q_HY": 1.7923289660000001,
+ "time_s": 7.736905813217163
+}

@@ -1,0 +1,3744 @@
+{
+ "_paths_note": "Machine-specific absolute paths in the recorded 'old'/'value'/diff strings were replaced by placeholders on 2026-10-15 (code-finalize): <RESEARCH_ROOT> = the private research tree of the project, <CODEX_WORKSPACE> = an external data workspace, <PYTHON> = the Python 3.12 interpreter, <MINGW_BIN> = the MinGW-w64 bin directory, <WOLFRAMSCRIPT>/<MATHEMATICA_15> = the local Mathematica 15 installation, <AGENT_SCRATCHPAD>/<USER_HOME> = temporary/user directories of the machine that assembled the package. The shipped code files themselves contain none of these paths. <AGENT_TEMP> = the temporary directory of the agent session that assembled the package.",
+ "note": "Every copied file: source path + SHA-256, destination SHA-256, and the complete list of code changes (mechanical path rewrites to _zp.*, logged special patches, bootstrap/doc insertions as unified diff). Algorithms and numerical constants are unchanged.",
+ "files": {
+  "higgs/01_sm_mapping/C148_bench.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/C148_bench.py",
+   "dst": "higgs/01_sm_mapping/C148_bench.py",
+   "sha256_src": "bd14bfc05e9200235e09ad91479cbb8d3fb8c479fa5296b5d55f7335924b8c65",
+   "sha256_dst": "d8d8dad9af9c3abec0ce644d77369ceb9201f0d16da989ab8136aeafbf7b782e",
+   "n_path_rewrites": 0,
+   "n_special": 2,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "SMDR = os.path.join(U.LIT, r\"SMDR_src\\SMDR-1.3\")",
+     "new": "SMDR = _zp.smdr()  # [v12-package] SMDR 1.3 tree (third_party/smdr)"
+    },
+    {
+     "kind": "special",
+     "count": 6,
+     "old": "r\"(fig_data|benchmark_data)\\\\",
+     "new": "\"\\1/"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/sm_mapping/C148_bench.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,9 @@",
+    "-\"\"\"C148 benchmarks + SM-side error budget at the lambda(mu_b) level (hazard propagation is separate).\"\"\"",
+    "+\"\"\"[v12 package, 2026-10-15] Benchmarks of the SM mapping: Buttazzo 2013 Eq. (61), BKPV critical M_t, the r2 -> r3 mapping chain, linear budget items at M_t = 173.0; reads the SMDR 1.3 benchmark/figure data (third_party/smdr).  Paper: PRD App. H5.",
+    "+",
+    "+C148 benchmarks + SM-side error budget at the lambda(mu_b) level (hazard propagation is separate).\"\"\"",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -21 +30 @@",
+    "-SMDR = os.path.join(U.LIT, r\"SMDR_src\\SMDR-1.3\")",
+    "+SMDR = _zp.smdr()  # [v12-package] SMDR 1.3 tree (third_party/smdr)",
+    "@@ -49 +58 @@",
+    "-    F = rows(os.path.join(SMDR, r\"fig_data\\FIG_RGrun_vs_Q.dat\"))",
+    "+    F = rows(os.path.join(SMDR, \"fig_data/FIG_RGrun_vs_Q.dat\"))",
+    "@@ -51 +60 @@",
+    "-    y0 = ref_y(refmodel(os.path.join(SMDR, r\"benchmark_data\\ReferenceModel_2019.dat\")))",
+    "+    y0 = ref_y(refmodel(os.path.join(SMDR, \"benchmark_data/ReferenceModel_2019.dat\")))",
+    "@@ -62 +71 @@",
+    "-    H = rows(os.path.join(SMDR, r\"fig_data\\FIG_lambda_m2_highQ.dat\"))",
+    "+    H = rows(os.path.join(SMDR, \"fig_data/FIG_lambda_m2_highQ.dat\"))",
+    "@@ -92 +101 @@",
+    "-    for fn in sorted(glob.glob(os.path.join(SMDR, r\"benchmark_data\\ReferenceModel*.dat\"))):",
+    "+    for fn in sorted(glob.glob(os.path.join(SMDR, \"benchmark_data/ReferenceModel*.dat\"))):",
+    "@@ -239 +248 @@",
+    "-    F = rows(os.path.join(SMDR, r\"fig_data\\FIG_Mt_vs_Q_1.dat\"))",
+    "+    F = rows(os.path.join(SMDR, \"fig_data/FIG_Mt_vs_Q_1.dat\"))",
+    "@@ -242 +251 @@",
+    "-    L = rows(os.path.join(SMDR, r\"fig_data\\FIG_lambda_vs_Q.dat\"))",
+    "+    L = rows(os.path.join(SMDR, \"fig_data/FIG_lambda_vs_Q.dat\"))"
+   ]
+  },
+  "higgs/01_sm_mapping/C148_post.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/C148_post.py",
+   "dst": "higgs/01_sm_mapping/C148_post.py",
+   "sha256_src": "c21cfbef14490f57cf0347def6d5d69bd8a8005c7b2c0681200407c3a2b301d8",
+   "sha256_dst": "b1183456a23a878f0493ac93c89225bfc5bb2e62d1477a115f3c06add66d7b21",
+   "n_path_rewrites": 0,
+   "n_special": 5,
+   "unmapped": [
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 140,
+     "value": "02_literature\\20261007_074655UTC\\model_completion\\C52_Buttazzo_etal_2013.pdf"
+    }
+   ],
+   "changes": [
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 140,
+     "value": "02_literature\\20261007_074655UTC\\model_completion\\C52_Buttazzo_etal_2013.pdf"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "os.path.join(U.LIT, r\"SMDR_src\\SMDR-1.3\\src\\betas.c\")",
+     "new": "_zp.smdr(\"src/betas.c\")"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "os.path.join(U.LIT, r\"SMDR_src\\SMDR-1.3\\benchmark_data\\ReferenceModel.dat\")",
+     "new": "_zp.smdr(\"benchmark_data/ReferenceModel.dat\")"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "os.path.join(U.LIT, r\"SMDR_src\\SMDR-1.3\\benchmark_data\\ReferenceModel_2019.dat\")",
+     "new": "_zp.smdr(\"benchmark_data/ReferenceModel_2019.dat\")"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "os.path.join(U.LIT, r\"SMDR_src\\SMDR-1.3\\src\\QCDQED_match.c\")",
+     "new": "_zp.smdr(\"src/QCDQED_match.c\")"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "os.path.join(U.ROOT, r\"02_literature\\20261007_074655UTC\\model_completion\\C52_Buttazzo_etal_2013.pdf\")",
+     "new": "\"C52_Buttazzo_etal_2013.pdf\""
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/sm_mapping/C148_post.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-\"\"\"C148 post: critical m_t per provider variant (full hazard), linear consistency, SM-side error budget,",
+    "+\"\"\"[v12 package, 2026-10-15] Post-processing of the round-3 SM mapping (C148_summary.json: lam(mu_b), y_t(mu_b) at (172.60, 0.1180, 125.13), budget, m_t definitions).  Needs the archived C144-pipeline hazard runs (historical) in the work tree.",
+    "+",
+    "+C148 post: critical m_t per provider variant (full hazard), linear consistency, SM-side error budget,",
+    "@@ -3,0 +7,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -136,5 +145,5 @@",
+    "-    inputs = [os.path.join(U.LIT, r\"SMDR_src\\SMDR-1.3\\src\\betas.c\"),",
+    "-              os.path.join(U.LIT, r\"SMDR_src\\SMDR-1.3\\benchmark_data\\ReferenceModel.dat\"),",
+    "-              os.path.join(U.LIT, r\"SMDR_src\\SMDR-1.3\\benchmark_data\\ReferenceModel_2019.dat\"),",
+    "-              os.path.join(U.LIT, r\"SMDR_src\\SMDR-1.3\\src\\QCDQED_match.c\"),",
+    "-              os.path.join(U.ROOT, r\"02_literature\\20261007_074655UTC\\model_completion\\C52_Buttazzo_etal_2013.pdf\"),",
+    "+    inputs = [_zp.smdr(\"src/betas.c\"),",
+    "+              _zp.smdr(\"benchmark_data/ReferenceModel.dat\"),",
+    "+              _zp.smdr(\"benchmark_data/ReferenceModel_2019.dat\"),",
+    "+              _zp.smdr(\"src/QCDQED_match.c\"),",
+    "+              \"C52_Buttazzo_etal_2013.pdf\","
+   ]
+  },
+  "higgs/01_sm_mapping/C148_selftest.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/C148_selftest.py",
+   "dst": "higgs/01_sm_mapping/C148_selftest.py",
+   "sha256_src": "82506bf5462f9053b5422b315a266c6088273c5caeb76a62fd1c8282cad59eb9",
+   "sha256_dst": "e6c0d26b496cbb7e93ac91b0d7a94ad6c402559bdb68d50e0bbc2a336c9a863f",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/sm_mapping/C148_selftest.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,9 @@",
+    "-\"\"\"C148 self-tests: QCD module, SMDR-port vs Buttazzo App.B beta functions, first provider numbers, R14 reference.\"\"\"",
+    "+\"\"\"[v12 package, 2026-10-15] Self-tests of the SM mapping: RGE implementations (SMDR port vs B13), QCD conversions, regressions.  Paper: PRD App. H5.",
+    "+",
+    "+C148 self-tests: QCD module, SMDR-port vs Buttazzo App.B beta functions, first provider numbers, R14 reference.\"\"\"",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/01_sm_mapping/C148_wolfram.wl": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/C148_wolfram.wl",
+   "dst": "higgs/01_sm_mapping/C148_wolfram.wl",
+   "sha256_src": "cfc23a4c07a2b208e943a8bbd8efb6be2318f5d57d2bff96174dfadd92c0c884",
+   "sha256_dst": "89e9e493856e92ca57947c62cb8ac79e55a0842b5370e93a3330ff183887e930",
+   "header_added": true
+  },
+  "higgs/01_sm_mapping/R3_mbar.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/R3_mbar_newcentral.py",
+   "dst": "higgs/01_sm_mapping/R3_mbar.py",
+   "sha256_src": "d245ae10853fc15a0d4ffd41fdb4b366eee25b6efe515c8281fa2638a7420454",
+   "sha256_dst": "be119d7a4e26ef874f08f89a382458677ac46f8902f9cdb53c06965544a21f9d",
+   "n_path_rewrites": 0,
+   "n_special": 2,
+   "unmapped": [
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 12,
+     "value": "04_calculations"
+    },
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 24,
+     "value": "04_calculations"
+    }
+   ],
+   "changes": [
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 12,
+     "value": "04_calculations"
+    },
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 24,
+     "value": "04_calculations"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "ROOT = os.path.abspath(os.path.join(HERE, \"..\", \"..\", \"..\", \"..\"))",
+     "new": "ROOT = _zp.WORK"
+    },
+    {
+     "kind": "special",
+     "count": 2,
+     "old": "os.path.join(ROOT, \"04_calculations\", \"results\", \"20261014_claude_v12_r3\",",
+     "new": "os.path.join(ROOT, \"r3\","
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/sm_mapping/R3_mbar_newcentral.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-\"\"\"Main-session helper (2026-10-15 W3): MS-bar top mass mbar(mbar) (4-loop QCD, T1's qcd.py) at the",
+    "+\"\"\"[v12 package, 2026-10-15] MS-bar top mass mbar(mbar) (four-loop QCD) of the critical pole masses; env R3_RUN/R3_SUMMARY/R3_OUT select the input summary (run05: R3_RUN=run05 R3_SUMMARY=C149_run05_summary.json R3_OUT=R3_mbar_run05.json).  Paper: PRL Table 1 (mbar_t form), PRD App. H5.",
+    "+",
+    "+Main-session helper (2026-10-15 W3): MS-bar top mass mbar(mbar) (4-loop QCD, T1's qcd.py) at the",
+    "@@ -4,0 +8,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -11,2 +20,2 @@",
+    "-ROOT = os.path.abspath(os.path.join(HERE, \"..\", \"..\", \"..\", \"..\"))",
+    "-crit = json.load(open(os.path.join(ROOT, \"04_calculations\", \"results\", \"20261014_claude_v12_r3\",",
+    "+ROOT = _zp.WORK",
+    "+crit = json.load(open(os.path.join(ROOT, \"r3\",",
+    "@@ -24 +33 @@",
+    "-dst = os.path.join(ROOT, \"04_calculations\", \"results\", \"20261014_claude_v12_r3\", \"sm_mapping\", \"run02\",",
+    "+dst = os.path.join(ROOT, \"r3\", \"sm_mapping\", \"run02\","
+   ]
+  },
+  "higgs/01_sm_mapping/c148_fit.c": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/c148_fit.c",
+   "dst": "higgs/01_sm_mapping/c148_fit.c",
+   "sha256_src": "57c97993185f4a544701b800a55104ff215bf4ed1d60c55d764edac9147a2901",
+   "sha256_dst": "27b7fffeefa866c8588f4bd74cb87f925190989ec8329bf0849572df4a8d7a8f",
+   "header_added": true
+  },
+  "higgs/01_sm_mapping/mk_wolfram.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/mk_wolfram.py",
+   "dst": "higgs/01_sm_mapping/mk_wolfram.py",
+   "sha256_src": "78ae71fc26a4a3fa4bc066fa1e16ffce598f2d1863d88d4ffb610f5c60d348c9",
+   "sha256_dst": "bd28f74fd086110780d729546937508a5497dfeb909808015e5d2433bdbea8a0",
+   "n_path_rewrites": 0,
+   "n_special": 1,
+   "unmapped": [
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 22,
+     "value": "<WOLFRAMSCRIPT>"
+    }
+   ],
+   "changes": [
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 22,
+     "value": "<WOLFRAMSCRIPT>"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "WS = r\"<WOLFRAMSCRIPT>\"",
+     "new": "WS = os.environ.get(\"WOLFRAMSCRIPT\", \"wolframscript\")"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/sm_mapping/mk_wolfram.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-\"\"\"C148: Wolfram (Mathematica 15) cross-checks, run via wolframscript; code + output stored in wolfram_receipts.json.",
+    "+\"\"\"[v12 package, 2026-10-15] Optional Wolfram cross-check of the SM mapping (C148_wolfram.wl; env WOLFRAMSCRIPT).",
+    "+",
+    "+C148: Wolfram (Mathematica 15) cross-checks, run via wolframscript; code + output stored in wolfram_receipts.json.",
+    "@@ -6,0 +10,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -22 +31 @@",
+    "-WS = r\"<WOLFRAMSCRIPT>\"",
+    "+WS = os.environ.get(\"WOLFRAMSCRIPT\", \"wolframscript\")"
+   ]
+  },
+  "higgs/01_sm_mapping/r02.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/r02.py",
+   "dst": "higgs/01_sm_mapping/r02.py",
+   "sha256_src": "0c3031249f706d370cbe1b0e53de8991e37bc4ff0151028a23ba59d587bf7624",
+   "sha256_dst": "f029cc19684db86a85a3278d155c6ac399e64b8d7506cae490977e38a7d3b23f",
+   "n_path_rewrites": 1,
+   "n_special": 4,
+   "unmapped": [
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 51,
+     "value": "<MINGW_BIN>\\gcc.exe (5.3), mingw32-make; CFLAGS += -O2 "
+    }
+   ],
+   "changes": [
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 51,
+     "value": "<MINGW_BIN>\\gcc.exe (5.3), mingw32-make; CFLAGS += -O2 "
+    },
+    {
+     "kind": "path",
+     "line": 14,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\sm_mapping\\run02",
+     "new": "_zp.w(\"r3/sm_mapping/run02\")"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "BUILD = os.path.join(HERE, \"smdr_build\")",
+     "new": "BUILD = _zp.smdr(\"..\")  # [v12-package] SMDR tree from third_party/smdr"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "TAR = os.path.join(U.LIT, r\"SMDR_tar\\smdr-1.3.tar.gz\")",
+     "new": "TAR = _zp.smdr(\"../../download/smdr-1.3.tar.gz\")"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "compiler=r\"<MINGW_BIN>\\\\gcc\\.exe \\(5\\.3\\)",
+     "new": "compiler=r\"gcc (MinGW-w64 5.3, conda env cbuild)"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "r\"src\\Makefile\", r\"applications\\Makefile\"",
+     "new": "\"src/Makefile\", \"applications/Makefile\""
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/sm_mapping/r02.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,9 @@",
+    "-\"\"\"C148 run02 (sm-mapping): helpers + step 'prep' (contract, STATUS, unpack SMDR into smdr_build, build-info, screen).\"\"\"",
+    "+\"\"\"[v12 package, 2026-10-15] run02 helpers (compiled SMDR 1.3): status, unpack of the SMDR tarball (now done by third_party/smdr/fetch_and_build.py).",
+    "+",
+    "+C148 run02 (sm-mapping): helpers + step 'prep' (contract, STATUS, unpack SMDR into smdr_build, build-info, screen).\"\"\"",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -14,3 +23,3 @@",
+    "-RES2 = os.path.join(U.ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\sm_mapping\\run02\")",
+    "-BUILD = os.path.join(HERE, \"smdr_build\")",
+    "-TAR = os.path.join(U.LIT, r\"SMDR_tar\\smdr-1.3.tar.gz\")",
+    "+RES2 = os.path.join(U.ROOT, _zp.w(\"r3/sm_mapping/run02\"))",
+    "+BUILD = _zp.smdr(\"..\")  # [v12-package] SMDR tree from third_party/smdr",
+    "+TAR = _zp.smdr(\"../../download/smdr-1.3.tar.gz\")",
+    "@@ -51 +60 @@",
+    "-        compiler=r\"<MINGW_BIN>\\gcc.exe (5.3), mingw32-make; CFLAGS += -O2 \"",
+    "+        compiler=r\"gcc (MinGW-w64 5.3, conda env cbuild), mingw32-make; CFLAGS += -O2 \"",
+    "@@ -67 +76 @@",
+    "-    for mf in (\"Makefile\", r\"src\\Makefile\", r\"applications\\Makefile\"):",
+    "+    for mf in (\"Makefile\", \"src/Makefile\", \"applications/Makefile\"):"
+   ]
+  },
+  "higgs/01_sm_mapping/r3util.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/r3util.py",
+   "dst": "higgs/01_sm_mapping/r3util.py",
+   "sha256_src": "f52722ce595b33522babf01c641192cc5114937ffc4300547bf0ba6575d44978",
+   "sha256_dst": "071d805cfda60e844c4c8bff630e8622112d538c20ed9366a0fcc89119fd8d37",
+   "n_path_rewrites": 11,
+   "n_special": 1,
+   "unmapped": [
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 15,
+     "value": "02_literature\\batches\\20261014_claude_v12_r3_L37\\sm_mapping"
+    },
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 101,
+     "value": "02_literature/20261007_074655UTC/model_completion/C52_Buttazzo_etal_2013.pdf (+_embedded.txt)"
+    },
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 104,
+     "value": "02_literature/batches/20261014_claude_v12_r3_L37/sm_mapping/ (SOURCES.json)"
+    }
+   ],
+   "changes": [
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 15,
+     "value": "02_literature\\batches\\20261014_claude_v12_r3_L37\\sm_mapping"
+    },
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 101,
+     "value": "02_literature/20261007_074655UTC/model_completion/C52_Buttazzo_etal_2013.pdf (+_embedded.txt)"
+    },
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 104,
+     "value": "02_literature/batches/20261014_claude_v12_r3_L37/sm_mapping/ (SOURCES.json)"
+    },
+    {
+     "kind": "path",
+     "line": 121,
+     "old": "04_calculations/derivations/20261014_claude_v12_r3/sm_mapping/D120_SM_MAPPING_NNLO_CN.md",
+     "new": "_zp.w(\"derivations/20261014_claude_v12_r3/sm_mapping/D120_SM_MAPPING_NNLO_CN.md\")"
+    },
+    {
+     "kind": "path",
+     "line": 120,
+     "old": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/",
+     "new": "_zp.ZMLIB"
+    },
+    {
+     "kind": "path",
+     "line": 119,
+     "old": "04_calculations/results/20261014_claude_v12_r3/sm_mapping/run01/",
+     "new": "_zp.w(\"r3/sm_mapping/run01/\")"
+    },
+    {
+     "kind": "path",
+     "line": 103,
+     "old": "04_calculations/code/20261013_claude_v12_r2/higgs_final/C144_*.py, results run01 (read only)",
+     "new": "_zp.ZMLIB"
+    },
+    {
+     "kind": "path",
+     "line": 102,
+     "old": "04_calculations/code/20261013_claude_v12_r2/higgs_final/R14_rge.py (read only)",
+     "new": "_zp.ZMLIB"
+    },
+    {
+     "kind": "path",
+     "line": 18,
+     "old": "04_calculations\\results\\20261013_claude_v12_r2\\higgs_final\\run01",
+     "new": "_zp.w(\"r2/higgs_final/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 17,
+     "old": "04_calculations\\code\\20261013_claude_v12_r2\\higgs_final",
+     "new": "_zp.ZMLIB"
+    },
+    {
+     "kind": "path",
+     "line": 16,
+     "old": "04_calculations\\derivations\\20261014_claude_v12_r3\\sm_mapping",
+     "new": "_zp.w(\"derivations/20261014_claude_v12_r3/sm_mapping\")"
+    },
+    {
+     "kind": "path",
+     "line": 14,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\sm_mapping\\run01",
+     "new": "_zp.w(\"r3/sm_mapping/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 13,
+     "old": "04_calculations\\code\\20261014_claude_v12_r3\\sm_mapping",
+     "new": "_zp.ZMLIB"
+    },
+    {
+     "kind": "path",
+     "line": 12,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "LIT = os.path.join(ROOT, r\"02_literature\\batches\\20261014_claude_v12_r3_L37\\sm_mapping\")",
+     "new": "LIT = _zp.smdr(\"../../download\")  # [v12-package] was the literature batch holding the SMDR tarball/sources"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/sm_mapping/r3util.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,9 @@",
+    "-\"\"\"C148 / D120 (agent sm-mapping, DNEC v12 round 3): shared paths, json/STATUS helpers.\"\"\"",
+    "+\"\"\"[v12 package, 2026-10-15] Helpers of the SM-mapping step (paths, JSON I/O, contract).",
+    "+",
+    "+C148 / D120 (agent sm-mapping, DNEC v12 round 3): shared paths, json/STATUS helpers.\"\"\"",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -12,7 +21,7 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-CODE = os.path.join(ROOT, r\"04_calculations\\code\\20261014_claude_v12_r3\\sm_mapping\")",
+    "-RES = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\sm_mapping\\run01\")",
+    "-LIT = os.path.join(ROOT, r\"02_literature\\batches\\20261014_claude_v12_r3_L37\\sm_mapping\")",
+    "-DER = os.path.join(ROOT, r\"04_calculations\\derivations\\20261014_claude_v12_r3\\sm_mapping\")",
+    "-R2 = os.path.join(ROOT, r\"04_calculations\\code\\20261013_claude_v12_r2\\higgs_final\")",
+    "-R2RES = os.path.join(ROOT, r\"04_calculations\\results\\20261013_claude_v12_r2\\higgs_final\\run01\")",
+    "+ROOT = _zp.WORK",
+    "+CODE = os.path.join(ROOT, _zp.ZMLIB)",
+    "+RES = os.path.join(ROOT, _zp.w(\"r3/sm_mapping/run01\"))",
+    "+LIT = _zp.smdr(\"../../download\")  # [v12-package] was the literature batch holding the SMDR tarball/sources",
+    "+DER = os.path.join(ROOT, _zp.w(\"derivations/20261014_claude_v12_r3/sm_mapping\"))",
+    "+R2 = os.path.join(ROOT, _zp.ZMLIB)",
+    "+R2RES = os.path.join(ROOT, _zp.w(\"r2/higgs_final/run01\"))",
+    "@@ -102,2 +111,2 @@",
+    "-            \"r2_rge\": \"04_calculations/code/20261013_claude_v12_r2/higgs_final/R14_rge.py (read only)\",",
+    "-            \"r2_hazard\": \"04_calculations/code/20261013_claude_v12_r2/higgs_final/C144_*.py, results run01 (read only)\",",
+    "+            \"r2_rge\": _zp.ZMLIB,",
+    "+            \"r2_hazard\": _zp.ZMLIB,",
+    "@@ -119,3 +128,3 @@",
+    "-        \"outputs\": {\"results\": \"04_calculations/results/20261014_claude_v12_r3/sm_mapping/run01/\",",
+    "-                    \"code\": \"04_calculations/code/20261014_claude_v12_r3/sm_mapping/\",",
+    "-                    \"derivation\": \"04_calculations/derivations/20261014_claude_v12_r3/sm_mapping/D120_SM_MAPPING_NNLO_CN.md\",",
+    "+        \"outputs\": {\"results\": _zp.w(\"r3/sm_mapping/run01/\"),",
+    "+                    \"code\": _zp.ZMLIB,",
+    "+                    \"derivation\": _zp.w(\"derivations/20261014_claude_v12_r3/sm_mapping/D120_SM_MAPPING_NNLO_CN.md\"),"
+   ]
+  },
+  "higgs/01_sm_mapping/run02_fits.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/run02_fits.py",
+   "dst": "higgs/01_sm_mapping/run02_fits.py",
+   "sha256_src": "13ad9bcc4c13e5903a816531ca352e63954279dbcca1d16e13ab2ed3a6d258d8",
+   "sha256_dst": "1acd0756e39e104bc6d43b190e6f7ed1d14c932a30e3c4cbc13d5f8c9d7197a1",
+   "n_path_rewrites": 0,
+   "n_special": 2,
+   "unmapped": [
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 22,
+     "value": "<MINGW_BIN>;"
+    }
+   ],
+   "changes": [
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 22,
+     "value": "<MINGW_BIN>;"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "EXE = os.path.join(r02.SRCDIR, \"c148_fit.exe\")",
+     "new": "EXE = os.path.join(r02.SRCDIR, \"c148_fit\" + (\".exe\" if os.name == \"nt\" else \"\"))"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "ENV = dict(os.environ, PATH=r\"<MINGW_BIN>;\" + os.environ.get(\"PATH\", \"\"))",
+     "new": "ENV = dict(os.environ, PATH=os.environ.get(\"DNEC_MINGW_BIN\", \"\") + os.pathsep + os.environ.get(\"PATH\", \"\"))"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/sm_mapping/run02_fits.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,9 @@",
+    "-\"\"\"C148 run02: compiled-SMDR refits with scaled evaluation scales (c148_fit.exe), <=4 parallel; -> run02/fits/fits.json\"\"\"",
+    "+\"\"\"[v12 package, 2026-10-15] Compiled-SMDR refits (driver c148_fit.c) of the MS-bar couplings at Q = M_t with scaled evaluation scales (xi = 1/4 ... 4, per scale) -> r3/sm_mapping/run02/fits/fits.json.  Needs third_party/smdr built.  Paper: PRD App. H5.",
+    "+",
+    "+C148 run02: compiled-SMDR refits with scaled evaluation scales (c148_fit.exe), <=4 parallel; -> run02/fits/fits.json\"\"\"",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -14 +23 @@",
+    "-EXE = os.path.join(r02.SRCDIR, \"c148_fit.exe\")",
+    "+EXE = os.path.join(r02.SRCDIR, \"c148_fit\" + (\".exe\" if os.name == \"nt\" else \"\"))",
+    "@@ -22 +31 @@",
+    "-ENV = dict(os.environ, PATH=r\"<MINGW_BIN>;\" + os.environ.get(\"PATH\", \"\"))",
+    "+ENV = dict(os.environ, PATH=os.environ.get(\"DNEC_MINGW_BIN\", \"\") + os.pathsep + os.environ.get(\"PATH\", \"\"))"
+   ]
+  },
+  "higgs/01_sm_mapping/run02_post.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/run02_post.py",
+   "dst": "higgs/01_sm_mapping/run02_post.py",
+   "sha256_src": "c4f2ef797dbfd1b6dd1e39e1fb28486dd18accbcc839bda50f9f547672bcf125",
+   "sha256_dst": "2034b4cf4c7112a719dc1cd31b931f14db1060fa3d2146a235b400115d9dbc21",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/sm_mapping/run02_post.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-\"\"\"C148 run02 post.  'hazards': full C144 hazard (copied) for sfit_* variants into run02/hazard_runs (<=4 parallel);",
+    "+\"\"\"[v12 package, 2026-10-15] run02 analysis: compiled SMDR vs Python port, true matching-scale variation, rewritten SM-side budget (C148r2_summary.json).  Paper: PRD App. H5.",
+    "+",
+    "+C148 run02 post.  'hazards': full C144 hazard (copied) for sfit_* variants into run02/hazard_runs (<=4 parallel);",
+    "@@ -3,0 +7,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/02_finite_volume_matching/C138_checks.py": {
+   "src": "04_calculations/code/20261013_claude_v12_r2/higgs_matching/C138_checks.py",
+   "dst": "higgs/02_finite_volume_matching/C138_checks.py",
+   "sha256_src": "de04c490ea4c34a3239a46a868134372299b11cc35a32fe93147b144fb5cf5f0",
+   "sha256_dst": "8bb5b38f6839e814a8924fbe7125f06c206b726a611b869a15133e32c578d8bf",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261013_claude_v12_r2/higgs_matching/C138_checks.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-\"\"\"C138 analytic/numerical checks for D110 (H1 log cancellation & MS-bar RG consistency, Coulomb-mode",
+    "+\"\"\"[v12 package, 2026-10-15] D110 analytic/numerical checks: log cancellation, analyticity in m^2 inside |m| < 2pi/L, Coulomb-mode subtraction, RG consistency gamma_phi^C = (3y_t^2 - 3/2 g2^2 - 1/2 gY^2)/16pi^2.  Paper: PRD App. H1.",
+    "+",
+    "+C138 analytic/numerical checks for D110 (H1 log cancellation & MS-bar RG consistency, Coulomb-mode",
+    "@@ -3,0 +7,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/02_finite_volume_matching/C138_cross.py": {
+   "src": "04_calculations/code/20261013_claude_v12_r2/higgs_matching/C138_cross.py",
+   "dst": "higgs/02_finite_volume_matching/C138_cross.py",
+   "sha256_src": "b3516aa7b05964e090f12c6dd1c6c7174e6cb52648b889445bbc82c2c70cda21",
+   "sha256_dst": "69561c9ddaacbf4728e991e446bc37ce172c00f42f58e496ec76477233e03479",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261013_claude_v12_r2/higgs_matching/C138_cross.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-\"\"\"C138 cross-term estimate (D110 Sec. 3.4): first-order zero-mode/nonzero-mode cross term for the Higgs",
+    "+\"\"\"[v12 package, 2026-10-15] D110 round-2 indicative zero-mode cross-term estimate (superseded by D121, 04_cross_terms); kept for the history table.",
+    "+",
+    "+C138 cross-term estimate (D110 Sec. 3.4): first-order zero-mode/nonzero-mode cross term for the Higgs",
+    "@@ -6,0 +10,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/02_finite_volume_matching/C138_report.py": {
+   "src": "04_calculations/code/20261013_claude_v12_r2/higgs_matching/C138_report.py",
+   "dst": "higgs/02_finite_volume_matching/C138_report.py",
+   "sha256_src": "c2211e455f7267780fd7628c714b0a599ea1fc0c51af9b9bf7252cf624c03330",
+   "sha256_dst": "59141de998bc04d51787a7e10797fe438bfaf789e67a4ea1bba8dd7877248e6f",
+   "n_path_rewrites": 1,
+   "n_special": 0,
+   "unmapped": [
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 78,
+     "value": "wolframscript -file (<MATHEMATICA_15>)"
+    }
+   ],
+   "changes": [
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 78,
+     "value": "wolframscript -file (<MATHEMATICA_15>)"
+    },
+    {
+     "kind": "path",
+     "line": 10,
+     "old": "<RESEARCH_ROOT>\\04_calculations\\results\\20261013_claude_v12_r2\\higgs_matching\\run01",
+     "new": "_zp.w(\"r2/higgs_matching/run01\")"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261013_claude_v12_r2/higgs_matching/C138_report.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,9 @@",
+    "-\"\"\"C138 report: error budget on the critical m_t, regression table, Wolfram receipts, STATUS (D110).\"\"\"",
+    "+\"\"\"[v12 package, 2026-10-15] D110 report tables from the C138 JSON outputs.",
+    "+",
+    "+C138 report: error budget on the critical m_t, regression table, Wolfram receipts, STATUS (D110).\"\"\"",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -10 +19 @@",
+    "-RES = r\"<RESEARCH_ROOT>\\04_calculations\\results\\20261013_claude_v12_r2\\higgs_matching\\run01\"",
+    "+RES = _zp.w(\"r2/higgs_matching/run01\")"
+   ]
+  },
+  "higgs/02_finite_volume_matching/C138_run.py": {
+   "src": "04_calculations/code/20261013_claude_v12_r2/higgs_matching/C138_run.py",
+   "dst": "higgs/02_finite_volume_matching/C138_run.py",
+   "sha256_src": "badf6ce0c3edee8af3387b03b0892372097a483303c77f8bdef23b9604c4b8d9",
+   "sha256_dst": "5990e12789ddc6279fd02184ab1d6686f66c4b0eca05976703397419e2654878",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261013_claude_v12_r2/higgs_matching/C138_run.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-\"\"\"C138 driver (D110).  Usage: python -B C138_run.py checks|profiles|static|main|var|mu|post|all|wexport",
+    "+\"\"\"[v12 package, 2026-10-15] D110 driver: checks | profiles | static | main | var | mu | post | all.  Static gamma(lam) tables for the MU/ML/MC matching variants at v11 couplings and the round-2 1D hazard with the R14 mapping (historical numbers).  Paper: PRD App. H1 (matching, Table of gamma), error-budget row 'one-loop matching'. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C138 driver (D110).  Usage: python -B C138_run.py checks|profiles|static|main|var|mu|post|all|wexport",
+    "@@ -5,0 +9,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/02_finite_volume_matching/C138_wolfram.wl": {
+   "src": "04_calculations/code/20261013_claude_v12_r2/higgs_matching/C138_wolfram.wl",
+   "dst": "higgs/02_finite_volume_matching/C138_wolfram.wl",
+   "sha256_src": "7d3a67b5ccc08fa4a354528be4e126aa14ddb83fd7ec5ba68d202385f8171e4e",
+   "sha256_dst": "c524f3a46a0853fa7a4cb82b95ba086afcc0723f993003d01cd6e883fa14f884",
+   "header_added": true
+  },
+  "higgs/03_zero_mode_2d/C140_cap.py": {
+   "src": "04_calculations/code/20261013_claude_v12_r2/higgs_beyond_bo/C140_cap.py",
+   "dst": "higgs/03_zero_mode_2d/C140_cap.py",
+   "sha256_src": "8bb2f5c1b0abde9227a0851fa09973135dcf21b3354dd0b84b42993080fe6d9f",
+   "sha256_dst": "e89f4628e05a697561878c2b74a0a49ad453f876619c5aa492418686cb364ca0",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261013_claude_v12_r2/higgs_beyond_bo/C140_cap.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-r\"\"\"C140 independent cross-check (D112 Sec. 3.6; coordinator diagnostics (a)-(c)).  Claude 2026-10-13.",
+    "+r\"\"\"[v12 package, 2026-10-15] D112 cross-check of the 2D resonance widths with a complex absorbing potential (CAP).  Paper: PRD App. H2.",
+    "+",
+    "+C140 independent cross-check (D112 Sec. 3.6; coordinator diagnostics (a)-(c)).  Claude 2026-10-13.",
+    "@@ -13,0 +17,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/03_zero_mode_2d/C140_wolfram.wl": {
+   "src": "04_calculations/code/20261013_claude_v12_r2/higgs_beyond_bo/C140_wolfram.wl",
+   "dst": "higgs/03_zero_mode_2d/C140_wolfram.wl",
+   "sha256_src": "e6d5eaf586a4448c4455577df9040c39785fc359b5e7a89894de824ac2f62d58",
+   "sha256_dst": "9e29aa2223143399c7ae2ff33dd4173825a0a82f78e6c2f1c9e7611d5d50555b",
+   "header_added": true
+  },
+  "higgs/04_cross_terms/C149_coulomb.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/holonomy_cross/C149_coulomb.py",
+   "dst": "higgs/04_cross_terms/C149_coulomb.py",
+   "sha256_src": "f9912481f16eabe3133acab6df0e97059739f3a1ced5e8018afe1d4568443a8c",
+   "sha256_dst": "2dc4e4e9a0678e61f56b09b114990b1614db040b8536047f45b320dbd3924e68",
+   "n_path_rewrites": 1,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 29,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run05",
+     "new": "_zp.w(\"r3/holonomy_cross/run05\")"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/holonomy_cross/C149_coulomb.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-r\"\"\"C149 run05: the missing gauge one-loop r^2 c^2 pieces (holonomy-cross, D121 appendix run05).",
+    "+r\"\"\"[v12 package, 2026-10-15] D121 run05: background-covariant Coulomb-gauge vev-mixing vertex and Coulomb-mode (Gauss-law) mismatch; RG-closure check of the one-loop r^2 c^2 logs against 2 gamma_phi^C x tree (-> C149_coulomb_check.json).  Paper: PRD App. H2'. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C149 run05: the missing gauge one-loop r^2 c^2 pieces (holonomy-cross, D121 appendix run05).",
+    "@@ -16,0 +20,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -29 +38 @@",
+    "-RES5 = os.path.join(X.ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run05\")",
+    "+RES5 = os.path.join(X.ROOT, _zp.w(\"r3/holonomy_cross/run05\"))"
+   ]
+  },
+  "higgs/04_cross_terms/C149_direct4.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/holonomy_cross/C149_direct4.py",
+   "dst": "higgs/04_cross_terms/C149_direct4.py",
+   "sha256_src": "f30c5dec3d65494aea732b791eabe695d522d7aa0ddca86cf1779f302665efb8",
+   "sha256_dst": "addebb35752e24908f982fe3df25adf3c339c775dd4d4455d2e6305aaa603a5f",
+   "n_path_rewrites": 2,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 124,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run02\\C149_run02_summary.json",
+     "new": "_zp.w(\"r3/holonomy_cross/run02/C149_run02_summary.json\")"
+    },
+    {
+     "kind": "path",
+     "line": 33,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run04",
+     "new": "_zp.w(\"r3/holonomy_cross/run04\")"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/holonomy_cross/C149_direct4.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-r\"\"\"C149 run04 (holonomy-cross, D121 appendix run04): run02 node-direct 2D hazard + gauge-Higgs vev mixing + exact top",
+    "+r\"\"\"[v12 package, 2026-10-15] D121 run04: run02 node-direct hazard + gauge-Higgs vev mixing + exact top chiral bubble added to the one-loop Hessian before the variational re-minimisation (variants A/B/C).  Imported by run05.  Paper: PRD App. H2'. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C149 run04 (holonomy-cross, D121 appendix run04): run02 node-direct 2D hazard + gauge-Higgs vev mixing + exact top",
+    "@@ -15,0 +19,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -33 +42 @@",
+    "-RES4 = os.path.join(D.ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run04\")",
+    "+RES4 = os.path.join(D.ROOT, _zp.w(\"r3/holonomy_cross/run04\"))",
+    "@@ -124 +133 @@",
+    "-    S2 = W.jload(os.path.join(D.ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run02\\C149_run02_summary.json\"))",
+    "+    S2 = W.jload(os.path.join(D.ROOT, _zp.w(\"r3/holonomy_cross/run02/C149_run02_summary.json\")))"
+   ]
+  },
+  "higgs/04_cross_terms/C149_direct5.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/holonomy_cross/C149_direct5.py",
+   "dst": "higgs/04_cross_terms/C149_direct5.py",
+   "sha256_src": "51d3ca3afcbbc7921c403b3fee0d0e8b658807b7a03aa9f52db43047fdee620a",
+   "sha256_dst": "d84afad13b04e9226d0e9683ebbc2ba495857ce143e693df71d906142a83a74f",
+   "n_path_rewrites": 1,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 26,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run05",
+     "new": "_zp.w(\"r3/holonomy_cross/run05\")"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/holonomy_cross/C149_direct5.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-r\"\"\"C149 run05 (holonomy-cross, D121 appendix run05): node-direct 2D hazard with the complete one-loop r^2 c^2 set:",
+    "+r\"\"\"[v12 package, 2026-10-15] D121 run05 = PRL centre: node-direct 2D hazard with the complete one-loop r^2 c^2 set (CCA cross terms + covariant vev mixing + Coulomb mismatch + exact top chiral).  'run main|als' -> 22 node shards; 'post' -> critical m_t, P1, lam_c; 'final' -> C149_run05_summary.json.  Paper: PRL Table 1, Eq. for lam_c; PRD App. H2', H3. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C149 run05 (holonomy-cross, D121 appendix run05): node-direct 2D hazard with the complete one-loop r^2 c^2 set:",
+    "@@ -10,0 +14,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -26 +35 @@",
+    "-RES5 = os.path.join(D.ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run05\")",
+    "+RES5 = os.path.join(D.ROOT, _zp.w(\"r3/holonomy_cross/run05\"))"
+   ]
+  },
+  "higgs/04_cross_terms/C149_top.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/holonomy_cross/C149_top.py",
+   "dst": "higgs/04_cross_terms/C149_top.py",
+   "sha256_src": "082f076ee4b2e1511dd65f4acc0f2d064cd66a793b6b30ea59452b64a1206afe",
+   "sha256_dst": "09294058dd68c1ffcd126e9d96a1abab8f944aec3a712c60c33e8674b6643eb8",
+   "n_path_rewrites": 1,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 26,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run04",
+     "new": "_zp.w(\"r3/holonomy_cross/run04\")"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/holonomy_cross/C149_top.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-r\"\"\"C149 run04: exact chiral top bubble in a constant background vs the CCA (holonomy-cross, D121 run04 appendix).",
+    "+r\"\"\"[v12 package, 2026-10-15] Exact top chiral (axial) bubble in the constant gauge background: G_T1, G_T3, G_Y, H3Y(m_t^2) per colour; verifies the axial log B = q_Phi^2 m_t^2 (= top part of 2 gamma_phi^C x tree) -> r3/holonomy_cross/run04/C149_top_chiral.json.  Paper: PRD App. H2' (top chiral term). Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C149 run04: exact chiral top bubble in a constant background vs the CCA (holonomy-cross, D121 run04 appendix).",
+    "@@ -13,0 +17,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -26 +35 @@",
+    "-RES4 = os.path.join(X.ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run04\")",
+    "+RES4 = os.path.join(X.ROOT, _zp.w(\"r3/holonomy_cross/run04\"))"
+   ]
+  },
+  "higgs/04_cross_terms/C149_wolfram.wl": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/holonomy_cross/C149_wolfram.wl",
+   "dst": "higgs/04_cross_terms/C149_wolfram.wl",
+   "sha256_src": "90004afb6f35743b7f82db9a4e051f5317a92935ec13b335ee07bf1ff107623e",
+   "sha256_dst": "c9b09036e08564d91c95bfd9a03ec1603eab6a2716e8abdc390c64a5565fd4f1",
+   "header_added": true
+  },
+  "higgs/05_fulldim_validation/C140_beyond_bo_t14a.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/C140_beyond_bo.py",
+   "dst": "higgs/05_fulldim_validation/C140_beyond_bo_t14a.py",
+   "sha256_src": "545a838ebdb013a55b9fd51fa6a53002fdce4c94a1aa3685c1f05168296eca7f",
+   "sha256_dst": "3f72f2b0e7efe8bccdc4848cdcf9f98ab5d606eaffbb263115f6aa260f17f84a",
+   "n_path_rewrites": 5,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 47,
+     "old": "04_calculations\\results\\20261013_claude_v12_r2\\higgs_matching\\run01\\C138_summary.json",
+     "new": "_zp.w(\"r2/higgs_matching/run01/C138_summary.json\")"
+    },
+    {
+     "kind": "path",
+     "line": 46,
+     "old": "04_calculations\\results\\20261013_claude_v12\\higgs_survival\\run02_stage3",
+     "new": "_zp.w(\"r1/higgs_survival/run02_stage3\")"
+    },
+    {
+     "kind": "path",
+     "line": 45,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\fulldim_dmc\\run01",
+     "new": "_zp.w(\"r3/fulldim_dmc/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 43,
+     "old": "04_calculations\\results\\20261013_claude_v12_r2\\higgs_beyond_bo\\run01",
+     "new": "_zp.w(\"r2/higgs_beyond_bo/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 42,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/C140_beyond_bo.py (copied 2026-10-15 by code-higgs)",
+    "@@ -3 +4,3 @@",
+    "-r\"\"\"C140 -- DNEC v12 round 2, agent higgs-beyond-bo (direction A-II, derivation D112).  Claude, 2026-10-13.",
+    "+r\"\"\"[v12 package, 2026-10-15] T14a copy of the D112 2D model (identical to zmlib/C140_beyond_bo.py except that its outputs go to the T14a run directory and the D112 profile is read from the r2 directory); renamed in the package to avoid shadowing zmlib.  Paper: PRD App. H2 (full-dimensional validation). Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C140 -- DNEC v12 round 2, agent higgs-beyond-bo (direction A-II, derivation D112).  Claude, 2026-10-13.",
+    "@@ -25,0 +29,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -42,2 +51,2 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-RES_OLD = os.path.join(ROOT, r\"04_calculations\\results\\20261013_claude_v12_r2\\higgs_beyond_bo\\run01\")   # read-only",
+    "+ROOT = _zp.WORK",
+    "+RES_OLD = os.path.join(ROOT, _zp.w(\"r2/higgs_beyond_bo/run01\"))   # read-only",
+    "@@ -45,3 +54,3 @@",
+    "-RES = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\fulldim_dmc\\run01\")",
+    "-S3DIR = os.path.join(ROOT, r\"04_calculations\\results\\20261013_claude_v12\\higgs_survival\\run02_stage3\")",
+    "-C138SUM = os.path.join(ROOT, r\"04_calculations\\results\\20261013_claude_v12_r2\\higgs_matching\\run01\\C138_summary.json\")",
+    "+RES = os.path.join(ROOT, _zp.w(\"r3/fulldim_dmc/run01\"))",
+    "+S3DIR = os.path.join(ROOT, _zp.w(\"r1/higgs_survival/run02_stage3\"))",
+    "+C138SUM = os.path.join(ROOT, _zp.w(\"r2/higgs_matching/run01/C138_summary.json\"))"
+   ]
+  },
+  "higgs/05_fulldim_validation/C72_common.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/C72_common.py",
+   "dst": "higgs/05_fulldim_validation/C72_common.py",
+   "sha256_src": "bd32aa02894a678f522468dc7bda2451e3e97e275c9061432e627462a154d5e0",
+   "sha256_dst": "ba059a799823a332a40944cad4fb3b2063e6adaeb6f4b34a5b21525a8082cf5f",
+   "n_path_rewrites": 1,
+   "n_special": 1,
+   "unmapped": [
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 26,
+     "value": "04_calculations"
+    }
+   ],
+   "changes": [
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 26,
+     "value": "04_calculations"
+    },
+    {
+     "kind": "path",
+     "line": 25,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "RES = ROOT / \"04_calculations\" / \"results\" / \"20261011_claude_followup\" / \"C72\"",
+     "new": "RES = Path(_zp.w(\"r0/C72\"))  # [v12-package] was the follow-up-round C72 results directory (not used here)"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/C72_common.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-r\"\"\"C72 common definitions: conventions, constant-mode potentials, Gaussian trial energies, one-loop couplings.",
+    "+r\"\"\"[v12 package, 2026-10-15] Full 12-dimensional zero-mode potential pieces (SU(2)xU(1) constant modes + Higgs; C72, follow-up round): v_su2, Higgs gradient term, optimal Gaussian (minimize_ew).  Used by the walled DMC.  Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C72 common definitions: conventions, constant-mode potentials, Gaussian trial energies, one-loop couplings.",
+    "@@ -17,0 +21,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -25,2 +34,2 @@",
+    "-ROOT = Path(r\"<RESEARCH_ROOT>\")",
+    "-RES = ROOT / \"04_calculations\" / \"results\" / \"20261011_claude_followup\" / \"C72\"",
+    "+ROOT = Path(_zp.WORK)",
+    "+RES = Path(_zp.w(\"r0/C72\"))  # [v12-package] was the follow-up-round C72 results directory (not used here)"
+   ]
+  },
+  "higgs/05_fulldim_validation/T14a_2d.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/T14a_2d.py",
+   "dst": "higgs/05_fulldim_validation/T14a_2d.py",
+   "sha256_src": "d47c747b4db6cee9955f32559e3b383ae4f1d819d6292af27fc4a1a392b10549",
+   "sha256_dst": "935fe4a66b8bf20c2ba6f774b42e69974db16b2c1279642f3f706149f6b5ef5a",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/T14a_2d.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-\"\"\"T14a step 2: same-wall 2D (D112 operator) ground energies Q_2D(r_w) by sparse FD + Richardson (h=0.08/0.04/0.02).",
+    "+\"\"\"[v12 package, 2026-10-15] Same-wall 2D_ex / 2D_G finite-difference ground states (Richardson) for the DMC comparison.  Paper: PRD H2.",
+    "+",
+    "+T14a step 2: same-wall 2D (D112 operator) ground energies Q_2D(r_w) by sparse FD + Richardson (h=0.08/0.04/0.02).",
+    "@@ -4,0 +8,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/05_fulldim_validation/T14a_3d.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/T14a_3d.py",
+   "dst": "higgs/05_fulldim_validation/T14a_3d.py",
+   "sha256_src": "68e59d7f9ef81cf21962de435187e4e3a76e41206c1afa8f8927b6d99568e928",
+   "sha256_dst": "51fef8fa2f989d139972496fe08e011fca4c88b9c0403e54acb303688d9a19e3",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/T14a_3d.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-r\"\"\"T14a item 3(b): 3D (r, s=|w|, zeta) model -- D112 2D_ex plus an SU(2) collective coordinate (fulldim-dmc, 2026-10-14).",
+    "+r\"\"\"[v12 package, 2026-10-15] 3D (r, s, zeta) model with an SU(2) collective width coordinate (TDVP mass): gamma_3D/gamma_2D.  Paper: PRD H2.",
+    "+",
+    "+T14a item 3(b): 3D (r, s=|w|, zeta) model -- D112 2D_ex plus an SU(2) collective coordinate (fulldim-dmc, 2026-10-14).",
+    "@@ -21,0 +25,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/05_fulldim_validation/T14a_common.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/T14a_common.py",
+   "dst": "higgs/05_fulldim_validation/T14a_common.py",
+   "sha256_src": "3fa54a1e647372a05329db331f32b4e6299a9e6ab112571a69131d4ff5f17e18",
+   "sha256_dst": "80230a20cb932e98f138a1ea1fc3868bf0744eda8096865e788037bde57729e4",
+   "n_path_rewrites": 1,
+   "n_special": 1,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 31,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\fulldim_dmc\\run01",
+     "new": "_zp.w(\"r3/fulldim_dmc/run01\")"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "import C140_beyond_bo as B",
+     "new": "import C140_beyond_bo_t14a as B  # [v12-package] renamed T14a copy"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/T14a_common.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-r\"\"\"T14a / C151 common layer (fulldim-dmc, DNEC v12 round 3, 2026-10-14).",
+    "+r\"\"\"[v12 package, 2026-10-15] Common pieces of the full-dimensional validation (D123/T14a): v11 couplings, MC+CW matching, Dirichlet wall at the gauge-invariant radius r = |phi| = r_w, radial guide function, same-wall 2D model.  Paper: PRD App. H2. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+T14a / C151 common layer (fulldim-dmc, DNEC v12 round 3, 2026-10-14).",
+    "@@ -10,0 +14,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -28 +37 @@",
+    "-import C140_beyond_bo as B  # noqa: E402  (copy; RES redirected to T14a run dir)",
+    "+import C140_beyond_bo_t14a as B  # [v12-package] renamed T14a copy  # noqa: E402  (copy; RES redirected to T14a run dir)",
+    "@@ -31 +40 @@",
+    "-RES = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\fulldim_dmc\\run01\")",
+    "+RES = os.path.join(ROOT, _zp.w(\"r3/fulldim_dmc/run01\"))"
+   ]
+  },
+  "higgs/05_fulldim_validation/T14a_dmc.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/T14a_dmc.py",
+   "dst": "higgs/05_fulldim_validation/T14a_dmc.py",
+   "sha256_src": "cdaf09b6b796a6ec75fb420034fb17eb81b9603936357392def25081c58eafa4",
+   "sha256_dst": "6e79b76d8e01e7de300908ca7a5e940c7e978991165339140d5600875dc4a6e4",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/T14a_dmc.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-r\"\"\"T14a / C151: walled full-dimensional electroweak zero-mode DMC (fulldim-dmc, 2026-10-14).",
+    "+r\"\"\"[v12 package, 2026-10-15] Walled full-dimensional diffusion Monte Carlo (12 dims; the wall is the only exact node), 11 cases x 3 time steps x 2 shards with SHA-256-derived seeds; 'combine' extrapolates tau -> 0.  Paper: PRD App. H2 (Delta Q = -0.0032(8)). Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+T14a / C151: walled full-dimensional electroweak zero-mode DMC (fulldim-dmc, 2026-10-14).",
+    "@@ -15,0 +19,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/05_fulldim_validation/T14a_gamma.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/T14a_gamma.py",
+   "dst": "higgs/05_fulldim_validation/T14a_gamma.py",
+   "sha256_src": "71eab21239ccb508020301d9fabd4435f394e8ea659d5739da04dcba9985b4ce",
+   "sha256_dst": "cbbb8c63345b4b176084371a491c7ff788fe2185ee9d0b1b95ff4f16a1ae62d5",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/T14a_gamma.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-r\"\"\"T14a step 3: (i) d ln gamma/dQ of the 2D model itself (CAP FD, well-localised potential shift d*S(r));",
+    "+r\"\"\"[v12 package, 2026-10-15] Independent width estimates: CAP d ln gamma/dQ (well-localised shift) and multi-dimensional adiabatic WKB.  Paper: PRD H2.",
+    "+",
+    "+T14a step 3: (i) d ln gamma/dQ of the 2D model itself (CAP FD, well-localised potential shift d*S(r));",
+    "@@ -10,0 +14,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/05_fulldim_validation/T14a_post.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/T14a_post.py",
+   "dst": "higgs/05_fulldim_validation/T14a_post.py",
+   "sha256_src": "65964648a5ce0db8c011eab4552177fbc4b02c2bca900c9ab6d1c63973da7d51",
+   "sha256_dst": "5385d5894fc030e838e6b109c1f9ac40771503526832383514d543d97e3b6711",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/T14a_post.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-r\"\"\"T14a step 4: C151_summary.json -- Delta Q (same wall), d ln gamma/dQ conversion, wall-dependence (tail-amplitude)",
+    "+r\"\"\"[v12 package, 2026-10-15] Summary of the full-dimensional validation (C151_summary.json): Delta Q, four gamma estimates, Delta m_c = +0.0043(10)/+0.0070(17) GeV.  Paper: PRD App. H2; PRL Table 1 row 'full-dimensional validation'.",
+    "+",
+    "+T14a step 4: C151_summary.json -- Delta Q (same wall), d ln gamma/dQ conversion, wall-dependence (tail-amplitude)",
+    "@@ -7,0 +11,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/05_fulldim_validation/T14a_profile.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/T14a_profile.py",
+   "dst": "higgs/05_fulldim_validation/T14a_profile.py",
+   "sha256_src": "c5a2688f109417c55e0d43316bb0699d9e9f9b9258ca651f9a4032da7b54dd85",
+   "sha256_dst": "a3fa2e6bf01918e0b0775953db4eb3974d10b9623af3a8b66e073a6f225e15d3",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/T14a_profile.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,9 @@",
+    "-\"\"\"T14a step 1: adiabatic barrier profile, wall choice, radial-guide checks.  python -B T14a_profile.py\"\"\"",
+    "+\"\"\"[v12 package, 2026-10-15] Adiabatic 2D_ex barrier, wall positions (r_top, r2(Q)) and guide checks for lam = -0.010 / -0.013.  Paper: PRD H2.",
+    "+",
+    "+T14a step 1: adiabatic barrier profile, wall choice, radial-guide checks.  python -B T14a_profile.py\"\"\"",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/07_realtime_xi/nm_model.py": {
+   "src": "04_calculations/code/20261015_claude_v12_writing/claims_run05/nm_model.py",
+   "dst": "higgs/07_realtime_xi/nm_model.py",
+   "sha256_src": "6b846f483a5495982614a81b82d9b43cfb30d827099a0544707850432a95d508",
+   "sha256_dst": "ea4c46be4c944d9e11df40bcbb318aecb1a8dd3752ad361360020e98f31af64a",
+   "n_path_rewrites": 6,
+   "n_special": 2,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 53,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\%s\\shards",
+     "new": "_zp.w(\"r3/holonomy_cross/%s/shards\")"
+    },
+    {
+     "kind": "path",
+     "line": 52,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\twod_direct_sm\\run02",
+     "new": "_zp.w(\"r3/twod_direct_sm/run02\")"
+    },
+    {
+     "kind": "path",
+     "line": 40,
+     "old": "04_calculations\\results\\20261015_claude_v12_writing\\claims_run05\\run01\\xi_run05",
+     "new": "_zp.w(\"w/claims_run05/run01/xi_run05\")"
+    },
+    {
+     "kind": "path",
+     "line": 39,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    },
+    {
+     "kind": "path",
+     "line": 26,
+     "old": "<RESEARCH_ROOT>\\04_calculations\\code\\20261014_claude_v12_r3\\realtime_2d",
+     "new": "_zp.ZMLIB"
+    },
+    {
+     "kind": "path",
+     "line": 25,
+     "old": "<RESEARCH_ROOT>\\04_calculations\\code\\20261014_claude_v12_r3\\holonomy_cross",
+     "new": "_zp.ZMLIB"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "sys.path.insert(0, HX)\n",
+     "new": "sys.path.insert(0, HX)\nsys.path.insert(0, _zp.step(\"04_cross_terms\"))  # [v12-package] C149_direct5\n"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "C149SH = os\\.path\\.join\\(ROOT, _zp\\.w\\(\"r3/holonomy_cross/%s/shards\"\\)\\) % \\(([^\\n]*)\\)\\n",
+     "new": "C149SH = _zp.w(\"r3/holonomy_cross/%s/shards\" % (\\1))\\n"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261015_claude_v12_writing/claims_run05/nm_model.py (copied 2026-10-15 by code-higgs)",
+    "@@ -5 +6,3 @@",
+    "-r\"\"\"C157 / D129 (realtime-2d): the round-3 CENTRAL zero-mode model as node potentials for the real-time pipeline.",
+    "+r\"\"\"[v12 package, 2026-10-15] Real-time xi_c chain, model nodes (D129 nm_model, C161 run05 version): at each (m_t, u) node the 1D BO potential U_BO = U1 + eps0 of the run05 2D model (2D_ex + NNLO + full one-loop cross terms), calibrated to the run05 2D widths (holonomy_cross run05 shards); 'nodes' -> 'calib' -> 'tables' (PotentialTable npz for hr_core).  env C161_CROSS=run02 restores the run02 cross terms (regression).  Paper: PRD App. H3. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C157 / D129 (realtime-2d): the round-3 CENTRAL zero-mode model as node potentials for the real-time pipeline.",
+    "@@ -18,0 +22,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -25,2 +34,2 @@",
+    "-HX = r\"<RESEARCH_ROOT>\\04_calculations\\code\\20261014_claude_v12_r3\\holonomy_cross\"",
+    "-RT2D = r\"<RESEARCH_ROOT>\\04_calculations\\code\\20261014_claude_v12_r3\\realtime_2d\"",
+    "+HX = _zp.ZMLIB",
+    "+RT2D = _zp.ZMLIB",
+    "@@ -29,0 +39 @@",
+    "+sys.path.insert(0, _zp.step(\"04_cross_terms\"))  # [v12-package] C149_direct5",
+    "@@ -39,2 +49,2 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-RES = os.path.join(ROOT, r\"04_calculations\\results\\20261015_claude_v12_writing\\claims_run05\\run01\\xi_run05\")",
+    "+ROOT = _zp.WORK",
+    "+RES = os.path.join(ROOT, _zp.w(\"w/claims_run05/run01/xi_run05\"))",
+    "@@ -52,2 +62,2 @@",
+    "-T14RES = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\twod_direct_sm\\run02\")",
+    "-C149SH = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\%s\\shards\") % (\"run02\" if os.environ.get(\"C161_CROSS\") == \"run02\" else \"run05\")",
+    "+T14RES = os.path.join(ROOT, _zp.w(\"r3/twod_direct_sm/run02\"))",
+    "+C149SH = _zp.w(\"r3/holonomy_cross/%s/shards\" % (\"run02\" if os.environ.get(\"C161_CROSS\") == \"run02\" else \"run05\"))"
+   ]
+  },
+  "higgs/07_realtime_xi/rt_quick.py": {
+   "src": "04_calculations/code/20261015_claude_v12_writing/claims_run05/rt_quick.py",
+   "dst": "higgs/07_realtime_xi/rt_quick.py",
+   "sha256_src": "4f8e470c2cd9d9560b47c3bf9dfec6fa1da07e8aee0d2aeaac2d23c14ef9b33a",
+   "sha256_dst": "9ee8218b1ca8639731734213d3e3fe0cc095ec57b266b0326244acf2d21ae431",
+   "n_path_rewrites": 3,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 32,
+     "old": "04_calculations\\results\\20261015_claude_v12_writing\\claims_run05\\run01\\xi_run05",
+     "new": "_zp.w(\"w/claims_run05/run01/xi_run05\")"
+    },
+    {
+     "kind": "path",
+     "line": 31,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    },
+    {
+     "kind": "path",
+     "line": 25,
+     "old": "<RESEARCH_ROOT>\\04_calculations\\code\\20261014_claude_v12_r3\\realtime_2d",
+     "new": "_zp.ZMLIB"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261015_claude_v12_writing/claims_run05/rt_quick.py (copied 2026-10-15 by code-higgs)",
+    "@@ -6 +7,3 @@",
+    "-\"\"\"C157 step 1 (critical path): xi_c in the round-3 central model with the D111/D116 real-time pipeline (unchanged).",
+    "+\"\"\"[v12 package, 2026-10-15] Real-time survival through the turn on the node tables (D111 lens transform, u_sw = 6 Wigner hand-over): P_surv(xi_H) for m_t = 172.2/172.6/172.95/172.96/173.0; 'post' -> xi_c with P_surv(xi_c) = 0.99 P_surv(1/6) (C157_xi_quick.json).  Paper: PRD App. H3; PRL xi condition.",
+    "+",
+    "+C157 step 1 (critical path): xi_c in the round-3 central model with the D111/D116 real-time pipeline (unchanged).",
+    "@@ -12,0 +16,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -25 +34 @@",
+    "-sys.path.insert(0, r\"<RESEARCH_ROOT>\\04_calculations\\code\\20261014_claude_v12_r3\\realtime_2d\")",
+    "+sys.path.insert(0, _zp.ZMLIB)",
+    "@@ -31,2 +40,2 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-RES = os.path.join(ROOT, r\"04_calculations\\results\\20261015_claude_v12_writing\\claims_run05\\run01\\xi_run05\")",
+    "+ROOT = _zp.WORK",
+    "+RES = os.path.join(ROOT, _zp.w(\"w/claims_run05/run01/xi_run05\"))"
+   ]
+  },
+  "higgs/07_realtime_xi/xi_compare.py": {
+   "src": "04_calculations/code/20261015_claude_v12_writing/claims_run05/xi_compare.py",
+   "dst": "higgs/07_realtime_xi/xi_compare.py",
+   "sha256_src": "e2a22f985675ca4ace0c962b83af466c4e496c4201e4607fd54bf1dc781f4031",
+   "sha256_dst": "48da732bde2538c60fb01b2070c08d325842f3135fed1b6819a5346894740642",
+   "n_path_rewrites": 5,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 21,
+     "old": "04_calculations\\results\\20261015_claude_v12_writing\\claims_run05\\run01",
+     "new": "_zp.w(\"w/claims_run05/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 20,
+     "old": "04_calculations\\results\\20261015_claude_v12_writing\\claims_run05\\run01\\xi_run05",
+     "new": "_zp.w(\"w/claims_run05/run01/xi_run05\")"
+    },
+    {
+     "kind": "path",
+     "line": 19,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\realtime_2d\\run02",
+     "new": "_zp.w(\"r3/realtime_2d/run02\")"
+    },
+    {
+     "kind": "path",
+     "line": 18,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\realtime_2d\\run01",
+     "new": "_zp.w(\"r3/realtime_2d/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 17,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261015_claude_v12_writing/claims_run05/xi_compare.py (copied 2026-10-15 by code-higgs)",
+    "@@ -3 +4,3 @@",
+    "-r\"\"\"Step 4 post: xi_c at the run05 centre (copied D129 pipeline, xi_run05/C157_xi_quick.json) vs run02 (D129: realtime_2d",
+    "+r\"\"\"[v12 package, 2026-10-15] xi_c at the run05 centre vs run02 (D129), EW image, and the universal xi_c(P1) reading (PCHIP through the run02 central points; residuals of the 16 run02 variants and of the run05 points) -> xi_run05_summary.json, xi_run05_compare.csv.  Paper: PRL xi_H(mu_b) >~ 0.08; PRD H3.",
+    "+",
+    "+Step 4 post: xi_c at the run05 centre (copied D129 pipeline, xi_run05/C157_xi_quick.json) vs run02 (D129: realtime_2d",
+    "@@ -6,0 +10,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -17,5 +26,5 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-RT1 = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\realtime_2d\\run01\")",
+    "-RT2 = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\realtime_2d\\run02\")",
+    "-X5 = os.path.join(ROOT, r\"04_calculations\\results\\20261015_claude_v12_writing\\claims_run05\\run01\\xi_run05\")",
+    "-NEW = os.path.join(ROOT, r\"04_calculations\\results\\20261015_claude_v12_writing\\claims_run05\\run01\")",
+    "+ROOT = _zp.WORK",
+    "+RT1 = os.path.join(ROOT, _zp.w(\"r3/realtime_2d/run01\"))",
+    "+RT2 = os.path.join(ROOT, _zp.w(\"r3/realtime_2d/run02\"))",
+    "+X5 = os.path.join(ROOT, _zp.w(\"w/claims_run05/run01/xi_run05\"))",
+    "+NEW = os.path.join(ROOT, _zp.w(\"w/claims_run05/run01\"))"
+   ]
+  },
+  "higgs/07_realtime_xi/xi_regress.py": {
+   "src": "04_calculations/code/20261015_claude_v12_writing/claims_run05/xi_regress.py",
+   "dst": "higgs/07_realtime_xi/xi_regress.py",
+   "sha256_src": "a3f1a892373767a7e3d7e484b559957ca0b5c5df5ac28f9ac87fd272998d0869",
+   "sha256_dst": "3fa2ebc7067fa460ba2ac0210ca9af64cdfe506c778e1ddb8798c195025126af",
+   "n_path_rewrites": 1,
+   "n_special": 1,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 18,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\realtime_2d\\run01\\nodes\\node_mt172.60_u0.0000.npz",
+     "new": "_zp.w(\"r3/realtime_2d/run01/nodes/node_mt172.60_u0.0000.npz\")"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "ref = dict(np.load(os.path.join(ROOT, _zp.w(\"r3/realtime_2d/run01/nodes/node_mt172.60_u0.0000.npz\"))))",
+     "new": "ref = dict(np.load(_zp.w(\"r3/realtime_2d/run01/nodes/node_mt172.60_u0.0000.npz\")))"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261015_claude_v12_writing/claims_run05/xi_regress.py (copied 2026-10-15 by code-higgs)",
+    "@@ -3 +4,3 @@",
+    "-\"\"\"Regression of the nm_model copy: with C161_CROSS=run02 the copied node evaluation must reproduce the D129 run01 node",
+    "+\"\"\"[v12 package, 2026-10-15] Regression of the node evaluation: with C161_CROSS=run02 the D129 run01 node (172.60, u = 0) is reproduced; the same node with the run05 cross terms (difference printed).",
+    "+",
+    "+Regression of the nm_model copy: with C161_CROSS=run02 the copied node evaluation must reproduce the D129 run01 node",
+    "@@ -5,0 +9,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -18 +27 @@",
+    "-ref = dict(np.load(os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\realtime_2d\\run01\\nodes\\node_mt172.60_u0.0000.npz\")))",
+    "+ref = dict(np.load(_zp.w(\"r3/realtime_2d/run01/nodes/node_mt172.60_u0.0000.npz\")))"
+   ]
+  },
+  "higgs/08_robustness_w0/C152_account.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/higgs_robustness/C152_account.py",
+   "dst": "higgs/08_robustness_w0/C152_account.py",
+   "sha256_src": "e869b7d9dafae0fed65b5a0687240eae0d6e78829cde45547350dfae93df2252",
+   "sha256_dst": "04976f9607861feba474bd5d15f45679eca43d97e4bee6ebd2fba281f0629749",
+   "n_path_rewrites": 4,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 14,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\realtime_2d\\run01\\C157_xi_quick.json",
+     "new": "_zp.w(\"r3/realtime_2d/run01/C157_xi_quick.json\")"
+    },
+    {
+     "kind": "path",
+     "line": 13,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run02\\C149_run02_summary.json",
+     "new": "_zp.w(\"r3/holonomy_cross/run02/C149_run02_summary.json\")"
+    },
+    {
+     "kind": "path",
+     "line": 12,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\higgs_robustness\\run01",
+     "new": "_zp.w(\"r3/higgs_robustness/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 11,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/higgs_robustness/C152_account.py (copied 2026-10-15 by code-higgs)",
+    "@@ -3 +4,3 @@",
+    "-r\"\"\"C152 account: compact deliverables from C152_post.json / C152_w0_B3.json (+ read-only C149 run02 summary, C157):",
+    "+r\"\"\"[v12 package, 2026-10-15] Bookkeeping of the background constants (h/M_P implied by the pipeline vs v11, L_b Mbar_P) and their m_c effect.  Paper: PRD App. H3 (footnote).",
+    "+",
+    "+C152 account: compact deliverables from C152_post.json / C152_w0_B3.json (+ read-only C149 run02 summary, C157):",
+    "@@ -4,0 +8,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -11,4 +20,4 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-RES = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\higgs_robustness\\run01\")",
+    "-C149 = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run02\\C149_run02_summary.json\")",
+    "-C157 = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\realtime_2d\\run01\\C157_xi_quick.json\")",
+    "+ROOT = _zp.WORK",
+    "+RES = os.path.join(ROOT, _zp.w(\"r3/higgs_robustness/run01\"))",
+    "+C149 = os.path.join(ROOT, _zp.w(\"r3/holonomy_cross/run02/C149_run02_summary.json\"))",
+    "+C157 = os.path.join(ROOT, _zp.w(\"r3/realtime_2d/run01/C157_xi_quick.json\"))"
+   ]
+  },
+  "higgs/08_robustness_w0/C152_core.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/higgs_robustness/C152_core.py",
+   "dst": "higgs/08_robustness_w0/C152_core.py",
+   "sha256_src": "bd84fd04b0ae44e42760385f03d2e95d000263a4d80917f82e696643dd074bdf",
+   "sha256_dst": "417ce294445a9cf78a2d1508ff0788dca2d9dcdc8fa377ab990ab267cdb510a4",
+   "n_path_rewrites": 4,
+   "n_special": 2,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 41,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run02\\shards",
+     "new": "_zp.w(\"r3/holonomy_cross/run02/shards\")"
+    },
+    {
+     "kind": "path",
+     "line": 35,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\higgs_robustness\\run01",
+     "new": "_zp.w(\"r3/higgs_robustness/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 28,
+     "old": "04_calculations\\code\\20261014_claude_v12_r3\\holonomy_cross",
+     "new": "_zp.ZMLIB"
+    },
+    {
+     "kind": "path",
+     "line": 27,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "def run(sp, nw=3):",
+     "new": "def run(sp, nw=int(os.environ.get(\"DNEC_WORKERS\", \"3\"))):"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "    with ProcessPoolExecutor(max_workers=min(nw, 3)) as ex:",
+     "new": "    with ProcessPoolExecutor(max_workers=max(1, min(nw, len(sp)))) as ex:  # [v12-package] was min(nw, 3)"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/higgs_robustness/C152_core.py (copied 2026-10-15 by code-higgs)",
+    "@@ -8 +9,3 @@",
+    "-r\"\"\"C152 core: 2D_ex + NNLO + cross-term Siegert roots at arbitrary RG scale l = ln(mu/mu_b) (mu_b = MPbar/722).",
+    "+r\"\"\"[v12 package, 2026-10-15] 2D_ex + NNLO + cross-term Siegert roots at an arbitrary RG scale l = ln(mu/mu_b): the background enters the Higgs chain only through delta_mu = dln mu_b and delta_h = dln hL_b (exact bounce scaling), so background variants need gamma(m_t, l_k + delta_mu).  jobS = C149_direct.jobX with a shifted node scale (zmlib).  Paper: PRD App. H3 (W4/W9 robustness), Table 1 rows '(vi) inflation scale'. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C152 core: 2D_ex + NNLO + cross-term Siegert roots at arbitrary RG scale l = ln(mu/mu_b) (mu_b = MPbar/722).",
+    "@@ -13,0 +17,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -27,2 +36,2 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-HX = os.path.join(ROOT, r\"04_calculations\\code\\20261014_claude_v12_r3\\holonomy_cross\")",
+    "+ROOT = _zp.WORK",
+    "+HX = os.path.join(ROOT, _zp.ZMLIB)",
+    "@@ -35 +44 @@",
+    "-RES = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\higgs_robustness\\run01\")",
+    "+RES = os.path.join(ROOT, _zp.w(\"r3/higgs_robustness/run01\"))",
+    "@@ -41 +50 @@",
+    "-BASESH = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run02\\shards\")",
+    "+BASESH = os.path.join(ROOT, _zp.w(\"r3/holonomy_cross/run02/shards\"))",
+    "@@ -164 +173 @@",
+    "-def run(sp, nw=3):",
+    "+def run(sp, nw=int(os.environ.get(\"DNEC_WORKERS\", \"3\"))):",
+    "@@ -167 +176 @@",
+    "-    with ProcessPoolExecutor(max_workers=min(nw, 3)) as ex:",
+    "+    with ProcessPoolExecutor(max_workers=max(1, min(nw, len(sp)))) as ex:  # [v12-package] was min(nw, 3)"
+   ]
+  },
+  "higgs/08_robustness_w0/C152_post.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/higgs_robustness/C152_post.py",
+   "dst": "higgs/08_robustness_w0/C152_post.py",
+   "sha256_src": "08e61546a58556667bf53ac540b1bc3e8695ab7d11280cf8f35fb61f71dace8a",
+   "sha256_dst": "5940a2db19084b363645c6a4c3135431d3888b9848c29d68ecc1456900760848",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/higgs_robustness/C152_post.py (copied 2026-10-15 by code-higgs)",
+    "@@ -4 +5,3 @@",
+    "-r\"\"\"C152 post: input -> Delta m_c table (full hazard + root finding for every input), m_c(w0) table, kappa_E backreaction",
+    "+r\"\"\"[v12 package, 2026-10-15] Background-input sensitivities from the C152 shards: dlnI/dlam_b, transit-duration slopes (e-fold finite differences -0.170/-0.270/-0.394 GeV), (vi) inflation scale r in [1e-3, 1e-2] (+-0.035/+-0.067/+-0.112 GeV), content inputs.  Paper: PRD App. H3/H4; PRL Table 1.",
+    "+",
+    "+C152 post: input -> Delta m_c table (full hazard + root finding for every input), m_c(w0) table, kappa_E backreaction",
+    "@@ -11,0 +15,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/08_robustness_w0/C152_w0.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/higgs_robustness/C152_w0.py",
+   "dst": "higgs/08_robustness_w0/C152_w0.py",
+   "sha256_src": "70573b2a4c13b8105f2b556132e831927b973c531b508d2d8d927217085c79f3",
+   "sha256_dst": "0447cb8ec614b29fe948e343f5ac7485c4d01118773118b3c8999a9da2c00d8f",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/higgs_robustness/C152_w0.py (copied 2026-10-15 by code-higgs)",
+    "@@ -4 +5,3 @@",
+    "-r\"\"\"C152 w0 (T15 / B3 rule for the metastable Higgs zero mode at the turn, u = 0, round-3 central model).",
+    "+r\"\"\"[v12 package, 2026-10-15] w0 by the B3 rule (time-symmetric real initial state with minimal energy variance in the centred Gaussian family): w0(172.2/172.6/173.0/173.4) = 0.9945/0.9907/0.9852/0.9801, critical masses with P = w0 P1.  Paper: PRD App. H3.",
+    "+",
+    "+C152 w0 (T15 / B3 rule for the metastable Higgs zero mode at the turn, u = 0, round-3 central model).",
+    "@@ -14,0 +18,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/09_claims/C154_core_v2.py": {
+   "src": "04_calculations/code/20261015_claude_v12_writing/claims_run05/C154_core_v2.py",
+   "dst": "higgs/09_claims/C154_core_v2.py",
+   "sha256_src": "f9b7ccc1baaa2771cfee43b0c4f7ec79a14ce486a21bd264d161dfe90153b5de",
+   "sha256_dst": "9b89a126f3212f723fa6123c6a7703c5484c0965f28db32c2bb30181c5e1287c",
+   "n_path_rewrites": 1,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 20,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261015_claude_v12_writing/claims_run05/C154_core_v2.py (copied 2026-10-15 by code-higgs)",
+    "@@ -9,0 +11,7 @@",
+    "+\"\"\"[v12 package, 2026-10-15] Claims layer (D126 v2; C161 run05 centre): marginalised survival P1bar over m_t (several mass definitions), alpha_s, M_h, SM-mapping and model errors (asymmetric errors split with equal mass), Bayes factors, exclusion thresholds, FCC-ee / HL-LHC discriminating power, (m_t, alpha_s) contours and figure data.  Inputs: env C154_CFG (default C154_inputs_v2_run05.json; *_t1new = rebuilt Table 1 composite).  Paper: PRL claim sentence, Fig. 2, Table 1; PRD App. H4.  Units: GeV.\"\"\"",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -20 +28 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "+ROOT = _zp.WORK"
+   ]
+  },
+  "higgs/09_claims/C154_correction_v2c.py": {
+   "src": "04_calculations/code/20261015_claude_v12_writing/claims_run05/C154_correction_v2c.py",
+   "dst": "higgs/09_claims/C154_correction_v2c.py",
+   "sha256_src": "3e3b3779a1a669ec4d9bb85ef08bed2418475e5e931b2a59d2fb04836e35dbe7",
+   "sha256_dst": "686a095a0c952dae4dc81cb93e986d0ac19d40a570fd11050240c059283d089b",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261015_claude_v12_writing/claims_run05/C154_correction_v2c.py (copied 2026-10-15 by code-higgs)",
+    "@@ -9,0 +11,7 @@",
+    "+\"\"\"[v12 package, 2026-10-15] D126 v2 correction addendum (equal-mass split, prior-support Bayes, HL-LHC corrected inputs) -> *_corr files and C154_correction_summary.json.  Paper: PRL P1bar = 0.73; PRD H4.\"\"\"",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/09_claims/C154_inputs_v2_regress_run02.json": {
+   "src": "04_calculations/code/20261015_claude_v12_writing/claims_run05/C154_inputs_v2_regress_run02.json",
+   "dst": "higgs/09_claims/C154_inputs_v2_regress_run02.json",
+   "sha256_src": "8b9cdaef518a8246888d416e1cfc81214a6561541cce164fa0fedc37e73c9a7d",
+   "sha256_dst": "411cdd2347757345761d12c107a7d3b3e98e6f4ff508b6bd6fe8bf32ca33659a",
+   "note": "data file: ROOT-relative result paths rewritten to work-tree paths (r3/, w/)"
+  },
+  "higgs/09_claims/C154_inputs_v2_run05.json": {
+   "src": "04_calculations/code/20261015_claude_v12_writing/claims_run05/C154_inputs_v2_run05.json",
+   "dst": "higgs/09_claims/C154_inputs_v2_run05.json",
+   "sha256_src": "ef3733d58a1ad3c2a2dff5bfc03d08ba5df2229742dd8f5dd112abc28f018f08",
+   "sha256_dst": "ccbeac2afb78723a0385e06b0ec476a29d99ab8d0dce41045f3019f7df9f5bc9",
+   "note": "data file: ROOT-relative result paths rewritten to work-tree paths (r3/, w/)"
+  },
+  "higgs/09_claims/C154_inputs_v2_run05_t1new.json": {
+   "src": "04_calculations/code/20261015_claude_v12_writing/claims_run05/C154_inputs_v2_run05_t1new.json",
+   "dst": "higgs/09_claims/C154_inputs_v2_run05_t1new.json",
+   "sha256_src": "2dc871dc7cbafd3b869b3bb6d759a94cbc8aa87127d77df50be6d18348334845",
+   "sha256_dst": "a588c00b6b9d99ec4cdf00c55682eba679ba363319d827e31e6e35ba07e53265",
+   "note": "data file: ROOT-relative result paths rewritten to work-tree paths (r3/, w/)"
+  },
+  "higgs/09_claims/compare_claims.py": {
+   "src": "04_calculations/code/20261015_claude_v12_writing/claims_run05/compare_claims.py",
+   "dst": "higgs/09_claims/compare_claims.py",
+   "sha256_src": "7e8464a1e6123920b21d6e6ea5791221b0f8aa753a131b29a6577645550b37dd",
+   "sha256_dst": "1567560c69c5227f6de1e87dc14832c732c9330cfb6516360c5ad77b2707ccf9",
+   "n_path_rewrites": 4,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 33,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run05\\shards",
+     "new": "_zp.w(\"r3/holonomy_cross/run05/shards\")"
+    },
+    {
+     "kind": "path",
+     "line": 31,
+     "old": "04_calculations\\results\\20261015_claude_v12_writing\\claims_run05\\run01",
+     "new": "_zp.w(\"w/claims_run05/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 30,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\claim_positioning\\run02",
+     "new": "_zp.w(\"r3/claim_positioning/run02\")"
+    },
+    {
+     "kind": "path",
+     "line": 29,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261015_claude_v12_writing/claims_run05/compare_claims.py (copied 2026-10-15 by code-higgs)",
+    "@@ -3 +4,3 @@",
+    "-r\"\"\"Step-1 checks and the run02 -> run05 comparison of the claim layer (C154 v2 core + correction addendum).",
+    "+r\"\"\"[v12 package, 2026-10-15] run02 vs run05 claims comparison table (claims_compare.json, claims_headline.csv, claims_run02_vs_run05_full.csv).",
+    "+",
+    "+Step-1 checks and the run02 -> run05 comparison of the claim layer (C154 v2 core + correction addendum).",
+    "@@ -10,0 +14,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -29,3 +38,3 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-OLD = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\claim_positioning\\run02\")",
+    "-NEW = os.path.join(ROOT, r\"04_calculations\\results\\20261015_claude_v12_writing\\claims_run05\\run01\")",
+    "+ROOT = _zp.WORK",
+    "+OLD = os.path.join(ROOT, _zp.w(\"r3/claim_positioning/run02\"))",
+    "+NEW = os.path.join(ROOT, _zp.w(\"w/claims_run05/run01\"))",
+    "@@ -33 +42 @@",
+    "-SH5 = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run05\\shards\")",
+    "+SH5 = os.path.join(ROOT, _zp.w(\"r3/holonomy_cross/run05/shards\"))"
+   ]
+  },
+  "higgs/09_claims/crit_variants.py": {
+   "src": "04_calculations/code/20261015_claude_v12_writing/claims_run05/crit_variants.py",
+   "dst": "higgs/09_claims/crit_variants.py",
+   "sha256_src": "3f3ccaefb4982eb302bd1e1f05dc1b0442924a42eb6b2efa5298e76ff3b72cde",
+   "sha256_dst": "0ff55d764eeb557a9781a77667857614805f34ed2d6057e4fabc90606fc3b680",
+   "n_path_rewrites": 3,
+   "n_special": 4,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 30,
+     "old": "04_calculations\\results\\20261015_claude_v12_writing\\claims_run05\\run01",
+     "new": "_zp.w(\"w/claims_run05/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 25,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3",
+     "new": "_zp.w(\"r3\")"
+    },
+    {
+     "kind": "path",
+     "line": 24,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "r\"holonomy_cross\\run02\\C149_run02_summary.json\"",
+     "new": "\"holonomy_cross/run02/C149_run02_summary.json\""
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "r\"holonomy_cross\\run05\\C149_run05_summary.json\"",
+     "new": "\"holonomy_cross/run05/C149_run05_summary.json\""
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "r\"two_branch\\run01\\C159_summary.json\"",
+     "new": "\"two_branch/run01/C159_summary.json\""
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "r\"higgs_robustness\\run01\\C152_mc_w0.json\"",
+     "new": "\"higgs_robustness/run01/C152_mc_w0.json\""
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261015_claude_v12_writing/claims_run05/crit_variants.py (copied 2026-10-15 by code-higgs)",
+    "@@ -5 +6,3 @@",
+    "-r\"\"\"Step 5: two-branch and B3-rule w0 critical m_t at the run05 centre.",
+    "+r\"\"\"[v12 package, 2026-10-15] Two-branch P2 = P1^2/w0 and B3-rule w0 critical masses at the run05 centre (methods reproduce C159 and C152).  Paper: PRD H3.",
+    "+",
+    "+Step 5: two-branch and B3-rule w0 critical m_t at the run05 centre.",
+    "@@ -11,0 +15,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -24,7 +33,7 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-CR3 = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\")",
+    "-P02 = os.path.join(CR3, r\"holonomy_cross\\run02\\C149_run02_summary.json\")",
+    "-P05 = os.path.join(CR3, r\"holonomy_cross\\run05\\C149_run05_summary.json\")",
+    "-C159 = os.path.join(CR3, r\"two_branch\\run01\\C159_summary.json\")",
+    "-C152W = os.path.join(CR3, r\"higgs_robustness\\run01\\C152_mc_w0.json\")",
+    "-NEW = os.path.join(ROOT, r\"04_calculations\\results\\20261015_claude_v12_writing\\claims_run05\\run01\")",
+    "+ROOT = _zp.WORK",
+    "+CR3 = os.path.join(ROOT, _zp.w(\"r3\"))",
+    "+P02 = os.path.join(CR3, \"holonomy_cross/run02/C149_run02_summary.json\")",
+    "+P05 = os.path.join(CR3, \"holonomy_cross/run05/C149_run05_summary.json\")",
+    "+C159 = os.path.join(CR3, \"two_branch/run01/C159_summary.json\")",
+    "+C152W = os.path.join(CR3, \"higgs_robustness/run01/C152_mc_w0.json\")",
+    "+NEW = os.path.join(ROOT, _zp.w(\"w/claims_run05/run01\"))"
+   ]
+  },
+  "higgs/09_claims/mu_scan.py": {
+   "src": "04_calculations/code/20261015_claude_v12_writing/claims_run05/mu_scan.py",
+   "dst": "higgs/09_claims/mu_scan.py",
+   "sha256_src": "e8ddbd7289b4c121124b74386e367dfde9f619783f42154b8cea9c520537b4be",
+   "sha256_dst": "f7cdcd1cb41c5fbc7dc22c42cd86cc3845d4108c648fbc57ae4f28e2ffc78f1f",
+   "n_path_rewrites": 5,
+   "n_special": 2,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 38,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\twod_direct_sm\\run02\\profiles",
+     "new": "_zp.w(\"r3/twod_direct_sm/run02/profiles\")"
+    },
+    {
+     "kind": "path",
+     "line": 37,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run05",
+     "new": "_zp.w(\"r3/holonomy_cross/run05\")"
+    },
+    {
+     "kind": "path",
+     "line": 34,
+     "old": "04_calculations\\results\\20261015_claude_v12_writing\\claims_run05\\run01\\mu_scan",
+     "new": "_zp.w(\"w/claims_run05/run01/mu_scan\")"
+    },
+    {
+     "kind": "path",
+     "line": 33,
+     "old": "04_calculations\\code\\20261014_claude_v12_r3\\holonomy_cross",
+     "new": "_zp.ZMLIB"
+    },
+    {
+     "kind": "path",
+     "line": 32,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "sys.path.insert(0, HX)\n",
+     "new": "sys.path.insert(0, HX)\nsys.path.insert(0, _zp.step(\"04_cross_terms\"))  # [v12-package] C149_direct5\n"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "**{f: sha(os.path.join(HX, f)) for f in (",
+     "new": "**{f: sha(os.path.join(HX if os.path.exists(os.path.join(HX, f)) else _zp.step(\"04_cross_terms\"), f)) for f in ("
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261015_claude_v12_writing/claims_run05/mu_scan.py (copied 2026-10-15 by code-higgs)",
+    "@@ -13 +14,3 @@",
+    "-r\"\"\"Consistent matching-scale scan of the run05 node-direct 2D hazard (Table 1 item 'one-loop matching').",
+    "+r\"\"\"[v12 package, 2026-10-15] Matching-scale scan in the run05 node pipeline: mu = c/L with c in {1/2, 1, 2, 2 pi} (top threshold c_t in {1/2, 2}); 66 node jobs; c = 1 reproduces run05.  Feeds the Table 1 'one-loop matching' row.  Paper: PRL Table 1. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+Consistent matching-scale scan of the run05 node-direct 2D hazard (Table 1 item 'one-loop matching').",
+    "@@ -20,0 +24,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -32,3 +41,3 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-HX = os.path.join(ROOT, r\"04_calculations\\code\\20261014_claude_v12_r3\\holonomy_cross\")",
+    "-OUT = os.path.join(ROOT, r\"04_calculations\\results\\20261015_claude_v12_writing\\claims_run05\\run01\\mu_scan\")",
+    "+ROOT = _zp.WORK",
+    "+HX = os.path.join(ROOT, _zp.ZMLIB)",
+    "+OUT = os.path.join(ROOT, _zp.w(\"w/claims_run05/run01/mu_scan\"))",
+    "@@ -37,2 +46,2 @@",
+    "-RUN05 = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run05\")",
+    "-T14PROF = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\twod_direct_sm\\run02\\profiles\")",
+    "+RUN05 = os.path.join(ROOT, _zp.w(\"r3/holonomy_cross/run05\"))",
+    "+T14PROF = os.path.join(ROOT, _zp.w(\"r3/twod_direct_sm/run02/profiles\"))",
+    "@@ -39,0 +49 @@",
+    "+sys.path.insert(0, _zp.step(\"04_cross_terms\"))  # [v12-package] C149_direct5",
+    "@@ -212 +222 @@",
+    "-                          **{f: sha(os.path.join(HX, f)) for f in (\"C149_direct5.py\", \"C149_direct4.py\", \"C149_direct.py\",",
+    "+                          **{f: sha(os.path.join(HX if os.path.exists(os.path.join(HX, f)) else _zp.step(\"04_cross_terms\"), f)) for f in (\"C149_direct5.py\", \"C149_direct4.py\", \"C149_direct.py\","
+   ]
+  },
+  "higgs/09_claims/pbar_direct_mc.py": {
+   "src": "04_calculations/code/20261015_claude_v12_writing/claims_run05/pbar_direct_mc.py",
+   "dst": "higgs/09_claims/pbar_direct_mc.py",
+   "sha256_src": "88e0f49afa1b3a844051983f6e46e4a08fb6bfed82dc6caaabc4033be03e8bcf",
+   "sha256_dst": "8474070e5b66f9e26f83900a2bcc7d6000e1f23b6fe31ba91c4263375455a219",
+   "n_path_rewrites": 3,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 41,
+     "old": "04_calculations\\results\\20261015_claude_v12_writing\\claims_run05\\run01",
+     "new": "_zp.w(\"w/claims_run05/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 40,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run05",
+     "new": "_zp.w(\"r3/holonomy_cross/run05\")"
+    },
+    {
+     "kind": "path",
+     "line": 39,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261015_claude_v12_writing/claims_run05/pbar_direct_mc.py (copied 2026-10-15 by code-higgs)",
+    "@@ -5 +6,3 @@",
+    "-r\"\"\"Step 2: independent direct Monte Carlo of Pbar1 on the run05 centre (check of step 1 to <= 0.003).",
+    "+r\"\"\"[v12 package, 2026-10-15] Independent direct Monte Carlo of P1bar (no C154 code reused): samples m_t, alpha_s, M_h, SM and model errors with the same conventions; agreement <= 0.003 required (C161 step 2).  Paper: PRD H4 (cross-check).",
+    "+",
+    "+Step 2: independent direct Monte Carlo of Pbar1 on the run05 centre (check of step 1 to <= 0.003).",
+    "@@ -21,0 +25,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -39,3 +48,3 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-R5 = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run05\")",
+    "-NEW = os.path.join(ROOT, r\"04_calculations\\results\\20261015_claude_v12_writing\\claims_run05\\run01\")",
+    "+ROOT = _zp.WORK",
+    "+R5 = os.path.join(ROOT, _zp.w(\"r3/holonomy_cross/run05\"))",
+    "+NEW = os.path.join(ROOT, _zp.w(\"w/claims_run05/run01\"))"
+   ]
+  },
+  "higgs/09_claims/table1_rebuild.py": {
+   "src": "04_calculations/code/20261015_claude_v12_writing/claims_run05/table1_rebuild.py",
+   "dst": "higgs/09_claims/table1_rebuild.py",
+   "sha256_src": "844e12d37d9a70281fb6274bc88029e8de608df7da51c28908a8567536d2f5a6",
+   "sha256_dst": "f704d78146aeaf4e25250f0e8f0694407b0dcaf9f8e02a6729d8384594c00491",
+   "n_path_rewrites": 4,
+   "n_special": 1,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 33,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run05\\C149_run05_summary.json",
+     "new": "_zp.w(\"r3/holonomy_cross/run05/C149_run05_summary.json\")"
+    },
+    {
+     "kind": "path",
+     "line": 32,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\claim_positioning\\run02\\table1_error_budget_final.csv",
+     "new": "_zp.w(\"r3/claim_positioning/run02/table1_error_budget_final.csv\")"
+    },
+    {
+     "kind": "path",
+     "line": 31,
+     "old": "04_calculations\\results\\20261015_claude_v12_writing\\claims_run05\\run01",
+     "new": "_zp.w(\"w/claims_run05/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 30,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "open(os.path.join(HERE, \"C154_inputs_v2_run05_t1new.json\"), \"w\", encoding=\"utf-8\")",
+     "new": "open(_zp.w(\"w/claims_run05/run01/C154_inputs_v2_run05_t1new.json\"), \"w\", encoding=\"utf-8\")"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261015_claude_v12_writing/claims_run05/table1_rebuild.py (copied 2026-10-15 by code-higgs)",
+    "@@ -3 +4,3 @@",
+    "-r\"\"\"Step 3: Table 1 (error budget on m_c, GeV) rebuilt on the run05 centre without double counting.",
+    "+r\"\"\"[v12 package, 2026-10-15] PRL Table 1 rebuilt at run05 without double counting (C161 step 3): matching item from the run05 matching-scale scan, D112/T14a overlap removed, w0 by D124 bins -> table1_error_budget_run05.csv, C154_inputs_v2_run05_t1new.json.",
+    "+",
+    "+Step 3: Table 1 (error budget on m_c, GeV) rebuilt on the run05 centre without double counting.",
+    "@@ -17,0 +21,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -30,4 +39,4 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-NEW = os.path.join(ROOT, r\"04_calculations\\results\\20261015_claude_v12_writing\\claims_run05\\run01\")",
+    "-OLDT = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\claim_positioning\\run02\\table1_error_budget_final.csv\")",
+    "-R5 = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run05\\C149_run05_summary.json\")",
+    "+ROOT = _zp.WORK",
+    "+NEW = os.path.join(ROOT, _zp.w(\"w/claims_run05/run01\"))",
+    "+OLDT = os.path.join(ROOT, _zp.w(\"r3/claim_positioning/run02/table1_error_budget_final.csv\"))",
+    "+R5 = os.path.join(ROOT, _zp.w(\"r3/holonomy_cross/run05/C149_run05_summary.json\"))",
+    "@@ -155 +164 @@",
+    "-    json.dump(cfg, open(os.path.join(HERE, \"C154_inputs_v2_run05_t1new.json\"), \"w\", encoding=\"utf-8\"), indent=1)",
+    "+    json.dump(cfg, open(_zp.w(\"w/claims_run05/run01/C154_inputs_v2_run05_t1new.json\"), \"w\", encoding=\"utf-8\"), indent=1)"
+   ]
+  },
+  "higgs/10_universality/U156_centre.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/universality/U156_centre.py",
+   "dst": "higgs/10_universality/U156_centre.py",
+   "sha256_src": "9eacdd0979fc15e1f45b81c4632b905227e4b62e1111146910ab6183283669b8",
+   "sha256_dst": "bfe7e346e913df6ad1dec0fc2cd7208c9a3938f60b01f0f7d4c6356ea9229f96",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/universality/U156_centre.py (copied 2026-10-15 by code-higgs)",
+    "@@ -3 +4,3 @@",
+    "-r\"\"\"C156 T2c: PPA / PAA at their one-loop holonomy vacuum (SU(3) centre k/3 on every periodic cycle; U156_hol2 result).",
+    "+r\"\"\"[v12 package, 2026-10-15] SU(3) centre-holonomy vacuum of the PPA/PAA spin structures (N_C 13.124/20.871 -> 21.068/23.669).  Paper: PRD Sec. IV D.",
+    "+",
+    "+C156 T2c: PPA / PAA at their one-loop holonomy vacuum (SU(3) centre k/3 on every periodic cycle; U156_hol2 result).",
+    "@@ -11,0 +15,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/10_universality/U156_coup.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/universality/U156_coup.py",
+   "dst": "higgs/10_universality/U156_coup.py",
+   "sha256_src": "3fd2aa7a54957ea25da869ded79835ced7f232caf4f1db0881f112f546d78fb1",
+   "sha256_dst": "834f1af8a971c51bba2cebcdaee5356657713fee8fb1bb628ce67f680868e271",
+   "n_path_rewrites": 5,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 42,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\universality\\run01",
+     "new": "_zp.w(\"r3/universality/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 41,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run02\\shards",
+     "new": "_zp.w(\"r3/holonomy_cross/run02/shards\")"
+    },
+    {
+     "kind": "path",
+     "line": 40,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\twod_direct_sm\\run02",
+     "new": "_zp.w(\"r3/twod_direct_sm/run02\")"
+    },
+    {
+     "kind": "path",
+     "line": 20,
+     "old": "04_calculations\\code\\20261014_claude_v12_r3\\holonomy_cross",
+     "new": "_zp.ZMLIB"
+    },
+    {
+     "kind": "path",
+     "line": 19,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/universality/U156_coup.py (copied 2026-10-15 by code-higgs)",
+    "@@ -8 +9,3 @@",
+    "-r\"\"\"C156 T1b: lambda_c(g2, gY, yt) in the round-3 central model (C149 run02 pipeline) by direct node recomputation.",
+    "+r\"\"\"[v12 package, 2026-10-15] Coupling dependence of lam_c: 2D direct hazard with g2, gY, y_t scaled by +-10% at fixed lam(mu) trajectory -> dln|lam_c|/dln(g2, gY, y_t) = 0.66/0.16/0.63 (P1 = 0.5).  Paper: PRD Sec. IV D. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C156 T1b: lambda_c(g2, gY, yt) in the round-3 central model (C149 run02 pipeline) by direct node recomputation.",
+    "@@ -13,0 +17,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -19,2 +28,2 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-HX = os.path.join(ROOT, r\"04_calculations\\code\\20261014_claude_v12_r3\\holonomy_cross\")",
+    "+ROOT = _zp.WORK",
+    "+HX = os.path.join(ROOT, _zp.ZMLIB)",
+    "@@ -40,3 +49,3 @@",
+    "-T14RES = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\twod_direct_sm\\run02\")",
+    "-X02 = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run02\\shards\")",
+    "-RES = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\universality\\run01\")",
+    "+T14RES = os.path.join(ROOT, _zp.w(\"r3/twod_direct_sm/run02\"))",
+    "+X02 = os.path.join(ROOT, _zp.w(\"r3/holonomy_cross/run02/shards\"))",
+    "+RES = os.path.join(ROOT, _zp.w(\"r3/universality/run01\"))"
+   ]
+  },
+  "higgs/10_universality/U156_eta.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/universality/U156_eta.py",
+   "dst": "higgs/10_universality/U156_eta.py",
+   "sha256_src": "a3b358c105515748cfe471a06086db408b62bb5e952c5c29d5e7482c2e8b87f9",
+   "sha256_dst": "036542dcb6d3581be6edb4e040fb98d3cc6f872f0f9b06cf94ce03d70a840c70",
+   "n_path_rewrites": 3,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 24,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\universality\\run01",
+     "new": "_zp.w(\"r3/universality/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 23,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run02\\shards",
+     "new": "_zp.w(\"r3/holonomy_cross/run02/shards\")"
+    },
+    {
+     "kind": "path",
+     "line": 22,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/universality/U156_eta.py (copied 2026-10-15 by code-higgs)",
+    "@@ -4 +5,3 @@",
+    "-r\"\"\"C156 T1a: duration (eta_inf) scaling of the hazard-equivalent lambda_c and the WKB structure of gamma(lambda).",
+    "+r\"\"\"[v12 package, 2026-10-15] |lam_c| scaling with the transit duration eta (D128 Sec. 1): b_eff, dlam_c/dln eta, dm_c/dln eta from the run02 node widths (WKB structure ln gamma = a - b |lam|^-1/2).  Paper: PRD Sec. IV D.",
+    "+",
+    "+C156 T1a: duration (eta_inf) scaling of the hazard-equivalent lambda_c and the WKB structure of gamma(lambda).",
+    "@@ -11,0 +15,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -22,3 +31,3 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-SH = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run02\\shards\")",
+    "-OUT = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\universality\\run01\")",
+    "+ROOT = _zp.WORK",
+    "+SH = os.path.join(ROOT, _zp.w(\"r3/holonomy_cross/run02/shards\"))",
+    "+OUT = os.path.join(ROOT, _zp.w(\"r3/universality/run01\"))"
+   ]
+  },
+  "higgs/10_universality/U156_fix2.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/universality/U156_fix2.py",
+   "dst": "higgs/10_universality/U156_fix2.py",
+   "sha256_src": "461327dc8347a931e313ddcf7a7f116f7ed133fafb0631324e8de6ec145e5a98",
+   "sha256_dst": "8a3e82c7af5be6b667a55c037927bd1753c1a5eaee7c8d02a78a4dba48f6a6cf",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/universality/U156_fix2.py (copied 2026-10-15 by code-higgs)",
+    "@@ -4 +5,3 @@",
+    "-r\"\"\"C156 run02: re-solve the 2D roots that run01 left on real-axis zeros (g2+10% u = 3.5, 5; gY-10% u = 2, 3.5, 5).",
+    "+r\"\"\"[v12 package, 2026-10-15] D128 run02 repair: unbounded cross-term functional at large r for gY/g2 <~ 0.75 (model applicability); coupling derivatives re-evaluated (change <= 0.2%).  Paper: PRD Sec. IV D (footnote).",
+    "+",
+    "+C156 run02: re-solve the 2D roots that run01 left on real-axis zeros (g2+10% u = 3.5, 5; gY-10% u = 2, 3.5, 5).",
+    "@@ -12,0 +16,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/10_universality/U156_hol2.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/universality/U156_hol2.py",
+   "dst": "higgs/10_universality/U156_hol2.py",
+   "sha256_src": "e7af5418736b888b433c4fc0c9ee9901ca67ebd6119b63bbbfe4a40623b9914e",
+   "sha256_dst": "b53de9acb4e3dae509c68ce061760f6bb934767c24047fdba2e6d13ba102e729",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/universality/U156_hol2.py (copied 2026-10-15 by code-higgs)",
+    "@@ -3 +4,3 @@",
+    "-r\"\"\"C156 T2b: electroweak x SU(3)-centre holonomy vacuum along ONE periodic cycle for PPA / PAA (AAA, PPA-A as controls).",
+    "+r\"\"\"[v12 package, 2026-10-15] Holonomy vacua of the PPA/PAA sectors (second pass).  Paper: PRD Sec. IV D.",
+    "+",
+    "+C156 T2b: electroweak x SU(3)-centre holonomy vacuum along ONE periodic cycle for PPA / PAA (AAA, PPA-A as controls).",
+    "@@ -13,0 +17,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/10_universality/U156_summary.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/universality/U156_summary.py",
+   "dst": "higgs/10_universality/U156_summary.py",
+   "sha256_src": "054f60c73ef79c37897caaf998f94d262608ec839bd255a47bd142c66a98e086",
+   "sha256_dst": "32e2f6b2cf853505616f9817e56e38b662080ee5cbcc63d69b759edf7a4d3b2f",
+   "n_path_rewrites": 4,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 104,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run02",
+     "new": "_zp.w(\"r3/holonomy_cross/run02\")"
+    },
+    {
+     "kind": "path",
+     "line": 101,
+     "old": "04_calculations\\code\\20261014_claude_v12_r3\\holonomy_cross",
+     "new": "_zp.ZMLIB"
+    },
+    {
+     "kind": "path",
+     "line": 74,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run02\\shards",
+     "new": "_zp.w(\"r3/holonomy_cross/run02/shards\")"
+    },
+    {
+     "kind": "path",
+     "line": 17,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/universality/U156_summary.py (copied 2026-10-15 by code-higgs)",
+    "@@ -3 +4,3 @@",
+    "-r\"\"\"C156 summary: stationary tetragonal shapes at the PPA/PAA holonomy vacua (root of dZ_eff/dbeta), WKB coupling law,",
+    "+r\"\"\"[v12 package, 2026-10-15] C156 summary (C156_summary.json): eta scaling, coupling derivatives, sector results, SHA-256 receipts.  Paper: PRD Sec. IV D.",
+    "+",
+    "+C156 summary: stationary tetragonal shapes at the PPA/PAA holonomy vacua (root of dZ_eff/dbeta), WKB coupling law,",
+    "@@ -4,0 +8,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -17 +26 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "+ROOT = _zp.WORK",
+    "@@ -74 +83 @@",
+    "-    x0 = json.load(open(os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run02\\shards\",",
+    "+    x0 = json.load(open(os.path.join(ROOT, _zp.w(\"r3/holonomy_cross/run02/shards\"),",
+    "@@ -101 +110 @@",
+    "-    HX = os.path.join(ROOT, r\"04_calculations\\code\\20261014_claude_v12_r3\\holonomy_cross\")",
+    "+    HX = os.path.join(ROOT, _zp.ZMLIB)",
+    "@@ -104 +113 @@",
+    "-    X02 = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run02\")",
+    "+    X02 = os.path.join(ROOT, _zp.w(\"r3/holonomy_cross/run02\"))"
+   ]
+  },
+  "higgs/10_universality/U156_twist.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/universality/U156_twist.py",
+   "dst": "higgs/10_universality/U156_twist.py",
+   "sha256_src": "6496a7113abce8bcf1e56eaec50862e4666887c84437750b750ecfbea1bd85ed",
+   "sha256_dst": "aa4d9fa78b248b6b84a9dc1560232f5ad21b9c3ba69d645eee92bba2f9812403",
+   "n_path_rewrites": 1,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 30,
+     "old": "<RESEARCH_ROOT>\\04_calculations\\results\\20261014_claude_v12_r3\\universality\\run01",
+     "new": "_zp.w(\"r3/universality/run01\")"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/universality/U156_twist.py (copied 2026-10-15 by code-higgs)",
+    "@@ -3 +4,3 @@",
+    "-r\"\"\"C156 T2/T3: twisted Epstein sums for the other spin structures and the 't Hooft flux bound.",
+    "+r\"\"\"[v12 package, 2026-10-15] Twisted image sums for the P/A spin-structure sectors and 't Hooft flux sectors (Z6: |Phi_Y| >= 2 pi, classical flux energy 100.7/L = 2.36 x AAA Casimir).  Paper: PRD Sec. IV D. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C156 T2/T3: twisted Epstein sums for the other spin structures and the 't Hooft flux bound.",
+    "@@ -20,0 +24,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -30 +39 @@",
+    "-OUT = r\"<RESEARCH_ROOT>\\04_calculations\\results\\20261014_claude_v12_r3\\universality\\run01\"",
+    "+OUT = _zp.w(\"r3/universality/run01\")"
+   ]
+  },
+  "higgs/11_inflation_stability/build_plane.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/inflation_stability/build_plane.py",
+   "dst": "higgs/11_inflation_stability/build_plane.py",
+   "sha256_src": "9b22adc05dcb751552bb9a4705e5117a1094d37904ab9129b02e2aafaab0a6f0",
+   "sha256_dst": "0d7f1bf96f6bb41043ad9b9897c1719373c63b5ef75a5346cb904cccfe58d9ed",
+   "n_path_rewrites": 5,
+   "n_special": 1,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 142,
+     "old": "04_calculations\\code\\20261014_claude_v12_r3\\sm_mapping\\sm_provider.py",
+     "new": "os.path.join(_zp.ZMLIB, \"sm_provider.py\")"
+    },
+    {
+     "kind": "path",
+     "line": 141,
+     "old": "04_calculations\\code\\20261014_claude_v12_r3\\sm_mapping\\sm_provider.py",
+     "new": "os.path.join(_zp.ZMLIB, \"sm_provider.py\")"
+    },
+    {
+     "kind": "path",
+     "line": 16,
+     "old": "04_calculations\\code\\20261014_claude_v12_r3\\inflation_stability",
+     "new": "_zp.ZMLIB"
+    },
+    {
+     "kind": "path",
+     "line": 15,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\inflation_stability\\run01",
+     "new": "_zp.w(\"r3/inflation_stability/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 14,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "sm_provider=dict(path=os.path.join(_zp.ZMLIB, \"sm_provider.py\"), variant=",
+     "new": "sm_provider=dict(path=\"higgs/zmlib/sm_provider.py\", variant="
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/inflation_stability/build_plane.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-\"\"\"C155 step 3: collect shards -> xi_inf table, (m_t, xi_H) survival plane, C155_summary.json.",
+    "+\"\"\"[v12 package, 2026-10-15] Collect the shards -> xi_inf table (xi_inf_table.csv: xi_EW 0.04877/0.05512/0.06044 and xi(mu_b) 0.03030/0.03781/0.04413 at m_t = 172.2/172.6/173.0), C155_summary.json; the (m_t, xi_H) plane uses inputs/xi_c_zero_mode.json (round-2 values in the archived run - superseded, do not plot; see 07_realtime_xi).  Paper: PRD Sec. VII.",
+    "+",
+    "+C155 step 3: collect shards -> xi_inf table, (m_t, xi_H) survival plane, C155_summary.json.",
+    "@@ -3,0 +7,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -14,3 +23,3 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-RUN = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\inflation_stability\\run01\")",
+    "-CODE = os.path.join(ROOT, r\"04_calculations\\code\\20261014_claude_v12_r3\\inflation_stability\")",
+    "+ROOT = _zp.WORK",
+    "+RUN = os.path.join(ROOT, _zp.w(\"r3/inflation_stability/run01\"))",
+    "+CODE = os.path.join(ROOT, _zp.ZMLIB)",
+    "@@ -141,2 +150,2 @@",
+    "-    sm_provider=dict(path=r\"04_calculations\\code\\20261014_claude_v12_r3\\sm_mapping\\sm_provider.py\", variant=\"central\",",
+    "-                     Mh=125.13, sha256=sha(os.path.join(ROOT, r\"04_calculations\\code\\20261014_claude_v12_r3\\sm_mapping\\sm_provider.py\")),",
+    "+    sm_provider=dict(path=\"higgs/zmlib/sm_provider.py\", variant=\"central\",",
+    "+                     Mh=125.13, sha256=sha(os.path.join(ROOT, os.path.join(_zp.ZMLIB, \"sm_provider.py\"))),"
+   ]
+  },
+  "higgs/11_inflation_stability/infl_core.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/inflation_stability/infl_core.py",
+   "dst": "higgs/11_inflation_stability/infl_core.py",
+   "sha256_src": "c5adbe5cf2312b5788e319f7a807852f4dfe4b382bb8778182902cc9f356667a",
+   "sha256_dst": "51e8c855ddfffe213d103b27290e6258a506fc74b24cb6e28b7f32c635f5f20e",
+   "n_path_rewrites": 2,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 30,
+     "old": "04_calculations\\code\\20261014_claude_v12_r3\\sm_mapping",
+     "new": "_zp.ZMLIB"
+    },
+    {
+     "kind": "path",
+     "line": 29,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/inflation_stability/infl_core.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-\"\"\"C155 / D127 (inflation-stability): SM Higgs stability during plateau inflation.",
+    "+\"\"\"[v12 package, 2026-10-15] All-mode Higgs stability during inflation (D127): RG-improved potential V = xi R h^2/2 + lam h^4/4 (+ alpha R^2/144), Hawking-Moss rate Gamma = (R/12)^2 e^-B, past-light-cone count <N> = 1, Starobinsky-shaped plateau (h/M_P = 6.116e-6), xi running to mu_b.  Paper: PRD Sec. VII; PRL one sentence.  Units: GeV / M_P.",
+    "+",
+    "+C155 / D127 (inflation-stability): SM Higgs stability during plateau inflation.",
+    "@@ -16,0 +20,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -29,2 +38,2 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-SMDIR = os.path.join(ROOT, r\"04_calculations\\code\\20261014_claude_v12_r3\\sm_mapping\")",
+    "+ROOT = _zp.WORK",
+    "+SMDIR = os.path.join(ROOT, _zp.ZMLIB)"
+   ]
+  },
+  "higgs/11_inflation_stability/run_main.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/inflation_stability/run_main.py",
+   "dst": "higgs/11_inflation_stability/run_main.py",
+   "sha256_src": "2f021f107f498028e034c6f0762cd26a8651ed5b8044fe8822d7a9041d8f4d78",
+   "sha256_dst": "3072177209d0ec62bd1ab7e86e37d431f4ef4814ed7520dbe6dfdb023e16a157",
+   "n_path_rewrites": 1,
+   "n_special": 1,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 15,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\inflation_stability\\run01",
+     "new": "_zp.w(\"r3/inflation_stability/run01\")"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "    nw = min(int(sys.argv[1]) if len(sys.argv) > 1 else 3, 3)",
+     "new": "    nw = int(sys.argv[1]) if len(sys.argv) > 1 else 3  # [v12-package] was capped at 3"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/inflation_stability/run_main.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-\"\"\"C155 step 2: xi_inf(m_t) on the project's plateau background (+ variants, cross-checks, extra reproduction jobs).",
+    "+\"\"\"[v12 package, 2026-10-15] xi_inf(m_t, alpha_s) scan (95 jobs, resumable shards).  Paper: PRD Sec. VII.",
+    "+",
+    "+C155 step 2: xi_inf(m_t) on the project's plateau background (+ variants, cross-checks, extra reproduction jobs).",
+    "@@ -3,0 +7,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -15 +24 @@",
+    "-RUN = os.path.join(IC.ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\inflation_stability\\run01\")",
+    "+RUN = os.path.join(IC.ROOT, _zp.w(\"r3/inflation_stability/run01\"))",
+    "@@ -157 +166 @@",
+    "-    nw = min(int(sys.argv[1]) if len(sys.argv) > 1 else 3, 3)",
+    "+    nw = int(sys.argv[1]) if len(sys.argv) > 1 else 3  # [v12-package] was capped at 3"
+   ]
+  },
+  "higgs/11_inflation_stability/run_repro.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/inflation_stability/run_repro.py",
+   "dst": "higgs/11_inflation_stability/run_repro.py",
+   "sha256_src": "0b2ce84fdf1c9f88ee3fc444b5186de818884130cbf5cd10711f800ec985f71e",
+   "sha256_dst": "26037cb000117ccb7098d0027f15a6e4f8549cc90e4aae8e58fed642b2fe12e3",
+   "n_path_rewrites": 1,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 15,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\inflation_stability\\run01\\repro",
+     "new": "_zp.w(\"r3/inflation_stability/run01/repro\")"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/inflation_stability/run_repro.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,9 @@",
+    "-\"\"\"C155 step 1: implementation checks + literature reproduction (MMR 2021 Starobinsky-like field theory; MMR 2022 R^2).\"\"\"",
+    "+\"\"\"[v12 package, 2026-10-15] Literature reproduction: Mantziris-Markkanen-Rajantie 2021 field-theory Starobinsky bound xi_EW = 0.05946 (target 0.05938) and MMR 2022 R^2 counterfactual.  Paper: PRD Sec. VII.",
+    "+",
+    "+C155 step 1: implementation checks + literature reproduction (MMR 2021 Starobinsky-like field theory; MMR 2022 R^2).\"\"\"",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -15 +24 @@",
+    "-OUT = os.path.join(IC.ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\inflation_stability\\run01\\repro\")",
+    "+OUT = os.path.join(IC.ROOT, _zp.w(\"r3/inflation_stability/run01/repro\"))"
+   ]
+  },
+  "higgs/12_two_branch/tb_post.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/two_branch/tb_post.py",
+   "dst": "higgs/12_two_branch/tb_post.py",
+   "sha256_src": "2b871982202d99684ad89a37d411496141c94b0507543b3f550d54da33dcbe54",
+   "sha256_dst": "a4632e1ea4c55ab97303b8dbf3068188dd13495ccc045fe1580d940d90447dba",
+   "n_path_rewrites": 3,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 22,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run02\\C149_run02_summary.json",
+     "new": "_zp.w(\"r3/holonomy_cross/run02/C149_run02_summary.json\")"
+    },
+    {
+     "kind": "path",
+     "line": 21,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\two_branch\\run01",
+     "new": "_zp.w(\"r3/two_branch/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 20,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/two_branch/tb_post.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-\"\"\"C159 / D130 post: (i) collect TDSE shards + static check -> P2(P1) laws and decoherence diagnostics;",
+    "+\"\"\"[v12 package, 2026-10-15] C159 summary: critical masses for P2 = P1^2 (172.376/172.759/173.124, run02 base), GH interference eps 0.9948-0.99997, Frechet bands.  Paper: PRD App. H3; PRL one sentence.",
+    "+",
+    "+C159 / D130 post: (i) collect TDSE shards + static check -> P2(P1) laws and decoherence diagnostics;",
+    "@@ -6,0 +10,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -20,3 +29,3 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-OUT = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\two_branch\\run01\")",
+    "-C149 = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run02\\C149_run02_summary.json\")",
+    "+ROOT = _zp.WORK",
+    "+OUT = os.path.join(ROOT, _zp.w(\"r3/two_branch/run01\"))",
+    "+C149 = os.path.join(ROOT, _zp.w(\"r3/holonomy_cross/run02/C149_run02_summary.json\"))"
+   ]
+  },
+  "higgs/12_two_branch/tb_static.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/two_branch/tb_static.py",
+   "dst": "higgs/12_two_branch/tb_static.py",
+   "sha256_src": "b06a28283f0cd46be7f1f0c01c8d6050d3743f9586a1f0643eb2530fc8d57cfc",
+   "sha256_dst": "8cdc3a5aee5ce875e3084b0fc13aee366eb350ce39aa0940037e2d03d3052369",
+   "n_path_rewrites": 3,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 26,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\two_branch\\run01",
+     "new": "_zp.w(\"r3/two_branch/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 25,
+     "old": "04_calculations\\results\\20261013_claude_v12_r2\\higgs_realtime\\run01\\tables",
+     "new": "_zp.w(\"r2/higgs_realtime/run01/tables\")"
+    },
+    {
+     "kind": "path",
+     "line": 24,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/two_branch/tb_static.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-\"\"\"C159 / D130 independent check: frozen (u = 0) zero-mode Hamiltonian, propagation by dense eigen-decomposition",
+    "+\"\"\"[v12 package, 2026-10-15] Static-spectrum propagation cross-check of the two-branch quantities (independent of the TDSE grid).  Paper: PRD H3.",
+    "+",
+    "+C159 / D130 independent check: frozen (u = 0) zero-mode Hamiltonian, propagation by dense eigen-decomposition",
+    "@@ -7,0 +11,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -24,3 +33,3 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-TAB = os.path.join(ROOT, r\"04_calculations\\results\\20261013_claude_v12_r2\\higgs_realtime\\run01\\tables\")",
+    "-OUT = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\two_branch\\run01\")",
+    "+ROOT = _zp.WORK",
+    "+TAB = os.path.join(ROOT, _zp.w(\"r2/higgs_realtime/run01/tables\"))",
+    "+OUT = os.path.join(ROOT, _zp.w(\"r3/two_branch/run01\"))"
+   ]
+  },
+  "higgs/12_two_branch/tb_tdse.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/two_branch/tb_tdse.py",
+   "dst": "higgs/12_two_branch/tb_tdse.py",
+   "sha256_src": "676e8e51328aa7fbcd9170fad9448c7445559060a3ca832b8e1a49563a93868b",
+   "sha256_dst": "bf6280cf5a3b4b8b2396d18c53d51eb83233759de0ff1e57d58a9142334f382c",
+   "n_path_rewrites": 3,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 38,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\two_branch\\run01",
+     "new": "_zp.w(\"r3/two_branch/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 37,
+     "old": "04_calculations\\results\\20261013_claude_v12_r2\\higgs_realtime\\run01\\tables",
+     "new": "_zp.w(\"r2/higgs_realtime/run01/tables\")"
+    },
+    {
+     "kind": "path",
+     "line": 36,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/two_branch/tb_tdse.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-\"\"\"C159 / D130 (two-branch, T7): two-arrow joint survival in the D111 1D zero-mode model (r frame, xi_H = 1/6).",
+    "+\"\"\"[v12 package, 2026-10-15] Two-branch (two-time) analysis by TDSE through the turn on the D111 potential tables: GH decoherence functional, linear (Goldstein-Page / Margenau-Hill) two-time probability P2_lin = P1^2/w0, Frechet bounds.  Paper: PRD App. H3. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C159 / D130 (two-branch, T7): two-arrow joint survival in the D111 1D zero-mode model (r frame, xi_H = 1/6).",
+    "@@ -16,0 +20,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -36,3 +45,3 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-TAB = os.path.join(ROOT, r\"04_calculations\\results\\20261013_claude_v12_r2\\higgs_realtime\\run01\\tables\")",
+    "-OUT = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\two_branch\\run01\")",
+    "+ROOT = _zp.WORK",
+    "+TAB = os.path.join(ROOT, _zp.w(\"r2/higgs_realtime/run01/tables\"))",
+    "+OUT = os.path.join(ROOT, _zp.w(\"r3/two_branch/run01\"))"
+   ]
+  },
+  "higgs/zmlib/C138_core.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/holonomy_cross/C138_core.py",
+   "dst": "higgs/zmlib/C138_core.py",
+   "sha256_src": "436134db4951721039afc35b0d400eaf1b13e1e784b8aeacd74761e4c433d64d",
+   "sha256_dst": "947ce48e98460b449781e11625223b4586fed6f683ae8bcbef2630d351355dd1",
+   "n_path_rewrites": 2,
+   "n_special": 1,
+   "unmapped": [
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 43,
+     "value": "<AGENT_TEMP>"
+    }
+   ],
+   "changes": [
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 43,
+     "value": "<AGENT_TEMP>"
+    },
+    {
+     "kind": "path",
+     "line": 42,
+     "old": "04_calculations\\results\\20261013_claude_v12_r2\\higgs_matching\\run01",
+     "new": "_zp.w(\"r2/higgs_matching/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 41,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "SCR = \\(r\"C:\\\\Users[^)]*\\)",
+     "new": "SCR = _zp.w(\"scratch\")  # [v12-package] was a session scratch directory (profile cache)"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/holonomy_cross/C138_core.py (copied 2026-10-15 by code-higgs)",
+    "@@ -4 +5,3 @@",
+    "-\"\"\"C138 core -- DNEC v12 round 2, agent higgs-matching (D110): consistent one-loop finite-volume matching.",
+    "+\"\"\"[v12 package, 2026-10-15] Consistent one-loop finite-volume matching (D110): Coulomb-gauge spectrum (2 transverse + 1 Coulomb mode per massive vector, Goldstone mixing), MS-bar finite-volume sums sum[V_CW^inf + D_theta] at mu = 1/L; model 'MC' (+CW) is the production matching dV_MC(r); MU/ML are round-1 regressions.  Paper: PRD App. H1 (matching potential). Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C138 core -- DNEC v12 round 2, agent higgs-matching (D110): consistent one-loop finite-volume matching.",
+    "@@ -19,0 +23,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -41,4 +50,3 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-RES = os.path.join(ROOT, r\"04_calculations\\results\\20261013_claude_v12_r2\\higgs_matching\\run01\")",
+    "-SCR = (r\"<AGENT_TEMP>\"",
+    "-       r\"\\3e9ad9fd-5903-4a3b-944a-4b3561059d95\\scratchpad\")",
+    "+ROOT = _zp.WORK",
+    "+RES = os.path.join(ROOT, _zp.w(\"r2/higgs_matching/run01\"))",
+    "+SCR = _zp.w(\"scratch\")  # [v12-package] was a session scratch directory (profile cache)"
+   ]
+  },
+  "higgs/zmlib/C140_beyond_bo.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/holonomy_cross/C140_beyond_bo.py",
+   "dst": "higgs/zmlib/C140_beyond_bo.py",
+   "sha256_src": "e0cd794698e3b1e36488d2d9dffd619be214e10037fd91068cd18ee791d1c36b",
+   "sha256_dst": "7de15941f856493a7d4a6a40ee3caa8d2c205e344f0d2b7efc7c51bc6485023c",
+   "n_path_rewrites": 4,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 45,
+     "old": "04_calculations\\results\\20261013_claude_v12_r2\\higgs_matching\\run01\\C138_summary.json",
+     "new": "_zp.w(\"r2/higgs_matching/run01/C138_summary.json\")"
+    },
+    {
+     "kind": "path",
+     "line": 44,
+     "old": "04_calculations\\results\\20261013_claude_v12\\higgs_survival\\run02_stage3",
+     "new": "_zp.w(\"r1/higgs_survival/run02_stage3\")"
+    },
+    {
+     "kind": "path",
+     "line": 43,
+     "old": "04_calculations\\results\\20261013_claude_v12_r2\\higgs_beyond_bo\\run01",
+     "new": "_zp.w(\"r2/higgs_beyond_bo/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 42,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/holonomy_cross/C140_beyond_bo.py (copied 2026-10-15 by code-higgs)",
+    "@@ -3 +4,3 @@",
+    "-r\"\"\"C140 -- DNEC v12 round 2, agent higgs-beyond-bo (direction A-II, derivation D112).  Claude, 2026-10-13.",
+    "+r\"\"\"[v12 package, 2026-10-15] Two-dimensional (r, |w|) zero-mode model beyond Born-Oppenheimer (D112): exact conditional-Gaussian decomposition (C0, B_x, Om_eff^2), 2D Siegert resonance solver (sine-DVR in s = |w|, matrix Numerov in r, WKB outgoing condition, local-window Muller), lam = 0 ground-state regression against the full-dimensional DMC.  Paper: PRD App. H2. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C140 -- DNEC v12 round 2, agent higgs-beyond-bo (direction A-II, derivation D112).  Claude, 2026-10-13.",
+    "@@ -25,0 +29,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -42,4 +51,4 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-RES = os.path.join(ROOT, r\"04_calculations\\results\\20261013_claude_v12_r2\\higgs_beyond_bo\\run01\")",
+    "-S3DIR = os.path.join(ROOT, r\"04_calculations\\results\\20261013_claude_v12\\higgs_survival\\run02_stage3\")",
+    "-C138SUM = os.path.join(ROOT, r\"04_calculations\\results\\20261013_claude_v12_r2\\higgs_matching\\run01\\C138_summary.json\")",
+    "+ROOT = _zp.WORK",
+    "+RES = os.path.join(ROOT, _zp.w(\"r2/higgs_beyond_bo/run01\"))",
+    "+S3DIR = os.path.join(ROOT, _zp.w(\"r1/higgs_survival/run02_stage3\"))",
+    "+C138SUM = os.path.join(ROOT, _zp.w(\"r2/higgs_matching/run01/C138_summary.json\"))"
+   ]
+  },
+  "higgs/zmlib/C149_direct.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/holonomy_cross/C149_direct.py",
+   "dst": "higgs/zmlib/C149_direct.py",
+   "sha256_src": "a35342d1187ff6b47d0ed74e38b16c1f3b314eb3ddd50dd0b96c88370582a94d",
+   "sha256_dst": "452700dcddc7de7b593d68c88fa66f3acf3183cb8582e6406a4982bce379daae",
+   "n_path_rewrites": 4,
+   "n_special": 6,
+   "unmapped": [
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 54,
+     "value": "# PROVENANCE: copied UNCHANGED (this line added) from 04_calculations/code/20261014_claude_v12_r3/"
+    }
+   ],
+   "changes": [
+    {
+     "kind": "UNMAPPED_LITERAL",
+     "line": 54,
+     "value": "# PROVENANCE: copied UNCHANGED (this line added) from 04_calculations/code/20261014_claude_v12_r3/"
+    },
+    {
+     "kind": "path",
+     "line": 37,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run02",
+     "new": "_zp.w(\"r3/holonomy_cross/run02\")"
+    },
+    {
+     "kind": "path",
+     "line": 36,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\twod_direct_sm\\run02",
+     "new": "_zp.w(\"r3/twod_direct_sm/run02\")"
+    },
+    {
+     "kind": "path",
+     "line": 35,
+     "old": "04_calculations\\code\\20261014_claude_v12_r3\\twod_direct_sm",
+     "new": "_zp.ZMLIB"
+    },
+    {
+     "kind": "path",
+     "line": 34,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "COPY = [\"C150_twod.py\", \"c150_nnlo_central.py\", \"sm_provider.py\", \"sm_rge.py\", \"qcd.py\", \"_smdr_betas.py\"]\n",
+     "new": ""
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "def setup\\(\\):.*?print\\(rec\\)\\n\\n\\n",
+     "new": ""
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "if len(sys.argv) > 1 and sys.argv[1] == \"setup\":\n    setup()\n    sys.exit(0)\n",
+     "new": "# [v12-package] the original \"setup\" step (copying the T14b modules next to this file) is dropped: they are in zmlib.\n"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "T14 = os.path.join(ROOT, _zp.ZMLIB)\n",
+     "new": ""
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "def run(which, nw=3):",
+     "new": "def run(which, nw=int(os.environ.get(\"DNEC_WORKERS\", \"3\"))):"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "    with ProcessPoolExecutor(max_workers=min(nw, 3)) as ex:",
+     "new": "    with ProcessPoolExecutor(max_workers=max(1, min(nw, len(sp)))) as ex:  # [v12-package] was min(nw, 3)"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/holonomy_cross/C149_direct.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-r\"\"\"C149 run02 (holonomy-cross, D121 appendix run02): node-by-node 2D hazard WITH the zero-mode/nonzero-mode cross terms.",
+    "+r\"\"\"[v12 package, 2026-10-15] Node-by-node 2D hazard WITH the cross terms (D121 run02, CCA): adds the cross-term increments to the T14b 2D_ex model at each node/column and re-solves the 2D Siegert roots; post() integrates the hazard and finds the critical m_t.  Base of run04/run05 (04_cross_terms).  Paper: PRD App. H2', H3. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C149 run02 (holonomy-cross, D121 appendix run02): node-by-node 2D hazard WITH the zero-mode/nonzero-mode cross terms.",
+    "@@ -16,0 +20,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -34,4 +43,3 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-T14 = os.path.join(ROOT, r\"04_calculations\\code\\20261014_claude_v12_r3\\twod_direct_sm\")",
+    "-T14RES = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\twod_direct_sm\\run02\")",
+    "-RES2 = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run02\")",
+    "+ROOT = _zp.WORK",
+    "+T14RES = os.path.join(ROOT, _zp.w(\"r3/twod_direct_sm/run02\"))",
+    "+RES2 = os.path.join(ROOT, _zp.w(\"r3/holonomy_cross/run02\"))",
+    "@@ -40 +47,0 @@",
+    "-COPY = [\"C150_twod.py\", \"c150_nnlo_central.py\", \"sm_provider.py\", \"sm_rge.py\", \"qcd.py\", \"_smdr_betas.py\"]",
+    "@@ -48,20 +55 @@",
+    "-def setup():",
+    "-    from hashlib import sha256",
+    "-    rec = {}",
+    "-    for f in COPY:",
+    "-        src = os.path.join(T14, f)",
+    "-        body = open(src, encoding=\"utf-8\").read()",
+    "-        line = (\"# PROVENANCE: copied UNCHANGED (this line added) from 04_calculations/code/20261014_claude_v12_r3/\"",
+    "-                \"twod_direct_sm/%s on 2026-10-14 by agent holonomy-cross (C149 run02).\\n\" % f)",
+    "-        with open(os.path.join(HERE, f), \"w\", encoding=\"utf-8\") as g:",
+    "-            g.write(line + body)",
+    "-        rec[f] = sha256(open(src, \"rb\").read()).hexdigest()",
+    "-    os.makedirs(RES2, exist_ok=True)",
+    "-    with open(os.path.join(RES2, \"inputs_sha256.json\"), \"w\", encoding=\"utf-8\") as g:",
+    "-        json.dump(rec, g, indent=1)",
+    "-    print(rec)",
+    "-",
+    "-",
+    "-if len(sys.argv) > 1 and sys.argv[1] == \"setup\":",
+    "-    setup()",
+    "-    sys.exit(0)",
+    "+# [v12-package] the original \"setup\" step (copying the T14b modules next to this file) is dropped: they are in zmlib.",
+    "@@ -264 +252 @@",
+    "-def run(which, nw=3):",
+    "+def run(which, nw=int(os.environ.get(\"DNEC_WORKERS\", \"3\"))):",
+    "@@ -268 +256 @@",
+    "-    with ProcessPoolExecutor(max_workers=min(nw, 3)) as ex:",
+    "+    with ProcessPoolExecutor(max_workers=max(1, min(nw, len(sp)))) as ex:  # [v12-package] was min(nw, 3)"
+   ]
+  },
+  "higgs/zmlib/C150_twod.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/holonomy_cross/C150_twod.py",
+   "dst": "higgs/zmlib/C150_twod.py",
+   "sha256_src": "500a0e61e43b70242eb90115ada85125d6043b74990e6d90db442aeb41d26fc6",
+   "sha256_dst": "9bb1372719028800ce4cb8805cfb37da66e8a287d9f130cc41f795d13e185446",
+   "n_path_rewrites": 7,
+   "n_special": 2,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 57,
+     "old": "04_calculations\\results\\20261013_claude_v12_r2\\higgs_matching\\run01\\C138_summary.json",
+     "new": "_zp.w(\"r2/higgs_matching/run01/C138_summary.json\")"
+    },
+    {
+     "kind": "path",
+     "line": 56,
+     "old": "04_calculations\\results\\20261013_claude_v12_r2\\higgs_beyond_bo\\run01\\C140_prep.json",
+     "new": "_zp.w(\"r2/higgs_beyond_bo/run01/C140_prep.json\")"
+    },
+    {
+     "kind": "path",
+     "line": 55,
+     "old": "04_calculations\\results\\20261013_claude_v12_r2\\higgs_beyond_bo\\run01\\C140_profile_v11.npz",
+     "new": "_zp.w(\"r2/higgs_beyond_bo/run01/C140_profile_v11.npz\")"
+    },
+    {
+     "kind": "path",
+     "line": 54,
+     "old": "04_calculations\\results\\20261013_claude_v12\\higgs_survival\\run02_stage3",
+     "new": "_zp.w(\"r1/higgs_survival/run02_stage3\")"
+    },
+    {
+     "kind": "path",
+     "line": 52,
+     "old": "04_calculations\\results\\20261013_claude_v12_r2\\higgs_final\\run01",
+     "new": "_zp.w(\"r2/higgs_final/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 48,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\twod_direct_sm",
+     "new": "_zp.w(\"r3/twod_direct_sm\")"
+    },
+    {
+     "kind": "path",
+     "line": 47,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "    with ProcessPoolExecutor(max_workers=max(1, min(nw, 3))) as ex:\n        outs = list(ex.map(job2d, specs))",
+     "new": "    with ProcessPoolExecutor(max_workers=max(1, min(nw, len(specs)))) as ex:  # [v12-package] was min(nw, 3)\n        outs = list(ex.map(job2d, specs))"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "    with ProcessPoolExecutor(max_workers=max(1, min(nw, 3))) as ex:\n        outs = list(ex.map(job1d, specs))",
+     "new": "    with ProcessPoolExecutor(max_workers=max(1, min(nw, len(specs)))) as ex:  # [v12-package] was min(nw, 3)\n        outs = list(ex.map(job1d, specs))"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/holonomy_cross/C150_twod.py (copied 2026-10-15 by code-higgs)",
+    "@@ -4 +5,3 @@",
+    "-r\"\"\"C150 / D122 (task T14b, agent twod-direct): hazard P1(m_t) from the 2D (r,|w|) model 2D_ex (D112) solved DIRECTLY",
+    "+r\"\"\"[v12 package, 2026-10-15] Direct 2D hazard (D122/T14b): the 2D_ex model solved at each hazard node u with SM running couplings at mu(u) = mu_b/sqrt(cosh 2u); hazard I = int_0^5 gamma du/(hL_b sqrt(cosh 2u)), P1 = exp(-I); critical m_t by spline root of ln I.  Coupling source pluggable (env C150_COUPLINGS = 'R14' or 'module:<file>'); env C150_RUN selects the run directory (run01 = R14 mapping, run02 = NNLO mapping).  Paper: PRD App. H2-H3, convergence table. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C150 / D122 (task T14b, agent twod-direct): hazard P1(m_t) from the 2D (r,|w|) model 2D_ex (D112) solved DIRECTLY",
+    "@@ -20,0 +24,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -47,2 +56,2 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-RES = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\twod_direct_sm\", RUN)",
+    "+ROOT = _zp.WORK",
+    "+RES = os.path.join(ROOT, _zp.w(\"r3/twod_direct_sm\"), RUN)",
+    "@@ -52 +61 @@",
+    "-C144RES = os.path.join(ROOT, r\"04_calculations\\results\\20261013_claude_v12_r2\\higgs_final\\run01\")",
+    "+C144RES = os.path.join(ROOT, _zp.w(\"r2/higgs_final/run01\"))",
+    "@@ -54,4 +63,4 @@",
+    "-S3DIR = os.path.join(ROOT, r\"04_calculations\\results\\20261013_claude_v12\\higgs_survival\\run02_stage3\")",
+    "-PROF_V11 = os.path.join(ROOT, r\"04_calculations\\results\\20261013_claude_v12_r2\\higgs_beyond_bo\\run01\\C140_profile_v11.npz\")",
+    "-C140PREP = os.path.join(ROOT, r\"04_calculations\\results\\20261013_claude_v12_r2\\higgs_beyond_bo\\run01\\C140_prep.json\")",
+    "-C138SUM = os.path.join(ROOT, r\"04_calculations\\results\\20261013_claude_v12_r2\\higgs_matching\\run01\\C138_summary.json\")",
+    "+S3DIR = os.path.join(ROOT, _zp.w(\"r1/higgs_survival/run02_stage3\"))",
+    "+PROF_V11 = os.path.join(ROOT, _zp.w(\"r2/higgs_beyond_bo/run01/C140_profile_v11.npz\"))",
+    "+C140PREP = os.path.join(ROOT, _zp.w(\"r2/higgs_beyond_bo/run01/C140_prep.json\"))",
+    "+C138SUM = os.path.join(ROOT, _zp.w(\"r2/higgs_matching/run01/C138_summary.json\"))",
+    "@@ -866 +875 @@",
+    "-    with ProcessPoolExecutor(max_workers=max(1, min(nw, 3))) as ex:",
+    "+    with ProcessPoolExecutor(max_workers=max(1, min(nw, len(specs)))) as ex:  # [v12-package] was min(nw, 3)",
+    "@@ -888 +897 @@",
+    "-    with ProcessPoolExecutor(max_workers=max(1, min(nw, 3))) as ex:",
+    "+    with ProcessPoolExecutor(max_workers=max(1, min(nw, len(specs)))) as ex:  # [v12-package] was min(nw, 3)"
+   ]
+  },
+  "higgs/zmlib/R14_fv.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/holonomy_cross/R14_fv.py",
+   "dst": "higgs/zmlib/R14_fv.py",
+   "sha256_src": "ebd8d3a5967b5ceeb2301d516009ad64671e1053b7f9851df0ee7dd0ed804322",
+   "sha256_dst": "18b4db54989160c70da362a3fb1ac52405d69ac2c5fde03695852244b04d9a62",
+   "n_path_rewrites": 0,
+   "n_special": 1,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "p = os.path.join(HERE, \"results.json\")",
+     "new": "p = _zp.w(\"r1/R14_checks/results.json\")"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/holonomy_cross/R14_fv.py (copied 2026-10-15 by code-higgs)",
+    "@@ -5 +6,3 @@",
+    "-\"\"\"R14: independent finite-volume matching functions per real d.o.f. on the unit cube (energies in 1/L).",
+    "+\"\"\"[v12 package, 2026-10-15] Finite-volume one-loop sums on the 3-torus (periodic P / antiperiodic A): Ewald/Bessel sums Z_theta, D_theta(m^2), tadpoles T_B/2 = -0.1128925, T_F/2 = -0.0319080, quartic constant c2.  Paper: PRD App. H1 (finite-volume matching). Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+R14: independent finite-volume matching functions per real d.o.f. on the unit cube (energies in 1/L).",
+    "@@ -15,0 +19,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -180 +189 @@",
+    "-    p = os.path.join(HERE, \"results.json\")",
+    "+    p = _zp.w(\"r1/R14_checks/results.json\")"
+   ]
+  },
+  "higgs/zmlib/R14_res.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/holonomy_cross/R14_res.py",
+   "dst": "higgs/zmlib/R14_res.py",
+   "sha256_src": "9e25b7618cbff999c8f5f0fdf27ef180b81dc82471d48d00a54a1c13e1f9e0ab",
+   "sha256_dst": "62b355e673b5f9470b762d8b0367a3b9e071dca3486110df5595a6902a23ae06",
+   "n_path_rewrites": 0,
+   "n_special": 1,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "R14_rge.merge_json(os.path.join(HERE, name), key, obj)",
+     "new": "R14_rge.merge_json(_zp.w(\"r1/R14_checks/\" + name), key, obj)"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/holonomy_cross/R14_res.py (copied 2026-10-15 by code-higgs)",
+    "@@ -5 +6,3 @@",
+    "-\"\"\"R14 checks 2+3: reduced gauge-invariant radial problem of the EW zero modes (model definitions from D108 Sec.1),",
+    "+\"\"\"[v12 package, 2026-10-15] Conditional-Gaussian gauge profile of the Higgs zero mode (D108 functional, Newton marching in r) and the 1D radial resonance solver (Jost function, 2nd-order WKB outgoing/Siegert condition, complex Muller).  Paper: PRD App. H1-H2. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+R14 checks 2+3: reduced gauge-invariant radial problem of the EW zero modes (model definitions from D108 Sec.1),",
+    "@@ -10,0 +14,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -38 +47 @@",
+    "-    R14_rge.merge_json(os.path.join(HERE, name), key, obj)",
+    "+    R14_rge.merge_json(_zp.w(\"r1/R14_checks/\" + name), key, obj)"
+   ]
+  },
+  "higgs/zmlib/R14_rge.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/holonomy_cross/R14_rge.py",
+   "dst": "higgs/zmlib/R14_rge.py",
+   "sha256_src": "9a8c253a941b8a41d15a25a4c16daeeb4159daf3be238d05b7dde6b4d52ccd90",
+   "sha256_dst": "d909eadc9a0099b5017afef4595467766027f290d87bb4d2f0c2482674eecd12",
+   "n_path_rewrites": 0,
+   "n_special": 2,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "merge_json(os.path.join(HERE, \"results.json\"), \"check1_rge\", out)",
+     "new": "merge_json(_zp.w(\"r1/R14_checks/results.json\"), \"check1_rge\", out)"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "merge_json(os.path.join(HERE, \"STATUS.json\"), \"check1\", st[\"check1\"])",
+     "new": "merge_json(_zp.w(\"r1/R14_checks/STATUS.json\"), \"check1\", st[\"check1\"])"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/holonomy_cross/R14_rge.py (copied 2026-10-15 by code-higgs)",
+    "@@ -5 +6,3 @@",
+    "-\"\"\"R14 independent check of D108 -- check 1: SM mapping lambda(1/L_b).",
+    "+\"\"\"[v12 package, 2026-10-15] Two-loop SM RGE with a three-loop calibration constant (rounds 1-2 SM mapping; superseded for the PRL centre by sm_provider.py, kept for the convergence table and regressions).  mu_b = Mbar_P/722.0 = 3.3726e15 GeV.  Units: GeV.",
+    "+",
+    "+R14 independent check of D108 -- check 1: SM mapping lambda(1/L_b).",
+    "@@ -19,0 +23,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -199 +208 @@",
+    "-    merge_json(os.path.join(HERE, \"results.json\"), \"check1_rge\", out)",
+    "+    merge_json(_zp.w(\"r1/R14_checks/results.json\"), \"check1_rge\", out)",
+    "@@ -203 +212 @@",
+    "-    merge_json(os.path.join(HERE, \"STATUS.json\"), \"check1\", st[\"check1\"])",
+    "+    merge_json(_zp.w(\"r1/R14_checks/STATUS.json\"), \"check1\", st[\"check1\"])"
+   ]
+  },
+  "higgs/zmlib/_smdr_betas.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/holonomy_cross/_smdr_betas.py",
+   "dst": "higgs/zmlib/_smdr_betas.py",
+   "sha256_src": "862fd1bf6ba130a1e0ff64cc90730737432f4bb7b33c703f239b95116b80a059",
+   "sha256_dst": "7dc06196153efbcca32791b58307886954c4859da50fd94f5510eecb57b2fcab",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/holonomy_cross/_smdr_betas.py (copied 2026-10-15 by code-higgs)",
+    "@@ -3,0 +5,7 @@",
+    "+\"\"\"[v12 package, 2026-10-15] Auto-generated (sm_rge.build) from SMDR 1.3 src/betas.c: SM beta-function coefficients by loop order.  Do not edit.\"\"\"",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/zmlib/c150_nnlo_central.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/holonomy_cross/c150_nnlo_central.py",
+   "dst": "higgs/zmlib/c150_nnlo_central.py",
+   "sha256_src": "bc518a2979e64a2577cbeaac97edaaa08f02eb356e7a396dbba9a1e15a3527f2",
+   "sha256_dst": "2a76947d2312e3f2aea42a43b2c20205e252d0a28fff3fff511077225f542fa4",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/holonomy_cross/c150_nnlo_central.py (copied 2026-10-15 by code-higgs)",
+    "@@ -4 +5,3 @@",
+    "-\"\"\"couplings(mt, als, mu) -> dict(g2, gY, yt, lam) from T1 (C148/D120) sm_provider, variant 'central'",
+    "+\"\"\"[v12 package, 2026-10-15] Adapter couplings(mt, als, mu) -> sm_provider variant 'central' (M_h = 125.13) for C150_twod (env C150_COUPLINGS=module:<this file>).",
+    "+",
+    "+couplings(mt, als, mu) -> dict(g2, gY, yt, lam) from T1 (C148/D120) sm_provider, variant 'central'",
+    "@@ -6,0 +10,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/zmlib/cross_2d.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/holonomy_cross/cross_2d.py",
+   "dst": "higgs/zmlib/cross_2d.py",
+   "sha256_src": "fb08d787fab1de0ca2fb74020f104563b9f82f48eeae20c3bac667629f9c814b",
+   "sha256_dst": "0beb394324a489de380c8a7e823623741462850ee2d0c4ccf9ddcc8b8e4b8b2c",
+   "n_path_rewrites": 1,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 36,
+     "old": "04_calculations\\results\\20261013_claude_v12_r2\\higgs_beyond_bo\\run01\\C140_summary.json",
+     "new": "_zp.w(\"r2/higgs_beyond_bo/run01/C140_summary.json\")"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/holonomy_cross/cross_2d.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-r\"\"\"C149 stages C/D -- zero-mode/nonzero-mode cross terms in the D112 (r, |w|) 2D model (holonomy-cross, D121 Sec. 3).",
+    "+r\"\"\"[v12 package, 2026-10-15] 2D solver pieces with the cross-term channel potential, including the exact light-fermion twist V_L(r, s).  Paper: PRD App. H2'. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C149 stages C/D -- zero-mode/nonzero-mode cross terms in the D112 (r, |w|) 2D model (holonomy-cross, D121 Sec. 3).",
+    "@@ -15,0 +19,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -36 +45 @@",
+    "-C140SUM = os.path.join(X.ROOT, r\"04_calculations\\results\\20261013_claude_v12_r2\\higgs_beyond_bo\\run01\\C140_summary.json\")",
+    "+C140SUM = os.path.join(X.ROOT, _zp.w(\"r2/higgs_beyond_bo/run01/C140_summary.json\"))"
+   ]
+  },
+  "higgs/zmlib/cross_core.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/holonomy_cross/cross_core.py",
+   "dst": "higgs/zmlib/cross_core.py",
+   "sha256_src": "ba9e674b58bfc129d74a4393bfe2299c90036f4ca00cd56383195b44534c76f0",
+   "sha256_dst": "4711622918de49565e4ff492f283d87134f6df88aaec5fe88594de13c5f7cf4d",
+   "n_path_rewrites": 3,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 185,
+     "old": "04_calculations\\code\\20261013_claude_v12_r2\\higgs_beyond_bo",
+     "new": "_zp.ZMLIB"
+    },
+    {
+     "kind": "path",
+     "line": 32,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run01",
+     "new": "_zp.w(\"r3/holonomy_cross/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 31,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/holonomy_cross/cross_core.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-r\"\"\"C149 cross_core -- DNEC v12 round 3, agent holonomy-cross (T2, derivation D121).  2026-10-14.",
+    "+r\"\"\"[v12 package, 2026-10-15] Zero-mode / non-zero-mode cross terms (D121): twisted image sums E_theta(m), curvature C(m), holonomy dependence of all SM fields (P/A spin structures, AAA fermions), kappa_3, kappa_2, kappa_Y.  Paper: PRD App. H2'. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C149 cross_core -- DNEC v12 round 3, agent holonomy-cross (T2, derivation D121).  2026-10-14.",
+    "@@ -19,0 +23,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -31,2 +40,2 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-RES = os.path.join(ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run01\")",
+    "+ROOT = _zp.WORK",
+    "+RES = os.path.join(ROOT, _zp.w(\"r3/holonomy_cross/run01\"))",
+    "@@ -185 +194 @@",
+    "-    sys.path.insert(0, os.path.join(ROOT, r\"04_calculations\\code\\20261013_claude_v12_r2\\higgs_beyond_bo\"))",
+    "+    sys.path.insert(0, os.path.join(ROOT, _zp.ZMLIB))"
+   ]
+  },
+  "higgs/zmlib/cross_kappa.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/holonomy_cross/cross_kappa.py",
+   "dst": "higgs/zmlib/cross_kappa.py",
+   "sha256_src": "2d26e68fab12d8cccc899655f7600b662773cfdf692660f3afad5a292a1913bc",
+   "sha256_dst": "4778fa72626e3757a8e24304b477ec7243fb3579f7142f6638d192c38032aed4",
+   "n_path_rewrites": 3,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 142,
+     "old": "04_calculations\\code\\20261013_claude_v12_r2\\higgs_beyond_bo",
+     "new": "_zp.ZMLIB"
+    },
+    {
+     "kind": "path",
+     "line": 103,
+     "old": "04_calculations\\code\\20261013_claude_v12_r2\\higgs_beyond_bo",
+     "new": "_zp.ZMLIB"
+    },
+    {
+     "kind": "path",
+     "line": 31,
+     "old": "04_calculations\\results\\20261013_claude_v12_r2\\higgs_beyond_bo\\run01\\C140_profile_v11.npz",
+     "new": "_zp.w(\"r2/higgs_beyond_bo/run01/C140_profile_v11.npz\")"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/holonomy_cross/cross_kappa.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-r\"\"\"C149 stage B -- r-dependent one-loop Hessian of the gauge zero modes (holonomy-cross, D121 Sec. 2).",
+    "+r\"\"\"[v12 package, 2026-10-15] One-loop Hessians H11, H33, H3w, Hww(r) of the constant gauge modes in the Higgs background, split by field (W, Higgs, top, light fermions), CCA.  Paper: PRD App. H2'. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C149 stage B -- r-dependent one-loop Hessian of the gauge zero modes (holonomy-cross, D121 Sec. 2).",
+    "@@ -16,0 +20,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -31 +40 @@",
+    "-PROFILE = os.path.join(X.ROOT, r\"04_calculations\\results\\20261013_claude_v12_r2\\higgs_beyond_bo\\run01\\C140_profile_v11.npz\")",
+    "+PROFILE = os.path.join(X.ROOT, _zp.w(\"r2/higgs_beyond_bo/run01/C140_profile_v11.npz\"))",
+    "@@ -103 +112 @@",
+    "-    sys.path.insert(0, os.path.join(X.ROOT, r\"04_calculations\\code\\20261013_claude_v12_r2\\higgs_beyond_bo\"))",
+    "+    sys.path.insert(0, os.path.join(X.ROOT, _zp.ZMLIB))",
+    "@@ -142 +151 @@",
+    "-        sys.path.insert(0, os.path.join(X.ROOT, r\"04_calculations\\code\\20261013_claude_v12_r2\\higgs_beyond_bo\"))",
+    "+        sys.path.insert(0, os.path.join(X.ROOT, _zp.ZMLIB))"
+   ]
+  },
+  "higgs/zmlib/cross_var.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/holonomy_cross/cross_var.py",
+   "dst": "higgs/zmlib/cross_var.py",
+   "sha256_src": "8845047c8def781a6e258bb13975ef00678d47638044271a41a0af027021eb33",
+   "sha256_dst": "27c95f226b67819f209381e88521b6e8da9f37b5249edf1e1fa56bc04198566f",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/holonomy_cross/cross_var.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-r\"\"\"C149 stage D(b,c) -- VARIATIONAL treatment of the cross terms (holonomy-cross, D121 Sec. 3.3).",
+    "+r\"\"\"[v12 package, 2026-10-15] SU(2)/U(1) Gaussian functional re-minimised with the cross terms (Newton), SU(3)-top variational energy E(s).  Paper: PRD App. H2'. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C149 stage D(b,c) -- VARIATIONAL treatment of the cross terms (holonomy-cross, D121 Sec. 3.3).",
+    "@@ -14,0 +18,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/zmlib/hr_core.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/realtime_2d/hr_core.py",
+   "dst": "higgs/zmlib/hr_core.py",
+   "sha256_src": "3ce96945ad06ef5a0cb9af6f4e13530a1dae7e7292d7a9b994321068235e78b1",
+   "sha256_dst": "845fda717f684cdf35bdfb2c076fe0328013bb27dcace84bdc16cbb91295c04b",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/realtime_2d/hr_core.py (copied 2026-10-15 by code-higgs)",
+    "@@ -4 +5,3 @@",
+    "-\"\"\"C139 / D111 core: real-time TDSE for the SM-Higgs zero mode along the v11 Casimir turn.",
+    "+\"\"\"[v12 package, 2026-10-15] Real-time zero-mode TDSE through the turn (D111): conformal frame, exact lens transform to the physical frame, Wigner/TWA hand-over, survival measures.  Paper: PRD App. H3. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C139 / D111 core: real-time TDSE for the SM-Higgs zero mode along the v11 Casimir turn.",
+    "@@ -16,0 +20,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/zmlib/hr_part2.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/realtime_2d/hr_part2.py",
+   "dst": "higgs/zmlib/hr_part2.py",
+   "sha256_src": "9c221ffa4ab5853429da63af687ab35de8d2aeaa5ec696f074fd22a583c89e82",
+   "sha256_dst": "622e59c1a6c629981d33dea07454aeacb59368dc85a03d399f9194ed1ae481e9",
+   "n_path_rewrites": 2,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 28,
+     "old": "04_calculations\\results\\20261013_claude_v12_r2\\higgs_realtime\\run01",
+     "new": "_zp.w(\"r2/higgs_realtime/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 27,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/realtime_2d/hr_part2.py (copied 2026-10-15 by code-higgs)",
+    "@@ -4 +5,3 @@",
+    "-\"\"\"C139 Part 2: late-turn fate of the Higgs zero mode for xi_H < 1/6 (replaces the 'two conventions' of run03_xi).",
+    "+\"\"\"[v12 package, 2026-10-15] D111 part 2 drivers (late-turn real-time runs, xi scans) used by realtime_2d.  Paper: PRD App. H3.",
+    "+",
+    "+C139 Part 2: late-turn fate of the Higgs zero mode for xi_H < 1/6 (replaces the 'two conventions' of run03_xi).",
+    "@@ -11,0 +15,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -27,2 +36,2 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-RES = os.path.join(ROOT, r\"04_calculations\\results\\20261013_claude_v12_r2\\higgs_realtime\\run01\")",
+    "+ROOT = _zp.WORK",
+    "+RES = os.path.join(ROOT, _zp.w(\"r2/higgs_realtime/run01\"))"
+   ]
+  },
+  "higgs/zmlib/hr_post.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/realtime_2d/hr_post.py",
+   "dst": "higgs/zmlib/hr_post.py",
+   "sha256_src": "da17aec5d448e57c00588c234662558b170b2caa15ad33da7bfe30bb1cb4a955",
+   "sha256_dst": "7b276ffaab71ecc8943f0bde544f87a9c47624410375f90f1fedec075e5cadf1",
+   "n_path_rewrites": 2,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 21,
+     "old": "04_calculations\\results\\20261013_claude_v12_r2\\higgs_realtime\\run01",
+     "new": "_zp.w(\"r2/higgs_realtime/run01\")"
+    },
+    {
+     "kind": "path",
+     "line": 20,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/realtime_2d/hr_post.py (copied 2026-10-15 by code-higgs)",
+    "@@ -4 +5,3 @@",
+    "-\"\"\"C139 post-processing: Part-1 measure table, Part-2 P_surv table, xi_c (P(xi) = 0.99 P(1/6)) with errors,",
+    "+\"\"\"[v12 package, 2026-10-15] D111 post-processing (xi_c extraction).  Paper: PRD App. H3.",
+    "+",
+    "+C139 post-processing: Part-1 measure table, Part-2 P_surv table, xi_c (P(xi) = 0.99 P(1/6)) with errors,",
+    "@@ -5,0 +9,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -20,2 +29,2 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-RES = os.path.join(ROOT, r\"04_calculations\\results\\20261013_claude_v12_r2\\higgs_realtime\\run01\")",
+    "+ROOT = _zp.WORK",
+    "+RES = os.path.join(ROOT, _zp.w(\"r2/higgs_realtime/run01\"))"
+   ]
+  },
+  "higgs/zmlib/hr_potential.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/realtime_2d/hr_potential.py",
+   "dst": "higgs/zmlib/hr_potential.py",
+   "sha256_src": "13a7e3529cb8e89a07b4207e0cadedf98d26726192bf02dccdcf920ec1fe7d60",
+   "sha256_dst": "09e09cac06748dd61cdd23ef1e7c365e545f25effd2a6a325b2a328df7b311bb",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/realtime_2d/hr_potential.py (copied 2026-10-15 by code-higgs)",
+    "@@ -4 +5,3 @@",
+    "-\"\"\"C139 / D111 (higgs-realtime): PLUGGABLE zero-mode potential, conformal frame, curvature term NOT included.",
+    "+\"\"\"[v12 package, 2026-10-15] Potential tables for the real-time zero-mode evolution (D111/D129): U(r, u) along the turn with running lam, pluggable sources.  Paper: PRD App. H3. Units: box length L = 1 (energies in 1/L); couplings MS-bar at the stated scale.",
+    "+",
+    "+C139 / D111 (higgs-realtime): PLUGGABLE zero-mode potential, conformal frame, curvature term NOT included.",
+    "@@ -20,0 +24,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/zmlib/qcd.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/holonomy_cross/qcd.py",
+   "dst": "higgs/zmlib/qcd.py",
+   "sha256_src": "f848a214571dfbe8bf451f8887f95ce71d2a2842fb3917ca6487c9f216f3f9f8",
+   "sha256_dst": "5ccd826bac49f3f335a909d0729c2bbedeac37ce0830cc585f3f9bc4b694f4ba",
+   "n_path_rewrites": 0,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/holonomy_cross/qcd.py (copied 2026-10-15 by code-higgs)",
+    "@@ -4 +5,3 @@",
+    "-\"\"\"C148 (sm-mapping): pure-QCD pieces of the SM mapping (own implementation; RunDec was not obtainable).",
+    "+\"\"\"[v12 package, 2026-10-15] QCD helpers: alpha_s running/decoupling, top pole <-> MS-bar conversion to four loops (Marquard et al. 2015, z4 = -859.96 +- 21.5), mbar(mbar).  Paper: PRD App. H5 (m_t definitions).  Units: GeV.",
+    "+",
+    "+C148 (sm-mapping): pure-QCD pieces of the SM mapping (own implementation; RunDec was not obtainable).",
+    "@@ -15,0 +19,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)"
+   ]
+  },
+  "higgs/zmlib/sm_provider.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/sm_provider.py",
+   "dst": "higgs/zmlib/sm_provider.py",
+   "sha256_src": "41db3b8f11413c02f7a3680e8c8f4a58163345b7f27dd824774d33d426a70ceb",
+   "sha256_dst": "03ec7b4278987722f0f0f9ed57d9726af01f927c242f987f4d582a545ca863c0",
+   "n_path_rewrites": 1,
+   "n_special": 0,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 74,
+     "old": "04_calculations\\results\\20261014_claude_v12_r3\\sm_mapping\\run02\\fits\\fits.json",
+     "new": "_zp.w(\"r3/sm_mapping/run02/fits/fits.json\")"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/sm_mapping/sm_provider.py (copied 2026-10-15 by code-higgs)",
+    "@@ -2 +3,3 @@",
+    "-\"\"\"C148 / D120 (sm-mapping): MSbar coupling provider for the DNEC Higgs zero-mode criterion.",
+    "+\"\"\"[v12 package, 2026-10-15] SM mapping (D120/T1): SMDR-1.3-type NNLO matching at mu0 = M_t (scheme 'SMDR25') + SMDR-port RGE (full 3-loop, 4-loop gauge, leading 4/5-loop QCD); couplings(M_t, alpha_s, M_h, mu) -> lam, y_t, g2, gY, g3 (MS-bar).  Includes the run02 compiled-SMDR refit variants 'sfit_*'.  The copies used by the Higgs runs (holonomy_cross etc.) are identical except for that additional sfit block.  Paper: PRD App. H5; PRL lam(mu_b) = -0.0098.  Units: GeV.",
+    "+",
+    "+C148 / D120 (sm-mapping): MSbar coupling provider for the DNEC Higgs zero-mode criterion.",
+    "@@ -19,0 +23,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -74 +83 @@",
+    "-FITS2 = os.path.join(RG.ROOT, r\"04_calculations\\results\\20261014_claude_v12_r3\\sm_mapping\\run02\\fits\\fits.json\")",
+    "+FITS2 = os.path.join(RG.ROOT, _zp.w(\"r3/sm_mapping/run02/fits/fits.json\"))"
+   ]
+  },
+  "higgs/zmlib/sm_rge.py": {
+   "src": "04_calculations/code/20261014_claude_v12_r3/holonomy_cross/sm_rge.py",
+   "dst": "higgs/zmlib/sm_rge.py",
+   "sha256_src": "ec66cfaa391814f544c42a08eb4afb1bd6e6c5bcbd06e5adf64a0f37a3e29c27",
+   "sha256_dst": "c2c77b7d87a878cd2cb961e38f8d447748bb0db8ee9d12aebd56d4b6af5c6003",
+   "n_path_rewrites": 2,
+   "n_special": 1,
+   "unmapped": [],
+   "changes": [
+    {
+     "kind": "path",
+     "line": 24,
+     "old": "02_literature\\batches\\20261014_claude_v12_r3_L37\\sm_mapping\\SMDR_src\\SMDR-1.3\\src\\betas.c",
+     "new": "_zp.smdr(\"src/betas.c\")"
+    },
+    {
+     "kind": "path",
+     "line": 23,
+     "old": "<RESEARCH_ROOT>",
+     "new": "_zp.WORK"
+    },
+    {
+     "kind": "special",
+     "count": 1,
+     "old": "def build(force=False):\n    src = open(BETAS_C, encoding=\"utf-8\", errors=\"replace\").read()",
+     "new": "def build(force=False):\n    if not os.path.exists(BETAS_C) and os.path.exists(GEN) and not force:  # [v12-package] SMDR sources optional:\n        with open(GEN, encoding=\"utf-8\") as f:  # use the shipped generated module, report its source hash\n            return re.search(r\"sha256=([0-9a-f]{64})\", f.read(600)).group(1)\n    src = open(BETAS_C, encoding=\"utf-8\", errors=\"replace\").read()"
+    }
+   ],
+   "diff": [
+    "@@ -0,0 +1 @@",
+    "+# PROVENANCE: 04_calculations/code/20261014_claude_v12_r3/holonomy_cross/sm_rge.py (copied 2026-10-15 by code-higgs)",
+    "@@ -4 +5,3 @@",
+    "-\"\"\"C148 (sm-mapping): Standard-Model RGEs, two independent implementations.",
+    "+\"\"\"[v12 package, 2026-10-15] SM RGE right-hand sides auto-generated from SMDR 1.3 betas.c (-> _smdr_betas.py; regeneration needs the SMDR tree from third_party/smdr) and the Buttazzo et al. 2013 B13 betas for cross-checks; ODE solver in t = ln mu.  Paper: PRD App. H5.",
+    "+",
+    "+C148 (sm-mapping): Standard-Model RGEs, two independent implementations.",
+    "@@ -12,0 +16,6 @@",
+    "+import os as _os  # [v12-package] path bootstrap (added 2026-10-15 by code-higgs): zmlib + package root",
+    "+import sys as _sys  # [v12-package]",
+    "+_ZM = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), \"zmlib\")  # [v12-package]",
+    "+if _ZM not in _sys.path:  # [v12-package]",
+    "+    _sys.path.insert(1, _ZM)  # [v12-package]",
+    "+import _zpaths as _zp  # noqa: E402  [v12-package] package paths (higgs/zmlib/_zpaths.py)",
+    "@@ -23,2 +32,2 @@",
+    "-ROOT = r\"<RESEARCH_ROOT>\"",
+    "-BETAS_C = os.path.join(ROOT, r\"02_literature\\batches\\20261014_claude_v12_r3_L37\\sm_mapping\\SMDR_src\\SMDR-1.3\\src\\betas.c\")",
+    "+ROOT = _zp.WORK",
+    "+BETAS_C = os.path.join(ROOT, _zp.smdr(\"src/betas.c\"))",
+    "@@ -36,0 +46,3 @@",
+    "+    if not os.path.exists(BETAS_C) and os.path.exists(GEN) and not force:  # [v12-package] SMDR sources optional:",
+    "+        with open(GEN, encoding=\"utf-8\") as f:  # use the shipped generated module, report its source hash",
+    "+            return re.search(r\"sha256=([0-9a-f]{64})\", f.read(600)).group(1)"
+   ]
+  }
+ }
+}

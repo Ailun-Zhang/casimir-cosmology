@@ -1,0 +1,12 @@
+{
+ "r5/C57_spin_structure/C57_spin_structures.json": {
+  "source": "04_calculations/results/20261009_claude_R5/C57_spin_structure/C57_spin_structures.json",
+  "sha256": "33c813620235cc98776f636732086d50482b809f3155d788a49fbfa739157918",
+  "bytes": 5964
+ },
+ "r5/C68_holonomy_preparation/C68_results.json": {
+  "source": "04_calculations/results/20261009_claude_R5/C68_holonomy_preparation/C68_results.json",
+  "sha256": "f55c3913f068d8062ca91f4374ceb0fbe40c80843ef29d35f1a7158826d021f8",
+  "bytes": 2050
+ }
+}

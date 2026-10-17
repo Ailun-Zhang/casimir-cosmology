@@ -1,0 +1,31 @@
+{
+ "build_seconds": 338.61200120000285,
+ "octant_modes": 345704,
+ "path": "D:\\0PhD\\Perimeter\\Research\\2026\\Directional_Null_Energy_Cosmology\\04_calculations\\results\\20261013_argon_codex_intake\\cmb_ensemble\\run01\\cache\\fresh_shape_A1.41421_th+0.00000_s1.13000_l80_x240_t0.25.npz",
+ "blas": [
+  {
+   "api": "openblas",
+   "n": 1
+  },
+  {
+   "api": "mkl",
+   "n": 1
+  },
+  {
+   "api": "openmp",
+   "n": 1
+  }
+ ],
+ "max_whitened_diff_vs_snapshot": 2.0085823533886548e-16,
+ "octant_modes_snapshot": 345704,
+ "D_fresh": 11.412635594995386,
+ "D_fresh_logdet": 11.412635594995685,
+ "D_snapshot_cache": 11.412635594995375,
+ "D_P5_table": 11.412636,
+ "abs_diff_fresh_vs_cache": 1.0658141036401503e-14,
+ "ok": true,
+ "task": "fresh",
+ "tid": "S1_fresh",
+ "seconds": 356.09303229999205,
+ "pid": 9744
+}

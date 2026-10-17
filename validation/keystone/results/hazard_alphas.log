@@ -1,0 +1,80 @@
+﻿0 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1171_171.60_01.json
+10 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1171_171.60_10.json
+20 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1171_171.80_07.json
+30 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1171_172.00_05.json
+40 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1171_172.20_01.json
+50 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1171_172.20_11.json
+60 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1171_172.40_09.json
+70 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1171_172.60_04.json
+80 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1171_172.80_01.json
+90 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1171_172.80_12.json
+100 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1171_173.00_09.json
+110 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1171_173.20_07.json
+120 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1171_173.40_03.json
+130 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1171_173.60_00.json
+140 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1171_173.60_10.json
+150 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1171_173.80_07.json
+160 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1171_174.00_03.json
+170 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1189_171.60_01.json
+python.exe : D:\Python\envs\py312-main\Lib\site-packages\scipy\integrate\_ivp\rk.py:63: RuntimeWarning: overflow encoun
+tered in dot
+At line:4 char:1
++ & "D:\Python\envs\py312-main\python.exe" -u production.py hazard "0.1 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (D:\Python\envs\...ountered in dot:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  dy = np.dot(K[:s].T, a[:s]) * h
+D:\Python\envs\py312-main\Lib\site-packages\scipy\integrate\_ivp\rk.py:63: RuntimeWarning: invalid value encountered in
+ dot
+  dy = np.dot(K[:s].T, a[:s]) * h
+D:\Python\envs\py312-main\Lib\site-packages\scipy\integrate\_ivp\rk.py:521: RuntimeWarning: invalid value encountered i
+n divide
+  err5 = np.dot(K.T, self.E5) / scale
+D:\Python\envs\py312-main\Lib\site-packages\scipy\integrate\_ivp\rk.py:522: RuntimeWarning: invalid value encountered i
+n divide
+  err3 = np.dot(K.T, self.E3) / scale
+D:\Python\envs\py312-main\Lib\site-packages\scipy\integrate\_ivp\rk.py:63: RuntimeWarning: invalid value encountered in
+ multiply
+  dy = np.dot(K[:s].T, a[:s]) * h
+180 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1189_171.80_00.json
+D:\Python\envs\py312-main\Lib\site-packages\scipy\integrate\_ivp\rk.py:63: RuntimeWarning: overflow encountered in dot
+  dy = np.dot(K[:s].T, a[:s]) * h
+D:\Python\envs\py312-main\Lib\site-packages\scipy\integrate\_ivp\rk.py:63: RuntimeWarning: invalid value encountered in
+ dot
+  dy = np.dot(K[:s].T, a[:s]) * h
+D:\Python\envs\py312-main\Lib\site-packages\scipy\integrate\_ivp\rk.py:521: RuntimeWarning: invalid value encountered i
+n divide
+  err5 = np.dot(K.T, self.E5) / scale
+D:\Python\envs\py312-main\Lib\site-packages\scipy\integrate\_ivp\rk.py:522: RuntimeWarning: invalid value encountered i
+n divide
+  err3 = np.dot(K.T, self.E3) / scale
+190 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1189_171.80_09.json
+200 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1189_172.00_06.json
+210 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1189_172.20_03.json
+220 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1189_172.20_12.json
+230 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1189_172.40_09.json
+240 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1189_172.60_07.json
+D:\Python\envs\py312-main\Lib\site-packages\scipy\integrate\_ivp\rk.py:63: RuntimeWarning: overflow encountered in dot
+  dy = np.dot(K[:s].T, a[:s]) * h
+D:\Python\envs\py312-main\Lib\site-packages\scipy\integrate\_ivp\rk.py:63: RuntimeWarning: invalid value encountered in
+ dot
+  dy = np.dot(K[:s].T, a[:s]) * h
+D:\Python\envs\py312-main\Lib\site-packages\scipy\integrate\_ivp\rk.py:521: RuntimeWarning: invalid value encountered i
+n divide
+  err5 = np.dot(K.T, self.E5) / scale
+D:\Python\envs\py312-main\Lib\site-packages\scipy\integrate\_ivp\rk.py:522: RuntimeWarning: invalid value encountered i
+n divide
+  err3 = np.dot(K.T, self.E3) / scale
+D:\Python\envs\py312-main\Lib\site-packages\scipy\integrate\_ivp\rk.py:63: RuntimeWarning: invalid value encountered in
+ multiply
+  dy = np.dot(K[:s].T, a[:s]) * h
+250 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1189_172.80_05.json
+260 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1189_173.00_02.json
+270 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1189_173.00_12.json
+280 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1189_173.20_08.json
+290 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1189_173.40_05.json
+300 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1189_173.60_02.json
+310 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1189_173.60_12.json
+320 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1189_173.80_09.json
+330 338 D:\0PhD\Perimeter\Research\2026\Directional_Null_Energy_Cosmology\07_reviews\R16_v12_round3\keystone_blind\work\..\results\hazard_shards\h_0.1189_174.00_06.json

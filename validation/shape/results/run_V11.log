@@ -1,0 +1,26 @@
+2026-10-15T05:20:29Z start 24 tasks pid 78448 args {'mode': 'run', 'tx': '-0.38,-0.2,0', 'dirs': 'fwd', 'n0': 0, 'n1': 256, 'shard': 32, 'workers': 4, 'tag': 'V11', 'xi': 0.3, 'rtol': 1e-10, 'conv': 'v11'}
+05:20:35 done 1/24 V11_tx-0.380_fwd_00032.json 5.0s
+05:20:35 done 2/24 V11_tx-0.380_fwd_00000.json 5.1s
+05:20:36 done 3/24 V11_tx-0.380_fwd_00096.json 5.8s
+05:20:38 done 4/24 V11_tx-0.380_fwd_00064.json 8.0s
+05:20:41 done 5/24 V11_tx-0.380_fwd_00192.json 5.2s
+05:20:41 done 6/24 V11_tx-0.380_fwd_00128.json 6.4s
+05:20:42 done 7/24 V11_tx-0.380_fwd_00160.json 6.6s
+05:20:45 done 8/24 V11_tx-0.380_fwd_00224.json 7.1s
+05:20:46 done 9/24 V11_tx-0.200_fwd_00000.json 4.3s
+05:20:46 done 10/24 V11_tx-0.200_fwd_00032.json 4.3s
+05:20:46 done 11/24 V11_tx-0.200_fwd_00064.json 4.2s
+05:20:49 done 12/24 V11_tx-0.200_fwd_00096.json 4.1s
+05:20:49 done 13/24 V11_tx-0.200_fwd_00192.json 3.6s
+05:20:50 done 14/24 V11_tx-0.200_fwd_00160.json 4.1s
+05:20:50 done 15/24 V11_tx-0.200_fwd_00128.json 4.1s
+05:20:53 done 16/24 V11_tx+0.000_fwd_00032.json 3.5s
+05:20:54 done 17/24 V11_tx+0.000_fwd_00000.json 4.1s
+05:20:54 done 18/24 V11_tx+0.000_fwd_00064.json 4.2s
+05:20:54 done 19/24 V11_tx-0.200_fwd_00224.json 5.0s
+05:20:57 done 20/24 V11_tx+0.000_fwd_00128.json 3.3s
+05:20:57 done 21/24 V11_tx+0.000_fwd_00096.json 4.2s
+05:20:58 done 22/24 V11_tx+0.000_fwd_00160.json 3.8s
+05:20:58 done 23/24 V11_tx+0.000_fwd_00192.json 3.7s
+05:21:01 done 24/24 V11_tx+0.000_fwd_00224.json 3.9s
+2026-10-15T05:21:01Z ALL DONE

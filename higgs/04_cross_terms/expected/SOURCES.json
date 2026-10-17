@@ -1,0 +1,262 @@
+{
+ "r3/holonomy_cross/run02/C149_run02_summary.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/C149_run02_summary.json",
+  "sha256": "3a987930c158dc46f9e643f2eef23bea59366bc1dfaac1433ec9c9ed56e9f1f6",
+  "bytes": 2258
+ },
+ "r3/holonomy_cross/run02/shards/TEST_u0.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/TEST_u0.0000.json",
+  "sha256": "9b510432d083f2c0b83deeb92fb755f284afa9e02e3107d317e9596cda17ef31",
+  "bytes": 2541
+ },
+ "r3/holonomy_cross/run02/shards/X_als_u0.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_als_u0.0000.json",
+  "sha256": "508fd8fa6e83a54b2a96fe6555c2567ab8646272b77c06186d71e99ec18c4506",
+  "bytes": 10594
+ },
+ "r3/holonomy_cross/run02/shards/X_als_u0.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_als_u0.5000.json",
+  "sha256": "314b53af309797c500464224c7bd33dd044351cdd0bc8ed98e15a272034bbe3f",
+  "bytes": 10599
+ },
+ "r3/holonomy_cross/run02/shards/X_als_u1.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_als_u1.0000.json",
+  "sha256": "1f1929576066f7a6d5daf2ae9a21c897a677df74b8a9152595d95b0c5628462a",
+  "bytes": 10588
+ },
+ "r3/holonomy_cross/run02/shards/X_als_u1.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_als_u1.5000.json",
+  "sha256": "18ea68c447fc45b3987ccc93021d19cd131be53a76f033f05e9d6ca4831939ad",
+  "bytes": 10590
+ },
+ "r3/holonomy_cross/run02/shards/X_als_u2.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_als_u2.0000.json",
+  "sha256": "09e7cc7b2aed4bdd17ec75f8bfee251b7017befae8524637405a9e1fcbb4c562",
+  "bytes": 10595
+ },
+ "r3/holonomy_cross/run02/shards/X_als_u2.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_als_u2.5000.json",
+  "sha256": "194c4d961f3b197013489083d394f1c6a2d37e00cf7e5666c6dbf338cc0be603",
+  "bytes": 10590
+ },
+ "r3/holonomy_cross/run02/shards/X_als_u3.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_als_u3.0000.json",
+  "sha256": "d897a3639cc719b9ded868e8c13660a463e7a377634eeaf676eb282cb6a185ba",
+  "bytes": 10602
+ },
+ "r3/holonomy_cross/run02/shards/X_als_u3.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_als_u3.5000.json",
+  "sha256": "276921994707397d78f12b905740ec2687040bd24f5b14f0e105111bb61ee711",
+  "bytes": 10604
+ },
+ "r3/holonomy_cross/run02/shards/X_als_u4.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_als_u4.0000.json",
+  "sha256": "4a3df047c17a5e8755605c7a81afc6564a539133a943321493bc8ecb0c2a9b08",
+  "bytes": 10595
+ },
+ "r3/holonomy_cross/run02/shards/X_als_u4.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_als_u4.5000.json",
+  "sha256": "cf8e9d9828c8397568117dfc8e9a569ca98cd33f5d1b35eb1e1977fb8a8b6e45",
+  "bytes": 10609
+ },
+ "r3/holonomy_cross/run02/shards/X_als_u5.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_als_u5.0000.json",
+  "sha256": "7a64d38a567260f049fcf93691b140024469c422f36312cfd00a1273bd2578d0",
+  "bytes": 10606
+ },
+ "r3/holonomy_cross/run02/shards/X_main_u0.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_main_u0.0000.json",
+  "sha256": "52e8f41b41077ab8f18d1f62a3b595ffe7f5120215a5330f8bf4dd48af407a54",
+  "bytes": 10825
+ },
+ "r3/holonomy_cross/run02/shards/X_main_u0.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_main_u0.5000.json",
+  "sha256": "a7bd8d57da29741537431b58ea0446037a0d50deded4445590654b7b3f309759",
+  "bytes": 10578
+ },
+ "r3/holonomy_cross/run02/shards/X_main_u1.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_main_u1.0000.json",
+  "sha256": "9fa9893138df3ee0f4bb3f32b8fa23a48c6ddae71cc4ff6ae9c27e785b8c3b90",
+  "bytes": 10580
+ },
+ "r3/holonomy_cross/run02/shards/X_main_u1.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_main_u1.5000.json",
+  "sha256": "59bb95b4bcc962898482a880d267e7af92ad36b9f0b58c245059892c7daf7b99",
+  "bytes": 10590
+ },
+ "r3/holonomy_cross/run02/shards/X_main_u2.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_main_u2.0000.json",
+  "sha256": "c8da709edb82e497d7eef8ea990540e6ec2949c42ad8459892544111ead7c7a2",
+  "bytes": 10588
+ },
+ "r3/holonomy_cross/run02/shards/X_main_u2.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_main_u2.5000.json",
+  "sha256": "8a03164e92cca86217959c765e102d67ac3a239899178f120a4f8906c8e55cf8",
+  "bytes": 10821
+ },
+ "r3/holonomy_cross/run02/shards/X_main_u3.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_main_u3.0000.json",
+  "sha256": "4874768992699bf50ef790f09df7063c6773a315070d00443bbbf78cef206477",
+  "bytes": 10588
+ },
+ "r3/holonomy_cross/run02/shards/X_main_u3.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_main_u3.5000.json",
+  "sha256": "ecce0f8a484a19b018c1ebfb42925256428ef0a3d8b75c159bec59f584e78e0b",
+  "bytes": 10592
+ },
+ "r3/holonomy_cross/run02/shards/X_main_u4.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_main_u4.0000.json",
+  "sha256": "740ae63cad788fae104ce72236244c177f999942da2ca686231c229e8368af41",
+  "bytes": 10591
+ },
+ "r3/holonomy_cross/run02/shards/X_main_u4.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_main_u4.5000.json",
+  "sha256": "a35cec8f7bd8702b35a9e2fe0f9a7d7f29bb840cb7ff96b698425d440460ec7e",
+  "bytes": 10599
+ },
+ "r3/holonomy_cross/run02/shards/X_main_u5.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/shards/X_main_u5.0000.json",
+  "sha256": "4709a4d202ae495c459613c70935965ee6b85da7c8bc5e3399e8d35edafd5867",
+  "bytes": 10821
+ },
+ "r3/holonomy_cross/run04/C149_run04_summary.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run04/C149_run04_summary.json",
+  "sha256": "40d8d2943fb6fbe7a833257f6223ef2c69c85c4bfe7e3320d59acf2fe04150bc",
+  "bytes": 5932
+ },
+ "r3/holonomy_cross/run04/C149_top_chiral.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run04/C149_top_chiral.json",
+  "sha256": "5063f01fc19bdff137f70d92b8f292fb40e8437e8ff6a1dc925192cd080d4b7d",
+  "bytes": 4926
+ },
+ "r3/holonomy_cross/run05/C149_coulomb_check.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/C149_coulomb_check.json",
+  "sha256": "ac9ae3b8b7aeb705dc6f30d3eda285a1a5bde1e1a9ab1353e02c1168630eb559",
+  "bytes": 2994
+ },
+ "r3/holonomy_cross/run05/C149_run05_summary.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/C149_run05_summary.json",
+  "sha256": "f70dec4299f32f0e23bd933c79628c97c67a67a92ab72b4e9858858ea1085d06",
+  "bytes": 4915
+ },
+ "r3/holonomy_cross/run05/post/C149_run02_summary.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/post/C149_run02_summary.json",
+  "sha256": "e861de12feec456fe79470f2427a05f09254a499f73a8543b95e0e85dd6f7046",
+  "bytes": 2254
+ },
+ "r3/holonomy_cross/run05/shards/TEST_u0.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/TEST_u0.0000.json",
+  "sha256": "8a495dc3dda4fdf3d08c65b595f19c1f22035faf0fb2e5dbef33f2a03183492d",
+  "bytes": 2447
+ },
+ "r3/holonomy_cross/run05/shards/X_als_u0.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_als_u0.0000.json",
+  "sha256": "e000a77c4f9e70e0b3f7f6452d21d0d205eaf39eb4001ba7963dabe0cdbb628e",
+  "bytes": 11312
+ },
+ "r3/holonomy_cross/run05/shards/X_als_u0.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_als_u0.5000.json",
+  "sha256": "aec393fa7a88e8d7ddee8fd2ed579eab6545085b85bfefa5cb9e7409b5f9263b",
+  "bytes": 11318
+ },
+ "r3/holonomy_cross/run05/shards/X_als_u1.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_als_u1.0000.json",
+  "sha256": "9ce1440143dcf1bb382a9cda6ab85e58967c26c87c89941e41bf3266418a5213",
+  "bytes": 11319
+ },
+ "r3/holonomy_cross/run05/shards/X_als_u1.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_als_u1.5000.json",
+  "sha256": "00b3e5860df9273502d4aff1bcad9c287b3d5775e3410800b78aab773c1c1692",
+  "bytes": 11325
+ },
+ "r3/holonomy_cross/run05/shards/X_als_u2.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_als_u2.0000.json",
+  "sha256": "cf3a9248cfbca4607fdd7f0c53abec03cc3a78805a5b2667fe18ce44459ce849",
+  "bytes": 11325
+ },
+ "r3/holonomy_cross/run05/shards/X_als_u2.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_als_u2.5000.json",
+  "sha256": "40800f86f9e7ec17d51b76d89a805fbd995b3d7faebc6be01a5f2a4421bc75e6",
+  "bytes": 11326
+ },
+ "r3/holonomy_cross/run05/shards/X_als_u3.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_als_u3.0000.json",
+  "sha256": "e0412b7596af9d2f5e8a6009d3949a7b234ec9fb47ab11c6961ac1cadd5a584a",
+  "bytes": 11340
+ },
+ "r3/holonomy_cross/run05/shards/X_als_u3.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_als_u3.5000.json",
+  "sha256": "e66fc1cea81e632134a6613e82a32f7dee609c478057b2d516307719087a4ff4",
+  "bytes": 11336
+ },
+ "r3/holonomy_cross/run05/shards/X_als_u4.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_als_u4.0000.json",
+  "sha256": "d1ff68dc282d72515297ed9d26d95f09f52776968344c67b0f83079a7ef55e03",
+  "bytes": 11339
+ },
+ "r3/holonomy_cross/run05/shards/X_als_u4.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_als_u4.5000.json",
+  "sha256": "880c7dcda2222ea8f1c883bd9b2a75a87bf19baf2240245735c1b9f1a6d3f89b",
+  "bytes": 11349
+ },
+ "r3/holonomy_cross/run05/shards/X_als_u5.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_als_u5.0000.json",
+  "sha256": "6c9673177ab87436925449b8a49d7e99ef686fda593622e7fe8078692de19ef1",
+  "bytes": 11345
+ },
+ "r3/holonomy_cross/run05/shards/X_main_u0.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u0.0000.json",
+  "sha256": "012de5f8e99a220c667b5b44dc23a5e3f4b3f1f385a64eafd21979f74dfac73d",
+  "bytes": 11550
+ },
+ "r3/holonomy_cross/run05/shards/X_main_u0.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u0.5000.json",
+  "sha256": "747ee10fd89aa29713f1e3feff836832fc2816b18d84065519907c0e1aa71f50",
+  "bytes": 11322
+ },
+ "r3/holonomy_cross/run05/shards/X_main_u1.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u1.0000.json",
+  "sha256": "aba15157682401e394cae8c1b11590b48f43c95c7530f156bb56f1cd604589ff",
+  "bytes": 11310
+ },
+ "r3/holonomy_cross/run05/shards/X_main_u1.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u1.5000.json",
+  "sha256": "b920a4d3c6981d61c74f68b181ef03dc973c63254b3ca37914949d2d333560d0",
+  "bytes": 11325
+ },
+ "r3/holonomy_cross/run05/shards/X_main_u2.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u2.0000.json",
+  "sha256": "4c37143f8ca9d59c00792c22f70b980595f0dffad3f80ff254d021e95a19e4b1",
+  "bytes": 11320
+ },
+ "r3/holonomy_cross/run05/shards/X_main_u2.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u2.5000.json",
+  "sha256": "97adff0e0b9cb2139dfcc5ac81cf6c52227da69229ff9612a4a905575107f5b4",
+  "bytes": 11543
+ },
+ "r3/holonomy_cross/run05/shards/X_main_u3.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u3.0000.json",
+  "sha256": "c7b62712e632bad728e7e97eb19c747cb2962631e852521b4872408a1378e040",
+  "bytes": 11321
+ },
+ "r3/holonomy_cross/run05/shards/X_main_u3.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u3.5000.json",
+  "sha256": "9294ba40a07094948d46e7a44536aaa30994e8a31076f365d49b05d7ae959f5c",
+  "bytes": 11328
+ },
+ "r3/holonomy_cross/run05/shards/X_main_u4.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u4.0000.json",
+  "sha256": "3d3dd31a940a353035961110bc7e95e05d18c4478b26f964a6b5ab783bfc45b3",
+  "bytes": 11326
+ },
+ "r3/holonomy_cross/run05/shards/X_main_u4.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u4.5000.json",
+  "sha256": "4642e77df2d4822083a17bc22ffc25a2e4bf72daa582eb8ec11f26d40daf4e95",
+  "bytes": 11333
+ },
+ "r3/holonomy_cross/run05/shards/X_main_u5.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u5.0000.json",
+  "sha256": "0674c126f6002d5097b1a47fc5ea0449297b55c7eb8434e4f0f17608c9cb7997",
+  "bytes": 11584
+ }
+}

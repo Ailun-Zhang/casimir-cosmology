@@ -1,0 +1,490 @@
+{
+ "_doc": "Provenance of figures/data/higgs (fig-higgs). kind = copy | generated. Paths relative to the project root (research tree) or to figures/data.",
+ "files": {
+  "higgs/claims_run05/fig2a_P1_grid_mt_alphas.csv": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/fig2a_P1_grid_mt_alphas.csv",
+   "sha256": "3b9656cc998a3269a97f57d57d4e3fda5218950a76757d15aaea0c44d67aabcf",
+   "purpose": "P1(m_t) at alpha_s grid (run05 centre): prl_fig2/prd_criterion panel a"
+  },
+  "higgs/claims_run05/fig2a_contours_mt_alphas.csv": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/fig2a_contours_mt_alphas.csv",
+   "sha256": "18649838a8beae95e7ed02402657d0a57ba78df7817045328c58ae8d074be1b5",
+   "purpose": "critical m_t(alpha_s) for P1 = 0.9/0.5/0.1 with theory 1 sigma: (m_t, alpha_s) plane"
+  },
+  "higgs/claims_run05/fig2a_ellipses.csv": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/fig2a_ellipses.csv",
+   "sha256": "3501b2019500a7e91884955b1a119d390fa28318373ab32a0b34a034653c6c6f",
+   "purpose": "current-measurement 68/95% ellipses in (m_t, alpha_s)"
+  },
+  "higgs/claims_run05/fig2b_xi_curves.csv": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/fig2b_xi_curves.csv",
+   "sha256": "3f34202c0155b34cb6d04c41688cc2c829bdde03192f395a70e13df7120cab72",
+   "purpose": "xi_inf (mu_b and EW readings) on a fine m_t grid; its xi_c columns are the run02 model and are NOT used"
+  },
+  "higgs/claims_run05/fig2b_points.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/fig2b_points.json",
+   "sha256": "90387a501c3b588bcf655751d0ce4f860d5323dd145580167b740ce6bdb331ae",
+   "purpose": "P1 = 0.9/0.5/0.1 verticals (run05), literature xi values"
+  },
+  "higgs/claims_run05/xi_run05_summary.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05_summary.json",
+   "sha256": "0a18f5a95155fc37b1d5cb616f76f427c46a5c087c98960fce8d263be67e10d5",
+   "purpose": "xi_c(mu_b) at the run05 centre (172.20/172.60/172.95/172.96/173.00) and run02 points"
+  },
+  "higgs/claims_run05/future_reach.csv": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/future_reach.csv",
+   "sha256": "f240789255aa0f753b55403bd00f476588e5fd2f5cd7fa59559de0302f2366f6",
+   "purpose": "FCC-ee / HL-LHC sigma_meas and sigma_tot"
+  },
+  "higgs/claims_run05/C154_summary.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/C154_summary.json",
+   "sha256": "04a75b7146b4d4fa25b461b04cfdcf992c5ddaebada470e7ef05f3bfea897783",
+   "purpose": "measurement definitions (marginal.*), m0, lambda_c, critical m_t, exclusion values"
+  },
+  "higgs/claims_run05/table1_error_budget_run05.csv": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/table1_error_budget_run05.csv",
+   "sha256": "67619fc994ac9efa00789010b5a46f3f74c89e17a1d2643adecdd9c29ae8a0e5",
+   "purpose": "SM-mapping error (pole/m-bar) for the SM point at mu_b"
+  },
+  "higgs/claims_run05/C154_inputs_v2_run05.json": {
+   "kind": "copy",
+   "source": "04_calculations/code/20261015_claude_v12_writing/claims_run05/C154_inputs_v2_run05.json",
+   "sha256": "ef3733d58a1ad3c2a2dff5bfc03d08ba5df2229742dd8f5dd112abc28f018f08",
+   "purpose": "claim-layer configuration: future scenarios (s_m, s_as, kappa), pole <-> m-bar points"
+  },
+  "higgs/holonomy_cross_run05/C149_run05_summary.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/C149_run05_summary.json",
+   "sha256": "f70dec4299f32f0e23bd933c79628c97c67a67a92ab72b4e9858858ea1085d06",
+   "purpose": "run05 centre: lam_c, crit, P1 grid"
+  },
+  "higgs/sm_mapping_run02/R3_mbar_run05.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/sm_mapping/run02/R3_mbar_run05.json",
+   "sha256": "3fe8340aec782bcbef7d683a8a126fd3af4428868ac9117a7859d4b18f1ce4d8",
+   "purpose": "critical m-bar_t(m-bar_t) at the run05 centre (top-axis check)"
+  },
+  "higgs/sm_mapping_run01/C148_summary.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/sm_mapping/run01/C148_summary.json",
+   "sha256": "b9e654e016aed15f3b2db5de30a3cb4a58926f2b1fddea8deae094878533ca78",
+   "purpose": "lambda(mu_b) at (172.60, 0.1180, 125.13): check of the generated running"
+  },
+  "higgs/realtime_2d_run02/C157_run02_summary.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/realtime_2d/run02/C157_run02_summary.json",
+   "sha256": "c7fc8249f6368d3abacccc0f09bff261f532e794eb27356288b22ab886db52df",
+   "purpose": "xi_c SM/alpha_s variants and bands (run02 centre; direct band check)"
+  },
+  "higgs/inflation_stability_run01/xi_inf_table.csv": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/xi_inf_table.csv",
+   "sha256": "62aab6d1fa1b998e68f7220b2633f2394ade3650a365a7634536579be62cb5f8",
+   "purpose": "all-mode inflation bound xi_inf(m_t) for three alpha_s"
+  },
+  "higgs/fulldim_dmc_run01/T14a_profile.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/T14a_profile.json",
+   "sha256": "097bdbb8871462224696e769e1ec47ec497c8f647867f5280231f4a9da519a2c",
+   "purpose": "Siegert energies/widths and r_top, r1, r2 at lam = -0.010/-0.013 (2D_ex)"
+  },
+  "higgs/generated/lambda_running.csv": {
+   "kind": "generated",
+   "generator": "prepare_data_higgs.py gen_running",
+   "sha256": "b42e77a4dca1fb8b2a269fe06cd8beff0ea4f59579edafb41bb3fc469b3b69cf",
+   "purpose": "SM running lambda(mu), m_t = 172.2/172.6/173.0 (alpha_s 0.1180) and alpha_s = 0.1171/0.1189 (m_t 172.6): prl_fig1b",
+   "code": [
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/sm_provider.py",
+     "sha256": "41db3b8f11413c02f7a3680e8c8f4a58163345b7f27dd824774d33d426a70ceb"
+    },
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/sm_rge.py",
+     "sha256": "6d8eb071e4581cc64b96dda00cb942ace73fe0a01cd7e0a6348974a3f6c6b612"
+    },
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/qcd.py",
+     "sha256": "43a132c8516c7073007bf4513dc153e54c8a77e6b012d6e78b26a62a823261f5"
+    },
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/_smdr_betas.py",
+     "sha256": "862fd1bf6ba130a1e0ff64cc90730737432f4bb7b33c703f239b95116b80a059"
+    }
+   ],
+   "checks": {
+    "lam_mu_b_172.6_0.1180": [
+     -0.009774142178602658,
+     -0.009774142178602658,
+     0.0
+    ],
+    "m0_at_0.1180": [
+     171.0921162840256,
+     171.09212339454322,
+     7.110517628916568e-06
+    ],
+    "dlam_mub_dmt_172.6": -0.006566065702598486,
+    "lam_mu_b": {
+     "172.2_0.1180": -0.007156629717177548,
+     "172.6_0.1180": -0.009774142178602658,
+     "173.0_0.1180": -0.012409480879754686,
+     "172.6_0.1171": -0.012091017650765533,
+     "172.6_0.1189": -0.00748861785568902
+    }
+   }
+  },
+  "higgs/generated/m0_lambda_mub_zero.csv": {
+   "kind": "generated",
+   "generator": "prepare_data_higgs.py gen_running",
+   "sha256": "a1ff086c2db4086f0c58ce315ca768b77d08b591c3bf20dcfe769c253eb320f2",
+   "purpose": "lambda(mu_b) = 0 line m0(alpha_s): (m_t, alpha_s) plane",
+   "code": [
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/sm_provider.py",
+     "sha256": "41db3b8f11413c02f7a3680e8c8f4a58163345b7f27dd824774d33d426a70ceb"
+    },
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/sm_rge.py",
+     "sha256": "6d8eb071e4581cc64b96dda00cb942ace73fe0a01cd7e0a6348974a3f6c6b612"
+    },
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/qcd.py",
+     "sha256": "43a132c8516c7073007bf4513dc153e54c8a77e6b012d6e78b26a62a823261f5"
+    },
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/_smdr_betas.py",
+     "sha256": "862fd1bf6ba130a1e0ff64cc90730737432f4bb7b33c703f239b95116b80a059"
+    }
+   ],
+   "checks": {
+    "lam_mu_b_172.6_0.1180": [
+     -0.009774142178602658,
+     -0.009774142178602658,
+     0.0
+    ],
+    "m0_at_0.1180": [
+     171.0921162840256,
+     171.09212339454322,
+     7.110517628916568e-06
+    ],
+    "dlam_mub_dmt_172.6": -0.006566065702598486,
+    "lam_mu_b": {
+     "172.2_0.1180": -0.007156629717177548,
+     "172.6_0.1180": -0.009774142178602658,
+     "173.0_0.1180": -0.012409480879754686,
+     "172.6_0.1171": -0.012091017650765533,
+     "172.6_0.1189": -0.00748861785568902
+    }
+   }
+  },
+  "higgs/generated/potential_2Dex_lam010_013.csv": {
+   "kind": "generated",
+   "generator": "prepare_data_higgs.py gen_potential",
+   "sha256": "538c0546f12e4c9812b7e67e74294c53d71d4a8ddaad4beeaf41265692bbddbb",
+   "purpose": "effective potential along r (lam = -0.010/-0.013) and its parts: prl_fig1a / prd_threshold",
+   "code": [
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/T14a_common.py",
+     "sha256": "3fa54a1e647372a05329db331f32b4e6299a9e6ab112571a69131d4ff5f17e18"
+    },
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/C140_beyond_bo.py",
+     "sha256": "545a838ebdb013a55b9fd51fa6a53002fdce4c94a1aa3685c1f05168296eca7f"
+    },
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/C138_core.py",
+     "sha256": "44822ab02767cb554564a8643cd021d782e0cb5b7d1239d1375d023a90252401"
+    }
+   ],
+   "checks": {
+    "-0.01": {
+     "max_abs_dev_U_at": 7.602807272633072e-13,
+     "r_top_here": 4.34,
+     "r_top_archived": 4.344000000000004
+    },
+    "-0.013": {
+     "max_abs_dev_U_at": 1.5276668818842154e-13,
+     "r_top_here": 4.02,
+     "r_top_archived": 4.022000000000004
+    }
+   }
+  },
+  "higgs/generated/constants.json": {
+   "kind": "generated",
+   "generator": "prepare_data_higgs.py gen_running",
+   "sha256": "c8397f6daf87226d06aad6a2f6b5f36974b579f55dffefd217eab91f8199b7cf",
+   "purpose": "M-bar_P, mu_b, dlambda(mu_b)/dm_t and lambda(mu_b) at the plotted points",
+   "code": [
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/sm_provider.py",
+     "sha256": "41db3b8f11413c02f7a3680e8c8f4a58163345b7f27dd824774d33d426a70ceb"
+    },
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/sm_rge.py",
+     "sha256": "6d8eb071e4581cc64b96dda00cb942ace73fe0a01cd7e0a6348974a3f6c6b612"
+    },
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/qcd.py",
+     "sha256": "43a132c8516c7073007bf4513dc153e54c8a77e6b012d6e78b26a62a823261f5"
+    },
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/_smdr_betas.py",
+     "sha256": "862fd1bf6ba130a1e0ff64cc90730737432f4bb7b33c703f239b95116b80a059"
+    }
+   ],
+   "checks": {
+    "lam_mu_b_172.6_0.1180": [
+     -0.009774142178602658,
+     -0.009774142178602658,
+     0.0
+    ],
+    "m0_at_0.1180": [
+     171.0921162840256,
+     171.09212339454322,
+     7.110517628916568e-06
+    ],
+    "dlam_mub_dmt_172.6": -0.006566065702598486,
+    "lam_mu_b": {
+     "172.2_0.1180": -0.007156629717177548,
+     "172.6_0.1180": -0.009774142178602658,
+     "173.0_0.1180": -0.012409480879754686,
+     "172.6_0.1171": -0.012091017650765533,
+     "172.6_0.1189": -0.00748861785568902
+    }
+   }
+  },
+  "higgs/higgs_beyond_bo_run01/C140_summary.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261013_claude_v12_r2/higgs_beyond_bo/run01/C140_summary.json",
+   "sha256": "8490229ae8c2350dbad019e6b581f1b2532ff820d64b4b3c00b8703d906101e4",
+   "purpose": "Gamma(lambda) and Q for 1D_G/1D_ex/2D_G/2D_ex, static lambda_c, eta_inf: prd_gamma_validation"
+  },
+  "higgs/fulldim_dmc_run01/C151_summary.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/C151_summary.json",
+   "sha256": "225c9de4626ad67cb0919e5d533109e62041b0abfe8825db9fda5f7a20d26189",
+   "purpose": "full-dimensional DMC Delta Q and the four gamma_full/gamma_2D estimates: prd_gamma_validation"
+  },
+  "higgs/universality_run01/C156_eta.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/C156_eta.json",
+   "sha256": "25439f6109ea1ca408cfc11f2b5acb98e3ca0cf3dcecf9e50f98701db18c974b",
+   "purpose": "lambda_c vs duration factor f (exact and WKB), hLb, eta_inf: prd_universality, prd_hazard_realtime"
+  },
+  "higgs/universality_run02/C156_run02.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/universality/run02/C156_run02.json",
+   "sha256": "836fee1b74ba3c69ebf7744ae54bd75574a6648d45a79bac539dbca3206fff03",
+   "purpose": "d ln|lambda_c|/d ln g for g2, gY, yt (exact and WKB): prd_universality"
+  },
+  "higgs/realtime_2d_run01/C157_twod.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/realtime_2d/run01/C157_twod.json",
+   "sha256": "897280778d56ff228db9b672a5604ccdce980ced426cbaf9a06c7d558d34a828",
+   "purpose": "2D real-time (TDSE) vs 1D P_surv(xi_H) at the run02 centre: prd_hazard_realtime"
+  },
+  "higgs/claims_run05/xi_run05/C157_xi_quick.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/C157_xi_quick.json",
+   "sha256": "eeae1ed23f6d6c097ee6a749453e49b57ac9ad2fbfebae4ad0b07b5f56df52de",
+   "purpose": "run05 1D real-time P_surv(xi_H) for both lambda prescriptions: prd_hazard_realtime"
+  },
+  "higgs/claims_run05/cross_decomp_summary.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/cross_decomp/cross_decomp_summary.json",
+   "sha256": "85f4bee06164f005533c872b15060f3aacaf8bb43f04720963a4f5ed6b0f3253",
+   "purpose": "run05 cross-term decomposition (C161 step 6): prd_cross_terms"
+  },
+  "higgs/holonomy_cross_run01/C149_summary.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run01/C149_summary.json",
+   "sha256": "c97034d79d2e9e8aa5552f993f665324a49762fa1161749b8f70916a10db010c",
+   "purpose": "run01 ratio-method components U(1)_Y, SU(2), SU(3)-top (v11 couplings): prd_cross_terms"
+  },
+  "higgs/holonomy_cross_run02/C149_run02_summary.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run02/C149_run02_summary.json",
+   "sha256": "3a987930c158dc46f9e643f2eef23bea59366bc1dfaac1433ec9c9ed56e9f1f6",
+   "purpose": "convergence ladder: + cross terms (run02)"
+  },
+  "higgs/holonomy_cross_run04/C149_run04_summary.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run04/C149_run04_summary.json",
+   "sha256": "40d8d2943fb6fbe7a833257f6223ef2c69c85c4bfe7e3320d59acf2fe04150bc",
+   "purpose": "convergence ladder: run04 (vev mixing, top chiral)"
+  },
+  "higgs/twod_direct_sm_run01/C150_summary.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/twod_direct_sm/run01/C150_summary.json",
+   "sha256": "fbe5af1571b5a280bd3b6d3c36f0d925a28075e6c823247cf34256be34d80297",
+   "purpose": "convergence ladder rows MU ... 2D direct (R14 couplings)"
+  },
+  "higgs/twod_direct_sm_run02/C150_summary.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/twod_direct_sm/run02/C150_summary.json",
+   "sha256": "528cb0e21a4b28c66ce0bde1d47c36b44ff55e98c343cd04957a0a8570cda734",
+   "purpose": "convergence ladder: + NNLO SM mapping (2D direct)"
+  },
+  "higgs/holonomy_cross_run05/X_main_u0.0000.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u0.0000.json",
+   "sha256": "012de5f8e99a220c667b5b44dc23a5e3f4b3f1f385a64eafd21979f74dfac73d",
+   "purpose": "run05 node widths Gamma(m_t, u) at alpha_s = 0.1180: hazard along the turning (prd_hazard_realtime)"
+  },
+  "higgs/holonomy_cross_run05/X_main_u0.5000.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u0.5000.json",
+   "sha256": "747ee10fd89aa29713f1e3feff836832fc2816b18d84065519907c0e1aa71f50",
+   "purpose": "run05 node widths Gamma(m_t, u) at alpha_s = 0.1180: hazard along the turning (prd_hazard_realtime)"
+  },
+  "higgs/holonomy_cross_run05/X_main_u1.0000.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u1.0000.json",
+   "sha256": "aba15157682401e394cae8c1b11590b48f43c95c7530f156bb56f1cd604589ff",
+   "purpose": "run05 node widths Gamma(m_t, u) at alpha_s = 0.1180: hazard along the turning (prd_hazard_realtime)"
+  },
+  "higgs/holonomy_cross_run05/X_main_u1.5000.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u1.5000.json",
+   "sha256": "b920a4d3c6981d61c74f68b181ef03dc973c63254b3ca37914949d2d333560d0",
+   "purpose": "run05 node widths Gamma(m_t, u) at alpha_s = 0.1180: hazard along the turning (prd_hazard_realtime)"
+  },
+  "higgs/holonomy_cross_run05/X_main_u2.0000.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u2.0000.json",
+   "sha256": "4c37143f8ca9d59c00792c22f70b980595f0dffad3f80ff254d021e95a19e4b1",
+   "purpose": "run05 node widths Gamma(m_t, u) at alpha_s = 0.1180: hazard along the turning (prd_hazard_realtime)"
+  },
+  "higgs/holonomy_cross_run05/X_main_u2.5000.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u2.5000.json",
+   "sha256": "97adff0e0b9cb2139dfcc5ac81cf6c52227da69229ff9612a4a905575107f5b4",
+   "purpose": "run05 node widths Gamma(m_t, u) at alpha_s = 0.1180: hazard along the turning (prd_hazard_realtime)"
+  },
+  "higgs/holonomy_cross_run05/X_main_u3.0000.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u3.0000.json",
+   "sha256": "c7b62712e632bad728e7e97eb19c747cb2962631e852521b4872408a1378e040",
+   "purpose": "run05 node widths Gamma(m_t, u) at alpha_s = 0.1180: hazard along the turning (prd_hazard_realtime)"
+  },
+  "higgs/holonomy_cross_run05/X_main_u3.5000.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u3.5000.json",
+   "sha256": "9294ba40a07094948d46e7a44536aaa30994e8a31076f365d49b05d7ae959f5c",
+   "purpose": "run05 node widths Gamma(m_t, u) at alpha_s = 0.1180: hazard along the turning (prd_hazard_realtime)"
+  },
+  "higgs/holonomy_cross_run05/X_main_u4.0000.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u4.0000.json",
+   "sha256": "3d3dd31a940a353035961110bc7e95e05d18c4478b26f964a6b5ab783bfc45b3",
+   "purpose": "run05 node widths Gamma(m_t, u) at alpha_s = 0.1180: hazard along the turning (prd_hazard_realtime)"
+  },
+  "higgs/holonomy_cross_run05/X_main_u4.5000.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u4.5000.json",
+   "sha256": "4642e77df2d4822083a17bc22ffc25a2e4bf72daa582eb8ec11f26d40daf4e95",
+   "purpose": "run05 node widths Gamma(m_t, u) at alpha_s = 0.1180: hazard along the turning (prd_hazard_realtime)"
+  },
+  "higgs/holonomy_cross_run05/X_main_u5.0000.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261014_claude_v12_r3/holonomy_cross/run05/shards/X_main_u5.0000.json",
+   "sha256": "0674c126f6002d5097b1a47fc5ea0449297b55c7eb8434e4f0f17608c9cb7997",
+   "purpose": "run05 node widths Gamma(m_t, u) at alpha_s = 0.1180: hazard along the turning (prd_hazard_realtime)"
+  },
+  "higgs/claims_run05/xi_run05/part2/p2_main_mt172.20_xi0.1667.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.1667.json",
+   "sha256": "7e1723c2eff0176b72e92843637da1c4febf06d5a05147458bc7a0ed8f9804c7",
+   "purpose": "run05 1D real-time history norm(u) and final P_surv: prd_hazard_realtime"
+  },
+  "higgs/claims_run05/xi_run05/part2/p2_main_mt172.60_xi0.1667.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.1667.json",
+   "sha256": "fdfb523316810315ab8e8582de0696888427446f17c17de18b0598fefd01f38e",
+   "purpose": "run05 1D real-time history norm(u) and final P_surv: prd_hazard_realtime"
+  },
+  "higgs/claims_run05/xi_run05/part2/p2_main_mt172.60_xi0.0000.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.0000.json",
+   "sha256": "2b4087b6213ffade45a23f494159c7e08be4f8bcf982089fb57eb6a1c32388cd",
+   "purpose": "run05 1D real-time history norm(u) and final P_surv: prd_hazard_realtime"
+  },
+  "higgs/claims_run05/xi_run05/part2/p2_main_mt173.00_xi0.1667.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.1667.json",
+   "sha256": "031ab85f09614d5799e062aaa43d03483381eb956ea7c1f0ca1fe645bb569bb9",
+   "purpose": "run05 1D real-time history norm(u) and final P_surv: prd_hazard_realtime"
+  },
+  "higgs/generated/wavefunction_2Dex_lam0.npz": {
+   "kind": "generated",
+   "generator": "prepare_data_higgs.py gen_wavefunction",
+   "sha256": "8bc0f21b5dbdeccae3ae4b20faf7954610116b362939102a7a34f7f7736be9b3",
+   "purpose": "2D (r, s) eigenfunction density and potential surface: prd_higgs_wavefunction",
+   "code": [
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/T14a_common.py",
+     "sha256": "3fa54a1e647372a05329db331f32b4e6299a9e6ab112571a69131d4ff5f17e18"
+    },
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/C140_beyond_bo.py",
+     "sha256": "545a838ebdb013a55b9fd51fa6a53002fdce4c94a1aa3685c1f05168296eca7f"
+    },
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/C138_core.py",
+     "sha256": "44822ab02767cb554564a8643cd021d782e0cb5b7d1239d1375d023a90252401"
+    }
+   ],
+   "checks": {
+    "E0_wall": 4.4504971065402295,
+    "E1_wall": 5.08226834928468,
+    "Q_ref_C140": 4.450862613497217,
+    "rw": 9.0,
+    "h": 0.04,
+    "E0_minus_Qref": -0.00036550695698789326
+   }
+  },
+  "higgs/generated/wavefunction_2Dex_lamm0p013.npz": {
+   "kind": "generated",
+   "generator": "prepare_data_higgs.py gen_wavefunction",
+   "sha256": "a5b2856e93e094da4b131c68768fe8b5215f9a6d8bddd45d8dbf495b4e6fb496",
+   "purpose": "2D (r, s) eigenfunction density and potential surface: prd_higgs_wavefunction",
+   "code": [
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/T14a_common.py",
+     "sha256": "3fa54a1e647372a05329db331f32b4e6299a9e6ab112571a69131d4ff5f17e18"
+    },
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/C140_beyond_bo.py",
+     "sha256": "545a838ebdb013a55b9fd51fa6a53002fdce4c94a1aa3685c1f05168296eca7f"
+    },
+    {
+     "path": "04_calculations/code/20261014_claude_v12_r3/fulldim_dmc/C138_core.py",
+     "sha256": "44822ab02767cb554564a8643cd021d782e0cb5b7d1239d1375d023a90252401"
+    }
+   ],
+   "checks": {
+    "E0_wall": 4.285546291169955,
+    "E1_wall": 4.944242513601824,
+    "Q_ref_C140": 4.277898600312821,
+    "rw": 4.4,
+    "h": 0.04,
+    "E0_minus_Qref": 0.007647690857133682
+   }
+  },
+  "higgs/claims_run05/table1_rebuild.json": {
+   "kind": "copy",
+   "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/table1_rebuild.json",
+   "sha256": "56f96bfdc24e1ce1e589fbc9e53b9dd07debdbaa3c7640db915133b4824a79f5",
+   "purpose": "full-dimensional width correction converted with the final-model slopes (t14a.central/envelope): prd_gamma_validation"
+  }
+ },
+ "updated_utc": "2026-10-16T00:01:36Z"
+}

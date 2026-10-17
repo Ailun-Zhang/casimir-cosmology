@@ -1,0 +1,9 @@
+Iteration 1: Total fractional error = 5.532713168127547e-004  (t=3.5s)
+Iteration 2: Total fractional error = 3.889632923736690e-005  (t=6.4s)
+Iteration 3: Total fractional error = 9.647504959714527e-007  (t=9.4s)
+Iteration 4: Total fractional error = 2.236377060661245e-008  (t=12.4s)
+Iteration 5: Total fractional error = 6.831462784255636e-010  (t=15.8s)
+Iteration 6: Total fractional error = 1.165060102678433e-011  (t=18.8s)
+done niter=5 t=18.8s
+
+rc=0 t=18.8

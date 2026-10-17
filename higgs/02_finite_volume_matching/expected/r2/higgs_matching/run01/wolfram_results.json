@@ -1,0 +1,18 @@
+{
+	"scalar_pole":"-1\/64*m2^2\/Pi^2",
+	"scalar_MSbar_minus_CW(3\/2)":"0",
+	"transverse_MSbar_minus_2CW(1\/2)":"(m2^2*(Log[m2] - Log[m2\/mu^2] - 2*Log[mu]))\/(32*Pi^2)",
+	"vector_2T(1\/2)+1L(3\/2)_minus_3CW(5\/6)":"0",
+	"coulomb_I_MSbar_minus_m2(3-log)\/(8pi^2)":"(m2*(-2 - Log[m2] + Log[m2\/mu^2] + 2*Log[mu] - PolyGamma[0, 1\/2] + PolyGamma[0, 3\/2]))\/(8*Pi^2)",
+	"continuum_coeff_of_m^4*Log[m^2]":"1\/(64*Pi^2)",
+	"expected":"1\/(64*Pi^2)",
+	"kinetic_Z":"k^2\/(k^2 + mV^2)",
+	"omega2_minus_expected":"0",
+	"wC_series":"((a - b)^2*(a + b))\/(16*k^5) - (a - b)^2\/(8*k^3) + (a + b)\/(2*k) + k",
+	"subtracted_summand_series":"(a*(5*a - b)*b)\/(16*k^5)",
+	"expected_k^-5_coeff":"(5*a^2*b - a*b^2)\/16",
+	"MC_v11_lam-0.010_E":"4.4098854830482574 - 0.0004935588874517485*I",
+	"MC_v11_lam-0.010_Q":"4.4098854830482574",
+	"MC_v11_lam-0.010_gamma":"0.000987117774903497",
+	"seconds":"1.1744087`7.521364253326141"
+}

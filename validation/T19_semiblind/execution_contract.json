@@ -1,0 +1,40 @@
+{
+  "task": "T19 / R16 unverified_items: independent verification of round-2 unverified items (D114 shape nonlinear survival threshold incl. R1 cases, plateau-background variant, Wigner truncation error; C145 KL layer: independent KL for >=1 shape point + sigma_E +/-10% sensitivity; D115 fossil-amplitude closed form F(kappa_E), F(19.32)=24.550; R10 leftovers METHODOLOGY-2 and DA-5 assessment)",
+  "agent": "unverified-check",
+  "created_utc": "2026-10-14T01:40:00Z",
+  "inputs": {
+    "brief": "07_reviews/R16_v12_round3/unverified_items/BRIEF_T19_unverified_items.md",
+    "common_rules": "00_HANDOFF/20261014_Claude_v12_Round3/briefs/COMMON_RULES_R3_CN.md",
+    "model_definitions_read_first_without_numeric_tables": [
+      "06_paper_draft/versions/v11/main_v11.tex (Sec. VI shape Lagrangian, twisted Ewald force, appendices)",
+      "04_calculations/derivations/20261013_claude_v12_r2/shape_nonlinear_threshold/D114_SHAPE_NONLINEAR_THRESHOLD_CN.md section 1 (method only)",
+      "04_calculations/derivations/20261013_argon_codex_intake/cmb_ensemble/D117_CMB_SHAPE_ENSEMBLE_CN.md sections 1-2 (method only)",
+      "04_calculations/derivations/20261013_claude_v12_r2/observables/D115_OBSERVABLE_RELATIONS_CN.md (closed-form part only)"
+    ],
+    "producer_results_opened_only_after_own_numbers_saved": true,
+    "excluded_dirs": ["04_calculations/**/shape_hardening/ (other agent, keep independent)"]
+  },
+  "method": {
+    "independence": "For each item: read claim + method text (no numeric tables), write own code in work/, save results/<item>_own.json, only then open producer JSON / tables for comparison. Producer code not read before own numbers exist.",
+    "D114": "Own implementation of full nonlinear 5-dim shape dynamics (v11 Lagrangian + twisted Ewald force) on leading-cosh background; Wigner/Gaussian sampling of natural state amplified by s at turn; survival fraction vs s; s50/s90/s99 by interpolation; R1 three real-Gaussian cases; plateau-calibrated background variant; Wigner truncation error via sample-size / truncation-order scan and binomial errors.",
+    "C145_KL": "Own torus KL (E-plane diagonal torus, theta=0, A=sigma_E), low-ell T or TE covariance, compare to snapshot cache; sigma_E +/-10% sensitivity of P>=0.1 window and peak.",
+    "D115": "Independent evaluation of F(kappa_E) closed form (mpmath/scipy quad and, if possible, Wolfram) at kappa_E=19.32; check scaling exponents of sigma_E in (A_s r), C_eff, F.",
+    "R10": "Assessment only: whether METHODOLOGY-2 (higher order) and DA-5 (single-photon branch quantum broadening) affect v12 conclusions; order-of-magnitude with existing/own code where cheap."
+  },
+  "pass_criteria": {
+    "D114": "Own survival fractions within combined binomial+method uncertainty of producer (|diff| <= 3 sigma or <= 0.02 absolute where MC error small); s50/s90/s99 within interpolation error; R1 cases consistent.",
+    "C145_KL": "Own KL eigen-spectrum / likelihood for the chosen shape point agrees with cache to <=1% (or documented reason); sigma_E +/-10% window shift quantified.",
+    "D115": "F(19.32) reproduces 24.550 to 4 significant digits; exponents 1/8, -3/8, 1/2 confirmed from derivation logic.",
+    "R10": "Qualitative impact statement with magnitude estimate where possible."
+  },
+  "verdict_labels": ["PASS", "PASS-with-corrections", "FAIL", "downgrade to numerically-checked"],
+  "environment": {"python": "D:/Python/envs/py312-main/python.exe", "threads": "OMP/OPENBLAS/MKL=1", "max_workers": 3, "mem_per_process_GB": 3},
+  "budget": {"tool_calls_max": 100, "token_target": 600000, "token_hard_cap": 1200000},
+  "outputs": {
+    "code": "07_reviews/R16_v12_round3/unverified_items/work/",
+    "results": "07_reviews/R16_v12_round3/unverified_items/results/",
+    "report": "07_reviews/R16_v12_round3/unverified_items/R16_T19_UNVERIFIED_ITEMS_CN.md",
+    "status": "07_reviews/R16_v12_round3/unverified_items/STATUS.json"
+  },
+  "boundaries": "Read-only on 06_paper_draft, 01_parent_paper, 08_release, frozen 04_calculations dirs, R13-R15 reviews, snapshot; no external contact; no shape_hardening dir reads."
+}

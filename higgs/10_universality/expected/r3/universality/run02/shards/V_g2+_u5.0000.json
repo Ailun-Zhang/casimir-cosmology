@@ -1,0 +1,728 @@
+{
+ "tag": "V_g2+_u5.0000",
+ "var": "g2+",
+ "u": 5.0,
+ "cols": [
+  {
+   "mt": 172.0,
+   "u": 5.0,
+   "var": "g2+",
+   "ok": false,
+   "E": null,
+   "gamma": null,
+   "rho": null,
+   "dQ2": null,
+   "center": 4.57950098007579,
+   "gim": 2.463809151765495e-08,
+   "box_dE": null,
+   "box_ok": false,
+   "n_local_min": 1,
+   "first_min_offset": 0.0,
+   "repair": {
+    "r_b": 14.094,
+    "n_bad": 1520,
+    "grad_max_below_rb": 8.881784197001252e-09
+   },
+   "log": [
+    {
+     "rank": 0,
+     "pass_": 0,
+     "E": [
+      4.580619884063504,
+      -2.1983153961891075e-16
+     ],
+     "real_zero": true,
+     "accepted": false
+    },
+    {
+     "rank": 0,
+     "pass_": 1,
+     "E": [
+      4.874720797389361,
+      0.1913412105815137
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 0,
+     "pass_": 2,
+     "E": [
+      4.874720797389361,
+      0.1913412105815137
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 0,
+     "pass_": 3,
+     "E": [
+      4.874720797389361,
+      0.1913412105815137
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 1,
+     "pass_": 0,
+     "E": [
+      4.580619884063504,
+      -2.1983153961891075e-16
+     ],
+     "real_zero": true,
+     "accepted": false
+    },
+    {
+     "rank": 1,
+     "pass_": 1,
+     "E": [
+      4.874720797389361,
+      0.1913412105815137
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 1,
+     "pass_": 2,
+     "E": [
+      4.874720797389361,
+      0.1913412105815137
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 1,
+     "pass_": 3,
+     "E": [
+      4.874720797389361,
+      0.1913412105815137
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 2,
+     "pass_": 0,
+     "E": [
+      4.580619884063504,
+      -2.1983153961891075e-16
+     ],
+     "real_zero": true,
+     "accepted": false
+    },
+    {
+     "rank": 2,
+     "pass_": 1,
+     "E": [
+      4.874720797389361,
+      0.1913412105815137
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 2,
+     "pass_": 2,
+     "E": [
+      4.874720797389361,
+      0.1913412105815137
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 2,
+     "pass_": 3,
+     "E": [
+      4.874720797389361,
+      0.1913412105815137
+     ],
+     "real_zero": false,
+     "accepted": false
+    }
+   ]
+  },
+  {
+   "mt": 172.4,
+   "u": 5.0,
+   "var": "g2+",
+   "ok": false,
+   "E": null,
+   "gamma": null,
+   "rho": null,
+   "dQ2": null,
+   "center": 4.574961094447331,
+   "gim": 7.353227963817304e-06,
+   "box_dE": null,
+   "box_ok": false,
+   "n_local_min": 2,
+   "first_min_offset": 0.0,
+   "repair": {
+    "r_b": 14.102,
+    "n_bad": 1515,
+    "grad_max_below_rb": 6.6613381477509384e-09
+   },
+   "log": [
+    {
+     "rank": 0,
+     "pass_": 0,
+     "E": [
+      4.575960644116823,
+      5.023646541952062e-19
+     ],
+     "real_zero": true,
+     "accepted": false
+    },
+    {
+     "rank": 0,
+     "pass_": 1,
+     "E": [
+      4.941433856671608,
+      0.1159845405230004
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 0,
+     "pass_": 2,
+     "E": [
+      4.941433856671608,
+      0.1159845405230004
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 0,
+     "pass_": 3,
+     "E": [
+      4.941433856671608,
+      0.1159845405230004
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 1,
+     "pass_": 0,
+     "E": [
+      4.6111842762627795,
+      2.733127380704375e-18
+     ],
+     "real_zero": true,
+     "accepted": false
+    },
+    {
+     "rank": 1,
+     "pass_": 1,
+     "E": [
+      5.011468700349196,
+      0.13135695741908707
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 1,
+     "pass_": 2,
+     "E": [
+      5.011468700349196,
+      0.13135695741908707
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 1,
+     "pass_": 3,
+     "E": [
+      5.011468700349196,
+      0.13135695741908707
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 2,
+     "pass_": 0,
+     "E": [
+      4.6111842762627795,
+      2.733127380704375e-18
+     ],
+     "real_zero": true,
+     "accepted": false
+    },
+    {
+     "rank": 2,
+     "pass_": 1,
+     "E": [
+      5.011468700349196,
+      0.13135695741908707
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 2,
+     "pass_": 2,
+     "E": [
+      5.011468700349196,
+      0.13135695741908707
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 2,
+     "pass_": 3,
+     "E": [
+      5.011468700349196,
+      0.13135695741908707
+     ],
+     "real_zero": false,
+     "accepted": false
+    }
+   ]
+  },
+  {
+   "mt": 172.8,
+   "u": 5.0,
+   "var": "g2+",
+   "ok": false,
+   "E": null,
+   "gamma": null,
+   "rho": null,
+   "dQ2": null,
+   "center": 4.569812096247169,
+   "gim": 0.00014412947702414694,
+   "box_dE": null,
+   "box_ok": false,
+   "n_local_min": 1,
+   "first_min_offset": 0.0,
+   "repair": {
+    "r_b": 14.112,
+    "n_bad": 1511,
+    "grad_max_below_rb": 6.6613381477509384e-09
+   },
+   "log": [
+    {
+     "rank": 0,
+     "pass_": 0,
+     "E": [
+      4.570600907861621,
+      -9.587318676639045e-17
+     ],
+     "real_zero": true,
+     "accepted": false
+    },
+    {
+     "rank": 0,
+     "pass_": 1,
+     "E": [
+      4.945271063452212,
+      0.05030624409028011
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 0,
+     "pass_": 2,
+     "E": [
+      4.945271063452212,
+      0.05030624409028011
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 0,
+     "pass_": 3,
+     "E": [
+      4.945271063452212,
+      0.05030624409028011
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 1,
+     "pass_": 0,
+     "E": [
+      4.570600907861621,
+      -9.587318676639045e-17
+     ],
+     "real_zero": true,
+     "accepted": false
+    },
+    {
+     "rank": 1,
+     "pass_": 1,
+     "E": [
+      4.945271063452212,
+      0.05030624409028011
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 1,
+     "pass_": 2,
+     "E": [
+      4.945271063452212,
+      0.05030624409028011
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 1,
+     "pass_": 3,
+     "E": [
+      4.945271063452212,
+      0.05030624409028011
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 2,
+     "pass_": 0,
+     "E": [
+      4.570600907861621,
+      -9.587318676639045e-17
+     ],
+     "real_zero": true,
+     "accepted": false
+    },
+    {
+     "rank": 2,
+     "pass_": 1,
+     "E": [
+      4.945271063452212,
+      0.05030624409028011
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 2,
+     "pass_": 2,
+     "E": [
+      4.945271063452212,
+      0.05030624409028011
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 2,
+     "pass_": 3,
+     "E": [
+      4.945271063452212,
+      0.05030624409028011
+     ],
+     "real_zero": false,
+     "accepted": false
+    }
+   ]
+  },
+  {
+   "mt": 173.2,
+   "u": 5.0,
+   "var": "g2+",
+   "ok": false,
+   "E": null,
+   "gamma": null,
+   "rho": null,
+   "dQ2": null,
+   "center": 4.563755811639122,
+   "gim": 0.0009126354700537524,
+   "box_dE": null,
+   "box_ok": false,
+   "n_local_min": 2,
+   "first_min_offset": 0.0,
+   "repair": {
+    "r_b": 14.12,
+    "n_bad": 1504,
+    "grad_max_below_rb": 8.881784197001252e-09
+   },
+   "log": [
+    {
+     "rank": 0,
+     "pass_": 0,
+     "E": [
+      4.56400452447194,
+      -2.25359717100512e-16
+     ],
+     "real_zero": true,
+     "accepted": false
+    },
+    {
+     "rank": 0,
+     "pass_": 1,
+     "E": [
+      4.571540608119838,
+      -1.0825332513952773e-15
+     ],
+     "real_zero": true,
+     "accepted": false
+    },
+    {
+     "rank": 0,
+     "pass_": 2,
+     "E": [
+      4.970218395124463,
+      0.1492494442711151
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 0,
+     "pass_": 3,
+     "E": [
+      4.970218395124463,
+      0.1492494442711151
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 1,
+     "pass_": 0,
+     "E": [
+      4.5715406081216585,
+      -4.1177629079629714e-17
+     ],
+     "real_zero": true,
+     "accepted": false
+    },
+    {
+     "rank": 1,
+     "pass_": 1,
+     "E": [
+      4.564004524471075,
+      2.1929264394155217e-16
+     ],
+     "real_zero": true,
+     "accepted": false
+    },
+    {
+     "rank": 1,
+     "pass_": 2,
+     "E": [
+      4.977658511892206,
+      0.1458456997437762
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 1,
+     "pass_": 3,
+     "E": [
+      4.977658511892206,
+      0.1458456997437762
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 2,
+     "pass_": 0,
+     "E": [
+      4.5715406081216585,
+      -4.1177629079629714e-17
+     ],
+     "real_zero": true,
+     "accepted": false
+    },
+    {
+     "rank": 2,
+     "pass_": 1,
+     "E": [
+      4.564004524471075,
+      2.1929264394155217e-16
+     ],
+     "real_zero": true,
+     "accepted": false
+    },
+    {
+     "rank": 2,
+     "pass_": 2,
+     "E": [
+      4.977658511892206,
+      0.1458456997437762
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 2,
+     "pass_": 3,
+     "E": [
+      4.977658511892206,
+      0.1458456997437762
+     ],
+     "real_zero": false,
+     "accepted": false
+    }
+   ]
+  },
+  {
+   "mt": 173.6,
+   "u": 5.0,
+   "var": "g2+",
+   "ok": false,
+   "E": null,
+   "gamma": null,
+   "rho": null,
+   "dQ2": null,
+   "center": 4.556688862366142,
+   "gim": 0.003181335559422908,
+   "box_dE": null,
+   "box_ok": false,
+   "n_local_min": 2,
+   "first_min_offset": 0.0025,
+   "repair": {
+    "r_b": 14.129999999999999,
+    "n_bad": 1499,
+    "grad_max_below_rb": 6.6613381477509384e-09
+   },
+   "log": [
+    {
+     "rank": 0,
+     "pass_": 0,
+     "E": [
+      4.558268255658055,
+      1.0926624225767434e-16
+     ],
+     "real_zero": true,
+     "accepted": false
+    },
+    {
+     "rank": 0,
+     "pass_": 1,
+     "E": [
+      4.999697139317766,
+      -0.16269244755457582
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 0,
+     "pass_": 2,
+     "E": [
+      4.999697139317766,
+      -0.16269244755457582
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 0,
+     "pass_": 3,
+     "E": [
+      4.999697139317766,
+      -0.16269244755457582
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 1,
+     "pass_": 0,
+     "E": [
+      4.535938489489522,
+      -2.044697477449054e-16
+     ],
+     "real_zero": true,
+     "accepted": false
+    },
+    {
+     "rank": 1,
+     "pass_": 1,
+     "E": [
+      4.55826825565814,
+      1.3115098580990968e-16
+     ],
+     "real_zero": true,
+     "accepted": false
+    },
+    {
+     "rank": 1,
+     "pass_": 2,
+     "E": [
+      4.949351886358419,
+      0.199638915082136
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 1,
+     "pass_": 3,
+     "E": [
+      4.949351886358419,
+      0.199638915082136
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 2,
+     "pass_": 0,
+     "E": [
+      4.535938489489522,
+      -2.044697477449054e-16
+     ],
+     "real_zero": true,
+     "accepted": false
+    },
+    {
+     "rank": 2,
+     "pass_": 1,
+     "E": [
+      4.55826825565814,
+      1.3115098580990968e-16
+     ],
+     "real_zero": true,
+     "accepted": false
+    },
+    {
+     "rank": 2,
+     "pass_": 2,
+     "E": [
+      4.949351886358419,
+      0.199638915082136
+     ],
+     "real_zero": false,
+     "accepted": false
+    },
+    {
+     "rank": 2,
+     "pass_": 3,
+     "E": [
+      4.949351886358419,
+      0.199638915082136
+     ],
+     "real_zero": false,
+     "accepted": false
+    }
+   ]
+  }
+ ],
+ "time_s": 657.6655750274658,
+ "n_eval": 456,
+ "scan": {
+  "half": 0.05,
+  "step": 0.0025
+ }
+}

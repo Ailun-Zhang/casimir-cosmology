@@ -1,0 +1,28 @@
+{
+  "task": "T19 unverified_items (R16): D114 shape nonlinear survival (+R1, plateau variant, Wigner truncation), C145 KL layer (+sigma_E +/-10%), D115 F(kappa) closed form, R10 leftovers",
+  "agent": "unverified-check",
+  "updated_utc": "2026-10-14T03:10:00Z",
+  "done": [
+    "D114: own 5D implementation, N=2048 per case; turn-point survival, s50/s90/s99, R1 five t_x, plateau variant, pinch depth, deterministic thresholds, 1D exact-quantum vs TWA truncation estimate",
+    "C145 KL: own CAMB 2.0.5 + own builder; TE40/TE30 reproduce cache to 0.10%/0.11%; sigma_E +/-10% window sensitivity",
+    "D115: F(19.32)=24.550106 confirmed (closed form, 2F1, ODE, Wolfram)",
+    "R10 METHODOLOGY-2 and DA-5 magnitudes with own code",
+    "report R16_T19_UNVERIFIED_ITEMS_CN.md"
+  ],
+  "verdicts": {
+    "D114": "PASS-with-corrections (s99 ~2.9 not 2.2; sigma_c(50%) 0.85 with population sigma_lin; universality within ~5 pp only when conditioned on turning, up to 7 pp / factor 2 in the tail at sigma_lin~2; failures pass H=0 at min eig~0.04 before pinch). Plateau variant: change <=0.8 pp. TWA truncation: <=0.3 pp (1D), -0.011% on natural-state variance.",
+    "C145_KL": "PASS (0.10% TE40, 0.11% TE30); sigma_E +/-10%: P>=0.1 edges -/+0.004 (lower), -/+0.013 (upper), peak +/-10%, integrated measure invariant",
+    "D115": "PASS",
+    "R10_METHODOLOGY-2": "still a one-sided quantitative systematic (sigma_E -5% per -0.02 xi; R1 F survival 14%->20-25%); does not overturn conclusions; higher orders still open",
+    "R10_DA-5": "still relevant for wording: photon-pair branch at xi=0.2999 centre ratio 4.956, 90% range 2.98-11.9 (dbeta_inf/dbeta0=26.6); no effect on vacuum fossil/window/Higgs"
+  },
+  "files": ["R16_T19_UNVERIFIED_ITEMS_CN.md", "execution_contract.json", "results/D114_own.json", "results/d114_runs/", "results/d114_selftest.json", "results/D114_twa1d_own.json", "results/D115_own.json", "results/wolfram_receipts.json", "results/C145_KL_own.json", "results/C145_cache_comparison.json", "results/C145_sigmaE_sensitivity_own.json", "results/R10_magnitudes_own.json", "results/SHA256SUMS.json", "work/*.py"],
+  "key_numbers": {"D114_turn_surv_s1_3_5_10_20_40": [1.0, 0.9873, 0.8184, 0.3647, 0.0674, 0.0015], "s50_s90_s99": [8.18, 4.28, 2.95],
+                  "R1_surv_m0.25_m0.5_m1_F_m2": [0.9849, 0.6450, 0.1641, 0.1396, 0.0547], "plateau_R1_m0.5_m1_F": [0.6533, 0.1675, 0.1440],
+                  "TWA_natural_var_ratio_q_over_twa": 0.99989, "F(19.32)": 24.550106, "KL_TE40_own_vs_cache": [7.218545, 7.225716], "KL_TE30_own_vs_producer": [5.255578, 5.261396],
+                  "window_P>=0.1_sigmaE_x0.9_1.0_1.1": [[1.0125, 1.1675], [1.016, 1.181], [1.019, 1.194]], "photon_branch_xi0.3_ratio_5_50_95": [2.98, 4.91, 11.93]},
+  "unresolved": ["5D quantum (Moyal) correction beyond 1D estimate", "TE80 reading edge not independently built (only l<=40)", "METHODOLOGY-2 beyond first next order", "photon-branch tail survival", "non-Gaussian/mixed states, post-pinch physics"],
+  "next_command": "none (task complete); optional: rerun python work/run_d114.py run turn_lead_deep to finish the 96-draw deep subsample (64 done)",
+  "remaining": [],
+  "complete": true
+}

@@ -1,0 +1,255 @@
+{
+ "task": "R16 V1 diagnosis (after unblinding)",
+ "agent": "sm-blind",
+ "timestamp_utc": "2026-10-15T00:55:05Z",
+ "sign_convention": "dm_c = dlam_b/|S| (producer convention; + = critical m_t up); the blind report table used M_t-equivalent = -dm_c",
+ "comparison_central": {
+  "lambda": {
+   "blind_mr": -0.01005500597106198,
+   "blind_smdr_own_rge": -0.00977824850443415,
+   "production": -0.009774,
+   "diff_mr": -0.00028100597106197993,
+   "diff_smdr": -4.248504434150799e-06
+  },
+  "yt": {
+   "blind_mr": 0.42789648069296293,
+   "blind_smdr_own_rge": 0.4278316301378229,
+   "production": 0.42783,
+   "diff_mr": 6.648069296294468e-05,
+   "diff_smdr": 1.6301378228944507e-06
+  },
+  "g2": {
+   "blind_mr": 0.5278279612398291,
+   "blind_smdr_own_rge": 0.5277574996665626,
+   "production": 0.52776,
+   "diff_mr": 6.796123982910629e-05,
+   "diff_smdr": -2.500333437405189e-06
+  },
+  "gY": {
+   "blind_mr": 0.44258606542630863,
+   "blind_smdr_own_rge": 0.4427281824147794,
+   "production": 0.44277,
+   "diff_mr": -0.0001839345736913689,
+   "diff_smdr": -4.1817585220593756e-05
+  },
+  "g3": {
+   "blind_mr": 0.5356459576500866,
+   "blind_smdr_own_rge": 0.5356534207685703,
+   "production": 0.53565,
+   "diff_mr": -4.0423499133579455e-06,
+   "diff_smdr": 3.420768570294719e-06
+  }
+ },
+ "comparison_dlam_dMt": {
+  "blind": -0.006591751768628982,
+  "production": -0.00656
+ },
+ "reproduction_of_producer_run02": {
+  "own_compiled_copy_minus_producer_xi1": {
+   "lambda": 0.0,
+   "yt": 0.0,
+   "g3": 0.0,
+   "g": 0.0,
+   "gp": 0.0
+  },
+  "dlam_b_xi0p5": {
+   "own": 0.00021753363482427887,
+   "producer": 0.00021753363482427887
+  },
+  "dlam_b_xi2": {
+   "own": -0.00012794913450894785,
+   "producer": -0.00012794913450894785
+  }
+ },
+ "item1_tadpole": {
+  "mr_y_route_is_tadpole_free_identically": {
+   "H": {
+    "y10": -18.307184509322834,
+    "x10_minus_dr": -18.317809977794383
+   },
+   "W": {
+    "y10": -27.314225500438212,
+    "x10_minus_dr": -27.324850968909715
+   },
+   "Z": {
+    "y10": -0.9063806932496696,
+    "x10_minus_dr": -0.9170061617212184
+   },
+   "t": {
+    "y10": 2.0118066925437827,
+    "x10_minus_dr": 2.0064939583080132
+   }
+  },
+  "mr_has_no_tadpole_free_vev_option": true,
+  "mr_FJ_x_route_scale_scan": {
+   "mu0_0.5": {
+    "dlam_b": 0.000530619962053714,
+    "dmc": 0.08049756433168563
+   },
+   "mu0_0.707": {
+    "dlam_b": 0.0005690511585811995,
+    "dmc": 0.08632775907754736
+   },
+   "mu0_1.414": {
+    "dlam_b": -0.0016141632755592335,
+    "dmc": -0.24487622292472386
+   },
+   "mu0_2": {
+    "dlam_b": -0.004508778139116961,
+    "dmc": -0.6840030233806484
+   },
+   "central_minus_yroute_dlam_b": -0.000247740110463239
+  },
+  "BKPV_mu_reproduced_by_blind_mr": {
+   "blind": [
+    -0.35781696981948247,
+    0.17269726358928242
+   ],
+   "BKPV": [
+    -0.36,
+    0.17
+   ]
+  }
+ },
+ "item2_scales": {
+  "mr_decomposition_dmc": {
+   "mu0_0.5": {
+    "full": 0.17269726358928242,
+    "yt": 0.13635809769160445,
+    "lam": 0.03717064761699626,
+    "g3": 0.0016354758039436145,
+    "g2_gY": -0.0026142949811262576,
+    "yt_QCD_tower": 0.055348258101823866,
+    "yt_nonQCD": 0.0810098395897806,
+    "sum_linear": 0.1725499261314181,
+    "alpha_s_dec_at_Mt_variant": 0.17099102311356112
+   },
+   "mu0_0.707": {
+    "full": 0.10322445641959709,
+    "yt": 0.07469763230465286,
+    "lam": 0.028705321666037988,
+    "g3": 0.0010560000691303933,
+    "g2_gY": -0.0012949840270092578,
+    "yt_QCD_tower": 0.029003657751992408,
+    "yt_nonQCD": 0.04569397455266046,
+    "sum_linear": 0.10316397001281198,
+    "alpha_s_dec_at_Mt_variant": 0.10212853160907112
+   },
+   "mu0_1.414": {
+    "full": -0.1504926642734447,
+    "yt": -0.08950687396456813,
+    "lam": -0.06095178152727535,
+    "g3": -0.0015110949228288053,
+    "g2_gY": 0.0013195785159993703,
+    "yt_QCD_tower": -0.03168390542148869,
+    "yt_nonQCD": -0.05782296854307945,
+    "sum_linear": -0.1506501718986729,
+    "alpha_s_dec_at_Mt_variant": -0.14893541638778093
+   },
+   "mu0_2": {
+    "full": -0.35781696981948247,
+    "yt": -0.19568018500750217,
+    "lam": -0.1623059347526476,
+    "g3": -0.003446186354324752,
+    "g2_gY": 0.002709524466291091,
+    "yt_QCD_tower": -0.06621415180698967,
+    "yt_nonQCD": -0.1294660332005125,
+    "sum_linear": -0.35872278164818344,
+    "alpha_s_dec_at_Mt_variant": -0.35428214654861895
+   }
+  },
+  "smdr_L25_single_scale_producer_fits_172p6": {
+   "t0.5": 0.06710511503864587,
+   "t2": -0.027155771133032112,
+   "h0.5": -0.03736135247441406,
+   "h2": 0.011039765322513696,
+   "Z0.5": -0.0002453339462968342,
+   "Z2": -0.0001550169553755004,
+   "G0.5": -0.0001463524246246566,
+   "G2": 0.0006300374470358103,
+   "d0.5": 0.003669513768827203,
+   "d2": -0.0037542384123834915,
+   "xi0.5": 0.0330008839015374,
+   "xi2": -0.019410490412863343
+  },
+  "smdr_L2_own_fits": {
+   "L25_xi0.5": 0.032999641205139395,
+   "L25_xi2": -0.019409759482546703,
+   "L2_xi0.5": 0.005622071919902856,
+   "L2_xi2": 0.0018119306606448654,
+   "L2_t0.5": 0.06710601901510961,
+   "L2_t2": -0.027180494719520353,
+   "L2_h0.5": -0.07013284978202818,
+   "L2_h2": 0.029858154673352743,
+   "L2_G0.5": 0.0043520133975913766,
+   "L2_G2": 0.0032961242827366016
+  },
+  "smdr_L25_independent_envelope": [
+   -0.06866304839075116,
+   0.08244443157702258
+  ],
+  "smdr_L25_quadrature_halfranges": 0.053111924039479605,
+  "smdr_L25_minus_L2_at_xi1_dmc": -0.013647246528792397
+ },
+ "item3_qcd": {
+  "rg_consistency_mr_y0i": {
+   "1": 1.0481509432743259e-15,
+   "2": 9.395998338123135e-16,
+   "3": 2.6661513628378156e-16,
+   "4": 9.364375768534854e-16
+  },
+  "qcd_tower_dmc": {
+   "xi0p5": 0.055348258101823866,
+   "xi2": -0.06621415180698967
+  },
+  "producer_qcd_tower": {
+   "xi0p5": 0.064,
+   "xi2": -0.057
+  },
+  "smdr_Mt_piece": {
+   "xi0p5": 0.06710511503864587,
+   "xi2": -0.027155771133032112
+  }
+ },
+ "item4_renormalon": {
+  "Beneke2016": "arXiv:1605.03609: abstract \"uncertainty is around 110 MeV\" (incl. b,c mass effects); \"five-loop correction and beyond ... around 300 MeV\"; Eq.(4.7) delta(5+)m_P = 0.272 +0.016-0.041(N) +-0.001(c4) +-0.011(alpha_s) +-0.066(ambiguity) GeV; p.13 \"ambiguity of about 70 MeV\" (massless light quarks)",
+  "blind_assumption_GeV": 0.11,
+  "verdict": "0.11 = abstract value incl. b,c; 0.066-0.071 for massless light quarks; 0.27 is a one-sided remainder (all-orders pole mass higher), not a symmetric error"
+ },
+ "known_missing_3loop_in_mr": {
+  "lambda3_QCD_Buttazzo_fn5_dmc": -0.03528838350445879
+ },
+ "recommended": {
+  "mbar": {
+   "matching_scale_envelope": [
+    -0.04150727725771904,
+    0.05439769721233427
+   ],
+   "scheme_spread_mr_vs_smdr": 0.041879039555510415,
+   "rge": 0.005,
+   "alpha_s_order": 0.0030042116400550265,
+   "WZ_pole_convention": 0.011039343628729567,
+   "total": 0.06977718689821351,
+   "leading3loop_size_info": 0.013647246528792397
+  },
+  "pole_4loop_truncated": {
+   "mbar_total": 0.06977718689821351,
+   "pole_series_O_as5": 0.075,
+   "total": 0.10243952270207149,
+   "alt_total_with_QCD_tower_in_envelope": 0.09331039946051983
+  },
+  "pole_all_orders_offset_GeV": 0.272,
+  "renormalon_ambiguity_GeV": [
+   0.07,
+   0.11
+  ]
+ },
+ "code_sha256": {
+  "work/diag_smdr_scale.py": "31e27c98e2fc4d540edf8a9f3514729f5741bf209855354b317f45a9b6ed612a",
+  "work/diag_mr_decomp.py": "2083f90386e36fc5d749e83dec62970c62f24d2d46e8a1dacbbb7eda38b465e5",
+  "work/diag_final.py": "45cf60f8a56ccd383706a5e957103c9139d18a86372a609eef0789565e3f4fdd",
+  "work/patch_report.py": "226cb8547351bffd61ab40395545e40da0f700fea9e8ef502055ffa97f4d3632",
+  "work/drivers/c148_fit_copy.c": "004141abac1d63a5db0bfbf8c938f0a089e032fa2add587b3d683cd25b05b7ea"
+ },
+ "report_section": "R16_V1_SM_MAPPING_BLIND_CN.md section 8"
+}

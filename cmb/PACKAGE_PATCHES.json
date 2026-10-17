@@ -1,0 +1,308 @@
+{
+ "_paths_note": "Machine-specific absolute paths in the recorded 'old'/'value'/diff strings were replaced by placeholders on 2026-10-15 (code-finalize): <RESEARCH_ROOT> = the private research tree of the project, <CODEX_WORKSPACE> = an external data workspace, <PYTHON> = the Python 3.12 interpreter, <MINGW_BIN> = the MinGW-w64 bin directory, <WOLFRAMSCRIPT>/<MATHEMATICA_15> = the local Mathematica 15 installation, <AGENT_SCRATCHPAD>/<USER_HOME> = temporary/user directories of the machine that assembled the package. The shipped code files themselves contain none of these paths. <AGENT_TEMP> = the temporary directory of the agent session that assembled the package.",
+ "chain": "cmb",
+ "built_utc": "2026-10-16T00:05:34Z",
+ "agent": "code-shape-cmb",
+ "rule": "algorithms and numerics unchanged; only the listed line substitutions",
+ "files": {
+  "01_fisher_kl/C59_torus.py": {
+   "source": "04_calculations/code/20261009_claude_R5/obs_fisher/C59_torus.py",
+   "source_sha256": "4b686039abb4775fd0a807b4c6fc7ca40a27a10f6be83eb30a745a3dd25c3866",
+   "copy_sha256": "1975154fc23f120ce256cb19795bc0f67ddc25bffc852a21207aa4a1d3b39308",
+   "substitutions": [
+    {
+     "line": 35,
+     "old": "ROOT = HERE.parents[3]",
+     "new": "import sys  # package\nsys.path.insert(0, str(HERE.parent))  # package: chain root (cmb/)\nimport _cmb_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 36,
+     "old": "OUT = ROOT / \"04_calculations\" / \"results\" / \"20261009_claude_R5\" / \"obs_fisher\"",
+     "new": "OUT = WP.wdir(\"r5/obs_fisher\")"
+    },
+    {
+     "line": 37,
+     "old": "TRANSFER = OUT / \"C59_transfer.npz\"",
+     "new": "TRANSFER = OUT / \"C59_transfer.npz\"\nif not TRANSFER.exists():  # package: the shipped CAMB 2.0.4 table unless a fresh one exists in the work tree\n    TRANSFER = WP.find_archived(\"r5/obs_fisher/C59_transfer.npz\") or TRANSFER"
+    }
+   ]
+  },
+  "01_fisher_kl/C59_transfer.py": {
+   "source": "04_calculations/code/20261009_claude_R5/obs_fisher/C59_transfer.py",
+   "source_sha256": "67d3f6a59ee60bf6e7e935d8cc1941551879ffb4bbf426e4a2b2d5915b319081",
+   "copy_sha256": "e2c0c2ed99d2ce7d823d0e91b0fa7970e962a4d9f05b48c41b85ce461c4c5364",
+   "substitutions": [
+    {
+     "line": 38,
+     "old": "ROOT = HERE.parents[3]",
+     "new": "sys.path.insert(0, str(HERE.parent))  # package: chain root (cmb/)\nimport _cmb_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 39,
+     "old": "OUT = ROOT / \"04_calculations\" / \"results\" / \"20261009_claude_R5\" / \"obs_fisher\"",
+     "new": "OUT = WP.wdir(\"r5/obs_fisher\")"
+    }
+   ]
+  },
+  "01_fisher_kl/C59_transfer_cutoff_scan.py": {
+   "source": "04_calculations/code/20261009_claude_R5/obs_fisher/C59_transfer_cutoff_scan.py",
+   "source_sha256": "7fb5f0b22cc6add231d39e35ef8b107f7189a54337f6c74059a9488b16b656ac",
+   "copy_sha256": "a2f93eab754dff8f09589780b7f2aaa95303527a88f0d1d3fb023d0d322c15da",
+   "substitutions": [
+    {
+     "line": 17,
+     "old": "OUT = HERE.parents[3] / \"04_calculations\" / \"results\" / \"20261009_claude_R5\" / \"obs_fisher\" / \"validate\"",
+     "new": "sys.path.insert(0, str(HERE.parent))  # package: chain root (cmb/)\nimport _cmb_paths as WP  # noqa: E402\nOUT = WP.wdir(\"r5/obs_fisher/validate\")"
+    }
+   ]
+  },
+  "01_fisher_kl/C59_run.py": {
+   "source": "04_calculations/code/20261009_claude_R5/obs_fisher/C59_run.py",
+   "source_sha256": "139a4c7b53a231119dbe95ea5245d8254c70f1f4ddf02125938d5b9127f3d500",
+   "copy_sha256": "0913ec3cc0712f888f419ce52caba5da954723a09df4810f16cfc09c92be92d7",
+   "substitutions": [
+    {
+     "line": 189,
+     "old": "with Pool(min(8, max(1, len(todo)))) as pool:",
+     "new": "with Pool(min(int(os.environ.get(\"DNEC_WORKERS\", \"8\")), max(1, len(todo)))) as pool:  # package: --workers"
+    }
+   ]
+  },
+  "01_fisher_kl/C59_analyze.py": {
+   "source": "04_calculations/code/20261009_claude_R5/obs_fisher/C59_analyze.py",
+   "source_sha256": "b3af411bf2a42cd327a73b9b68bb43e0d2c0e2d064bf5b908a2005cedf02c538",
+   "copy_sha256": "12d4754210a7dfab10ddb43a9ac57f2d62f9a7bd50e19036bfbfdd160d63cba2",
+   "substitutions": [
+    {
+     "line": 213,
+     "old": "with Pool(8) as pool:",
+     "new": "with Pool(int(os.environ.get(\"DNEC_WORKERS\", \"8\"))) as pool:  # package: --workers"
+    }
+   ]
+  },
+  "01_fisher_kl/C59_validate.py": {
+   "source": "04_calculations/code/20261009_claude_R5/obs_fisher/C59_validate.py",
+   "source_sha256": "d7745aaf9714f78eb6e6d3680b598e6e6ca7405390c3945b7d831843626a3797",
+   "copy_sha256": "ae6701db97c73fe60dc06b3f3854c73d30fde5f81bc36851ab0487fa2a4499cd",
+   "substitutions": [
+    {
+     "line": 154,
+     "old": "with Pool(8) as pool:",
+     "new": "with Pool(int(os.environ.get(\"DNEC_WORKERS\", \"8\"))) as pool:  # package: --workers"
+    }
+   ]
+  },
+  "01_fisher_kl/C75_common.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C75/C75_common.py",
+   "source_sha256": "26d8489e5f1b1c10e9a46a12d0e7ef98025f6cba1005d3164882b4ee6f50d77a",
+   "copy_sha256": "a77f5c4b1691f0a9b100f1cf72124ca903dae124a15e8629a1d0fac834626cb7",
+   "substitutions": [
+    {
+     "line": 24,
+     "old": "ROOT = HERE.parents[3]                                   # .../Directional_Null_Energy_Cosmology",
+     "new": "sys.path.insert(0, str(HERE.parent))  # package: chain root (cmb/)\nimport _cmb_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 25,
+     "old": "C59_CODE = ROOT / \"04_calculations\" / \"code\" / \"20261009_claude_R5\" / \"obs_fisher\"",
+     "new": "C59_CODE = HERE  # package: the C59 modules live in this directory"
+    },
+    {
+     "line": 26,
+     "old": "RES = ROOT / \"04_calculations\" / \"results\" / \"20261011_claude_followup\" / \"C75\"",
+     "new": "RES = WP.wdir(\"fu/C75\")"
+    },
+    {
+     "line": 28,
+     "old": "R5 = ROOT / \"04_calculations\" / \"results\" / \"20261009_claude_R5\"",
+     "new": "R5 = WP.wdir(\"r5\")"
+    }
+   ]
+  },
+  "01_fisher_kl/C75_produce.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C75/C75_produce.py",
+   "source_sha256": "ddd8e3ff65612ddd36e618b34d557899e3b43d70e00cef3eb8de40ca6a45ad7f",
+   "copy_sha256": "3c784b7b2dea4626a8767f034549c2f0961253ffbd4c00d916e8191de1a8cf6f",
+   "substitutions": [
+    {
+     "line": 141,
+     "old": "nproc = 6",
+     "new": "nproc = int(os.environ.get(\"DNEC_WORKERS\", \"6\"))  # package: --workers (-jN still overrides)"
+    }
+   ]
+  },
+  "01_fisher_kl/C75_analyze.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C75/C75_analyze.py",
+   "source_sha256": "8466290b46232352233f0104be191e316068a2798fa9e9a9e426f130ee2d4265",
+   "copy_sha256": "bf950fba951a1d936a48e507d67311ca4dab4d2938c517ddd7c31765c4206c48",
+   "substitutions": [
+    {
+     "line": 315,
+     "old": "cdx = Path(r\"<CODEX_WORKSPACE>\\Work\\Casimir_zip_eval_20261011_0149\\research_bundle\\results\\direction4_zero_mode_sensitivity.json\")",
+     "new": "cdx = WP.step_dir(\"01_fisher_kl\", \"inputs\", \"direction4_zero_mode_sensitivity.json\")  # package: external Codex table, not shipped (optional)"
+    },
+    {
+     "line": 364,
+     "old": "with Pool(6) as pool:",
+     "new": "with Pool(int(os.environ.get(\"DNEC_WORKERS\", \"6\"))) as pool:  # package: --workers"
+    }
+   ]
+  },
+  "01_fisher_kl/C75_summary.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C75/C75_summary.py",
+   "source_sha256": "adc74fe381e9df437d254b4f093d8ce680af7568d61fc22200b1fc65679d501b",
+   "copy_sha256": "5af9619ad08302b8b0d8bba87371ece366829aeb58f4253c9a814d5fd581cd87",
+   "substitutions": []
+  },
+  "02_ensemble/ens_core.py": {
+   "source": "04_calculations/code/20261013_argon_codex_intake/cmb_ensemble/ens_core.py",
+   "source_sha256": "2b622b0e2f2a6a46ec21963823325c31e28bdf984341c0f0f761557cb51aadc0",
+   "copy_sha256": "fcaddfc27e129fe88d81618235841ec6411b709def896df417dca339456fd369",
+   "substitutions": [
+    {
+     "line": 35,
+     "old": "ROOT = Path(r'<RESEARCH_ROOT>')",
+     "new": "import sys  # package: work-tree path shim of the cmb chain (see cmb/_cmb_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _cmb_paths as WP  # noqa: E402\nROOT = None  # package: the research tree is not shipped"
+    },
+    {
+     "line": 36,
+     "old": "SNAPSHOT_INPUT = ROOT / '04_calculations' / 'results' / '20261013_argon_codex_intake' / 'snapshot'",
+     "new": "SNAPSHOT_INPUT = WP.wdir('ai/snapshot')  # package: frozen Codex snapshot (not shipped); read-only if present"
+    },
+    {
+     "line": 39,
+     "old": "TRANSFER = SNAP_P5 / 'C59_transfer.npz'",
+     "new": "TRANSFER = Path(os.environ.get('DNEC_CMB_TRANSFER') or (SNAP_P5 / 'C59_transfer.npz'))  # package: env override"
+    },
+    {
+     "line": 40,
+     "old": "_DEFAULT_OUT = ROOT / '04_calculations' / 'results' / '20261013_argon_codex_intake' / 'cmb_ensemble' / 'run01'",
+     "new": "_DEFAULT_OUT = WP.wdir('ai/cmb_ensemble/run01')"
+    }
+   ]
+  },
+  "02_ensemble/run_ens.py": {
+   "source": "04_calculations/code/20261013_argon_codex_intake/cmb_ensemble/run_ens.py",
+   "source_sha256": "cf50b62f7e0ec8611dfb64870a1e50185e9be52dbac05ba94929ff908aca2dca",
+   "copy_sha256": "5ce2c2adad2dd40462433748b2268ac89f3f44d1e24acfd1021e398db009b50a",
+   "substitutions": [
+    {
+     "line": 24,
+     "old": "RUN01 = Path(r'<RESEARCH_ROOT>\\04_calculations\\results\\20261013_argon_codex_intake\\cmb_ensemble\\run01')",
+     "new": "sys.path.insert(0, str(HERE.parent))  # package: chain root (cmb/)\nimport _cmb_paths as WP  # noqa: E402\nRUN01 = WP.wdir('ai/cmb_ensemble/run01')"
+    },
+    {
+     "line": 25,
+     "old": "PY = r'<PYTHON>'",
+     "new": "PY = sys.executable  # package"
+    },
+    {
+     "line": 543,
+     "old": "ap.add_argument('--workers', type=int, default=6)",
+     "new": "ap.add_argument('--workers', type=int, default=int(os.environ.get(\"DNEC_WORKERS\", \"6\")))  # package: --workers"
+    }
+   ]
+  },
+  "02_ensemble/priors_ens.py": {
+   "source": "04_calculations/code/20261013_argon_codex_intake/cmb_ensemble/priors_ens.py",
+   "source_sha256": "a90a5839e077253e742e3f163e96945ffe942a8c8262840a5c3538fbe31bf10a",
+   "copy_sha256": "db8c1445f82d5de3223d04e71552381f244371934788cb7b7f353dfa610dc278",
+   "substitutions": [
+    {
+     "line": 27,
+     "old": "src = ec.ROOT / '04_calculations' / 'results' / '20261011_claude_followup' / 'C79' / 'C79_results.json'",
+     "new": "src = ec.WP.wfile('fu/C79/C79_results.json')  # package: archived C79 table (staged by run.py)"
+    }
+   ]
+  },
+  "02_ensemble/postcheck_ens.py": {
+   "source": "04_calculations/code/20261013_argon_codex_intake/cmb_ensemble/postcheck_ens.py",
+   "source_sha256": "04dd92047de876a8bc7cafed86b20f6cc1eed3c6945d9e5698d14fd35dea520d",
+   "copy_sha256": "26cccf69b2a707ef4b14f09058ad879f4e6edb12ec0bf861d16d07bf008012fa",
+   "substitutions": [
+    {
+     "line": 12,
+     "old": "R = Path(r'<RESEARCH_ROOT>\\04_calculations\\results\\20261013_argon_codex_intake\\cmb_ensemble\\run01')",
+     "new": "import sys; sys.path.insert(0, str(Path(__file__).resolve().parents[1])); import _cmb_paths as WP  # noqa: E401,E402 (package)\nR = WP.wdir('ai/cmb_ensemble/run01')"
+    }
+   ]
+  },
+  "02_ensemble/make_fossil_table_v2.py": {
+   "source": "04_calculations/code/20261014_claude_v12_r3/cleanup_t12/make_fossil_table_v2.py",
+   "source_sha256": "b8bea5a85059bef1b166c85031a9723e1bb7f42087608882976388966ed91cc1",
+   "copy_sha256": "bd00e47fe77417523878e6af0275dc16b761f74ceb69546fb5708fa31fb43916",
+   "substitutions": [
+    {
+     "line": 16,
+     "old": "ROOT = Path(r'<RESEARCH_ROOT>')",
+     "new": "import sys  # package: work-tree path shim of the cmb chain (see cmb/_cmb_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _cmb_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 17,
+     "old": "SRC = ROOT / r'04_calculations\\results\\20261013_argon_codex_intake\\cmb_ensemble\\run01\\results'",
+     "new": "SRC = WP.wdir('ai/cmb_ensemble/run01/results')"
+    },
+    {
+     "line": 18,
+     "old": "OUT = ROOT / r'04_calculations\\results\\20261014_claude_v12_r3\\cleanup_t12\\run01'",
+     "new": "OUT = WP.wdir('r3/cleanup_t12/run01')"
+    }
+   ]
+  },
+  "02_ensemble/C153_ensemble.py": {
+   "source": "04_calculations/code/20261014_claude_v12_r3/shape_hardening/C153_ensemble.py",
+   "source_sha256": "219886b719e167d57942876a3251cf3046c97101fb1fd9fe8dc9aad620892948",
+   "copy_sha256": "112c52c5f6462743b5d63066a4cf063bcc6096163e29ce8b24fbb53edc4c98d2",
+   "substitutions": [
+    {
+     "line": 14,
+     "old": "SRC = Path(r'<RESEARCH_ROOT>\\04_calculations\\results\\20261013_argon_codex_intake\\cmb_ensemble\\run01')",
+     "new": "sys.path.insert(0, str(Path(__file__).resolve().parents[1]))  # package: chain root (cmb/)\nimport _cmb_paths as WP  # noqa: E402\nSRC = WP.wdir('ai/cmb_ensemble/run01')"
+    },
+    {
+     "line": 15,
+     "old": "OUT = Path(r'<RESEARCH_ROOT>\\04_calculations\\results\\20261014_claude_v12_r3\\shape_hardening\\run01\\ensemble')",
+     "new": "OUT = WP.wdir('r3/shape_hardening/run01/ensemble')"
+    }
+   ]
+  },
+  "03_joint_state/joint_state.py": {
+   "source": "04_calculations/code/20261013_argon_codex_intake/joint_state/joint_state.py",
+   "source_sha256": "3d39079ade57d1b752533b00198e1ff3c2337d8605637080db69aa6337ac9d1a",
+   "copy_sha256": "6b3ff082bc7f4de01733a7b87471ecae54d9c02201a10575648aa9524f84170e",
+   "substitutions": [
+    {
+     "line": 28,
+     "old": "ROOT = Path('<RESEARCH_ROOT>')",
+     "new": "import sys  # package: work-tree path shim of the cmb chain (see cmb/_cmb_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _cmb_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 29,
+     "old": "SNAP = ROOT/'04_calculations/results/20261013_argon_codex_intake/snapshot'",
+     "new": "SNAP = WP.step_dir('03_joint_state', 'inputs', 'snapshot')  # package: the four snapshot files used here"
+    },
+    {
+     "line": 30,
+     "old": "OUT = ROOT/'04_calculations/results/20261013_argon_codex_intake/joint_state/run01'",
+     "new": "OUT = WP.wdir('ai/joint_state/run01')"
+    },
+    {
+     "line": 31,
+     "old": "C79 = ROOT/'04_calculations/results/20261011_claude_followup/C79/C79_results.json'",
+     "new": "C79 = WP.wfile('fu/C79/C79_results.json')"
+    },
+    {
+     "line": 241,
+     "old": "with ProcessPoolExecutor(max_workers=2) as ex:",
+     "new": "with ProcessPoolExecutor(max_workers=int(os.environ.get(\"DNEC_WORKERS\", \"2\"))) as ex:  # package: --workers"
+    }
+   ]
+  },
+  "03_joint_state/b3_slope_symbolic.py": {
+   "source": "04_calculations/code/20261013_argon_codex_intake/joint_state/b3_slope_symbolic.py",
+   "source_sha256": "2fb4d2262e77eba843d111a2892e4be694c973f50408b346a84d9afcc79b41f8",
+   "copy_sha256": "3658b9467945cf1e941528843cec25ed66c1bf951908279509e046734ab6d69a",
+   "substitutions": []
+  }
+ }
+}

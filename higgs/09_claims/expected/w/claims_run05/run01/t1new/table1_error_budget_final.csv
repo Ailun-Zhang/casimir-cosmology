@@ -1,0 +1,24 @@
+source,type,P0.9_plus,P0.9_minus,P0.5_plus,P0.5_minus,P0.1_plus,P0.1_minus,ref
+D112_residual_dE_DMC_v11,sym,0.002,0.002,0.002,0.002,0.002,0.002,"D112 Sec.4.4 sub-items DMC+-1sigma (+-0.004/0.006) and B_x (-0.007/-0.011) superseded by T14a (D123 Sec.0.5/3.4); 'static-hazard conversion' (+-0.007/0.009) and ratio 'coupling transfer' (+-0.003/0.005) absent in the node-direct hazard (D122, D121 run02-05); remaining: dE_DMC spline with v11 couplings <= 0.002 (D122 Sec.3, estimate)"
+matching_run05_scan,asym,0.00859313,0.0391375,0.0121335,0.0489433,0.0154596,0.0582312,"consistent matching-scale scan in the run05 node pipeline, mu = c/L, c in {1/2,1,2,2pi} (envelope, D110 range) with the top threshold ct in {1/2,2} taken as the same y_t(mu) source (envelope, not quadrature) + BO gauge split 0.002 (D110)"
+cross_T2,sym,0.008,0.008,0.01,0.01,0.013,0.013,"D121 run05 Sec.3 (model-internal, incl. RG closure residual and custodial ratio)"
+cross_V2_minus_T2,sym,0.004,0.004,0.007,0.007,0.01,0.01,V2 blind vs T2 difference (run02-level CCA); kept (possible partial overlap with D121 'first-order/variational' not resolved)
+fulldim_T14a,one_sided_plus,0.0123492,0,0.02022,0,0.0306828,0,"D123: gamma_full/gamma_2D = 0.976 central, 0.937 envelope (WKB incl. B_w), converted with run05 dlnI/dm_t (5.269/3.218/2.121 per GeV); central correction +0.0046/+0.0075/+0.0115"
+numerics,sym,0.002,0.002,0.002,0.002,0.002,0.002,D116
+inflation_scale_vi,sym,0.035,0.035,0.067,0.067,0.112,0.112,"D124 (vi), r in [1e-3, 1e-2] (computed on the run02 centre; not recomputed)"
+w0_B3_rule,one_sided_minus,0,0.01597,0,0.00647204,0,0.00411704,"B3 rule w0(m_t) (walls 1.1/1.2/1.4/CAP mean) on run05, largest |Delta m_c| per level (D124 tiers [-0.016,0]/[-0.006,0]/[-0.004,0])"
+MODEL TOTAL (quadrature per side),composite,0.0392345,0.0556757,0.0721254,0.0841625,0.118328,0.127392,this work
+model total without (vi),composite,0.0177298,0.0432988,0.0267034,0.0509346,0.0381763,0.0607027,this work
+SM: matching-scale envelope (m-bar),SM,0.0544,0.0415,0.0544,0.0415,0.0544,0.0415,R16 V1 DIAGNOSIS recommended.mbar
+SM: scheme spread mr vs SMDR (incl. 0.04 implementation),SM,0.0419,0.0419,0.0419,0.0419,0.0419,0.0419,same
+"SM: RGE / alpha_s order / W,Z pole convention",SM,0.0125,0.0125,0.0125,0.0125,0.0125,0.0125,"same (0.005, 0.003, 0.011 in quadrature)"
+SM TOTAL m-bar formulation,SM,0.07,0.07,0.07,0.07,0.07,0.07,DIAGNOSIS total 0.0698
+SM: pole series O(alpha_s^5) (pole formulation only),SM,0.075,0.075,0.075,0.075,0.075,0.075,DIAGNOSIS
+SM TOTAL pole formulation (4-loop truncated),SM,0.102,0.102,0.102,0.102,0.102,0.102,DIAGNOSIS 0.1024
+"SM: all-orders pole offset (one-sided, criterion up)",SM-variant,0.272,0,0.272,0,0.272,0,Beneke 2016 Eq.(4.7) via DIAGNOSIS
+SM: renormalon ambiguity,SM-variant,0.11,0.07,0.11,0.07,0.11,0.07,range 0.07-0.11 (not additive to 4-loop convention)
+SM: BKPV/FJ scale variation (robustness),SM-variant,0.17,0.36,0.17,0.36,0.17,0.36,DIAGNOSIS item1 (-0.358/+0.173)
+parametric alpha_s +-0.0009,param,0.346854,0.346854,0.348597,0.348597,0.349588,0.349588,C149 crit
+parametric M_h +-0.11 (PDG 2026),param,0.053031,0.053031,0.053031,0.053031,0.053031,0.053031,T1 slopes
+measurement m_t direct (PDG 2026),meas,0.27,0.27,0.27,0.27,0.27,0.27,PDG 2026
+MC-pole interpretation,meas-variant,0.5,0.5,0.5,0.5,0.5,0.5,Hoang 2020

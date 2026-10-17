@@ -1,0 +1,66 @@
+{
+ "central": {
+  "alpha_s": 0.118,
+  "M_h": 125.13,
+  "mu_b_GeV": 3372576177285318.5,
+  "MPbar_GeV": 2.435e+18,
+  "mu_upper_GeV": 2.435e+18,
+  "lambda_mu_b_at_172p60": -0.009774142178602658,
+  "m0_pole": 171.09211626115322,
+  "m0_mbar": 161.38379260184388,
+  "m_stab_pole": 170.9905360147926,
+  "m_stab_mbar": 161.28696943838779,
+  "m0_minus_m_stab": 0.10158024636061214,
+  "mu_of_lambda_min_at_m_stab_GeV": 5.059000517340148e+17,
+  "lambda_min_at_m_stab": 1.8975450549434526e-11,
+  "minimum_at_upper_edge": false,
+  "dlambda_min_dmt_per_GeV": -0.00642485118976377,
+  "lambda_mu_b_at_m_stab": 0.0006493268339185345
+ },
+ "mu_upper_M_Pl_nonreduced": {
+  "mu_upper_GeV": 1.2209e+19,
+  "m_stab_pole": 170.9905360147926
+ },
+ "alpha_s_variants": {
+  "0.1171": {
+   "m0_pole": 170.74755848124352,
+   "m_stab_pole": 170.63899404227794,
+   "m0_minus_m_stab": 0.10856443896557266
+  },
+  "0.1189": {
+   "m0_pole": 171.4367162369953,
+   "m_stab_pole": 171.34187549258763,
+   "m0_minus_m_stab": 0.09484074440766221
+  }
+ },
+ "BKPV_inputs_this_mapping": {
+  "M_h": 125.7,
+  "alpha_s": 0.1185,
+  "m_stab_pole": 171.46914201430545,
+  "note": "our SMDR25 matching at the inputs of Bednyakov et al. 2015 (their own matching gives 171.44; reproduced as 171.453 in D120)"
+ },
+ "regression": {
+  "m0_expected_R5_029": 171.0921,
+  "m0_diff": 1.6261153234609083e-05,
+  "lambda_mu_b_expected_H014": -0.0097741,
+  "lambda_mu_b_diff": -4.217860265741391e-08
+ },
+ "meta": {
+  "script": "higgs/01_sm_mapping/abs_stability.py",
+  "source": "package",
+  "sm_provider": "higgs/zmlib/sm_provider.py",
+  "sm_provider_sha256": "03ec7b4278987722f0f0f9ed57d9726af01f927c242f987f4d582a545ca863c0",
+  "variant": "central",
+  "definition": "m_stab: min over 1e8 GeV <= mu <= Mbar_P of lambda(mu) = 0; m0: lambda(mu_b) = 0, mu_b = Mbar_P/722",
+  "python": "3.12.13",
+  "seconds": 5.8,
+  "written_utc": "2026-10-16T05:24:03Z"
+ },
+ "crosscheck_research_copy": {
+  "sm_provider": "04_calculations/code/20261014_claude_v12_r3/sm_mapping/sm_provider.py",
+  "sm_provider_sha256": "41db3b8f11413c02f7a3680e8c8f4a58163345b7f27dd824774d33d426a70ceb",
+  "m0_pole": 171.09211626115322,
+  "m_stab_pole": 170.9905360147926,
+  "max_abs_diff_GeV": 0.0
+ }
+}

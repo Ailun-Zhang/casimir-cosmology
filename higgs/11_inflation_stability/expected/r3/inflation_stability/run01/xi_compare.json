@@ -1,0 +1,263 @@
+{
+ "xi_c_input": {
+  "version": "R2: D116 Sec.0.3 / Sec.3 item 5 (final zero-mode model, P_surv(xi)=0.99 P_surv(1/6)); R3 values pending (NNLO mapping + cross term)",
+  "reading": "xi_H = coefficient of R h^2/2 in the zero-mode Hamiltonian at the turn, with lambda taken at mu_b = MPbar/722; natural reading: xi_H = xi(mu_b)",
+  "mt": [
+   172.2,
+   172.6,
+   173.0
+  ],
+  "xi_c": [
+   0.036,
+   0.072,
+   0.12
+  ],
+  "err": [
+   0.003,
+   0.003,
+   0.001
+  ]
+ },
+ "rows": [
+  {
+   "mt": 171.4,
+   "reading": "b_xi_at_mu_b",
+   "xi_inf": 0.002310743228586737,
+   "xi_c": null,
+   "xi_inf_as_lo": 0.018383631069748357,
+   "xi_inf_as_hi": 0.0022497155766297017,
+   "xi_min": null,
+   "stronger": null
+  },
+  {
+   "mt": 171.4,
+   "reading": "a_xi_EW",
+   "xi_inf": 0.02494380535404922,
+   "xi_c": null,
+   "xi_inf_as_lo": 0.038785938446801234,
+   "xi_inf_as_hi": 0.024909180576665635,
+   "xi_min": null,
+   "stronger": null
+  },
+  {
+   "mt": 171.6,
+   "reading": "b_xi_at_mu_b",
+   "xi_inf": 0.013216366192914886,
+   "xi_c": null,
+   "xi_inf_as_lo": 0.024203606329781635,
+   "xi_inf_as_hi": 0.0023044477464743973,
+   "xi_min": null,
+   "stronger": null
+  },
+  {
+   "mt": 171.6,
+   "reading": "a_xi_EW",
+   "xi_inf": 0.034262985573775454,
+   "xi_c": null,
+   "xi_inf_as_lo": 0.043725617276390044,
+   "xi_inf_as_hi": 0.024866759036589844,
+   "xi_min": null,
+   "stronger": null
+  },
+  {
+   "mt": 171.8,
+   "reading": "b_xi_at_mu_b",
+   "xi_inf": 0.02037747474986354,
+   "xi_c": null,
+   "xi_inf_as_lo": 0.02895505108937227,
+   "xi_inf_as_hi": 0.005548926463099929,
+   "xi_min": null,
+   "stronger": null
+  },
+  {
+   "mt": 171.8,
+   "reading": "a_xi_EW",
+   "xi_inf": 0.04036052291842119,
+   "xi_c": null,
+   "xi_inf_as_lo": 0.047748448064982574,
+   "xi_inf_as_hi": 0.0275772776756798,
+   "xi_min": null,
+   "stronger": null
+  },
+  {
+   "mt": 172.0,
+   "reading": "b_xi_at_mu_b",
+   "xi_inf": 0.025779237033825314,
+   "xi_c": null,
+   "xi_inf_as_lo": 0.03306985660780956,
+   "xi_inf_as_hi": 0.01576299717084423,
+   "xi_min": null,
+   "stronger": null
+  },
+  {
+   "mt": 172.0,
+   "reading": "a_xi_EW",
+   "xi_inf": 0.044945374990828055,
+   "xi_c": null,
+   "xi_inf_as_lo": 0.05122588839211273,
+   "xi_inf_as_hi": 0.03631119424651837,
+   "xi_min": null,
+   "stronger": null
+  },
+  {
+   "mt": 172.2,
+   "reading": "b_xi_at_mu_b",
+   "xi_inf": 0.030295580186883914,
+   "xi_c": 0.036000000000389804,
+   "xi_inf_as_lo": 0.03675033263997585,
+   "xi_inf_as_hi": 0.022200887676384257,
+   "xi_min": 0.036000000000389804,
+   "stronger": "zero_mode"
+  },
+  {
+   "mt": 172.2,
+   "reading": "a_xi_EW",
+   "xi_inf": 0.04877018878749605,
+   "xi_c": 0.036000000000389804,
+   "xi_inf_as_lo": 0.05433184222479927,
+   "xi_inf_as_hi": 0.04179168844668014,
+   "xi_min": 0.04877018878749605,
+   "stronger": "inflation"
+  },
+  {
+   "mt": 172.4,
+   "reading": "b_xi_at_mu_b",
+   "xi_inf": 0.03424882870847909,
+   "xi_c": 0.052085298130405494,
+   "xi_inf_as_lo": 0.04011187342547029,
+   "xi_inf_as_hi": 0.027264742912411655,
+   "xi_min": 0.052085298130405494,
+   "stronger": "zero_mode"
+  },
+  {
+   "mt": 172.4,
+   "reading": "a_xi_EW",
+   "xi_inf": 0.05211236593835568,
+   "xi_c": 0.052085298130405494,
+   "xi_inf_as_lo": 0.05716545921582866,
+   "xi_inf_as_hi": 0.04609026276686657,
+   "xi_min": 0.05211236593835568,
+   "stronger": "inflation"
+  },
+  {
+   "mt": 172.6,
+   "reading": "b_xi_at_mu_b",
+   "xi_inf": 0.03781303560145416,
+   "xi_c": 0.07200000000013719,
+   "xi_inf_as_lo": 0.043226496118182064,
+   "xi_inf_as_hi": 0.031572729847713366,
+   "xi_min": 0.07200000000013719,
+   "stronger": "zero_mode"
+  },
+  {
+   "mt": 172.6,
+   "reading": "a_xi_EW",
+   "xi_inf": 0.05512167021345887,
+   "xi_c": 0.07200000000013719,
+   "xi_inf_as_lo": 0.05978858823443189,
+   "xi_inf_as_hi": 0.04973970097968636,
+   "xi_min": 0.07200000000013719,
+   "stronger": "zero_mode"
+  },
+  {
+   "mt": 172.8,
+   "reading": "b_xi_at_mu_b",
+   "xi_inf": 0.04108452796644724,
+   "xi_c": 0.09509430900055149,
+   "xi_inf_as_lo": 0.04614509570877956,
+   "xi_inf_as_hi": 0.03538465008402647,
+   "xi_min": 0.09509430900055149,
+   "stronger": "zero_mode"
+  },
+  {
+   "mt": 172.8,
+   "reading": "a_xi_EW",
+   "xi_inf": 0.05788092306756111,
+   "xi_c": 0.09509430900055149,
+   "xi_inf_as_lo": 0.06224493760227514,
+   "xi_inf_as_hi": 0.05296378656516703,
+   "xi_min": 0.09509430900055149,
+   "stronger": "zero_mode"
+  },
+  {
+   "mt": 173.0,
+   "reading": "b_xi_at_mu_b",
+   "xi_inf": 0.044126638609791005,
+   "xi_c": 0.11999999999972279,
+   "xi_inf_as_lo": 0.0489002108985019,
+   "xi_inf_as_hi": 0.03884226305399735,
+   "xi_min": 0.11999999999972279,
+   "stronger": "zero_mode"
+  },
+  {
+   "mt": 173.0,
+   "reading": "a_xi_EW",
+   "xi_inf": 0.06044455964234397,
+   "xi_c": 0.11999999999972279,
+   "xi_inf_as_lo": 0.06456241407249667,
+   "xi_inf_as_hi": 0.05588457824485182,
+   "xi_min": 0.11999999999972279,
+   "stronger": "zero_mode"
+  },
+  {
+   "mt": 173.2,
+   "reading": "b_xi_at_mu_b",
+   "xi_inf": 0.04698522332111178,
+   "xi_c": null,
+   "xi_inf_as_lo": 0.05151707492784928,
+   "xi_inf_as_hi": 0.04203009568561246,
+   "xi_min": null,
+   "stronger": null
+  },
+  {
+   "mt": 173.2,
+   "reading": "a_xi_EW",
+   "xi_inf": 0.06285199616291591,
+   "xi_c": null,
+   "xi_inf_as_lo": 0.06676265825545755,
+   "xi_inf_as_hi": 0.058574815928470046,
+   "xi_min": null,
+   "stronger": null
+  },
+  {
+   "mt": 173.4,
+   "reading": "b_xi_at_mu_b",
+   "xi_inf": 0.0496891753084666,
+   "xi_c": null,
+   "xi_inf_as_lo": 0.05401588331730579,
+   "xi_inf_as_hi": 0.04500417478128796,
+   "xi_min": null,
+   "stronger": null
+  },
+  {
+   "mt": 173.4,
+   "reading": "a_xi_EW",
+   "xi_inf": 0.0651280275507362,
+   "xi_c": null,
+   "xi_inf_as_lo": 0.06886299306541172,
+   "xi_inf_as_hi": 0.06108269453186708,
+   "xi_min": null,
+   "stronger": null
+  },
+  {
+   "mt": 173.6,
+   "reading": "b_xi_at_mu_b",
+   "xi_inf": 0.052261958629953045,
+   "xi_c": null,
+   "xi_inf_as_lo": 0.05641015580026315,
+   "xi_inf_as_hi": 0.047805984252195954,
+   "xi_min": null,
+   "stronger": null
+  },
+  {
+   "mt": 173.6,
+   "reading": "a_xi_EW",
+   "xi_inf": 0.06729279694777146,
+   "xi_c": null,
+   "xi_inf_as_lo": 0.07087498649290552,
+   "xi_inf_as_hi": 0.06344390454416507,
+   "xi_min": null,
+   "stronger": null
+  }
+ ]
+}

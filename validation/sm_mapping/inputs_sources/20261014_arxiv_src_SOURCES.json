@@ -1,0 +1,38 @@
+[
+ {
+  "file": "Buttazzo2013_1307.3536.src",
+  "url": "https://arxiv.org/e-print/1307.3536",
+  "final_url": "https://arxiv.org/src/1307.3536",
+  "content_type": "application/gzip",
+  "date_utc": "2026-10-14T23:58:07Z",
+  "bytes": 1877162,
+  "sha256": "b9a29cf5574670b57d32f4e75c87c150ded1815afee067a79435c7848313a1ec"
+ },
+ {
+  "file": "ChetyrkinZoller2012_1205.2892.src",
+  "url": "https://arxiv.org/e-print/1205.2892",
+  "final_url": "https://arxiv.org/src/1205.2892",
+  "content_type": "application/gzip",
+  "date_utc": "2026-10-14T23:58:07Z",
+  "bytes": 685410,
+  "sha256": "26e019a250d116dbefdae961777c44e71a2362a53f6721013fa2db15d6496c97"
+ },
+ {
+  "file": "MSS2012_1201.5868.src",
+  "url": "https://arxiv.org/e-print/1201.5868",
+  "final_url": "https://arxiv.org/src/1201.5868",
+  "content_type": "application/gzip",
+  "date_utc": "2026-10-14T23:58:07Z",
+  "bytes": 67269,
+  "sha256": "043c420129e1f361d1b2f85a39c74182dea660823559409e870bd673f0639ecb"
+ },
+ {
+  "file": "mr_KPV2016_1601.08143.src",
+  "url": "https://arxiv.org/e-print/1601.08143",
+  "final_url": "https://arxiv.org/src/1601.08143",
+  "content_type": "application/gzip",
+  "date_utc": "2026-10-14T23:58:07Z",
+  "bytes": 28153,
+  "sha256": "ff61f5152c00747f1a90d96bed422987f6547cef8316c6286f57a0ded76838e4"
+ }
+]

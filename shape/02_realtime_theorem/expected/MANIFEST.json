@@ -1,0 +1,62 @@
+{
+ "r1/state_selection/run01/C137_results.json": {
+  "source": "04_calculations/results/20261013_claude_v12/state_selection/run01/C137_results.json",
+  "sha256": "92d96dbc65d303232b718df785a07a2ecede2bc29abf4d490163e8f34e61642f",
+  "bytes": 16074
+ },
+ "r1/state_selection/run02/C137b_results.json": {
+  "source": "04_calculations/results/20261013_claude_v12/state_selection/run02/C137b_results.json",
+  "sha256": "31f1cdb94be18103e9d5bef8a9ec5f8ea2b222bd615cb39a1182bd2a75fdbac1",
+  "bytes": 13676
+ },
+ "r1/state_selection/run03/C137c_results.json": {
+  "source": "04_calculations/results/20261013_claude_v12/state_selection/run03/C137c_results.json",
+  "sha256": "e570186921f375f3a10e42451bc1c6c9c26ddeb4934974dea068fd96ae0a5546",
+  "bytes": 3813
+ },
+ "r1/state_selection/run03/wolfram_raw.txt": {
+  "source": "04_calculations/results/20261013_claude_v12/state_selection/run03/wolfram_raw.txt",
+  "sha256": "7325f7a5070c34bc64274bfa8b760c7c71df14186bd694844bb9cd824fa0027c",
+  "bytes": 723
+ },
+ "r3/shape_hardening/run01/linear/C153_linear.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/shape_hardening/run01/linear/C153_linear.json",
+  "sha256": "64d5fcb4927e0fb92b3ec1fdeb0f0d75217d71bb0c55145e7800d8f0fd38fb0d",
+  "bytes": 41594
+ },
+ "r3/shape_hardening/run01/C153_nl_summary.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/shape_hardening/run01/C153_nl_summary.json",
+  "sha256": "0462b4df2274395df324f9fccdc2e600c107716b177cb1036640b491dcf7a5b4",
+  "bytes": 136602
+ },
+ "r3/shape_hardening/run01/C153_summary.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/shape_hardening/run01/C153_summary.json",
+  "sha256": "1a12ba3fa5c2ca11233f0eda009ae9113ef9af9e286fd08de9ee48704cce6ba1",
+  "bytes": 105174
+ },
+ "r3/shape_hardening/run01/smoke.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/shape_hardening/run01/smoke.json",
+  "sha256": "779324690d9af954d06de37934e82b6ccfd40b5408811c8d5c6274775ff2acb6",
+  "bytes": 9999
+ },
+ "r3/shape_hardening/run01/wolfram_receipts.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/shape_hardening/run01/wolfram_receipts.json",
+  "sha256": "e440946044285c8780262865d9c322bb5e97cca97cbd096518112248e0a97270",
+  "bytes": 3357
+ },
+ "r3/shape_hardening/run02/C153_run02_summary.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/shape_hardening/run02/C153_run02_summary.json",
+  "sha256": "70398014cd826afd057e99ef6d088400c705e69047acb195e19abfc134311933",
+  "bytes": 10483
+ },
+ "r3/shape_hardening/run01/draws.zip": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/shape_hardening/run01/draws/ (17920 files, zipped)",
+  "sha256": "af093eec1ac47ef6bb05abd65a7cbf777397081e1ccd51a8015beae8aa1b528c",
+  "bytes": 20723497
+ },
+ "r3/shape_hardening/run02/draws.zip": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/shape_hardening/run02/draws/ (28928 files, zipped)",
+  "sha256": "9c85329014129d5f33ed80972e4d482ff24f5e945b118f6878d964bb10b9aa33",
+  "bytes": 35210041
+ }
+}

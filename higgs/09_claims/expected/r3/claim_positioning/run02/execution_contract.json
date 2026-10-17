@@ -1,0 +1,18 @@
+{
+ "task": "T13 claim positioning run02 (C154 v2 / D126 v2) with round-3 final inputs (coordinator W2 2026-10-15 01:10Z)",
+ "agent": "claim-positioning",
+ "created_utc": "2026-10-15T01:15Z",
+ "inputs": {
+  "central_P1": "holonomy_cross/run02/C149_run02_summary.json (2D direct + NNLO + cross terms; P1_grid alpha_s 0.1180; crit at 0.1171/0.1180/0.1189)",
+  "Mh": "125.13 +- 0.11 (PDG 2026)",
+  "SM_side": "07_reviews/R16_v12_round3/sm_mapping_blind/results/DIAGNOSIS.json recommended (m-bar 0.070, pole 0.102, all-orders +0.272, renormalon 0.07-0.11, BKPV/FJ -0.36/+0.17)",
+  "model": "W2 item 3 components + C152 (vi) and w0",
+  "xi": "realtime_2d/run01/C157_summary.json (T6), inflation_stability/run01/C155_summary.json (T21)",
+  "literature": "run01/inputs/SOURCES.json (unchanged)"
+ },
+ "method": "as run01 (C154_core.py) with: level-dependent alpha_s map of the C149 grid; level-dependent coherent two-piece model error; SM variants; xi plane from T6/T21",
+ "pass_criteria": ["PRL table 1 (final) and figure-2 data files", "PRL sentence consistent with the new model (xi scale stated)", "Pbar / Bayes from the real curve"],
+ "budget": {"tool_calls": 60, "workers": 1},
+ "outputs": {"code": "code/.../claim_positioning/C154_core_v2.py + C154_inputs_v2.json", "results": "results/.../claim_positioning/run02/", "derivation": "derivations/.../claim_positioning/D126_CLAIM_POSITIONING_v2_CN.md"},
+ "boundaries": "run01 files untouched; no paper edits"
+}

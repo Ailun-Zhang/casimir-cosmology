@@ -1,0 +1,24 @@
+source,type,P0.9_plus,P0.9_minus,P0.5_plus,P0.5_minus,P0.1_plus,P0.1_minus,ref
+D112_inmodel,asym,0.009,0.012,0.012,0.017,0.015,0.022,D116 0.4 / W2 item 3; P1=0.1 extrapolated linearly
+D110_matching,asym,0.01,0.035,0.014,0.045,0.018,0.055,D116 0.4 (R15-corrected) / W2 item 3; P1=0.1 extrapolated linearly
+cross_T2,sym,0.008,0.008,0.01,0.01,0.013,0.013,T2 final (W2 item 3)
+cross_V2_minus_T2,sym,0.004,0.004,0.007,0.007,0.01,0.01,V2 vs T2 difference as systematic (W2 item 3)
+fulldim_T14a,one_sided_plus,0.011,0,0.018,0,0.025,0,"T14a: central +0.004/+0.007, envelope <= +0.011/+0.018 (one-sided); P1=0.1 extrapolated"
+numerics,sym,0.002,0.002,0.002,0.002,0.002,0.002,D116
+inflation_scale_vi,sym,0.035,0.035,0.067,0.067,0.112,0.112,"T4 C152 vi recommended (r in [1e-3, 1e-2])"
+w0_T15,one_sided_minus,0,0.016,0,0.016,0,0.016,"T15 B3 rule w0 = 0.980-0.995, one-sided <= -0.016 (W2 item 3)"
+MODEL TOTAL (quadrature per side),composite,0.0401373,0.0541664,0.0728423,0.0849235,0.118284,0.128771,this work
+model total without (vi),composite,0.0196469,0.0413401,0.0285832,0.0521824,0.0380395,0.0635453,this work
+SM: matching-scale envelope (m-bar),SM,0.0544,0.0415,0.0544,0.0415,0.0544,0.0415,R16 V1 DIAGNOSIS recommended.mbar
+SM: scheme spread mr vs SMDR (incl. 0.04 implementation),SM,0.0419,0.0419,0.0419,0.0419,0.0419,0.0419,same
+"SM: RGE / alpha_s order / W,Z pole convention",SM,0.0125,0.0125,0.0125,0.0125,0.0125,0.0125,"same (0.005, 0.003, 0.011 in quadrature)"
+SM TOTAL m-bar formulation,SM,0.07,0.07,0.07,0.07,0.07,0.07,DIAGNOSIS total 0.0698
+SM: pole series O(alpha_s^5) (pole formulation only),SM,0.075,0.075,0.075,0.075,0.075,0.075,DIAGNOSIS
+SM TOTAL pole formulation (4-loop truncated),SM,0.102,0.102,0.102,0.102,0.102,0.102,DIAGNOSIS 0.1024
+"SM: all-orders pole offset (one-sided, criterion up)",SM-variant,0.272,0,0.272,0,0.272,0,Beneke 2016 Eq.(4.7) via DIAGNOSIS
+SM: renormalon ambiguity,SM-variant,0.11,0.07,0.11,0.07,0.11,0.07,range 0.07-0.11 (not additive to 4-loop convention)
+SM: BKPV/FJ scale variation (robustness),SM-variant,0.17,0.36,0.17,0.36,0.17,0.36,DIAGNOSIS item1 (-0.358/+0.173)
+parametric alpha_s +-0.0009,param,0.346723,0.346723,0.348484,0.348484,0.34941,0.34941,C149 crit
+parametric M_h +-0.11 (PDG 2026),param,0.053031,0.053031,0.053031,0.053031,0.053031,0.053031,T1 slopes
+measurement m_t direct (PDG 2026),meas,0.27,0.27,0.27,0.27,0.27,0.27,PDG 2026
+MC-pole interpretation,meas-variant,0.5,0.5,0.5,0.5,0.5,0.5,Hoang 2020

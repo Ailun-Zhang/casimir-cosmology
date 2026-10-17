@@ -1,0 +1,62 @@
+A. Bianchi I invariants: E4 = W^2 - 2 Ric^2 + 2/3 R^2 with W^2, Ricci from the frame formulas
+  E4 diff 0.00e+00   general-H square diff 0.00e+00   trP2-S2/6 -3.55e-15   trs4-S2/2 -3.55e-15
+  E4 diff -6.82e-13   general-H square diff -9.09e-13   trP2-S2/6 -8.53e-14   trs4-S2/2 -1.14e-13
+  E4 diff -7.55e-15   general-H square diff -4.26e-14   trP2-S2/6 -1.78e-15   trs4-S2/2 0.00e+00
+B. rotating principal axes: extra term in tr[u-2(rho-1)P]^2
+  full - diag - extra = -1.78e-15
+C. ANEC and conformal duration
+  int sech^5/2 = 1.74803836953  sqrt(pi)G(5/4)/G(7/4) = 1.74803836953
+  ANEC coeff 2*int = 3.496076739  closed sqrt2 G(1/4)^2/(3 sqrt pi) = 3.496076739
+  J/(h w_b) = int tanh^2 sech^1/2 = 3.49607673906  vs 2*int sech^5/2 = 3.49607673906  ratio I12/I52 = 3.0
+  eta_inf*hLb = 1.311028777  G(1/4)^2/(4 sqrt(2pi)) = 1.311028777
+  lemniscatic omega1 = int_1^inf dt/sqrt(4t^3-4t) = 1.311028777 ;  eta_inf/(1.31103/0.00437243) = 299.84013466196143
+D. Ewald sums at the cube
+  Z2(1,0) = 16.5323159598  Z2(1,AAA) = -3.8631638072  ratio = -0.233673  gamma_C = 1.6750738
+  N_C AAA = 25.5153 ; N_C PPP = -30
+  even/odd split: Z_even = 6.3346, Z_odd = 10.1977
+E. Gaussian SU(N) bound 9/8 (N^2-1) N^(1/3): 4.252233543395197 12.980246132766675
+F. gains, transfer, floor
+  kappa=  1.6000  gain=4.500465  T12=2.0059
+  kappa=  2.2854  gain=6.723990  T12=2.3972
+  kappa=  6.0000  gain=30.587717  T12=5.5863
+  kappa= 13.5286  gain=216.456496  T12=21.7895
+  kappa= 19.3237  gain=674.274010  T12=52.1059
+  kappa= 18.0000  gain=529.170535  T12=43.1061
+  kappa= -6.3524  gain=-0.885070
+  kappa= -9.0740  gain=0.118757
+  m = [[10.5542, 2.4685], [136.3738, 31.9906]]  T = [[674.2729, 52.1059], [8725.3656, 674.2729]]
+  T - M R M^-1 R max = 2.82270775642246e-08   2 m11 m12 = 52.10588951693498
+  K(19.3237)=24.5630 K(19.32)=24.5501 sigma_floor=0.10374 delta=2.0653e-04
+  next order: X=2330.98 K(18)=20.3204 sigma=0.09337 ratio=0.9000
+  s_star=4.8305e-05 s_nat=4.9833e-05 x=1.0316 (x+1/x)/2-1=0.00049
+  never-real width 2 m12 m22 = 157.9367180751509  var= 0.03261879916211015  rms= 0.18060675281425706  /natural = 654.5638116414907
+  G(inf)=2T11= 1348.5457867561258   T11 T12/(m11 m12)= 1348.545786756578
+   G(0.10) = 2.395
+   G(0.25) = 8.265
+   G(0.50) = 45.113
+   G(1.00) = 313.958
+  dln sigma/dln kappa (fixed X) = 1.3659652502773234
+G. background numbers
+  f0=0.0000  C_eff=42.7400  L_b M=789.75  h L_b=0.00483  Heff L_b=0.004779
+  f0=0.2999  C_eff=29.9223  L_b M=722.40  h L_b=0.00442  Heff L_b=0.004372
+  X(L_b=722.508)= 2282.486333258136  X closed= 2281.475089577164
+  mu_b = 3.3726e+15  L_b/l_P = 3619.6  L_b[m] = 5.850e-32  1/(hLb)=226.3
+  eps = sqrt(N_C) h/M = 3.089e-05   (hLb/4pi)^2 = 1.23e-07   R L_b^2 = 12 (hLb)^2 = 2.32e-04
+  H_eff/h = 1-exp(-sqrt(2/3) 5.5794) = 0.9894913969965584   v_b = 3 (Heff/h)^2 = 2.9372713803
+  (1-f0)^(1/4)=0.9147  (1-f0)^(-3/4)=1.3066
+H. emptiness, photon pair, misc
+  gamma/2pi = 0.26660 ; *N_eff(0.2999) = 4.7623 ; free 6.8023; f0 for 5: 0.2650
+  fermion quanta: 5.499
+  C_b free = 30.174 ; C_b(0.30) = 17.356 ; side ratio e^{sqrt(3/2) 0.4511} = 1.7376
+  4pi/C = 0.294 ; 4pi/(0.7 C) = 0.420 ; 2 sqrt3 pi = 10.883 ; /C = 0.255
+  Rayleigh median sqrt(2 ln2) = 1.1774
+  freeze: E 1.0933 T2 0.9112; e-folds 0.753 0.577; angle phase 4.732
+  3^(-3/2) = 0.19245 ; Airy width (144 X^2)^(-1/3) = 1.101e-03
+  't Hooft: 2pi^2/gY^2 = 100.69 ; / C = 2.356 ; N_C needed = 60.1
+  a/c SM = 1.1726
+  large-gauge copy 4pi/g^(2/3), g=0.53: 19.19
+  pure gauge share: 0.2580
+  completeness: sum (yXy)^2/|y|^4 = 0.666667 ; sum X^2 = [1.666667, 1.666667, 1.666667]
+I. slow-roll plateau (first order), end at eps=1
+  N=55.722 phi=5.3679  n_s=0.96542  r=0.00341  (1-2/N=0.96411, 12/N^2=0.00386)
+  N=50.330 phi=5.2510  n_s=0.96181  r=0.00414  (1-2/N=0.96026, 12/N^2=0.00474)

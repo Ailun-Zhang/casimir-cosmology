@@ -1,0 +1,23 @@
+# Conda environment of the DNEC v12 code/data package (the versions used for every run recorded in VERIFY.json).
+#   conda env create -f environment.yml && conda activate dnec-v12
+# Packages = third-party imports found by an import scan of all *.py files of the package (2026-10-15).
+name: dnec-v12
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy=2.5.1
+  - scipy=1.17.1
+  - mpmath=1.4.1
+  - sympy=1.14.0
+  - matplotlib=3.11.0
+  - psutil=7.2.2            # optional: free-memory check of cmb/02_ensemble (run_ens.py)
+  - threadpoolctl=3.6.0     # optional: BLAS thread limits in cmb/02_ensemble (ens_core.py)
+  - pip
+  - pip:
+      - PyMuPDF==1.27.2.2   # figures/: page-width check of the saved PDFs (module fitz)
+      # - camb==2.0.4       # optional: cmb/01_fisher_kl --full only (regenerates the CAMB transfer table)
+# Optional, not Python:
+#   SMDR 1.3 C build (higgs/01 compiled refits): Windows: a separate env with the conda-forge MinGW-w64 toolchain
+#   (m2w64-gcc 5.3.0, m2w64-make), see third_party/README.md; Linux/macOS: system gcc/clang + make.
+#   Wolfram Language (Mathematica 15 / wolframscript) for the optional *.wl cross-checks (env WOLFRAMSCRIPT).

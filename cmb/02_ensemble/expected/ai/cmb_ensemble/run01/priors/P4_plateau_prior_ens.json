@@ -1,0 +1,229 @@
+{
+ "prior": "p(phi)dphi proportional to dphi/V(phi), leading plateau-to-N map (transplant, conditional)",
+ "pN_unormalized": "N/(N-3/4)^2",
+ "infinite_cutoff_normalizable": false,
+ "N_reference_at_s1p13": 68.25,
+ "samples": 2000000,
+ "models": {
+  "A_fixed_typical": [
+   {
+    "Nmax": 100.0,
+    "probability": 0.001391351978570086,
+    "mc_standard_error": 1.143442750610295e-09
+   },
+   {
+    "Nmax": 250.0,
+    "probability": 0.0004123865648943945,
+    "mc_standard_error": 5.1708808161207244e-11
+   },
+   {
+    "Nmax": 1000.0,
+    "probability": 0.00020042967942132426,
+    "mc_standard_error": 6.623609604147448e-11
+   },
+   {
+    "Nmax": 1000000.0,
+    "probability": 5.640611796464517e-05,
+    "mc_standard_error": 2.6500849349259576e-11
+   }
+  ],
+  "B_C79_clamped": [
+   {
+    "Nmax": 100.0,
+    "probability": 0.0012917255825591442,
+    "mc_standard_error": 1.1374550819698377e-07
+   },
+   {
+    "Nmax": 250.0,
+    "probability": 0.0003828580287248595,
+    "mc_standard_error": 3.34088943946049e-08
+   },
+   {
+    "Nmax": 1000.0,
+    "probability": 0.00018607810848749308,
+    "mc_standard_error": 1.6205555408799187e-08
+   },
+   {
+    "Nmax": 1000000.0,
+    "probability": 5.23672131207674e-05,
+    "mc_standard_error": 4.554556550111013e-09
+   }
+  ],
+  "C_zero_fossil_edge": [
+   {
+    "Nmax": 100.0,
+    "probability": 0.0012582475489581993,
+    "mc_standard_error": 1.7600661193731016e-07
+   },
+   {
+    "Nmax": 250.0,
+    "probability": 0.0003729353840678969,
+    "mc_standard_error": 5.190638851392535e-08
+   },
+   {
+    "Nmax": 1000.0,
+    "probability": 0.00018125546716765275,
+    "mc_standard_error": 2.520037774416895e-08
+   },
+   {
+    "Nmax": 1000000.0,
+    "probability": 5.100999658490567e-05,
+    "mc_standard_error": 7.086812608307241e-09
+   }
+  ],
+  "ENS_TE80_prof": [
+   {
+    "Nmax": 100.0,
+    "probability": 0.0015864070152221443,
+    "mc_standard_error": 1.0158322121580831e-07
+   },
+   {
+    "Nmax": 250.0,
+    "probability": 0.00047019945319959534,
+    "mc_standard_error": 2.98771412185181e-08
+   },
+   {
+    "Nmax": 1000.0,
+    "probability": 0.00022852811825479978,
+    "mc_standard_error": 1.4496963657582938e-08
+   },
+   {
+    "Nmax": 1000000.0,
+    "probability": 6.431374851137527e-05,
+    "mc_standard_error": 4.075243430686344e-09
+   }
+  ],
+  "ENS_TE80_fixed": [
+   {
+    "Nmax": 100.0,
+    "probability": 0.001705784477106051,
+    "mc_standard_error": 9.321642586621335e-08
+   },
+   {
+    "Nmax": 250.0,
+    "probability": 0.0005055820610445994,
+    "mc_standard_error": 2.7515527566149263e-08
+   },
+   {
+    "Nmax": 1000.0,
+    "probability": 0.000245724907265811,
+    "mc_standard_error": 1.3361799319778125e-08
+   },
+   {
+    "Nmax": 1000000.0,
+    "probability": 6.915337162691776e-05,
+    "mc_standard_error": 3.758206087200631e-09
+   }
+  ],
+  "ENS_TE30_prof": [
+   {
+    "Nmax": 100.0,
+    "probability": 0.0012274889121706245,
+    "mc_standard_error": 1.3744797140850835e-07
+   },
+   {
+    "Nmax": 250.0,
+    "probability": 0.00036381874876566494,
+    "mc_standard_error": 4.0504643294080694e-08
+   },
+   {
+    "Nmax": 1000.0,
+    "probability": 0.0001768245655656682,
+    "mc_standard_error": 1.966170486843105e-08
+   },
+   {
+    "Nmax": 1000000.0,
+    "probability": 4.976302578111619e-05,
+    "mc_standard_error": 5.528632321803782e-09
+   }
+  ],
+  "ENS_T80_prof": [
+   {
+    "Nmax": 100.0,
+    "probability": 0.0013386230824787523,
+    "mc_standard_error": 1.2220720656569814e-07
+   },
+   {
+    "Nmax": 250.0,
+    "probability": 0.0003967581051913897,
+    "mc_standard_error": 3.5958433011715166e-08
+   },
+   {
+    "Nmax": 1000.0,
+    "probability": 0.00019283387627258566,
+    "mc_standard_error": 1.7449118476064532e-08
+   },
+   {
+    "Nmax": 1000000.0,
+    "probability": 5.4268461657051484e-05,
+    "mc_standard_error": 4.9053771069193445e-09
+   }
+  ],
+  "ENS_TE80ampfree_prof": [
+   {
+    "Nmax": 100.0,
+    "probability": 0.001588056866854319,
+    "mc_standard_error": 9.817993076047623e-08
+   },
+   {
+    "Nmax": 250.0,
+    "probability": 0.00047068845717390033,
+    "mc_standard_error": 2.8866087982094157e-08
+   },
+   {
+    "Nmax": 1000.0,
+    "probability": 0.00022876578581758957,
+    "mc_standard_error": 1.4005330610237817e-08
+   },
+   {
+    "Nmax": 1000000.0,
+    "probability": 6.438063433697653e-05,
+    "mc_standard_error": 3.93684032801763e-09
+   }
+  ],
+  "ENS_noise_planck143_TE80_prof": [
+   {
+    "Nmax": 100.0,
+    "probability": 0.0014602471052194371,
+    "mc_standard_error": 9.169923430296262e-08
+   },
+   {
+    "Nmax": 250.0,
+    "probability": 0.00043280657726688494,
+    "mc_standard_error": 2.689163771847451e-08
+   },
+   {
+    "Nmax": 1000.0,
+    "probability": 0.00021035429113762938,
+    "mc_standard_error": 1.3039942288104123e-08
+   },
+   {
+    "Nmax": 1000000.0,
+    "probability": 5.91991614941238e-05,
+    "mc_standard_error": 3.6640471154144994e-09
+   }
+  ],
+  "ENS_noise_planck143_TE80_fixed": [
+   {
+    "Nmax": 100.0,
+    "probability": 0.0015549617905617759,
+    "mc_standard_error": 1.2726163620248626e-07
+   },
+   {
+    "Nmax": 250.0,
+    "probability": 0.00046087931826627036,
+    "mc_standard_error": 3.75072523673478e-08
+   },
+   {
+    "Nmax": 1000.0,
+    "probability": 0.00022399831099173295,
+    "mc_standard_error": 1.8207339233495648e-08
+   },
+   {
+    "Nmax": 1000000.0,
+    "probability": 6.303894308547552e-05,
+    "mc_standard_error": 5.119810688761256e-09
+   }
+  ]
+ }
+}

@@ -1,0 +1,315 @@
+
+\newcommand{\rChist}[5]{\item[#1] \emph{Old:} #2\par\emph{New:} #3\par\emph{Reason:} #4\par\emph{Files:} {\small #5}}
+
+\section{Superseded estimates, failed approaches and retracted statements}\label{rep:history}
+
+\begin{center}
+\fbox{\parbox{0.9\textwidth}{\centering\textbf{Superseded / not used in the papers.} Every statement and number in the ``Old'' fields of this part is superseded and must not be quoted as a result. The current results are those of Parts~I and~II and of the Letter and the paper.}}
+\end{center}
+
+This part records how the results changed during the research: earlier estimates that later calculations replaced, approaches that failed or were abandoned, and statements that were retracted.
+It serves two purposes.
+A reader who meets an older number in a talk, a draft or the archived research files can find what replaced it and why; and the record shows which conclusions changed under scrutiny and which survived it.
+Each item gives the old statement, the new one, the reason, and the files of the research tree that document the change (derivation files D$nnn$, calculations C$nnn$, review reports R$nn$ and the blind checks of Sec.~\ref{rep:v-blind}).
+``The internal draft'' is the version of the paper that preceded the present papers; it was not released.
+The ``New'' fields quote current numbers only to identify the replacement; their full statements and conditions are in the sections cited.
+
+\subsection{The Higgs zero mode}\label{sec:v23-higgs}
+
+\begin{description}
+\rChist{H1}{The internal draft assumed that new physics keeps the effective quartic coupling positive at $1/L_b$ and took $\lambda=0.01$, a ``stabilized Higgs''.}
+{The Standard Model itself has $\lambda(\mub)\approx-0.0098<0$; the Higgs zero mode is a finite-volume resonance confined by the zero-point energy of the gauge zero modes down to the threshold $\lambda_c\approx-0.012$ ($\Pone=1/2$), and the Standard Model lies on the safe side for the measured top mass (Secs.~\ref{rep:h-matching}--\ref{rep:h-smmap}).}
+{The second stage showed that the constant gauge modes confine the zero mode at negative $\lambda$; no new physics is needed below $\mub$.}
+{internal draft (main\_v11.tex l.171); V12\_RESULTS\_INDEX \S E (E1$'$, E3$'$); D110, D112, D121, D122; run05.}
+
+\rChist{H2}{``$\lambda\simeq-0.014$ near the Planck scale'' as the relevant coupling.}
+{$\lambda(\mub)=-0.0098$ at $\mub=\MPbar/722$; the Planck-scale value is not the relevant one.}
+{The matching scale is $1/L_b$, not the Planck mass.}
+{D120.}
+
+\rChist{H3}{``A non-minimal coupling does not act at the turn'', because $RL_b^2=12(hL_b)^2\approx2\times10^{-4}$.}
+{True at $\tau=0$, but the late part of the turn ($\tau\approx3.5$--$6$) is decided by $\xiH$: with $\xiH=0$ the zero mode runs away, and survival requires $\xiH(\mub)\ge\xi_c(\Pone)$, about $0.074$--$0.08$ at the measured mass (Sec.~\ref{rep:h-universality}).}
+{The independent check R14 found that the term $a''/a$ makes the width grow from $1.9\times10^{-3}$ at $\tau=3$ to $1.15$ at $\tau=5$ for $\xiH=0$.}
+{internal draft l.171; R14 correction addendum to D108 \S2; D111; D129.}
+
+\rChist{H4}{Inputs of the internal draft: $\mu=1/L_b=3.10\times10^{15}$~GeV; one-loop couplings $g_2/g_3/g_Y=0.5268/\allowbreak 0.5396/\allowbreak 0.4415$ and $y_t=0.4585$; $\alpha_s(M_Z)=0.1184$.}
+{$\mub=3.3726\times10^{15}$~GeV; NNLO couplings $0.5278/\allowbreak 0.5357/\allowbreak 0.4428$ and $y_t(\mub)=0.4278$; $\alpha_s=0.1180$ (Sec.~\ref{rep:h-smmap}). The one-loop couplings survive only in the DMC shape correction, where their effect is the $\pm0.002$~GeV item of the budget.}
+{Updated inputs (PDG 2026) and the NNLO mapping with SMDR-type matching.}
+{internal draft l.546, l.558; sm\_provider.py; D120 \S3.6.}
+
+\rChist{H5}{Zero-mode mass $m_\Phi^2=(\frac94g_2^2+\frac34g_Y^2+6\lambda)T_B-6y_t^2T_F$ with ``three polarizations per massive vector''.}
+{Consistent one-loop matching in Coulomb gauge with $\MSbar$ finite-volume sums: two transverse and one Coulomb mode per massive vector, mixed with the Goldstone; exact off-shell Goldstone mass (Sec.~\ref{rep:h-matching}).}
+{The unitary-gauge counting is not a consistent Born--Oppenheimer split; it made the result depend on the gauge by about $0.25$~GeV (R14).}
+{internal draft l.556; D110; R15 check of D110.}
+
+\rChist{H6}{First stage: main model ``MU''; critical masses $172.22/\allowbreak 172.59$~GeV (D108) or $172.20/\allowbreak 172.57$~GeV (R14); $\Pone(172.60)\approx0.48$ ($0.36$--$0.74$); ``$\xiH\gtrsim1/6$ and $m_t\lesssim172.2$~GeV give $\Pone\ge0.9$''; scheme error $\sim0.25$~GeV; reduction error $\pm0.1$--$0.15$~GeV; DMC bracket $+0.04$ to $+0.23$~GeV.}
+{All replaced by the second and third stages; the final critical masses are $172.502/\allowbreak 172.960/\allowbreak 173.418$~GeV (Sec.~\ref{rep:h-survival}).}
+{Inconsistent matching, one-dimensional reduction and no full-dimensional validation.}
+{D108; V12\_RESULTS\_INDEX \S A (note).}
+
+\rChist{H7}{``Freezing the width beyond $\tau=3$ lowers $P$ by only about $0.01$''.}
+{For $\xiH=0$ the width rises from $1.9\times10^{-3}$ to $1.15$ between $\tau=3$ and $5$; all later hazards use $\xiH=1/6$ on $\tau\in[0,5]$ with the real-time condition on $\xiH$.}
+{Independent check R14.}
+{R14 correction addendum to D108 \S2.}
+
+\rChist{H8}{First-stage thresholds on $\xiH$: $\xi_c\approx0.16$ (resonance measure) or $0.04$--$0.12$ (classical runaway measure).}
+{A single definition, $P_{\rm surv}(\xi_c)=0.99\,P_{\rm surv}(1/6)$; $\xi_c$ is a universal function of $\Pone$ (Sec.~\ref{rep:h-universality}).}
+{Two measures gave inconsistent answers; real-time evolution decides.}
+{D111 \S0(3); D129.}
+
+\rChist{H9}{Second stage (D110): consistent matching gives critical masses $172.35/\allowbreak 172.77$~GeV and $\Pone(172.6)=0.70$; ``the zero-mode cross terms stabilize by $+0.04$ to $+0.08$~GeV (not included)'', widened after the R15 check to $+0.04$ to $+0.09$~GeV.}
+{The cross terms destabilize: $-0.080/\allowbreak{-}0.118/\allowbreak{-}0.160$~GeV at $\Pone=0.9/\allowbreak 0.5/\allowbreak 0.1$, included in the model (Sec.~\ref{rep:h-cross}).}
+{The estimate used Higgs-only, periodic-boson curvatures; with all fields and antiperiodic fermions the hypercharge curvature of the light fermions lifts the well more than the barrier. Confirmed blindly by V2.}
+{D110; D121; R15 check of D112; R16 V2.}
+
+\rChist{H10}{D112: critical masses $172.51/\allowbreak 173.00$~GeV from width ratios; ``the soft hypercharge direction is unstable for $r<0.776$ and needs periodic holonomies''.}
+{Direct two-dimensional roots at every node give $172.518/\allowbreak 173.014$~GeV (same model); the instability is an artifact of keeping only Higgs fluctuations.}
+{Node-direct calculation (no ratio transfer); full set of fields in the curvature.}
+{D122 \S4.3; D121 \S0.2; R16 V2.}
+
+\rChist{H11}{Second-stage final table (D116): $172.517/\allowbreak 173.012/\allowbreak 173.514$~GeV; $\Pone(172.60)=0.856$; $\lambda_c=-0.00965/\allowbreak{-}0.01291/\allowbreak{-}0.01624$; $m_c-m_0=1.49/\allowbreak 1.99/\allowbreak 2.49$~GeV; $\xi_c=0.036/\allowbreak 0.072/\allowbreak 0.120$; inflation-scale item $\pm0.05$~GeV; Standard Model mapping error $\pm0.16$--$0.17$~GeV; cross terms ``$+0.04/\allowbreak{+}0.06$~GeV, one-sided''.}
+{$172.502/\allowbreak 172.960/\allowbreak 173.418$~GeV; $\Pone(172.60)=0.843$; $\lambda_c=-0.0091/\allowbreak{-}0.0121/\allowbreak{-}0.0152$; $m_c-m_0=1.41/\allowbreak 1.87/\allowbreak 2.33$~GeV; $\xi_c=0.035$ ($172.2$~GeV), $0.074$ ($172.6$~GeV), $0.12$ ($\Pone=1/2$); inflation-scale item $\pm0.035/\pm0.067/\pm0.112$~GeV; Standard Model error $\pm0.07$~GeV ($\mtbar$) and $\pm0.10$~GeV (pole); cross terms $-0.08/\allowbreak{-}0.12/\allowbreak{-}0.16$~GeV (Secs.~\ref{rep:h-survival}--\ref{rep:h-universality}).}
+{NNLO mapping, node-direct two-dimensional hazard, cross terms, blind error analysis of the mapping (V1).}
+{D116; D124 \S4; V12\_RESULTS\_INDEX \S E; numbers\_run05.csv (R5-001, R5-029, R5-030, R5-042--R5-047).}
+
+\rChist{H12}{D111: $\xi_c=0.032/\allowbreak 0.054/\allowbreak 0.120$ (MU potential); ``$\xiH\gtrsim0.03$--$0.12$, of the same order as the inflation bound $\xi\gtrsim0.06$''; stochastic nucleation with $B=192\pi^2\xi^2/|\lambda|$ ``matters only for $\xi\lesssim0.020$--$0.028$''.}
+{Current $\xi_c$ of Sec.~\ref{rep:h-universality}; compared at the same scale, the zero-mode condition is stronger than the inflation bound for $m_t\gtrsim172.1$~GeV; the Hawking--Moss coefficient is $96\pi^2$, which gives $0.028$--$0.040$ for the MU potential.}
+{Comparison at mixed scales; a factor of two in the Hawking--Moss exponent.}
+{D129 \S0.4, \S5; D127 \S7; R16 V5, V6.}
+
+\rChist{H13}{D111: a real Gaussian initial state gives $w_0=0.53$--$0.93$.}
+{That state, truncated at the origin, is not in the domain of the Hamiltonian; the time-symmetric minimal-variance rule gives $w_0=0.98$--$0.995$ (Sec.~\ref{rep:h-survival}).}
+{Independent check R15 of D111.}
+{D124 \S3; R15 addendum to D111 \S2.}
+
+\rChist{H14}{Standard Model mapping errors: run01 $\pm0.13$~GeV (pole) and $\pm0.11$~GeV ($\mtbar$); run02 $\pm0.086$ and $\pm0.047$~GeV.}
+{$\pm0.10$~GeV (pole) and $\pm0.07$~GeV ($\mtbar$), four-loop truncated pole relation (Sec.~\ref{rep:h-smmap}).}
+{The blind check V1 explained the factor-of-ten difference of matching-scale variations between SMDR and \texttt{mr} and recommended these values.}
+{D120; R16 V1 (DIAGNOSIS.json \texttt{recommended}).}
+
+\rChist{H15}{D120 run01, without cross terms: $172.580/\allowbreak 173.074/\allowbreak 173.575$~GeV; $\mtbar=162.80/\allowbreak 163.27/\allowbreak 163.75$~GeV.}
+{$172.502/\allowbreak 172.960/\allowbreak 173.418$~GeV; $\mtbar=162.73/\allowbreak 163.16/\allowbreak 163.60$~GeV.}
+{Cross terms and their one-loop completion.}
+{R3\_mbar\_run05.json; R16 consistency audit.}
+
+\rChist{H16}{Cross terms by the ratio method: $-0.093/\allowbreak{-}0.135/\allowbreak{-}0.180$~GeV; a first vev-mixing run with a coefficient four times too large; ``the top term is at most $25\%$ of the vev mixing''.}
+{Direct roots: $-0.085/\allowbreak{-}0.124/\allowbreak{-}0.167$~GeV (run02), and $-0.080/\allowbreak{-}0.118/\allowbreak{-}0.160$~GeV after the covariant vertex, the Coulomb mismatch and the exact top chiral loop (run05); the vev-mixing and top-chiral groups are comparable and largely cancel.}
+{Ratio transfer replaced by direct roots; error in the first vev-mixing vertex; exact top bubble.}
+{D121 run02--run05 (\texttt{*\_factor4error\_superseded.json}).}
+
+\rChist{H17}{First claims layer (D126 v1): $\Pbar\approx0.79$ ($[0.53,0.995]$); FCC-ee exclusion at $173.8$~GeV; $M_h=125.20$~GeV; ``implied by MMR 2022''.}
+{$\Pbar=\PbarOne$ (direct mass); exclusion reach $\mExclFCC$~GeV; $M_h=125.13$~GeV; the bound of Mantziris, Markkanen and Rajantie (2021) applies (Secs.~\ref{rep:h-budget}, \ref{rep:h-universality}).}
+{Wrong Higgs mass, wrong reference, earlier centre.}
+{D126 v2; R16 V6.}
+
+\rChist{H18}{D126 v2 before correction: variant of Bednyakov et al.\ $0.626$; $\MSbar$ cross-section value $0.557$; $B_{\rm sel}=1.459$ for a prior stated as flat on $[150,200]$~GeV; ``$|\ln B|<0.8$''; HL-LHC separation $\approx1.6\sigma$.}
+{Equal-mass convention throughout ($0.67$; quoted range $\PbarBKPV$); $\PbarMbarSigma$; $B_{\rm sel}=\BselDirect$ with upper bound $\BselMax$; $|\ln B|\le\BayesMax$; HL-LHC $\sigHLLHCmin$--$\sigHLLHCmax\sigma$ (final values, Sec.~\ref{rep:h-budget}).}
+{Blind check V3: two conventions for asymmetric errors in one code; the prior was applied on a grid over $[160,186]$~GeV; the HL-LHC reach depends on the assumed precision of $\alpha_s$.}
+{D126 v2 correction addendum; R16 V3.}
+
+\rChist{H19}{Literature notes: ``MMR 2022 ($\xi\gtrsim0.1$) is stronger than $\xi_c$ for $m_t\le172.6$~GeV''; a reading in which ``the inflation bound is stronger below $172.4$~GeV''.}
+{The plateau is a minimally coupled scalar, so MMR 2021 applies ($\xi_{\rm EW}\approx0.049$--$0.060$); the second reading compared different scales; at the same scale the zero-mode condition is stronger for $m_t\gtrsim172.1$~GeV.}
+{Blind literature check V6 and blind recomputation V5.}
+{D127 \S0.1; D129 \S0.5; R16 V5, V6.}
+
+\rChist{H20}{``$-0.19$~GeV per e-fold of the duration of the turn''.}
+{Two correct measures with different definitions: the secant over one e-fold, $-0.170/\allowbreak{-}0.270/\allowbreak{-}0.394$~GeV, and the local derivative, $-0.19/\allowbreak{-}0.31/\allowbreak{-}0.47$~GeV (Sec.~\ref{rep:h-budget}).}
+{Blind check V3.}
+{D124; D128; R16 V3.}
+
+\rChist{H21}{Second stage: ``the two-dimensional to one-dimensional width ratio is $1.06$--$1.08$ and needs a bump $A=0.0937$ outside the well''.}
+{In the final model the ratio is $1.010$--$1.018$ and the bump $0.013$.}
+{Model refinements (matching, cross terms) removed most of the difference.}
+{D129 \S0.1.}
+
+\rChist{H22}{Earlier claim wording: ``$\Pbar\approx0.8$'', ``$\xiH\gtrsim0.07$'', ``exclusion needs $m_t\gtrsim173.9$~GeV''.}
+{$\Pbar\approx\PbarOne$; $\xiH(\mub)\gtrsim\xiHmin$ (conservative); $95\%$ exclusion of the theory curve at $\mExclTheory$~GeV and FCC-ee reach $\mExclFCC$~GeV.}
+{Final model and corrected claims layer.}
+{D126 v2 \S1.4, \S4; D132.}
+
+\rChist{H23}{Error-budget items of the third stage: reduced model ``in-model'' $^{+0.009}_{-0.012}$, $^{+0.012}_{-0.017}$ and $^{+0.015}_{-0.022}$~GeV with DMC $\pm1\sigma$ and $B_x$ sub-items; full-dimensional item $+0.025$~GeV at $\Pone=0.1$ by extrapolation; matching item from the one-dimensional scale scan of the second stage ($+0.014/\allowbreak{-}0.045$~GeV at $\Pone=1/2$); preparation item $-0.016$~GeV at all levels.}
+{Reduced-model item $\pm0.002$~GeV (fixed couplings in $\delta E_{\rm DMC}$); full-dimensional item $+0.012/\allowbreak{+}0.020/\allowbreak{+}0.031$~GeV computed with the final slopes (Sec.~\ref{rep:v-fulldim}); matching item from the scan in the final model, $^{+0.009}_{-0.039}$, $^{+0.012}_{-0.049}$ and $^{+0.015}_{-0.058}$~GeV; preparation $-0.016/\allowbreak{-}0.006/\allowbreak{-}0.004$~GeV (Sec.~\ref{rep:h-budget}).}
+{The full-dimensional check measured directly what the bracketed sub-items estimated; overlap removed; all items recomputed in the final model.}
+{table1\_rebuild.json; numbers\_run05.csv R5-035--R5-039 (column \texttt{supersedes}); D123; D132.}
+
+\rChist{H24}{First-stage renormalization-group improvement of the zero-mode potential with $\mu^2=(1+r^2)/L^2$ (about $+0.13$~GeV).}
+{Removed: the finite-volume one-loop energy contains no $\ln(m^2L^2)$, and the masses are far below $2\pi/L$ (Sec.~\ref{rep:h-matching}).}
+{The infinite-volume logarithm cancels against the finite-volume sum in the consistent matching.}
+{D110 \S3.5.}
+
+\rChist{H25}{The one-loop vertex of the cross terms in ordinary Coulomb gauge (anticommutator vertex) with the top chiral loop: $172.495/\allowbreak 172.950/\allowbreak 173.407$~GeV; the gauge logarithms closed only to $61\%$, and a ``missing $39\%$'' item of $\pm0.009/\pm0.012/\pm0.014$~GeV gave a combined cross-term error of $\pm0.012/\pm0.016/\pm0.019$~GeV.}
+{The background-covariant Coulomb-gauge vertex with the Coulomb mismatch closes the logarithms to $97$--$99\%$; $172.502/\allowbreak 172.960/\allowbreak 173.418$~GeV with a model-internal error of $\pm0.008/\pm0.010/\pm0.013$~GeV (Sec.~\ref{rep:h-cross}). The convergence table keeps the intermediate row only to show the size of the step.}
+{The vertex must be in the same gauge as the twisted transverse modes of the conditional constant approximation.}
+{D121 appendices run04, run05.}
+
+\rChist{H26}{First vev-mixing run of the cross terms: diagonal channels only, a polarization factor between $2/3$ and $1$, ``$+0.010$ to $+0.026$~GeV, stabilizing''.}
+{Four channels with the exact factor $2/3$ and a top chiral loop of comparable size (run04), then the covariant vertex (run05); see H16 and H25.}
+{Omitted channels and the choice of gauge.}
+{D121 appendices run03, run04.}
+
+\rChist{H27}{Second-stage Standard Model mapping: two-loop running with a constant three-loop calibration and fitted matching; Standard Model error ``$\pm0.16$--$0.17$~GeV from the literature''.}
+{NNLO matching of SMDR type with three-loop running and four- and five-loop QCD terms; it moves all critical masses by $+0.063$~GeV (Sec.~\ref{rep:h-smmap}).}
+{The fitted matching gave too large a $g_3$ and lacked the four-loop QCD terms of $y_t$.}
+{D120 \S3.6.}
+
+\rChist{H28}{Matching-scale error of the mapping from a renormalization-group reconstruction of the three-loop logarithms, $[-0.088,+0.102]$~GeV.}
+{The compiled SMDR with independent scale variations gives $[-0.042,+0.054]$~GeV without the pure-QCD tower; the reconstruction overestimates by a factor of about three and is kept only as a comparison (Sec.~\ref{rep:h-smmap}).}
+{Direct computation with the compiled SMDR became available.}
+{D120 \S4, App.~R.4.}
+
+\rChist{H29}{Draft wording: ``the absolute stability bound is $171.5$~GeV and $m_0$ lies below it''.}
+{With the same inputs $m_{\rm stab}=170.99$~GeV lies below $m_0=171.09$~GeV (Sec.~\ref{rep:h-smmap}).}
+{The order was wrong; checked with the same mapping.}
+{package \texttt{higgs/01\_sm\_mapping/abs\_stability.json}; consistency check of the draft against this file (2026-10-16).}
+
+\rChist{H30}{``$P_2=\Pone^2$ without condition'' for the survival of both branches.}
+{The two branches interfere maximally; there is no decohering history probability, only Fr\'echet bounds $\max(0,2\Pone-1)\le P_2\le\Pone$, and the linear value $\Pone^2/w_0$ is one choice (Sec.~\ref{rep:h-survival}).}
+{Gell-Mann--Hartle analysis of the two-time histories.}
+{D108; D130.}
+
+\rChist{H31}{Draft table: ``$hL_b\times1.1$: $-0.020/\allowbreak -0.032/\allowbreak -0.049$~GeV''; draft prefactor ``$A\approx300$'' of the closed-form threshold.}
+{The shifts $-0.020/\allowbreak{-0.032}/\allowbreak{-0.049}$~GeV belong to $hL_b\times0.9$, and $\times1.1$ gives $+0.018/\allowbreak{+0.030}/\allowbreak{+0.046}$~GeV; the effective prefactor is $A_{\rm eff}\simeq310$ (Sec.~\ref{rep:h-reduced}).}
+{Sign error and an inconsistent prefactor found when the papers were checked against the result files.}
+{R16 V3 \texttt{sens\_results.json}; D128 \S1.2; consistency check of the drafts against the result files (2026-10-16).}
+\rChist{H32}{Zero-mode energy of the earlier draft computed with a decoupled quartic part, the ``stabilized'' $\lambda=0.01$ and $y_t=0.4585$.}
+{The Higgs zero mode is a finite-volume resonance at the Standard Model coupling $\lambda(\mub)=-0.0098$ (Secs.~\ref{rep:h-matching}--\ref{rep:h-survival}); the zero-mode share evaluated with the real part of the resonance energy is $0.298$, and the baseline $\fzm=0.30$ is kept (Sec.~\ref{rep:zeromodes}).}
+{Consequence of H1 for the zero-mode energy; the change of $\fzm$ is below $1\%$.}
+{D108 \S5; D124; long PRD draft appendices on the Casimir energy and the zero modes.}\end{description}
+
+\subsection{The emptiness gate, the shape and the time symmetry}\label{sec:v23-shape}
+
+\begin{description}
+\rChist{S1}{``The rest is worth fewer than five quanta''; ``a single quantum with $|n|\ge5$ already forbids the turn''.}
+{About five quanta: $\sum|n|<4.76$ lowest bosonic quanta ($4.70$--$5.05$ over the range of $\fzm$); the single-quantum statement holds only for $\fzm>0.265$, and the statement that holds for all $\fzm>0.250$ is $|n|\ge\sqrt{26}$ (Sec.~\ref{rep:gate}).}
+{Recomputed budget with the zero-mode energy; the bound equals five at $\fzm=0.265$.}
+{internal draft l.28, 42, 224, 418; D125 \S7; R16 V4.}
+
+\rChist{S2}{A real Gaussian shape state prepared at the turn as a premise; ``the state must be time symmetric''; ``the two branches are mutually exclusive''.}
+{A theorem: any shape state is real at most once, and, for a real Gaussian state, survival of the shape on both branches with $\ge90\%$ ($99\%$) probability requires that moment within $0.35/h$ ($0.24/h$) of the turn; the equivalences B1/B2 hold under stated conditions (Sec.~\ref{rep:quantum-shape}).}
+{The premise was replaced by a proved statement and a conditional theorem; the time symmetry is a conclusion under conditions, not a requirement.}
+{internal draft l.28, 42, 44, 324; D109; D113; D125; D131.}
+
+\rChist{S3}{Survival thresholds: $s_{99}=2.2$, $\sigma(99\%)\approx0.24$; ``survival $\ge99/90/50\%$ requires $|t_x|\lesssim0.2/\allowbreak 0.38/\allowbreak 0.62/h$'' (interpolated); first runs $t_*(99/90\%)=0.232/\allowbreak 0.340$ ($N=256$--$512$); next order $s_{99}=2.02$, $\sigma(99\%)\approx0.20$.}
+{$s_{99}\approx2.8$--$2.95$; linear $99\%$ threshold $\approx0.29$; $t_*=0.237/\allowbreak 0.355/\allowbreak 0.631$ (direct, $N=2048$); next order $s_{99}=3.16$, $\sigma\approx0.30$ (Sec.~\ref{rep:quantum-shape}).}
+{Too few samples for $99\%$-level quantities; the blind checks T19 and V4 found the larger values, and the main calculation, repeated with $N=2048$, confirmed them.}
+{D114; D125 run01, run02; R16 T19, V4.}
+
+\rChist{S4}{``A real state set in the past frozen region gives $\sigma_E\gtrsim2.0$''; ``the shape must be prepared within about $0.1/h$ of the turn, $70$ times more strictly than the light fields''.}
+{Such states destroy the shape in $82$--$87\%$ of cases and the survivors have $\sigma_E\approx0.7$--$0.9$; the latest preparation is $0.24$--$0.36/h$, $21$--$32$ times stricter in Hubble times ($65$--$135$ times in volume e-folds).}
+{Nonlinear survival computed; the R14 check corrected the factor in the freezing region.}
+{D109 \S7; D114; D125 \S3.2; R14 check of D109.}
+
+\rChist{S5}{The criterion of Proposition~2 ``$<1$'', ``violated for $N_{\rm pre}\gtrsim1.5$--$2$''.}
+{The criterion is $<3^{-3/2}=0.19245$; it is violated at $1.32$ ($c=1$) and $1.01$ ($c=3$).}
+{Corrected derivation of the shear criterion.}
+{D114 \S5; D125 \S6.}
+
+\rChist{S6}{B1 stated without condition; B3 ``minimal energy variance'' without restriction; ``a cap is impossible in this model''.}
+{B1 requires a single classical history; the Wheeler--DeWitt test makes this concrete: the Airy components $\mathrm{Ai}$ and $\mathrm{Bi}$ must carry the same shape state, and decay under the barrier is sufficient (if they carry different real states, the reality defect tends to $2\eta^2/(1+\eta^2)$); minimal variance holds within the centred Gaussian family; the divergence of the homogeneous stress at a cap is a limit of the model's precision, and the curved-cigar sign theorem shows that curvature does not flip the aspect kernel.}
+{Independent check R15 of D113 (counterexample $\mathrm{Ai}(-\zeta)\varphi_0+\mathrm{Bi}(-\zeta)\varphi_1$).}
+{D113 and its addendum; D118; D131; R15 check of D113.}
+
+\rChist{S7}{``Every draw survives up to three times the natural amplitude''.}
+{True only for free fields; with the zero-mode energy, three times the amplitude survives $97.3\%$ ($N=256$), $98.3\%$ ($N=2048$) and $98.7\%$ (T19).}
+{The free-field statement was carried over to the Standard Model with zero modes.}
+{internal draft l.362, l.617; D114; D125 run02; R16 T19.}
+
+\rChist{S8}{``The Moyal correction is expected at the percent level; we have not computed it.''}
+{Computed: $-2.03\times10^{-4}$ (aspect) and $-1.08\times10^{-3}$ (angle) relative, for the state real at the turn.}
+{Computed in the third stage.}
+{internal draft l.352, l.364; D131.}
+
+\rChist{S9}{Photon-pair branch: ratio $1.7$ for free fields and ``about $5$'' or ``$4.96$'' with the zero-mode energy.}
+{Centre $\approx5$ ($4.96$ at $\fzm=0.30$, with central amplification $d\beta_\infty/d\beta_0=26.6$) and a $90\%$ interval $3.0$--$11.9$; the earlier range $4.4$--$6.3$ was only the variation of the centre with $\fzm$, now $3.6$--$5.4$ for $\fzm\in[0.258,0.308]$ (Sec.~\ref{rep:gate}).}
+{The quantum spread of the branch had not been included (T19).}
+{internal draft l.42, l.256, l.598; R16 T19 (DA-5).}
+
+\rChist{S10}{$\delta=2.04\times10^{-4}$ at $\fzm=0.30$.}
+{$\delta=2.065\times10^{-4}$ (with $H_{\rm eff}$) or $2.077\times10^{-4}$, consistent with $\sigma_E=0.104$; the convention is stated where it is used.}
+{Inconsistent conventions between files.}
+{internal draft l.307; D125 \S5.}
+
+\rChist{S11}{Header comment of the nonlinear survival code: pinch threshold $10^{-6}$ and ``$S_b<12h^2$''.}
+{The original runs used $10^{-3}$; the criterion is stricter by the factor $0.19245$.}
+{Found by the R15 check of D113.}
+{C142\_HEADER\_ERRATUM.md.}
+
+\rChist{S12}{``States that are never real survive on both branches in at most $4\%$ of cases.''}
+{$4.3\%$ and $2.7\%$ at $1.2$ and $2$ times the threshold width (Wilson ranges $2.4$--$7.5\%$ and $1.3$--$5.5\%$).}
+{Rounding below the computed value.}
+{C153 \texttt{A2\_never\_real}; R16 consistency audit.}
+\rChist{S13}{Floor values from different conventions: $0.1038$ (D109, D115), $0.1041$ (earlier draft appendix, D117, C76) and $0.1031$ (from $\delta=2.04\times10^{-4}$ in a table of the earlier draft).}
+{One convention: $\sfloor=0.1037$ with $H_{\rm eff}$ and $X=2282.49$; the text writes $0.104$. This is a unification of conventions (differences below $1\%$), not a change of result.}
+{Different choices of $h$ or $H_{\rm eff}$ and of $L_b$.}
+{D125 \S5; C153 \texttt{B\_floor\_unification}.}
+\end{description}
+
+\subsection{The fossil in the sky}\label{sec:v23-sky}
+
+\begin{description}
+\rChist{C1}{Window and readability of the internal draft: shortest side $0.985$ to about $1.02$--$1.03\,\dLSS$; typical window $1.093$--$1.133$ ($\ell\le30$); peak readability $0.30$ near $1.07$, above $0.1$ between about $1.02$ and $1.17$; $0.45$ for free fields; $\ell\le40$ ``raises the largest readability to $0.35$''; an ensemble of nine realizations.}
+{Ensemble over the plane of aspect shapes: readability is set by the shortest side; the joint probability peaks at $0.344$ at $L_0=1.075\,\dLSS$ ($0.377$ at $1.065$ at next order), exceeds $0.1$ for $L_0\in[1.018,1.183]$ and integrates to $0.042$; going from $\ell\le30$ to $\ell\le80$ raises it only by a factor $1.3$ (Sec.~\ref{rep:sky}).}
+{Higher multipoles, the exact divergence, profiling over the reference volume and the full ensemble replaced the representative points.}
+{internal draft l.28, 42, 174--188, 394, 404--418, App.~L; C79; D117; D125 \S4.}
+
+\rChist{C2}{Single-fossil readout edge $1.13$--$1.14\,\dLSS$ and a factor $2.17$ in the divergence (separate line of calculation).}
+{A single representative point; superseded by the ensemble (Sec.~\ref{rep:v-conditional}).}
+{A ratio of divergences at one fossil is not a ratio of probabilities.}
+{snapshot P5\_CMB/summary.json; D117; V12\_RESULTS\_INDEX \S D (D1$\to$D5).}
+
+\rChist{C3}{``For $A\ge0.5$ the read edge is $1.023$--$1.031$''; ``representative interval $0.31\to0.20$, $0.45\to0.23$''; ``$P_{\rm cond}\approx1$ for $L_0\le1.03$''; ``the peak is about one third''.}
+{$1.023$--$1.032$; about $0.33\to0.21$ and $0.50\to0.24$; the value near the circle limit is an extrapolation artifact (physical extrapolation $0.92$--$0.96$, lower edge $0.986$--$1.009$); the peak is $0.34$--$0.38$ depending on $\sigma_E$.}
+{Independent check R15 of the ensemble layer and the wording review T12.}
+{D117; R15 addendum (corrections 2, 3); T12 (W2, W3); D125 \S4.}
+
+\rChist{C4}{Archived table of profiled divergences with a parabolic profile.}
+{Pool-minimum profile over 19 reference cubes; 82 pairs had been more than $1\%$ low and one violated the data-processing inequality; the rebuilt table reproduces the peak $0.34398$ at $1.075$ (Sec.~\ref{rep:v-convergence}).}
+{Found by the R15 check of the ensemble layer.}
+{fossil\_table.csv $\to$ fossil\_table\_v2.csv; R15 correction 1; T12.}
+
+\rChist{C5}{Curved cigar: ``any smooth profile''; ``the magnitude changes by less than $1\%$''; joint state: ``$\sigma_N\ge0.935$ for any $\Theta$-invariant state''; ``$L_b$ becomes larger''.}
+{Profiles with constant $b$ and non-negative curvature; $1\%$ only for $R_0\ge L/2$; the bound needs a sector condition and in general reads $\sigma_N\gtrsim0.0137\,N_{\rm post}$; $L_b$ becomes smaller.}
+{Independent check R15 of the separate line and wording review T12.}
+{D118; D119; R15 addendum; T12 (W8, W9, W11).}
+
+\rChist{C6}{Inflaton packet of the separate line: $\sigma_N=1.909$.}
+{The width neglects the slope of the plateau; the minimal-variance value is $0.959$, with lower bound $0.935$.}
+{Recomputed in our joint-state calculation.}
+{D119; Sec.~\ref{rep:v-conditional}.}
+\end{description}
+
+\subsection{Failed or abandoned approaches}\label{sec:v23-failed}
+
+\begin{description}
+\item[F1] \emph{One-dimensional Born--Oppenheimer reduction of the Higgs zero mode.} Its Born--Huang term $B_w$ is almost entirely spurious near $r\to0$, and its ground energy at $\lambda=0$ is $0.151/L$ too high; replaced by the two-dimensional model (Secs.~\ref{rep:h-reduced}, \ref{rep:v-fulldim}). \emph{Files:} {\small D108; D112.}
+\item[F2] \emph{Width ratios transferred between couplings.} Converting widths with ratios computed at fixed couplings was replaced by direct roots at every node; the change was only $0.001$--$0.011$~GeV, but the direct method removes the transfer error from the budget. \emph{Files:} {\small D112; D122.}
+\item[F3] \emph{Tracking resonances with complex absorbing potentials alone.} In the R15 check the first eigenvalue tracking drifted to an excited resonance in 10 of 16 runs; resonances are now identified by Siegert roots with box tests, and absorbing potentials serve as an independent check. \emph{Files:} {\small R15 check of D112.}
+\item[F4] \emph{Stock SMDR applications.} \texttt{calc\_fit} crashed and \texttt{calc\_all} did not finish within four hours on the research machine; a driver that calls \texttt{SMDR\_Fit\_Inputs} with the evaluation scales as arguments replaced them. \emph{Files:} {\small D120 App.~R; package \texttt{higgs/01\_sm\_mapping}.}
+\item[F5] \emph{Multithreaded \texttt{mr}.} Its OpenMP build has a race condition in TSIL; it must run single-threaded. \emph{Files:} {\small R16 V1.}
+\item[F6] \emph{Parabolic profile over the reference volume} (item C4) and \emph{an ensemble of nine realizations} (item C1). \emph{Files:} {\small C79; D117.}
+\item[F7] \emph{Wide-step Muller iterations for the two-dimensional resonance.} Started with a wide step, the iterations converged onto Siegert zeros of box states of the $s$ direction, which gave spurious width ratios ($5971$, $1245$, $163$); the roots are now started from the interior minimum of $|f|$ on the real axis and checked with a larger box (Sec.~\ref{rep:h-reduced}). \emph{Files:} {\small D112 \S0.6, \S7.4.}
+\item[F8] \emph{Sealed attempts at a finite Euclidean cap and the clock-field probes} of the separate line of calculation, which are not used (Sec.~\ref{rep:v-conditional}). \emph{Files:} {\small V12\_RESULTS\_INDEX \S B (B4, B8, B9, B13).}
+\end{description}
+
+\subsection{Statements retracted or not to be made}\label{sec:v23-retracted}
+
+The following statements appeared in drafts, notes or discussions and are not supported by the results; the papers avoid them.
+\begin{enumerate}
+\item ``The Standard Model lies above the $90\%$ threshold.'' At the measured mass $\Pone(172.60)=0.84$.
+\item The marginal probability, or the measured mass being on the safe side, as evidence for this beginning. The Bayes factors satisfy $|\ln B|\le\BayesMax$.
+\item A probability that both branches survive. There is no decohering history probability; $P_2=\Pone^2/w_0$ is only a note (Sec.~\ref{rep:h-survival}).
+\item ``Excluded by Branchina et al.'' The correct statement is conditional: incompatible with that framework.
+\item The topology window ``agrees with the data'' or ``is excluded''. It is allowed by the circle and likelihood searches.
+\item ``The state must be time symmetric.'' See item S2.
+\item ``A stabilized Higgs''; ``new physics stabilizes''. See item H1.
+\item ``The cross terms stabilize.'' See item H9.
+\item ``$\pm0.17$~GeV'' as the Standard Model error; ``$s_{99}=2.2$''; ``fewer than five quanta''. See items H14, S3, S1.
+\item ``A Planck-scale torus.'' The torus is a few thousand Planck lengths across, $L_b=722\,\MPbar^{-1}$.
+\item ``No new physics'' without the condition on $\xiH$ and the assumption of no new states below $\mub$.
+\item ``The top mass decides how the universe began''; ``tests the beginning of our universe''. The correct statement is that a measurement can exclude this beginning.
+\item Specific vacuum lifetimes from Andreassen, Frost and Schwartz~\cite{Andreassen:2017rzq} (the versions of that paper quote different values), and the periodic-spinor value $-C_0$ of Guth and Vilenkin, as if they applied here.
+\item ``First'', ``novel''.
+\item A representative point stated as an ensemble result; a ratio of divergences stated as a ratio of probabilities.
+\item Claim-layer numbers of two different model versions in one document (for example $173.41$ and $173.42$~GeV).
+\item Numbers for the effect of new particles below $\mub$ on $\lambda(\mub)$ that were not computed; only assumption~\ref{assump:A2} is stated.
+\end{enumerate}

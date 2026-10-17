@@ -1,0 +1,367 @@
+{
+ "r3/fulldim_dmc/run01/C151_summary.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/C151_summary.json",
+  "sha256": "225c9de4626ad67cb0919e5d533109e62041b0abfe8825db9fda5f7a20d26189",
+  "bytes": 15882
+ },
+ "r3/fulldim_dmc/run01/T14a_2d_wall.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/T14a_2d_wall.json",
+  "sha256": "7353ddfa3a80dc0907a788e48cdce933df9317bd9e095317f8e8d5809e32c2e9",
+  "bytes": 37067
+ },
+ "r3/fulldim_dmc/run01/T14a_3d.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/T14a_3d.json",
+  "sha256": "3b4f090944ac7146640cb850730830cb140c95f84355ef7020205a58c3187970",
+  "bytes": 16145
+ },
+ "r3/fulldim_dmc/run01/T14a_cap_dlng.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/T14a_cap_dlng.json",
+  "sha256": "6f43950b1b2b1f38434f3096cf8c49cdb7750373feb6b0252da44500d41206c1",
+  "bytes": 4834
+ },
+ "r3/fulldim_dmc/run01/T14a_dmc_combined.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/T14a_dmc_combined.json",
+  "sha256": "87416c1f116f9d1fa191776beee6121efff5ef5583fb2c0e6899cf1aad328e17",
+  "bytes": 13768
+ },
+ "r3/fulldim_dmc/run01/T14a_profile.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/T14a_profile.json",
+  "sha256": "097bdbb8871462224696e769e1ec47ec497c8f647867f5280231f4a9da519a2c",
+  "bytes": 3803
+ },
+ "r3/fulldim_dmc/run01/T14a_wkb.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/T14a_wkb.json",
+  "sha256": "7282541e5cb99a3a681849ddb4f9fbe27e4ccfe7dadcb47ecbcced23727230b0",
+  "bytes": 7647
+ },
+ "r3/fulldim_dmc/run01/shards/lam0_rw9_tau0.010_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/lam0_rw9_tau0.010_k0.json",
+  "sha256": "98fb329f80a1f318abf4c6eefef05623501f18d0d2f8cece56022b4bfa7e80f3",
+  "bytes": 1032
+ },
+ "r3/fulldim_dmc/run01/shards/lam0_rw9_tau0.010_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/lam0_rw9_tau0.010_k1.json",
+  "sha256": "db7ad564129f1bf6c01afee7403636d296e38a37613ad588bc643413e755f341",
+  "bytes": 1034
+ },
+ "r3/fulldim_dmc/run01/shards/lam0_rw9_tau0.020_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/lam0_rw9_tau0.020_k0.json",
+  "sha256": "f81b28cf73a99719603c9de638ffdab3296484e323afefddc979dda38f6cd1a3",
+  "bytes": 1029
+ },
+ "r3/fulldim_dmc/run01/shards/lam0_rw9_tau0.020_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/lam0_rw9_tau0.020_k1.json",
+  "sha256": "a67a0fd160c6b9ce43fdfb18ba6394cfbab838435f803c3b3ca542e7dfe43de4",
+  "bytes": 1033
+ },
+ "r3/fulldim_dmc/run01/shards/lam0_rw9_tau0.040_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/lam0_rw9_tau0.040_k0.json",
+  "sha256": "7623cc282de4760a6f2cb1da438e5c5f2098dc08c67d806017bdda16f77fb28b",
+  "bytes": 1040
+ },
+ "r3/fulldim_dmc/run01/shards/lam0_rw9_tau0.040_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/lam0_rw9_tau0.040_k1.json",
+  "sha256": "2e903e0271d1eedfc38ac4ebf82c05a208aed42fed04b50f7bb91ada53faf297",
+  "bytes": 1031
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw4.08_tau0.010_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw4.08_tau0.010_k0.json",
+  "sha256": "06a770342456a8c0e31f569fd88f52faebf856dfdc1d64e61d29974cd30f6762",
+  "bytes": 1047
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw4.08_tau0.010_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw4.08_tau0.010_k1.json",
+  "sha256": "b3015a616788530e7654997d59e04106ce513961c069d7066cfeaa043b16b461",
+  "bytes": 1044
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw4.08_tau0.020_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw4.08_tau0.020_k0.json",
+  "sha256": "af3d06c818cd05e6b70021fd168b24dd836e110216a8e9b9f7a693f6652cc6b7",
+  "bytes": 1043
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw4.08_tau0.020_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw4.08_tau0.020_k1.json",
+  "sha256": "82af349d13d76f4e78bfc69e5cf6dbf003f35578f240e069a402e6183284a147",
+  "bytes": 1051
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw4.08_tau0.040_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw4.08_tau0.040_k0.json",
+  "sha256": "cd6e6ce9371db860b2ca4533bddc9b4a2674010a1595f628f9799de95ab30479",
+  "bytes": 1052
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw4.08_tau0.040_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw4.08_tau0.040_k1.json",
+  "sha256": "6bb4b1b7d2a282eca3d672ecf692e93fc2a2e2fb2a88172836be192d215847f5",
+  "bytes": 1044
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw4.32_tau0.010_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw4.32_tau0.010_k0.json",
+  "sha256": "e647f1065dc9241acd52f0a8d27a9b0a68c8054a7a1c9602eab525fead2e621a",
+  "bytes": 1046
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw4.32_tau0.010_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw4.32_tau0.010_k1.json",
+  "sha256": "b094fa1ca1e6af780d845f3289396fd8ae5006e46b6bbaad8e858b913e0b7551",
+  "bytes": 1045
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw4.32_tau0.020_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw4.32_tau0.020_k0.json",
+  "sha256": "3a856fc6bb9d6e05104dce76593c1505fb5ef7296b0660a80d1f516606c9dc3e",
+  "bytes": 1044
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw4.32_tau0.020_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw4.32_tau0.020_k1.json",
+  "sha256": "d97bb622001f16963b0b088598cc57a16abc394bcc826d4927f62a770ef94959",
+  "bytes": 1042
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw4.32_tau0.040_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw4.32_tau0.040_k0.json",
+  "sha256": "4525354ef9e7b62f85590d3949f73d9376f8cbf46c57b642a289b10a1ed25323",
+  "bytes": 1043
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw4.32_tau0.040_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw4.32_tau0.040_k1.json",
+  "sha256": "54db7ac87017c424f8f5d5e37b2dc476873a2241a9489689881da313d305a28b",
+  "bytes": 1054
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw4.80_tau0.010_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw4.80_tau0.010_k0.json",
+  "sha256": "17d2621c171c2eb491a6d73bc777671c6ae50b255d530aeccb9c0d1c0c5f60fa",
+  "bytes": 1044
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw4.80_tau0.010_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw4.80_tau0.010_k1.json",
+  "sha256": "b280a66cc6960981ccf89d2ff1639660cd2d67401575a51e8e9b8c2d0b314677",
+  "bytes": 1052
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw4.80_tau0.020_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw4.80_tau0.020_k0.json",
+  "sha256": "6ec0d0f996d5af386f486c1b0044c3efbe1be1b4f2b90db5583b531851e5b3f4",
+  "bytes": 1041
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw4.80_tau0.020_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw4.80_tau0.020_k1.json",
+  "sha256": "838a10248362d2b8b2244e460ef27cd11e39ca414aca3d03ab7cc356e8a89e23",
+  "bytes": 1044
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw4.80_tau0.040_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw4.80_tau0.040_k0.json",
+  "sha256": "c26527c1bce313146e9fb4e8c481332e3183a39b94f51c83c34ae5fa58d4b3a0",
+  "bytes": 1038
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw4.80_tau0.040_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw4.80_tau0.040_k1.json",
+  "sha256": "48b6138eedb54e82ee961f1d28ecb6d5dbdbee6cad56dce3e0939b929146e5ae",
+  "bytes": 1040
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw5.12_tau0.010_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw5.12_tau0.010_k0.json",
+  "sha256": "0f26ef99a09475f895ad9e9e224a189ee2f89165be1677e95a9167df9cf03835",
+  "bytes": 1047
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw5.12_tau0.010_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw5.12_tau0.010_k1.json",
+  "sha256": "63d798458cbbb03f60a9bb6d99ec3c7c83efcc4ecc16fbe40d97a50adf6c731c",
+  "bytes": 1047
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw5.12_tau0.020_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw5.12_tau0.020_k0.json",
+  "sha256": "2bf3b0334971ea81177ab6a82bf6266456f90d03019e9016aaba6860debe7c85",
+  "bytes": 1048
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw5.12_tau0.020_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw5.12_tau0.020_k1.json",
+  "sha256": "09b49502a425c02da2a4ca8aa7ca379c8818fc075d5997c053c4325ffcf255c1",
+  "bytes": 1043
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw5.12_tau0.040_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw5.12_tau0.040_k0.json",
+  "sha256": "51687e5fb00d330fb72656988c079bb11e4b8ffcf40e7c8b6f1ace31f1cbdf94",
+  "bytes": 1044
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw5.12_tau0.040_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw5.12_tau0.040_k1.json",
+  "sha256": "c9e06defb404377158ebf4bd6bef526d72d11c7d4347d96048df38a5864ee0f8",
+  "bytes": 1051
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw5.44_tau0.010_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw5.44_tau0.010_k0.json",
+  "sha256": "7393fe1e159894d452d7192a564fb4080c49486c0895b841d77e07145a9cf508",
+  "bytes": 1045
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw5.44_tau0.010_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw5.44_tau0.010_k1.json",
+  "sha256": "53d8056d80e2f62906ff5679b1bb2e5df2cac0a11d260e9c8d17c5bf607a15ce",
+  "bytes": 1044
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw5.44_tau0.020_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw5.44_tau0.020_k0.json",
+  "sha256": "a3ad58921e53dd2f6aec8b7e48f899dd6c95de5cd7897a11422eac1ad630ea84",
+  "bytes": 1042
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw5.44_tau0.020_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw5.44_tau0.020_k1.json",
+  "sha256": "55b06773db202a56c5f443b69eedc0538986b958167fd22d78ef081cf21f02cf",
+  "bytes": 1043
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw5.44_tau0.040_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw5.44_tau0.040_k0.json",
+  "sha256": "cb81198916ef88514a85c733fecf1a74715056b5f0f9d88e67aeb155da9d472e",
+  "bytes": 1040
+ },
+ "r3/fulldim_dmc/run01/shards/m010_rw5.44_tau0.040_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m010_rw5.44_tau0.040_k1.json",
+  "sha256": "925ca9e82b39425c94b79f5b9e4c81b6a6dc35cd67ed08a030ca05424ea8c300",
+  "bytes": 1054
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw3.84_tau0.010_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw3.84_tau0.010_k0.json",
+  "sha256": "8bd9180d29f98b8291b13f889e48b802e83a7486cf47f9d6f17dcf562fe1e40c",
+  "bytes": 1052
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw3.84_tau0.010_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw3.84_tau0.010_k1.json",
+  "sha256": "09a3182584e10d34d0ea98f1eaef0c603a72a7e3b453e7bbf2ee16e8c875a452",
+  "bytes": 1053
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw3.84_tau0.020_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw3.84_tau0.020_k0.json",
+  "sha256": "54a70406f8515f555e60a3695558fbfae97932e59e090ea5acad10176d1a2d5d",
+  "bytes": 1045
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw3.84_tau0.020_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw3.84_tau0.020_k1.json",
+  "sha256": "0f488cc2cdfe2db35c7ac0ec70df16217b3e15e9a9ad3f2b69c8a7c00c553201",
+  "bytes": 1041
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw3.84_tau0.040_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw3.84_tau0.040_k0.json",
+  "sha256": "e0d996cea802aa2930fc319c737fd0d95b7f409dae3de4b16082e1dfe1d36383",
+  "bytes": 1044
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw3.84_tau0.040_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw3.84_tau0.040_k1.json",
+  "sha256": "728d3ecbfc7280aff8d5416e5e2d918ecaa20b0fa734bee5be2bcffbe26d66b5",
+  "bytes": 1053
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.08_tau0.010_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.08_tau0.010_k0.json",
+  "sha256": "39f62128510110696dddff9e3927bc148d8e756786da4b1ec892baf51258e97c",
+  "bytes": 1047
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.08_tau0.010_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.08_tau0.010_k1.json",
+  "sha256": "f7fcfd4d3fcebe3004322bec4a352412df26563bc65f02a46d6e4d38e9d17941",
+  "bytes": 1051
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.08_tau0.020_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.08_tau0.020_k0.json",
+  "sha256": "26f1e7af96a5c0452c25bd7114ea04f1cc18d2dffac225c99573c9950b547893",
+  "bytes": 1046
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.08_tau0.020_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.08_tau0.020_k1.json",
+  "sha256": "85c433e55f85533db2192e79cade8db4ebd48f9af5cd5550cd55a48ba95d49a0",
+  "bytes": 1043
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.08_tau0.040_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.08_tau0.040_k0.json",
+  "sha256": "27dfb5c15a845d47b1bd0644116b70edd6fa7bf7a9f899d8d33dc2cc97b4f25b",
+  "bytes": 1043
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.08_tau0.040_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.08_tau0.040_k1.json",
+  "sha256": "92bac1ce8d57dc7ecab25352ce45b33710e3602e528e0c6dc7a0ab84df7acfcd",
+  "bytes": 1052
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.40_tau0.010_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.40_tau0.010_k0.json",
+  "sha256": "039ece24510ca3c4274ba99755231929c055393feb53f8b46f8bfea1de88a2e9",
+  "bytes": 1046
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.40_tau0.010_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.40_tau0.010_k1.json",
+  "sha256": "df8bb976937efc54e15a418518a02de306246d3633af04b1b0fa8fb64f12d962",
+  "bytes": 1044
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.40_tau0.020_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.40_tau0.020_k0.json",
+  "sha256": "c7ff0951a1d18e3449887005f137ed2d61913ff44dd5c7644462a51da59bf94b",
+  "bytes": 1041
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.40_tau0.020_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.40_tau0.020_k1.json",
+  "sha256": "5b1ed994bb2b7f0b1e44569b70f84d45095c42f1632594ace2d379eeea7e1aa1",
+  "bytes": 1043
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.40_tau0.040_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.40_tau0.040_k0.json",
+  "sha256": "504386721208904ed74fbd059cb2d5a4643ced42a17e76809245ab744d1013e2",
+  "bytes": 1055
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.40_tau0.040_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.40_tau0.040_k1.json",
+  "sha256": "80c79abdd7e44da7639a84263e9f85231975fcd99cff865b76d1e3da5d4dbbf2",
+  "bytes": 1041
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.64_tau0.010_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.64_tau0.010_k0.json",
+  "sha256": "9ae1245036ba3d7f6b3735ae1288d630501989a13325c7d471122ebc2ad111e6",
+  "bytes": 1047
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.64_tau0.010_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.64_tau0.010_k1.json",
+  "sha256": "d96c930877df5a9cd64057c04b1085573b702891d11c0f72d66b6bbe3b1fce23",
+  "bytes": 1042
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.64_tau0.020_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.64_tau0.020_k0.json",
+  "sha256": "acbd9e25fe0052130f3e06d04966e8e951fb7eb5c16998c8f68816a7d56ea77d",
+  "bytes": 1051
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.64_tau0.020_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.64_tau0.020_k1.json",
+  "sha256": "5bc26e32dbacedd465e9a6b590f6047c415f7fbbeb510a5d80960a9539ee43b8",
+  "bytes": 1044
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.64_tau0.040_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.64_tau0.040_k0.json",
+  "sha256": "47fb6e2da8c9bb31b1c3e90bd1478bd04d5800565bb44c147f9d3778a3e1047b",
+  "bytes": 1052
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.64_tau0.040_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.64_tau0.040_k1.json",
+  "sha256": "f7ee5a958ae8be5bbc0808ad4e595f3acf910ce8b2299d3cc2e28269fc43fd8f",
+  "bytes": 1044
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.96_tau0.010_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.96_tau0.010_k0.json",
+  "sha256": "bb917b8bb947d9fa012edcee65ed6c6dda4befa284eb135b4ce3d54170c9d4e1",
+  "bytes": 1046
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.96_tau0.010_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.96_tau0.010_k1.json",
+  "sha256": "faf9731b3c62203bdd848f631ad57ff3b37cbed0759a77e6be69591cb0f660c3",
+  "bytes": 1044
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.96_tau0.020_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.96_tau0.020_k0.json",
+  "sha256": "c92b24d2b489d6f040477f1133259a44c1a973beb2bbc23a8466939323700411",
+  "bytes": 1052
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.96_tau0.020_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.96_tau0.020_k1.json",
+  "sha256": "6d75bd06a8f8619512cd6f7ecd6c683425b577fc7188529b3a421d8e136e4e10",
+  "bytes": 1045
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.96_tau0.040_k0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.96_tau0.040_k0.json",
+  "sha256": "5f8dc5ebff37432d5be6c9751168061d672dadb1b25fa182decb2f48d0319202",
+  "bytes": 1047
+ },
+ "r3/fulldim_dmc/run01/shards/m013_rw4.96_tau0.040_k1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/fulldim_dmc/run01/shards/m013_rw4.96_tau0.040_k1.json",
+  "sha256": "294cebdbc2204d8b9784b74d798a3b87528f9cc55d67c5af57858d9835be46ec",
+  "bytes": 1050
+ }
+}

@@ -1,0 +1,12 @@
+LICENSE NOTICE for the files of this folder (validation/sm_mapping/code/drivers/)
+
+c148_fit_copy.c contains the function SMDR_Fit_Inputs of SMDR 1.3 (src/fit_obs.c, S.P. Martin and D.G. Robertson),
+copied verbatim except for the evaluation scales, and smdr_driver.c is a driver that calls and links against SMDR 1.3.
+Both are therefore distributed under the GNU General Public License, version 2 or (at your option) any later version
+(GPL-2.0-or-later), not under the MIT licence of the rest of the code. The licence texts of SMDR, TSIL and 3VIL are in
+third_party/smdr/licenses/ of this package.
+
+The two files are archived byte-identically (their SHA-256 is recorded in validation/SOURCES.json and, for the blind
+check, in its own record); this sidecar therefore carries the notice instead of a header in the files.
+
+SPDX-License-Identifier: GPL-2.0-or-later

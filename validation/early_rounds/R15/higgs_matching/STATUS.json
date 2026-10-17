@@ -1,0 +1,20 @@
+{
+  "agent": "r15-matching",
+  "task": "R15 independent check of D110 (Higgs matching consistency)",
+  "status": "complete",
+  "updated": "2026-10-13",
+  "tool_calls_used": 35,
+  "verdict": "PASS-with-corrections (minor): H1 PASS; H2 PASS-with-corrections (BO non-adiabatic +-0.004 not <=0.002, Dirac-pair top gives -0.003/-0.004 GeV; state direction ML_CW-MC=-0.012/-0.016); H3 PASS; headline numbers PASS; Wolfram PASS",
+  "report": "R15_D110_INDEPENDENT_CHECK_CN.md",
+  "paths": {"code": "R15_mc.py", "wolfram": "R15_wolfram.wl", "receipt": "R15_wolfram_receipt.txt", "results": "R15_results_checks.json, R15_results_static.json, R15_results_hazard.json, R15_results_wcomp.json", "log": "hazard_stdout.txt"},
+  "key_numbers_mine_vs_D110": {
+    "gamma(-0.010) MC v11/SM": "9.871149e-4 / 1.315118e-3 vs 9.871149e-4 / 1.315118e-3",
+    "lam_c SM": "-0.008273/-0.010942 vs -0.008275/-0.010942",
+    "m_c MC": "172.3485/172.7681 vs 172.3486/172.7680; P1(172.6) 0.6958 vs 0.6958",
+    "dm_c/da_s": "386.3/387.2 vs 386.2/386.9",
+    "mu c=1/2,2,2pi (P1=0.9)": "+0.0018/-0.0083/-0.0344 vs +0.0019/-0.0083/-0.0343",
+    "ML_CW-MC": "-0.0116/-0.0156 vs -0.0115/-0.0155",
+    "BO in hazard": "D110-style +0.0031/+0.0039; Dirac-pair -0.0030/-0.0038 (claim <=0.002)"
+  },
+  "next_command": "none (complete)"
+}

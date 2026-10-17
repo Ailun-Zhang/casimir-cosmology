@@ -1,0 +1,37 @@
+{
+ "fu/C72/C72_dmc_results.json": {
+  "source": "04_calculations/results/20261011_claude_followup/C72/C72_dmc_results.json",
+  "sha256": "8b08d4f4db5adba331ea344d5b9896c52e32a053993c5a35526cd17addbbcb07",
+  "bytes": 31761
+ },
+ "fu/C72/C72_dmc_test.json": {
+  "source": "04_calculations/results/20261011_claude_followup/C72/C72_dmc_test.json",
+  "sha256": "0fea99a904d2bcf3e1eaa5c27f89799e828b6ebfb84a26a000377f6c115a4fb4",
+  "bytes": 2200
+ },
+ "fu/C72/C72_analysis_results.json": {
+  "source": "04_calculations/results/20261011_claude_followup/C72/C72_analysis_results.json",
+  "sha256": "605ad59346ff0e578cb11cc56c1dee1a725c825d6ed93eb71bea2da590455967",
+  "bytes": 36169
+ },
+ "fu/C72/C72_summary.json": {
+  "source": "04_calculations/results/20261011_claude_followup/C72/C72_summary.json",
+  "sha256": "43eb8805389ef1dc1fc787c8e7467a6ae05756413980a01d239e99dd2b92a467",
+  "bytes": 14338
+ },
+ "fu/C78/C78_results.json": {
+  "source": "04_calculations/results/20261011_claude_followup/C78/C78_results.json",
+  "sha256": "1f917465f29f65acda46af2a8251292aba9e8d9cad059b3fa096575fa256d9d9",
+  "bytes": 2301
+ },
+ "fu/C81/C81_results.json": {
+  "source": "04_calculations/results/20261011_claude_followup/C81/C81_results.json",
+  "sha256": "2d46e69da91747dd80db4e25207a792c6550759145f06d773fea844e067b47e9",
+  "bytes": 1017
+ },
+ "inputs/rge_couplings.json": {
+  "source": "02_literature/20261011_claude_followup/L25_work/rge_couplings.json",
+  "sha256": "162313195ae6591fa55941b109114fc755877746b480d94b96a24f5c96e8294e",
+  "bytes": 9573
+ }
+}

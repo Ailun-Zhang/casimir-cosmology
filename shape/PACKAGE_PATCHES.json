@@ -1,0 +1,659 @@
+{
+ "chain": "shape",
+ "built_utc": "2026-10-16T00:01:34Z",
+ "agent": "code-shape-cmb",
+ "rule": "algorithms and numerics unchanged; only the listed line substitutions",
+ "files": {
+  "shapelib/C60_twisted_ewald.py": {
+   "source": "04_calculations/code/20261009_claude_R5/nonlinear_SM/C60_twisted_ewald.py",
+   "source_sha256": "3d540bb289403558274b56a214c6feb1c0895c5ff9b9e8da5013046684770fec",
+   "copy_sha256": "5975abc54d240f180fa1b58dfd739ab6411c1c0e73028c340fbc651a15db65e2",
+   "substitutions": [
+    {
+     "line": 37,
+     "old": "ROOT = Path(__file__).resolve().parents[4]",
+     "new": "import sys  # package: work-tree path shim of the shape chain (see shape/_shape_paths.py; this file lives in shape/shapelib)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _shape_paths as WP  # noqa: E402\nROOT = None  # package: the research tree is not shipped"
+    },
+    {
+     "line": 38,
+     "old": "CODE_ROOT = ROOT / \"04_calculations\" / \"code\"",
+     "new": "CODE_ROOT = None  # package: load_C40() (validation against the round-1 C40 kernel) needs the research tree"
+    },
+    {
+     "line": 39,
+     "old": "OUT = ROOT / \"04_calculations\" / \"results\" / \"20261009_claude_R5\" / \"nonlinear_SM\"",
+     "new": "OUT = WP.wdir(\"r5/nonlinear_SM\")"
+    }
+   ]
+  },
+  "shapelib/C60_nonlinear_integrator.py": {
+   "source": "04_calculations/code/20261009_claude_R5/nonlinear_SM/C60_nonlinear_integrator.py",
+   "source_sha256": "0e58840b1480906d73e47136c6372d309716142d46abf5cd5b61d3a2a0f6e383",
+   "copy_sha256": "19968b67f2382eef5cb65582dd9b880503b2b4c84120619435934507aa40682b",
+   "substitutions": []
+  },
+  "shapelib/C76_nonlinear_zero_mode.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C76_nonlinear_zero_mode.py",
+   "source_sha256": "a270ee4c8535d75d04410ca838fcbd213da2b5c91c0b82cdfe81a0b60e803f74",
+   "copy_sha256": "2d5681498f859a4598b2eac06ac7b4d482eb0d1ba613c1661aa5d72dfb01d24b",
+   "substitutions": [
+    {
+     "line": 34,
+     "old": "NLDIR = HERE.parent / \"20261009_claude_R5\" / \"nonlinear_SM\"",
+     "new": "NLDIR = HERE  # package: the C60 modules live in this directory (shape/shapelib)"
+    },
+    {
+     "line": 39,
+     "old": "OUT = HERE.parents[1] / \"results\" / \"20261011_claude_followup\" / \"C76\"",
+     "new": "import sys  # package: work-tree path shim of the shape chain (see shape/_shape_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _shape_paths as WP  # noqa: E402\nOUT = WP.wdir(\"fu/C76\")"
+    },
+    {
+     "line": 186,
+     "old": "ap.add_argument(\"--procs\", type=int, default=6)",
+     "new": "ap.add_argument(\"--procs\", type=int, default=int(os.environ.get(\"DNEC_WORKERS\", \"6\")))  # package: --workers"
+    }
+   ]
+  },
+  "shapelib/C142_shape_nonlinear_threshold.py": {
+   "source": "04_calculations/code/20261013_claude_v12_r2/shape_nonlinear_threshold/C142_shape_nonlinear_threshold.py",
+   "source_sha256": "3d362c15fa0379df65a2671ce48ba0a7e3be41351e9b089b0bfe11b45939ea66",
+   "copy_sha256": "275d394ce552d068d2d0b6e667ebf2f7c2c7c6bbdd45f68c9f0a1bacaeda0f67",
+   "substitutions": [
+    {
+     "line": 46,
+     "old": "ROOT = HERE.parents[3]",
+     "new": "import sys  # package: work-tree path shim of the shape chain (see shape/_shape_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _shape_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 47,
+     "old": "OUT = ROOT / \"04_calculations\" / \"results\" / \"20261013_claude_v12_r2\" / \"shape_nonlinear_threshold\" / \"run01\"",
+     "new": "OUT = WP.wdir(\"r2/shape_nonlinear_threshold/run01\")"
+    },
+    {
+     "line": 49,
+     "old": "C76_DRAWS = ROOT / \"04_calculations\" / \"results\" / \"20261011_claude_followup\" / \"C76\" / \"draws\"",
+     "new": "C76_DRAWS = WP.wdir(\"fu/C76/draws\")"
+    },
+    {
+     "line": 629,
+     "old": "run(a.group, min(a.procs, 5))",
+     "new": "run(a.group, a.procs)  # package: no cap (each draw is independent; results do not depend on the worker count)"
+    },
+    {
+     "line": 623,
+     "old": "ap.add_argument(\"--procs\", type=int, default=5)",
+     "new": "ap.add_argument(\"--procs\", type=int, default=int(os.environ.get(\"DNEC_WORKERS\", \"5\")))  # package: --workers"
+    }
+   ]
+  },
+  "shapelib/C153_nl.py": {
+   "source": "04_calculations/code/20261014_claude_v12_r3/shape_hardening/C153_nl.py",
+   "source_sha256": "ded7666b1047c9f6a61b4b3fe05879a40bb73fd0953330213f2b0824b818c0a0",
+   "copy_sha256": "d9ff49f19ba998ed016838002002c50e9458e8035942d0af002f0058ce0ef3dd",
+   "substitutions": [
+    {
+     "line": 37,
+     "old": "ROOT = HERE.parents[3]",
+     "new": "import sys  # package: work-tree path shim of the shape chain (see shape/_shape_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _shape_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 38,
+     "old": "OUT = ROOT / \"04_calculations\" / \"results\" / \"20261014_claude_v12_r3\" / \"shape_hardening\" / \"run01\"",
+     "new": "OUT = WP.wdir(\"r3/shape_hardening/run01\")"
+    },
+    {
+     "line": 513,
+     "old": "run(a.groups, min(a.procs, 4))",
+     "new": "run(a.groups, a.procs)  # package: no cap (each draw is independent; results do not depend on the worker count)"
+    },
+    {
+     "line": 507,
+     "old": "ap.add_argument(\"--procs\", type=int, default=4)",
+     "new": "ap.add_argument(\"--procs\", type=int, default=int(os.environ.get(\"DNEC_WORKERS\", \"4\")))  # package: --workers"
+    }
+   ]
+  },
+  "shapelib/C153_run02.py": {
+   "source": "04_calculations/code/20261014_claude_v12_r3/shape_hardening/C153_run02.py",
+   "source_sha256": "2d2d982da2dbf148149b90ea54799780f8823cb7f4493e50af1731b79ac01db3",
+   "copy_sha256": "7aa257de0b34a9d2fc79d10e1110c3ca36c34129383ee7e49069f466e9562e52",
+   "substitutions": [
+    {
+     "line": 31,
+     "old": "ROOT = HERE.parents[3]",
+     "new": "import sys  # package: work-tree path shim of the shape chain (see shape/_shape_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _shape_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 32,
+     "old": "RUN01 = ROOT / \"04_calculations\" / \"results\" / \"20261014_claude_v12_r3\" / \"shape_hardening\" / \"run01\"",
+     "new": "RUN01 = WP.wdir(\"r3/shape_hardening/run01\")"
+    },
+    {
+     "line": 33,
+     "old": "OUT = ROOT / \"04_calculations\" / \"results\" / \"20261014_claude_v12_r3\" / \"shape_hardening\" / \"run02\"",
+     "new": "OUT = WP.wdir(\"r3/shape_hardening/run02\")"
+    },
+    {
+     "line": 273,
+     "old": "run(min(a.procs, 4))",
+     "new": "run(a.procs)  # package: no cap (each draw is independent; results do not depend on the worker count)"
+    },
+    {
+     "line": 270,
+     "old": "ap.add_argument(\"--procs\", type=int, default=4)",
+     "new": "ap.add_argument(\"--procs\", type=int, default=int(os.environ.get(\"DNEC_WORKERS\", \"4\")))  # package: --workers"
+    }
+   ]
+  },
+  "01_emptiness_gate/C55_contracting_window_gate.py": {
+   "source": "04_calculations/code/20261009_claude_R5/C55_contracting_window_gate.py",
+   "source_sha256": "b3d5e42ceae9edaba03109fcc0e5d92bb1946cd3cddd22727a41a99725e8abfd",
+   "copy_sha256": "49701bd6a69c11768e7472726e5b98e2468a4f771fe6e9730c0c6273624b1e82",
+   "substitutions": [
+    {
+     "line": 31,
+     "old": "ROOT = Path(__file__).resolve().parents[3]",
+     "new": "import sys  # package: work-tree path shim of the shape chain (see shape/_shape_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _shape_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 32,
+     "old": "OUT = ROOT / '04_calculations' / 'results' / '20261009_claude_R5' / 'C55_window_gate'",
+     "new": "OUT = WP.wdir('r5/C55_window_gate')"
+    },
+    {
+     "line": 175,
+     "old": "ap.add_argument('--procs', type=int, default=10)",
+     "new": "ap.add_argument('--procs', type=int, default=int(os.environ.get('DNEC_WORKERS', '10')))  # package: --workers"
+    }
+   ]
+  },
+  "01_emptiness_gate/C55b_time_reversal_check.py": {
+   "source": "04_calculations/code/20261009_claude_R5/C55b_time_reversal_check.py",
+   "source_sha256": "a53447ee3f2694d138360cac81863a0b662ee27479d6c44d5e54b50c1668fd1e",
+   "copy_sha256": "81cc6dcf3d60eb8f1f728db1cf77512a0f27abd898f555049708d71bf5f521d8",
+   "substitutions": [
+    {
+     "line": 17,
+     "old": "ROOT = HERE.parents[2]",
+     "new": "sys.path.insert(0, str(HERE.parent))  # package: chain root (shape/)\nimport _shape_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 18,
+     "old": "PILOT = ROOT / '04_calculations/results/20261007_074655UTC/model_completion/C49_pilot_results.json'",
+     "new": "PILOT = WP.step_dir('01_emptiness_gate', 'inputs', 'C49_pilot_results.json')"
+    },
+    {
+     "line": 39,
+     "old": "out = ROOT / '04_calculations/results/20261009_claude_R5/C55_window_gate/C55b_time_reversal_check.json'",
+     "new": "out = WP.wfile('r5/C55_window_gate/C55b_time_reversal_check.json')"
+    }
+   ]
+  },
+  "01_emptiness_gate/C56_preparation_time_gate.py": {
+   "source": "04_calculations/code/20261009_claude_R5/C56_preparation_time_gate.py",
+   "source_sha256": "7fad7a97385187411ee245626978ce191d27ed6da5a3d31a30cd34345c4a7be9",
+   "copy_sha256": "72a959b1640c301ff0bb53c63f0ec40b0b0e98289591942f51bac9971b62c9f8",
+   "substitutions": [
+    {
+     "line": 33,
+     "old": "ROOT = Path(__file__).resolve().parents[3]",
+     "new": "import sys  # package: work-tree path shim of the shape chain (see shape/_shape_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _shape_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 34,
+     "old": "OUT = ROOT / '04_calculations' / 'results' / '20261009_claude_R5' / 'C56_preparation_gate'",
+     "new": "OUT = WP.wdir('r5/C56_preparation_gate')"
+    },
+    {
+     "line": 94,
+     "old": "ap.add_argument('--procs', type=int, default=11)",
+     "new": "ap.add_argument('--procs', type=int, default=int(os.environ.get('DNEC_WORKERS', '11')))  # package: --workers"
+    }
+   ]
+  },
+  "01_emptiness_gate/C153_emptiness.py": {
+   "source": "04_calculations/code/20261014_claude_v12_r3/shape_hardening/C153_emptiness.py",
+   "source_sha256": "918b71ace1809bd5c0887b58c07918d1466a73694d3c5122f3125fa336d63bf3",
+   "copy_sha256": "f46455481665b57f25ebf9ffbbf5292f72744d680a566b9cfe6bbbcbfa81c911",
+   "substitutions": [
+    {
+     "line": 21,
+     "old": "ROOT = HERE.parents[3]",
+     "new": "sys.path.insert(0, str(HERE.parent))\nimport _shape_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 22,
+     "old": "OUT = ROOT / \"04_calculations\" / \"results\" / \"20261014_claude_v12_r3\" / \"shape_hardening\" / \"run01\" / \"emptiness\"",
+     "new": "OUT = WP.wdir(\"r3/shape_hardening/run01/emptiness\")"
+    },
+    {
+     "line": 23,
+     "old": "C56R = ROOT / \"04_calculations\" / \"results\" / \"20261009_claude_R5\" / \"C56_preparation_gate\" / \"C56_SM_AAA.json\"",
+     "new": "C56R = WP.wfile(\"r5/C56_preparation_gate/C56_SM_AAA.json\")"
+    },
+    {
+     "line": 24,
+     "old": "C55R = ROOT / \"04_calculations\" / \"results\" / \"20261009_claude_R5\" / \"C55_window_gate\"",
+     "new": "C55R = WP.wdir(\"r5/C55_window_gate\")"
+    }
+   ]
+  },
+  "01_emptiness_gate/C80_photon_branch_r.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C80_photon_branch_r.py",
+   "source_sha256": "0a84e7f5db1f9661a1fd6ab298b02813b1e5dc83f3b911e2f57a4c2e43fe405a",
+   "copy_sha256": "e39dd3165f0e20580c5959c90e30475a46d84f355ce99f6bb7d09a734cac513d",
+   "substitutions": [
+    {
+     "line": 34,
+     "old": "ROOT = HERE.parents[2]",
+     "new": "sys.path.insert(0, str(HERE.parent))  # package: chain root (shape/)\nimport _shape_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 35,
+     "old": "sys.path.insert(0, str(ROOT / \"04_calculations\" / \"code\" / \"20261009_claude_R5\" / \"nonlinear_SM\"))",
+     "new": "sys.path.insert(0, str(HERE.parent / \"shapelib\"))  # package: C60 modules"
+    },
+    {
+     "line": 38,
+     "old": "OUT = ROOT / \"04_calculations\" / \"results\" / \"20261011_claude_followup\" / \"C80\"",
+     "new": "OUT = WP.wdir(\"fu/C80\")"
+    }
+   ]
+  },
+  "02_realtime_theorem/C137_shape_gate.py": {
+   "source": "04_calculations/code/20261013_claude_v12/state_selection/C137_shape_gate.py",
+   "source_sha256": "76dfff581a76a145ae77deb9556b19c1c7b59b5140e676fd382376d6b8b28064",
+   "copy_sha256": "bb703f5808d4d2ea2387150da1c1d6062b3ecd67ceaa4d587a9b4ebe554fa116",
+   "substitutions": [
+    {
+     "line": 24,
+     "old": "OUT = os.path.join(os.path.dirname(__file__), \"..\", \"..\", \"..\", \"results\",",
+     "new": "import sys  # package: work-tree path shim of the shape chain (see shape/_shape_paths.py)\nsys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))\nimport _shape_paths as WP  # noqa: E402\nOUT = str(WP.wdir(\"r1/state_selection/run01\"))"
+    },
+    {
+     "line": 25,
+     "old": "\"20261013_claude_v12\", \"state_selection\", \"run01\")",
+     "new": "# (package: the work-tree path above replaces the original results path)"
+    }
+   ]
+  },
+  "02_realtime_theorem/C137b_best_case.py": {
+   "source": "04_calculations/code/20261013_claude_v12/state_selection/C137b_best_case.py",
+   "source_sha256": "7cb87739d9f888b03ee93df97e66eaed988968f226e38a56417f7aab7b6de56e",
+   "copy_sha256": "c7c2cc44f0b62e9a5c2fc62dee64bbf3c140b3cc00b7fc65006ccc6e440c2d26",
+   "substitutions": [
+    {
+     "line": 18,
+     "old": "OUT = os.path.join(os.path.dirname(__file__), \"..\", \"..\", \"..\", \"results\",",
+     "new": "import sys  # package: work-tree path shim of the shape chain (see shape/_shape_paths.py)\nsys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))\nimport _shape_paths as WP  # noqa: E402\nOUT = str(WP.wdir(\"r1/state_selection/run02\"))"
+    },
+    {
+     "line": 19,
+     "old": "\"20261013_claude_v12\", \"state_selection\", \"run02\")",
+     "new": "# (package: the work-tree path above replaces the original results path)"
+    }
+   ]
+  },
+  "02_realtime_theorem/C137c_uncorrelated_optimum.py": {
+   "source": "04_calculations/code/20261013_claude_v12/state_selection/C137c_uncorrelated_optimum.py",
+   "source_sha256": "e75a1e56bad123cb53423b5a5fb7e9f984d0b4a3318240c0306e3c1c4d59842c",
+   "copy_sha256": "645bd11ad014de7c120792cf84362451a7906218579eb5fc9f618fb6a0f5cb00",
+   "substitutions": [
+    {
+     "line": 12,
+     "old": "OUT = os.path.join(os.path.dirname(__file__), \"..\", \"..\", \"..\", \"results\",",
+     "new": "import sys  # package: work-tree path shim of the shape chain (see shape/_shape_paths.py)\nsys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))\nimport _shape_paths as WP  # noqa: E402\nOUT = str(WP.wdir(\"r1/state_selection/run03\"))"
+    },
+    {
+     "line": 13,
+     "old": "\"20261013_claude_v12\", \"state_selection\", \"run03\")",
+     "new": "# (package: the work-tree path above replaces the original results path)"
+    }
+   ]
+  },
+  "02_realtime_theorem/C137_verify.wl": {
+   "source": "04_calculations/code/20261013_claude_v12/state_selection/C137_verify.wl",
+   "source_sha256": "7d7140c532db7503db11a10f5f95c03c2aa91137a6ba6d730d72a7609eb30136",
+   "copy_sha256": "f7fbc666af29ad0f07cd6f12ace1dc953814b5a3874c93805e20eb35474ad7b3",
+   "substitutions": []
+  },
+  "02_realtime_theorem/C153_linear.py": {
+   "source": "04_calculations/code/20261014_claude_v12_r3/shape_hardening/C153_linear.py",
+   "source_sha256": "d3a26c1135faa38d0fa75d56ac633cf95cc6ebe838bb670d1d277ae8af7e00e1",
+   "copy_sha256": "35b9bd2909af423aa9598351dfb62df5cba9c48351c64767834bfb471adad672",
+   "substitutions": [
+    {
+     "line": 28,
+     "old": "ROOT = HERE.parents[3]",
+     "new": "sys.path.insert(0, str(HERE.parent))\nimport _shape_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 29,
+     "old": "OUT = ROOT / \"04_calculations\" / \"results\" / \"20261014_claude_v12_r3\" / \"shape_hardening\" / \"run01\" / \"linear\"",
+     "new": "OUT = WP.wdir(\"r3/shape_hardening/run01/linear\")"
+    }
+   ]
+  },
+  "02_realtime_theorem/C153_verify.wl": {
+   "source": "04_calculations/code/20261014_claude_v12_r3/shape_hardening/C153_verify.wl",
+   "source_sha256": "64aff94babdf4e4b8fcacb543922e34f718ba81b00056bea3559c4f776273e7d",
+   "copy_sha256": "20214d099bf416d69ee71dd052722eebab0b843ecf4573c52061ca274dceb4ef",
+   "substitutions": []
+  },
+  "02_realtime_theorem/C153_summary.py": {
+   "source": "04_calculations/code/20261014_claude_v12_r3/shape_hardening/C153_summary.py",
+   "source_sha256": "2b386831495391fc08adda590cc62f5159b14a8a0bf2b6672b3bf7ecb58693df",
+   "copy_sha256": "406ed714fb214c2f8505a3007e30681cd8dc841663162a2d73a3e1d2d05c065d",
+   "substitutions": [
+    {
+     "line": 7,
+     "old": "ROOT = HERE.parents[3]",
+     "new": "sys.path.insert(0, str(HERE.parent))  # package: chain root (shape/)\nimport _shape_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 8,
+     "old": "RUN = ROOT / \"04_calculations\" / \"results\" / \"20261014_claude_v12_r3\" / \"shape_hardening\" / \"run01\"",
+     "new": "RUN = WP.wdir(\"r3/shape_hardening/run01\")"
+    },
+    {
+     "line": 20,
+     "old": "\"S2_profiles.json\": ROOT / \"04_calculations/results/20261013_argon_codex_intake/cmb_ensemble/run01/results/S2_profiles.json\",",
+     "new": "\"S2_profiles.json\": WP.wfile(\"ai/cmb_ensemble/run01/results/S2_profiles.json\"),"
+    },
+    {
+     "line": 21,
+     "old": "\"C56_SM_AAA.json\": ROOT / \"04_calculations/results/20261009_claude_R5/C56_preparation_gate/C56_SM_AAA.json\",",
+     "new": "\"C56_SM_AAA.json\": WP.wfile(\"r5/C56_preparation_gate/C56_SM_AAA.json\"),"
+    },
+    {
+     "line": 22,
+     "old": "\"C55_window_gate.json\": ROOT / \"04_calculations/results/20261009_claude_R5/C55_window_gate/C55_window_gate.json\",",
+     "new": "\"C55_window_gate.json\": WP.wfile(\"r5/C55_window_gate/C55_window_gate.json\"),"
+    },
+    {
+     "line": 23,
+     "old": "\"C55_window_gate_refined.json\": ROOT / \"04_calculations/results/20261009_claude_R5/C55_window_gate/C55_window_gate_refined.json\",",
+     "new": "\"C55_window_gate_refined.json\": WP.wfile(\"r5/C55_window_gate/C55_window_gate_refined.json\"),"
+    },
+    {
+     "line": 38,
+     "old": "\"provenance_file\": str((HERE / \"PROVENANCE.txt\").relative_to(ROOT)),",
+     "new": "\"provenance_file\": \"shape/PACKAGE_PATCHES.json\",  # package (research tree: shape_hardening/PROVENANCE.txt)"
+    },
+    {
+     "line": 55,
+     "old": "\"wolfram_receipt\": str((RUN / \"wolfram_receipts.json\").relative_to(ROOT)),",
+     "new": "\"wolfram_receipt\": \"r3/shape_hardening/run01/wolfram_receipts.json\","
+    }
+   ]
+  },
+  "03_fossil/C58_turning_point_states.py": {
+   "source": "04_calculations/code/20261009_claude_R5/C58_turning_point_states.py",
+   "source_sha256": "dd9703d58ae4c430f0632998944c8618e2bcd507802e022299476f6a47ded2ef",
+   "copy_sha256": "613c6366c8ed6487fe0a7e425d4fe8b3de89dbdb270a5e2c25a7d5fcf2bf4619",
+   "substitutions": [
+    {
+     "line": 20,
+     "old": "ROOT = Path(__file__).resolve().parents[3]",
+     "new": "import sys  # package: work-tree path shim of the shape chain (see shape/_shape_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _shape_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 21,
+     "old": "OUT = ROOT / '04_calculations' / 'results' / '20261009_claude_R5' / 'C58_turning_point_states'",
+     "new": "OUT = WP.wdir('r5/C58_turning_point_states')"
+    }
+   ]
+  },
+  "03_fossil/C62_SM_pivot_calibration.py": {
+   "source": "04_calculations/code/20261009_claude_R5/C62_SM_pivot_calibration.py",
+   "source_sha256": "93f55cc8b0c9a59c74766d422269d59779fe75ef452c10ada818750f434c1d66",
+   "copy_sha256": "6b2be67a4cd277ca3b9e08bcbf6b75214a5b979737e3253344c2b23bbdae5ad7",
+   "substitutions": [
+    {
+     "line": 18,
+     "old": "ROOT = Path(__file__).resolve().parents[3]",
+     "new": "import sys  # package: work-tree path shim of the shape chain (see shape/_shape_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _shape_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 19,
+     "old": "OUT = ROOT / '04_calculations' / 'results' / '20261009_claude_R5' / 'C62_SM_pivot'",
+     "new": "OUT = WP.wdir('r5/C62_SM_pivot')"
+    }
+   ]
+  },
+  "03_fossil/C63_rolling_fossil.py": {
+   "source": "04_calculations/code/20261009_claude_R5/C63_rolling_fossil.py",
+   "source_sha256": "4665e8d96d305742a82a6fe2d65571911bfad78c3f3252e3c544820f0de6d6a2",
+   "copy_sha256": "543d5135b03ac564a4d32349033507665c1a37a17ef8cba33dd8fc028906fa20",
+   "substitutions": [
+    {
+     "line": 16,
+     "old": "ROOT = Path(__file__).resolve().parents[3]",
+     "new": "import sys  # package: work-tree path shim of the shape chain (see shape/_shape_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _shape_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 17,
+     "old": "C62 = json.loads((ROOT / '04_calculations/results/20261009_claude_R5/C62_SM_pivot/C62_results.json').read_text())",
+     "new": "C62 = json.loads(WP.wfile('r5/C62_SM_pivot/C62_results.json').read_text())"
+    },
+    {
+     "line": 18,
+     "old": "OUT = ROOT / '04_calculations' / 'results' / '20261009_claude_R5' / 'C63_rolling_fossil'",
+     "new": "OUT = WP.wdir('r5/C63_rolling_fossil')"
+    }
+   ]
+  },
+  "03_fossil/C77_prep_time_zero_mode.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C77_prep_time_zero_mode.py",
+   "source_sha256": "6f467c56c95d837d2a9aecc628d0e9b09482f794dd9dbfc9f444e1cbb0fc4695",
+   "copy_sha256": "84fbe6e7c9977cee3204ff551c827707af3db248bbfb7fdf60059bafa2785073",
+   "substitutions": [
+    {
+     "line": 18,
+     "old": "OUT = Path(__file__).resolve().parents[2] / \"results\" / \"20261011_claude_followup\" / \"C77\"",
+     "new": "import sys  # package: work-tree path shim of the shape chain (see shape/_shape_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _shape_paths as WP  # noqa: E402\nOUT = WP.wdir(\"fu/C77\")"
+    }
+   ]
+  },
+  "03_fossil/C82_fossil_r_dependence.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C82_fossil_r_dependence.py",
+   "source_sha256": "ae8c917381b8a298f9817e6c0059bbb7f3ccb93e35cb9b4803dc16da0dd0f740",
+   "copy_sha256": "d535bafa93f7d68a7c7e76f743a9e4d5e50867785855f40175fd7da136e0772e",
+   "substitutions": [
+    {
+     "line": 32,
+     "old": "OUT = Path(__file__).resolve().parents[2] / \"results\" / \"20261011_claude_followup\" / \"C82\"",
+     "new": "import sys  # package: work-tree path shim of the shape chain (see shape/_shape_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _shape_paths as WP  # noqa: E402\nOUT = WP.wdir(\"fu/C82\")"
+    }
+   ]
+  },
+  "03_fossil/C143_observables.py": {
+   "source": "04_calculations/code/20261013_claude_v12_r2/observables/C143_observables.py",
+   "source_sha256": "474daa4ad393390c73cad33a127284f31d3af2dfd9786624978c2ec9c065daa5",
+   "copy_sha256": "8b5f99571c2530ee4e95eea650799e6884aa5f95046aded4d4ea1c372d6db869",
+   "substitutions": []
+  },
+  "03_fossil/C60_run_main.py": {
+   "source": "04_calculations/code/20261009_claude_R5/nonlinear_SM/C60_run_main.py",
+   "source_sha256": "798ae49be1c4ee5590e814e92a0c5bc8ebbd730ab39cb7db7735f329f2db2f89",
+   "copy_sha256": "cbb310776b6f1d976734748080803f4e6015e50b666b2b42ec72d838bc810aec",
+   "substitutions": [
+    {
+     "line": 33,
+     "old": "sys.path.insert(0, str(Path(__file__).resolve().parent))",
+     "new": "sys.path.insert(0, str(Path(__file__).resolve().parent))\nsys.path.insert(0, str(Path(__file__).resolve().parents[1] / \"shapelib\"))  # package: C60 modules"
+    },
+    {
+     "line": 114,
+     "old": "procs = max(1, min(6, args.procs))",
+     "new": "procs = max(1, args.procs)  # package: no cap (each draw is independent; results do not depend on the worker count)"
+    },
+    {
+     "line": 112,
+     "old": "ap.add_argument(\"--procs\", type=int, default=6)",
+     "new": "ap.add_argument(\"--procs\", type=int, default=int(os.environ.get(\"DNEC_WORKERS\", \"6\")))  # package: --workers"
+    }
+   ]
+  },
+  "03_fossil/C60_analyze.py": {
+   "source": "04_calculations/code/20261009_claude_R5/nonlinear_SM/C60_analyze.py",
+   "source_sha256": "26c6d37dd27a83da6a0ad01f88c7517fa36ca0d4271d78973e71db5005d94f57",
+   "copy_sha256": "acd73572be4568ff22c17d66da2425445453c2c9e4d27552e0d088358afafddb",
+   "substitutions": [
+    {
+     "line": 13,
+     "old": "sys.path.insert(0, str(Path(__file__).resolve().parent))",
+     "new": "sys.path.insert(0, str(Path(__file__).resolve().parent))\nsys.path.insert(0, str(Path(__file__).resolve().parents[1] / \"shapelib\"))  # package: C60 modules"
+    }
+   ]
+  },
+  "04_nonlinear_survival/C160_plateau.py": {
+   "source": "04_calculations/code/20261014_claude_v12_r3/shape_tier2/C160_plateau.py",
+   "source_sha256": "f1c5ebd4592ae445c2ab0aeb2084303812c197118890e926243811035b58f44e",
+   "copy_sha256": "39fe1dd908dc0338f165530ebd4d1bbed49502193951c5332d6b64572ba91717",
+   "substitutions": [
+    {
+     "line": 31,
+     "old": "sys.path.insert(0, str(HERE))",
+     "new": "sys.path.insert(0, str(HERE))\nsys.path.insert(0, str(HERE.parent / \"shapelib\"))  # package: C142/C76/C60"
+    },
+    {
+     "line": 37,
+     "old": "ROOT = HERE.parents[3]",
+     "new": "sys.path.insert(0, str(HERE.parent))\nimport _shape_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 38,
+     "old": "OUT = ROOT / \"04_calculations\" / \"results\" / \"20261014_claude_v12_r3\" / \"shape_tier2\" / \"run01\" / \"plateau\"",
+     "new": "OUT = WP.wdir(\"r3/shape_tier2/run01/plateau\")"
+    },
+    {
+     "line": 40,
+     "old": "D114 = ROOT / \"04_calculations\" / \"results\" / \"20261013_claude_v12_r2\" / \"shape_nonlinear_threshold\" / \"run01\" / \"draws\"",
+     "new": "D114 = WP.wdir(\"r2/shape_nonlinear_threshold/run01/draws\")"
+    },
+    {
+     "line": 355,
+     "old": "ap.add_argument(\"--procs\", type=int, default=2)",
+     "new": "ap.add_argument(\"--procs\", type=int, default=int(os.environ.get(\"DNEC_WORKERS\", \"2\")))  # package: --workers"
+    }
+   ]
+  },
+  "05_moyal_wdw/C160_moyal.py": {
+   "source": "04_calculations/code/20261014_claude_v12_r3/shape_tier2/C160_moyal.py",
+   "source_sha256": "beec7814af2cfeb3e6fae733cffd7fee5104bba6f2bc28402e532c4be53c485e",
+   "copy_sha256": "5c133dc7a24c6252af4bc026f89a24bb6c542ae0b00ffc349ccd0917745ded38",
+   "substitutions": [
+    {
+     "line": 28,
+     "old": "sys.path.insert(0, str(HERE))",
+     "new": "sys.path.insert(0, str(HERE))\nsys.path.insert(0, str(HERE.parent / \"shapelib\"))  # package: C60 modules"
+    },
+    {
+     "line": 31,
+     "old": "ROOT = HERE.parents[3]",
+     "new": "sys.path.insert(0, str(HERE.parent))\nimport _shape_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 32,
+     "old": "OUT = ROOT / \"04_calculations\" / \"results\" / \"20261014_claude_v12_r3\" / \"shape_tier2\" / \"run01\" / \"moyal\"",
+     "new": "OUT = WP.wdir(\"r3/shape_tier2/run01/moyal\")"
+    },
+    {
+     "line": 316,
+     "old": "\"ewald_sha256\": hashlib.sha256((HERE / \"C60_twisted_ewald.py\").read_bytes()).hexdigest(),",
+     "new": "\"ewald_sha256\": hashlib.sha256((HERE.parent / \"shapelib\" / \"C60_twisted_ewald.py\").read_bytes()).hexdigest(),"
+    }
+   ]
+  },
+  "05_moyal_wdw/C160_shear_wdw.py": {
+   "source": "04_calculations/code/20261014_claude_v12_r3/shape_tier2/C160_shear_wdw.py",
+   "source_sha256": "0061cac64ef3af68ca2238aebc550e79017b0e35db0633196e4ce00fd844a6a9",
+   "copy_sha256": "befa98c81069f4f0f4f49e1f3bc61d020f557c0ecd39054b6b8852f5a9abd689",
+   "substitutions": [
+    {
+     "line": 26,
+     "old": "ROOT = HERE.parents[3]",
+     "new": "sys.path.insert(0, str(HERE.parent))\nimport _shape_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 27,
+     "old": "OUT = ROOT / \"04_calculations\" / \"results\" / \"20261014_claude_v12_r3\" / \"shape_tier2\" / \"run01\" / \"shear\"",
+     "new": "OUT = WP.wdir(\"r3/shape_tier2/run01/shear\")"
+    }
+   ]
+  },
+  "05_moyal_wdw/C160_b1_wdw.py": {
+   "source": "04_calculations/code/20261014_claude_v12_r3/shape_tier2/C160_b1_wdw.py",
+   "source_sha256": "1f6e718115552cff47eb6c3877c8a0f44ff88ca972bd1d20c6471d41f08b3c1a",
+   "copy_sha256": "35d1fede454518a9f6e5acec7d384061225dd915dd1e85ccf2cba9e536b8e7f8",
+   "substitutions": [
+    {
+     "line": 30,
+     "old": "ROOT = HERE.parents[3]",
+     "new": "sys.path.insert(0, str(HERE.parent))\nimport _shape_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 31,
+     "old": "OUT = ROOT / \"04_calculations\" / \"results\" / \"20261014_claude_v12_r3\" / \"shape_tier2\" / \"run01\" / \"b1\"",
+     "new": "OUT = WP.wdir(\"r3/shape_tier2/run01/b1\")"
+    },
+    {
+     "line": 32,
+     "old": "MOYAL = ROOT / \"04_calculations\" / \"results\" / \"20261014_claude_v12_r3\" / \"shape_tier2\" / \"run01\" / \"moyal\" / \"C160_moyal.json\"",
+     "new": "MOYAL = WP.wfile(\"r3/shape_tier2/run01/moyal/C160_moyal.json\")"
+    }
+   ]
+  },
+  "05_moyal_wdw/C160_summary.py": {
+   "source": "04_calculations/code/20261014_claude_v12_r3/shape_tier2/C160_summary.py",
+   "source_sha256": "194613419662d4caa61d95567fc812f35e27a370ec2b2f0855aa548abc13440e",
+   "copy_sha256": "cb9f78f79f46769dfcd6f4e8672d6470f5440fb66ee84e4201ecc14bf8012c34",
+   "substitutions": [
+    {
+     "line": 9,
+     "old": "ROOT = HERE.parents[3]",
+     "new": "sys.path.insert(0, str(HERE.parent))  # package: chain root (shape/)\nimport _shape_paths as WP  # noqa: E402\nROOT = None  # package: research-tree inputs (C40/C45 toy Moyal code, D-files) are not shipped"
+    },
+    {
+     "line": 10,
+     "old": "RUN = ROOT / \"04_calculations\" / \"results\" / \"20261014_claude_v12_r3\" / \"shape_tier2\" / \"run01\"",
+     "new": "RUN = WP.wdir(\"r3/shape_tier2/run01\")"
+    },
+    {
+     "line": 24,
+     "old": "for p in sorted(HERE.glob(\"*.py\")) + sorted(HERE.glob(\"*.wl\")) + [HERE / \"PROVENANCE.txt\"]:",
+     "new": "for p in sorted(HERE.glob(\"*.py\")) + sorted(HERE.glob(\"*.wl\")):  # package: PROVENANCE.txt -> shape/PACKAGE_PATCHES.json"
+    },
+    {
+     "line": 34,
+     "old": "if (ROOT / p).exists():",
+     "new": "if ROOT is not None and (ROOT / p).exists():"
+    }
+   ]
+  },
+  "05_moyal_wdw/C141_minvar_lemma.py": {
+   "source": "04_calculations/code/20261013_claude_v12_r2/time_symmetry_origin/C141_minvar_lemma.py",
+   "source_sha256": "5c9361ba1dbafaa559acadc4f34f3a0b1b790faa0b07aad581ef88d5fae77cde",
+   "copy_sha256": "f6cc47fc282753462921583c9ec69080a25568722d9e1f8729775429bb1399b6",
+   "substitutions": []
+  },
+  "06_primordial_spectra/C64_plateau_ns_r.py": {
+   "source": "04_calculations/code/20261009_claude_R5/C64_plateau_ns_r.py",
+   "source_sha256": "d8ae460793459f294d321f5da0894d390625333959718ca97a0ac202ddee939b",
+   "copy_sha256": "9a2858c0022e227abc1b8b4debb8ac1048be66d7b2f6b345b989bcb1b41bfdb1",
+   "substitutions": [
+    {
+     "line": 17,
+     "old": "ROOT = Path(__file__).resolve().parents[3]",
+     "new": "import sys  # package: work-tree path shim of the shape chain (see shape/_shape_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _shape_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 18,
+     "old": "OUT = ROOT / '04_calculations' / 'results' / '20261009_claude_R5' / 'C64_plateau_ns_r'",
+     "new": "OUT = WP.wdir('r5/C64_plateau_ns_r')"
+    }
+   ]
+  }
+ }
+}

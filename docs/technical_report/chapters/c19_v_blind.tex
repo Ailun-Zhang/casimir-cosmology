@@ -1,0 +1,218 @@
+
+\section{Independent reimplementations}\label{rep:v-blind}
+
+Every ingredient of the Higgs criterion, the shape theorem and its survival levels, the readability of the fossil and the key literature judgments were recomputed by separate calculations that did not use our main code.
+This section records what each check was given, what it reproduced, to what precision, and which corrections it caused.
+We find that the blind reimplementation of the reduced Higgs chain reproduces its critical top masses to $0.005\GeV$, against a pass criterion of $0.05\GeV$ fixed in advance; that the blind cross-term calculation confirms that the cross terms destabilize the zero mode, with a shift within $0.010\GeV$ of the main calculation; that the blind Standard Model mapping reproduces $\lambda(\mub)$ to $4\times10^{-6}$ with the same matching and explains a scheme difference of $0.043\GeV$; and that the blind shape calculation reproduces the real-moment theorem, the floor and the survival levels within their statistical errors. %
+No check failed its pass criterion.
+Most of them led to corrections, all of which are included in Part~I and recorded in Part~III; Table~\ref{tab:v19-summary} at the end of the section summarizes them.
+
+\subsection{Protocol and levels of independence}\label{sec:v19-protocol}
+
+The reimplementations (see the Acknowledgments) were made at three levels of independence; each check is labeled by the identifier of its record.
+\begin{description}
+\item[Blind (third stage: keystone, V1--V6).] Each check received a written specification with the model definitions, the inputs and the pass criteria, an earlier draft of the paper as an external anchor (for example its full-dimensional DMC value at $\lambda=0$), and access to the literature.
+It had no access to the derivations, code and results of the main calculation or to the records of the other checks.
+It recorded its results, with a time stamp and the SHA-256 hash of its code, before it received any number of the main calculation; the comparison was compiled afterwards.
+\item[Compute first (first and second stages: R14, R15).] Each check computed its own numbers before opening the results of the main calculation, and compared afterwards.
+Some of these checks reused earlier independent code that the main calculation also uses (R15 checks of the matching and of the real-time evolution), and in one case the result tables of the main calculation were seen before the computation (R15 check of the two-dimensional model), which makes that check only partly independent; we state these limitations below.
+\item[Semi-blind (T19).] The check used only the claims and the non-numerical parts of the derivations, saved its own results, and then opened the result tables of the main calculation; one accidental exposure of a few of their rows is recorded in its report.
+\end{description}
+A read-only consistency audit (Sec.~\ref{sec:v19-audit}) compared about 420 quoted values with their source files.
+
+\subsection{Keystone: the reduced Higgs chain}\label{sec:v19-keystone}
+
+The keystone check reimplemented the full Higgs chain of the second stage: the consistent one-loop finite-volume matching (Sec.~\ref{rep:h-matching}), the two-dimensional $(r,s)$ model (Sec.~\ref{rep:h-reduced}) and the hazard along the turn (Sec.~\ref{rep:h-survival}), with $hL_b=0.00437243$, the earlier Standard Model mapping and without cross terms. %
+The specification defined the model in six parts and allowed only the earlier draft and the literature.
+The reimplementation uses its own proper-time finite-volume one-loop functions, including a closed form of the Coulomb-mode contribution that agrees with Wolfram Language to 25 digits; at small $r$ its $V_1/(r^2/2)=-0.10704543$ equals the zero-mode mass formula of the draft. %
+Its renormalization-group code agrees with Wolfram \texttt{NDSolve} to $3\times10^{-15}$; it computed resonances both as Siegert states and with complex absorbing potentials, in one dimension and in the multichannel two-dimensional model, and it computed its own DMC correction $\delta E(r)$ of the SU(2) shape, validated on pure SU(2), where it gives $2.6860\pm0.0025$ against L\"uscher's $2.68523$~\cite{Luscher:1982ma}. %
+Table~\ref{tab:v19-keystone} compares the results.
+
+\begin{table}[t]
+\centering
+\caption{Keystone check of the reduced Higgs chain (model of the second stage: earlier Standard Model mapping, no cross terms; $\alpha_s=0.1180$). ``Blind'' values were fixed before the comparison.}
+\label{tab:v19-keystone}
+\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Quantity & Blind & Main \\
+\midrule
+$\lambda(\mub)$ & $-0.0101929$ & $-0.010193$ \\ %
+$y_t(\mub)$ & $0.428359$ & $0.42836$ \\ %
+$L\varepsilon_0(\lambda=0)$, 2D$_{\rm G}$ & $4.50769$ & $4.507701$ \\ %
+$L\varepsilon_0(\lambda=0)$, 1D & $4.59855$ & $4.598545$ \\ %
+$L\varepsilon_0(\lambda=0)$, with DMC shape & $4.45078$ & $4.45086$ \\ %
+$L\Gamma(\lambda=-0.010)$, 2D$_{\rm G}$ & $5.3183\times10^{-4}$ & $5.318\times10^{-4}$ \\ %
+$L\Gamma(\lambda=-0.010)$, 1D & $9.8711\times10^{-4}$ & $9.8711\times10^{-4}$ \\ %
+static $\lambda_c$ ($P=0.9/\allowbreak 0.5$), 2D$_{\rm G}$ & $-0.009424/\allowbreak{-}0.012613$ & equal to $<10^{-6}$ \\ %
+$\Pone(172.2/\allowbreak 172.6/\allowbreak 173.0)$ & $0.9792/\allowbreak 0.8210/\allowbreak 0.4371$ & $0.97920/\allowbreak 0.82098/\allowbreak 0.43738$ \\ %
+$m_c$, one-dimensional model (GeV) & $172.349/\allowbreak 172.768/\allowbreak 173.187$ & $172.349/\allowbreak 172.768/\allowbreak 173.187$ \\ %
+$m_c$, 2D$_{\rm G}$ (GeV) & $172.467/\allowbreak 172.941/\allowbreak 173.420$ & $172.467/\allowbreak 172.941$/--- \\ %
+$m_c$, 2D with own DMC shape (GeV) & $172.521/\allowbreak 173.017/\allowbreak 173.520$ & $172.518/\allowbreak 173.014/\allowbreak 173.515$ \\ %
+$dm_c/d\alpha_s$ (GeV) & $\approx388$ & $\approx387$ \\ %
+\bottomrule
+\end{tabular}
+\end{table}
+
+The critical masses agree to $0.005\GeV$ at all three levels, against the pass criterion of $0.05\GeV$, and all intermediate quantities agree to $10^{-4}$ or better; the blind numerical error on $m_c$ is estimated at $0.005\GeV$ or less. %
+The blind DMC shape correction has a statistical sensitivity of about $\pm0.02\GeV$ in $m_c$, within which it agrees with the correction of the main calculation.
+One methodological error of the blind code, the principal square root on closed channels in the outgoing condition, produced spurious roots and was fixed before the comparison.
+The check does not cover the cross terms or the NNLO mapping, which V2 and V1 check, and it lists as open the non-Gaussian effects beyond $\delta E(r)$, two-loop matching, holonomy fluctuations, the top quark at $m_tL\approx1$--$1.5$ and the hazard prescription itself (Secs.~\ref{rep:h-budget} and~\ref{rep:v-fulldim} treat them). %
+
+\subsection{V2: the cross terms}\label{sec:v19-v2}
+
+The second blind check computed the cross terms between the zero mode and the non-zero modes from the model definitions, with the curvatures of the earlier internal draft as the only anchor.
+It used a twist approximation in which each charged component receives a momentum shift, with periodic bosons excluding $n=0$ and antiperiodic fermions; its direction-averaged twisted sums agree with the $\theta=0$ limit and with Bessel--Poisson sums to $10^{-16}$. %
+At $r=0$ it reproduced the holonomy curvatures $-0.39261$, $-0.24209$ and $+0.70036$ (SU(3), SU(2), hypercharge; Sec.~\ref{rep:h-cross}). %
+It found that the soft hypercharge direction, unstable for $r\lesssim0.78$ when only Higgs fluctuations are kept, is stable everywhere when all fields are included ($\frac12\kappa_{\rm mean}=+0.068$). %
+Its width ratios at $\lambda=-0.008$, $-0.010$ and $-0.0143$ are $1.217/\allowbreak 1.177/\allowbreak 1.122$ (SU(3)--top), $0.646/\allowbreak 0.683/\allowbreak 0.748$ (SU(2)), $2.039/\allowbreak 1.914/\allowbreak 1.702$ (hypercharge) and $1.613/\allowbreak 1.552/\allowbreak 1.444$ in total, against $1.21/\allowbreak 1.17/\allowbreak 1.12$, $0.65/\allowbreak 0.69/\allowbreak 0.75$, $2.06/\allowbreak 1.93/\allowbreak 1.72$ and $1.63/\allowbreak 1.57/\allowbreak 1.46$ in the main calculation. %
+The total shift of the critical mass is
+\begin{equation}
+\Delta m_c^{\rm blind}=-0.081,\ -0.117,\ -0.157\GeV,\qquad \Delta m_c^{\rm prod}=-0.085,\ -0.124,\ -0.167\GeV
+\label{eq:v19-v2}
+\end{equation}
+at $\Pone=0.9$, $0.5$ and $0.1$, a difference of $0.004$--$0.010\GeV$ within both error estimates (numerical $\lesssim0.005\GeV$ and model $\pm0.015\GeV$ in the blind report). %
+The difference is kept as an item of the error budget (Sec.~\ref{rep:h-budget}).
+The check confirmed blindly that the cross terms destabilize the zero mode, which retracted the stabilizing interval of the second stage, and it identified the instability of the soft direction as an artifact of keeping only Higgs fluctuations (Part~III).
+It was compared with the third-stage calculation that preceded the one-loop vev-mixing, Coulomb and top-chiral terms; those terms, which largely cancel and move the final critical masses by $+0.005$ to $+0.007\GeV$, were checked only within the main code (Sec.~\ref{rep:h-cross}). %
+
+\subsection{V1: the Standard Model mapping}\label{sec:v19-v1}
+
+The third blind check mapped $(m_t,\alpha_s,M_h)$ to the $\MSbar$ couplings at $\mub$ with at least one matching implementation different from SMDR, as the specification required.
+It used \texttt{mr} (Kniehl--Pikelner--Veretin), compiled with MinGW g++~5.3, and SMDR~1.3 as a second implementation~\cite{Martin:2019lqd}, its own $\alpha_s$ running and its own renormalization-group equations; all 276 three-loop monomials of the $\beta$ functions match the published ones. %
+At $(m_t,\alpha_s,M_h)=(172.60,0.1180,125.13)$ it gives with \texttt{mr}
+\begin{equation}
+\lambda(\mub)=-0.010055,\quad y_t=0.427896,\quad g_2=0.527828,\quad g_Y=0.442586,\quad g_3=0.535646,
+\label{eq:v19-v1}
+\end{equation}
+with $d\lambda(\mub)/dm_t=-0.006592\GeV^{-1}$ and $\mtbar(\mtbar)=162.820\GeV$. %
+Its benchmarks against Buttazzo et al.\ pass for $\lambda(m_t)$ and $y_t$ and fail for $g_3$ by an unexplained $0.0018$; its critical mass in the convention of Bednyakov et al.\ is $171.432\GeV$ against $171.44\GeV$. %
+After unblinding, the \texttt{mr} value of $\lambda(\mub)$ differs from the main value, $-0.009774$, by $-2.8\times10^{-4}$, or $0.043\GeV$ in $m_t$; this is a difference between two organizations of the two-loop matching. %
+With SMDR matching and its own running the blind value is $-0.009778$, within $4\times10^{-6}$ of the main value. %
+The check led to three corrections.
+\begin{enumerate}
+\item \texttt{mr} must run single-threaded, because its OpenMP build has a race condition in TSIL.
+\item The matching-scale error differs by a factor of about ten between the two implementations: SMDR with all scales halved or doubled gives $+0.033/\allowbreak{-}0.019\GeV$, which V1 reproduced bit for bit, while \texttt{mr} gives $+0.173/\allowbreak{-}0.358\GeV$, as in Bednyakov et al.; the cause is the non-QCD logarithms of the $G_F$ scheme combined with a cancellation between the $m_t$ and $M_h$ terms in SMDR. %
+\item The recommended Standard Model error, $\pm0.07\GeV$ for $\mtbar$ and $\pm0.10\GeV$ for the pole mass, replaced the earlier $\pm0.047$ and $\pm0.086\GeV$ and is used in the papers (Sec.~\ref{rep:h-smmap}). %
+\end{enumerate}
+
+\subsection{V3: the claims layer and the robustness of the inputs}\label{sec:v19-v3}
+
+The fourth blind check recomputed the marginalization, the Bayes factors, the exclusion thresholds and the experimental reach from the table of $\Pone(m_t,\alpha_s)$ of the third stage and the model-error budget supplied in the specification, and the sensitivities to the duration of the turn, to $\fzm$ and to the preparation weight.
+Two independent integrators (a grid and a Monte Carlo with $2\times10^6$ samples) agree to $3.4\times10^{-4}$, and the experimental inputs were checked against the pages of the cited reports. %
+For the direct mass it gives $\Pbar=0.725$ with the $68\%$ range $[0.380,0.989]$, against $0.727$ and $[0.384,0.989]$ in the main calculation; $|\ln B|\le0.71$; $\Pone=0.1$ at $173.062/\allowbreak 173.412/\allowbreak 173.761\GeV$ for $\alpha_s=0.1171/\allowbreak 0.1180/\allowbreak 0.1189$; a measured centre of $174.18\GeV$ for a $95\%$ exclusion; and a present separation of $172.6$ and $173.3\GeV$ at $1.5\sigma$. %
+These are the numbers of the third-stage model; the final model shifts them as described in Sec.~\ref{rep:h-budget}.
+Changing $hL_b$ by factors $0.9$ and $1.1$ moves $m_c$ by $-0.020/\allowbreak{-}0.032/\allowbreak{-}0.049$ and $+0.018/\allowbreak{+}0.030/\allowbreak{+}0.046\GeV$, and the blind preparation weight is $w_0=0.991$--$0.996$. %
+The check passed with four corrections, all adopted.
+\begin{enumerate}
+\item The main code combined asymmetric errors in two different ways in different places; the equal-mass convention is now used throughout (Sec.~\ref{rep:h-budget}), which changes the variant of Bednyakov et al.\ to $0.67$ and its quoted range to $0.62$--$0.67$.
+\item The separation reachable at the HL-LHC depends on the assumed precision of $\alpha_s$; it is now quoted as about $1.7\sigma$ to $2.5\sigma$.
+\item The dependence on the duration of the turn has two correct but different measures, the secant over one e-fold and the local derivative; both are now named.
+\item The flat prior on $[150,200]\GeV$ was in fact applied on a grid over $[160,186]\GeV$; corrected, $B_{\rm sel}=1.584$ instead of $1.459$ and its upper bound $2.18$ instead of $2.007$ (third-stage model). %
+\end{enumerate}
+
+\subsection{V4: the shape side}\label{sec:v19-v4}
+
+The fifth blind check recomputed the real-moment theorem, the floor, the function $G(|t_x|)$, the nonlinear survival that defines $t_*$, the next-order floor, the emptiness budget and the preparation window (Secs.~\ref{rep:gate} and~\ref{rep:quantum-shape}).
+It had the earlier draft and the method sections of two derivations without their tables, and an addendum to its specification required $N\ge2048$ samples for every quantity at the $99\%$ level.
+It computed the linear transfer three ways (two ODE integrators and Wolfram Language, agreeing to $10^{-8}$), the floor in closed form and by ODE (to $10^{-12}$), and the Ewald eigenvalues $1902.2404$ and $-893.2029$; the nonlinear five-dimensional integration used common random numbers with $N=2048$ per point. %
+It gives $\kappa_E=19.32654$, $\sigma_{\rm floor}=0.10406$, $G(|t_x|)=2.3955$, $45.1258$ and $314.090$ at $h|t_x|=0.1$, $0.5$ and $1$, and $G(\infty)=1349.24$, against $\sigma_{\rm floor}=0.1037$ and $G=2.395$, $45.10$ and $313.8$ in the main calculation; the differences of $0.3\%$ come from the input $X$ ($2269.2$ against $2282.5$). %
+Its survival thresholds are $h|t_*|=0.360$ ($90\%$) and $0.243$ ($99\%$), against $0.355\pm0.003$ and $0.237$ in the main calculation repeated with $N=2048$; with only $N=256$ the blind code gives $0.373$ and $0.264$, which shows why the larger samples were needed. %
+Its emptiness budget is $4.7616$, $4.8976$ and $5.0473$ quanta for the three values of $\fzm$, and its latest preparation $7.2640$ e-folds. %
+The check passed; together with T19 it caused the rerun of all $99\%$-level points with $N\ge2048$, and the theorem is now stated with $|t_x|\lesssim0.35/h$ ($0.24/h$) (Sec.~\ref{rep:quantum-shape}).
+
+\subsection{V5: universality and the bound during inflation}\label{sec:v19-v5}
+
+The sixth blind check recomputed the bound on $\xiH$ from Higgs stability during the plateau and the scaling of $\lambda_c$ (Sec.~\ref{rep:h-universality}).
+With its own three-loop running, a curved-space renormalization-group-improved potential and Hawking--Moss counting over the past light cone, it gives $\xi_{\rm EW,inf}=0.05032/\allowbreak 0.05637/\allowbreak 0.06151$ and $\xi_{\rm inf}(\mub)=0.03224/\allowbreak 0.03940/\allowbreak 0.04550$ at $m_t=172.2/\allowbreak 172.6/\allowbreak 173.0\GeV$, and $0.0487/\allowbreak 0.0547/\allowbreak 0.0599$ after subtracting its offset in the reproduction of Mantziris, Markkanen and Rajantie (2021), against $0.04877/\allowbreak 0.05512/\allowbreak 0.06044$ (electroweak) and $0.03030/\allowbreak 0.03781/\allowbreak 0.04413$ ($\mub$) in the main calculation. %
+Its Hawking--Moss exponent agrees between Python and Wolfram Language to $7\times10^{-14}$ relative. %
+For $\lambda_c$ it gives $d\lambda_c/d\ln\eta_\infty=+0.00220$ and coupling derivatives that differ from the final model by $10$--$20\%$, as expected between the static second-stage model it used and the final hazard. %
+The check passed (differences $\le0.002$ in $\xi$).
+
+\subsection{V6: key literature judgments}\label{sec:v19-v6}
+
+The seventh blind check answered six questions about the literature from the original papers, with page and equation numbers, before it read the literature notes of the project.
+It confirmed that the applicable bound for a minimally coupled plateau is that of Mantziris, Markkanen and Rajantie (2021), $\xi_{\rm EW}\ge0.059^{+0.007}_{-0.009}$, and that their 2022 bound $\xi_{\rm EW}\gtrsim0.1$ applies only to $R^2$ gravity; and that the topology searches require $L>0.97$ (Planck 2015) or $L>0.985$ (COMPACT) in units of the diameter of the last-scattering sphere, so that the window $1.02$--$1.04\,\dLSS$ is allowed. %
+It found that the earlier notes stated the relation to Branchina et al.\ too strongly and missed three references (Arkani-Hamed, Dubovsky, Nicolis and Villadoro 2007; Hamada and Shiu 2017; Arnold, Fornal and Wise 2010); the papers now cite them and state the relation conditionally. %
+
+\subsection{T19: items left unverified after the second stage}\label{sec:v19-t19}
+
+The semi-blind check T19 recomputed the nonlinear amplitude thresholds of the shape, a layer of the divergences of the microwave-background calculation, the closed-form scaling of the fossil and three older items.
+With $N=2048$ it gives the survival $1.000/\allowbreak 0.987/\allowbreak 0.818/\allowbreak 0.365/\allowbreak 0.067/\allowbreak 0.0015$ for amplitude factors $s=1/3/5/10/20/40$, against $1.000/\allowbreak 0.973/\allowbreak 0.824/\allowbreak 0.367/\allowbreak 0.062/\allowbreak 0.000$ in the main calculation with $N=256$, and $s_{50}/s_{90}/s_{99}=8.18/\allowbreak 4.28/\allowbreak 2.95$ against $8.2/\allowbreak 4.2/\allowbreak 2.2$. %
+The main calculation, repeated with $N=2048$, then gave $s_{99}=2.76$ (range $2.66$--$2.96$); the two values are about $2\sigma$ apart, and the papers quote $s_{99}\approx2.8$--$2.95$. %
+Its divergences for $\ell\le40$ and $\ell\le30$, $7.21855$ and $5.25558$, agree with the main calculation ($7.22572$, $5.26140$) to $0.1\%$, within the $1\%$ criterion, and it reproduces the scaling function $F(19.32)=24.550106$. %
+It found that the plateau background adds $0.4$--$0.8$ percentage points of survival, that the Moyal correction changes a variance by a factor $0.99989$, and that the photon-pair branch has its centre at $4.956$ with a $5$--$95\%$ range $2.98$--$11.9$. %
+Its corrections ($s_{99}\approx2.95$ and $\sigma(99\%)\approx0.31$ instead of $2.2$ and $0.24$; ``centre $\approx5$, $90\%$ interval $3$--$12$'' for the photon pair) were adopted (Part~III).
+
+\subsection{Checks of the first and second stages}\label{sec:v19-early}
+
+\paragraph{R14, Higgs survival (first stage).}
+The first independent check of the Higgs survival computed its own running, Ewald and Epstein-zeta matching with the tachyonic branch, Numerov integration with a WKB outgoing condition, complex Muller roots and pole continuation along the turn.
+It reproduced the width of the first-stage model at $\lambda=-0.010$, $2.05075\times10^{-3}$ against $2.051\times10^{-3}$, and the first-stage critical masses to $0.02\GeV$ ($172.20/\allowbreak 172.57$ against $172.22/\allowbreak 172.59\GeV$). %
+Its main finding changed the physics: with minimal coupling $\xiH=0$ the term $a''/a$ in the zero-mode mass makes the width grow from $1.90\times10^{-3}$ at $\tau=3$ to $1.15$ at $\tau=5$, almost independently of $m_t$, so that survival requires a curvature coupling; this is the origin of the condition on $\xiH$ (Sec.~\ref{rep:h-universality}) and of the choice $\xiH=1/6$ in all later hazards. %
+It also noted that the first-stage errors omitted the reduction (estimated then at $\pm0.1$--$0.15\GeV$) and a gauge dependence of about $0.25\GeV$; both were removed by the consistent matching and the two-dimensional model.
+It found that the calibration of Buttazzo et al.\ refers to the non-reduced Planck mass.
+
+\paragraph{R14, state selection (first stage).}
+The check of the inheritance of the shape state used the exact hypergeometric transfer matrix at $40$--$90$ digits and two ODE integrations agreeing to nine digits, and reproduced $G(|t_x|)$ to eight digits ($G=2.395171$, $45.09679$ and $313.7866$ at $h|t_x|=0.1$, $0.5$ and $1$; $G(\infty)=1347.651$). %
+It corrected six statements of the first draft of the theorem, among them the factor by which a state real in the freezing region exceeds the floor ($19.6$ instead of $36.7$ at the freeze edge) and the claim that the future branch cannot fall below the floor; the corrected theorem is that of Sec.~\ref{rep:quantum-shape}. %
+
+\paragraph{R15, matching (second stage).}
+With a new basis-free decomposition of the Coulomb-mode energy and Wolfram cross-checks to $3.8\times10^{-9}$, the check reproduced the matched width $9.871149\times10^{-4}$ exactly, the static thresholds to $10^{-6}$ and the critical masses $172.3485/\allowbreak 172.7681\GeV$ against $172.3486/\allowbreak 172.7680\GeV$. %
+It shares the hazard code with the main calculation.
+It found that the non-adiabatic effect is about $\pm0.004\GeV$ rather than $\le0.002\GeV$ when the top quark is treated with Dirac-pair matrix elements.
+
+\paragraph{R15, real-time evolution (second stage).}
+An independent time-dependent Schr\"odinger solver in the radial frame with a moving absorber reproduced $w_0=1.0019$, the asymptotic hazard survival $0.47706$ against $0.4770$, and $\xi_c(172.6)=0.0723\pm0.0025$ against $0.072\pm0.003$ on the potential of that stage. %
+It corrected three statements: the running prescription $\lambda(1/L)$ is frozen after $\tau=7$ in the code; a Gaussian truncated at the origin gives $w_0=0.743/\allowbreak 0.857$ and is not in the domain of the Hamiltonian, which led to the rule for $w_0$ of Sec.~\ref{rep:h-survival}; and the insensitivity to the switching time holds only for one of the two prescriptions.
+
+\paragraph{R15, two-dimensional model (second stage).}
+A B-spline Galerkin method in $r$ with a DVR in $s$ and absorbing-potential trajectories reproduced the $\lambda=0$ energies to $10^{-6}$, the width ratios $\Gamma_{\rm 2D}/\Gamma_{\rm 1D}=0.39136/\allowbreak 0.42078/\allowbreak 0.48362$ against $0.391/\allowbreak 0.421/\allowbreak 0.484$, and the critical masses $172.509/\allowbreak 173.002\GeV$ of the linearized conversion. %
+Because the result tables were seen before the computation, the check is only partly independent.
+Its estimate of the cross terms ($+0.05/\allowbreak{+}0.07\GeV$, stabilizing) was based on Higgs-only curvatures and was reversed by the third stage (Sec.~\ref{sec:v19-v2}).
+
+\paragraph{R15, time symmetry (second stage).}
+The check of the origin of time-reflection symmetry derived the energy variance of the centred Gaussian family symbolically, found that among general real states the infimum of the variance is zero, and corrected five statements: ``single classical history'' is an extra assumption (with an explicit counterexample), the width of the Airy region, the closed contour required by Hartle--Hawking, the restriction of minimal variance to the Gaussian family, and the statement that the homogeneous cap is impossible. %
+It also found that a header comment of the nonlinear survival code stated a pinch threshold of $10^{-6}$ while the code uses $10^{-3}$.
+
+\paragraph{R15, the separate line of calculation.}
+The checks of Sec.~\ref{rep:v-conditional} recomputed the curved-cigar shape Hessians in closed form (main-code finite differences within $6.4\times10^{-6}$; coefficient $\frac{73}{3}\,\mathrm G=22.288496124979$), the width $\sigma_\phi=0.0097372$ of the joint state and its lower bound $0.935075$ (linear) and $0.935278$ (nonlinear), and the ensemble layer of the readability: peak $0.350$ at $1.076\,\dLSS$ against $0.344$ at $1.075$, window $[1.016,1.184]$ against $[1.018,1.183]$, and measure $0.0421$ against $0.0422$. %
+They found that the sign theorem for the cigar needs antiperiodic fermions on the two-torus (with periodic fermions the sums reverse), that the bound on the width of the joint state has the general form $\sigma_N\gtrsim0.0137\,N_{\rm post}$, and that an archived table of profiled divergences still contained an abandoned parabolic profile (82 pairs low by more than $1\%$, one violation of the data-processing inequality), which was rebuilt (Sec.~\ref{rep:v-convergence}).
+
+\subsection{Consistency audit}\label{sec:v19-audit}
+
+A read-only audit compared about 420 values quoted in four summary documents of the third stage with their source files.
+It found no second-stage value used as a current central value and flagged 23 items (5 high, 7 medium, 11 low priority): among them first-stage values of the marginal probability in the results index, an outdated Standard Model error, critical $\mtbar$ values of the old centre without a source (recomputed as $162.73/\allowbreak 163.16/\allowbreak 163.60\GeV$ for the final model), a comparison of $\xi$ values at different scales, and rounding of two quoted numbers. %
+All were corrected before the papers were written.
+
+\subsection{Summary and coverage}\label{sec:v19-summary}
+
+\begin{table}[t]
+\centering
+\small
+\caption{Independent checks: what was reproduced and which corrections followed. B: blind; C: compute first; S: semi-blind; A: audit.}
+\label{tab:v19-summary}
+\begin{tabular}{@{}p{0.06\textwidth}p{0.25\textwidth}p{0.30\textwidth}p{0.31\textwidth}@{}}
+\toprule
+Level & Check & Agreement & Corrections adopted \\
+\midrule
+B & Keystone: reduced Higgs chain & $m_c$ to $0.005\GeV$; $\lambda(\mub)$ to $10^{-6}$; widths to $0.1\%$ & none needed \\
+B & V2: cross terms & $\Delta m_c$ within $0.004$--$0.010\GeV$ & sign of the cross terms confirmed; stabilizing interval retracted \\
+B & V1: Standard Model mapping & $\lambda(\mub)$ to $4\times10^{-6}$ (same matching); scheme difference $0.043\GeV$ & SM error $\pm0.07/\pm0.10\GeV$; single-threaded \texttt{mr} \\
+B & V3: claims and robustness & $\Pbar$ to $0.005$; thresholds to $0.01\GeV$ & equal-mass convention; HL-LHC reach; prior support; slope definitions \\
+B & V4: shape & $t_*$ within errors; $G$ and floor to $0.3\%$ & $N\ge2048$ at $99\%$ levels \\
+B & V5: universality, inflation & $\xi_{\rm inf}$ to $0.002$ & none needed \\
+B & V6: literature & six questions & BFT wording; three references added \\
+S & T19: open items & KL to $0.1\%$; $F(19.32)$ & $s_{99}$, $\sigma(99\%)$, photon-pair range \\
+C & R14: Higgs survival, state selection & widths to $3\times10^{-4}$; $G$ to 8 digits & condition on $\xiH$; theorem statements \\
+C & R15: matching, real time, 2D, time symmetry & $m_c$ to $10^{-4}\GeV$; $\xi_c$, $w_0$ & non-adiabatic item; rule for $w_0$; B1--B3 wording \\
+C & R15: separate line, ensemble & Hessians to $6\times10^{-6}$; peak $0.350$ vs $0.344$ & AA fermions; rebuilt profile table \\
+A & Consistency audit & 420 values & 23 items \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The checks cover every input of the criterion and of the shape statements.
+Four parts were checked only within the main code: the one-loop vev-mixing, Coulomb and top-chiral terms of the cross terms (net $+0.005$ to $+0.007\GeV$, checked by renormalization-group closure and regression), the final matching-scale scan, the recomputation of $\xic$ in the final model (checked against the universal curve $\xic(\Pone)$ to $0.0002$), and the two-branch analysis of Sec.~\ref{rep:h-survival}, which compares the time-dependent and static-spectrum methods internally. %
+The final marginalization was repeated with an independently written Monte Carlo integration (Sec.~\ref{rep:h-budget}).
+The blind checks test how the stated model is implemented; the approximations of the model itself are covered by the model items of the error budget and by the full-dimensional check of Sec.~\ref{rep:v-fulldim}.

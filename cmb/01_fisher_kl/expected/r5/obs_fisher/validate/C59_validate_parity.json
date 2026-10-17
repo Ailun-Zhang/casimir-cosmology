@@ -1,0 +1,21 @@
+{
+  "imag_part_max_normalized": 3.4873447122613763e-16,
+  "opposite_parity_block_max_normalized": 3.4873447122613763e-16,
+  "paired_vs_explicit_max_normalized_diff": [
+    1.1804437215953507e-15,
+    6.865250916864231e-16
+  ],
+  "setup": {
+    "lmax": 10,
+    "xmax": 30.0,
+    "L0_over_dLSS": 0.93,
+    "beta5": [
+      0.05,
+      -0.03,
+      0.04,
+      0.02,
+      -0.06
+    ],
+    "modes_full": 2926
+  }
+}

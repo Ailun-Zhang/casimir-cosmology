@@ -1,0 +1,116 @@
+
+\section{Reproduction guide: code, data, figures and numbers}\label{rep:v-repro}
+
+Every number and figure of the Letter~\cite{v12PRL}, the paper~\cite{v12PRD} and this report is produced by the scripts of the code and data package of Ref.~\cite{DNECv12code}, version~1.0.0, or contained in its archived outputs, including those of the independent reimplementations.
+The package contains the code that produced the results, copied from the research tree with the paths rewired and the algorithms and numerical settings unchanged; the archived outputs of the original runs; a quick and a full run mode for every result; and an automatic comparison of fresh outputs with the archive under tolerances fixed in advance.
+This section explains how the package is organized (Sec.~\ref{sec:v22-structure}), how to run it (Sec.~\ref{sec:v22-run}), how its results are verified (Sec.~\ref{sec:v22-verify}), where the numbers and figures come from (Secs.~\ref{sec:v22-numbers}--\ref{sec:v22-map}), and what it does not contain (Sec.~\ref{sec:v22-limits}).
+The code is released under the MIT license and the data and text under CC~BY~4.0; SMDR~1.3 and the two files derived from it are under the GNU GPL, version~2 or later~\cite{Martin:2019lqd}.
+
+\subsection{Structure}\label{sec:v22-structure}
+
+The top level of the package is
+{\small
+\begin{verbatim}
+run_all.py      one-command reproduction (--quick / --full)
+dnec_common/    paths.py, io.py, runner.py (driver of every run.py), sm_inputs.py
+casimir/ 01-03  SM Casimir weight, zero-mode energy, shape Hessian and gain
+higgs/   01-12  Higgs zero-mode criterion (SM mapping ... two branches)
+shape/   01-06  emptiness gate, real-moment theorem, fossil, nonlinear survival,
+                Moyal and Wheeler-DeWitt checks, primordial spectra
+cmb/     01-03  torus covariance, Fisher and exact KL, fossil ensemble,
+                joint state
+validation/     independent reimplementations: specifications, code, results,
+                comparison with the main calculation
+figures/        style_v12.py, make_all_figures.py, one script per figure,
+                data/ (inputs), out/ (PDF and PNG)
+numbers/        numbers_v12.json (single source of the claim-layer numbers),
+                make_numbers_tex.py, check_numbers.py
+tools/          verify_expected.py, verify_summary.py, sha256sums.py
+third_party/    SMDR 1.3 tarball with fetch, verify and build script
+docs/technical_report/   this report (PDF and LaTeX source)
+output/         run outputs (empty in the release)
+\end{verbatim}}
+together with \texttt{README.md}, \texttt{CHANGELOG.md}, \texttt{RELEASE\_NOTES.md}, the license, citation and environment files, \texttt{MANIFEST.json} and \texttt{SHA256SUMS.txt} (path, size and SHA-256 of every file).
+Each of the 24 result directories \texttt{<chain>/NN\_<name>/} has a \texttt{README.md} (physics question, method, location in the papers, derivation number, run commands, run times, and the table of numbers that Sec.~\ref{sec:v22-map} collects), a \texttt{run.py}, the source modules, \texttt{checks.json} (comparisons and tolerances), \texttt{expected/} (archived outputs of the original runs with SHA-256 sidecars), \texttt{VERIFY.json} (results of the verification runs) and, where needed, \texttt{inputs/}.
+Shared modules live in \texttt{higgs/zmlib/} and \texttt{shape/shapelib/}.
+Every copied code file starts with a \texttt{PROVENANCE} line that names its original path in the research tree and the date of the copy, and every change to the code is listed in the chain's \texttt{PACKAGE\_PATCHES.json}.
+The numbers D$nnn$ and C$nnn$ used throughout this report are the identifiers of the derivation files and of the calculations in the research tree; the README of each result directory gives the original paths.
+
+\subsection{Installation and running}\label{sec:v22-run}
+
+The package needs Python~3.12 with numpy~2.5.1, scipy~1.17.1, mpmath~1.4.1, sympy~1.14.0 and matplotlib~3.11.0 (PyMuPDF~1.27.2.2 for the figures), the versions of every recorded run:
+\begin{verbatim}
+conda env create -f environment.yml && conda activate dnec-v12
+# or:  pip install -r requirements.txt
+\end{verbatim}
+Optional are psutil and threadpoolctl (for \texttt{cmb/02}), CAMB~2.0.4 (only for \texttt{cmb/01 --full}), a C compiler for SMDR~1.3 (only for the compiled refits of \texttt{higgs/01}) and Wolfram Language (for the \texttt{*.wl} cross-checks).
+The package was tested on Windows~11 x64 with CPython~3.12.13; all paths go through \texttt{dnec\_common/paths.py}, so it should also run on Linux and macOS, where it has not been tested.
+
+The entry points are
+{\small
+\begin{verbatim}
+python run_all.py --quick              # all chains (quick) + all figures
+python run_all.py --full               # lists the long computations
+python run_all.py --full --yes         # runs them: about 7-8 h on 16 cores
+python run_all.py --quick --chains higgs --no-figures
+python higgs/run_higgs.py --quick      # one chain (also casimir, shape, cmb)
+python higgs/04_cross_terms/run.py --quick    # one result directory
+python figures/make_all_figures.py     # every figure from figures/data
+python tools/verify_summary.py         # table of all VERIFY.json files
+python numbers/check_numbers.py        # the paper numbers vs the archive
+\end{verbatim}}
+Every \texttt{run.py} accepts the options \texttt{--workers~N} (default: number of CPUs minus one, at most 16), \texttt{--work~DIR}, \texttt{--fresh} (discard the previous outputs of the step) and \texttt{--no-verify}.
+Outputs go to \texttt{output/\allowbreak<chain>/\allowbreak<mode>/}, a tree that mirrors the archive, so that each fresh file and its archived copy share a relative path; archived upstream inputs are staged automatically when a single result directory is run.
+The quick mode always recomputes something non-trivial with the packaged code (a two-dimensional node job, a DMC shard, the hazard integral, the claims layer, re-integrated nonlinear trajectories, two covariance builds) and compares it with \texttt{expected/}; the full mode repeats all original runs and can be resumed.
+Multiprocessing is guarded by \texttt{if \_\_name\_\_ == "\_\_main\_\_":}, BLAS is forced to a single thread, and the code parallelizes over jobs.
+The run times quoted in the READMEs refer to a 16-core Intel Core Ultra X9 378H under Windows~11.
+
+Only \texttt{higgs/01\_sm\_mapping} uses the compiled SMDR~1.3 (one refit in the quick mode, all 38 matching-scale refits in the full mode).
+The command \texttt{python third\_party/\allowbreak smdr/\allowbreak fetch\_and\_build.py all} verifies the shipped tarball by its SHA-256, unpacks, builds and tests it in about a minute; on Windows it uses MinGW-w64 gcc~5.3 with \texttt{-D\_\_USE\_MINGW\_ANSI\_STDIO=1}, a no-op \texttt{execinfo.h}, \texttt{-fcommon} and a 64~MB stack.
+The stock SMDR applications are not used: \texttt{calc\_fit} crashed on the research machine and \texttt{calc\_all} did not finish within four hours, whereas the driver \texttt{c148\_fit.c}, a verbatim copy of \texttt{SMDR\_Fit\_Inputs} with the evaluation scales as arguments, reproduces the archived fits bit for bit.
+
+\subsection{Verification}\label{sec:v22-verify}
+
+For every result directory \texttt{checks.json} lists the compared quantities (file and key in the work tree against the archived copy, or a literal value), the location in the papers and the tolerance: for example critical top masses to $0.001\GeV$, trajectory records to $10^{-9}$ relative, and most analysis layers bit for bit.
+\texttt{tools/verify\_expected.py} evaluates the checks and writes \texttt{VERIFY.json} with the differences, timings and machine; \texttt{tools/verify\_summary.py --update-readmes} copies the results into the READMEs.
+Table~\ref{tab:v22-verify} gives the state of the release.
+Before release the package without \texttt{output/} was copied into an empty directory, SMDR was built there from the shipped tarball, and the quick mode was run end to end; the first such self-test found a staging error in the path shims of three chains, which was corrected before release.
+
+\input{chapters/c22_verify_table}
+
+The skipped check of the quick mode is the optional compiled-SMDR refit of \texttt{higgs/01}, which needs SMDR to be built; the two skipped checks of the full mode belong to \texttt{cmb/01}, whose full mode covers its C59 part only (\texttt{--full --c59-only}; the C75 part and the continuum test need inputs that are not shipped). %
+Recomputing every covariance matrix of the \texttt{cmb/02} ensemble from the shipped transfer table for $\ell\le80$ (\texttt{--full}, about 70~min on 12 workers, with a 15.5~GB cache) reproduces the tabulated divergences to $2.3\times10^{-13}$, and the window edges, the peak of $P_{\rm joint}$ and its position, the integrated measure, the fossil table and the size-prior results to all quoted digits; the reduced mode of \texttt{cmb/02} exercises every code path (builds, cross-divergences, profiles, Brent searches, noise and analysis) on $\ell\le12$ against an archived reduced run. %
+
+\subsection{Numbers}\label{sec:v22-numbers}
+
+The claim-layer numbers of the three documents (marginal probabilities, exclusion thresholds, reach, conditions on $\xiH$, safety margins, model-error totals) are never typed by hand.
+They are macros defined in \texttt{numbers.tex}, which \texttt{numbers/make\_numbers\_tex.py} generates from the single source \texttt{numbers/numbers\_v12.json}; the three LaTeX sources \texttt{\textbackslash input} the same file.
+To change a number one edits only the JSON file (values and displayed precision), regenerates \texttt{numbers.tex} and copies it to the three sources (\texttt{--out PATH ...}), and reruns \texttt{python numbers/check\_numbers.py --write}, which compares every number with the archived outputs of the package.
+At release all 51 macros are verified: each displayed value, sign included, equals the value at a named file and JSON pointer in the package rounded to the displayed precision, and none disagrees or lacks a source. %
+Appendix~\ref{rep:app-numbers} lists all macros with their sources, together with the run05 number registry from which most of them were taken.
+Numbers that are not claim-layer macros are quoted in the text with a source comment in the LaTeX file; each is produced by the scripts of the package or contained in its archived outputs, including those of the independent reimplementations, and Table~\ref{tab:v22-mapping} below gives the package output and its archived copy for the numbers of each result directory.
+
+\subsection{Figures}\label{sec:v22-figures}
+
+\texttt{python figures/make\_all\_figures.py} (or \texttt{... <substring>} for a subset) rebuilds every data figure of the papers and of this report from copies of the archived results in \texttt{figures/data/} into \texttt{figures/out/<name>.pdf} and \texttt{.png}, with a common style file \texttt{figures/style\_v12.py}; \texttt{gen\_casimir\_slice\_shape.py} recomputes the data of the Casimir slice in about $20$~s.
+Table~\ref{tab:v22-figures} lists the figures of this report, their files and the scripts that make them; schematic figures drawn in TikZ in the LaTeX source have no script.
+
+\input{chapters/c22_figure_table}
+
+\subsection{From numbers to package outputs}\label{sec:v22-map}
+
+Table~\ref{tab:v22-mapping} collects, for each result directory, the numbers quoted in the papers and in this report and the package output and key that contain them; it is generated from the tables at the end of the READMEs.
+Numbers in the table are written as in the READMEs, which use some of the internal notation of the derivation files: $Q$ for the real part of the resonance energy ($\varepsilon$ in this report), $\gamma$ for the width ($\Gamma$), $u$ for the time $\tau=ht$, and $\xi$ for the zero-mode share $\fzm$ (Appendix~\ref{rep:app-notation}).
+The numbers of the independent reimplementations are listed in \texttt{validation/\allowbreak COMPARISON.md} with the corresponding numbers of the main calculation, their source and the pass criterion, and \texttt{python validation/\allowbreak run.py --quick} repeats the comparison.
+
+\input{chapters/c22_mapping_table}
+
+\subsection{What the package does not contain}\label{sec:v22-limits}
+
+Large intermediate files are not shipped but are regenerated by the full runs: the covariance caches of the microwave-background chains (1.3~GB, 0.7~GB, 3.3~GB and 15.5~GB) and the Higgs node tables and gauge profiles (40--170~MB per run).
+The transfer tables for $\ell\le40$ (34~MB) and $\ell\le80$ (85~MB) and the archives of the nonlinear trajectories (69~MB in six files) are shipped; the table for $\ell\le80$, needed only for \texttt{cmb/02 --full}, was computed with CAMB~2.0.4 by a script of the separate line of calculation of Sec.~\ref{rep:v-conditional}; the script and its settings are shipped with the table in \texttt{cmb/\allowbreak 02\_ensemble/\allowbreak data/}. %
+The blind reimplementations of Sec.~\ref{rep:v-blind} are described there and archived in the package's validation folder, \texttt{validation/}, whose script compares $23$ of their numbers with the main calculation; all agree within the pass criteria of the specifications. %
+The original runs of the first two stages of the Higgs calculation are not repeated; where a later step depends on them, their archived outputs are staged as inputs.
+The $66$ node jobs that split the cross-term shift by groups of fields (Sec.~\ref{sec:rb-xfinal}) are archived and not rerun; \texttt{higgs/\allowbreak 04\_cross\_terms/\allowbreak cross\_decomp.py} recomputes the split from them in both modes. %
+Each chain README has a section ``Not packaged / partial coverage'' that lists the remaining gaps, for example the original scripts of the run02-based extras of the real-time step, whose outputs are archived.
+Some archived JSON and Markdown files contain absolute paths of the research machine in metadata fields; they are kept unchanged so that their SHA-256 matches the research archive, and the code never uses these fields.

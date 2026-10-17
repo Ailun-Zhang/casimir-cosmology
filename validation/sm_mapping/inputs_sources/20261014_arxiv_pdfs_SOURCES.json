@@ -1,0 +1,47 @@
+[
+ {
+  "file": "Buttazzo2013_1307.3536.pdf",
+  "url": "https://arxiv.org/pdf/1307.3536",
+  "final_url": "https://arxiv.org/pdf/1307.3536",
+  "content_type": "application/pdf",
+  "date_utc": "2026-10-14T23:58:07Z",
+  "bytes": 1756331,
+  "sha256": "d201cda6299774ed8704be2b7b9d272f0bd1bd984afcbff1ff7daaefff10aeb8"
+ },
+ {
+  "file": "BKPV2015_1507.08833.pdf",
+  "url": "https://arxiv.org/pdf/1507.08833",
+  "final_url": "https://arxiv.org/pdf/1507.08833",
+  "content_type": "application/pdf",
+  "date_utc": "2026-10-14T23:58:07Z",
+  "bytes": 640372,
+  "sha256": "a74640dfd424460d8128069af1cd00a65909af011f4c15cf2015229e08d5fa68"
+ },
+ {
+  "file": "mr_KPV2016_1601.08143.pdf",
+  "url": "https://arxiv.org/pdf/1601.08143",
+  "final_url": "https://arxiv.org/pdf/1601.08143",
+  "content_type": "application/pdf",
+  "date_utc": "2026-10-14T23:58:07Z",
+  "bytes": 289373,
+  "sha256": "ca22209fe4397de23017902d7bb8c1bd9d57e87c6c47c42c13f18ab83e55e691"
+ },
+ {
+  "file": "SMDR_MR2019_1907.02500.pdf",
+  "url": "https://arxiv.org/pdf/1907.02500",
+  "final_url": "https://arxiv.org/pdf/1907.02500",
+  "content_type": "application/pdf",
+  "date_utc": "2026-10-14T23:58:07Z",
+  "bytes": 657867,
+  "sha256": "008fb29144e93ee21fb889f1b1abf43ae14df233e2a2954bf9c9d67fe03474f8"
+ },
+ {
+  "file": "Degrassi2012_1205.6497.pdf",
+  "url": "https://arxiv.org/pdf/1205.6497",
+  "final_url": "https://arxiv.org/pdf/1205.6497",
+  "content_type": "application/pdf",
+  "date_utc": "2026-10-14T23:58:07Z",
+  "bytes": 1343122,
+  "sha256": "72c7c2baca7f4ec64365bd5004464c03a22091b2088a16981696661170e40253"
+ }
+]

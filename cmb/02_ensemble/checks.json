@@ -1,0 +1,723 @@
+{
+ "step": "02_ensemble",
+ "checks": [
+  {
+   "id": "S3_postcheck",
+   "what": "C145 postcheck (all variants)",
+   "paper": "PRD Sec. VIII B",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:ai/cmb_ensemble/run01/results/S3_postcheck.json"
+   },
+   "expected": {
+    "file": "expected/ai/cmb_ensemble/run01/results/S3_postcheck.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s",
+    "camb_path",
+    "created",
+    "script_sha256",
+    "snapshot_sha256_readonly",
+    "elapsed",
+    "build_seconds",
+    "seconds",
+    "wall",
+    "time",
+    "t_build",
+    "Codex_sigma_aspect_leading",
+    "Codex_read_error",
+    "source",
+    "note",
+    "source_edges",
+    "source_C79",
+    "generated_utc",
+    "path",
+    "pid"
+   ],
+   "modes": [
+    "quick",
+    "full"
+   ]
+  },
+  {
+   "id": "Pj_peak",
+   "what": "P_joint peak = 0.344",
+   "paper": "PRD Sec. VIII B (CMB-02)",
+   "computed": {
+    "file": "WORK:ai/cmb_ensemble/run01/results/S3_postcheck.json",
+    "key": "variants/TE80_grid/modes/mid/Pj_max"
+   },
+   "expected": {
+    "file": "expected/ai/cmb_ensemble/run01/results/S3_postcheck.json",
+    "key": "variants/TE80_grid/modes/mid/Pj_max"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09,
+   "modes": [
+    "quick",
+    "full"
+   ]
+  },
+  {
+   "id": "Pj_peak_L0",
+   "what": "position of the peak L0 = 1.075 d_LSS",
+   "paper": "PRD Sec. VIII B (CMB-02)",
+   "computed": {
+    "file": "WORK:ai/cmb_ensemble/run01/results/S3_postcheck.json",
+    "key": "variants/TE80_grid/modes/mid/L0_Pj_max"
+   },
+   "expected": {
+    "file": "expected/ai/cmb_ensemble/run01/results/S3_postcheck.json",
+    "key": "variants/TE80_grid/modes/mid/L0_Pj_max"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09,
+   "modes": [
+    "quick",
+    "full"
+   ]
+  },
+  {
+   "id": "win_lo",
+   "what": "P_joint >= 0.1 from 1.018",
+   "paper": "PRD Sec. VIII B (CMB-03)",
+   "computed": {
+    "file": "WORK:ai/cmb_ensemble/run01/results/S3_postcheck.json",
+    "key": "variants/TE80_grid/modes/mid/win_joint/0.1/0"
+   },
+   "expected": {
+    "file": "expected/ai/cmb_ensemble/run01/results/S3_postcheck.json",
+    "key": "variants/TE80_grid/modes/mid/win_joint/0.1/0"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09,
+   "modes": [
+    "quick",
+    "full"
+   ]
+  },
+  {
+   "id": "win_hi",
+   "what": "P_joint >= 0.1 up to 1.183",
+   "paper": "PRD Sec. VIII B (CMB-03)",
+   "computed": {
+    "file": "WORK:ai/cmb_ensemble/run01/results/S3_postcheck.json",
+    "key": "variants/TE80_grid/modes/mid/win_joint/0.1/1"
+   },
+   "expected": {
+    "file": "expected/ai/cmb_ensemble/run01/results/S3_postcheck.json",
+    "key": "variants/TE80_grid/modes/mid/win_joint/0.1/1"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09,
+   "modes": [
+    "quick",
+    "full"
+   ]
+  },
+  {
+   "id": "measure",
+   "what": "integrated readable measure 0.0422",
+   "paper": "PRD Sec. VIII B (CMB-05)",
+   "computed": {
+    "file": "WORK:ai/cmb_ensemble/run01/results/S3_postcheck.json",
+    "key": "variants/TE80_grid/modes/mid/mean_span"
+   },
+   "expected": {
+    "file": "expected/ai/cmb_ensemble/run01/results/S3_postcheck.json",
+    "key": "variants/TE80_grid/modes/mid/mean_span"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09,
+   "modes": [
+    "quick",
+    "full"
+   ]
+  },
+  {
+   "id": "fossil_table_checks",
+   "what": "fossil_table_v2 consistency checks",
+   "paper": "PRD Sec. VIII B",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/cleanup_t12/run01/fossil_table_v2_checks.json"
+   },
+   "expected": {
+    "file": "expected/r3/cleanup_t12/run01/fossil_table_v2_checks.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s",
+    "camb_path",
+    "created",
+    "script_sha256",
+    "snapshot_sha256_readonly",
+    "elapsed",
+    "build_seconds",
+    "seconds",
+    "wall",
+    "time",
+    "t_build",
+    "Codex_sigma_aspect_leading",
+    "Codex_read_error",
+    "source",
+    "note",
+    "source_edges",
+    "source_C79",
+    "generated_utc",
+    "path",
+    "pid",
+    "inputs_sha256",
+    "outputs_sha256",
+    "utc",
+    "date",
+    "sha256"
+   ],
+   "modes": [
+    "quick",
+    "full"
+   ]
+  },
+  {
+   "id": "fossil_table_cell",
+   "what": "fossil_table_v2.csv: TE80 profiled D (pool-min) of the first row",
+   "paper": "PRD Sec. VIII B, Fig. 7 (mechanism)",
+   "modes": [
+    "quick",
+    "full"
+   ],
+   "computed": {
+    "file": "WORK:r3/cleanup_t12/run01/fossil_table_v2.csv",
+    "row": {
+     "name": "shape_A0.25000_th-0.52360_s1.01500_l80_x240_t0.25"
+    },
+    "col": "TE80_prof"
+   },
+   "expected": {
+    "file": "expected/r3/cleanup_t12/run01/fossil_table_v2.csv",
+    "row": {
+     "name": "shape_A0.25000_th-0.52360_s1.01500_l80_x240_t0.25"
+    },
+    "col": "TE80_prof"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09,
+   "optional": false
+  },
+  {
+   "id": "C153_ensemble",
+   "what": "window for other sigma_E",
+   "paper": "PRD Sec. VIII B (CMB-14..17)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run01/ensemble/C153_ensemble.json"
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run01/ensemble/C153_ensemble.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s",
+    "camb_path",
+    "created",
+    "script_sha256",
+    "snapshot_sha256_readonly",
+    "elapsed",
+    "build_seconds",
+    "seconds",
+    "wall",
+    "time",
+    "t_build",
+    "Codex_sigma_aspect_leading",
+    "Codex_read_error",
+    "source",
+    "note",
+    "source_edges",
+    "source_C79",
+    "generated_utc",
+    "path",
+    "pid"
+   ],
+   "modes": [
+    "quick",
+    "full"
+   ]
+  },
+  {
+   "id": "Pj_next",
+   "what": "next order (sigma_E = 0.094): peak 0.377",
+   "paper": "PRD Sec. VIII B (CMB-14)",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run01/ensemble/C153_ensemble.json",
+    "key": "results/0.0940/variants/TE80_grid/mid/Pj_max"
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run01/ensemble/C153_ensemble.json",
+    "key": "results/0.0940/variants/TE80_grid/mid/Pj_max"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09,
+   "modes": [
+    "quick",
+    "full"
+   ]
+  },
+  {
+   "id": "priors",
+   "what": "size-prior experiments (summary)",
+   "paper": "PRD Sec. VIII B (CMB-12, 13)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:ai/cmb_ensemble/run01/priors/priors_summary.json"
+   },
+   "expected": {
+    "file": "expected/ai/cmb_ensemble/run01/priors/priors_summary.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s",
+    "camb_path",
+    "created",
+    "script_sha256",
+    "snapshot_sha256_readonly",
+    "elapsed",
+    "build_seconds",
+    "seconds",
+    "wall",
+    "time",
+    "t_build",
+    "Codex_sigma_aspect_leading",
+    "Codex_read_error",
+    "source",
+    "note",
+    "source_edges",
+    "source_C79",
+    "generated_utc",
+    "path",
+    "pid"
+   ],
+   "modes": [
+    "quick",
+    "full"
+   ]
+  },
+  {
+   "id": "priors_size",
+   "what": "size-prior experiments (table)",
+   "paper": "PRD Sec. VIII B",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:ai/cmb_ensemble/run01/priors/P4_size_prior_ens.json"
+   },
+   "expected": {
+    "file": "expected/ai/cmb_ensemble/run01/priors/P4_size_prior_ens.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s",
+    "camb_path",
+    "created",
+    "script_sha256",
+    "snapshot_sha256_readonly",
+    "elapsed",
+    "build_seconds",
+    "seconds",
+    "wall",
+    "time",
+    "t_build",
+    "Codex_sigma_aspect_leading",
+    "Codex_read_error",
+    "source",
+    "note",
+    "source_edges",
+    "source_C79",
+    "generated_utc",
+    "path",
+    "pid"
+   ],
+   "modes": [
+    "quick",
+    "full"
+   ]
+  },
+  {
+   "id": "smoke_kl",
+   "what": "reduced run: cross-KL table (l <= 12)",
+   "paper": "path check",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:ai/cmb_ensemble/run01/smoke/results/kl_table.json"
+   },
+   "expected": {
+    "file": "expected/ai/cmb_ensemble/run01/smoke/results/kl_table.json"
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s",
+    "camb_path",
+    "created",
+    "script_sha256",
+    "snapshot_sha256_readonly",
+    "elapsed",
+    "build_seconds",
+    "seconds",
+    "wall",
+    "time",
+    "t_build",
+    "Codex_sigma_aspect_leading",
+    "Codex_read_error",
+    "source",
+    "note",
+    "source_edges",
+    "source_C79",
+    "generated_utc",
+    "path",
+    "pid"
+   ],
+   "modes": [
+    "reduced"
+   ]
+  },
+  {
+   "id": "smoke_profiles",
+   "what": "reduced run: fixed / profiled D",
+   "paper": "path check",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:ai/cmb_ensemble/run01/smoke/results/S2_profiles.json"
+   },
+   "expected": {
+    "file": "expected/ai/cmb_ensemble/run01/smoke/results/S2_profiles.json"
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s",
+    "camb_path",
+    "created",
+    "script_sha256",
+    "snapshot_sha256_readonly",
+    "elapsed",
+    "build_seconds",
+    "seconds",
+    "wall",
+    "time",
+    "t_build",
+    "Codex_sigma_aspect_leading",
+    "Codex_read_error",
+    "source",
+    "note",
+    "source_edges",
+    "source_C79",
+    "generated_utc",
+    "path",
+    "pid"
+   ],
+   "modes": [
+    "reduced"
+   ]
+  },
+  {
+   "id": "smoke_S3",
+   "what": "reduced run: S3 analysis (the Brent list is stored in completion order and is not compared)",
+   "paper": "path check",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:ai/cmb_ensemble/run01/smoke/results/S3_analysis.json"
+   },
+   "expected": {
+    "file": "expected/ai/cmb_ensemble/run01/smoke/results/S3_analysis.json"
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s",
+    "camb_path",
+    "created",
+    "script_sha256",
+    "snapshot_sha256_readonly",
+    "elapsed",
+    "build_seconds",
+    "seconds",
+    "wall",
+    "time",
+    "t_build",
+    "Codex_sigma_aspect_leading",
+    "Codex_read_error",
+    "source",
+    "note",
+    "source_edges",
+    "source_C79",
+    "generated_utc",
+    "path",
+    "pid",
+    "brent"
+   ],
+   "modes": [
+    "reduced"
+   ]
+  },
+  {
+   "id": "full_kl",
+   "what": "C145 cross-KL table (l <= 80)",
+   "paper": "PRD Sec. VIII B",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:ai/cmb_ensemble/run01/results/kl_table.json"
+   },
+   "expected": {
+    "file": "expected/ai/cmb_ensemble/run01/results/kl_table.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s",
+    "camb_path",
+    "created",
+    "script_sha256",
+    "snapshot_sha256_readonly",
+    "elapsed",
+    "build_seconds",
+    "seconds",
+    "wall",
+    "time",
+    "t_build",
+    "Codex_sigma_aspect_leading",
+    "Codex_read_error",
+    "source",
+    "note",
+    "source_edges",
+    "source_C79",
+    "generated_utc",
+    "path",
+    "pid"
+   ],
+   "modes": [
+    "full"
+   ]
+  }
+ ]
+}

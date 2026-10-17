@@ -1,0 +1,97 @@
+{
+ "description": "C73 (ii): zero-incident-momentum gain of beta'' + 3H beta' - kappa h^2 sech^2(2ht) beta = 0 on\nL = L_b sqrt(cosh 2ht) (H = h tanh 2ht), and the r-dependent lower bound of claim (3).\n\nExact result (derived in D55): with tau = 2ht, z = (1+tanh tau)/2 the equation is hypergeometric,\n  z(1-z) y'' + (1/4 - z/2) y' - (kappa/4) y = 0,  a+b = -1/2, ab = kappa/4, c = 1/4,\nand the solution regular at z=0 (beta -> 1, beta' -> 0 in the far past) has\n  gain = 2F1(a,b;1/4;1) = Gamma(1/4)Gamma(3/4)/(Gamma(1/4-a)Gamma(1/4-b))\n       = sqrt2 cosh[(pi/4) sqrt(4 kappa - 1)]   (kappa > 1/4),  sqrt2 cos[(pi/4) sqrt(1-4kappa)] (kappa < 1/4).\nChecks: (1) mpmath hyp2f1 at z=1, (2) direct ODE integration (scipy DOP853) in cosmic time.\nOutput: results/.../C73/C73_gain.json\n",
+ "rows": [
+  {
+   "case": "kappa_E",
+   "kappa": 13.5286,
+   "gain_closed": "216.456495764961",
+   "gain_gamma": "216.456495764961",
+   "gain_2F1(z=1)": "216.456495764961",
+   "ODE_residual_2F1": "6.31e-30",
+   "gain_ODE": 216.45649495484065,
+   "beta'_end": 5.648553048662688e-23
+  },
+  {
+   "case": "kappa_T2",
+   "kappa": -6.3524,
+   "gain_closed": "-0.885069695777455",
+   "gain_gamma": "-0.885069695777455",
+   "gain_2F1(z=1)": "-0.885069695777455",
+   "ODE_residual_2F1": "1.97e-31",
+   "gain_ODE": -0.8850696962685073,
+   "beta'_end": 2.0233720770756533e-25
+  },
+  {
+   "case": "kappa=1/4+0",
+   "kappa": 0.25000001,
+   "gain_closed": "1.41421357982026",
+   "gain_gamma": "1.41421357982026",
+   "gain_2F1(z=1)": "1.41421357982026",
+   "ODE_residual_2F1": "9.18e-43",
+   "gain_ODE": 1.4142135788784116,
+   "beta'_end": 1.9163095881492508e-26
+  },
+  {
+   "case": "kappa=0",
+   "kappa": 0.0,
+   "gain_closed": "1.0",
+   "gain_gamma": "1.0",
+   "gain_2F1(z=1)": "1.0",
+   "ODE_residual_2F1": "0.0",
+   "gain_ODE": 1.0,
+   "beta'_end": 0.0
+  }
+ ],
+ "paper_kappas": {
+  "kappa_E": 13.5286,
+  "kappa_T2": -6.3524,
+  "2 kappa_E + 3 kappa_T2": 8.0
+ },
+ "lower_bounds": [
+  {
+   "r": 0.0,
+   "sum_kappa = 8/(1-r)": "8.0",
+   "kappa_mean = 8/(5(1-r))": "1.6",
+   "G_lower_bound closed": "4.50046546315",
+   "G via Gamma": "4.50046546315",
+   "G via 2F1": "4.50046546315",
+   "G via ODE": 4.500465454334073,
+   "SM aspect gain G(kappa_E/(1-r)) (illustration)": "216.4565"
+  },
+  {
+   "r": 0.1,
+   "sum_kappa = 8/(1-r)": "8.88888888889",
+   "kappa_mean = 8/(5(1-r))": "1.77777777778",
+   "G_lower_bound closed": "5.02969951091",
+   "G via Gamma": "5.02969951091",
+   "G via 2F1": "5.02969951091",
+   "G via ODE": 5.029699500638563,
+   "SM aspect gain G(kappa_E/(1-r)) (illustration)": "296.68914"
+  },
+  {
+   "r": 0.25,
+   "sum_kappa = 8/(1-r)": "10.6666666667",
+   "kappa_mean = 8/(5(1-r))": "2.13333333333",
+   "G_lower_bound closed": "6.18686537477",
+   "G via Gamma": "6.18686537477",
+   "G via 2F1": "6.18686537477",
+   "G via ODE": 6.1868653612511455,
+   "SM aspect gain G(kappa_E/(1-r)) (illustration)": "532.94365"
+  },
+  {
+   "r": 0.5,
+   "sum_kappa = 8/(1-r)": "16.0",
+   "kappa_mean = 8/(5(1-r))": "3.2",
+   "G_lower_bound closed": "10.5474355326",
+   "G via Gamma": "10.5474355326",
+   "G via 2F1": "10.5474355326",
+   "G via ODE": 10.547435506222186,
+   "SM aspect gain G(kappa_E/(1-r)) (illustration)": "2407.4653"
+  }
+ ],
+ "G_monotone_increasing_on_[-2,40]": true,
+ "identities": {
+  "Gamma(1/4)Gamma(3/4) - sqrt2 pi": "-7.89e-31",
+  "Gamma(1/2+iy)Gamma(1/2-iy) - pi/cosh(pi y), y=0.9": "0.0"
+ }
+}

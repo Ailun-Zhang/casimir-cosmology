@@ -1,0 +1,33 @@
+{\small
+\setlength{\tabcolsep}{4pt}\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.27\textwidth}>{\raggedright\arraybackslash}p{0.15\textwidth}>{\raggedright\arraybackslash}p{0.12\textwidth}>{\raggedright\arraybackslash}p{0.1\textwidth}>{\raggedright\arraybackslash}p{0.15\textwidth}>{\raggedright\arraybackslash}p{0.09\textwidth}@{}}
+\caption{Verification state of the code package: checks passed/total in the quick, full and reduced modes (``---'': mode not run), with the derivation and calculation numbers of each result directory and the report section that uses it. Skipped checks need optional inputs that are not shipped.}\label{tab:v22-verify}\\
+\toprule Result directory & D/C no. & Report Sec. & quick & full & reduced \\ \midrule\endfirsthead
+\toprule Result directory & D/C no. & Report Sec. & quick & full & reduced \\ \midrule\endhead
+\bottomrule\endlastfoot
+\texttt{casimir/\allowbreak{}01\_\allowbreak{}sm\_\allowbreak{}casimir\_\allowbreak{}weight} & D50 & \ref{rep:casimir} & 9/9 & 9/9 & --- \\
+\texttt{casimir/\allowbreak{}02\_\allowbreak{}zero\_\allowbreak{}mode\_\allowbreak{}energy} & D54, D58, D59 & \ref{rep:zeromodes} & 9/9 & 9/9 & --- \\
+\texttt{casimir/\allowbreak{}03\_\allowbreak{}shape\_\allowbreak{}hessian} & D14, D24, D55, D59 & \ref{rep:trace}, \ref{rep:shape} & 11/11 & 16/16 & --- \\
+\texttt{higgs/\allowbreak{}01\_\allowbreak{}sm\_\allowbreak{}mapping} & D120, C148 & \ref{rep:h-smmap} & 14/15 (1 skipped) & 14/14 & --- \\
+\texttt{higgs/\allowbreak{}02\_\allowbreak{}finite\_\allowbreak{}volume\_\allowbreak{}matching} & D110, C138 & \ref{rep:h-matching} & 9/9 & 10/10 & --- \\
+\texttt{higgs/\allowbreak{}03\_\allowbreak{}zero\_\allowbreak{}mode\_\allowbreak{}2d} & D112, C140, D122, C150, T14b & \ref{rep:h-reduced}, \ref{rep:h-survival} & 10/10 & 10/10 & --- \\
+\texttt{higgs/\allowbreak{}04\_\allowbreak{}cross\_\allowbreak{}terms} & D121, C149 & \ref{rep:h-cross} & 15/15 & 16/16 & --- \\
+\texttt{higgs/\allowbreak{}05\_\allowbreak{}fulldim\_\allowbreak{}validation} & D123, C151, T14a & \ref{rep:v-fulldim} & 8/8 & 9/9 & --- \\
+\texttt{higgs/\allowbreak{}06\_\allowbreak{}hazard\_\allowbreak{}criterion} &  & \ref{rep:h-survival}, \ref{rep:v-convergence} & 17/17 & 17/17 & --- \\
+\texttt{higgs/\allowbreak{}07\_\allowbreak{}realtime\_\allowbreak{}xi} & D129, C157, C161 & \ref{rep:h-survival}, \ref{rep:h-universality} & 3/3 & 4/4 & --- \\
+\texttt{higgs/\allowbreak{}08\_\allowbreak{}robustness\_\allowbreak{}w0} & D124, C152 & \ref{rep:h-survival}, \ref{rep:h-budget} & 6/6 & 7/7 & --- \\
+\texttt{higgs/\allowbreak{}09\_\allowbreak{}claims} & D126, C161, D132 & \ref{rep:h-budget} & 16/16 & 14/14 & --- \\
+\texttt{higgs/\allowbreak{}10\_\allowbreak{}universality} & D128, C156 & \ref{rep:h-universality} & 7/7 & 8/8 & --- \\
+\texttt{higgs/\allowbreak{}11\_\allowbreak{}inflation\_\allowbreak{}stability} & D127, C155 & \ref{rep:h-universality} & 5/5 & 6/6 & --- \\
+\texttt{higgs/\allowbreak{}12\_\allowbreak{}two\_\allowbreak{}branch} & D130, C159 & \ref{rep:h-survival} & 3/3 & 4/4 & --- \\
+\texttt{shape/\allowbreak{}01\_\allowbreak{}emptiness\_\allowbreak{}gate} & D48, D125, D56, D59 & \ref{rep:gate} & 11/11 & 15/15 & --- \\
+\texttt{shape/\allowbreak{}02\_\allowbreak{}realtime\_\allowbreak{}theorem} & D109, D113, D125 & \ref{rep:quantum-shape} & 19/19 & 16/16 & --- \\
+\texttt{shape/\allowbreak{}03\_\allowbreak{}fossil} &  & \ref{rep:quantum-shape} & 16/16 & 12/12 & --- \\
+\texttt{shape/\allowbreak{}04\_\allowbreak{}nonlinear\_\allowbreak{}survival} &  & \ref{rep:quantum-shape} & 13/13 & 9/9 & --- \\
+\texttt{shape/\allowbreak{}05\_\allowbreak{}moyal\_\allowbreak{}wdw} &  & \ref{rep:quantum-shape} & 9/9 & 23/23 & --- \\
+\texttt{shape/\allowbreak{}06\_\allowbreak{}primordial\_\allowbreak{}spectra} & D51, D30, D35, D36 & \ref{rep:spectra} & 5/5 & 5/5 & --- \\
+\texttt{cmb/\allowbreak{}01\_\allowbreak{}fisher\_\allowbreak{}kl} & D52, D57 & \ref{rep:sky} & 5/5 & 3/5 (2 skipped) & --- \\
+\texttt{cmb/\allowbreak{}02\_\allowbreak{}ensemble} & C145, D117 & \ref{rep:sky} & 12/12 & 13/13 & 3/3 \\
+\texttt{cmb/\allowbreak{}03\_\allowbreak{}joint\_\allowbreak{}state} & C147, D119 & \ref{rep:sky} & 6/6 & 6/6 & --- \\
+\midrule
+\multicolumn{3}{@{}l}{total} & 238/239 & 255/257 & 3/3 \\
+\end{longtable}}

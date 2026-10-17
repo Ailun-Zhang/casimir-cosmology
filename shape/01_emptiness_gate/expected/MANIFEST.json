@@ -1,0 +1,47 @@
+{
+ "r5/C55_window_gate/C55_window_gate.json": {
+  "source": "04_calculations/results/20261009_claude_R5/C55_window_gate/C55_window_gate.json",
+  "sha256": "a70555d684648aa53d19be01c1b18dbb2917bb71b1bd02716f5872a3e066c845",
+  "bytes": 39831
+ },
+ "r5/C55_window_gate/C55_window_gate_refined.json": {
+  "source": "04_calculations/results/20261009_claude_R5/C55_window_gate/C55_window_gate_refined.json",
+  "sha256": "09c4681e7960fdd1878bd8b142423c63961060e7fbd555bdd090016affad8a41",
+  "bytes": 45209
+ },
+ "r5/C55_window_gate/C55_quick.json": {
+  "source": "04_calculations/results/20261009_claude_R5/C55_window_gate/C55_quick.json",
+  "sha256": "a7d3665e0ef862b052009e50fb06211ae09c2f961dcdbccd5e8ea2641c014fdc",
+  "bytes": 4365
+ },
+ "r5/C55_window_gate/C55b_time_reversal_check.json": {
+  "source": "04_calculations/results/20261009_claude_R5/C55_window_gate/C55b_time_reversal_check.json",
+  "sha256": "52f2d9c7eac339b2f0b38cd5db2741e32b8b6153e8e58a76b8216c0dbd3781e0",
+  "bytes": 3840
+ },
+ "r5/C56_preparation_gate/C56_NC100.json": {
+  "source": "04_calculations/results/20261009_claude_R5/C56_preparation_gate/C56_NC100.json",
+  "sha256": "b844be1ee08474e8940fd2ecc24f6c6e9f528cfa1a96a0fd9d5967a476aa9b91",
+  "bytes": 40403
+ },
+ "r5/C56_preparation_gate/C56_SM_AAA.json": {
+  "source": "04_calculations/results/20261009_claude_R5/C56_preparation_gate/C56_SM_AAA.json",
+  "sha256": "14aa7c35ee497096cd8cf6a617e7687150f575d90e435f5e5a3585d4b12dfd15",
+  "bytes": 30594
+ },
+ "r3/shape_hardening/run01/emptiness/C153_emptiness.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/shape_hardening/run01/emptiness/C153_emptiness.json",
+  "sha256": "cedb1d2589cc538b927c48348fae12357b600671eeaa6d76dbbd9b9d120c69cd",
+  "bytes": 7184
+ },
+ "fu/C80/C80_results.json": {
+  "source": "04_calculations/results/20261011_claude_followup/C80/C80_results.json",
+  "sha256": "607d0c7512ec3f43c52041ab734853ee8c707aa6d35489a628fb9162ac32a32b",
+  "bytes": 3068
+ },
+ "inputs/C49_pilot_results.json": {
+  "source": "04_calculations/results/20261007_074655UTC/model_completion/C49_pilot_results.json",
+  "sha256": "f05c2a1d3468c4f7b050c9f61af004ca46f4309693a5f4619491722e8aabdb99",
+  "bytes": 1371051
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "S1": {
+  "gram_is_identity": true,
+  "sum_X2 == 5/3 I": true,
+  "sum (kXk)^2 - (2/3)|k|^4": "0"
+ },
+ "S2": {
+  "Delta q^p / q^p (q=k^T G^-1 k)": "4*p*(2*p + 3)/3",
+  "Delta q^p / q^p (q=n^T G n)": "4*p*(2*p + 3)/3",
+  "minus 4p(3+2p)/3 (inverse)": "0",
+  "minus 4p(3+2p)/3 (direct)": "0",
+  "values": {
+   "1/2": "8/3",
+   "-1/2": "-4/3",
+   "-1": "-4/3",
+   "-2": "8/3",
+   "-3/2": "0",
+   "1": "20/3"
+  },
+  "Delta omega / omega": "8/3"
+ },
+ "S3": {
+  "G_ij Hess_ij - 2/r": "0"
+ },
+ "S4": {
+  "F_xx - [<E''> - Var(E')/T]": "0",
+  "F_TT + Var(E)/T^3": "0",
+  "F_xT - Cov(E',E)/T^2": "0",
+  "Legendre d2U|_S - (F_xx - F_xT^2/F_TT)": "0"
+ },
+ "S5": {
+  "Delta U - (8/3)[U - Q - 3N/2] (Phi=0)": "0",
+  "Delta U - (8/3)[U - Q - 3N/2 + 3Phi/2]": "0",
+  "3 Delta U/U - 8[1 + (Q + 3N/2)/(-U)] (Phi=0)": "0",
+  "sum kappa with Q=rC, N=0": "-8/(r - 1)"
+ },
+ "S6": {
+  "chain-rule ODE minus 4z(1-z)*hypergeometric operator": "0",
+  "a+b": "-1/2",
+  "ab": "kappa/4",
+  "c": "1/4"
+ },
+ "S7": {
+  "S^T G^-1 S - I": "Matrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]])",
+  "G^-1 S - S^-T": "Matrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]])"
+ }
+}

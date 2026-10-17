@@ -1,0 +1,26 @@
+{
+ "stage": "T2 done",
+ "milestones": {
+  "T2_P1_table": "done"
+ },
+ "next_command": "python -B C144_hazard.py haz 3 (resumes per alpha_s shard) ; python -B C144_hazard.py post",
+ "updated": "2026-10-14 17:35:41",
+ "key_T2": {
+  "critical_mt": {
+   "0.1180": {
+    "P1=0.9": 172.56107140244896,
+    "P1=0.5": 173.05589591629584,
+    "P1=0.1": 173.5571993652921
+   }
+  },
+  "P1_at": {
+   "0.1180": {
+    "172.60": 0.8808133354890093,
+    "172.1_sigma_pole": 0.9950054785357123,
+    "172.52_ATLAS+CMS": 0.9177844110931731,
+    "171.77_CMS": 0.9999059134929145
+   }
+  },
+  "dmc_dalpha_s": {}
+ }
+}

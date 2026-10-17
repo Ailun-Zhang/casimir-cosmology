@@ -1,0 +1,84 @@
+
+\section{Notation}\label{rep:app-notation}
+
+Table~\ref{tab:a-notation} lists the symbols used across the report, grouped by topic, with their definitions, representative values and the section where they are introduced.
+We use the reduced Planck mass $\MPbar=2.435\times10^{18}$~GeV throughout, natural units $\hbar=c=1$, and, in the zero-mode calculations, units in which the edge of the torus is $L=1$.
+Several symbols differ from those of the derivation files and of the code package, which grew over the research; the last block of the table gives the correspondence.
+
+{\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.16\textwidth}>{\raggedright\arraybackslash}p{0.45\textwidth}>{\raggedright\arraybackslash}p{0.21\textwidth}>{\raggedright\arraybackslash}p{0.08\textwidth}@{}}
+\caption{Notation. ``Sec.'' is the section where a symbol is introduced or mainly used.}\label{tab:a-notation}\\
+\toprule Symbol & Meaning and definition & Value or convention & Sec. \\ \midrule\endfirsthead
+\toprule Symbol & Meaning and definition & Value or convention & Sec. \\ \midrule\endhead
+\midrule\multicolumn{4}{r}{\emph{continued}}\\\endfoot\bottomrule\endlastfoot
+\multicolumn{4}{@{}l}{\emph{Geometry and background}}\\*
+$L$, $\Lb$, $L_0$ & edge of the flat three-torus; edge at the turning point; edge today & $\Lb\MPbar=722$ & \ref{rep:setup}, \ref{rep:turning} \\ %
+$G_{ij}$, $\beta_A$, $X_A$ & unimodular shape metric, $h_{ij}=L^2G_{ij}$, $G=\exp(2\sum_A\beta_AX_A)$; shape amplitudes and basis ($E$ doublet $X_d$, $X_{d2}$; $T_2$ triplet) & $\ln(L_1/L_2)=\sqrt2\,\beta_d$ & \ref{rep:shape} \\
+$h$, $H_{\rm eff}$ & plateau scale of the inflaton potential $V=3\MPbar^2h^2(1-e^{-\sqrt{2/3}\,\phi/\MPbar})^2$; actual rate of the turning solution & $h/\MPbar\simeq6.1\times10^{-6}$ ($A_s$-calibrated); $H_{\rm eff}/h=0.98949$ & \ref{rep:setup}, \ref{rep:turning} \\
+$hL_b$ & ratio of the torus to the Hubble radius at the turn (duration parameter of the turn) & $0.00437243$ (Higgs calculation) & \ref{rep:turning} \\
+$\tau$ & time in units of $1/h$, $\tau=ht$; $a^2=\cosh2\tau$ on the turning solution & hazard on $\tau\in[0,5]$ & \ref{rep:turning}, \ref{rep:h-survival} \\
+$\eta$, $\eta_\infty$ & conformal time, $d\eta=d\tau/(hL)$; total conformal duration of one branch & $\eta_\infty=299.84$ & \ref{rep:h-survival} \\
+$\mub$ & matching scale $1/\Lb=\MPbar/722$ & $3.3726\times10^{15}$~GeV & \ref{rep:setup} \\
+$\dLSS$ & diameter of the last-scattering sphere, $2\chi_*$ & $\simeq27.7$~Gpc & \ref{rep:sky} \\
+A1--A8 & the assumptions of Sec.~\ref{rep:setup} & & \ref{rep:setup} \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{Casimir energy and zero modes}}\\*
+$\NC$, $N_C^{\rm eff}$ & signed Casimir weight of the Standard Model fields; weight with the zero-mode energy, $(1-\fzm)\NC$ & $\NC=25.515$ (AAA) & \ref{rep:casimir} \\
+$\gamma_C$, $C$ & cubic lattice constant of the Casimir energy; Casimir coefficient $C=\NC\gamma_C$ & $\gamma_C=1.6751$; $C_{\rm free}=42.74$ & \ref{rep:casimir} \\
+$\fzm$ & share of the free Casimir energy used by the gauge and Higgs zero modes, $Q/C_{\rm free}$ & $0.2999$; next order $\approx0.28$; bounds $0.258$--$0.308$ & \ref{rep:zeromodes} \\
+AAA, PPP, \ldots & spin structures: antiperiodic (A) or periodic (P) fermions around the three cycles & AAA (A1) & \ref{rep:casimir} \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{Higgs zero mode}}\\*
+$\Phi$, $r$ & Higgs zero mode, $\Phi=(\phi_0+i\phi_1,\phi_2+i\phi_3)/\sqrt2$; radius $r=|\bm\phi|$, $\Phi^\dagger\Phi=r^2/2$ & units of $1/L$ & \ref{rep:h-matching} \\
+$\bm x$, $\bm w$, $s$ & constant SU(2) connections (nine components); constant hypercharge connections; $s=|\bm w|$ & & \ref{rep:h-matching}, \ref{rep:h-reduced} \\
+$\lambda(\mu)$, $g_2$, $g_Y$, $g_3$, $y_t$ & $\MSbar$ couplings, $V=\lambda(|H|^2-v^2/2)^2$; $g_Y=g'$ & at $\mub$: $g_2=0.5278$, $g_Y=0.4428$, $y_t=0.4278$ & \ref{rep:h-smmap} \\
+$\Delta V_{\rm MC}(r)$ & one-loop finite-volume matching of the non-zero modes (Coulomb gauge, $\MSbar$ sums) & & \ref{rep:h-matching} \\
+$C_0$, $B_x$, $B_w$, $\Omega_{\rm eff}$ & Gaussian energy of the gauge modes at fixed $r$; Born--Huang terms; stiffness of $\bm w$ & & \ref{rep:h-reduced} \\
+$\delta E_{\rm DMC}(r)$ & DMC correction of the SU(2) shape at fixed $r$ & one-loop couplings & \ref{rep:h-reduced}, \ref{rep:v-fulldim} \\
+2D, 2D$_{\rm G}$ & two-dimensional $(r,s)$ model with the DMC shape; its Gaussian version & & \ref{rep:h-reduced} \\
+$E=\varepsilon-i\Gamma/2$ & resonance of the zero mode; $\Gamma$ is the full width in conformal time, units of $1/L$ & & \ref{rep:h-reduced} \\
+$\lamc(\mub)$ & finite-volume threshold: $\lambda_{\rm SM}(\mub)$ at the critical masses (hazard equivalent) & $-0.0091/\allowbreak{-}0.0121/\allowbreak{-}0.0152$ & \ref{rep:h-survival} \\ %
+$I$, $\Pone$ & hazard $I=\int_0^5\Gamma\,d\tau/(hL_b\sqrt{\cosh2\tau})$; single-branch survival probability $\Pone=e^{-I}$, conditional on the resonance at the turn & & \ref{rep:h-survival} \\
+$P_2$, $w_0$ & two-branch value $\Pone^2/w_0$ (note only); preparation weight of the resonance & $w_0=0.98$--$0.995$ & \ref{rep:h-survival} \\
+$m_c(P)$, $m_0$ & critical top mass with $\Pone(m_c)=P$; mass with $\lambda(\mub;m_0)=0$ & $m_c=172.502/\allowbreak 172.960/\allowbreak 173.418$~GeV; $m_0=171.092$~GeV & \ref{rep:h-survival} \\ %
+$\mt$, $\mtbar$ & top-quark pole mass (four-loop truncated relation); $\MSbar$ mass $\mtbar(\mtbar)$ & & \ref{rep:setup} \\
+$\Pbar$ & $\Pone$ marginalized over $m_t$, $\alpha_s$, $M_h$, the Standard Model and model errors & $\PbarOne$ (direct mass) & \ref{rep:h-budget} \\
+$B_{\rm ex}$, $B_{\rm sel}$ & Bayes factors of the claims layer & $|\ln B|\le\BayesMax$ & \ref{rep:h-budget} \\
+$\xiH$, $\xic$, $\xi_{\rm inf}$, $\xi_{\rm EW}$ & Higgs curvature coupling at $\mub$; zero-mode threshold, $P_{\rm surv}(\xic)=0.99\,P_{\rm surv}(1/6)$; bound from the plateau; electroweak-scale image & $\xic=\xiHcentral$ at $172.60$~GeV & \ref{rep:h-universality} \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{Shape, emptiness gate and fossil}}\\*
+$\kappa_A$, $\kappa_E$, $\kappa_{T2}$ & normalized shape stiffness, $\ddot\beta+3H\dot\beta-\kappa h^2{\rm sech}^2(2h t)\beta=0$, $\sum_A\kappa_A=8/(1-\fzm)$ & $\kappa_E=19.32$, $\kappa_{T2}=-9.07$ & \ref{rep:shape} \\
+$\mathcal G(\kappa)$ & zero-momentum gain of a shape mode, $\sqrt2\cosh(\pi\sqrt{4\kappa-1}/4)$ & $674$ & \ref{rep:shape} \\
+$X$, $\delta$ & dimensionless large number $X=\MPbar^2L_b^3H$ of the shape quantization; effective $\hbar$ of the shape modes, $[\beta_A,\Pi_B]=2i\delta\,\delta_{AB}$ & $X=2282.49$; $\delta=2.065\times10^{-4}$ & \ref{rep:quantum-shape} \\
+$\sfloor$ & floor of the outgoing aspect width, $\sfloor^2=K(\kappa_E)/X$ & $0.1037$; next order $0.0934$ & \ref{rep:quantum-shape} \\
+$t_x$, $G(|t_x|)$ & moment at which the shape state is real; amplification of the larger branch variance over the floor & $G(\infty)=2\mathcal G$ & \ref{rep:quantum-shape} \\
+$t_*$, $S_2$ & largest $|t_x|$ for a survival level; two-branch survival & $h t_*=0.237$ ($99\%$), $0.355$ ($90\%$) & \ref{rep:quantum-shape} \\
+$s$, $s_{99}$ & amplitude factor of the natural state at the turn; factor with $99\%$ survival & $s_{99}\approx2.8$--$2.95$ & \ref{rep:quantum-shape} \\
+$\sigma_E$, $\sigma_{T2}$ & outgoing rms of the aspect and angle modes (quantum fossil) & $0.104$; $0.0065$ & \ref{rep:quantum-shape} \\
+$\rT$ & tensor-to-scalar ratio ($r$ is the Higgs radius) & & \ref{rep:spectra} \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{Microwave background}}\\*
+$A$, $\theta$ & amplitude and angle of the fossil in the $E$ plane, $\beta=A\sigma_E(\cos\theta X_d+\sin\theta X_{d2})$ & & \ref{rep:sky} \\
+$u$, $u_{\max}$ & shortest side in units of $\dLSS$; read edge & $u\ge0.985$; $u_{\max}\approx1.02$--$1.04$ & \ref{rep:sky} \\
+$D$ & Kullback--Leibler divergence of the fossil covariance from the cube; read if $D\ge4.5$ & & \ref{rep:sky} \\
+$P_{\rm joint}$ & probability that the fossil is readable and no circles are seen, at given $L_0$ & peak $0.344$ at $1.075\,\dLSS$ & \ref{rep:sky} \\
+$N_{\rm post}$, $\sigma_N$ & e-folds after the turn; width in the joint state & $68.25$ & \ref{rep:sky} \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{Methods and abbreviations}}\\*
+DMC & diffusion Monte Carlo & & \ref{rep:v-fulldim} \\
+CAP, ECS & complex absorbing potential; exterior complex scaling & & \ref{rep:v-convergence} \\
+DVR & discrete-variable representation & & \ref{rep:h-reduced} \\
+WKB & Wentzel--Kramers--Brillouin approximation & & \ref{rep:v-fulldim} \\
+TDVP, GOA & time-dependent variational principle; Gaussian overlap approximation & & \ref{rep:v-fulldim} \\
+TWA & truncated Wigner approximation & & \ref{rep:quantum-shape} \\
+WDW & Wheeler--DeWitt & & \ref{rep:quantum-shape} \\
+NNLO & next-to-next-to-leading order (matching of the Standard Model couplings) & & \ref{rep:h-smmap} \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{Correspondence with the derivation files and the code package}}\\*
+$Q$ (files) & real part of the resonance energy, $\varepsilon$ here; in the earlier draft $Q$ is the total zero-mode energy & & --- \\
+$\gamma$ (files) & width $\Gamma$ here; $\gamma$ here is reserved for the Casimir constant $\gamma_C$ & & --- \\
+$u$ (files) & time $\tau=ht$ here & & --- \\
+$\xi$ (files, earlier draft) & zero-mode share $\fzm$ here; in the shape code the zero-mode share is called $r$ & & --- \\
+$\xi$ (sky files) & $\sin3\theta$ in the table of fossils & & --- \\
+$M_t$ (files) & top pole mass $\mt$ here & & --- \\
+\end{longtable}}

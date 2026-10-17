@@ -1,0 +1,15 @@
+{
+ "seed": 20261010,
+ "seed_hi": 20261011,
+ "delta": 0.00015897991,
+ "s_nat": [
+  4.58450366467e-05,
+  4.58450366467e-05,
+  6.69035155253e-05,
+  6.69035155253e-05,
+  6.69035155253e-05
+ ],
+ "N_main": 128,
+ "Z_checksum_sum_z_times_col_index": 318.72286330997326,
+ "note": "beta0=sqrt(k s) Z[:, :5], Pi0=delta/sqrt(k s) Z[:, 5:]; rng=numpy default_rng(seed).standard_normal((N,10))"
+}

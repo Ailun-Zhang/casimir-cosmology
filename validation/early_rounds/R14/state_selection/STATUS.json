@@ -1,0 +1,18 @@
+{
+ "task": "R14 independent check of D109 (state_selection)",
+ "date": "2026-10-13",
+ "verdict": "PASS-with-corrections",
+ "method": "exact hypergeometric transfer matrix in z=1/(1+e^{4ht}); ODE cross-checks in u=tanh2ht and t (agree >=9 digits)",
+ "done": {
+  "claim1_freezing": "correct: 1.09321, 0.91106, 1.00679, 0.82730; efolds 0.753, 0.577",
+  "claim2_lemma": "algebra correct; 'no local m_s>=3' false (f(phi)^2F^2, SU(2) vev, solid inflation; walls m_s=2); plateau conclusion survives via c=O(eps)<<9/4",
+  "claim3_theorem": "proof correct; G = 2.395171, 8.263203, 45.09679, 313.7866, 961.7102, 1298.409, 1346.751; G(inf)=2*gain=1347.651 exactly; approach ~e^{-|t|}; frozen-zone edge G=385.65 (19.6x rms) not 36.7x; t_x>0 future-branch bound <floor (0.417,0.120,0.0214)",
+  "claim4_best_case": "R_P 105.771, 10026.33; shear ratios reproduced; formula correct; c=1 not most favourable: optimal-width R_P,min -> 694.1, shear/criterion -> 0.112 < 1 for all N_pre",
+  "claim5_v11": "m11 10.551 (6.2987), nat/floor 1.000485 (1.00118), T2 1.3517 (9.854), prep rms 1.547/2.875/6.727 (1.441/2.419/4.932), floor sigma 0.1038",
+  "claim6_overclaims": "see report section 6",
+  "claim7_literature": "hep-th/0312009 Erickson-Wesley-Steinhardt-Turok PRD69 063514; 1803.08928 Boyle-Finn-Turok PRL121 251301; positioning fair"
+ },
+ "producer_comparison": "run02/run03 agree with ours to >=6 (mostly 8) digits",
+ "files": ["R14_check.py", "results.json", "STATUS.json", "R14_D109_INDEPENDENT_CHECK_CN.md"],
+ "next_step": "none (complete)"
+}

@@ -1,0 +1,29 @@
+{
+ "_doc": "l <= 80 CAMB scalar T/E transfer table of the snapshot P5_CMB (used by cmb/02 --full; its l <= 12 rows are inputs/C59_transfer_l12.npz) with its generating script, metadata and log, copied byte-identically (R18, R3). Generator: high_l_transfer.py with CAMB 2.0.4 (Planck 2018-like flat LCDM: H0 67.4, ombh2 0.02237, omch2 0.1200, mnu 0.06, nnu 3.044, tau 0.0544, TCMB 2.7255; As 2.1e-9, ns 0.9649, pivot 0.05; lmax 100; AccuracyBoost 3, lAccuracyBoost 3, lSampleBoost 50, IntkAccuracyBoost 3; low-k patch of the l = 18..26 truncation); the SHA-256 of C59_transfer.npz equals the one recorded in ens_core.py.",
+ "files": {
+  "C59_transfer.npz": {
+   "source": "04_calculations/results/20261013_argon_codex_intake/snapshot/P5_CMB/C59_transfer.npz",
+   "sha256": "8d0ea21fa49ca6df088780fb5c2a95c009b7a4ae17e928bce91b246cc814df8f",
+   "bytes": 84863756,
+   "mtime_utc": "2026-10-14T02:41:53Z"
+  },
+  "C59_transfer.json": {
+   "source": "04_calculations/results/20261013_argon_codex_intake/snapshot/P5_CMB/C59_transfer.json",
+   "sha256": "bd050b99315925aaba181471366693503db04fcc16b02d433faabf71ccbf9df7",
+   "bytes": 33386,
+   "mtime_utc": "2026-10-14T02:41:53Z"
+  },
+  "high_l_transfer.py": {
+   "source": "04_calculations/results/20261013_argon_codex_intake/snapshot/P5_CMB/high_l_transfer.py",
+   "sha256": "8ff604d4397917aefe6bd2d6898582a5f5e0182d481fec50b6e51b5226dbe305",
+   "bytes": 14445,
+   "mtime_utc": "2026-10-14T02:41:58Z"
+  },
+  "transfer.log": {
+   "source": "04_calculations/results/20261013_argon_codex_intake/snapshot/P5_CMB/transfer.log",
+   "sha256": "8a5f56e56bc77f9e92d0134e69a2fd655f5d5ed59c7b264fe4c44d96546bfd90",
+   "bytes": 3973,
+   "mtime_utc": "2026-10-14T02:41:58Z"
+  }
+ }
+}

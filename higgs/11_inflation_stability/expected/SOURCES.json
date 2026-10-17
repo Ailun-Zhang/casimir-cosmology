@@ -1,0 +1,512 @@
+{
+ "r3/inflation_stability/run01/C155_summary.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/C155_summary.json",
+  "sha256": "a69cdd36dc7a112388136965d08db4c93bc766a44bc9d8603c9679004f6c8b0b",
+  "bytes": 37880
+ },
+ "r3/inflation_stability/run01/inputs/xi_c_zero_mode.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/inputs/xi_c_zero_mode.json",
+  "sha256": "1c5863114dde072d65b0f2c915c8a65072c015034505f081527189f9b8ea8754",
+  "bytes": 445
+ },
+ "r3/inflation_stability/run01/repro/repro_step1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/repro/repro_step1.json",
+  "sha256": "f75763208007e3cc1795e2117ded2f69e3861a0b8f5ec7e786915b7741022ef1",
+  "bytes": 6149
+ },
+ "r3/inflation_stability/run01/repro/repro_step1.log": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/repro/repro_step1.log",
+  "sha256": "7da9f72a4e1557f1c823fe118b49c39e6d73aa8038d4d14cc151dbc546b7a381",
+  "bytes": 3625
+ },
+ "r3/inflation_stability/run01/shards/A_mt171.4_as0.1171.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt171.4_as0.1171.json",
+  "sha256": "61719cd3044ebe6920656e7ad8e47ced7a5aeb3f4eab257df6a123179acf14e4",
+  "bytes": 1469
+ },
+ "r3/inflation_stability/run01/shards/A_mt171.4_as0.1180.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt171.4_as0.1180.json",
+  "sha256": "5d0e3326cc197613fd0bd52b5dae795b9997da45dddc82842d3a766640949577",
+  "bytes": 1467
+ },
+ "r3/inflation_stability/run01/shards/A_mt171.4_as0.1189.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt171.4_as0.1189.json",
+  "sha256": "bae4f68f9eb3274dd8e3d27a10b464b143fc75a44ea247e80005e6c58741bad5",
+  "bytes": 1334
+ },
+ "r3/inflation_stability/run01/shards/A_mt171.6_as0.1171.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt171.6_as0.1171.json",
+  "sha256": "e533d7335f2d02fdfaf987850370beca809a22dc411a0f579cfe2a681a78a0d8",
+  "bytes": 1464
+ },
+ "r3/inflation_stability/run01/shards/A_mt171.6_as0.1180.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt171.6_as0.1180.json",
+  "sha256": "e1abf69bcca515a48d68dada9cd3315fdaf8d09f742bf56b8c95a6034801ae22",
+  "bytes": 1576
+ },
+ "r3/inflation_stability/run01/shards/A_mt171.6_as0.1189.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt171.6_as0.1189.json",
+  "sha256": "8fff35a6f7d16d0d3e31f41d7601c31bf3559fc4bd1bf0b40e86f58245a50305",
+  "bytes": 1336
+ },
+ "r3/inflation_stability/run01/shards/A_mt171.8_as0.1171.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt171.8_as0.1171.json",
+  "sha256": "033604b501e0996728824e58b007f0368856728add052075c5c7a6515b1aa687",
+  "bytes": 1492
+ },
+ "r3/inflation_stability/run01/shards/A_mt171.8_as0.1180.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt171.8_as0.1180.json",
+  "sha256": "d1a0bff452b983f9a3eb01639a7ed963793c87dd26647c278dac4bef016fed2d",
+  "bytes": 1605
+ },
+ "r3/inflation_stability/run01/shards/A_mt171.8_as0.1189.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt171.8_as0.1189.json",
+  "sha256": "17119dfce8eee435a6868c187a507363adb372d111bdd507db555c7755a6ec16",
+  "bytes": 1469
+ },
+ "r3/inflation_stability/run01/shards/A_mt172.0_as0.1171.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt172.0_as0.1171.json",
+  "sha256": "b3d4ef6dbdc56b8d400b39d9da784ae149370eb947ef40e2ac6855e0cb914baa",
+  "bytes": 1486
+ },
+ "r3/inflation_stability/run01/shards/A_mt172.0_as0.1180.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt172.0_as0.1180.json",
+  "sha256": "97f063a3fb3299169649261e41f8edaf9c36de0b0b3fc025d8e3594ed460ebfb",
+  "bytes": 1574
+ },
+ "r3/inflation_stability/run01/shards/A_mt172.0_as0.1189.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt172.0_as0.1189.json",
+  "sha256": "b853e508692c0f9716b7e46dec435ae6268a80533fe7ab48f4195fb641ec16db",
+  "bytes": 1466
+ },
+ "r3/inflation_stability/run01/shards/A_mt172.2_as0.1171.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt172.2_as0.1171.json",
+  "sha256": "b0d4c899204528251ce2c248e66dfb99368de69f6d1038de65e4888e99c2cce3",
+  "bytes": 1451
+ },
+ "r3/inflation_stability/run01/shards/A_mt172.2_as0.1180.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt172.2_as0.1180.json",
+  "sha256": "be6d06925c551a19b660fcac524713daac5f0aaef40a4d213dbbf290ab7d3838",
+  "bytes": 1572
+ },
+ "r3/inflation_stability/run01/shards/A_mt172.2_as0.1189.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt172.2_as0.1189.json",
+  "sha256": "f3c30fbcded157aff9ce58bac3cab1a9195fc8d7a431845667545bff87c2dec0",
+  "bytes": 1462
+ },
+ "r3/inflation_stability/run01/shards/A_mt172.4_as0.1171.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt172.4_as0.1171.json",
+  "sha256": "844a84620228aa9c27c5dee5c0718463645df4984a2d79e5ac94bfffad2ed7a0",
+  "bytes": 1453
+ },
+ "r3/inflation_stability/run01/shards/A_mt172.4_as0.1180.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt172.4_as0.1180.json",
+  "sha256": "c02715f3a6fbfa6766797b8be455cb184996bc7cdf07b577dd4f95a0a9b4983e",
+  "bytes": 1565
+ },
+ "r3/inflation_stability/run01/shards/A_mt172.4_as0.1189.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt172.4_as0.1189.json",
+  "sha256": "43f4f1bc15c6037d50a73adcea44171b60d0adeb86c19a78ae82df6c3d2a17f5",
+  "bytes": 1463
+ },
+ "r3/inflation_stability/run01/shards/A_mt172.6_as0.1171.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt172.6_as0.1171.json",
+  "sha256": "dfa95f354569ff551ff447e08ffd2e8ca5af8b4f157711fe26ff97e12670266a",
+  "bytes": 1460
+ },
+ "r3/inflation_stability/run01/shards/A_mt172.6_as0.1180.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt172.6_as0.1180.json",
+  "sha256": "5fa3649e21225d5d83b1698a4911ff11310dd269a53ca10e7054208bca4db469",
+  "bytes": 1587
+ },
+ "r3/inflation_stability/run01/shards/A_mt172.6_as0.1189.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt172.6_as0.1189.json",
+  "sha256": "5dbdebe05acaedb89c0a718404bacd189ad632ae55e9d75b9cdc38c8cc4d6868",
+  "bytes": 1459
+ },
+ "r3/inflation_stability/run01/shards/A_mt172.8_as0.1171.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt172.8_as0.1171.json",
+  "sha256": "551a4fe27c3509012d7a83eb8b6cc98ba7ef7cb7c039d923e0674d756c97e62f",
+  "bytes": 1456
+ },
+ "r3/inflation_stability/run01/shards/A_mt172.8_as0.1180.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt172.8_as0.1180.json",
+  "sha256": "3b5ddeb41a51edbe21753b6815a476d8c6e6bba156c628fbb30217df8ba46f4c",
+  "bytes": 1563
+ },
+ "r3/inflation_stability/run01/shards/A_mt172.8_as0.1189.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt172.8_as0.1189.json",
+  "sha256": "33800365b3e55e4174606367dac60a8666d6771f3d46ff0e89157e966af38ba8",
+  "bytes": 1457
+ },
+ "r3/inflation_stability/run01/shards/A_mt173.0_as0.1171.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt173.0_as0.1171.json",
+  "sha256": "2f8bf6f69bfe4eaf27fb66cdc961d8b2feb556013e115e2ad0761cbcb9d2bb94",
+  "bytes": 1459
+ },
+ "r3/inflation_stability/run01/shards/A_mt173.0_as0.1180.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt173.0_as0.1180.json",
+  "sha256": "e89357f30f2af224a59da23cd69f6c61519bd84c842e1414dd5b0be452073819",
+  "bytes": 1567
+ },
+ "r3/inflation_stability/run01/shards/A_mt173.0_as0.1189.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt173.0_as0.1189.json",
+  "sha256": "31f5076d37c1043de9d682d2b5187030a5b7b9dd8453ec3232cfeaa6caf7d1ea",
+  "bytes": 1457
+ },
+ "r3/inflation_stability/run01/shards/A_mt173.2_as0.1171.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt173.2_as0.1171.json",
+  "sha256": "1dfcf66b0f5f375663b0ddb5ae7c72525c5dbf32e11600632df7dd6dc0b99275",
+  "bytes": 1452
+ },
+ "r3/inflation_stability/run01/shards/A_mt173.2_as0.1180.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt173.2_as0.1180.json",
+  "sha256": "05749aaf122a0561b0a17051fae44af9427d38aa82076ce7ff9d2cf3957a1163",
+  "bytes": 1567
+ },
+ "r3/inflation_stability/run01/shards/A_mt173.2_as0.1189.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt173.2_as0.1189.json",
+  "sha256": "9c6aa8d7eb31b01181a7b23df395d895c28ea61ba65adc4628c8a476b6d7463e",
+  "bytes": 1454
+ },
+ "r3/inflation_stability/run01/shards/A_mt173.4_as0.1171.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt173.4_as0.1171.json",
+  "sha256": "792c6df1eeabf7419e3e07f42f27cab595050cd3af7e6326f4d2c672b3b70dbf",
+  "bytes": 1487
+ },
+ "r3/inflation_stability/run01/shards/A_mt173.4_as0.1180.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt173.4_as0.1180.json",
+  "sha256": "2121b3c56ab9ea01cc8928f8bfd35b0a1b6b9430def92c501b0e68534a7624f1",
+  "bytes": 1560
+ },
+ "r3/inflation_stability/run01/shards/A_mt173.4_as0.1189.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt173.4_as0.1189.json",
+  "sha256": "cbc04fd33ca936a9dbec6919993d5dea24781c98dad72414fbdf70bbd8e01308",
+  "bytes": 1462
+ },
+ "r3/inflation_stability/run01/shards/A_mt173.6_as0.1171.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt173.6_as0.1171.json",
+  "sha256": "b55d42373fc8df19bffdf6868a4fed528f93cb7877245856ff3d6ffbe784ece3",
+  "bytes": 1456
+ },
+ "r3/inflation_stability/run01/shards/A_mt173.6_as0.1180.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt173.6_as0.1180.json",
+  "sha256": "2291c537e39fdb41c1272957cd0431d9aaa1aef845bd21ce139daf6663261c0f",
+  "bytes": 1562
+ },
+ "r3/inflation_stability/run01/shards/A_mt173.6_as0.1189.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/A_mt173.6_as0.1189.json",
+  "sha256": "9924fc0e3f85e908cabf89601677bb298fb4ac212442c11e402131398dcb2335",
+  "bytes": 1459
+ },
+ "r3/inflation_stability/run01/shards/B_gauss_mt171.8.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_gauss_mt171.8.json",
+  "sha256": "baa18536b633282dff6975e25c42ef479fc0c5707aabb35ca91ec821a8457ab2",
+  "bytes": 1494
+ },
+ "r3/inflation_stability/run01/shards/B_gauss_mt172.2.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_gauss_mt172.2.json",
+  "sha256": "2c395a96565bbd68598b5055643d6011e41de7b1f74a16688a48a03de32c4b83",
+  "bytes": 1456
+ },
+ "r3/inflation_stability/run01/shards/B_gauss_mt172.6.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_gauss_mt172.6.json",
+  "sha256": "7a12c4ee109ee3494bc98b684681b306dc86d1e474728aa269758cd23937d393",
+  "bytes": 1454
+ },
+ "r3/inflation_stability/run01/shards/B_gauss_mt173.0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_gauss_mt173.0.json",
+  "sha256": "dba4cb68597c83a269e8f07b865ac387a9de3fffe155e70b7fc2169fd32b3b4e",
+  "bytes": 1454
+ },
+ "r3/inflation_stability/run01/shards/B_gauss_mt173.4.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_gauss_mt173.4.json",
+  "sha256": "b83397e0e274e3c46cf033cedba2aad7197ff9b1e499c61a592b81a15e956905",
+  "bytes": 1482
+ },
+ "r3/inflation_stability/run01/shards/B_her01_mt171.8.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_her01_mt171.8.json",
+  "sha256": "e5b745ae66b14983cbade5bded0ba511fd1bc0490903de32a63411b12848ce37",
+  "bytes": 1491
+ },
+ "r3/inflation_stability/run01/shards/B_her01_mt172.2.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_her01_mt172.2.json",
+  "sha256": "d9e5182fe7d5579eb07428640e3559a92540c8a59ef4c10dfde11c8be8188b11",
+  "bytes": 1466
+ },
+ "r3/inflation_stability/run01/shards/B_her01_mt172.6.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_her01_mt172.6.json",
+  "sha256": "9d4243ef60a5bcc482e0d2cb2f3db0fef52136dc465b1806b61a6004f85542a3",
+  "bytes": 1483
+ },
+ "r3/inflation_stability/run01/shards/B_her01_mt173.0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_her01_mt173.0.json",
+  "sha256": "32f92483e9af834278ff691ee34888a304b24a7a08606a31a7c098d8850ac202",
+  "bytes": 1457
+ },
+ "r3/inflation_stability/run01/shards/B_her01_mt173.4.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_her01_mt173.4.json",
+  "sha256": "6c0426eb11eeaf462ded519c95b7c58d6ce4faffc9639c27a83bd117aba93892",
+  "bytes": 1453
+ },
+ "r3/inflation_stability/run01/shards/B_her10_mt171.8.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_her10_mt171.8.json",
+  "sha256": "80a1eb5bba4a076ae5a6659f9f0d25ed6d7eb8517664c5b2cbc461acaa0c9e71",
+  "bytes": 1462
+ },
+ "r3/inflation_stability/run01/shards/B_her10_mt172.2.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_her10_mt172.2.json",
+  "sha256": "75efdaacd476c08bd9c175f1bad75bd2be51206b661886599032ed936798c700",
+  "bytes": 1463
+ },
+ "r3/inflation_stability/run01/shards/B_her10_mt172.6.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_her10_mt172.6.json",
+  "sha256": "89f20215c903bb89c4869c4767ca7ab2dae19505ff4db99ba88865f0163f3296",
+  "bytes": 1451
+ },
+ "r3/inflation_stability/run01/shards/B_her10_mt173.0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_her10_mt173.0.json",
+  "sha256": "ecb8e8560cdf684469007d7bb75aac505c7c60ce10a019f7d64a6f33b3d0120d",
+  "bytes": 1459
+ },
+ "r3/inflation_stability/run01/shards/B_her10_mt173.4.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_her10_mt173.4.json",
+  "sha256": "5c353595f8a0bbba1105668d64f5cd0a19b1054879e3ed5573d118ae0b690d90",
+  "bytes": 1456
+ },
+ "r3/inflation_stability/run01/shards/B_her_mt171.8.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_her_mt171.8.json",
+  "sha256": "46cc0330c383ce5f90bb963b73017e404bcc2c7e8befe13a7987ec4682a08db4",
+  "bytes": 1466
+ },
+ "r3/inflation_stability/run01/shards/B_her_mt172.2.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_her_mt172.2.json",
+  "sha256": "9344f97798f5e90337304193272f80a4bef540fbfdceb53a9f216334c703d9a0",
+  "bytes": 1461
+ },
+ "r3/inflation_stability/run01/shards/B_her_mt172.6.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_her_mt172.6.json",
+  "sha256": "cc6df3234725108e1940558435be2e465d1bb1233e927e620d78c36d103eccb8",
+  "bytes": 1449
+ },
+ "r3/inflation_stability/run01/shards/B_her_mt173.0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_her_mt173.0.json",
+  "sha256": "dba1489214020fe6ff947b93567addbb9451c071a6abb8683470063a92cc6654",
+  "bytes": 1476
+ },
+ "r3/inflation_stability/run01/shards/B_her_mt173.4.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_her_mt173.4.json",
+  "sha256": "31701539647a7e7cabefb46acfb2182a0341daa365d78731d1458112f5c3e32d",
+  "bytes": 1446
+ },
+ "r3/inflation_stability/run01/shards/B_kramers_mt171.8.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_kramers_mt171.8.json",
+  "sha256": "8740f703c23cbfec0bd1af53fed099a737c75dde7cea3fbe3347dc7ff23df448",
+  "bytes": 1466
+ },
+ "r3/inflation_stability/run01/shards/B_kramers_mt172.2.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_kramers_mt172.2.json",
+  "sha256": "2564d1538c89da5cd98b24902991b6ef22adece278edff263b119e63acf56ed2",
+  "bytes": 1462
+ },
+ "r3/inflation_stability/run01/shards/B_kramers_mt172.6.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_kramers_mt172.6.json",
+  "sha256": "dee4d2eb6478315fe542e67d0a912100de34533d9ee27ba459ab09e21d3bb014",
+  "bytes": 1473
+ },
+ "r3/inflation_stability/run01/shards/B_kramers_mt173.0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_kramers_mt173.0.json",
+  "sha256": "c76ec1b7bb1c76097fadd7da19c7a4fc13c27566232873af13b6bff9bff9370f",
+  "bytes": 1459
+ },
+ "r3/inflation_stability/run01/shards/B_kramers_mt173.4.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_kramers_mt173.4.json",
+  "sha256": "ff745bb947d83c6a6d73645f210145e9800390d0e0da78928e5f29e49a07ed2f",
+  "bytes": 1452
+ },
+ "r3/inflation_stability/run01/shards/B_tree_mt171.8.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_tree_mt171.8.json",
+  "sha256": "89bf7a11559e1b555232b2a22dd457d7c19adbe295681bb4071a3a087c0d168c",
+  "bytes": 1462
+ },
+ "r3/inflation_stability/run01/shards/B_tree_mt172.2.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_tree_mt172.2.json",
+  "sha256": "867bee5fcf35e17fb9f04c782868c7508136921e1655bb659a3bbe484e7265b4",
+  "bytes": 1458
+ },
+ "r3/inflation_stability/run01/shards/B_tree_mt172.6.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_tree_mt172.6.json",
+  "sha256": "ec79d6fe99fe6c3eea7c19aa321b3e5b5049a9617c19e192a35d52f334f35979",
+  "bytes": 1451
+ },
+ "r3/inflation_stability/run01/shards/B_tree_mt173.0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_tree_mt173.0.json",
+  "sha256": "cd05e9ff639205587b825f15cea2f45a1976668fc2e650d7fb46b21b945e639e",
+  "bytes": 1457
+ },
+ "r3/inflation_stability/run01/shards/B_tree_mt173.4.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_tree_mt173.4.json",
+  "sha256": "b688d4149a9982560f408e7ba702ea19c4af3e252ad18f554d21a31dfe9cc249",
+  "bytes": 1455
+ },
+ "r3/inflation_stability/run01/shards/B_xiyukall_mt171.8.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_xiyukall_mt171.8.json",
+  "sha256": "08688a112822d2eef80a5b6f1d837cc841db1f76caedc4c0dda8d3b095aa5c31",
+  "bytes": 1495
+ },
+ "r3/inflation_stability/run01/shards/B_xiyukall_mt172.2.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_xiyukall_mt172.2.json",
+  "sha256": "bbbd835f8aeb7dbd8a9c8e5f5d47c082003e1c01262b10a91fde156a666ee4da",
+  "bytes": 1464
+ },
+ "r3/inflation_stability/run01/shards/B_xiyukall_mt172.6.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_xiyukall_mt172.6.json",
+  "sha256": "d16a011f8f9eb5bfa27d958503ccf691b03193617e0230cba907688d616d621c",
+  "bytes": 1484
+ },
+ "r3/inflation_stability/run01/shards/B_xiyukall_mt173.0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_xiyukall_mt173.0.json",
+  "sha256": "9e6cf0e3d337da728f25d4f25c3c823e9cbcc1398c9e6358ea155a1b9c1d72e9",
+  "bytes": 1458
+ },
+ "r3/inflation_stability/run01/shards/B_xiyukall_mt173.4.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_xiyukall_mt173.4.json",
+  "sha256": "fd58f0b251c7a46792ec9990ecea63c0c259a1bac182540263def34d5759c97e",
+  "bytes": 1455
+ },
+ "r3/inflation_stability/run01/shards/B_zeta0_mt171.8.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_zeta0_mt171.8.json",
+  "sha256": "32aec90bdccc31676ff67456dccb531bc9660d595118c3a3f5dc9da317203219",
+  "bytes": 1489
+ },
+ "r3/inflation_stability/run01/shards/B_zeta0_mt172.2.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_zeta0_mt172.2.json",
+  "sha256": "315aeb9c312c348ab53bb7504d6f27c8dd1f17b5aebcc05aca3068fac1a44ef7",
+  "bytes": 1459
+ },
+ "r3/inflation_stability/run01/shards/B_zeta0_mt172.6.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_zeta0_mt172.6.json",
+  "sha256": "08aaca866101505d4119a0c1dc03aaa546482c298136d2169b8129f55e8f929a",
+  "bytes": 1476
+ },
+ "r3/inflation_stability/run01/shards/B_zeta0_mt173.0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_zeta0_mt173.0.json",
+  "sha256": "563264b3800399dfe2d860c47dcc08d26d97f7a1c982f5013bf0b77693a04491",
+  "bytes": 1454
+ },
+ "r3/inflation_stability/run01/shards/B_zeta0_mt173.4.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/B_zeta0_mt173.4.json",
+  "sha256": "90bf556391e71de2e779f3ed430c21f2c2c33e6a11ab32704ea3a4c129fc9835",
+  "bytes": 1450
+ },
+ "r3/inflation_stability/run01/shards/C_B13_mt172.2.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/C_B13_mt172.2.json",
+  "sha256": "15fab26f2b9a397b563cb0cda5319dfac9876076bbb3f8ef2cd2c41f4e41ea51",
+  "bytes": 1489
+ },
+ "r3/inflation_stability/run01/shards/C_B13_mt172.6.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/C_B13_mt172.6.json",
+  "sha256": "95a1198f9b7568fd70597562c1ecb20c316b45d2fe38df16a7441d0592b4717c",
+  "bytes": 1455
+ },
+ "r3/inflation_stability/run01/shards/C_B13_mt173.0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/C_B13_mt173.0.json",
+  "sha256": "e935e1b6210100a42a2492c9d66b5cfaa8f7d6494bc1f443b41bf5b069183b78",
+  "bytes": 1454
+ },
+ "r3/inflation_stability/run01/shards/C_BKPV15_mt172.2.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/C_BKPV15_mt172.2.json",
+  "sha256": "a71c98eee6eb2724006b4a958652360f96034e7129a407678a3042656cfb7e02",
+  "bytes": 1466
+ },
+ "r3/inflation_stability/run01/shards/C_BKPV15_mt172.6.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/C_BKPV15_mt172.6.json",
+  "sha256": "280049eeaef464c722950b1c59794d932d75c6eb0b96a64af63b1012c1afceb0",
+  "bytes": 1459
+ },
+ "r3/inflation_stability/run01/shards/C_BKPV15_mt173.0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/C_BKPV15_mt173.0.json",
+  "sha256": "b30f144c2e4b1f3cfb349937c52a952ade07550d1b6f6b92fcb0a0923e6b1d1a",
+  "bytes": 1458
+ },
+ "r3/inflation_stability/run01/shards/C_loops3_mt172.2.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/C_loops3_mt172.2.json",
+  "sha256": "6213c36a76aef15fe088cf04cf2daba4c9a2d7c73a7ce2f936add968e39ea376",
+  "bytes": 1465
+ },
+ "r3/inflation_stability/run01/shards/C_loops3_mt172.6.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/C_loops3_mt172.6.json",
+  "sha256": "68de4a0694cb8a9e4f1d04156855baa6bec16081714e80ba79f81973f9bb39a9",
+  "bytes": 1491
+ },
+ "r3/inflation_stability/run01/shards/C_loops3_mt173.0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/C_loops3_mt173.0.json",
+  "sha256": "84c1f7c1319ea100573d89d306a8c574b3a4e8bc5804fbfb9a3875e1ecf42936",
+  "bytes": 1462
+ },
+ "r3/inflation_stability/run01/shards/C_xi2_mt172.2.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/C_xi2_mt172.2.json",
+  "sha256": "9c3236a9c24c748ea101e39ab2676d18c9b5b009ae3c1c19164b049f3d0dc07a",
+  "bytes": 1457
+ },
+ "r3/inflation_stability/run01/shards/C_xi2_mt172.6.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/C_xi2_mt172.6.json",
+  "sha256": "a19ae672ac1ca815d344e5885bc96cb9d951ce218462e0b966c1386a2aaf26e9",
+  "bytes": 1449
+ },
+ "r3/inflation_stability/run01/shards/C_xi2_mt173.0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/C_xi2_mt173.0.json",
+  "sha256": "1a99a49b189d8b191cd201db1c7eb8047158126538438ddceccdcab5602ee44d",
+  "bytes": 1452
+ },
+ "r3/inflation_stability/run01/shards/D_MMRtab_g3B13.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/D_MMRtab_g3B13.json",
+  "sha256": "ca646811d1b0f2ee85bfa62d2b38caccf66fcc663844ae23fab3b5004e72ab15",
+  "bytes": 916
+ },
+ "r3/inflation_stability/run01/shards/D_provider_mt172.16.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/D_provider_mt172.16.json",
+  "sha256": "bda665b4fbb02eff2bc6fe901b93f4a38ebde1af6dd7b47c2fd5fd796b7a06c9",
+  "bytes": 790
+ },
+ "r3/inflation_stability/run01/shards/D_provider_mt172.76.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/D_provider_mt172.76.json",
+  "sha256": "8a8badd54b09337fda4961af3ac6c8cd48ac43b64615563a12ef6e56067f44e8",
+  "bytes": 785
+ },
+ "r3/inflation_stability/run01/shards/D_provider_mt173.36.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/D_provider_mt173.36.json",
+  "sha256": "3b633d198169cf60947590e43ec281f1192cf60e2cf11c9dffd9630b80a12aae",
+  "bytes": 784
+ },
+ "r3/inflation_stability/run01/shards/E_R2_mt172.2.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/E_R2_mt172.2.json",
+  "sha256": "19de697bf5873281f4943f6b88868c08a49045a45797e3a18aaa720b53bbc6fa",
+  "bytes": 1465
+ },
+ "r3/inflation_stability/run01/shards/E_R2_mt172.6.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/E_R2_mt172.6.json",
+  "sha256": "d28c97cb95353b381d9b095d349f7e84d154c8e98fdcf8785911a99592a17838",
+  "bytes": 1461
+ },
+ "r3/inflation_stability/run01/shards/E_R2_mt173.0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/shards/E_R2_mt173.0.json",
+  "sha256": "f66db37048aaa9d509863aaa441d7271bd2e313cabbe17ee2e07e0c0cc17b8e1",
+  "bytes": 1464
+ },
+ "r3/inflation_stability/run01/xi_compare.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/xi_compare.json",
+  "sha256": "07ff6e54866e82948bef98beb5d7f2b6de8318da252e6c32e98b00663fe30ee7",
+  "bytes": 6478
+ },
+ "r3/inflation_stability/run01/xi_inf_table.csv": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/xi_inf_table.csv",
+  "sha256": "62aab6d1fa1b998e68f7220b2633f2394ade3650a365a7634536579be62cb5f8",
+  "bytes": 4905
+ },
+ "r3/inflation_stability/run01/xi_plane_mt_xiH.csv": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/inflation_stability/run01/xi_plane_mt_xiH.csv",
+  "sha256": "e0eafb7c60415adb809a11eee69b9fbdc5c7504e2aaf9b30741db999a49285ee",
+  "bytes": 156572
+ }
+}

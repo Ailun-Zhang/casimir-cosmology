@@ -1,0 +1,369 @@
+{
+ "verdicts": {
+  "1_BKPV_FJ": "Sign identical on both sides (m_c down 0.36 / up 0.17 at 1 sigma; V1 DIAGNOSIS dmc convention). Difference is entirely the asymmetric-error convention: production = continuous two-piece normal (mode at centre, side masses 68:32, mean -0.152) + M_h 0.053; blind = equal-mass split (median at centre, 16/84% points, mean -0.076). Blind integrator with production convention: 0.6235 (production 0.6258; residual = main-value offset 0.002). Production is internally inconsistent (its model-error asymmetry uses equal-mass Gauss-Hermite z-scaling; BKPV/FJ and measurements use two-piece). Recommendation: pick one convention for all; quote BKPV/FJ variant 0.63-0.67 with the convention stated.",
+  "2_HLLHC": "dm_t inputs equivalent (YR 1902.04070 Table 47 pdf p.149: 0.17 GeV; Corcella 1903.06574 pdf p.13 rounds the same CMS projection to 'about 0.2 GeV'). The difference is delta alpha_s: production keeps 0.0009 (alpha_s term 0.348 of sigma_tot 0.423 -> 1.66 sigma, reproduced by blind integrator 1.655); blind used 0.0002, which YR pdf p.88 states is an assumed future lattice-QCD precision, not an HL-LHC measurement. FCC FSR pdf p.97: lattice-dominated world average expected to improve by x2 in a decade (~0.00045) -> 2.4-2.5 sigma, the most defensible HL-LHC-era central value; 0.0002 gives 2.8-3.1 sigma (optimistic); with MC-pole interpretation 0.5 retained ~1.2 sigma. Recommend '1.7 sigma (alpha_s unchanged) to 2.4 sigma (lattice x2)', state the alpha_s premise; the HL-LHC gain is almost entirely from alpha_s.",
+  "3_hLb_slope": "Same variable: D124 row (4) uses eta_inf ~ 1/hL_b at fixed mu_b, identical to T17's ln eta. D124's 'per e-fold' = one-sided secant for eta x e (-0.170/-0.270/-0.394), reproduced on the C149 curve (-0.1703/-0.2697/-0.3938); eta/e gives +0.214/+0.367; tangent (T17, blind +-10%) = -0.189/-0.310/-0.471. The 11-16% difference is the concavity of ln I(m_t) (slope 5.3 -> 2.1 /GeV). Both correct; use tangent for small variations, symmetric secant or the asymmetric pair for full e-folds.",
+  "extra_bayes_prior": "Production flat_150_200 prior is effectively flat on [160,186] (indicator on the Theory2 grid mg, C154_core_v2.py l.343-348): prior mean 0.498 vs correct 0.459; B_selection(direct,[150,200]) should be 1.584 (not 1.459), B_selection_max 2.18 (not 2.007). B_existence and [170,176] unaffected."
+ },
+ "agent": "claims-blind",
+ "task": "V3 comparison-phase diagnosis",
+ "timestamp_utc": "2026-10-15T02:11:52Z",
+ "1_BKPV_FJ": {
+  "equal_mass(blind)|Mh0.000|down0.36_up0.17": {
+   "Pbar_direct": 0.6697746250185533,
+   "mean_shift_mc": -0.07570568113896807,
+   "mass_on_down_side": 0.4982746907266119
+  },
+  "equal_mass(blind)|Mh0.000|mirror_down0.17_up0.36": {
+   "Pbar_direct": 0.7468436382363305,
+   "mean_shift_mc": 0.07589344367338481,
+   "mass_on_down_side": 0.4982704116759917
+  },
+  "equal_mass(blind)|Mh0.053|down0.36_up0.17": {
+   "Pbar_direct": 0.6692029991672886,
+   "mean_shift_mc": -0.07570568113896807,
+   "mass_on_down_side": 0.4982746907266119
+  },
+  "equal_mass(blind)|Mh0.053|mirror_down0.17_up0.36": {
+   "Pbar_direct": 0.7461024382675631,
+   "mean_shift_mc": 0.07589344367338481,
+   "mass_on_down_side": 0.4982704116759917
+  },
+  "two_piece(production)|Mh0.000|down0.36_up0.17": {
+   "Pbar_direct": 0.6238759287843841,
+   "mean_shift_mc": -0.15159806655524288,
+   "mass_on_down_side": 0.6777398404513154
+  },
+  "two_piece(production)|Mh0.000|mirror_down0.17_up0.36": {
+   "Pbar_direct": 0.784313452638171,
+   "mean_shift_mc": 0.15159806655524283,
+   "mass_on_down_side": 0.3192492744135795
+  },
+  "two_piece(production)|Mh0.053|down0.36_up0.17": {
+   "Pbar_direct": 0.6234503554797519,
+   "mean_shift_mc": -0.15159806655524288,
+   "mass_on_down_side": 0.6777398404513154
+  },
+  "two_piece(production)|Mh0.053|mirror_down0.17_up0.36": {
+   "Pbar_direct": 0.7835045961166028,
+   "mean_shift_mc": 0.15159806655524283,
+   "mass_on_down_side": 0.3192492744135795
+  },
+  "symmetric_pole_0.10_noMh": 0.7252457818656606,
+  "symmetric_pole_0.102_Mh0.053(production main)": 0.7243055508996673,
+  "production": {
+   "Pbar_BKPV_FJ_SM_direct": 0.625839,
+   "Pbar_main_direct": 0.727106,
+   "src": "run02/marginal_P1.csv; kernel(s_Mh, mu, s_up=0.17, s_dn=0.36) with sn_pdf two-piece normal (C154_core_v2.py l.90-100, 133)"
+  },
+  "V1_source": "07_reviews/R16_v12_round3/sm_mapping_blind/results/DIAGNOSIS.json item1: BKPV mu-variation reproduced as dmc = -0.358 / +0.173 (shift of the critical m_t; mu0=0.5 gives +0.173)"
+ },
+ "2_future_inputs": {
+  "prod_HLLHC_direct(0.20,as0.0009,SM0.102,Mh0.03)": {
+   "sigma_tot": 0.4230676938911197,
+   "D_verdict": 1.6545815483139945,
+   "D_meas": 3.4999999999999996,
+   "alpha_s_term": 0.3484842516016329,
+   "Asimov_172p6": 0.7351621285890853,
+   "Asimov_173p3": 0.26215370409167865
+  },
+  "HLLHC_0.20_as0.00045(lattice x2)": {
+   "sigma_tot": 0.2964883107368443,
+   "D_verdict": 2.3609699763890615,
+   "D_meas": 3.4999999999999996,
+   "alpha_s_term": 0.17424212580081644,
+   "Asimov_172p6": 0.7733310246841453,
+   "Asimov_173p3": 0.2235092903401263
+  },
+  "HLLHC_0.20_as0.0002(YR lattice assumption)": {
+   "sigma_tot": 0.2520755837671964,
+   "D_verdict": 2.776944873195187,
+   "D_meas": 3.4999999999999996,
+   "alpha_s_term": 0.07744094480036287,
+   "Asimov_172p6": 0.7871623557033229,
+   "Asimov_173p3": 0.2096528150239575
+  },
+  "prod_HLLHC_as_permille(0.20,0.00012)": {
+   "sigma_tot": 0.2443439296879835,
+   "D_verdict": 2.8648143659384924,
+   "D_meas": 3.4999999999999996,
+   "alpha_s_term": 0.04646456688021772,
+   "Asimov_172p6": 0.789539051982199,
+   "Asimov_173p3": 0.20728207248137598
+  },
+  "blind_HLLHC_0.17_as0.0002": {
+   "sigma_tot": 0.22613734749389108,
+   "D_verdict": 3.0954639194169813,
+   "D_meas": 4.117647058823529,
+   "alpha_s_term": 0.07744094480036287,
+   "Asimov_172p6": 0.7950633461915542,
+   "Asimov_173p3": 0.20178429618436716
+  },
+  "blind_HLLHC_0.17_as0.00045": {
+   "sigma_tot": 0.27477503235117184,
+   "D_verdict": 2.5475385955204843,
+   "D_meas": 4.117647058823529,
+   "alpha_s_term": 0.17424212580081644,
+   "Asimov_172p6": 0.7801162756232467,
+   "Asimov_173p3": 0.21669945503455448
+  },
+  "blind_HLLHC_0.17_as0.0009": {
+   "sigma_tot": 0.4081449174182501,
+   "D_verdict": 1.7150770967035436,
+   "D_meas": 4.117647058823529,
+   "alpha_s_term": 0.3484842516016329,
+   "Asimov_172p6": 0.7394314266052489,
+   "Asimov_173p3": 0.2578095443609492
+  },
+  "HLLHC_0.17+interp0.5_as0.00045": {
+   "sigma_tot": 0.5705272284506564,
+   "D_verdict": 1.2269353066652828,
+   "D_meas": 1.3254818427475978,
+   "alpha_s_term": 0.17424212580081644,
+   "Asimov_172p6": 0.6975596405411757,
+   "Asimov_173p3": 0.30052340113952647
+  },
+  "prod_now_direct(0.27,0.0009,0.102,0.11)": {
+   "sigma_tot": 0.46238356667039676,
+   "D_verdict": 1.5138946330655054,
+   "D_meas": 2.592592592592592,
+   "alpha_s_term": 0.3484842516016329,
+   "Asimov_172p6": 0.7243055508996673,
+   "Asimov_173p3": 0.27321628212347443
+  },
+  "prod_FCCee_base(0.0525,0.0002,0.070,0.01)": {
+   "sigma_tot": 0.14112969824146437,
+   "D_verdict": 4.959976594028723,
+   "D_meas": 13.333333333333332,
+   "alpha_s_term": 0.07744094480036287,
+   "Asimov_172p6": 0.8182228993098372,
+   "Asimov_173p3": 0.17894772606527162
+  },
+  "blind_FCCee_50MeV(0.0502,0.0001,0.07)": {
+   "sigma_tot": 0.12312723087478745,
+   "D_verdict": 5.6851761793608055,
+   "D_meas": 13.94422310756972,
+   "alpha_s_term": 0.038720472400181435,
+   "Asimov_172p6": 0.8222414752864929,
+   "Asimov_173p3": 0.17502135916153166
+  },
+  "production_csv": {
+   "now_direct_sigma_tot": 0.462403,
+   "HLLHC_direct_sigma_tot": 0.422272,
+   "HLLHC_permille_sigma_tot": 0.242963,
+   "FCCee_base_sigma_tot": 0.131275,
+   "D_from_csv": {
+    "now": 1.5138310088818627,
+    "HLLHC": 1.657699302819036,
+    "HLLHC_permille": 2.881097121783975,
+    "FCCee_base": 5.3323176537802315
+   }
+  },
+  "sources_checked": {
+   "YR_1902_04070": {
+    "Table47_pdf_p149": "CMS 3 ab^-1: ttbar lepton+jets total 0.17 GeV (MC-mass template, experimental)",
+    "pdf_p87": "EW-fit keeps mt 0.4 GeV: 'difficult to further reduce ... at the HL-LHC'",
+    "pdf_p88": "EW-fit assumption: 'future lattice QCD measurements will provide ... delta alpha_S(MZ) = +-0.0002' (not an HL-LHC measurement)"
+   },
+   "Corcella_1903_06574": {
+    "pdf_p13_sec4_2_10": "CMS (Ref.[100] ECFA-2016, summarised in YR [98]): 'from about 0.2 GeV (0.1%) for direct reconstruction in the lepton+jets channel to 1.2 GeV (0.7%) from the total ttbar NNLO cross section' -> rounded secondary quote of the same 0.17 GeV"
+   },
+   "FCC_FSR_2505_00272": {
+    "pdf_p97": "world average 0.1180+-0.0009 'mainly constrained by the precision of lattice calculations, expected to be improved by a factor of two in the next decade' -> ~0.00045 by the HL-LHC era",
+    "Table2_pdf_p37": "FCC-ee alpha_S(mZ^2): stat 0.1e-4, syst 1e-4"
+   }
+  }
+ },
+ "3_hLb_slope": {
+  "P0.9": {
+   "tangent_dmc_dlneta": -0.18942073231487289,
+   "eta_x_e(+1)": -0.17030649597191427,
+   "eta_x_e(+1)_per_unit_lneta": -0.17030649597191427,
+   "eta_x_e^-1(-1)": 0.21392792749779233,
+   "eta_x_e^-1(-1)_per_unit_lneta": -0.21392792749779233,
+   "eta_x_e^0.5": -0.0896569989626812,
+   "eta_x_e^0.5_per_unit_lneta": -0.1793139979253624,
+   "eta_x_e^-0.5": 0.10044760705156364,
+   "eta_x_e^-0.5_per_unit_lneta": -0.20089521410312727,
+   "hLb_x0.9": -0.019721614472757665,
+   "hLb_x0.9_per_unit_lneta": -0.18718221289658926,
+   "hLb_x1.1": 0.01825170740789872,
+   "hLb_x1.1_per_unit_lneta": -0.19149798526631784,
+   "symmetric_secant_pm1": -0.1921172117348533
+  },
+  "P0.5": {
+   "tangent_dmc_dlneta": -0.31036204657076355,
+   "eta_x_e(+1)": -0.2696890058367387,
+   "eta_x_e(+1)_per_unit_lneta": -0.2696890058367387,
+   "eta_x_e^-1(-1)": 0.3671619688768999,
+   "eta_x_e^-1(-1)_per_unit_lneta": -0.3671619688768999,
+   "eta_x_e^0.5": -0.144230055520012,
+   "eta_x_e^0.5_per_unit_lneta": -0.288460111040024,
+   "eta_x_e^-0.5": 0.16806593558641225,
+   "eta_x_e^-0.5_per_unit_lneta": -0.3361318711728245,
+   "hLb_x0.9": -0.032182347392392785,
+   "hLb_x0.9_per_unit_lneta": -0.3054497900988799,
+   "hLb_x1.1": 0.030017522685710674,
+   "hLb_x1.1_per_unit_lneta": -0.3149456096645466,
+   "symmetric_secant_pm1": -0.3184254873568193
+  },
+  "P0.1": {
+   "tangent_dmc_dlneta": -0.4706485424604163,
+   "eta_x_e(+1)": -0.3937514440214329,
+   "eta_x_e(+1)_per_unit_lneta": -0.3937514440214329,
+   "eta_x_e^-1(-1)": 0.5755204033117707,
+   "eta_x_e^-1(-1)_per_unit_lneta": -0.5755204033117707,
+   "eta_x_e^0.5": -0.21425561978514907,
+   "eta_x_e^0.5_per_unit_lneta": -0.42851123957029813,
+   "eta_x_e^-0.5": 0.2616240077555858,
+   "eta_x_e^-0.5_per_unit_lneta": -0.5232480155111716,
+   "hLb_x0.9": -0.04857884511341126,
+   "hLb_x0.9_per_unit_lneta": -0.4610725831219181,
+   "hLb_x1.1": 0.045722149679960467,
+   "hLb_x1.1_per_unit_lneta": -0.4797194777496969,
+   "symmetric_secant_pm1": -0.4846359236666018
+  },
+  "D124_table_row4": {
+   "hLb_x_e^-1 (eta x e)": [
+    -0.17,
+    -0.27,
+    -0.394
+   ],
+   "hLb_x_e^+1 (eta / e)": [
+    0.214,
+    0.367,
+    ">0.39 (off grid)"
+   ],
+   "hLb_x_e^-0.5": [
+    -0.09,
+    -0.144,
+    -0.214
+   ],
+   "hLb_x_e^+0.5": [
+    0.1,
+    0.168,
+    0.262
+   ],
+   "definition": "D124 row (4): hL_b (eta_inf ~ 1/hL_b), mu_b fixed; 'per e-fold' = one-sided finite difference for hL_b x e^-1"
+  },
+  "T17_D128": {
+   "dmc_dlneta": [
+    -0.19,
+    -0.311,
+    -0.473
+   ],
+   "definition": "D128 1.1: eta_inf -> f eta_inf exactly equivalent to I -> fI at fixed L_b (h changed); derivative at f=1"
+  }
+ },
+ "4_bayes_prior_150_200": {
+  "blind_prior_mean": 0.45902084863418025,
+  "prior_mean_if_restricted_to_160_186": 0.4981170166041928,
+  "production_prior_mean": 0.498279,
+  "production_B_selection_direct": 1.45923,
+  "cause": "C154_core_v2.py l.343-348: pi = indicator(lo<=mg<=hi) on the theory grid mg = [160,186] (Theory2 lo/hi), renormalised -> the 'flat_150_200' prior is effectively flat on [160,186]",
+  "corrected_B_selection_direct": 1.584036982554298
+ },
+ "5_like_for_like": {
+  "Pbar_direct": [
+   0.7252457818656606,
+   0.727106
+  ],
+  "CI68_direct": [
+   [
+    0.38003329631287214,
+    0.9892628335963949
+   ],
+   [
+    0.383764,
+    0.98936
+   ]
+  ],
+  "CI95_direct": [
+   [
+    0.053016663640994374,
+    0.9998764744026725
+   ],
+   [
+    0.0545388,
+    0.999667
+   ]
+  ],
+  "Pbar_direct+0.5": [
+   0.6752457097079997,
+   0.67727
+  ],
+  "Pbar_sigma_pole": [
+   0.8589080983099562,
+   0.859556
+  ],
+  "Pbar_MSR": [
+   0.49189978661749806,
+   0.496826,
+   "inputs differ: blind m_pole = 172.96 +- 0.368 (brief: 0.36+-0.25, Hoang fn.12); production 172.96 +- 0.568 (MC-MSR identification +-0.5), m-bar scheme"
+  ],
+  "Pbar_mbar_formulation_direct": [
+   0.7267613500553244,
+   0.726408
+  ],
+  "Pbar_BKPV_FJ_direct": [
+   0.6697746250185533,
+   0.625839
+  ],
+  "B_exist_direct_170_176": [
+   0.7252457818691235,
+   0.727106
+  ],
+  "B_cond_direct_170_176": [
+   1.474555107867417,
+   1.47685
+  ],
+  "B_cond_direct_150_200": [
+   1.5799844038175987,
+   1.45923,
+   "production prior effectively [160,186]"
+  ],
+  "mc_P0.1": [
+   {
+    "0.1180": 173.41168626764298,
+    "0.1171": 173.06244719401113,
+    "0.1189": 173.76126546353996
+   },
+   "173.4 (+1sigma 173.8)"
+  ],
+  "need_central_95_direct_defA": [
+   174.1778367421801,
+   174.184
+  ],
+  "D_verdict_now": [
+   1.5254119167179994,
+   1.5138310088818627
+  ],
+  "D_verdict_FCCee": [
+   5.681128589639629,
+   5.3323176537802315,
+   "alpha_s input 0.0001 (FSR 2025 Table 2) vs 0.0002 (Freitas 2019)"
+  ],
+  "w0": [
+   [
+    0.983,
+    0.996
+   ],
+   [
+    0.98,
+    0.995
+   ]
+  ],
+  "Pbar_w0_multiplicative_direct": [
+   [
+    0.7127240851764113,
+    0.7225249705594122
+   ],
+   0.720919
+  ]
+ },
+ "code_sha256": {
+  "diag.py": "b74d629fa6994f84b09ea6dea21dd70a9cf1704a14aa234d8c3a31c59d60faae",
+  "stats.py": "743956c2a4e7384953229fe87b605b87418f441dc1046e58a7da34af52599eed",
+  "fetch_one.py": "1e77b11999cfc6a2d8676d339b5a09c7685082c93d1ef964ca30517ec598c858"
+ }
+}

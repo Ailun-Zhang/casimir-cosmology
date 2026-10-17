@@ -1,0 +1,17 @@
+{
+ "description": "C73: does the first-matching eigenvalue -4/3 apply to an ABELIAN holonomy pinned by charged-fermion\nloops?  For a U(1) holonomy c with kinetic (L/2g^2) c^T G^-1 c' and fermion-induced curvature\nK_ij(G) = d^2/dc_i dc_j Z_G(2; AAA + c/2pi)|_{c=0} (times a positive constant), the leading zero-mode\nenergy is the harmonic zero-point energy  E_zp = (g/2L) tr sqrt(G^{1/2} K(G) G^{1/2})  (not a\nfirst-order insertion).  We compute Delta_sh E_zp / E_zp at the cube by nested finite differences\n(c-Hessian by Richardson FD, then geodesic second differences), and compare with\n  -4/3 (first-matching lemma)  and  -2/3 - sum_A tr(W1_A^2)/(12 w^2)  (derived in D55; W = wI at cube).\nOutput: results/.../C73/C73_abelian_zeropoint.json\n",
+ "W(cube) diagonal w": "0.83978538402981510445",
+ "offdiag max |W_ij|": "0.0",
+ "-Z_I(1;AAA)/3 (expected w)": "0.8397853840298151",
+ "Delta trW / trW (expected -4/3)": "-1.33333333333317",
+ "Delta E_zp / E_zp (numeric)": "-8.88137896481371",
+ "predicted -2/3 - sum tr(W1^2)/(12 w^2)": "-8.8813789648138",
+ "|W1_A| Frobenius": [
+  "4.21235637489",
+  "4.21235637489",
+  "3.36809450594",
+  "3.36809450594",
+  "3.36809450594"
+ ],
+ "wall_s": 32.31871724128723
+}

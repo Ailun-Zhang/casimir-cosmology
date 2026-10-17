@@ -1,0 +1,641 @@
+\section{Higgs zero mode I: finite-volume matching}\label{rep:h-matching}
+
+At the turning point the torus has edge $\Lb=722\,\MPbar^{-1}$ (Sec.~\ref{rep:turning}), so the couplings that act on its zero modes are the Standard Model couplings at $\mub=1/\Lb=\MPbar/722=3.37\times10^{15}\GeV$. %
+This section derives, from the Standard Model Lagrangian, the quantum mechanics of the electroweak zero modes and the one-loop energy that the non-zero modes add to it.
+We show four things.
+(i)~The constant modes of the Higgs doublet and of the SU(2)$\times$U(1)$_Y$ gauge fields form a system with sixteen coordinates, whose gauge zero-point motion confines the Higgs radius linearly.
+(ii)~The one-loop energy of a tower of non-zero modes, summed in finite volume and renormalized in $\MSbar$, is analytic in the field-dependent squared mass below the first non-zero momentum, tachyonic masses included; its leading term is a negative tadpole for periodic bosons.
+(iii)~With the Coulomb-gauge Higgs zero mode as the slow coordinate, every massive vector contributes two transverse modes and one Coulomb mode, and the explicit scale dependence of the one-loop energy cancels the running of the couplings if and only if the Higgs field carries the Coulomb-gauge anomalous dimension; the covariant Landau-gauge counting agrees with this split to $0.016\GeV$ in the critical top mass, whereas the gauge-invariant (unitary) counting is not consistent. %
+(iv)~In the sector of order $r^2c^2$, where $c$ is a gauge holonomy, the transverse vev mixing, the instantaneous Coulomb mismatch, and the exact top chiral loop close the renormalization-group equation of the tree-level gauge--Higgs term to $97$--$99\%$, so $\mu=1/L$ is a consistent matching scale for all one-loop terms. %
+The last subsection gives the matching-scale scan of the final model, which is the matching item of the error budget (Sec.~\ref{rep:h-budget}).
+Figure~\ref{fig:rb-diagrams} shows the one-loop diagrams that enter.
+
+Throughout Secs.~\ref{rep:h-matching}--\ref{rep:h-universality} we use units $L=1$, in which fields and energies are measured in $1/L$, and $\MSbar$ couplings.
+Four configurations recur.
+\emph{Fixed-coupling} calculations use the one-loop couplings at $1/\Lb$ of Sec.~\ref{rep:zeromodes}, $g_2=0.5268$, $g_3=0.5396$, $g_Y=0.4415$, and $y_t=0.4585$, without running. %
+The \emph{earlier Standard Model mapping} is two-loop running with fitted matching and a constant three-loop calibration of $\lambda$; the NNLO mapping of Sec.~\ref{rep:h-smmap} replaces it.
+The \emph{final model} is the node-direct two-dimensional model of Sec.~\ref{rep:h-reduced} with the NNLO mapping and all cross terms of Sec.~\ref{rep:h-cross}; the \emph{earlier model} is the same model before the last one-loop cross terms of Sec.~\ref{sec:rb-r2c2}.
+All statements hold under assumptions (A1)--(A7) of Sec.~\ref{rep:setup}; we name the assumption where it enters.
+
+\subsection{The electroweak zero-mode Hamiltonian}
+\label{sec:rb-H0}
+
+We expand every field on the torus in Fourier modes $\bm k=2\pi(\bm n+\bm\theta)$, $\bm n\in\mathbb Z^3$, with $\bm\theta=0$ for periodic and $\bm\theta=(\frac12,\frac12,\frac12)$ for antiperiodic fields (AAA spin structure, assumption (A1)).
+The constant modes of the bosons are slow coordinates of finite-dimensional quantum mechanics; all other modes are fast and are integrated out at one loop in Secs.~\ref{sec:rb-tower}--\ref{sec:rb-r2c2}.
+In temporal gauge $A_0=0$ the constant modes are the Higgs doublet
+\begin{equation}
+\Phi=\frac{1}{\sqrt2}\begin{pmatrix}\phi_0+i\phi_1\\ \phi_2+i\phi_3\end{pmatrix},\qquad r\equiv|\bm\phi|,\qquad \Phi^\dagger\Phi=\frac{r^2}{2},
+\label{eq:rb-Phi}
+\end{equation}
+the SU(2) connection $\bm x_i=(x_i^1,x_i^2,x_i^3)$ and the hypercharge connection $w_i$, $i=1,2,3$.
+With the normalization $\mathcal L\supset-\frac14F^a_{\mu\nu}F^{a\mu\nu}$ and $D_\mu=\partial_\mu-ig_2A_\mu^aT^a-ig_YYB_\mu$, the constant modes $A_i^a=x_i^a$ and $B_i=w_i$ have unit kinetic terms, and the holonomy angles that twist charged fields are $c_i=g_2\bm x_i\cdot\bm T$ and $u_i=g_Yw_i$ (in units $1/L$).
+For constant fields the field strength reduces to its commutator part, $F_{ij}^a=g_2\,\epsilon^{abc}x_i^bx_j^c=g_2(\bm x_i\times\bm x_j)^a$, and the covariant derivative of a constant doublet to $D_i\Phi=-i(g_2\bm x_i\cdot\bm T+g_YYw_i)\Phi$.
+The Hamiltonian of the zero modes is therefore~\cite{Luscher:1982ma,Koller:1987fq,vanBaal:2000zc}
+\begin{align}
+H_0={}&\tfrac12 p_x^2+\tfrac12 p_w^2+\tfrac12 p_\phi^2+\frac{g_2^2}{4}\sum_{i,j}|\bm{x}_i\times\bm{x}_j|^2 \nonumber\\
+&+\sum_i\Phi^\dagger\bigl(g_2\,\bm{x}_i\cdot\bm{T}+g_Y Y w_i\bigr)^2\Phi+\frac{\lambda}{4}r^4,
+\label{eq:rb-H0}
+\end{align}
+with $\bm T=\bm\sigma/2$, $Y=\frac12$, and the $\MSbar$ couplings $g_2$, $g_Y$, and $\lambda$ at $\mu=1/L$.
+The four terms are the electric energy of the constant connections, the magnetic energy $\frac14\sum_{ij}F_{ij}^aF_{ij}^a$, the gradient energy $\sum_i|D_i\Phi|^2$ of the constant doublet, and the quartic potential; the Higgs mass parameter is negligible at $\mu\sim10^{15}\GeV$.
+The gluon zero modes do not couple to $\Phi$ at tree level; they enter through the top-quark loop of Sec.~\ref{rep:h-cross}.
+Equation~(\ref{eq:rb-H0}) has sixteen coordinates: nine SU(2), three hypercharge, and four Higgs components.
+
+The zero mode of $A_0$ is a Lagrange multiplier whose equation is Gauss's law: physical states are invariant under constant SU(2)$\times$U(1)$_Y$ transformations, which act orthogonally on $(\bm x,\bm w,\bm\phi)$.
+We fix this freedom by rotating the unit vector $\bm N=2\Phi^\dagger\bm\sigma\Phi/r^2$ to $\bm e_3$, which puts the vev in the upper component, $\Phi=(r/\sqrt2)(1,0)^{\mathsf T}$, and leaves U(1)$_{\rm em}$ generated by $T^3-Y$ acting on the doublet.
+In four dimensions the Laplacian of $\bm\phi$ is $r^{-3}\partial_rr^3\partial_r+r^{-2}\Delta_{S^3}$, and on gauge-invariant states the angular part acts through the SU(2) rotations of $\bm x$, so that
+\begin{equation}
+H_0=-\frac{1}{2r^3}\partial_r r^3\partial_r+\frac{2}{r^2}\bigl[(L^1)^2+(L^2)^2\bigr]+H_{\rm g}(\bm{x},\bm{w};r),
+\label{eq:rb-bodyframe}
+\end{equation}
+where $L^a$ generates SU(2) rotations of $\bm x$ and $H_{\rm g}$ contains the kinetic, magnetic, and mass terms of the gauge zero modes~\cite{Luscher:1982ma,vanBaal:2000zc}.
+The radial operator is self-adjoint with the flat measure $r^3dr$; with $f=r^{-3/2}u$ one finds
+\begin{equation}
+-\frac{1}{2}\Bigl(f''+\frac{3}{r}f'\Bigr)=r^{-3/2}\Bigl[-\frac12u''+\frac{3}{8r^2}u\Bigr],
+\label{eq:rb-centrifugal}
+\end{equation}
+which is the origin of the term $3/(8r^2)$ in the reduced models of Sec.~\ref{rep:h-reduced}; regular states behave as $u\propto r^{3/2}$.
+
+In the body frame the gradient term of Eq.~(\ref{eq:rb-H0}) becomes a mass term for the gauge zero modes.
+With $\Phi=(r/\sqrt2)(1,0)^{\mathsf T}$ and $M_i=g_2\bm x_i\cdot\bm T+g_YYw_i$,
+\begin{equation}
+\Phi^\dagger M_i^2\Phi=\frac{r^2}{8}\Bigl[g_2^2\bigl((x_i^1)^2+(x_i^2)^2\bigr)+\bigl(g_2x_i^3+g_Yw_i\bigr)^2\Bigr]\equiv\tfrac12\,y_i^{\mathsf T}\mathcal M y_i,
+\label{eq:rb-massterm}
+\end{equation}
+where $y_i=(x_i^1,x_i^2,x_i^3,w_i)$ and, in each spatial direction,
+\begin{equation}
+\mathcal M=\frac{r^2}{4}\,{\rm diag}\bigl(g_2^2,\,g_2^2,\,\mathcal M_2\bigr),\qquad
+\mathcal M_2=\begin{pmatrix}g_2^2&g_2g_Y\\ g_2g_Y&g_Y^2\end{pmatrix}.
+\label{eq:rb-massmatrix}
+\end{equation}
+Its eigenvalues describe two $W$ modes of frequency $g_2r/2$, a $Z$ mode of frequency $g_Zr/2$ with $g_Z=(g_2^2+g_Y^2)^{1/2}$, and a massless photon $\propto g_Yx_i^3-g_2w_i$.
+
+The confinement of the Higgs radius follows from this mass matrix.
+For $r\gtrsim1$ the $W$ and $Z$ zero modes are nearly harmonic, and since each of the three spatial directions carries two $W$ modes and one $Z$ mode, their zero-point energy is
+\begin{equation}
+E_{\rm g}(r)\simeq E_{\rm g}^{(0)}+3\Bigl[2\cdot\frac12\,\frac{g_2r}{2}+\frac12\,\frac{g_Zr}{2}\Bigr]=E_{\rm g}^{(0)}+\sigma_0 r,\qquad \sigma_0=\tfrac32 g_2+\tfrac34 g_Z\simeq1.31. %
+\label{eq:rb-linear}
+\end{equation}
+At smaller $r$ the magnetic quartic term of Eq.~(\ref{eq:rb-H0}) dominates, the gauge ground state is anharmonic, and its energy scales as $g^{2/3}$~\cite{Luscher:1982ma,Koller:1987fq}.
+With $\lambda<0$ a radial potential of the form $\sigma r-|\lambda|r^4/4$ has a well near the origin, a barrier at $r_{\rm top}=(\sigma/|\lambda|)^{1/3}$, and a runaway beyond it, so the electroweak configuration is a resonance (Sec.~\ref{rep:h-reduced}).
+The negative quartic leaves the zero-mode share $\fzm$ of Sec.~\ref{rep:zeromodes}, and hence the turning solution, unchanged at the quoted precision.
+
+\subsection{Non-zero modes in the zero-mode background}
+\label{sec:rb-masses}
+
+The non-zero modes see the zero modes as a constant background.
+Expanding the Standard Model Lagrangian to second order in the fluctuations around $\Phi=(r/\sqrt2)(1,0)^{\mathsf T}$ with trivial holonomy gives the field-dependent squared masses
+\begin{align}
+&a_W=\frac{g_2^2r^2}{4},\qquad a_Z=\frac{g_Z^2r^2}{4},\qquad b=\frac{V_{\rm tree}'(r)}{r}=\lambda r^2,\nonumber\\
+&m_{\delta\rho}^2=V_{\rm tree}''(r)=3\lambda r^2,\qquad \tilde m_t^2=\frac{y_t^2r^2}{2},
+\label{eq:rb-masses}
+\end{align}
+for the $W$ and $Z$ bosons, the three Goldstone modes (off shell, since $V'_{\rm tree}=\lambda r^3\neq0$), the radial fluctuation $\delta\rho$, and the top quark, with $V_{\rm tree}=\lambda r^4/4$.
+For $\lambda<0$ both $b$ and $m_{\delta\rho}^2$ are negative.
+A tachyonic mass in finite volume is harmless as long as every frequency $\omega_k^2=k^2+m^2$ stays positive, i.e., $|m^2|<(2\pi)^2$ for periodic and $|m^2|<3\pi^2$ for antiperiodic fields.
+In the field range of the resonance all masses are small on this scale: for $r\le5$, $m_Z\le1.72/L$ and $\tilde m_t\le1.51/L$, at least $3.6$ times below $2\pi/L$, and the radial non-zero modes become tachyonic only at $r\approx31$, far outside the barrier at $r\approx4$--$5$. %
+
+\subsection{One tower of non-zero modes: \texorpdfstring{$\MSbar$}{MS-bar} finite-volume sum}
+\label{sec:rb-tower}
+
+For one real degree of freedom of squared mass $m^2$ the non-zero modes have energy $\frac12\sum_{\bm k}'\omega_k$, $\omega_k^2=k^2+m^2$, where the prime removes $\bm k=0$ for periodic fields.
+We write it as the infinite-volume integral, which we regularize dimensionally, plus the convergent difference between sum and integral.
+The difference follows from the proper-time identity
+\begin{equation}
+A^{1/2}=-\frac{1}{2\sqrt\pi}\int_0^\infty\frac{ds}{s^{3/2}}\bigl(e^{-As}-1\bigr),\qquad A>0,
+\label{eq:rb-propertime}
+\end{equation}
+applied to each mode, with the heat-kernel sum $K_\theta(s)=\sum_{\bm n}e^{-4\pi^2|\bm n+\bm\theta|^2s}$ and its continuum limit $(4\pi s)^{-3/2}=\int d^3k\,(2\pi)^{-3}e^{-k^2s}$.
+Removing also the value at $m^2=0$, which is part of the Casimir energy of Sec.~\ref{rep:casimir}, we obtain
+\begin{equation}
+D_\theta(m^2)=-\frac{1}{4\sqrt\pi}\int_0^\infty\!\frac{ds}{s^{3/2}}\bigl(e^{-m^2s}-1\bigr)\Bigl[K_\theta(s)-\delta_{\theta0}-(4\pi s)^{-3/2}\Bigr],
+\label{eq:rb-Dtheta}
+\end{equation}
+where $\delta_{\theta0}$ removes the $\bm k=0$ term of periodic fields.
+The integral converges at both ends: at small $s$ the Poisson form $K_\theta(s)-(4\pi s)^{-3/2}=(4\pi s)^{-3/2}\sum_{\bm n\neq0}e^{-n^2/4s}\cos(2\pi\bm n\cdot\bm\theta)$ is exponentially small, and at large $s$ the bracket tends to $-(4\pi s)^{-3/2}$.
+In $d=3-2\epsilon$ spatial dimensions the integral gives, after $\MSbar$ subtraction, the Coleman--Weinberg term~\cite{Coleman:1973jx}
+\begin{equation}
+V_{\rm CW}(m^2;c,\mu)=\frac{m^4}{64\pi^2}\Bigl[\ln\frac{|m^2|}{\mu^2}-c\Bigr],\qquad c=\tfrac32\ \text{for a scalar},
+\label{eq:rb-VCW}
+\end{equation}
+with the tree-level couplings taken at the same $\mu$.
+The one-loop energy of the tower is therefore
+\begin{equation}
+E_{\rm std}(m^2;\mu)=D_\theta(m^2)+V_{\rm CW}(m^2;\tfrac32,\mu).
+\label{eq:rb-Estd-def}
+\end{equation}
+
+\paragraph{Analyticity.}
+The logarithms cancel.
+For $|m|$ below the smallest non-zero momentum, $2\pi$ for periodic and $\sqrt3\,\pi$ for antiperiodic fields, each term $(k^2+m^2)^{1/2}=k\sum_j\binom{1/2}{j}(m^2/k^2)^j$ has a convergent binomial series.
+The lattice sums of the terms of order $k$, $k^{-1}$, and $k^{-3}$ diverge; after regularization they are polynomials of order $m^0$, $m^2$, and $m^4$, and the pole of the last one is removed by the $\MSbar$ counterterm, which leaves $\ln\mu$.
+All other terms converge absolutely, so the regularized sum is analytic in $m^2$.
+The continuum integral contains the non-analytic term $+m^4\ln|m^2|/(64\pi^2)$, so $D_\theta$ contains its negative, and
+\begin{equation}
+E_{\rm std}=\frac{T_\theta}{2}\,m^2+\Bigl[c_2-\frac{\ln\mu^2L^2+\frac32}{64\pi^2}\Bigr]m^4+O(m^6),
+\label{eq:rb-Estd}
+\end{equation}
+with $c_2=0.0062594$ for periodic fields, is analytic for $|m|<2\pi/L$ (periodic) or $|m|<\sqrt3\,\pi/L$ (antiperiodic). %
+A tachyonic mass, such as $m_{\delta\rho}^2$ or the Goldstone mass $b$ for $\lambda<0$, therefore needs no prescription, and $E_{\rm std}$ is smooth through $m^2=0$.
+Numerically the coefficient of $m^4\ln|m^2|$ in $D_P$ is $-0.00158314349=-1/(64\pi^2)$ on both sides of $m^2=0$ to $10^{-9}$, and the Cauchy--Riemann residual of the continued function is $10^{-11}$. %
+
+\paragraph{Tadpole.}
+The coefficient of $m^2$ is the finite-volume tadpole, the regularized $\frac14\sum_{\bm k}'1/k$.
+In Eq.~(\ref{eq:rb-Dtheta}) the term $-\delta_{\theta0}$ integrates to $-m/2$ exactly, and the large-$|\bm n|$ part of the Poisson sum returns $+m/2$, so the two non-analytic pieces cancel.
+The remaining first-order term, with the lattice sum understood as its analytic continuation, is
+\begin{equation}
+\frac{T_\theta}{2}=\frac{1}{4\sqrt\pi}\int_0^\infty\!\frac{ds}{s^{1/2}}\,(4\pi s)^{-3/2}\sum_{\bm n\neq0}e^{-n^2/4s}\cos(2\pi\bm n\cdot\bm\theta)
+=\frac{1}{8\pi^2}\sum_{\bm n\neq0}\frac{\cos(2\pi\bm n\cdot\bm\theta)}{|\bm n|^2}\equiv\frac{Z_1}{8\pi^2},
+\label{eq:rb-tadpole}
+\end{equation}
+where the periodic sum is the analytically continued Epstein constant, $Z_P=-8.913633$, and the antiperiodic one, with $\cos(2\pi\bm n\cdot\bm\theta)=(-1)^{n_1+n_2+n_3}$, is $Z_A=-2.519356$. %
+Hence $T_B/2=Z_P/(8\pi^2)=-0.1128925$ and $T_F/2=Z_A/(8\pi^2)=-0.0319080$. %
+Both are negative: the non-zero modes have less zero-point energy in a box than in the continuum, and a mass lowers their energy further.
+The tadpole of the periodic bosons is the term that matters most below.
+
+\paragraph{Why the non-zero modes undo part of the zero-point confinement.}
+The full periodic tower, including $\bm k=0$, reproduces the continuum up to terms of order $e^{-mL}$.
+Its zero mode contributes the harmonic zero-point energy $m/2$, so the non-zero modes satisfy $D_P(m^2)\to-m/2+0.8375$ for $mL\gg2\pi$, where the constant is minus the massless Casimir energy $-\frac{1}{2\pi^2}\sum_{\bm n\neq0}|\bm n|^{-4}$ removed in Eq.~(\ref{eq:rb-Dtheta}). %
+In a large box the non-zero modes thus cancel the zero-point energy that confines the zero mode, as they must, since the constant mode is then not special.
+At the masses of the resonance, $mL\le1.72$, the cancellation is partial and is described by the convergent series of Eq.~(\ref{eq:rb-Estd}), whose leading term is the negative tadpole. %
+For the $W$ and $Z$ towers it gives $3\cdot\frac{T_B}{2}(2a_W+a_Z)=-0.087\,r^2$ at the fixed couplings, a negative mass term for the Higgs zero mode that weakens the linear confinement of Eq.~(\ref{eq:rb-linear}). %
+The full one-loop matching, which also contains the stabilizing tadpole of the antiperiodic top tower (Sec.~\ref{sec:rb-rg}), lowers the local slope by $10$--$33\%$ at $r=1$--5 and roughly halves the barrier above the resonance level (Sec.~\ref{sec:rb-size}). %
+Without the non-zero modes the threshold would lie at more negative $\lambda$, and at the central inputs the zero mode would survive almost surely ($\Pone\approx0.998$ in a one-dimensional version of the model); the matching is what makes the outcome depend on the top-quark mass. %
+
+\paragraph{Numerical evaluation.}
+We evaluate $D_\theta$ by splitting the proper-time integral at $s_c=0.1$. %
+For $s<s_c$ the Poisson image sum makes $K_\theta(s)-(4\pi s)^{-3/2}$ exponentially small, and the zero-mode subtraction integrates in closed form,
+\begin{equation}
+\int_0^{s_c}\!\frac{ds}{s^{3/2}}\bigl(e^{-m^2s}-1\bigr)=-\frac{2\bigl(e^{-m^2s_c}-1\bigr)}{\sqrt{s_c}}-2\sqrt\pi\,m\,{\rm erf}\bigl(m\sqrt{s_c}\bigr),
+\label{eq:rb-small-s}
+\end{equation}
+an entire function of $m^2$.
+For $s>s_c$ each lattice shell with $\alpha=k^2+m^2$ contributes
+\begin{equation}
+\int_{s_c}^\infty\!\frac{ds}{s^{3/2}}\,e^{-\alpha s}=e^{-\alpha s_c}\Bigl[\frac{2}{\sqrt{s_c}}-2\sqrt{\pi\alpha}\;{\rm erfcx}\bigl(\sqrt{\alpha s_c}\bigr)\Bigr],
+\label{eq:rb-shell}
+\end{equation}
+and the continuum term is $m^4\Gamma(-2,m^2s_c)$, continued to $m^2<0$ with $\ln z\to\ln|z|$.
+As checks, $D_P/m^2\to-0.1128922$ at $m^2=10^{-5}$ against $T_B/2=-0.1128925$, and $D_A/m^2\to-0.0319078$ against $T_F/2=-0.0319080$. %
+The Bessel image sum
+\begin{equation}
+E_{\vartheta}(m)=-\frac{m^2}{4\pi^2}\sum_{\bm n\neq0}\frac{K_2(m|\bm n|)\cos(2\pi\bm n\cdot\bm\vartheta)}{|\bm n|^2},
+\label{eq:rb-Etheta}
+\end{equation}
+which is the complete finite-volume energy of the tower relative to the continuum (with an extra $(-1)^{n_1+n_2+n_3}$ for antiperiodic fields), agrees with $D_P$ to $5\times10^{-11}$ and with $D_A$ to $10^{-15}$ once the zero mode is restored. %
+The same image sum with a twist $\bm\vartheta$ is the basis of the cross terms of Sec.~\ref{rep:h-cross}.
+
+\paragraph{The natural scale.}
+With $c_2=0.0062594$ the $m^4$ coefficient of Eq.~(\ref{eq:rb-Estd}) vanishes at %
+\begin{equation}
+\mu_*L=\exp\Bigl[\frac{64\pi^2c_2-\frac32}{2}\Bigr]=3.41. %
+\label{eq:rb-mustar}
+\end{equation}
+At this scale the finite-volume energy is as close as possible to its tadpole term.
+Evaluating the matching at $\mu_*$ instead of at $\mu=1/L$ lowers $m_c(\Pone=1/2)$ by $0.02$--$0.03\GeV$, inside the matching item of Sec.~\ref{sec:rb-scale}. %
+
+\subsection{Massive vectors in Coulomb gauge}
+\label{sec:rb-coulomb}
+
+In the body frame with trivial holonomy, $W^{1,2}$ pair with the Goldstone modes $\pi^{1,2}$ at $a_W$, and $Z$ pairs with $\pi^3$ at $a_Z$.
+The photon does not mix with $\pi^3$, because the neutral Gauss law is diagonal in the $(Z,\gamma)$ basis.
+All three Goldstone modes have the off-shell mass $b=\lambda r^2$.
+We derive the spectrum of one vector of mass $m_V^2=a$ with its Goldstone mode $\pi$ in Coulomb gauge, $\nabla\cdot\bm A=0$.
+
+The quadratic Lagrangian of an abelianized pair follows from $|D_\mu\Phi|^2$ with $\Phi\to(r+\delta\rho+i\pi)/\sqrt2$, which contains $\frac12(\partial_\mu\pi-m_VA_\mu)^2$, from $-\frac14F^2=\frac12(\bm E^2-\bm B^2)$ with $\bm E=-\nabla A_0-\dot{\bm A}$, and from the potential $-\frac12b\pi^2$.
+In Coulomb gauge the longitudinal electric field is $-\nabla A_0$, and the cross term $\bm A\cdot\nabla\pi$ integrates to zero.
+In Fourier space the longitudinal sector is therefore
+\begin{equation}
+\mathcal L=\tfrac12k^2A_0^2+\tfrac12\bigl(\dot\pi-m_VA_0\bigr)^2-\tfrac12(k^2+b)\pi^2 ,
+\label{eq:rb-coulomb-L}
+\end{equation}
+and the transverse sector is two modes with $\omega^2=k^2+a$.
+$A_0$ has no time derivative; Gauss's law, $\partial\mathcal L/\partial A_0=0$, gives
+\begin{equation}
+k^2A_0=m_V\bigl(\dot\pi-m_VA_0\bigr)\quad\Longrightarrow\quad A_0=\frac{m_V\,\dot\pi}{k^2+a},\qquad \dot\pi-m_VA_0=\frac{k^2}{k^2+a}\,\dot\pi .
+\label{eq:rb-gauss}
+\end{equation}
+Substituting back,
+\begin{equation}
+\mathcal L_{\rm eff}=\tfrac12 Z_k\dot\pi^2-\tfrac12(k^2+b)\pi^2,\qquad Z_k=\frac{k^2}{k^2+a},\qquad
+\omega_C^2=\frac{(k^2+b)(k^2+a)}{k^2}.
+\label{eq:rb-coulomb}
+\end{equation}
+On shell, $b=0$, the Coulomb frequency coincides with the transverse one, and the matching reduces pointwise, to $1.8\times10^{-14}$, to three polarizations of mass $a$ with $V_{\rm CW}$ included. %
+The Coulomb mode is the physical longitudinal mode of the vector, dressed by the off-shell Goldstone mass.
+
+\paragraph{$\MSbar$ constants of a massive vector.}
+The constants follow from the polarization count in $d=3-2\epsilon$ dimensions.
+A massive vector has $2-2\epsilon$ transverse polarizations and one longitudinal polarization.
+The dimensionally regularized integral per polarization is $\frac{m^4}{64\pi^2}[-\frac1\epsilon+\ln\frac{m^2}{\mu^2}-\frac32]$ in $\MSbar$ conventions, and the $O(\epsilon)$ part of the transverse multiplicity multiplies the pole,
+\begin{equation}
+(2-2\epsilon)\Bigl[-\frac1\epsilon+\ln\frac{a}{\mu^2}-\frac32\Bigr]\ \xrightarrow{\ \MSbar\ }\ 2\Bigl[\ln\frac{a}{\mu^2}-\frac12\Bigr],
+\label{eq:rb-polcount}
+\end{equation}
+so the constant of each transverse mode moves from $\frac32$ to $\frac12$ and $2(\ln-\frac12)+(\ln-\frac32)=3(\ln-\frac56)$, the usual $\MSbar$ vector constant.
+Using $\frac32$ for all three polarizations mixes schemes; in the one-dimensional matching study with the earlier mapping it would have shifted $m_c$ by $-0.052\GeV$, and it is not an uncertainty. %
+
+\paragraph{Ultraviolet subtraction of the Coulomb mode.}
+The Coulomb frequency is not a relativistic dispersion, so we subtract its ultraviolet behavior with standard scalars.
+Writing $\omega_C=k(1+x+y)^{1/2}$ with $x=(a+b)/k^2$ and $y=ab/k^4$ and expanding,
+\begin{equation}
+\omega_C=k+\frac{a+b}{2k}-\frac{(a-b)^2}{8k^3}+\frac{(a+b)(a-b)^2}{16k^5}+O(k^{-7}).
+\label{eq:rb-omegaC}
+\end{equation}
+Three scalars of squared masses $\mu_j^2=(b,a,2a)$ with weights $c_j=(1,2b/a,-b/a)$ reproduce the terms of order $k$, $k^{-1}$, and $k^{-3}$ of $\omega_C-\omega_a$, because
+\begin{equation}
+\sum_jc_j=1+\frac ba,\qquad \sum_jc_j\mu_j^2=b,\qquad \sum_jc_j\mu_j^4=b^2-2ab,
+\label{eq:rb-weights}
+\end{equation}
+and $\omega_C-\omega_a=\frac{b}{2k}+\frac{2ab-b^2}{8k^3}+\dots$.
+The Coulomb mode then contributes $E_{\rm std}(a)+\Delta(a,b)$, with
+\begin{align}
+\Delta(a,b)={}&R(a,b)+E_{\rm std}(b)+\frac{2b}{a}E_{\rm std}(a)-\frac{b}{a}E_{\rm std}(2a),\nonumber\\
+R(a,b)={}&\tfrac12\sum_{\bm k}{}'\Bigl[\omega_C-\omega_a-\omega_b-\frac{2b}{a}\omega_a+\frac{b}{a}\omega_{2a}+\Bigl(1+\frac ba\Bigr)k\Bigr].
+\label{eq:rb-Delta}
+\end{align}
+The summand of $R$ falls as $(5a^2b-ab^2)/(32k^5)$, which follows from the $k^{-5}$ terms of Eq.~(\ref{eq:rb-omegaC}) and of the scalars, so we sum shells with $|\bm n|\le60$ and add the tail analytically. %
+Because each $E_{\rm std}$ is the exact $\MSbar$ finite-volume energy, $\Delta$ does not depend on the subtraction: replacing $2a$ by $1.5a$ or $3a$ changes it by at most $5\times10^{-9}$. %
+Its scale dependence follows from Eq.~(\ref{eq:rb-weights}),
+\begin{equation}
+\frac{d\Delta}{d\ln\mu^2}=-\frac{1}{64\pi^2}\sum_jc_j\mu_j^4=-\frac{b^2-2ab}{64\pi^2},
+\label{eq:rb-Delta-mu}
+\end{equation}
+which the numerics reproduce to $10^{-15}$. %
+
+The Goldstone mass enters only through $\Delta(a,b)$.
+Its first-order part is $\partial_b\Delta|_{b=0}=\frac12\langle\pi^2\rangle_{\rm FV}$, the finite-volume fluctuation with Coulomb weight $(k^2+a)^{1/2}/(2k^2)$, which tends to $T_B/2$ as $a\to0$. %
+Keeping only this term moves $m_c$ by $-0.0005$ and $-0.0009\GeV$ at $\Pone=0.9$ and $1/2$ and $\Gamma(\lambda=-0.010)$ by $0.3\%$, so the exact treatment matters little; we keep it. %
+
+\subsection{The one-loop matching potential}
+\label{sec:rb-dVMC}
+
+Summing two transverse modes and the Coulomb mode for each of $W$, $W$, and $Z$, and adding the radial mode and the top quark, gives the one-loop matching potential
+\begin{align}
+\Delta V_{\rm MC}(r)={}&\sum_{V=W,W,Z}\Bigl[3D_P(a_V)+2V_{\rm CW}(a_V;\tfrac12)+V_{\rm CW}(a_V;\tfrac32)+\Delta(a_V,b)\Bigr]\nonumber\\
+&+E_{\rm std}(3\lambda r^2)-12\bigl[D_A(\tilde m_t^2)+V_{\rm CW}(\tilde m_t^2;\tfrac32)\bigr],
+\label{eq:rb-dVMC}
+\end{align}
+where $D_P$ and $D_A$ are $D_\theta$ for periodic and antiperiodic fields.
+The top quark has $4\times3=12$ real degrees of freedom per Dirac field and color sum, antiperiodic boundary conditions, and the fermionic sign; the vector constants $2\times\frac12+1\times\frac32=3\times\frac56$ are those of Eq.~(\ref{eq:rb-polcount}).
+The photon and the light fermions are massless at this order and do not depend on $r$.
+Equation~(\ref{eq:rb-dVMC}) is added to the radial potential of the zero-mode problem in Sec.~\ref{rep:h-reduced}; its field dependence is shown by the diagrams of Fig.~\ref{fig:rb-diagrams}(a)--(d).
+
+\begin{figure}[t]
+\centering
+\tikzset{every picture/.style={line width=0.7pt}}
+\begin{tabular}{cccc}
+\begin{tikzpicture}[baseline={(0,0)}]
+\begin{feynman}
+\vertex (c) at (0,0);
+\vertex [crossed dot] (x1) at (0,0.75) {};
+\vertex [crossed dot] (x2) at (0.75,0) {};
+\vertex [crossed dot] (x3) at (0,-0.75) {};
+\vertex [crossed dot] (x4) at (-0.75,0) {};
+\diagram*{
+ (x1) -- [scalar, quarter left] (x2) -- [scalar, quarter left] (x3) -- [scalar, quarter left] (x4) -- [scalar, quarter left] (x1),
+};
+\end{feynman}
+\node at (1.05,0.55) {\small $m^2$};
+\end{tikzpicture}
+&
+\begin{tikzpicture}[baseline={(0,0)}]
+\begin{feynman}
+\vertex (v) at (0,0);
+\vertex (e1) at (-0.95,-0.65);
+\vertex (e2) at (0.95,-0.65);
+\vertex (t) at (0,1.2);
+\diagram*{
+ (e1) -- [double, edge label'=\(r\)] (v) -- [double, edge label'=\(r\)] (e2),
+ (v) -- [boson, half left] (t) -- [boson, half left] (v),
+};
+\end{feynman}
+\end{tikzpicture}
+&
+\begin{tikzpicture}[baseline={(0,0)}]
+\begin{feynman}
+\vertex (c) at (0,0);
+\vertex [dot] (a) at (-0.8,0) {};
+\vertex [dot] (b) at (0.8,0) {};
+\diagram*{
+ (a) -- [scalar, half left, edge label=\(\pi\)] (b) -- [photon, half left, edge label=\(A_0\)] (a),
+};
+\end{feynman}
+\end{tikzpicture}
+&
+\begin{tikzpicture}[baseline={(0,0)}]
+\begin{feynman}
+\vertex (c) at (0,0);
+\vertex [crossed dot] (a) at (0,0.75) {};
+\vertex [crossed dot] (b) at (0,-0.75) {};
+\diagram*{
+ (a) -- [fermion, half left, edge label'=\(t\)] (b) -- [fermion, half left] (a),
+};
+\end{feynman}
+\node at (0.55,0.95) {\small $\tilde m_t$};
+\end{tikzpicture}
+\\[2pt]
+(a) & (b) & (c) & (d)\\[8pt]
+\begin{tikzpicture}[baseline={(0,0)}]
+\begin{feynman}
+\vertex (c) at (0,0);
+\vertex (a) at (-0.65,0);
+\vertex (b) at (0.65,0);
+\vertex [crossed dot, label=left:\(c\)] (ca) at (-1.45,0) {};
+\vertex [crossed dot, label=right:\(c\)] (cb) at (1.45,0) {};
+\diagram*{
+ (ca) -- [photon] (a) -- [charged scalar, half left] (b) -- [charged scalar, half left] (a),
+ (b) -- [photon] (cb),
+};
+\end{feynman}
+\end{tikzpicture}
+&
+\begin{tikzpicture}[baseline={(0,0)}]
+\begin{feynman}
+\vertex (c) at (0,0);
+\vertex (a) at (-0.6,0);
+\vertex (b) at (0.6,0);
+\vertex [crossed dot, label=left:\(c\)] (ca) at (-1.3,0.6) {};
+\vertex [crossed dot, label=left:\(\Phi_0\)] (pa) at (-1.3,-0.6) {};
+\vertex [crossed dot, label=right:\(c\)] (cb) at (1.3,0.6) {};
+\vertex [crossed dot, label=right:\(\Phi_0\)] (pb) at (1.3,-0.6) {};
+\diagram*{
+ (ca) -- [photon] (a), (pa) -- [scalar] (a),
+ (a) -- [photon, half left, edge label=\(V_\perp\)] (b) -- [scalar, half left, edge label=\(\delta\Phi\)] (a),
+ (b) -- [photon] (cb), (b) -- [scalar] (pb),
+};
+\end{feynman}
+\end{tikzpicture}
+&
+\begin{tikzpicture}[baseline={(0,0)}]
+\begin{feynman}
+\vertex (c) at (0,0);
+\vertex [dot] (a) at (-0.8,0) {};
+\vertex [dot] (b) at (0.8,0) {};
+\vertex (m1) at (0,0.8);
+\vertex (m2) at (0,-0.8);
+\vertex [crossed dot, label=above:\(q_\pi c\)] (c1) at (0,1.45) {};
+\vertex [crossed dot, label=below:\(q_A c\)] (c2) at (0,-1.45) {};
+\diagram*{
+ (a) -- [scalar, quarter left] (m1) -- [scalar, quarter left] (b) -- [photon, quarter left] (m2) -- [photon, quarter left] (a),
+ (m1) -- [photon] (c1), (m2) -- [photon] (c2),
+};
+\end{feynman}
+\end{tikzpicture}
+&
+\begin{tikzpicture}[baseline={(0,0)}]
+\begin{feynman}
+\vertex (c) at (0,0);
+\vertex [crossed dot, label=left:\(\Phi_0\)] (a) at (-0.8,0) {};
+\vertex [crossed dot, label=right:\(\Phi_0\)] (b) at (0.8,0) {};
+\vertex (m1) at (0,0.8);
+\vertex (m2) at (0,-0.8);
+\vertex [crossed dot, label=above:\(q_Lc\)] (c1) at (0,1.45) {};
+\vertex [crossed dot, label=below:\(q_Rc\)] (c2) at (0,-1.45) {};
+\diagram*{
+ (a) -- [fermion, quarter left, edge label=\(t_L\)] (m1) -- [fermion, quarter left] (b) -- [fermion, quarter left, edge label=\(t_R\)] (m2) -- [fermion, quarter left] (a),
+ (m1) -- [photon] (c1), (m2) -- [photon] (c2),
+};
+\end{feynman}
+\end{tikzpicture}
+\\[2pt]
+(e) & (f) & (g) & (h)
+\end{tabular}
+\caption{One-loop diagrams of the finite-volume matching (non-zero modes in the loops; crossed dots are zero-mode backgrounds).
+(a)~One tower of non-zero modes with any number of insertions of its field-dependent squared mass $m^2(r)$: the $\MSbar$ finite-volume energy $E_{\rm std}=D_\theta+V_{\rm CW}$ of Eq.~(\ref{eq:rb-Estd-def}).
+(b)~Its first-order part, the tadpole $(T_\theta/2)\,m^2$ of Eq.~(\ref{eq:rb-tadpole}), shown for a gauge non-zero mode attached to the Higgs zero mode $r$ (double lines).
+(c)~Longitudinal sector of a massive vector in Coulomb gauge: the Goldstone mode $\pi$ and the instantaneous Coulomb field $A_0$ mixed by $m_VA_0\dot\pi$ (dots), Eqs.~(\ref{eq:rb-coulomb-L})--(\ref{eq:rb-coulomb}).
+(d)~Top-quark tower with insertions of $\tilde m_t=y_tr/\sqrt2$.
+(e)--(h)~Terms of order $r^2c^2$ in a holonomy background $c$ (Sec.~\ref{sec:rb-r2c2}): (e)~twisted curvature of a charged tower (charged-component approximation); (f)~transverse vev mixing through the vertex $2(c\Phi_0)^\dagger V\delta\Phi$ of background-covariant Coulomb gauge; (g)~Coulomb mismatch, in which the Goldstone mode and the Gauss kernel are twisted by different charges $q_\pi\neq q_A$; (h)~top chiral loop, in which $t_L$ and $t_R$ are twisted by different charges and joined by the vev.}
+\label{fig:rb-diagrams}
+\end{figure}
+
+\subsection{Renormalization-group consistency and the Coulomb-gauge anomalous dimension}
+\label{sec:rb-rg}
+
+The explicit $\mu$ dependence of $\Delta V_{\rm MC}$ must cancel the one-loop running of the couplings in the tree potential, up to a rescaling of the field.
+We now show that this happens if and only if the Higgs field carries the Coulomb-gauge anomalous dimension.
+Per real degree of freedom, Eq.~(\ref{eq:rb-VCW}) gives $\mu\partial_\mu V_{\rm CW}=-m^4/(32\pi^2)$, and the finite-volume parts $D_\theta$ do not depend on $\mu$.
+Per massive vector the logarithmic coefficient of $\Delta V_{\rm MC}$ is $2a^2$ from the transverse modes and, by Eq.~(\ref{eq:rb-Delta-mu}), $a^2+b^2-2ab=(a-b)^2$ from the Coulomb mode, a total of $3a^2+b^2-2ab$.
+Adding the radial mode and the top quark ($-12$ real degrees of freedom of mass $\tilde m_t$),
+\begin{equation}
+\mu\partial_\mu\Delta V_{\rm MC}=-\frac{1}{32\pi^2}\Bigl[6a_W^2+3a_Z^2+3b^2-2b(2a_W+a_Z)+(3\lambda r^2)^2-12\tilde m_t^4\Bigr].
+\label{eq:rb-mudV}
+\end{equation}
+Inserting Eq.~(\ref{eq:rb-masses}),
+\begin{equation}
+\mu\partial_\mu\Delta V_{\rm MC}=-\frac{r^4}{32\pi^2}\Bigl[\tfrac{3}{16}\bigl(2g_2^4+g_Z^4\bigr)+12\lambda^2-3y_t^4-\tfrac{\lambda}{2}\bigl(3g_2^2+g_Y^2\bigr)\Bigr].
+\label{eq:rb-mudV2}
+\end{equation}
+The one-loop running of the tree potential $\frac\lambda4r^4$ at fixed bare field is $\frac14\beta_\lambda^{(1)}r^4$, with
+\begin{equation}
+16\pi^2\beta_\lambda^{(1)}=24\lambda^2-6y_t^4+\tfrac38\bigl[2g_2^4+(g_2^2+g_Y^2)^2\bigr]+\lambda\bigl(12y_t^2-9g_2^2-3g_Y^2\bigr).
+\label{eq:rb-betalam}
+\end{equation}
+The terms $g^4$, $\lambda^2$, and $y_t^4$ of Eq.~(\ref{eq:rb-mudV2}) cancel those of $\beta_\lambda^{(1)}$ one by one, and the sum leaves
+\begin{equation}
+\mu\partial_\mu\Delta V_{\rm MC}+\frac{\beta_\lambda^{(1)}}{4}r^4=\frac{\lambda r^4}{64\pi^2}\bigl(12y_t^2-6g_2^2-2g_Y^2\bigr)\equiv\gamma_\phi\,\lambda r^4 .
+\label{eq:rb-rg}
+\end{equation}
+The remainder is the field rescaling $r\to r(1-\gamma_\phi\ln\mu)$ of the tree term, so the one-loop energy is scale independent if and only if
+\begin{equation}
+\gamma_\phi^{C}=\frac{3y_t^2-\frac32g_2^2-\frac12g_Y^2}{16\pi^2}.
+\label{eq:rb-gammaC}
+\end{equation}
+This is the one-loop $R_\xi$ value at gauge parameter $\xi=1$; in $R_\xi$ gauges the gauge part is proportional to $3-\xi$.
+The Landau-gauge counting, with $3a^2+b^2$ per vector and no term $-2ab$, requires the Landau value $(3y_t^2-\frac94g_2^2-\frac34g_Y^2)/(16\pi^2)$; the Coulomb counting has the additional term $-2b\sum_Va_V=-\lambda r^4(3g_2^2+g_Y^2)/2$, which raises $\gamma_\phi$ by $(3g_2^2+g_Y^2)/(64\pi^2)$ to Eq.~(\ref{eq:rb-gammaC}).
+Numerically the left side of Eq.~(\ref{eq:rb-rg}) minus $\gamma_\phi^C\lambda r^4$ vanishes to $10^{-14}$ for $r=1$--$5$ at $\lambda=-0.010$. %
+The unitary counting with $V_{\rm CW}$ leaves $3.8\times10^{-4}\times\lambda r^4/4$, the missing $b^2$ of the three Goldstone modes. %
+With the couplings at $\mub$ of Sec.~\ref{rep:h-smmap} the Coulomb value is $\gamma_\phi^C=+2.1\times10^{-4}$ and the Landau value $-1.42\times10^{-3}$: the gauge and top parts nearly cancel in Coulomb gauge. %
+
+The one-loop result is thus scale independent to this order, and the choice of $\mu$ is a convention.
+We evaluate the matching and all couplings at $\mu=1/L$ and take the residual scale dependence as the two-loop error (Sec.~\ref{sec:rb-scale}).
+The field normalization $\exp(-\gamma_\phi^C\ln c)$ that accompanies a scale change $\mu\to c\mu$ moves $m_c$ by at most $0.002\GeV$ even at $c=4\pi$. %
+
+\paragraph{The top threshold.}
+If the explicit top logarithm is moved together with $y_t$, the one-loop cancellation fails and $m_c$ moves by $\pm0.15\GeV$; this is the uncompensated $-6y_t^4/(16\pi^2)$ of $\beta_\lambda$, not a physical uncertainty. %
+The consistent variation moves only the Yukawa coupling of the top loop, $y_t\to y_t(c_t\mu)$, and keeps its logarithm at $\mu$.
+It probes the scale ambiguity of the finite-volume top term, $-12D_A(\tilde m_t^2)\simeq-12\cdot\frac{T_F}{2}\tilde m_t^2=+0.035\,r^2\propto y_t^2(\mu)$, which the two-loop QCD corrections to that term would compensate. %
+The positive sign of this term means that the antiperiodic top tower stabilizes the zero mode, opposite to the periodic bosons.
+
+\subsection{The slow coordinate and other one-loop countings}
+\label{sec:rb-slow}
+
+The slow coordinate is the radius $r$ of the Coulomb-gauge zero mode of the Higgs field, which has a flat measure and an exactly canonical kinetic term; this is the standard split of slow constant modes from fast non-zero modes on the torus~\cite{Luscher:1982ma,Koller:1987fq,vanBaal:2000zc}.
+In this split the fast modes have $\omega\ge2\pi$, while the slow motion has a gap of about $1.5$. %
+
+A natural alternative is the gauge-invariant zero mode $\rho_0$ of $|\Phi(\bm x)|$, for which the Goldstone modes are absorbed and each vector has three polarizations of mass $a$ (unitary counting).
+Expanding $|\Phi|=r+\delta\rho+\sum_a\pi_a^2/(2r)+\dots$ gives
+\begin{equation}
+\rho_0=|\Phi_0|+C(r),\qquad C(r)=\sum_a\frac{\langle\pi_a^2\rangle_{\rm FV}}{2r}.
+\label{eq:rb-rho0}
+\end{equation}
+We find $rC=-0.33868$ as $r\to0$, equal to $3T_B/2$, and $-0.3432$, $-0.3568$, and $-0.3892$ at $r=1.5$, $3$, and $5$. %
+To first order in $b$ the Coulomb energy and the unitary energy with $V_{\rm CW}$ differ by exactly $V'_{\rm tree}(r)\,C(r)$, which is the origin of their difference.
+
+The unitary counting is not a controlled Born--Oppenheimer variable, for three reasons.
+(i)~The metric of the fast angular modes is proportional to $\rho_0^2$, so at fixed canonical fast variables $\partial_{\rho_0}$ acquires a term $(\pi/\rho_0)\partial_\pi$; this generates diagonal Born--Oppenheimer terms and an induced mass of the same order as the Goldstone term.
+(ii)~The polar measure $\prod_{\bm x}\rho(\bm x)^3$ has weight $1+Z(0)=0$ under $\zeta$ regularization, which removes the meaning of the centrifugal term $3/(8\rho^2)$, and $|\Phi|$ is a composite operator that needs its own renormalization.
+(iii)~The unitary result cannot be repaired by shifting the coordinate: replacing $r$ by $r+C(r)$ in the full potential shifts the gauge zero-point energy and the centrifugal term by $0.06$--$0.15/L$, much more than the Goldstone term, and $r+C(r)$ vanishes at $r\approx0.58$. %
+The shift of the gauge zero-point energy is the seagull part of the cross terms of Sec.~\ref{rep:h-cross}, not a kinetic factor.
+
+Within the Coulomb split the residual Born--Oppenheimer corrections are small.
+The diagonal term $E_{\rm BH}=\sum\frac1{16}[d\ln(Z\omega)/dr]^2\simeq1.1\times10^{-4}\,r^2$ corresponds to $\delta m^2\approx2\times10^{-4}$, about $1/30$ of the first-order Goldstone term $0.0034\,r^2$, and the induced mass $\delta M=5\times10^{-5}$--$5\times10^{-4}$ changes the tunneling exponent by less than $10^{-4}$. %
+Together they move $m_c$ by at most $0.002\GeV$, the Born--Oppenheimer part of the matching error. %
+
+Table~\ref{tab:rb-countings} compares the countings in the one-dimensional model of the matching study, with the earlier mapping. %
+Only the Landau-gauge counting with $V_{\rm CW}$ comes close to the Coulomb result, as expected for $m_V\ll2\pi/L$; the remaining difference comes from the Coulomb weight $(1+a/k^2)^{1/2}$ and the terms of order $b^2$.
+Shifting only the tree and matching parts of the unitary potential by $C(r)$ moves $m_c$ by $+0.011$ and $+0.015\GeV$ at $\Pone=0.9$ and $1/2$; the difference is $C\,dV'_{\rm match}$, formally of higher order in $\hbar$ but as large as the Goldstone term because $V'_{\rm tree}\sim\lambda r^3$ is small. %
+A renormalization-group improvement with $\mu^2=(1+r^2)/L^2$ resums logarithms $\ln(m^2L^2)$ that do not exist in finite volume: for $r\le5$ every field-dependent mass is at least $3.6$ times below $2\pi/L$, and $m_Z$ reaches $2\pi/L$ only at $r\approx18$, so the resulting shift of about $+0.13\GeV$ is spurious. %
+
+\begin{table}[t]
+\centering
+\caption{One-loop countings of the matching in the one-dimensional model of the matching study.
+The width $\Gamma$ (units $1/L$) is evaluated at $\lambda=-0.010$ with the fixed couplings; the shift of the critical top mass (GeV) relative to the Coulomb counting uses the hazard with the earlier Standard Model mapping. %
+The Coulomb result of this model is $m_c=172.35$ and $172.77\GeV$ at $\Pone=0.9$ and $1/2$.} %
+\label{tab:rb-countings}
+\begin{tabular}{lccc}
+\toprule
+Counting & $10^3\,\Gamma$ & $\Delta m_c(0.9)$ & $\Delta m_c(0.5)$ \\
+\midrule
+Unitary, $D_\theta$ only & $2.051$ & $-0.138$ & $-0.184$ \\ %
+Unitary with $V_{\rm CW}$ & $1.510$ & $-0.072$ & $-0.112$ \\ %
+Landau, $D_\theta$ only & $1.433$ & $-0.081$ & $-0.092$ \\ %
+Landau with $V_{\rm CW}$ & --- & $-0.012$ & $-0.016$ \\ %
+Coulomb (this work) & $0.987$ & $0$ & $0$ \\ %
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{One-loop terms of order \texorpdfstring{$r^2c^2$}{r2c2}: vev mixing, Coulomb mismatch, and the top chiral loop}
+\label{sec:rb-r2c2}
+
+The gauge zero modes are constant connections, and charged non-zero modes in their background have twisted boundary conditions.
+Expanded to second order in the holonomy $c$, this gives the cross terms of Sec.~\ref{rep:h-cross}.
+In the charged-component approximation (CCA) of that section each real degree of freedom contributes the curvature of the twisted image sum, Eq.~(\ref{eq:rb-Etheta}), with its own mass and charge [Fig.~\ref{fig:rb-diagrams}(e)].
+Along the broken direction three further one-loop terms of order $r^2c^2$ enter, and here we derive them and show that together they make $\mu=1/L$ a consistent matching scale for the cross terms.
+
+\paragraph{The CCA curvature has no logarithm.}
+For a charged mode with $\omega=(|\bm k-q\bm c|^2+m^2)^{1/2}$ the second derivative at $\bm c=0$, averaged over directions, is $q^2\sum_{\bm k}'(1/\omega-k^2/3\omega^3)=q^2\sum_{\bm k}'(2k^2+3m^2)/(3\omega^3)$.
+At large $k$,
+\begin{equation}
+\frac{2k^2+3m^2}{3\omega^3}=\frac{2}{3k}\Bigl(1+\frac{3m^2}{2k^2}\Bigr)\Bigl(1-\frac{3m^2}{2k^2}+O(k^{-4})\Bigr)=\frac{2}{3k}+O(k^{-5}),
+\label{eq:rb-noLog}
+\end{equation}
+so the $m^2/k^3$ terms cancel and the curvature carries no $\ln\mu$.
+Any scale dependence of the $r^2c^2$ sector must therefore come from the terms below.
+
+\paragraph{Vev mixing in background-covariant Coulomb gauge.}
+The twisted transverse modes of the CCA are exact eigenmodes only in background-covariant Coulomb gauge, $D^{\rm bg}\cdot V\equiv\nabla\cdot V-i[c,V]=0$, so the Higgs--gauge vertex must be taken in that gauge.
+Write $D_i(\Phi_0+\delta\Phi)$ with $D_i=\partial_i-ic_i-iV_i$, where $c$ is the constant holonomy (couplings absorbed), $V$ the gauge non-zero mode, and $\delta\Phi$ the Higgs non-zero mode.
+The terms of $|D_i\Phi|^2$ bilinear in $V$ and $\delta\Phi$ are
+\begin{equation}
+i\Phi_0^\dagger V_i\,D^{\rm bg}_i\delta\Phi+\Phi_0^\dagger c_iV_i\,\delta\Phi+{\rm h.c.},\qquad D^{\rm bg}_i=\partial_i-ic_i .
+\label{eq:rb-vev-raw}
+\end{equation}
+Integrating the first term by parts and using the gauge condition $\partial_iV_i=i[c_i,V_i]$,
+\begin{equation}
+i\Phi_0^\dagger V_i\partial_i\delta\Phi\to-i\Phi_0^\dagger(\partial_iV_i)\delta\Phi=\Phi_0^\dagger[c_i,V_i]\delta\Phi,
+\label{eq:rb-vev-parts}
+\end{equation}
+and adding the remaining pieces, $\Phi_0^\dagger\bigl([c,V]+Vc+cV\bigr)\delta\Phi=2\Phi_0^\dagger c\cdot V\delta\Phi$.
+The vertex is therefore
+\begin{equation}
+\mathcal L_{\rm mix}=2\,(c\Phi_0)^\dagger V\cdot\delta\Phi+{\rm h.c.},
+\label{eq:rb-vev-vertex}
+\end{equation}
+the analogue of $2p\cdot V$ in covariant diagrams, with $c$ in the role of the external momentum.
+In ordinary Coulomb gauge, $\nabla\cdot V=0$, the same steps give the anticommutator $\Phi_0^\dagger\{c,V\}\delta\Phi$, which differs by a commutator and misses the non-abelian channels.
+For a $W^1$ background the vertex (\ref{eq:rb-vev-vertex}) mixes the gauge and Higgs non-zero modes in the channels $W^1\to\delta\rho$, $B\to\pi^1$, $W^2\to\pi^3$, and $W^3\to\pi^\pm$; for a $Z$ background $W^{1,2}$ mix with $\pi^\pm$ with coupling $g_Zg_2$; for a photon background the vertex vanishes because $Q\Phi_0=0$.
+The channel strengths are $3g_2^2+g_Y^2$ in the $W$ direction and $g_Z^2+2g_2^2$ in the $Z$ direction, both proportional to $(3g_2^2+g_Y^2)$ times the tree term.
+
+At second order each channel lowers the energy [Fig.~\ref{fig:rb-diagrams}(f)],
+\begin{equation}
+\delta H\propto-r^2c_{\rm pol}\,S(m_1^2,m_2^2),\qquad S(m_1^2,m_2^2)=\sum_{\bm k}{}'\frac{1}{\omega_1\omega_2(\omega_1+\omega_2)},
+\label{eq:rb-bubble}
+\end{equation}
+with $c_{\rm pol}=\frac23$ exactly, because only transverse fluctuations mix in Coulomb gauge and the transverse projector averages to $(d-1)/d$.
+The bubble $S$ diverges logarithmically and is defined in $\MSbar$ through $S=-4\,d^2E_{\rm std}/d(m^2)^2$ plus an absolutely convergent difference; for equal masses $S=\sum'1/(2\omega^3)$ is exactly $-4\,d^2E_{\rm std}/d(m^2)^2$.
+From Eq.~(\ref{eq:rb-Estd}),
+\begin{equation}
+S(0,0)=-8\Bigl[c_2-\frac{\ln\mu^2L^2+\frac32}{64\pi^2}\Bigr]=-0.0311\ \ (\mu=1/L),\qquad \frac{dS}{d\ln\mu}=\frac{1}{4\pi^2}, %
+\label{eq:rb-S0}
+\end{equation}
+negative because the infrared cutoff $2\pi/L$ of the non-zero modes exceeds $\mu=1/L$; at $\mu=2\pi/L$ it is $+0.016$. %
+Each term alone therefore changes sign between $\mu=1/L$ and $2\pi/L$, and only the sum of all $r^2c^2$ terms is meaningful.
+
+\paragraph{Coulomb mismatch.}
+The Goldstone mode and the Gauss kernel that eliminates $A_0$ are twisted by different charges, $\Delta q=q_\pi-q_A=g_Z/2$ in a $Z$ background and $\Delta q=0$ in a photon background, whereas the CCA gives the Coulomb mode the Goldstone twist with $\omega^2=k^2+a+b$ [Fig.~\ref{fig:rb-diagrams}(g)].
+Repeating the derivation of Eq.~(\ref{eq:rb-coulomb}) with twisted momenta, the exact Coulomb frequency in the charged sector is
+\begin{equation}
+\omega_C^2=\frac{(|\bm k-q_\pi\bm c|^2+b)(|\bm k-q_A\bm c|^2+a)}{|\bm k-q_A\bm c|^2},
+\label{eq:rb-omegaC-twist}
+\end{equation}
+and in the neutral sector we diagonalize the $(\delta\rho,\pi^3,Z_0)$ system with kinetic matrix ${\rm diag}(1,Z_k)$ and the twist coupling $2tk_x$ of $\delta\rho$ and $\pi^3$.
+The difference from the CCA falls as $C_{\rm C}/(2k^3)$, a logarithm, with $C_{\rm C}=2a_W(g_Z/2)^2/3$ in the charged sector (fit over analytic $1.003$) and $C_{\rm C}=0.353\,a_Z(g_Z/2)^2$ in the neutral sector, $6\%$ off the expected $1/3$. %
+The finite Coulomb part is $-0.27$ times the transverse vev mixing for $r\ge2$; in the $W$ direction, where we did not compute it directly, we use this ratio, as the custodial limit $g_Y\to0$ suggests, with a $25\%$ error. %
+
+\paragraph{Top chiral loop.}
+The two chiralities of the top quark carry different charges, so in a holonomy background along the broken direction $t_L$ and $t_R$ are twisted differently, while the vev joins them through $y_t$ [Fig.~\ref{fig:rb-diagrams}(h)].
+Gauge invariance of the Yukawa term fixes the difference of the two twists to the charge $q_\Phi$ of the vev component.
+We diagonalize the chiral Dirac Hamiltonian exactly on each antiperiodic mode, using a $6\times6$ matrix for $t_L\leftrightarrow b_L$ in the $T^1$ direction, take the second derivative in the background numerically, and subtract the CCA value.
+The difference falls as $B/(2k^3)$, the axial logarithm, and in the $T^3$, $Y$, $T^3+Y$, and $T^1$ directions $B/(q_\Phi^2\tilde m_t^2)=1.000\pm0.001$ per color. %
+The finite part, $\approx q_\Phi^2\tilde m_t^2S_A(\tilde m_t^2)$ with $S_A=-0.021$ to $-0.028$, is negative and softens the gauge zero modes. %
+
+\paragraph{Renormalization-group closure.}
+In units of $c$ the tree-level Higgs--gauge-zero-mode term $\Phi^\dagger(c\cdot T)^2\Phi$ contains no coupling, because $g\,c$ is not renormalized in background-field gauge.
+Its only scale dependence comes from the Higgs field normalization, $d\ln({\rm tree})/d\ln\mu=-2\gamma_\phi^C$, so the logarithms of all one-loop $r^2c^2$ terms must add up to $+2\gamma_\phi^C$ times the tree term.
+The CCA curvature has none [Eq.~(\ref{eq:rb-noLog})].
+The top chiral loop gives exactly the top part, $3y_t^2$ in the numerator of Eq.~(\ref{eq:rb-gammaC}).
+The transverse vev mixing gives exactly $4/3$ of the gauge part in both the $W$ and $Z$ directions: in units in which the gauge part of $\gamma_\phi$ is $3-\xi$, so that Eq.~(\ref{eq:rb-gammaC}) carries $2$, the transverse Coulomb-gauge bubbles carry $\frac83$.
+The Coulomb mismatch supplies $-\frac13$, the remaining $-\frac23$ units.
+In the $Z$ direction the computed sum, $\frac43-0.34$, closes on the requirement to $0.994$, $0.973$, $0.993$, and $0.990$ at $r=2$, $3$, $4$, and $5$. %
+At $r=1$ the fit of the $k^{-3}$ coefficient is noisy (closure $0.87$), so the main calculation scales $C_{\rm C}\propto r^2$ from $r=5$. %
+Hence $\mu=1/L$ is a consistent matching scale for the cross terms as well: moving the one-loop terms and the Higgs normalization together from $1/L$ to $2\pi/L$ changes the result only through two-loop terms and the closure residual of at most $3\%$. %
+
+In the final model these terms shift the critical mass, relative to the CCA, by $+0.021$, $+0.028$, and $+0.034\GeV$ (gauge part) and $-0.017$, $-0.022$, and $-0.027\GeV$ (top chiral loop) at $\Pone=0.9$, $0.5$, and $0.1$, a net $+0.005$, $+0.006$, and $+0.007\GeV$. %
+The cancellation is the one required by the small value $\gamma_\phi^C\approx2\times10^{-4}$ of Eq.~(\ref{eq:rb-gammaC}). %
+
+\subsection{Matching-scale dependence in the final model}
+\label{sec:rb-scale}
+
+The two-loop finite-volume matching is not computed; we estimate it by the dependence on the matching scale.
+We set $\mu=c\,\mub/(\cosh2\tau)^{1/2}$ at every node of the hazard of Sec.~\ref{rep:h-survival} and repeat the full node-by-node calculation of the final model in four steps.
+(i)~The tree-level quartic, the matching $\Delta V_{\rm MC}$, the gauge profiles, the cross terms, and $g_3$ take their couplings at $c\mu$, and the conditional Gaussian of the gauge zero modes is recomputed with $g(c\mu)$.
+(ii)~The matching is $\MSbar$-subtracted at $(\mu L)^2=c^2$, and the field normalization $\exp(-\gamma_\phi^C\ln c)$ multiplies $\frac\lambda4r^4$ and $\Delta V_{\rm MC}$, which keeps the $r$ sector one-loop consistent (Sec.~\ref{sec:rb-rg}).
+(iii)~In the $r^2c^2$ sector neither the tree-level normalization nor the explicit subtraction scale of the cross terms moves.
+This is equivalent to moving both, because the one-loop logarithms of that sector close on $2\gamma_\phi^C$ times the tree term to $97$--$99\%$; the error of this step is at most $3\%$ of $2\gamma_\phi^C\ln c$ times the tree term and negligible. %
+(iv)~The top threshold $c_t$ moves the Yukawa coupling of every top loop, in $\Delta V_{\rm MC}$ and in the cross terms, to $c_t\mu$ and keeps the explicit logarithms at $\mu$.
+Each variant uses the final roots as seeds and the same windows, for ten top masses and eleven nodes.
+For $c=1$ the recomputed roots reproduce the final ones to $2\times10^{-12}$, and so do the critical masses (in GeV); none of the 66 node jobs of the six variants needed rescue. %
+
+\begin{table}[t]
+\centering
+\caption{Shift of the critical top mass (GeV) under a change of the matching scale $\mu\to c\,\mu$ or of the top-threshold scale $\mu\to c_t\,\mu$ in the final model, relative to $c=c_t=1$, at $\alpha_s(M_Z)=0.1180$, and the adopted matching item of the error budget.} %
+\label{tab:rb-muscan}
+\begin{tabular}{lccc}
+\toprule
+Variant & $\Pone=0.9$ & $\Pone=0.5$ & $\Pone=0.1$ \\
+\midrule
+$c=\frac12$ & $+0.0022$ & $+0.0054$ & $+0.0080$ \\ %
+$c=2$ & $-0.0095$ & $-0.0128$ & $-0.0160$ \\ %
+$c=2\pi$ & $-0.0391$ & $-0.0489$ & $-0.0582$ \\ %
+$c_t=\frac12$ & $+0.0084$ & $+0.0120$ & $+0.0153$ \\ %
+$c_t=2$ & $-0.0082$ & $-0.0117$ & $-0.0150$ \\ %
+\midrule
+Adopted & $^{+0.009}_{-0.039}$ & $^{+0.012}_{-0.049}$ & $^{+0.015}_{-0.058}$ \\ %
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:rb-muscan} lists the shifts.
+Within $c\in[\frac12,2]$ the change is carried almost entirely by the top Yukawa coupling of the finite-volume top term: $c=2$ and $c_t=2$ give nearly the same shift.
+At $c=2\pi$ a curvature of order $\ln^2c$ appears, the signature of the two-loop terms.
+The shifts are of the same size as in the one-dimensional matching study with the earlier mapping ($c=2\pi$: $-0.034$ and $-0.043\GeV$; $c_t\in[\frac12,2]$: $\pm0.009$ and $\pm0.012\GeV$ at $\Pone=0.9$ and $1/2$) and about $15\%$ larger at $c=2\pi$. %
+The closure of the cross-term logarithms does not reduce this item, because the scan probes the $r$ sector, where the two-loop finite-volume top term dominates.
+
+The scale and threshold variations probe the same source, $y_t(\mu)$ in the finite-volume top term, so we take their envelope on each side rather than their quadrature sum.
+To it we add in quadrature the Born--Oppenheimer item, $0.002\GeV$, of Sec.~\ref{sec:rb-slow}, and we use the conservative range $c\in[\frac12,2\pi]$, which extends beyond the natural scale $\mu_*=3.41/L$ of Eq.~(\ref{eq:rb-mustar}); this one-sided extension is why the item is asymmetric. %
+The result is the matching row of the error budget, $^{+0.009}_{-0.039}$, $^{+0.012}_{-0.049}$, and $^{+0.015}_{-0.058}\GeV$ at $\Pone=0.9$, $0.5$, and $0.1$; a quadrature sum would add at most $0.002\GeV$ on either side. %
+The entries at $\Pone=0.1$ are computed directly.
+The estimate assumes that the two-loop finite-volume terms have no unusually large constant.

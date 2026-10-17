@@ -1,0 +1,34 @@
+01:13:36 checks cached
+01:13:36 mmr_star_172.76 cached
+01:13:36 mmr_quad_172.76 cached
+01:13:37 v11_172.2_base cached
+01:13:37 v11_172.2_xi3 cached
+01:13:37 v11_172.2_rge2 cached
+01:13:37 v11_172.2_notorus cached
+01:13:37 v11_172.2_zeta0 cached
+01:13:37 v11_172.6_base cached
+01:13:37 v11_172.6_xi3 cached
+01:13:37 v11_172.6_rge2 cached
+01:13:37 v11_172.6_notorus cached
+01:13:37 v11_172.6_zeta0 cached
+01:13:37 v11_173.0_base cached
+01:13:37 v11_173.0_xi3 cached
+01:13:37 v11_173.0_rge2 cached
+01:13:37 v11_173.0_notorus cached
+01:13:37 v11_173.0_zeta0 cached
+01:13:37 v11_172.6_nodes60 cached
+01:13:37 v11_172.6_L0_2dLSS cached
+01:14:06 mmr_star_173.36 ok 29.6s
+01:14:10 mmrB_star_172.16 ok 33.2s
+01:14:10 mmr_star_172.16 ok 33.6s
+01:14:36 mmrB_star_173.36 ok 29.7s
+01:14:39 mmrD_star_rge2 ok 28.7s
+01:14:44 mmrB_star_171.5 ok 34.4s
+01:15:06 mmrD_star_zeta0 ok 30.1s
+01:15:11 mmrD_star_noalpha ok 32.3s
+01:15:11 mmrD_star_xi3 ok 27.0s
+01:15:37 mmrD_star_nolight ok 31.1s
+01:15:40 mmrD_star_muEW246 ok 29.3s
+01:15:43 mmrD_star_muEWMZ ok 31.6s
+01:16:05 v11_172.6_noalpha ok 28.5s
+01:16:10 v11_172.6_muEW246 ok 29.6s

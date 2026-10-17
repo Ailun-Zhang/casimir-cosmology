@@ -1,0 +1,39 @@
+Iteration 1: Total fractional error = 1.804854171594436e-003  (t=5.4s)
+Iteration 2: Total fractional error = 7.720362172955848e-005  (t=11.2s)
+Iteration 3: Total fractional error = 2.535523746088551e-006  (t=16.9s)
+Iteration 4: Total fractional error = 6.024160915030976e-008  (t=21.7s)
+Iteration 5: Total fractional error = 5.108341812813429e-010  (t=26.7s)
+Iteration 6: Total fractional error = 1.734490592057618e-011  (t=31.9s)
+done niter=5 t=31.9s
+WARNING: the input renormalization scale Q = 43.025000 seems too low.
+WARNING: the input renormalization scale Q = 40.000000 seems too low.
+WARNING: the input renormalization scale Q = 40.000000 seems too low.
+WARNING: the input renormalization scale Q = 40.000000 seems too low.
+WARNING: the input renormalization scale Q = 43.025000 seems too low.
+WARNING: the input renormalization scale Q = 43.025000 seems too low.
+WARNING: the input renormalization scale Q = 40.000000 seems too low.
+WARNING: the input renormalization scale Q = 40.000000 seems too low.
+WARNING: the input renormalization scale Q = 40.000000 seems too low.
+WARNING: the input renormalization scale Q = 43.025000 seems too low.
+WARNING: the input renormalization scale Q = 43.025000 seems too low.
+WARNING: the input renormalization scale Q = 40.000000 seems too low.
+WARNING: the input renormalization scale Q = 40.000000 seems too low.
+WARNING: the input renormalization scale Q = 40.000000 seems too low.
+WARNING: the input renormalization scale Q = 43.025000 seems too low.
+WARNING: the input renormalization scale Q = 43.025000 seems too low.
+WARNING: the input renormalization scale Q = 40.000000 seems too low.
+WARNING: the input renormalization scale Q = 40.000000 seems too low.
+WARNING: the input renormalization scale Q = 40.000000 seems too low.
+WARNING: the input renormalization scale Q = 43.025000 seems too low.
+WARNING: the input renormalization scale Q = 43.025000 seems too low.
+WARNING: the input renormalization scale Q = 40.000000 seems too low.
+WARNING: the input renormalization scale Q = 40.000000 seems too low.
+WARNING: the input renormalization scale Q = 40.000000 seems too low.
+WARNING: the input renormalization scale Q = 43.025000 seems too low.
+WARNING: the input renormalization scale Q = 43.025000 seems too low.
+WARNING: the input renormalization scale Q = 40.000000 seems too low.
+WARNING: the input renormalization scale Q = 40.000000 seems too low.
+WARNING: the input renormalization scale Q = 40.000000 seems too low.
+WARNING: the input renormalization scale Q = 43.025000 seems too low.
+
+rc=0 t=32.0

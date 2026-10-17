@@ -1,0 +1,183 @@
+{
+ "step": "07_realtime_xi",
+ "quick": {
+  "step": "07_realtime_xi",
+  "mode": "quick",
+  "utc": "2026-10-17T01:55:12Z",
+  "python": "3.12.13",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 204 Stepping 2, GenuineIntel",
+  "cpu_count": 16,
+  "numpy": "2.5.1",
+  "scipy": "1.17.1",
+  "n_checks": 3,
+  "n_pass": 3,
+  "n_skipped": 0,
+  "all_pass": true,
+  "checks": [
+   {
+    "id": "node_regression",
+    "what": "node (172.60, u = 0): run02 cross terms reproduce the D129 run01 node; run05 difference",
+    "paper": "PRD App. D 2 (method check)",
+    "tol_abs": 1e-12,
+    "tol_rel": 1e-08,
+    "mode": "tree",
+    "computed_from": "output/higgs/quick/w/claims_run05/run01/xi_run05/xi_regress.json",
+    "expected_from": "higgs/07_realtime_xi/expected/w/claims_run05/run01/xi_run05/xi_regress.json",
+    "n_leaves": 18,
+    "n_leaves_all": 18,
+    "max_abs_diff": 0.0,
+    "max_rel_diff": 0.0,
+    "n_mismatch": 0,
+    "first_mismatches": [],
+    "passed": true
+   },
+   {
+    "id": "xi_quick_run05",
+    "what": "xi_c(m_t) at the run05 centre from the real-time runs (C157_xi_quick.json)",
+    "paper": "PRL xi condition; PRD Sec. V H",
+    "tol_abs": 1e-10,
+    "tol_rel": 1e-08,
+    "mode": "tree",
+    "computed_from": "output/higgs/quick/w/claims_run05/run01/xi_run05/C157_xi_quick.json",
+    "expected_from": "higgs/07_realtime_xi/expected/w/claims_run05/run01/xi_run05/C157_xi_quick.json",
+    "n_leaves": 1118,
+    "n_leaves_all": 1121,
+    "max_abs_diff": 0.0,
+    "max_rel_diff": 0.0,
+    "n_mismatch": 0,
+    "first_mismatches": [],
+    "passed": true
+   },
+   {
+    "id": "xi_summary_run05",
+    "what": "xi_c run05 vs run02, EW image, universal xi_c(P1) residuals",
+    "paper": "PRL xi_H(mu_b) >~ 0.074 (centre) / 0.08 (conservative)",
+    "tol_abs": 1e-10,
+    "tol_rel": 1e-08,
+    "mode": "tree",
+    "computed_from": "output/higgs/quick/w/claims_run05/run01/xi_run05_summary.json",
+    "expected_from": "higgs/07_realtime_xi/expected/w/claims_run05/run01/xi_run05_summary.json",
+    "n_leaves": 201,
+    "n_leaves_all": 220,
+    "max_abs_diff": 0.0,
+    "max_rel_diff": 0.0,
+    "n_mismatch": 0,
+    "first_mismatches": [],
+    "passed": true
+   }
+  ],
+  "timings_s": {
+   "xi_regress.py": 11.17,
+   "rt_quick.py post": 0.7,
+   "xi_compare.py": 0.61
+  },
+  "workers": 8,
+  "note": "final self-test of the release: fresh copy without output/, python run_all.py --quick --workers 8, 2026-10-17T01:48-02:23Z; 25/25 runs fresh and passing"
+ },
+ "summary": {
+  "quick": {
+   "all_pass": true,
+   "n_pass": 3,
+   "n_checks": 3,
+   "utc": "2026-10-17T01:55:12Z"
+  },
+  "full": {
+   "all_pass": true,
+   "n_pass": 4,
+   "n_checks": 4,
+   "utc": "2026-10-15T19:45:24Z"
+  }
+ },
+ "full": {
+  "step": "07_realtime_xi",
+  "mode": "full",
+  "utc": "2026-10-15T19:45:24Z",
+  "python": "3.12.13",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 204 Stepping 2, GenuineIntel",
+  "cpu_count": 16,
+  "numpy": "2.5.1",
+  "scipy": "1.17.1",
+  "n_checks": 4,
+  "n_pass": 4,
+  "n_skipped": 0,
+  "all_pass": true,
+  "checks": [
+   {
+    "id": "node_regression",
+    "what": "node (172.60, u = 0): run02 cross terms reproduce the D129 run01 node; run05 difference",
+    "paper": "PRD App. D 2 (method check)",
+    "tol_abs": 1e-12,
+    "tol_rel": 1e-08,
+    "mode": "tree",
+    "computed_from": "output/higgs/full/w/claims_run05/run01/xi_run05/xi_regress.json",
+    "expected_from": "higgs/07_realtime_xi/expected/w/claims_run05/run01/xi_run05/xi_regress.json",
+    "n_leaves": 18,
+    "max_abs_diff": 0.0,
+    "max_rel_diff": 0.0,
+    "n_mismatch": 0,
+    "first_mismatches": [],
+    "passed": true
+   },
+   {
+    "id": "xi_quick_run05",
+    "what": "xi_c(m_t) at the run05 centre from the real-time runs (C157_xi_quick.json)",
+    "paper": "PRL xi condition; PRD Sec. V H",
+    "tol_abs": 1e-10,
+    "tol_rel": 1e-08,
+    "mode": "tree",
+    "computed_from": "output/higgs/full/w/claims_run05/run01/xi_run05/C157_xi_quick.json",
+    "expected_from": "higgs/07_realtime_xi/expected/w/claims_run05/run01/xi_run05/C157_xi_quick.json",
+    "n_leaves": 1118,
+    "max_abs_diff": 3.3124336606960014e-12,
+    "max_rel_diff": 4.4706563247539895e-10,
+    "n_mismatch": 0,
+    "first_mismatches": [],
+    "passed": true
+   },
+   {
+    "id": "xi_summary_run05",
+    "what": "xi_c run05 vs run02, EW image, universal xi_c(P1) residuals",
+    "paper": "PRL xi_H(mu_b) >~ 0.074 (centre) / 0.08 (conservative)",
+    "tol_abs": 1e-10,
+    "tol_rel": 1e-08,
+    "mode": "tree",
+    "computed_from": "output/higgs/full/w/claims_run05/run01/xi_run05_summary.json",
+    "expected_from": "higgs/07_realtime_xi/expected/w/claims_run05/run01/xi_run05_summary.json",
+    "n_leaves": 162,
+    "max_abs_diff": 1.5477064074786995e-12,
+    "max_rel_diff": 6.600071909710426e-09,
+    "n_mismatch": 0,
+    "first_mismatches": [],
+    "passed": true
+   },
+   {
+    "id": "full_calib",
+    "what": "node calibration to the run05 2D widths",
+    "paper": "PRD Sec. V H",
+    "tol_abs": 1e-09,
+    "tol_rel": 1e-06,
+    "mode": "tree",
+    "computed_from": "output/higgs/full/w/claims_run05/run01/xi_run05/C157_calib.json",
+    "expected_from": "higgs/07_realtime_xi/expected/w/claims_run05/run01/xi_run05/C157_calib.json",
+    "n_leaves": 825,
+    "max_abs_diff": 0.0,
+    "max_rel_diff": 0.0,
+    "n_mismatch": 0,
+    "first_mismatches": [],
+    "passed": true
+   }
+  ],
+  "timings_s": {
+   "xi_regress.py": 9.89,
+   "nm_model.py nodes 15": 101.78,
+   "nm_model.py calib": 12.33,
+   "nm_model.py tables": 4.47,
+   "rt_quick.py run 15 main": 182.5,
+   "rt_quick.py post": 0.48,
+   "xi_compare.py": 0.43
+  },
+  "workers": 15
+ }
+}

@@ -1,0 +1,8 @@
+﻿VarH = (8*F**2*a*m**2 + 32*F*a*b*m*p0 + 16*a**4 + 32*a**3*p0**2 + 32*a**2*b**2 + 8*a**2*k*m + 32*a*b**2*p0**2 + 16*b**4 - 8*b**2*k*m + k**2*m**2)/(32*a**2*m**2)
+(1) VarH(p0=0) - [D113 + F^2/(4a)] = 0
+(2) dVar/db at p0=0 = b*(4*a**2 + 4*b**2 - k*m)/(2*a**2*m**2)
+(3) optimal p0 = [-F*b*m/(2*a**2 + 2*b**2)]
+    reduced Var - D113 = F**2*a/(4*(a**2 + b**2))   (expect F^2 a/(4(a^2+b^2)))
+(4) dVar/da at b=p0=0 = (-4*F**2*a*m**2 + 16*a**4 - k**2*m**2)/(16*a**3*m**2)
+(5) slope-free stationary a: [sqrt(k)*sqrt(m)/2]
+    d2Var/db2 at b=0,p0=0: (4*a**2 - k*m)/(2*a**2*m**2)

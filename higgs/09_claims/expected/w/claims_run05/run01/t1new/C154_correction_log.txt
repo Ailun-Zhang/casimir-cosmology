@@ -1,0 +1,10 @@
+﻿equal_mass {'D1_direct_pole': (0.73, 0.6744), 'D1b_direct_pole_interp': (0.6798, 0.6384), 'D1c_direct_interp_renorm': (0.6781, 0.6372), 'D2_sigma_pole': (0.8609, 0.827), 'D2b_sigma_pole_PDG2025': (0.7397, 0.7039), 'D3_MSR': (0.4998, nan), 'D4_direct_as_mbar': (0.7293, nan), 'D3b_msbar_sigma': (0.6196, nan), 'C1_ATLAS_CMS': (0.7623, 0.7098), 'C2_CMS': (0.9696, 0.9469)}
+continuous {'D1_direct_pole': (0.7275, 0.6265), 'D1b_direct_pole_interp': (0.6776, 0.5998), 'D1c_direct_interp_renorm': (0.6759, 0.5989), 'D2_sigma_pole': (0.8597, 0.8011), 'D2b_sigma_pole_PDG2025': (0.738, 0.6721), 'D3_MSR': (0.4971, nan), 'D4_direct_as_mbar': (0.7268, nan), 'D3b_msbar_sigma': (0.5569, nan), 'C1_ATLAS_CMS': (0.7601, 0.6661), 'C2_CMS': (0.9692, 0.9338)}
+bayes D1 {'flat_170_176': (0.73, 1.4799, 2.027), 'flat_150_200': (0.73, 1.5898, 2.178), 'flat_lambda_pm0p05': (0.7293, 1.1731, 1.609)}
+HLLHC_0.17_as0.0009          s_tot=0.4089 D=1.712 surv<172.282 excl>174.105 P(>=.5|172.6)=0.806 |173.3=0.198
+HLLHC_0.17_as0.0009_interp0.5 s_tot=0.6459 D=1.084 surv<171.891 excl>174.488 P(>=.5|172.6)=0.708 |173.3=0.296
+HLLHC_0.17_as0.00045         s_tot=0.2757 D=2.539 surv<172.500 excl>173.893 P(>=.5|172.6)=0.900 |173.3=0.104
+HLLHC_0.17_as0.00045_interp0.5 s_tot=0.5710 D=1.226 surv<172.014 excl>174.366 P(>=.5|172.6)=0.732 |173.3=0.272
+HLLHC_0.17_as0.0002          s_tot=0.2273 D=3.080 surv<172.579 excl>173.818 P(>=.5|172.6)=0.940 |173.3=0.063
+HLLHC_0.17_as0.0002_interp0.5 s_tot=0.5492 D=1.275 surv<172.050 excl>174.330 P(>=.5|172.6)=0.740 |173.3=0.264
+done 15.776851415634155

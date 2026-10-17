@@ -1,0 +1,532 @@
+{
+ "step": "01_emptiness_gate",
+ "checks": [
+  {
+   "id": "C55_quick",
+   "what": "C55 quick run (2 slices x 25 q)",
+   "paper": "PRD report Sec. 13",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r5/C55_window_gate/C55_quick.json"
+   },
+   "expected": {
+    "file": "expected/r5/C55_window_gate/C55_quick.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "quick"
+   ]
+  },
+  {
+   "id": "C55_main",
+   "what": "C55 production (7 slices x 97 q)",
+   "paper": "PRD Eq. eq:s-windowR",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r5/C55_window_gate/C55_window_gate.json"
+   },
+   "expected": {
+    "file": "expected/r5/C55_window_gate/C55_window_gate.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "C55_refined",
+   "what": "C55 refined (401 q)",
+   "paper": "PRD Eq. eq:s-windowR",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r5/C55_window_gate/C55_window_gate_refined.json"
+   },
+   "expected": {
+    "file": "expected/r5/C55_window_gate/C55_window_gate_refined.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "log10R_free_j1",
+   "what": "log10 R(j=1), free Casimir = 93.86",
+   "paper": "PRD Sec. VI B (GATE-08)",
+   "computed": {
+    "file": "WORK:r5/C55_window_gate/C55_window_gate.json",
+    "key": "slices/0/log10_R"
+   },
+   "expected": {
+    "file": "expected/r5/C55_window_gate/C55_window_gate.json",
+    "key": "slices/0/log10_R"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-08,
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "C55b",
+   "what": "C55 vs C49 pilot time-reversal",
+   "paper": "PRD report Sec. 13",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r5/C55_window_gate/C55b_time_reversal_check.json"
+   },
+   "expected": {
+    "file": "expected/r5/C55_window_gate/C55b_time_reversal_check.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ]
+  },
+  {
+   "id": "C56_NC100",
+   "what": "C56 NC100 occupations",
+   "paper": "PRD Fig. 5(b)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r5/C56_preparation_gate/C56_NC100.json"
+   },
+   "expected": {
+    "file": "expected/r5/C56_preparation_gate/C56_NC100.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "C56_SM_AAA",
+   "what": "C56 SM_AAA occupations",
+   "paper": "PRD Sec. VI C",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r5/C56_preparation_gate/C56_SM_AAA.json"
+   },
+   "expected": {
+    "file": "expected/r5/C56_preparation_gate/C56_SM_AAA.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "C153_emptiness",
+   "what": "all emptiness-gate numbers (v12); 'nq' is ignored: the archived C55 production file predates that meta key",
+   "paper": "PRD Sec. VI A-C; report Table 18 (Sec. 13)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run01/emptiness/C153_emptiness.json"
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run01/emptiness/C153_emptiness.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s",
+    "nq"
+   ]
+  },
+  {
+   "id": "budget_xi030",
+   "what": "sum|n| < 4.762 at xi = 0.2999",
+   "paper": "PRD Eq. eq:s-emptiness (GATE-02)",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run01/emptiness/C153_emptiness.json",
+    "key": [
+     "quanta_budget",
+     "0.299897 (v11 DMC, lambda=+0.01)",
+     "budget_sum_n"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run01/emptiness/C153_emptiness.json",
+    "key": [
+     "quanta_budget",
+     "0.299897 (v11 DMC, lambda=+0.01)",
+     "budget_sum_n"
+    ]
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "budget_xi0258",
+   "what": "sum|n| < 5.047 at xi = 0.258",
+   "paper": "PRD Sec. VI A (GATE-04)",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run01/emptiness/C153_emptiness.json",
+    "key": [
+     "quanta_budget",
+     "0.258 (pure-gauge lower bound)",
+     "budget_sum_n"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run01/emptiness/C153_emptiness.json",
+    "key": [
+     "quanta_budget",
+     "0.258 (pure-gauge lower bound)",
+     "budget_sum_n"
+    ]
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "xi_budget5",
+   "what": "budget = 5 at xi = 0.2649",
+   "paper": "PRD Sec. VI A (GATE-06)",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run01/emptiness/C153_emptiness.json",
+    "key": [
+     "xi_where_budget_equals",
+     "5"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run01/emptiness/C153_emptiness.json",
+    "key": [
+     "xi_where_budget_equals",
+     "5"
+    ]
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "log10R_xi030_j1",
+   "what": "log10 R(j=1) = 94.04 at xi = 0.30",
+   "paper": "PRD Sec. VI B (GATE-09)",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run01/emptiness/C153_emptiness.json",
+    "key": [
+     "reheating_excess",
+     "xi0.30",
+     "log10R",
+     "1"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run01/emptiness/C153_emptiness.json",
+    "key": [
+     "reheating_excess",
+     "xi0.30",
+     "log10R",
+     "1"
+    ]
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "log10R_xi030_j85",
+   "what": "log10 R(j=85) = 96.48",
+   "paper": "PRD Sec. VI B (GATE-10)",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run01/emptiness/C153_emptiness.json",
+    "key": [
+     "reheating_excess",
+     "xi0.30",
+     "log10R",
+     "85"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run01/emptiness/C153_emptiness.json",
+    "key": [
+     "reheating_excess",
+     "xi0.30",
+     "log10R",
+     "85"
+    ]
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "Tmax_0044",
+   "what": "T_max = 7.264 (hL_b = 0.0044)",
+   "paper": "PRD (GATE-12)",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run01/emptiness/C153_emptiness.json",
+    "key": [
+     "preparation_window",
+     "hLb0.0044",
+     "T_max_ln(2pi/hLb)"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run01/emptiness/C153_emptiness.json",
+    "key": [
+     "preparation_window",
+     "hLb0.0044",
+     "T_max_ln(2pi/hLb)"
+    ]
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "T3dof_0044",
+   "what": "3-dof budget crossing T = 6.91",
+   "paper": "PRD Sec. VI C (GATE-13)",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run01/emptiness/C153_emptiness.json",
+    "key": [
+     "preparation_window",
+     "hLb0.0044",
+     "budget_crossing_3dof",
+     "ground_xi0.30"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run01/emptiness/C153_emptiness.json",
+    "key": [
+     "preparation_window",
+     "hLb0.0044",
+     "budget_crossing_3dof",
+     "ground_xi0.30"
+    ]
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "C80",
+   "what": "photon-pair branch for several xi",
+   "paper": "PRD report Sec. 13",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:fu/C80/C80_results.json"
+   },
+   "expected": {
+    "file": "expected/fu/C80/C80_results.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-07,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ]
+  }
+ ]
+}

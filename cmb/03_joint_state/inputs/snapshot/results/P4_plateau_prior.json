@@ -1,0 +1,77 @@
+{
+  "prior": "p(phi)dphi proportional to dphi/V(phi), using a leading plateau-to-N map",
+  "pN_unormalized": "N/(N-3/4)^2",
+  "primitive": "log(N-3/4)-(3/4)/(N-3/4)",
+  "infinite_cutoff_normalizable": false,
+  "N_reference_at_s1p13": 68.25,
+  "samples": 2000000,
+  "models": {
+    "A_fixed_typical": [
+      {
+        "Nmax": 100.0,
+        "probability": 0.001391351978570086,
+        "mc_standard_error": 1.143442750610295e-09
+      },
+      {
+        "Nmax": 250.0,
+        "probability": 0.0004123865648943945,
+        "mc_standard_error": 5.1708808161207244e-11
+      },
+      {
+        "Nmax": 1000.0,
+        "probability": 0.00020042967942132426,
+        "mc_standard_error": 6.623609604147448e-11
+      },
+      {
+        "Nmax": 1000000.0,
+        "probability": 5.640611796464517e-05,
+        "mc_standard_error": 2.6500849349259576e-11
+      }
+    ],
+    "B_C79_clamped": [
+      {
+        "Nmax": 100.0,
+        "probability": 0.0012917255825591442,
+        "mc_standard_error": 1.1374550819698377e-07
+      },
+      {
+        "Nmax": 250.0,
+        "probability": 0.0003828580287248595,
+        "mc_standard_error": 3.34088943946049e-08
+      },
+      {
+        "Nmax": 1000.0,
+        "probability": 0.00018607810848749308,
+        "mc_standard_error": 1.6205555408799187e-08
+      },
+      {
+        "Nmax": 1000000.0,
+        "probability": 5.23672131207674e-05,
+        "mc_standard_error": 4.554556550111013e-09
+      }
+    ],
+    "C_zero_fossil_edge": [
+      {
+        "Nmax": 100.0,
+        "probability": 0.0012582475489581993,
+        "mc_standard_error": 1.7600661193731016e-07
+      },
+      {
+        "Nmax": 250.0,
+        "probability": 0.0003729353840678969,
+        "mc_standard_error": 5.190638851392535e-08
+      },
+      {
+        "Nmax": 1000.0,
+        "probability": 0.00018125546716765275,
+        "mc_standard_error": 2.520037774416895e-08
+      },
+      {
+        "Nmax": 1000000.0,
+        "probability": 5.100999658490567e-05,
+        "mc_standard_error": 7.086812608307241e-09
+      }
+    ]
+  },
+  "scope": "Conditional leading-norm transplant and cutoff sensitivity only. Does not derive the joint spin/shape/volume/inflaton state or physical measure. Existing ell30 readability edges; no sky likelihood."
+}

@@ -1,0 +1,37 @@
+{
+ "ai/joint_state/run01/joint_state_results.json": {
+  "source": "04_calculations/results/20261013_argon_codex_intake/joint_state/run01/joint_state_results.json",
+  "sha256": "6b47703e7cc3bd1796a72923d1034294feb5ea35e17e6bfa56f4f832f5c42385",
+  "bytes": 91317
+ },
+ "ai/joint_state/run01/C145_interface.json": {
+  "source": "04_calculations/results/20261013_argon_codex_intake/joint_state/run01/C145_interface.json",
+  "sha256": "5d1215ad3f26eacea9949e5c71be6359dcdda1e64aa62bdfc7255ccce8244ff9",
+  "bytes": 23880
+ },
+ "ai/joint_state/run01/b3_slope_symbolic.txt": {
+  "source": "04_calculations/results/20261013_argon_codex_intake/joint_state/run01/b3_slope_symbolic.txt",
+  "sha256": "a287ba72c7d97af24c2c460b63ede85ba120b8af674d6debda45d684fe87eb8e",
+  "bytes": 580
+ },
+ "inputs/snapshot/code/inflaton_packet.py": {
+  "source": "04_calculations/results/20261013_argon_codex_intake/snapshot/code/inflaton_packet.py",
+  "sha256": "de4694c4477815c90b678ca6bddc89d81d327f383ab3dfede085a9b6d0c15cf5",
+  "bytes": 6680
+ },
+ "inputs/snapshot/results/P2_inflaton/summary.json": {
+  "source": "04_calculations/results/20261013_argon_codex_intake/snapshot/results/P2_inflaton/summary.json",
+  "sha256": "59f2ccb2161ff0a5bfd35fbb52ec70e39e1cc9cb39491af71e38792851edfe0b",
+  "bytes": 17757
+ },
+ "inputs/snapshot/results/P4_size_prior.json": {
+  "source": "04_calculations/results/20261013_argon_codex_intake/snapshot/results/P4_size_prior.json",
+  "sha256": "da9b43e52418bab03b61e3ef57de27e738249ad5cbd69a8aef2c334996d3082c",
+  "bytes": 18205
+ },
+ "inputs/snapshot/results/P4_plateau_prior.json": {
+  "source": "04_calculations/results/20261013_argon_codex_intake/snapshot/results/P4_plateau_prior.json",
+  "sha256": "e9aabfb518599e535c6fc6c16ee59053537ec3ad19a8716f057dc4a709b4d46f",
+  "bytes": 2327
+ }
+}

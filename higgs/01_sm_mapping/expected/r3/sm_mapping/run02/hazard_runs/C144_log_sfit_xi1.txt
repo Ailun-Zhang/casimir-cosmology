@@ -1,0 +1,31 @@
+17:12:47 [haz as0.1180] node 0 u=0.000 gamma[min,max]=1.027e-08,1.729e-02 bad=0 14s
+17:12:59 [haz as0.1180] node 1 u=0.250 gamma[min,max]=9.554e-09,1.717e-02 bad=0 27s
+17:13:13 [haz as0.1180] node 2 u=0.500 gamma[min,max]=7.860e-09,1.688e-02 bad=0 41s
+17:13:27 [haz as0.1180] node 3 u=0.750 gamma[min,max]=5.947e-09,1.647e-02 bad=0 55s
+17:13:40 [haz as0.1180] node 4 u=1.000 gamma[min,max]=4.256e-09,1.601e-02 bad=0 68s
+17:13:53 [haz as0.1180] node 5 u=1.250 gamma[min,max]=2.917e-09,1.552e-02 bad=0 81s
+17:14:06 [haz as0.1180] node 6 u=1.500 gamma[min,max]=1.923e-09,1.501e-02 bad=0 94s
+17:14:19 [haz as0.1180] node 7 u=1.750 gamma[min,max]=1.218e-09,1.450e-02 bad=0 107s
+17:14:32 [haz as0.1180] node 8 u=2.000 gamma[min,max]=7.386e-10,1.397e-02 bad=0 120s
+17:14:44 [haz as0.1180] node 9 u=2.250 gamma[min,max]=4.269e-10,1.343e-02 bad=0 132s
+17:14:57 [haz as0.1180] node 10 u=2.500 gamma[min,max]=2.338e-10,1.289e-02 bad=0 145s
+17:15:09 [haz as0.1180] node 11 u=2.750 gamma[min,max]=1.205e-10,1.235e-02 bad=0 157s
+17:15:21 [haz as0.1180] node 12 u=3.000 gamma[min,max]=5.791e-11,1.179e-02 bad=0 169s
+17:15:33 [haz as0.1180] node 13 u=3.125 gamma[min,max]=3.899e-11,1.152e-02 bad=0 181s
+17:15:45 [haz as0.1180] node 14 u=3.250 gamma[min,max]=2.569e-11,1.124e-02 bad=0 193s
+17:15:57 [haz as0.1180] node 15 u=3.375 gamma[min,max]=1.654e-11,1.096e-02 bad=0 205s
+17:16:09 [haz as0.1180] node 16 u=3.500 gamma[min,max]=1.038e-11,1.069e-02 bad=0 217s
+17:16:20 [haz as0.1180] node 17 u=3.625 gamma[min,max]=6.341e-12,1.041e-02 bad=0 228s
+17:16:32 [haz as0.1180] node 18 u=3.750 gamma[min,max]=3.761e-12,1.013e-02 bad=0 240s
+17:16:44 [haz as0.1180] node 19 u=3.875 gamma[min,max]=2.162e-12,9.856e-03 bad=0 251s
+17:16:55 [haz as0.1180] node 20 u=4.000 gamma[min,max]=1.235e-12,9.579e-03 bad=0 263s
+17:17:07 [haz as0.1180] node 21 u=4.125 gamma[min,max]=6.391e-13,9.303e-03 bad=0 275s
+17:17:18 [haz as0.1180] node 22 u=4.250 gamma[min,max]=3.266e-13,9.029e-03 bad=0 286s
+17:17:29 [haz as0.1180] node 23 u=4.375 gamma[min,max]=1.612e-13,8.755e-03 bad=0 297s
+17:17:41 [haz as0.1180] node 24 u=4.500 gamma[min,max]=7.388e-14,8.482e-03 bad=0 308s
+17:17:52 [haz as0.1180] node 25 u=4.625 gamma[min,max]=3.226e-14,8.211e-03 bad=0 319s
+17:18:03 [haz as0.1180] node 26 u=4.750 gamma[min,max]=4.547e-14,7.941e-03 bad=0 331s
+17:18:13 [haz as0.1180] node 27 u=4.875 gamma[min,max]=5.138e-15,7.674e-03 bad=0 341s
+17:18:24 [haz as0.1180] node 28 u=5.000 gamma[min,max]=1.780e-15,7.408e-03 bad=0 352s
+17:18:24 hazard done 358s: [('as0.1180', 0, 0)]
+17:30:06 hazard done 4s: [('as0.1180', 0, 0)]

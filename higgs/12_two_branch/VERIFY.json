@@ -1,0 +1,180 @@
+{
+ "step": "12_two_branch",
+ "quick": {
+  "step": "12_two_branch",
+  "mode": "quick",
+  "utc": "2026-10-17T02:04:35Z",
+  "python": "3.12.13",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 204 Stepping 2, GenuineIntel",
+  "cpu_count": 16,
+  "numpy": "2.5.1",
+  "scipy": "1.17.1",
+  "n_checks": 3,
+  "n_pass": 3,
+  "n_skipped": 0,
+  "all_pass": true,
+  "checks": [
+   {
+    "id": "static_check",
+    "what": "static-spectrum propagation: w0, P1, K, G, eps at m_t = 172.6/172.2",
+    "paper": "PRD Sec. V D, App. D 2",
+    "tol_abs": 1e-10,
+    "tol_rel": 1e-07,
+    "mode": "tree",
+    "computed_from": "output/higgs/quick/r3/two_branch/run01/static_check.json",
+    "expected_from": "higgs/12_two_branch/expected/r3/two_branch/run01/static_check.json",
+    "n_leaves": 276,
+    "n_leaves_all": 276,
+    "max_abs_diff": 1.0464962230116726e-12,
+    "max_rel_diff": 0.1929761852868229,
+    "n_mismatch": 0,
+    "first_mismatches": [],
+    "passed": true
+   },
+   {
+    "id": "headline",
+    "what": "C159 headline: P2 = P1^2 critical masses, GH interference eps, laws",
+    "paper": "PRD Sec. V D, App. D 2; PRL (172.376/172.759/173.124, run02 base)",
+    "tol_abs": 1e-09,
+    "tol_rel": 1e-07,
+    "mode": "tree",
+    "computed_from": "output/higgs/quick/r3/two_branch/run01/C159_summary.json",
+    "expected_from": "higgs/12_two_branch/expected/r3/two_branch/run01/C159_summary.json",
+    "n_leaves": 20,
+    "n_leaves_all": 24,
+    "max_abs_diff": 0.0,
+    "max_rel_diff": 0.0,
+    "n_mismatch": 0,
+    "first_mismatches": [],
+    "passed": true
+   },
+   {
+    "id": "crit_tables",
+    "what": "critical-mass tables for P1, P2_lin, Frechet band",
+    "paper": "PRD Sec. V D, App. D 2 (Frechet [172.372, 172.498], [172.713, 172.954])",
+    "tol_abs": 1e-09,
+    "tol_rel": 1e-07,
+    "mode": "tree",
+    "computed_from": "output/higgs/quick/r3/two_branch/run01/C159_summary.json",
+    "expected_from": "higgs/12_two_branch/expected/r3/two_branch/run01/C159_summary.json",
+    "n_leaves": 117,
+    "n_leaves_all": 118,
+    "max_abs_diff": 0.0,
+    "max_rel_diff": 0.0,
+    "n_mismatch": 0,
+    "first_mismatches": [],
+    "passed": true
+   }
+  ],
+  "timings_s": {
+   "D111 potential tables": 16.94,
+   "tb_static.py": 41.94,
+   "tb_post.py": 0.59
+  },
+  "workers": 8,
+  "note": "final self-test of the release: fresh copy without output/, python run_all.py --quick --workers 8, 2026-10-17T01:48-02:23Z; 25/25 runs fresh and passing"
+ },
+ "summary": {
+  "quick": {
+   "all_pass": true,
+   "n_pass": 3,
+   "n_checks": 3,
+   "utc": "2026-10-17T02:04:35Z"
+  },
+  "full": {
+   "all_pass": true,
+   "n_pass": 4,
+   "n_checks": 4,
+   "utc": "2026-10-15T19:40:02Z"
+  }
+ },
+ "full": {
+  "step": "12_two_branch",
+  "mode": "full",
+  "utc": "2026-10-15T19:40:02Z",
+  "python": "3.12.13",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 204 Stepping 2, GenuineIntel",
+  "cpu_count": 16,
+  "numpy": "2.5.1",
+  "scipy": "1.17.1",
+  "n_checks": 4,
+  "n_pass": 4,
+  "n_skipped": 0,
+  "all_pass": true,
+  "checks": [
+   {
+    "id": "static_check",
+    "what": "static-spectrum propagation: w0, P1, K, G, eps at m_t = 172.6/172.2",
+    "paper": "PRD Sec. V D, App. D 2",
+    "tol_abs": 1e-10,
+    "tol_rel": 1e-07,
+    "mode": "tree",
+    "computed_from": "output/higgs/full/r3/two_branch/run01/static_check.json",
+    "expected_from": "higgs/12_two_branch/expected/r3/two_branch/run01/static_check.json",
+    "n_leaves": 276,
+    "max_abs_diff": 1.0019762797242038e-12,
+    "max_rel_diff": 0.20638447882441446,
+    "n_mismatch": 0,
+    "first_mismatches": [],
+    "passed": true
+   },
+   {
+    "id": "headline",
+    "what": "C159 headline: P2 = P1^2 critical masses, GH interference eps, laws",
+    "paper": "PRD Sec. V D, App. D 2; PRL (172.376/172.759/173.124, run02 base)",
+    "tol_abs": 1e-09,
+    "tol_rel": 1e-07,
+    "mode": "tree",
+    "computed_from": "output/higgs/full/r3/two_branch/run01/C159_summary.json",
+    "expected_from": "higgs/12_two_branch/expected/r3/two_branch/run01/C159_summary.json",
+    "n_leaves": 20,
+    "max_abs_diff": 1.099120794378905e-14,
+    "max_rel_diff": 1.1048280398257684e-14,
+    "n_mismatch": 0,
+    "first_mismatches": [],
+    "passed": true
+   },
+   {
+    "id": "crit_tables",
+    "what": "critical-mass tables for P1, P2_lin, Frechet band",
+    "paper": "PRD Sec. V D, App. D 2 (Frechet [172.372, 172.498], [172.713, 172.954])",
+    "tol_abs": 1e-09,
+    "tol_rel": 1e-07,
+    "mode": "tree",
+    "computed_from": "output/higgs/full/r3/two_branch/run01/C159_summary.json",
+    "expected_from": "higgs/12_two_branch/expected/r3/two_branch/run01/C159_summary.json",
+    "n_leaves": 117,
+    "max_abs_diff": 0.0,
+    "max_rel_diff": 0.0,
+    "n_mismatch": 0,
+    "first_mismatches": [],
+    "passed": true
+   },
+   {
+    "id": "full_tdse",
+    "what": "TDSE results recomputed",
+    "paper": "PRD Sec. V D, App. D 2",
+    "tol_abs": 1e-09,
+    "tol_rel": 1e-06,
+    "mode": "tree",
+    "computed_from": "output/higgs/full/r3/two_branch/run01/tdse_results.json",
+    "expected_from": "higgs/12_two_branch/expected/r3/two_branch/run01/tdse_results.json",
+    "n_leaves": 3538,
+    "max_abs_diff": 7.140954494389007e-13,
+    "max_rel_diff": 7.013234268127576e-09,
+    "n_mismatch": 0,
+    "first_mismatches": [],
+    "passed": true
+   }
+  ],
+  "timings_s": {
+   "D111 potential tables": 14.6,
+   "tb_static.py": 36.3,
+   "tb_tdse.py full": 358.5,
+   "tb_post.py": 0.5
+  },
+  "note": "checks re-evaluated with tools/verify_expected.py on the same outputs of this run after correcting the ignore lists for metadata fields (absolute paths, timings, text strings, keys containing '/'); timings from the run log"
+ }
+}

@@ -1,0 +1,491 @@
+quantity,source_key,run02,run05,run05_minus_run02
+crit m_t alpha_s=0.1171 P1=0.9,C154_summary.json:critical_mt.0.1171.P1=0.9,172.151,172.156,0.00449273
+crit m_t alpha_s=0.1171 P1=0.5,C154_summary.json:critical_mt.0.1171.P1=0.5,172.605,172.611,0.0057427
+crit m_t alpha_s=0.1171 P1=0.1,C154_summary.json:critical_mt.0.1171.P1=0.1,173.062,173.069,0.00666371
+crit m_t alpha_s=0.1171 P1=0.05,C154_summary.json:critical_mt.0.1171.P1=0.05,173.193,173.2,0.00695182
+crit m_t alpha_s=0.1180 P1=0.9,C154_summary.json:critical_mt.0.1180.P1=0.9,172.498,172.502,0.0046343
+crit m_t alpha_s=0.1180 P1=0.5,C154_summary.json:critical_mt.0.1180.P1=0.5,172.954,172.959,0.00572255
+crit m_t alpha_s=0.1180 P1=0.1,C154_summary.json:critical_mt.0.1180.P1=0.1,173.412,173.418,0.00667429
+crit m_t alpha_s=0.1180 P1=0.05,C154_summary.json:critical_mt.0.1180.P1=0.05,173.542,173.549,0.00699796
+crit m_t alpha_s=0.1189 P1=0.9,C154_summary.json:critical_mt.0.1189.P1=0.9,172.845,172.849,0.00475443
+crit m_t alpha_s=0.1189 P1=0.5,C154_summary.json:critical_mt.0.1189.P1=0.5,173.302,173.308,0.0059692
+crit m_t alpha_s=0.1189 P1=0.1,C154_summary.json:critical_mt.0.1189.P1=0.1,173.761,173.768,0.0070192
+crit m_t alpha_s=0.1189 P1=0.05,C154_summary.json:critical_mt.0.1189.P1=0.05,173.892,173.899,0.00736543
+dm_c/dalpha_s P1=0.9,C154_summary.json:dmc_dalpha_s.P1=0.9,385.248,385.394,0.145385
+dm_c/dalpha_s P1=0.5,C154_summary.json:dmc_dalpha_s.P1=0.5,387.204,387.33,0.125835
+dm_c/dalpha_s P1=0.1,C154_summary.json:dmc_dalpha_s.P1=0.1,388.234,388.431,0.197495
+P1 curve at 172.60,C154_summary.json:marginal.D1_direct_pole.P1_curve_at_center,0.839322,0.842631,0.003309
+Pbar equal-mass D1_direct_pole,C154_correction_summary.json:marginal.equal_mass.D1_direct_pole.Pbar,0.727106,0.730215,0.00310918
+P(P1>=0.5) D1_direct_pole,C154_correction_summary.json:marginal.equal_mass.D1_direct_pole.prob_P_ge_0p5,0.774047,0.777775,0.00372788
+q025 D1_direct_pole,C154_correction_summary.json:marginal.equal_mass.D1_direct_pole.quantiles_025_16_50_84_975[0],0.0545388,0.0568086,0.00226981
+q16 D1_direct_pole,C154_correction_summary.json:marginal.equal_mass.D1_direct_pole.quantiles_025_16_50_84_975[1],0.383764,0.390162,0.00639784
+median D1_direct_pole,C154_correction_summary.json:marginal.equal_mass.D1_direct_pole.quantiles_025_16_50_84_975[2],0.836958,0.840279,0.00332087
+q84 D1_direct_pole,C154_correction_summary.json:marginal.equal_mass.D1_direct_pole.quantiles_025_16_50_84_975[3],0.98936,0.989679,0.000319315
+q975 D1_direct_pole,C154_correction_summary.json:marginal.equal_mass.D1_direct_pole.quantiles_025_16_50_84_975[4],0.999667,0.99968,1.3031e-05
+Pbar continuous D1_direct_pole,C154_correction_summary.json:marginal.continuous.D1_direct_pole.Pbar,0.724586,0.727718,0.00313139
+Pbar BKPV/FJ equal-mass D1_direct_pole,C154_correction_summary.json:marginal.equal_mass.D1_direct_pole.Pbar_BKPV_FJ,0.671544,0.674681,0.00313647
+Pbar BKPV/FJ continuous D1_direct_pole,C154_correction_summary.json:marginal.continuous.D1_direct_pole.Pbar_BKPV_FJ,0.623411,0.626764,0.00335262
+Pbar variant allorders_pole D1_direct_pole (v2 mixed conv.),C154_summary.json:marginal.D1_direct_pole.Pbar_allorders_pole,0.855617,0.857636,0.00201896
+Pbar variant T14a_central_correction D1_direct_pole (v2 mixed conv.),C154_summary.json:marginal.D1_direct_pole.Pbar_T14a_central_correction,0.730603,0.733682,0.00307841
+Pbar variant vi_r1e-4 D1_direct_pole (v2 mixed conv.),C154_summary.json:marginal.D1_direct_pole.Pbar_vi_r1e-4,0.640404,0.644197,0.0037933
+Pbar variant model_without_vi D1_direct_pole (v2 mixed conv.),C154_summary.json:marginal.D1_direct_pole.Pbar_model_without_vi,0.724459,0.727611,0.00315265
+Pbar variant w0_multiplicative D1_direct_pole (v2 mixed conv.),C154_summary.json:marginal.D1_direct_pole.Pbar_w0_multiplicative,0.720919,0.723992,0.00307296
+Pbar equal-mass D1b_direct_pole_interp,C154_correction_summary.json:marginal.equal_mass.D1b_direct_pole_interp.Pbar,0.67727,0.679883,0.0026132
+P(P1>=0.5) D1b_direct_pole_interp,C154_correction_summary.json:marginal.equal_mass.D1b_direct_pole_interp.prob_P_ge_0p5,0.695234,0.69821,0.00297595
+q025 D1b_direct_pole_interp,C154_correction_summary.json:marginal.equal_mass.D1b_direct_pole_interp.quantiles_025_16_50_84_975[0],0.00173408,0.00184819,0.000114108
+q16 D1b_direct_pole_interp,C154_correction_summary.json:marginal.equal_mass.D1b_direct_pole_interp.quantiles_025_16_50_84_975[1],0.181124,0.18607,0.00494619
+median D1b_direct_pole_interp,C154_correction_summary.json:marginal.equal_mass.D1b_direct_pole_interp.quantiles_025_16_50_84_975[2],0.837064,0.840416,0.00335238
+q84 D1b_direct_pole_interp,C154_correction_summary.json:marginal.equal_mass.D1b_direct_pole_interp.quantiles_025_16_50_84_975[3],0.998431,0.998484,5.35918e-05
+q975 D1b_direct_pole_interp,C154_correction_summary.json:marginal.equal_mass.D1b_direct_pole_interp.quantiles_025_16_50_84_975[4],0.999984,0.999985,7.14433e-07
+Pbar continuous D1b_direct_pole_interp,C154_correction_summary.json:marginal.continuous.D1b_direct_pole_interp.Pbar,0.675064,0.677688,0.00262463
+Pbar BKPV/FJ equal-mass D1b_direct_pole_interp,C154_correction_summary.json:marginal.equal_mass.D1b_direct_pole_interp.Pbar_BKPV_FJ,0.635933,0.63855,0.00261743
+Pbar BKPV/FJ continuous D1b_direct_pole_interp,C154_correction_summary.json:marginal.continuous.D1b_direct_pole_interp.Pbar_BKPV_FJ,0.597259,0.599983,0.00272389
+Pbar variant allorders_pole D1b_direct_pole_interp (v2 mixed conv.),C154_summary.json:marginal.D1b_direct_pole_interp.Pbar_allorders_pole,0.790854,0.792884,0.00202926
+Pbar variant T14a_central_correction D1b_direct_pole_interp (v2 mixed conv.),C154_summary.json:marginal.D1b_direct_pole_interp.Pbar_T14a_central_correction,0.680327,0.682924,0.00259741
+Pbar variant vi_r1e-4 D1b_direct_pole_interp (v2 mixed conv.),C154_summary.json:marginal.D1b_direct_pole_interp.Pbar_vi_r1e-4,0.604031,0.606967,0.00293648
+Pbar variant model_without_vi D1b_direct_pole_interp (v2 mixed conv.),C154_summary.json:marginal.D1b_direct_pole_interp.Pbar_model_without_vi,0.674254,0.676896,0.00264259
+Pbar variant w0_multiplicative D1b_direct_pole_interp (v2 mixed conv.),C154_summary.json:marginal.D1b_direct_pole_interp.Pbar_w0_multiplicative,0.671771,0.67435,0.00257921
+Pbar equal-mass D1c_direct_interp_renorm,C154_correction_summary.json:marginal.equal_mass.D1c_direct_interp_renorm.Pbar,0.675617,0.678211,0.00259417
+P(P1>=0.5) D1c_direct_interp_renorm,C154_correction_summary.json:marginal.equal_mass.D1c_direct_interp_renorm.prob_P_ge_0p5,0.692942,0.695891,0.00294839
+q025 D1c_direct_interp_renorm,C154_correction_summary.json:marginal.equal_mass.D1c_direct_interp_renorm.quantiles_025_16_50_84_975[0],0.00138666,0.00148036,9.36975e-05
+q16 D1c_direct_interp_renorm,C154_correction_summary.json:marginal.equal_mass.D1c_direct_interp_renorm.quantiles_025_16_50_84_975[1],0.174641,0.179568,0.00492635
+median D1c_direct_interp_renorm,C154_correction_summary.json:marginal.equal_mass.D1c_direct_interp_renorm.quantiles_025_16_50_84_975[2],0.837093,0.840426,0.00333303
+q84 D1c_direct_interp_renorm,C154_correction_summary.json:marginal.equal_mass.D1c_direct_interp_renorm.quantiles_025_16_50_84_975[3],0.998526,0.998576,5.06014e-05
+q975 D1c_direct_interp_renorm,C154_correction_summary.json:marginal.equal_mass.D1c_direct_interp_renorm.quantiles_025_16_50_84_975[4],0.999986,0.999987,6.43903e-07
+Pbar continuous D1c_direct_interp_renorm,C154_correction_summary.json:marginal.continuous.D1c_direct_interp_renorm.Pbar,0.673425,0.67603,0.0026053
+Pbar BKPV/FJ equal-mass D1c_direct_interp_renorm,C154_correction_summary.json:marginal.equal_mass.D1c_direct_interp_renorm.Pbar_BKPV_FJ,0.634724,0.637322,0.00259803
+Pbar BKPV/FJ continuous D1c_direct_interp_renorm,C154_correction_summary.json:marginal.continuous.D1c_direct_interp_renorm.Pbar_BKPV_FJ,0.596379,0.599081,0.00270164
+Pbar variant allorders_pole D1c_direct_interp_renorm (v2 mixed conv.),C154_summary.json:marginal.D1c_direct_interp_renorm.Pbar_allorders_pole,0.788534,0.790559,0.0020245
+Pbar variant T14a_central_correction D1c_direct_interp_renorm (v2 mixed conv.),C154_summary.json:marginal.D1c_direct_interp_renorm.Pbar_T14a_central_correction,0.678654,0.681233,0.00257878
+Pbar variant vi_r1e-4 D1c_direct_interp_renorm (v2 mixed conv.),C154_summary.json:marginal.D1c_direct_interp_renorm.Pbar_vi_r1e-4,0.602914,0.605823,0.00290818
+Pbar variant model_without_vi D1c_direct_interp_renorm (v2 mixed conv.),C154_summary.json:marginal.D1c_direct_interp_renorm.Pbar_model_without_vi,0.6726,0.675223,0.00262302
+Pbar variant w0_multiplicative D1c_direct_interp_renorm (v2 mixed conv.),C154_summary.json:marginal.D1c_direct_interp_renorm.Pbar_w0_multiplicative,0.670142,0.672702,0.00256034
+Pbar equal-mass D2_sigma_pole,C154_correction_summary.json:marginal.equal_mass.D2_sigma_pole.Pbar,0.859556,0.861066,0.00150977
+P(P1>=0.5) D2_sigma_pole,C154_correction_summary.json:marginal.equal_mass.D2_sigma_pole.prob_P_ge_0p5,0.884539,0.886128,0.00158846
+q025 D2_sigma_pole,C154_correction_summary.json:marginal.equal_mass.D2_sigma_pole.quantiles_025_16_50_84_975[0],0.0628527,0.0653588,0.00250606
+q16 D2_sigma_pole,C154_correction_summary.json:marginal.equal_mass.D2_sigma_pole.quantiles_025_16_50_84_975[1],0.661679,0.66735,0.00567056
+median D2_sigma_pole,C154_correction_summary.json:marginal.equal_mass.D2_sigma_pole.quantiles_025_16_50_84_975[2],0.992905,0.993118,0.000212279
+q84 D2_sigma_pole,C154_correction_summary.json:marginal.equal_mass.D2_sigma_pole.quantiles_025_16_50_84_975[3],0.999962,0.999963,1.63752e-06
+q975 D2_sigma_pole,C154_correction_summary.json:marginal.equal_mass.D2_sigma_pole.quantiles_025_16_50_84_975[4],1,1,1.73198e-08
+Pbar continuous D2_sigma_pole,C154_correction_summary.json:marginal.continuous.D2_sigma_pole.Pbar,0.858344,0.859865,0.00152081
+Pbar BKPV/FJ equal-mass D2_sigma_pole,C154_correction_summary.json:marginal.equal_mass.D2_sigma_pole.Pbar_BKPV_FJ,0.825544,0.827212,0.00166873
+Pbar BKPV/FJ continuous D2_sigma_pole,C154_correction_summary.json:marginal.continuous.D2_sigma_pole.Pbar_BKPV_FJ,0.799505,0.801343,0.00183866
+Pbar variant allorders_pole D2_sigma_pole (v2 mixed conv.),C154_summary.json:marginal.D2_sigma_pole.Pbar_allorders_pole,0.921372,0.922338,0.000965349
+Pbar variant T14a_central_correction D2_sigma_pole (v2 mixed conv.),C154_summary.json:marginal.D2_sigma_pole.Pbar_T14a_central_correction,0.861234,0.862729,0.00149448
+Pbar variant vi_r1e-4 D2_sigma_pole (v2 mixed conv.),C154_summary.json:marginal.D2_sigma_pole.Pbar_vi_r1e-4,0.817893,0.819759,0.00186523
+Pbar variant model_without_vi D2_sigma_pole (v2 mixed conv.),C154_summary.json:marginal.D2_sigma_pole.Pbar_model_without_vi,0.858286,0.859813,0.00152743
+Pbar variant w0_multiplicative D2_sigma_pole (v2 mixed conv.),C154_summary.json:marginal.D2_sigma_pole.Pbar_w0_multiplicative,0.853971,0.855463,0.0014921
+Pbar equal-mass D2b_sigma_pole_PDG2025,C154_correction_summary.json:marginal.equal_mass.D2b_sigma_pole_PDG2025.Pbar,0.737744,0.739824,0.00208011
+P(P1>=0.5) D2b_sigma_pole_PDG2025,C154_correction_summary.json:marginal.equal_mass.D2b_sigma_pole_PDG2025.prob_P_ge_0p5,0.754816,0.75711,0.00229394
+q025 D2b_sigma_pole_PDG2025,C154_correction_summary.json:marginal.equal_mass.D2b_sigma_pole_PDG2025.quantiles_025_16_50_84_975[0],0.00133682,0.00142866,9.1838e-05
+q16 D2b_sigma_pole_PDG2025,C154_correction_summary.json:marginal.equal_mass.D2b_sigma_pole_PDG2025.quantiles_025_16_50_84_975[1],0.254662,0.26047,0.00580792
+median D2b_sigma_pole_PDG2025,C154_correction_summary.json:marginal.equal_mass.D2b_sigma_pole_PDG2025.quantiles_025_16_50_84_975[2],0.938478,0.940019,0.00154103
+q84 D2b_sigma_pole_PDG2025,C154_correction_summary.json:marginal.equal_mass.D2b_sigma_pole_PDG2025.quantiles_025_16_50_84_975[3],0.999827,0.999834,6.77491e-06
+q975 D2b_sigma_pole_PDG2025,C154_correction_summary.json:marginal.equal_mass.D2b_sigma_pole_PDG2025.quantiles_025_16_50_84_975[4],0.999999,0.999999,4.11507e-08
+Pbar continuous D2b_sigma_pole_PDG2025,C154_correction_summary.json:marginal.continuous.D2b_sigma_pole_PDG2025.Pbar,0.736,0.738089,0.00208975
+Pbar BKPV/FJ equal-mass D2b_sigma_pole_PDG2025,C154_correction_summary.json:marginal.equal_mass.D2b_sigma_pole_PDG2025.Pbar_BKPV_FJ,0.701915,0.704053,0.00213801
+Pbar BKPV/FJ continuous D2b_sigma_pole_PDG2025,C154_correction_summary.json:marginal.continuous.D2b_sigma_pole_PDG2025.Pbar_BKPV_FJ,0.670041,0.672292,0.00225136
+Pbar variant allorders_pole D2b_sigma_pole_PDG2025 (v2 mixed conv.),C154_summary.json:marginal.D2b_sigma_pole_PDG2025.Pbar_allorders_pole,0.827587,0.829178,0.00159103
+Pbar variant T14a_central_correction D2b_sigma_pole_PDG2025 (v2 mixed conv.),C154_summary.json:marginal.D2b_sigma_pole_PDG2025.Pbar_T14a_central_correction,0.740159,0.742226,0.00206678
+Pbar variant vi_r1e-4 D2b_sigma_pole_PDG2025 (v2 mixed conv.),C154_summary.json:marginal.D2b_sigma_pole_PDG2025.Pbar_vi_r1e-4,0.679697,0.682061,0.002364
+Pbar variant model_without_vi D2b_sigma_pole_PDG2025 (v2 mixed conv.),C154_summary.json:marginal.D2b_sigma_pole_PDG2025.Pbar_model_without_vi,0.735402,0.737504,0.00210209
+Pbar variant w0_multiplicative D2b_sigma_pole_PDG2025 (v2 mixed conv.),C154_summary.json:marginal.D2b_sigma_pole_PDG2025.Pbar_w0_multiplicative,0.732341,0.734395,0.00205336
+Pbar equal-mass D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.Pbar,0.496826,0.499846,0.00301958
+P(P1>=0.5) D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.prob_P_ge_0p5,0.492823,0.496253,0.00343006
+q025 D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[0],2.61469e-06,2.87433e-06,2.59638e-07
+q16 D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[1],0.0267379,0.0280195,0.00128153
+median D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[2],0.493767,0.500133,0.00636561
+q84 D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[3],0.968681,0.969547,0.00086678
+q975 D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[4],0.99979,0.999798,8.23211e-06
+Pbar continuous D3_MSR,C154_correction_summary.json:marginal.continuous.D3_MSR.Pbar,0.494173,0.497197,0.00302392
+Pbar equal-mass D4_direct_as_mbar,C154_correction_summary.json:marginal.equal_mass.D4_direct_as_mbar.Pbar,0.726408,0.72951,0.00310199
+P(P1>=0.5) D4_direct_as_mbar,C154_correction_summary.json:marginal.equal_mass.D4_direct_as_mbar.prob_P_ge_0p5,0.772684,0.776402,0.00371865
+q025 D4_direct_as_mbar,C154_correction_summary.json:marginal.equal_mass.D4_direct_as_mbar.quantiles_025_16_50_84_975[0],0.0528947,0.0551599,0.00226516
+q16 D4_direct_as_mbar,C154_correction_summary.json:marginal.equal_mass.D4_direct_as_mbar.quantiles_025_16_50_84_975[1],0.380355,0.386775,0.00642032
+median D4_direct_as_mbar,C154_correction_summary.json:marginal.equal_mass.D4_direct_as_mbar.quantiles_025_16_50_84_975[2],0.837024,0.840338,0.00331349
+q84 D4_direct_as_mbar,C154_correction_summary.json:marginal.equal_mass.D4_direct_as_mbar.quantiles_025_16_50_84_975[3],0.989603,0.989914,0.000310985
+q975 D4_direct_as_mbar,C154_correction_summary.json:marginal.equal_mass.D4_direct_as_mbar.quantiles_025_16_50_84_975[4],0.999679,0.999692,1.255e-05
+Pbar continuous D4_direct_as_mbar,C154_correction_summary.json:marginal.continuous.D4_direct_as_mbar.Pbar,0.723879,0.727003,0.00312396
+Pbar equal-mass D3b_msbar_sigma,C154_correction_summary.json:marginal.equal_mass.D3b_msbar_sigma.Pbar,0.618621,0.619619,0.000998762
+P(P1>=0.5) D3b_msbar_sigma,C154_correction_summary.json:marginal.equal_mass.D3b_msbar_sigma.prob_P_ge_0p5,0.619967,0.620976,0.00100962
+q025 D3b_msbar_sigma,C154_correction_summary.json:marginal.equal_mass.D3b_msbar_sigma.quantiles_025_16_50_84_975[0],0,0,0
+q16 D3b_msbar_sigma,C154_correction_summary.json:marginal.equal_mass.D3b_msbar_sigma.quantiles_025_16_50_84_975[1],7.0021e-09,7.85449e-09,8.52387e-10
+median D3b_msbar_sigma,C154_correction_summary.json:marginal.equal_mass.D3b_msbar_sigma.quantiles_025_16_50_84_975[2],0.964534,0.965486,0.00095226
+q84 D3b_msbar_sigma,C154_correction_summary.json:marginal.equal_mass.D3b_msbar_sigma.quantiles_025_16_50_84_975[3],1,1,1.10909e-08
+q975 D3b_msbar_sigma,C154_correction_summary.json:marginal.equal_mass.D3b_msbar_sigma.quantiles_025_16_50_84_975[4],1,1,2.59237e-13
+Pbar continuous D3b_msbar_sigma,C154_correction_summary.json:marginal.continuous.D3b_msbar_sigma.Pbar,0.555774,0.556906,0.00113189
+Pbar equal-mass C1_ATLAS_CMS,C154_correction_summary.json:marginal.equal_mass.C1_ATLAS_CMS.Pbar,0.759765,0.762515,0.00274968
+P(P1>=0.5) C1_ATLAS_CMS,C154_correction_summary.json:marginal.equal_mass.C1_ATLAS_CMS.prob_P_ge_0p5,0.804007,0.807185,0.00317848
+q025 C1_ATLAS_CMS,C154_correction_summary.json:marginal.equal_mass.C1_ATLAS_CMS.quantiles_025_16_50_84_975[0],0.0569415,0.059311,0.00236949
+q16 C1_ATLAS_CMS,C154_correction_summary.json:marginal.equal_mass.C1_ATLAS_CMS.quantiles_025_16_50_84_975[1],0.429977,0.436445,0.0064679
+median C1_ATLAS_CMS,C154_correction_summary.json:marginal.equal_mass.C1_ATLAS_CMS.quantiles_025_16_50_84_975[2],0.885782,0.888247,0.00246469
+q84 C1_ATLAS_CMS,C154_correction_summary.json:marginal.equal_mass.C1_ATLAS_CMS.quantiles_025_16_50_84_975[3],0.996374,0.996491,0.000117212
+q975 C1_ATLAS_CMS,C154_correction_summary.json:marginal.equal_mass.C1_ATLAS_CMS.quantiles_025_16_50_84_975[4],0.999888,0.999892,4.66429e-06
+Pbar continuous C1_ATLAS_CMS,C154_correction_summary.json:marginal.continuous.C1_ATLAS_CMS.Pbar,0.757549,0.760319,0.00276986
+Pbar BKPV/FJ equal-mass C1_ATLAS_CMS,C154_correction_summary.json:marginal.equal_mass.C1_ATLAS_CMS.Pbar_BKPV_FJ,0.70716,0.709998,0.00283803
+Pbar BKPV/FJ continuous C1_ATLAS_CMS,C154_correction_summary.json:marginal.continuous.C1_ATLAS_CMS.Pbar_BKPV_FJ,0.663295,0.666357,0.00306271
+Pbar variant allorders_pole C1_ATLAS_CMS (v2 mixed conv.),C154_summary.json:marginal.C1_ATLAS_CMS.Pbar_allorders_pole,0.872785,0.874543,0.00175784
+Pbar variant T14a_central_correction C1_ATLAS_CMS (v2 mixed conv.),C154_summary.json:marginal.C1_ATLAS_CMS.Pbar_T14a_central_correction,0.762839,0.765561,0.00272171
+Pbar variant vi_r1e-4 C1_ATLAS_CMS (v2 mixed conv.),C154_summary.json:marginal.C1_ATLAS_CMS.Pbar_vi_r1e-4,0.683403,0.686785,0.00338155
+Pbar variant model_without_vi C1_ATLAS_CMS (v2 mixed conv.),C154_summary.json:marginal.C1_ATLAS_CMS.Pbar_model_without_vi,0.757476,0.760263,0.00278661
+Pbar variant w0_multiplicative C1_ATLAS_CMS (v2 mixed conv.),C154_summary.json:marginal.C1_ATLAS_CMS.Pbar_w0_multiplicative,0.75376,0.756478,0.00271788
+Pbar equal-mass C2_CMS,C154_correction_summary.json:marginal.equal_mass.C2_CMS.Pbar,0.969142,0.969681,0.000538579
+P(P1>=0.5) C2_CMS,C154_correction_summary.json:marginal.equal_mass.C2_CMS.prob_P_ge_0p5,0.987296,0.98766,0.000364325
+q025 C2_CMS,C154_correction_summary.json:marginal.equal_mass.C2_CMS.quantiles_025_16_50_84_975[0],0.665161,0.670939,0.00577788
+q16 C2_CMS,C154_correction_summary.json:marginal.equal_mass.C2_CMS.quantiles_025_16_50_84_975[1],0.969034,0.969856,0.000821937
+median C2_CMS,C154_correction_summary.json:marginal.equal_mass.C2_CMS.quantiles_025_16_50_84_975[2],0.999482,0.999501,1.87601e-05
+q84 C2_CMS,C154_correction_summary.json:marginal.equal_mass.C2_CMS.quantiles_025_16_50_84_975[3],0.999986,0.999987,6.13827e-07
+q975 C2_CMS,C154_correction_summary.json:marginal.equal_mass.C2_CMS.quantiles_025_16_50_84_975[4],1,1,2.10274e-08
+Pbar continuous C2_CMS,C154_correction_summary.json:marginal.continuous.C2_CMS.Pbar,0.968751,0.969296,0.000545173
+Pbar BKPV/FJ equal-mass C2_CMS,C154_correction_summary.json:marginal.equal_mass.C2_CMS.Pbar_BKPV_FJ,0.946283,0.947074,0.000790154
+Pbar BKPV/FJ continuous C2_CMS,C154_correction_summary.json:marginal.continuous.C2_CMS.Pbar_BKPV_FJ,0.933007,0.933965,0.000958056
+Pbar variant allorders_pole C2_CMS (v2 mixed conv.),C154_summary.json:marginal.C2_CMS.Pbar_allorders_pole,0.988702,0.988922,0.000220519
+Pbar variant T14a_central_correction C2_CMS (v2 mixed conv.),C154_summary.json:marginal.C2_CMS.Pbar_T14a_central_correction,0.969681,0.970211,0.000529462
+Pbar variant vi_r1e-4 C2_CMS (v2 mixed conv.),C154_summary.json:marginal.C2_CMS.Pbar_vi_r1e-4,0.954859,0.955634,0.00077446
+Pbar variant model_without_vi C2_CMS (v2 mixed conv.),C154_summary.json:marginal.C2_CMS.Pbar_model_without_vi,0.968964,0.969507,0.000543085
+Pbar variant w0_multiplicative C2_CMS (v2 mixed conv.),C154_summary.json:marginal.C2_CMS.Pbar_w0_multiplicative,0.963723,0.964256,0.000533252
+progression + MC-pole interpretation 0.5,C154_summary.json:Pbar_progression_direct.+ MC-pole interpretation 0.5,0.67727,0.679883,0.0026132
+progression + M_h 0.11,C154_summary.json:Pbar_progression_direct.+ M_h 0.11,0.733202,0.736348,0.00314569
+progression + SM mapping pole 0.102,C154_summary.json:Pbar_progression_direct.+ SM mapping pole 0.102,0.729995,0.733116,0.00312118
+progression + alpha_s 0.0009,C154_summary.json:Pbar_progression_direct.+ alpha_s 0.0009,0.73409,0.737243,0.00315234
+progression + m_t exp 0.27,C154_summary.json:Pbar_progression_direct.+ m_t exp 0.27,0.785864,0.789259,0.00339482
+progression + model incl. (vi) [primary],C154_summary.json:Pbar_progression_direct.+ model incl. (vi) [primary],0.727106,0.730215,0.00310918
+progression + model without (vi),C154_summary.json:Pbar_progression_direct.+ model without (vi),0.724459,0.727611,0.00315265
+progression curve only,C154_summary.json:Pbar_progression_direct.curve only,0.83931,0.842619,0.00330912
+Bayes D1_direct_pole flat_170_176 B_existence,C154_correction_summary.json:bayes.D1_direct_pole.flat_170_176.B_existence,0.727106,0.730215,0.00310918
+Bayes D1_direct_pole flat_170_176 B_selection,C154_correction_summary.json:bayes.D1_direct_pole.flat_170_176.B_selection,1.47685,1.48026,0.00340351
+Bayes D1_direct_pole flat_170_176 B_selection_max,C154_correction_summary.json:bayes.D1_direct_pole.flat_170_176.B_selection_max,2.03114,2.02715,-0.00398739
+Bayes D1_direct_pole flat_170_176 prior_mean_P1,C154_correction_summary.json:bayes.D1_direct_pole.flat_170_176.prior_mean_P1,0.492335,0.493304,0.000968421
+Bayes D1_direct_pole flat_150_200 B_existence,C154_correction_summary.json:bayes.D1_direct_pole.flat_150_200.B_existence,0.727106,0.730215,0.00310918
+Bayes D1_direct_pole flat_150_200 B_selection,C154_correction_summary.json:bayes.D1_direct_pole.flat_150_200.B_selection,1.58383,1.5902,0.00637009
+Bayes D1_direct_pole flat_150_200 B_selection_max,C154_correction_summary.json:bayes.D1_direct_pole.flat_150_200.B_selection_max,2.17827,2.17772,-0.000551263
+Bayes D1_direct_pole flat_150_200 prior_mean_P1,C154_correction_summary.json:bayes.D1_direct_pole.flat_150_200.prior_mean_P1,0.45908,0.459196,0.000116211
+Bayes D1_direct_pole flat_lambda_pm0p05 B_existence,C154_correction_summary.json:bayes.D1_direct_pole.flat_lambda_pm0p05.B_existence,0.726399,0.729513,0.00311377
+Bayes D1_direct_pole flat_lambda_pm0p05 B_selection,C154_correction_summary.json:bayes.D1_direct_pole.flat_lambda_pm0p05.B_selection,1.16913,1.17342,0.0042859
+Bayes D1_direct_pole flat_lambda_pm0p05 B_selection_max,C154_correction_summary.json:bayes.D1_direct_pole.flat_lambda_pm0p05.B_selection_max,1.60949,1.60849,-0.000994751
+Bayes D1_direct_pole flat_lambda_pm0p05 prior_mean_P1,C154_correction_summary.json:bayes.D1_direct_pole.flat_lambda_pm0p05.prior_mean_P1,0.621315,0.621699,0.000384244
+Bayes D1b_direct_pole_interp flat_170_176 B_existence,C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_170_176.B_existence,0.677269,0.679882,0.00261321
+Bayes D1b_direct_pole_interp flat_170_176 B_selection,C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_170_176.B_selection,1.37563,1.37822,0.00259683
+Bayes D1b_direct_pole_interp flat_170_176 B_selection_max,C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_170_176.B_selection_max,2.03114,2.02715,-0.00398739
+Bayes D1b_direct_pole_interp flat_170_176 prior_mean_P1,C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_170_176.prior_mean_P1,0.492335,0.493304,0.000968421
+Bayes D1b_direct_pole_interp flat_150_200 B_existence,C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_150_200.B_existence,0.67727,0.679883,0.0026132
+Bayes D1b_direct_pole_interp flat_150_200 B_selection,C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_150_200.B_selection,1.47528,1.48059,0.00531746
+Bayes D1b_direct_pole_interp flat_150_200 B_selection_max,C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_150_200.B_selection_max,2.17827,2.17772,-0.000551263
+Bayes D1b_direct_pole_interp flat_150_200 prior_mean_P1,C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_150_200.prior_mean_P1,0.45908,0.459196,0.000116211
+Bayes D1b_direct_pole_interp flat_lambda_pm0p05 B_existence,C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_lambda_pm0p05.B_existence,0.674711,0.677334,0.00262313
+Bayes D1b_direct_pole_interp flat_lambda_pm0p05 B_selection,C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_lambda_pm0p05.B_selection,1.08594,1.08949,0.00354813
+Bayes D1b_direct_pole_interp flat_lambda_pm0p05 B_selection_max,C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_lambda_pm0p05.B_selection_max,1.60949,1.60849,-0.000994751
+Bayes D1b_direct_pole_interp flat_lambda_pm0p05 prior_mean_P1,C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_lambda_pm0p05.prior_mean_P1,0.621315,0.621699,0.000384244
+Bayes D1c_direct_interp_renorm flat_170_176 B_existence,C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_170_176.B_existence,0.675616,0.67821,0.00259418
+Bayes D1c_direct_interp_renorm flat_170_176 B_selection,C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_170_176.B_selection,1.37227,1.37483,0.00256484
+Bayes D1c_direct_interp_renorm flat_170_176 B_selection_max,C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_170_176.B_selection_max,2.03114,2.02715,-0.00398739
+Bayes D1c_direct_interp_renorm flat_170_176 prior_mean_P1,C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_170_176.prior_mean_P1,0.492335,0.493304,0.000968421
+Bayes D1c_direct_interp_renorm flat_150_200 B_existence,C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_150_200.B_existence,0.675617,0.678211,0.00259417
+Bayes D1c_direct_interp_renorm flat_150_200 B_selection,C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_150_200.B_selection,1.47168,1.47695,0.00527692
+Bayes D1c_direct_interp_renorm flat_150_200 B_selection_max,C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_150_200.B_selection_max,2.17827,2.17772,-0.000551263
+Bayes D1c_direct_interp_renorm flat_150_200 prior_mean_P1,C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_150_200.prior_mean_P1,0.45908,0.459196,0.000116211
+Bayes D1c_direct_interp_renorm flat_lambda_pm0p05 B_existence,C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_lambda_pm0p05.B_existence,0.672983,0.675587,0.00260419
+Bayes D1c_direct_interp_renorm flat_lambda_pm0p05 B_selection,C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_lambda_pm0p05.B_selection,1.08316,1.08668,0.00351938
+Bayes D1c_direct_interp_renorm flat_lambda_pm0p05 B_selection_max,C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_lambda_pm0p05.B_selection_max,1.60949,1.60849,-0.000994751
+Bayes D1c_direct_interp_renorm flat_lambda_pm0p05 prior_mean_P1,C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_lambda_pm0p05.prior_mean_P1,0.621315,0.621699,0.000384244
+Bayes D2_sigma_pole flat_170_176 B_existence,C154_correction_summary.json:bayes.D2_sigma_pole.flat_170_176.B_existence,0.859523,0.861033,0.00151012
+Bayes D2_sigma_pole flat_170_176 B_selection,C154_correction_summary.json:bayes.D2_sigma_pole.flat_170_176.B_selection,1.74581,1.74544,-0.000366015
+Bayes D2_sigma_pole flat_170_176 B_selection_max,C154_correction_summary.json:bayes.D2_sigma_pole.flat_170_176.B_selection_max,2.03114,2.02715,-0.00398739
+Bayes D2_sigma_pole flat_170_176 prior_mean_P1,C154_correction_summary.json:bayes.D2_sigma_pole.flat_170_176.prior_mean_P1,0.492335,0.493304,0.000968421
+Bayes D2_sigma_pole flat_150_200 B_existence,C154_correction_summary.json:bayes.D2_sigma_pole.flat_150_200.B_existence,0.859556,0.861066,0.00150977
+Bayes D2_sigma_pole flat_150_200 B_selection,C154_correction_summary.json:bayes.D2_sigma_pole.flat_150_200.B_selection,1.87234,1.87516,0.002814
+Bayes D2_sigma_pole flat_150_200 B_selection_max,C154_correction_summary.json:bayes.D2_sigma_pole.flat_150_200.B_selection_max,2.17827,2.17772,-0.000551263
+Bayes D2_sigma_pole flat_150_200 prior_mean_P1,C154_correction_summary.json:bayes.D2_sigma_pole.flat_150_200.prior_mean_P1,0.45908,0.459196,0.000116211
+Bayes D2_sigma_pole flat_lambda_pm0p05 B_existence,C154_correction_summary.json:bayes.D2_sigma_pole.flat_lambda_pm0p05.B_existence,0.857817,0.85934,0.00152329
+Bayes D2_sigma_pole flat_lambda_pm0p05 B_selection,C154_correction_summary.json:bayes.D2_sigma_pole.flat_lambda_pm0p05.B_selection,1.38065,1.38224,0.00159689
+Bayes D2_sigma_pole flat_lambda_pm0p05 B_selection_max,C154_correction_summary.json:bayes.D2_sigma_pole.flat_lambda_pm0p05.B_selection_max,1.60949,1.60849,-0.000994751
+Bayes D2_sigma_pole flat_lambda_pm0p05 prior_mean_P1,C154_correction_summary.json:bayes.D2_sigma_pole.flat_lambda_pm0p05.prior_mean_P1,0.621315,0.621699,0.000384244
+Bayes D2b_sigma_pole_PDG2025 flat_170_176 B_existence,C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_170_176.B_existence,0.737664,0.739744,0.00208075
+Bayes D2b_sigma_pole_PDG2025 flat_170_176 B_selection,C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_170_176.B_selection,1.4983,1.49957,0.00127663
+Bayes D2b_sigma_pole_PDG2025 flat_170_176 B_selection_max,C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_170_176.B_selection_max,2.03114,2.02715,-0.00398739
+Bayes D2b_sigma_pole_PDG2025 flat_170_176 prior_mean_P1,C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_170_176.prior_mean_P1,0.492335,0.493304,0.000968421
+Bayes D2b_sigma_pole_PDG2025 flat_150_200 B_existence,C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_150_200.B_existence,0.737744,0.739824,0.00208011
+Bayes D2b_sigma_pole_PDG2025 flat_150_200 B_selection,C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_150_200.B_selection,1.607,1.61113,0.00412321
+Bayes D2b_sigma_pole_PDG2025 flat_150_200 B_selection_max,C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_150_200.B_selection_max,2.17827,2.17772,-0.000551263
+Bayes D2b_sigma_pole_PDG2025 flat_150_200 prior_mean_P1,C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_150_200.prior_mean_P1,0.45908,0.459196,0.000116211
+Bayes D2b_sigma_pole_PDG2025 flat_lambda_pm0p05 B_existence,C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_lambda_pm0p05.B_existence,0.734619,0.736714,0.00209411
+Bayes D2b_sigma_pole_PDG2025 flat_lambda_pm0p05 B_selection,C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_lambda_pm0p05.B_selection,1.18236,1.185,0.00263759
+Bayes D2b_sigma_pole_PDG2025 flat_lambda_pm0p05 B_selection_max,C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_lambda_pm0p05.B_selection_max,1.60949,1.60849,-0.000994751
+Bayes D2b_sigma_pole_PDG2025 flat_lambda_pm0p05 prior_mean_P1,C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_lambda_pm0p05.prior_mean_P1,0.621315,0.621699,0.000384244
+Bayes D3_MSR flat_170_176 B_existence,C154_correction_summary.json:bayes.D3_MSR.flat_170_176.B_existence,0.496826,0.499846,0.00301958
+Bayes D3_MSR flat_170_176 B_selection,C154_correction_summary.json:bayes.D3_MSR.flat_170_176.B_selection,1.0091,1.01324,0.00414018
+Bayes D3_MSR flat_170_176 B_selection_max,C154_correction_summary.json:bayes.D3_MSR.flat_170_176.B_selection_max,2.03109,2.02711,-0.00398696
+Bayes D3_MSR flat_170_176 prior_mean_P1,C154_correction_summary.json:bayes.D3_MSR.flat_170_176.prior_mean_P1,0.492345,0.493314,0.000968357
+Bayes D3_MSR flat_150_200 B_existence,C154_correction_summary.json:bayes.D3_MSR.flat_150_200.B_existence,0.496826,0.499846,0.00301958
+Bayes D3_MSR flat_150_200 B_selection,C154_correction_summary.json:bayes.D3_MSR.flat_150_200.B_selection,1.08222,1.08852,0.0063019
+Bayes D3_MSR flat_150_200 B_selection_max,C154_correction_summary.json:bayes.D3_MSR.flat_150_200.B_selection_max,2.17826,2.17771,-0.000551223
+Bayes D3_MSR flat_150_200 prior_mean_P1,C154_correction_summary.json:bayes.D3_MSR.flat_150_200.prior_mean_P1,0.459081,0.459198,0.000116203
+Bayes D3_MSR flat_lambda_pm0p05 B_existence,C154_correction_summary.json:bayes.D3_MSR.flat_lambda_pm0p05.B_existence,0.493991,0.497012,0.00302098
+Bayes D3_MSR flat_lambda_pm0p05 B_selection,C154_correction_summary.json:bayes.D3_MSR.flat_lambda_pm0p05.B_selection,0.795072,0.79944,0.00436786
+Bayes D3_MSR flat_lambda_pm0p05 B_selection_max,C154_correction_summary.json:bayes.D3_MSR.flat_lambda_pm0p05.B_selection_max,1.60949,1.60849,-0.000994683
+Bayes D3_MSR flat_lambda_pm0p05 prior_mean_P1,C154_correction_summary.json:bayes.D3_MSR.flat_lambda_pm0p05.prior_mean_P1,0.621316,0.6217,0.000384219
+Bayes D4_direct_as_mbar flat_170_176 B_existence,C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_170_176.B_existence,0.726408,0.72951,0.00310199
+Bayes D4_direct_as_mbar flat_170_176 B_selection,C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_170_176.B_selection,1.4754,1.47879,0.00339191
+Bayes D4_direct_as_mbar flat_170_176 B_selection_max,C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_170_176.B_selection_max,2.03109,2.02711,-0.00398696
+Bayes D4_direct_as_mbar flat_170_176 prior_mean_P1,C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_170_176.prior_mean_P1,0.492345,0.493314,0.000968357
+Bayes D4_direct_as_mbar flat_150_200 B_existence,C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_150_200.B_existence,0.726408,0.72951,0.00310199
+Bayes D4_direct_as_mbar flat_150_200 B_selection,C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_150_200.B_selection,1.58231,1.58866,0.00635483
+Bayes D4_direct_as_mbar flat_150_200 B_selection_max,C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_150_200.B_selection_max,2.17826,2.17771,-0.000551223
+Bayes D4_direct_as_mbar flat_150_200 prior_mean_P1,C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_150_200.prior_mean_P1,0.459081,0.459198,0.000116203
+Bayes D4_direct_as_mbar flat_lambda_pm0p05 B_existence,C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_lambda_pm0p05.B_existence,0.725624,0.728731,0.00310705
+Bayes D4_direct_as_mbar flat_lambda_pm0p05 B_selection,C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_lambda_pm0p05.B_selection,1.16788,1.17216,0.0042759
+Bayes D4_direct_as_mbar flat_lambda_pm0p05 B_selection_max,C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_lambda_pm0p05.B_selection_max,1.60949,1.60849,-0.000994683
+Bayes D4_direct_as_mbar flat_lambda_pm0p05 prior_mean_P1,C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_lambda_pm0p05.prior_mean_P1,0.621316,0.6217,0.000384219
+Bayes D3b_msbar_sigma flat_170_176 B_existence,C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_170_176.B_existence,0.617574,0.618709,0.00113515
+Bayes D3b_msbar_sigma flat_170_176 B_selection,C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_170_176.B_selection,1.25435,1.25419,-0.000161176
+Bayes D3b_msbar_sigma flat_170_176 B_selection_max,C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_170_176.B_selection_max,2.03109,2.02711,-0.00398696
+Bayes D3b_msbar_sigma flat_170_176 prior_mean_P1,C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_170_176.prior_mean_P1,0.492345,0.493314,0.000968357
+Bayes D3b_msbar_sigma flat_150_200 B_existence,C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_150_200.B_existence,0.618621,0.619619,0.000998762
+Bayes D3b_msbar_sigma flat_150_200 B_selection,C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_150_200.B_selection,1.34752,1.34935,0.00183402
+Bayes D3b_msbar_sigma flat_150_200 B_selection_max,C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_150_200.B_selection_max,2.17826,2.17771,-0.000551223
+Bayes D3b_msbar_sigma flat_150_200 prior_mean_P1,C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_150_200.prior_mean_P1,0.459081,0.459198,0.000116203
+Bayes D3b_msbar_sigma flat_lambda_pm0p05 B_existence,C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_lambda_pm0p05.B_existence,0.608089,0.609098,0.00100896
+Bayes D3b_msbar_sigma flat_lambda_pm0p05 B_selection,C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_lambda_pm0p05.B_selection,0.978711,0.979729,0.00101805
+Bayes D3b_msbar_sigma flat_lambda_pm0p05 B_selection_max,C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_lambda_pm0p05.B_selection_max,1.60949,1.60849,-0.000994683
+Bayes D3b_msbar_sigma flat_lambda_pm0p05 prior_mean_P1,C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_lambda_pm0p05.prior_mean_P1,0.621316,0.6217,0.000384219
+Bayes C1_ATLAS_CMS flat_170_176 B_existence,C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_170_176.B_existence,0.759765,0.762515,0.00274968
+Bayes C1_ATLAS_CMS flat_170_176 B_selection,C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_170_176.B_selection,1.54319,1.54573,0.00254452
+Bayes C1_ATLAS_CMS flat_170_176 B_selection_max,C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_170_176.B_selection_max,2.03114,2.02715,-0.00398739
+Bayes C1_ATLAS_CMS flat_170_176 prior_mean_P1,C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_170_176.prior_mean_P1,0.492335,0.493304,0.000968421
+Bayes C1_ATLAS_CMS flat_150_200 B_existence,C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_150_200.B_existence,0.759765,0.762515,0.00274968
+Bayes C1_ATLAS_CMS flat_150_200 B_selection,C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_150_200.B_selection,1.65497,1.66054,0.00556919
+Bayes C1_ATLAS_CMS flat_150_200 B_selection_max,C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_150_200.B_selection_max,2.17827,2.17772,-0.000551263
+Bayes C1_ATLAS_CMS flat_150_200 prior_mean_P1,C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_150_200.prior_mean_P1,0.45908,0.459196,0.000116211
+Bayes C1_ATLAS_CMS flat_lambda_pm0p05 B_existence,C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_lambda_pm0p05.B_existence,0.758824,0.761581,0.00275628
+Bayes C1_ATLAS_CMS flat_lambda_pm0p05 B_selection,C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_lambda_pm0p05.B_selection,1.22132,1.225,0.00367862
+Bayes C1_ATLAS_CMS flat_lambda_pm0p05 B_selection_max,C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_lambda_pm0p05.B_selection_max,1.60949,1.60849,-0.000994751
+Bayes C1_ATLAS_CMS flat_lambda_pm0p05 prior_mean_P1,C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_lambda_pm0p05.prior_mean_P1,0.621315,0.621699,0.000384244
+Bayes C2_CMS flat_170_176 B_existence,C154_correction_summary.json:bayes.C2_CMS.flat_170_176.B_existence,0.969142,0.969681,0.000538579
+Bayes C2_CMS flat_170_176 B_selection,C154_correction_summary.json:bayes.C2_CMS.flat_170_176.B_selection,1.96846,1.96569,-0.00277257
+Bayes C2_CMS flat_170_176 B_selection_max,C154_correction_summary.json:bayes.C2_CMS.flat_170_176.B_selection_max,2.03114,2.02715,-0.00398739
+Bayes C2_CMS flat_170_176 prior_mean_P1,C154_correction_summary.json:bayes.C2_CMS.flat_170_176.prior_mean_P1,0.492335,0.493304,0.000968421
+Bayes C2_CMS flat_150_200 B_existence,C154_correction_summary.json:bayes.C2_CMS.flat_150_200.B_existence,0.969142,0.969681,0.000538579
+Bayes C2_CMS flat_150_200 B_selection,C154_correction_summary.json:bayes.C2_CMS.flat_150_200.B_selection,2.11105,2.11169,0.00063862
+Bayes C2_CMS flat_150_200 B_selection_max,C154_correction_summary.json:bayes.C2_CMS.flat_150_200.B_selection_max,2.17827,2.17772,-0.000551263
+Bayes C2_CMS flat_150_200 prior_mean_P1,C154_correction_summary.json:bayes.C2_CMS.flat_150_200.prior_mean_P1,0.45908,0.459196,0.000116211
+Bayes C2_CMS flat_lambda_pm0p05 B_existence,C154_correction_summary.json:bayes.C2_CMS.flat_lambda_pm0p05.B_existence,0.968881,0.969424,0.000542517
+Bayes C2_CMS flat_lambda_pm0p05 B_selection,C154_correction_summary.json:bayes.C2_CMS.flat_lambda_pm0p05.B_selection,1.5594,1.55931,-9.11598e-05
+Bayes C2_CMS flat_lambda_pm0p05 B_selection_max,C154_correction_summary.json:bayes.C2_CMS.flat_lambda_pm0p05.B_selection_max,1.60949,1.60849,-0.000994751
+Bayes C2_CMS flat_lambda_pm0p05 prior_mean_P1,C154_correction_summary.json:bayes.C2_CMS.flat_lambda_pm0p05.prior_mean_P1,0.621315,0.621699,0.000384244
+exclusion 0.1171 curve_P0.1,C154_summary.json:exclusion_mt.0.1171.curve_P0.1,173.062,173.069,0.00666371
+exclusion 0.1171 theory95_P0.1,C154_summary.json:exclusion_mt.0.1171.theory95_P0.1,173.332,173.339,0.00667085
+exclusion 0.1171 meas0p27_95_P0.1,C154_summary.json:exclusion_mt.0.1171.meas0p27_95_P0.1,173.834,173.841,0.00678949
+exclusion 0.1171 meas_interp_95_P0.1,C154_summary.json:exclusion_mt.0.1171.meas_interp_95_P0.1,174.189,174.195,0.0067657
+exclusion 0.1171 curve_P0.05,C154_summary.json:exclusion_mt.0.1171.curve_P0.05,173.193,173.2,0.00695182
+exclusion 0.1171 theory95_P0.05,C154_summary.json:exclusion_mt.0.1171.theory95_P0.05,173.463,173.47,0.00694793
+exclusion 0.1171 meas0p27_95_P0.05,C154_summary.json:exclusion_mt.0.1171.meas0p27_95_P0.05,173.965,173.972,0.0071161
+exclusion 0.1171 meas_interp_95_P0.05,C154_summary.json:exclusion_mt.0.1171.meas_interp_95_P0.05,174.319,174.326,0.00708289
+exclusion 0.1180 curve_P0.1,C154_summary.json:exclusion_mt.0.1180.curve_P0.1,173.412,173.418,0.00667429
+exclusion 0.1180 theory95_P0.1,C154_summary.json:exclusion_mt.0.1180.theory95_P0.1,173.682,173.688,0.00667371
+exclusion 0.1180 meas0p27_95_P0.1,C154_summary.json:exclusion_mt.0.1180.meas0p27_95_P0.1,174.184,174.191,0.00714883
+exclusion 0.1180 meas_interp_95_P0.1,C154_summary.json:exclusion_mt.0.1180.meas_interp_95_P0.1,174.538,174.545,0.00701838
+exclusion 0.1180 curve_P0.05,C154_summary.json:exclusion_mt.0.1180.curve_P0.05,173.542,173.549,0.00699796
+exclusion 0.1180 theory95_P0.05,C154_summary.json:exclusion_mt.0.1180.theory95_P0.05,173.812,173.819,0.00700338
+exclusion 0.1180 meas0p27_95_P0.05,C154_summary.json:exclusion_mt.0.1180.meas0p27_95_P0.05,174.314,174.322,0.0074914
+exclusion 0.1180 meas_interp_95_P0.05,C154_summary.json:exclusion_mt.0.1180.meas_interp_95_P0.05,174.669,174.676,0.0073546
+exclusion 0.1189 curve_P0.1,C154_summary.json:exclusion_mt.0.1189.curve_P0.1,173.761,173.768,0.0070192
+exclusion 0.1189 theory95_P0.1,C154_summary.json:exclusion_mt.0.1189.theory95_P0.1,174.031,174.038,0.00701806
+exclusion 0.1189 meas0p27_95_P0.1,C154_summary.json:exclusion_mt.0.1189.meas0p27_95_P0.1,174.533,174.541,0.00773844
+exclusion 0.1189 meas_interp_95_P0.1,C154_summary.json:exclusion_mt.0.1189.meas_interp_95_P0.1,174.887,174.895,0.00752074
+exclusion 0.1189 curve_P0.05,C154_summary.json:exclusion_mt.0.1189.curve_P0.05,173.892,173.899,0.00736543
+exclusion 0.1189 theory95_P0.05,C154_summary.json:exclusion_mt.0.1189.theory95_P0.05,174.162,174.169,0.00736656
+exclusion 0.1189 meas0p27_95_P0.05,C154_summary.json:exclusion_mt.0.1189.meas0p27_95_P0.05,174.664,174.672,0.0080844
+exclusion 0.1189 meas_interp_95_P0.05,C154_summary.json:exclusion_mt.0.1189.meas_interp_95_P0.05,175.018,175.026,0.00786533
+future now_direct sigma_tot,C154_summary.json:future.now_direct.sigma_tot,0.462403,0.462488,8.53567e-05
+future now_direct separation_172p6_173p3,C154_summary.json:future.now_direct.separation_172p6_173p3,1.51383,1.51355,-0.000279392
+future now_direct mhat_surv95,C154_summary.json:future.now_direct.mhat_surv95,172.187,172.193,0.00584447
+future now_direct mhat_excl_P0p1,C154_summary.json:future.now_direct.mhat_excl_P0p1,174.184,174.191,0.00714883
+future now_direct mhat_excl_P0p05,C154_summary.json:future.now_direct.mhat_excl_P0p05,174.314,174.322,0.0074914
+future now_direct truth 172.6 Pbar,C154_summary.json:future.now_direct.truth.172.6.Pbar,0.727106,0.730215,0.00310918
+future now_direct truth 172.6 prob_P_ge_0p5,C154_summary.json:future.now_direct.truth.172.6.prob_P_ge_0p5,0.774047,0.777775,0.00372788
+future now_direct truth 172.6 prob_P_le_0p1,C154_summary.json:future.now_direct.truth.172.6.prob_P_le_0p1,0.0439484,0.04263,-0.00131842
+future now_direct truth 172.6 power_surv,C154_summary.json:future.now_direct.truth.172.6.power_surv,0.0632461,0.0659776,0.00273158
+future now_direct truth 172.6 power_excl,C154_summary.json:future.now_direct.truth.172.6.power_excl,2.24344e-09,1.91189e-09,-3.3155e-10
+future now_direct truth 173.3 Pbar,C154_summary.json:future.now_direct.truth.173.3.Pbar,0.277106,0.280601,0.00349495
+future now_direct truth 173.3 prob_P_ge_0p5,C154_summary.json:future.now_direct.truth.173.3.prob_P_ge_0p5,0.223133,0.226951,0.00381753
+future now_direct truth 173.3 prob_P_le_0p1,C154_summary.json:future.now_direct.truth.173.3.prob_P_le_0p1,0.410911,0.405389,-0.00552222
+future now_direct truth 173.3 power_surv,C154_summary.json:future.now_direct.truth.173.3.power_surv,1.88882e-05,2.07444e-05,1.85617e-06
+future now_direct truth 173.3 power_excl,C154_summary.json:future.now_direct.truth.173.3.power_excl,0.000532869,0.000485065,-4.78041e-05
+future now_direct_interp sigma_tot,C154_summary.json:future.now_direct_interp.sigma_tot,0.681041,0.681099,5.79571e-05
+future now_direct_interp separation_172p6_173p3,C154_summary.json:future.now_direct_interp.separation_172p6_173p3,1.02784,1.02775,-8.74624e-05
+future now_direct_interp mhat_surv95,C154_summary.json:future.now_direct_interp.mhat_surv95,171.828,171.834,0.00582003
+future now_direct_interp mhat_excl_P0p1,C154_summary.json:future.now_direct_interp.mhat_excl_P0p1,174.538,174.545,0.00701838
+future now_direct_interp mhat_excl_P0p05,C154_summary.json:future.now_direct_interp.mhat_excl_P0p05,174.669,174.676,0.0073546
+future now_direct_interp truth 172.6 Pbar,C154_summary.json:future.now_direct_interp.truth.172.6.Pbar,0.67727,0.679883,0.0026132
+future now_direct_interp truth 172.6 prob_P_ge_0p5,C154_summary.json:future.now_direct_interp.truth.172.6.prob_P_ge_0p5,0.695234,0.69821,0.00297595
+future now_direct_interp truth 172.6 prob_P_le_0p1,C154_summary.json:future.now_direct_interp.truth.172.6.prob_P_le_0p1,0.120563,0.118607,-0.00195617
+future now_direct_interp truth 172.6 power_surv,C154_summary.json:future.now_direct_interp.truth.172.6.power_surv,0.0870619,0.0886958,0.00163392
+future now_direct_interp truth 172.6 power_excl,C154_summary.json:future.now_direct_interp.truth.172.6.power_excl,0.000324254,0.000309873,-1.43807e-05
+future now_direct_interp truth 173.3 Pbar,C154_summary.json:future.now_direct_interp.truth.173.3.Pbar,0.326619,0.329425,0.00280637
+future now_direct_interp truth 173.3 prob_P_ge_0p5,C154_summary.json:future.now_direct_interp.truth.173.3.prob_P_ge_0p5,0.302538,0.305547,0.00300939
+future now_direct_interp truth 173.3 prob_P_le_0p1,C154_summary.json:future.now_direct_interp.truth.173.3.prob_P_le_0p1,0.438532,0.434653,-0.00387939
+future now_direct_interp truth 173.3 power_surv,C154_summary.json:future.now_direct_interp.truth.173.3.power_surv,0.00478571,0.00493005,0.000144333
+future now_direct_interp truth 173.3 power_excl,C154_summary.json:future.now_direct_interp.truth.173.3.power_excl,0.0146806,0.0142275,-0.000453026
+future HLLHC_direct sigma_tot,C154_summary.json:future.HLLHC_direct.sigma_tot,0.422272,0.422365,9.3467e-05
+future HLLHC_direct separation_172p6_173p3,C154_summary.json:future.HLLHC_direct.separation_172p6_173p3,1.6577,1.65733,-0.00036684
+future HLLHC_direct mhat_surv95,C154_summary.json:future.HLLHC_direct.mhat_surv95,172.253,172.259,0.00585676
+future HLLHC_direct mhat_excl_P0p1,C154_summary.json:future.HLLHC_direct.mhat_excl_P0p1,174.119,174.126,0.0071913
+future HLLHC_direct mhat_excl_P0p05,C154_summary.json:future.HLLHC_direct.mhat_excl_P0p05,174.25,174.257,0.00753542
+future HLLHC_direct truth 172.6 Pbar,C154_summary.json:future.HLLHC_direct.truth.172.6.Pbar,0.738243,0.741439,0.00319673
+future HLLHC_direct truth 172.6 prob_P_ge_0p5,C154_summary.json:future.HLLHC_direct.truth.172.6.prob_P_ge_0p5,0.794958,0.798808,0.00384959
+future HLLHC_direct truth 172.6 prob_P_le_0p1,C154_summary.json:future.HLLHC_direct.truth.172.6.prob_P_le_0p1,0.0313677,0.0302712,-0.00109649
+future HLLHC_direct truth 172.6 power_surv,C154_summary.json:future.HLLHC_direct.truth.172.6.power_surv,0.0415719,0.0442424,0.00267047
+future HLLHC_direct truth 172.6 power_excl,C154_summary.json:future.HLLHC_direct.truth.172.6.power_excl,1.53211e-14,1.15463e-14,-3.77476e-15
+future HLLHC_direct truth 173.3 Pbar,C154_summary.json:future.HLLHC_direct.truth.173.3.Pbar,0.266091,0.269726,0.0036352
+future HLLHC_direct truth 173.3 prob_P_ge_0p5,C154_summary.json:future.HLLHC_direct.truth.173.3.prob_P_ge_0p5,0.20213,0.20609,0.0039601
+future HLLHC_direct truth 173.3 prob_P_le_0p1,C154_summary.json:future.HLLHC_direct.truth.173.3.prob_P_le_0p1,0.403014,0.397041,-0.00597282
+future HLLHC_direct truth 173.3 power_surv,C154_summary.json:future.HLLHC_direct.truth.173.3.power_surv,8.35129e-08,9.78139e-08,1.4301e-08
+future HLLHC_direct truth 173.3 power_excl,C154_summary.json:future.HLLHC_direct.truth.173.3.power_excl,2.10586e-05,1.80199e-05,-3.03873e-06
+future HLLHC_direct_interp sigma_tot,C154_summary.json:future.HLLHC_direct_interp.sigma_tot,0.654456,0.654517,6.03111e-05
+future HLLHC_direct_interp separation_172p6_173p3,C154_summary.json:future.HLLHC_direct_interp.separation_172p6_173p3,1.06959,1.06949,-9.85584e-05
+future HLLHC_direct_interp mhat_surv95,C154_summary.json:future.HLLHC_direct_interp.mhat_surv95,171.871,171.877,0.00582109
+future HLLHC_direct_interp mhat_excl_P0p1,C154_summary.json:future.HLLHC_direct_interp.mhat_excl_P0p1,174.495,174.502,0.00702869
+future HLLHC_direct_interp mhat_excl_P0p05,C154_summary.json:future.HLLHC_direct_interp.mhat_excl_P0p05,174.625,174.633,0.00736551
+future HLLHC_direct_interp truth 172.6 Pbar,C154_summary.json:future.HLLHC_direct_interp.truth.172.6.Pbar,0.682422,0.685094,0.00267113
+future HLLHC_direct_interp truth 172.6 prob_P_ge_0p5,C154_summary.json:future.HLLHC_direct_interp.truth.172.6.prob_P_ge_0p5,0.70246,0.705521,0.00306103
+future HLLHC_direct_interp truth 172.6 prob_P_le_0p1,C154_summary.json:future.HLLHC_direct_interp.truth.172.6.prob_P_le_0p1,0.111465,0.109542,-0.00192227
+future HLLHC_direct_interp truth 172.6 power_surv,C154_summary.json:future.HLLHC_direct_interp.truth.172.6.power_surv,0.0880463,0.0897859,0.00173957
+future HLLHC_direct_interp truth 172.6 power_excl,C154_summary.json:future.HLLHC_direct_interp.truth.172.6.power_excl,0.000217098,0.000206661,-1.04371e-05
+future HLLHC_direct_interp truth 173.3 Pbar,C154_summary.json:future.HLLHC_direct_interp.truth.173.3.Pbar,0.321545,0.324426,0.00288102
+future HLLHC_direct_interp truth 173.3 prob_P_ge_0p5,C154_summary.json:future.HLLHC_direct_interp.truth.173.3.prob_P_ge_0p5,0.295246,0.298344,0.00309824
+future HLLHC_direct_interp truth 173.3 prob_P_le_0p1,C154_summary.json:future.HLLHC_direct_interp.truth.173.3.prob_P_le_0p1,0.436109,0.432082,-0.00402708
+future HLLHC_direct_interp truth 173.3 power_surv,C154_summary.json:future.HLLHC_direct_interp.truth.173.3.power_surv,0.00399193,0.0041216,0.000129677
+future HLLHC_direct_interp truth 173.3 power_excl,C154_summary.json:future.HLLHC_direct_interp.truth.173.3.power_excl,0.0132601,0.012822,-0.000438075
+future HLLHC_direct_as_permille sigma_tot,C154_summary.json:future.HLLHC_direct_as_permille.sigma_tot,0.242963,0.242966,2.88823e-06
+future HLLHC_direct_as_permille separation_172p6_173p3,C154_summary.json:future.HLLHC_direct_as_permille.separation_172p6_173p3,2.88109,2.88106,-3.42487e-05
+future HLLHC_direct_as_permille mhat_surv95,C154_summary.json:future.HLLHC_direct_as_permille.mhat_surv95,172.548,172.553,0.00572041
+future HLLHC_direct_as_permille mhat_excl_P0p1,C154_summary.json:future.HLLHC_direct_as_permille.mhat_excl_P0p1,173.834,173.841,0.00668437
+future HLLHC_direct_as_permille mhat_excl_P0p05,C154_summary.json:future.HLLHC_direct_as_permille.mhat_excl_P0p05,173.965,173.972,0.00700912
+future HLLHC_direct_as_permille truth 172.6 Pbar,C154_summary.json:future.HLLHC_direct_as_permille.truth.172.6.Pbar,0.792747,0.796202,0.00345493
+future HLLHC_direct_as_permille truth 172.6 prob_P_ge_0p5,C154_summary.json:future.HLLHC_direct_as_permille.truth.172.6.prob_P_ge_0p5,0.923614,0.926928,0.00331383
+future HLLHC_direct_as_permille truth 172.6 prob_P_le_0p1,C154_summary.json:future.HLLHC_direct_as_permille.truth.172.6.prob_P_le_0p1,0.00104784,0.000962214,-8.56282e-05
+future HLLHC_direct_as_permille truth 172.6 power_surv,C154_summary.json:future.HLLHC_direct_as_permille.truth.172.6.power_surv,0.396641,0.407707,0.0110653
+future HLLHC_direct_as_permille truth 172.6 power_excl,C154_summary.json:future.HLLHC_direct_as_permille.truth.172.6.power_excl,3.36322e-10,2.72073e-10,-6.42496e-11
+future HLLHC_direct_as_permille truth 173.3 Pbar,C154_summary.json:future.HLLHC_direct_as_permille.truth.173.3.Pbar,0.212591,0.216707,0.00411551
+future HLLHC_direct_as_permille truth 173.3 prob_P_ge_0p5,C154_summary.json:future.HLLHC_direct_as_permille.truth.173.3.prob_P_ge_0p5,0.07328,0.0766263,0.00334635
+future HLLHC_direct_as_permille truth 173.3 prob_P_le_0p1,C154_summary.json:future.HLLHC_direct_as_permille.truth.173.3.prob_P_le_0p1,0.34138,0.332055,-0.00932491
+future HLLHC_direct_as_permille truth 173.3 power_surv,C154_summary.json:future.HLLHC_direct_as_permille.truth.173.3.power_surv,8.4263e-05,9.44379e-05,1.01749e-05
+future HLLHC_direct_as_permille truth 173.3 power_excl,C154_summary.json:future.HLLHC_direct_as_permille.truth.173.3.power_excl,0.00376563,0.00340686,-0.000358769
+future FCCee_base sigma_tot,C154_summary.json:future.FCCee_base.sigma_tot,0.131275,0.131286,1.10141e-05
+future FCCee_base separation_172p6_173p3,C154_summary.json:future.FCCee_base.separation_172p6_173p3,5.33231,5.33186,-0.000447345
+future FCCee_base mhat_surv95,C154_summary.json:future.FCCee_base.mhat_surv95,172.73,172.736,0.00571348
+future FCCee_base mhat_excl_P0p1,C154_summary.json:future.FCCee_base.mhat_excl_P0p1,173.67,173.677,0.00670792
+future FCCee_base mhat_excl_P0p05,C154_summary.json:future.FCCee_base.mhat_excl_P0p05,173.801,173.808,0.00703491
+future FCCee_base truth 172.6 Pbar,C154_summary.json:future.FCCee_base.truth.172.6.Pbar,0.823142,0.826606,0.00346415
+future FCCee_base truth 172.6 prob_P_ge_0p5,C154_summary.json:future.FCCee_base.truth.172.6.prob_P_ge_0p5,0.995511,0.996038,0.000526628
+future FCCee_base truth 172.6 prob_P_le_0p1,C154_summary.json:future.FCCee_base.truth.172.6.prob_P_le_0p1,5.31452e-07,4.33639e-07,-9.78125e-08
+future FCCee_base truth 172.6 power_surv,C154_summary.json:future.FCCee_base.truth.172.6.power_surv,0.993459,0.995208,0.00174844
+future FCCee_base truth 172.6 power_excl,C154_summary.json:future.FCCee_base.truth.172.6.power_excl,0,0,0
+future FCCee_base truth 173.3 Pbar,C154_summary.json:future.FCCee_base.truth.173.3.Pbar,0.183714,0.188016,0.00430202
+future FCCee_base truth 173.3 prob_P_ge_0p5,C154_summary.json:future.FCCee_base.truth.173.3.prob_P_ge_0p5,0.00322752,0.00369653,0.000469009
+future FCCee_base truth 173.3 prob_P_le_0p1,C154_summary.json:future.FCCee_base.truth.173.3.prob_P_le_0p1,0.254721,0.241868,-0.0128532
+future FCCee_base truth 173.3 power_surv,C154_summary.json:future.FCCee_base.truth.173.3.power_surv,8.62302e-28,2.82661e-27,1.96431e-27
+future FCCee_base truth 173.3 power_excl,C154_summary.json:future.FCCee_base.truth.173.3.power_excl,8.23785e-13,3.25517e-13,-4.98268e-13
+future FCCee_ambitious sigma_tot,C154_summary.json:future.FCCee_ambitious.sigma_tot,0.116604,0.116607,3.10007e-06
+future FCCee_ambitious separation_172p6_173p3,C154_summary.json:future.FCCee_ambitious.separation_172p6_173p3,6.00325,6.00309,-0.0001596
+future FCCee_ambitious mhat_surv95,C154_summary.json:future.FCCee_ambitious.mhat_surv95,172.754,172.76,0.00571933
+future FCCee_ambitious mhat_excl_P0p1,C154_summary.json:future.FCCee_ambitious.mhat_excl_P0p1,173.651,173.657,0.00668295
+future FCCee_ambitious mhat_excl_P0p05,C154_summary.json:future.FCCee_ambitious.mhat_excl_P0p05,173.781,173.788,0.00700748
+future FCCee_ambitious truth 172.6 Pbar,C154_summary.json:future.FCCee_ambitious.truth.172.6.Pbar,0.826253,0.829709,0.00345573
+future FCCee_ambitious truth 172.6 prob_P_ge_0p5,C154_summary.json:future.FCCee_ambitious.truth.172.6.prob_P_ge_0p5,0.998258,0.998506,0.000247352
+future FCCee_ambitious truth 172.6 prob_P_le_0p1,C154_summary.json:future.FCCee_ambitious.truth.172.6.prob_P_le_0p1,8.08184e-08,6.3949e-08,-1.68694e-08
+future FCCee_ambitious truth 172.6 power_surv,C154_summary.json:future.FCCee_ambitious.truth.172.6.power_surv,0.999943,0.999969,2.56734e-05
+future FCCee_ambitious truth 172.6 power_excl,C154_summary.json:future.FCCee_ambitious.truth.172.6.power_excl,0,0,0
+future FCCee_ambitious truth 173.3 Pbar,C154_summary.json:future.FCCee_ambitious.truth.173.3.Pbar,0.18078,0.185084,0.004304
+future FCCee_ambitious truth 173.3 prob_P_ge_0p5,C154_summary.json:future.FCCee_ambitious.truth.173.3.prob_P_ge_0p5,0.00100111,0.00118709,0.000185979
+future FCCee_ambitious truth 173.3 prob_P_le_0p1,C154_summary.json:future.FCCee_ambitious.truth.173.3.prob_P_le_0p1,0.238637,0.225363,-0.0132735
+future FCCee_ambitious truth 173.3 power_surv,C154_summary.json:future.FCCee_ambitious.truth.173.3.power_surv,5.01639e-43,3.58172e-42,3.08008e-42
+future FCCee_ambitious truth 173.3 power_excl,C154_summary.json:future.FCCee_ambitious.truth.173.3.power_excl,0,0,0
+future FCCee_ambitious_SM0p04 sigma_tot,C154_summary.json:future.FCCee_ambitious_SM0p04.sigma_tot,0.101471,0.101475,3.56237e-06
+future FCCee_ambitious_SM0p04 separation_172p6_173p3,C154_summary.json:future.FCCee_ambitious_SM0p04.separation_172p6_173p3,6.89852,6.89828,-0.000242179
+future FCCee_ambitious_SM0p04 mhat_surv95,C154_summary.json:future.FCCee_ambitious_SM0p04.mhat_surv95,172.778,172.784,0.00571867
+future FCCee_ambitious_SM0p04 mhat_excl_P0p1,C154_summary.json:future.FCCee_ambitious_SM0p04.mhat_excl_P0p1,173.631,173.638,0.00668363
+future FCCee_ambitious_SM0p04 mhat_excl_P0p05,C154_summary.json:future.FCCee_ambitious_SM0p04.mhat_excl_P0p05,173.762,173.769,0.00700841
+future FCCee_ambitious_SM0p04 truth 172.6 Pbar,C154_summary.json:future.FCCee_ambitious_SM0p04.truth.172.6.Pbar,0.829144,0.832585,0.0034416
+future FCCee_ambitious_SM0p04 truth 172.6 prob_P_ge_0p5,C154_summary.json:future.FCCee_ambitious_SM0p04.truth.172.6.prob_P_ge_0p5,0.999554,0.999633,7.88617e-05
+future FCCee_ambitious_SM0p04 truth 172.6 prob_P_le_0p1,C154_summary.json:future.FCCee_ambitious_SM0p04.truth.172.6.prob_P_le_0p1,8.3939e-09,6.40575e-09,-1.98814e-09
+future FCCee_ambitious_SM0p04 truth 172.6 power_surv,C154_summary.json:future.FCCee_ambitious_SM0p04.truth.172.6.power_surv,0.999996,0.999998,1.99229e-06
+future FCCee_ambitious_SM0p04 truth 172.6 power_excl,C154_summary.json:future.FCCee_ambitious_SM0p04.truth.172.6.power_excl,0,0,0
+future FCCee_ambitious_SM0p04 truth 173.3 Pbar,C154_summary.json:future.FCCee_ambitious_SM0p04.truth.173.3.Pbar,0.178051,0.182374,0.00432231
+future FCCee_ambitious_SM0p04 truth 173.3 prob_P_ge_0p5,C154_summary.json:future.FCCee_ambitious_SM0p04.truth.173.3.prob_P_ge_0p5,0.000162885,0.000204234,4.1349e-05
+future FCCee_ambitious_SM0p04 truth 173.3 prob_P_le_0p1,C154_summary.json:future.FCCee_ambitious_SM0p04.truth.173.3.prob_P_le_0p1,0.221304,0.207691,-0.0136137
+future FCCee_ambitious_SM0p04 truth 173.3 power_surv,C154_summary.json:future.FCCee_ambitious_SM0p04.truth.173.3.power_surv,1.738e-39,1.13807e-38,9.64269e-39
+future FCCee_ambitious_SM0p04 truth 173.3 power_excl,C154_summary.json:future.FCCee_ambitious_SM0p04.truth.173.3.power_excl,0,0,0
+HL-LHC corr HLLHC_0.17_as0.0002.Pbar_172p6,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002.Pbar_172p6,0.797407,0.800872,0.00346543
+HL-LHC corr HLLHC_0.17_as0.0002.Pbar_173p3,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002.Pbar_173p3,0.2081,0.212255,0.00415492
+HL-LHC corr HLLHC_0.17_as0.0002.Pge05_172p6,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002.Pge05_172p6,0.936536,0.939593,0.00305626
+HL-LHC corr HLLHC_0.17_as0.0002.Pge05_173p3,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002.Pge05_173p3,0.0604715,0.0635692,0.00309768
+HL-LHC corr HLLHC_0.17_as0.0002.mhat_excl_P0p1,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002.mhat_excl_P0p1,173.811,173.818,0.00670449
+HL-LHC corr HLLHC_0.17_as0.0002.mhat_surv95,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002.mhat_surv95,172.573,172.579,0.00571638
+HL-LHC corr HLLHC_0.17_as0.0002.separation_172p6_173p3,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002.separation_172p6_173p3,3.07654,3.07642,-0.000115835
+HL-LHC corr HLLHC_0.17_as0.0002.sigma_meas,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002.sigma_meas,0.17,0.17,0
+HL-LHC corr HLLHC_0.17_as0.0002.sigma_tot,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002.sigma_tot,0.227529,0.227537,8.567e-06
+HL-LHC corr HLLHC_0.17_as0.0002_interp0.5.Pbar_172p6,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002_interp0.5.Pbar_172p6,0.705156,0.708038,0.00288247
+HL-LHC corr HLLHC_0.17_as0.0002_interp0.5.Pbar_173p3,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002_interp0.5.Pbar_173p3,0.298965,0.302104,0.00313915
+HL-LHC corr HLLHC_0.17_as0.0002_interp0.5.Pge05_172p6,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002_interp0.5.Pge05_172p6,0.736592,0.739984,0.0033926
+HL-LHC corr HLLHC_0.17_as0.0002_interp0.5.Pge05_173p3,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002_interp0.5.Pge05_173p3,0.260621,0.264021,0.0034001
+HL-LHC corr HLLHC_0.17_as0.0002_interp0.5.mhat_excl_P0p1,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002_interp0.5.mhat_excl_P0p1,174.323,174.33,0.00669187
+HL-LHC corr HLLHC_0.17_as0.0002_interp0.5.mhat_surv95,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002_interp0.5.mhat_surv95,172.044,172.05,0.00572352
+HL-LHC corr HLLHC_0.17_as0.0002_interp0.5.separation_172p6_173p3,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002_interp0.5.separation_172p6_173p3,1.27427,1.27426,-8.23103e-06
+HL-LHC corr HLLHC_0.17_as0.0002_interp0.5.sigma_meas,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002_interp0.5.sigma_meas,0.52811,0.52811,0
+HL-LHC corr HLLHC_0.17_as0.0002_interp0.5.sigma_tot,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002_interp0.5.sigma_tot,0.549335,0.549339,3.54841e-06
+HL-LHC corr HLLHC_0.17_as0.00045.Pbar_172p6,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045.Pbar_172p6,0.782558,0.785986,0.00342769
+HL-LHC corr HLLHC_0.17_as0.00045.Pbar_173p3,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045.Pbar_173p3,0.222451,0.226508,0.00405681
+HL-LHC corr HLLHC_0.17_as0.00045.Pge05_172p6,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045.Pge05_172p6,0.89613,0.899815,0.00368507
+HL-LHC corr HLLHC_0.17_as0.00045.Pge05_173p3,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045.Pge05_173p3,0.100715,0.104485,0.00377025
+HL-LHC corr HLLHC_0.17_as0.00045.mhat_excl_P0p1,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045.mhat_excl_P0p1,173.886,173.893,0.00682654
+HL-LHC corr HLLHC_0.17_as0.00045.mhat_surv95,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045.mhat_surv95,172.494,172.499,0.00571964
+HL-LHC corr HLLHC_0.17_as0.00045.separation_172p6_173p3,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045.separation_172p6_173p3,2.53696,2.53663,-0.000328774
+HL-LHC corr HLLHC_0.17_as0.00045.sigma_meas,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045.sigma_meas,0.17,0.17,0
+HL-LHC corr HLLHC_0.17_as0.00045.sigma_tot,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045.sigma_tot,0.275921,0.275957,3.57623e-05
+HL-LHC corr HLLHC_0.17_as0.00045_interp0.5.Pbar_172p6,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045_interp0.5.Pbar_172p6,0.700111,0.702948,0.00283749
+HL-LHC corr HLLHC_0.17_as0.00045_interp0.5.Pbar_173p3,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045_interp0.5.Pbar_173p3,0.303966,0.307051,0.0030856
+HL-LHC corr HLLHC_0.17_as0.00045_interp0.5.Pge05_172p6,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045_interp0.5.Pge05_172p6,0.728689,0.732012,0.00332288
+HL-LHC corr HLLHC_0.17_as0.00045_interp0.5.Pge05_173p3,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045_interp0.5.Pge05_173p3,0.268641,0.271981,0.00333978
+HL-LHC corr HLLHC_0.17_as0.00045_interp0.5.mhat_excl_P0p1,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045_interp0.5.mhat_excl_P0p1,174.359,174.365,0.00676495
+HL-LHC corr HLLHC_0.17_as0.00045_interp0.5.mhat_surv95,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045_interp0.5.mhat_surv95,172.008,172.014,0.00573274
+HL-LHC corr HLLHC_0.17_as0.00045_interp0.5.separation_172p6_173p3,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045_interp0.5.separation_172p6_173p3,1.22575,1.22571,-3.70873e-05
+HL-LHC corr HLLHC_0.17_as0.00045_interp0.5.sigma_meas,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045_interp0.5.sigma_meas,0.52811,0.52811,0
+HL-LHC corr HLLHC_0.17_as0.00045_interp0.5.sigma_tot,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045_interp0.5.sigma_tot,0.57108,0.571097,1.72796e-05
+HL-LHC corr HLLHC_0.17_as0.0009.Pbar_172p6,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009.Pbar_172p6,0.742067,0.745292,0.00322496
+HL-LHC corr HLLHC_0.17_as0.0009.Pbar_173p3,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009.Pbar_173p3,0.262298,0.26598,0.00368193
+HL-LHC corr HLLHC_0.17_as0.0009.Pge05_172p6,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009.Pge05_172p6,0.80252,0.806404,0.00388383
+HL-LHC corr HLLHC_0.17_as0.0009.Pge05_173p3,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009.Pge05_173p3,0.194544,0.198547,0.00400254
+HL-LHC corr HLLHC_0.17_as0.0009.mhat_excl_P0p1,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009.mhat_excl_P0p1,174.098,174.105,0.00720761
+HL-LHC corr HLLHC_0.17_as0.0009.mhat_surv95,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009.mhat_surv95,172.275,172.281,0.00586198
+HL-LHC corr HLLHC_0.17_as0.0009.separation_172p6_173p3,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009.separation_172p6_173p3,1.71184,1.71143,-0.000403958
+HL-LHC corr HLLHC_0.17_as0.0009.sigma_meas,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009.sigma_meas,0.17,0.17,0
+HL-LHC corr HLLHC_0.17_as0.0009.sigma_tot,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009.sigma_tot,0.408917,0.409014,9.65187e-05
+HL-LHC corr HLLHC_0.17_as0.0009_interp0.5.Pbar_172p6,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009_interp0.5.Pbar_172p6,0.684121,0.686811,0.00269003
+HL-LHC corr HLLHC_0.17_as0.0009_interp0.5.Pbar_173p3,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009_interp0.5.Pbar_173p3,0.31986,0.322765,0.00290556
+HL-LHC corr HLLHC_0.17_as0.0009_interp0.5.Pge05_172p6,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009_interp0.5.Pge05_172p6,0.704888,0.707977,0.00308899
+HL-LHC corr HLLHC_0.17_as0.0009_interp0.5.Pge05_173p3,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009_interp0.5.Pge05_173p3,0.292796,0.295923,0.00312752
+HL-LHC corr HLLHC_0.17_as0.0009_interp0.5.mhat_excl_P0p1,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009_interp0.5.mhat_excl_P0p1,174.481,174.488,0.00703222
+HL-LHC corr HLLHC_0.17_as0.0009_interp0.5.mhat_surv95,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009_interp0.5.mhat_surv95,171.885,171.891,0.00582149
+HL-LHC corr HLLHC_0.17_as0.0009_interp0.5.separation_172p6_173p3,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009_interp0.5.separation_172p6_173p3,1.08372,1.08362,-0.000102517
+HL-LHC corr HLLHC_0.17_as0.0009_interp0.5.sigma_meas,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009_interp0.5.sigma_meas,0.52811,0.52811,0
+HL-LHC corr HLLHC_0.17_as0.0009_interp0.5.sigma_tot,C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009_interp0.5.sigma_tot,0.64592,0.645982,6.11081e-05
+relative_form.lambda_SM_mu_b_172p60,C154_summary.json:relative_form.lambda_SM_mu_b_172p60,-0.00977414,-0.00977414,0
+relative_form.lambda_c_C149.P1=0.1,C154_summary.json:relative_form.lambda_c_C149.P1=0.1,-0.0151404,-0.0151849,-4.44298e-05
+relative_form.lambda_c_C149.P1=0.5,C154_summary.json:relative_form.lambda_c_C149.P1=0.5,-0.0121037,-0.0121415,-3.7802e-05
+relative_form.lambda_c_C149.P1=0.9,C154_summary.json:relative_form.lambda_c_C149.P1=0.9,-0.00910353,-0.00913391,-3.03775e-05
+relative_form.lambda_c_from_T1_lam_fit.P1=0.1,C154_summary.json:relative_form.lambda_c_from_T1_lam_fit.P1=0.1,-0.0151404,-0.0151849,-4.44298e-05
+relative_form.lambda_c_from_T1_lam_fit.P1=0.5,C154_summary.json:relative_form.lambda_c_from_T1_lam_fit.P1=0.5,-0.0121037,-0.0121415,-3.78019e-05
+relative_form.lambda_c_from_T1_lam_fit.P1=0.9,C154_summary.json:relative_form.lambda_c_from_T1_lam_fit.P1=0.9,-0.00910353,-0.00913391,-3.03775e-05
+relative_form.m0,C154_summary.json:relative_form.m0,171.092,171.092,0
+relative_form.margin_lambda,C154_summary.json:relative_form.margin_lambda,0.00232957,0.00236737,3.7802e-05
+relative_form.margin_mc05_minus_172p60,C154_summary.json:relative_form.margin_mc05_minus_172p60,0.353728,0.35945,0.00572255
+relative_form.mc_minus_m0.P1=0.1,C154_summary.json:relative_form.mc_minus_m0.P1=0.1,2.31956,2.32624,0.00667429
+relative_form.mc_minus_m0.P1=0.5,C154_summary.json:relative_form.mc_minus_m0.P1=0.5,1.8616,1.86733,0.00572255
+relative_form.mc_minus_m0.P1=0.9,C154_summary.json:relative_form.mc_minus_m0.P1=0.9,1.40566,1.41029,0.0046343
+probit_check_D1.Pbar_probit,C154_summary.json:probit_check_D1.Pbar_probit,0.727673,0.730725,0.00305205
+probit_check_D1.Pbar_quad,C154_summary.json:probit_check_D1.Pbar_quad,0.727106,0.730215,0.00310918
+probit_check_D1.sigma_tot,C154_summary.json:probit_check_D1.sigma_tot,0.462403,0.462488,8.53567e-05
+probit_check_D1.w,C154_summary.json:probit_check_D1.w,0.356563,0.357359,0.000795907
+Bayes ranges run02,derived,0.493991,0.969142,0.747186
+Bayes ranges run05,derived,0.497012,0.969681,0.747489

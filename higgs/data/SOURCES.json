@@ -1,0 +1,37 @@
+{
+ "r1/higgs_survival/run02_stage3/S3_prop.json": {
+  "source": "04_calculations/results/20261013_claude_v12/higgs_survival/run02_stage3/S3_prop.json",
+  "sha256": "c765f498f449e909e19c339dfe25f5268f10c25d14b3d0c822ce093a4851eb17",
+  "bytes": 159046
+ },
+ "r2/higgs_final/run01/C144_hazard.json": {
+  "source": "04_calculations/results/20261013_claude_v12_r2/higgs_final/run01/C144_hazard.json",
+  "sha256": "dcf5015e27ec86b465387ce00c3da67d8d51c28897649d68b045c5ce3dda2e17",
+  "bytes": 77688
+ },
+ "r2/higgs_final/run01/C144_ueff.json": {
+  "source": "04_calculations/results/20261013_claude_v12_r2/higgs_final/run01/C144_ueff.json",
+  "sha256": "18bac2df9ad88be4eb831282673bd3ed324a25ce78e3a43446d705c28942fb11",
+  "bytes": 49908
+ },
+ "r2/higgs_final/run01/hazard/haz_as0.1171.json": {
+  "source": "04_calculations/results/20261013_claude_v12_r2/higgs_final/run01/hazard/haz_as0.1171.json",
+  "sha256": "425717379ed4b48f25f75643964f2657999fe47bc1544861d81e463661a0c3a4",
+  "bytes": 58856
+ },
+ "r2/higgs_final/run01/hazard/haz_as0.1180.json": {
+  "source": "04_calculations/results/20261013_claude_v12_r2/higgs_final/run01/hazard/haz_as0.1180.json",
+  "sha256": "c96439aee108c3b06d5bf14d6a38edc4c656a1b64f2f8630e3e4f54b0c2fed02",
+  "bytes": 58646
+ },
+ "r2/higgs_final/run01/hazard/haz_as0.1189.json": {
+  "source": "04_calculations/results/20261013_claude_v12_r2/higgs_final/run01/hazard/haz_as0.1189.json",
+  "sha256": "ef57fbd8ce0494b2aa1d52d84301aaf497a092f0ca7e76ef99d74966fb926d1f",
+  "bytes": 61392
+ },
+ "r3/realtime_2d/run01/C157_xi_quick.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/realtime_2d/run01/C157_xi_quick.json",
+  "sha256": "151e293a3263bbc42d1cf76ffb0045abe3251fb97fce926150b5edceb598f6d0",
+  "bytes": 43625
+ }
+}

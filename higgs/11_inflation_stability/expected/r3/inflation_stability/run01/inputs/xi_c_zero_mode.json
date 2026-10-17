@@ -1,0 +1,19 @@
+{
+ "version": "R2: D116 Sec.0.3 / Sec.3 item 5 (final zero-mode model, P_surv(xi)=0.99 P_surv(1/6)); R3 values pending (NNLO mapping + cross term)",
+ "reading": "xi_H = coefficient of R h^2/2 in the zero-mode Hamiltonian at the turn, with lambda taken at mu_b = MPbar/722; natural reading: xi_H = xi(mu_b)",
+ "mt": [
+  172.2,
+  172.6,
+  173.0
+ ],
+ "xi_c": [
+  0.036,
+  0.072,
+  0.12
+ ],
+ "err": [
+  0.003,
+  0.003,
+  0.001
+ ]
+}

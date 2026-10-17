@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite this archive and the two papers listed under references."
+title: "Code and data for: A Casimir turning point as the beginning of a small flat universe"
+type: software
+version: "1.0.0"
+date-released: "2026-10-17"
+doi: 10.5281/zenodo.23434068
+repository-code: "https://github.com/Ailun-Zhang/casimir-cosmology"
+license:
+  - MIT
+  - CC-BY-4.0
+  - GPL-2.0-or-later
+abstract: >-
+  Code, archived production results and figure scripts that reproduce the numbers and figures of two papers on a
+  small flat universe (cubic three-torus) that begins at a Casimir turning point: the Standard-Model Casimir weight and
+  the gauge/Higgs zero-mode energy, the shape Hessian and the emptiness gate, the quantum shape state at the turn and
+  its nonlinear survival, the Higgs zero-mode criterion for the survival of the electroweak vacuum through the turn
+  (critical top-quark masses, error budget, xi_H condition), and the CMB readability of the shape fossil. Every result
+  directory has a quick and a full run mode and compares fresh output with the archived values under stated
+  tolerances.
+authors:
+  - family-names: Zhang
+    given-names: Alan
+    orcid: "https://orcid.org/0009-0000-1187-0755"
+    affiliation: "McMaster University; Perimeter Institute for Theoretical Physics"
+keywords:
+  - cosmology
+  - small universe
+  - three-torus
+  - Casimir energy
+  - null energy condition
+  - Higgs vacuum stability
+  - Standard Model
+  - gauge zero modes
+  - finite-volume effective potential
+  - diffusion Monte Carlo
+  - quantum cosmology
+  - cosmic topology
+  - cosmic microwave background
+  - Fisher information
+references:
+  - type: article
+    title: "Gauge Field Fluctuations Protect the Higgs Vacuum When a Small Universe Begins"
+    authors:
+      - family-names: Zhang
+        given-names: Alan
+        orcid: "https://orcid.org/0009-0000-1187-0755"
+    journal: "Physical Review Letters"
+    status: in-preparation
+  - type: article
+    title: "A Casimir turning point as the beginning of a small flat universe"
+    authors:
+      - family-names: Zhang
+        given-names: Alan
+        orcid: "https://orcid.org/0009-0000-1187-0755"
+    journal: "Physical Review D"
+    status: in-preparation

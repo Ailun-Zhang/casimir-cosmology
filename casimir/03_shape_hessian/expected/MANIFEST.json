@@ -1,0 +1,37 @@
+{
+ "fu/C73/C73_symbolic.json": {
+  "source": "04_calculations/results/20261011_claude_followup/C73/C73_symbolic.json",
+  "sha256": "1a8d18bb7f44f790c3873a622c9e97d32950c830516e282dc2831b0c3089a10d",
+  "bytes": 1165
+ },
+ "fu/C73/C73_gain.json": {
+  "source": "04_calculations/results/20261011_claude_followup/C73/C73_gain.json",
+  "sha256": "03ddc49f3dfba4c095cbe854379d4a499c707639de54e2d7e1e99b86a8a6aeba",
+  "bytes": 3492
+ },
+ "fu/C73/C73_thermo.json": {
+  "source": "04_calculations/results/20261011_claude_followup/C73/C73_thermo.json",
+  "sha256": "1e5d019b052734cff7220ff91fdc2dd26ba167708ce81304b557acb28d59b807",
+  "bytes": 12348
+ },
+ "fu/C73/C73_zeta.json": {
+  "source": "04_calculations/results/20261011_claude_followup/C73/C73_zeta.json",
+  "sha256": "6522d636ba0deed1b2e345e75ab0e3bdec7d8f62e6cbd3a283ab05e0fafb8baf",
+  "bytes": 9953
+ },
+ "fu/C73/C73_abelian_zeropoint.json": {
+  "source": "04_calculations/results/20261011_claude_followup/C73/C73_abelian_zeropoint.json",
+  "sha256": "9ba76caaf5323e994850cb5786044b5f81f02c20f58db0b4a2f349431401f141",
+  "bytes": 1226
+ },
+ "fu/C73/C73_codex_toy_repro.json": {
+  "source": "04_calculations/results/20261011_claude_followup/C73/C73_codex_toy_repro.json",
+  "sha256": "96af15bac92d9bcce5a8efde77424fc2a7637100c6479ae7238794d380fbf56c",
+  "bytes": 2380
+ },
+ "fu/C83/C83_results.json": {
+  "source": "04_calculations/results/20261011_claude_followup/C83/C83_results.json",
+  "sha256": "1f8dfacf679e60dea6f6f1e8df52ddb0671bb094341157c04949b8dded8194a2",
+  "bytes": 6003
+ }
+}

@@ -1,0 +1,324 @@
+{
+ "task": "C161 step 3: Table 1 rebuild (run05)",
+ "items": [
+  {
+   "id": "D112_residual_dE_DMC_v11",
+   "type": "sym",
+   "levels": {
+    "0.9": [
+     0.002,
+     0.002
+    ],
+    "0.5": [
+     0.002,
+     0.002
+    ],
+    "0.1": [
+     0.002,
+     0.002
+    ]
+   },
+   "src": "D112 Sec.4.4 sub-items DMC+-1sigma (+-0.004/0.006) and B_x (-0.007/-0.011) superseded by T14a (D123 Sec.0.5/3.4); 'static-hazard conversion' (+-0.007/0.009) and ratio 'coupling transfer' (+-0.003/0.005) absent in the node-direct hazard (D122, D121 run02-05); remaining: dE_DMC spline with v11 couplings <= 0.002 (D122 Sec.3, estimate)",
+   "files": "D112 Sec.4.4; D123 Sec.0.5, 3.4; D122 Sec.3",
+   "change": "replaces D112_inmodel (+0.009/-0.012 | +0.012/-0.017 | +0.015/-0.022*)"
+  },
+  {
+   "id": "matching_run05_scan",
+   "type": "asym",
+   "levels": {
+    "0.9": [
+     0.008593132099199579,
+     0.0391375003208444
+    ],
+    "0.5": [
+     0.012133533499449855,
+     0.048943255541677604
+    ],
+    "0.1": [
+     0.015459595290370292,
+     0.05823116540403448
+    ]
+   },
+   "src": "consistent matching-scale scan in the run05 node pipeline, mu = c/L, c in {1/2,1,2,2pi} (envelope, D110 range) with the top threshold ct in {1/2,2} taken as the same y_t(mu) source (envelope, not quadrature) + BO gauge split 0.002 (D110)",
+   "files": "run01/mu_scan/mu_scan_summary.json: mu_envelope, top_threshold, dmc_vs_c1",
+   "change": "replaces D110_matching (2nd-round 1D scan, P1=0.1 extrapolated)"
+  },
+  {
+   "id": "cross_T2",
+   "type": "sym",
+   "levels": {
+    "0.9": [
+     0.008,
+     0.008
+    ],
+    "0.5": [
+     0.01,
+     0.01
+    ],
+    "0.1": [
+     0.013,
+     0.013
+    ]
+   },
+   "src": "D121 run05 Sec.3 (model-internal, incl. RG closure residual and custodial ratio)",
+   "files": "D121 appendix run05 Sec.3 table",
+   "change": "unchanged"
+  },
+  {
+   "id": "cross_V2_minus_T2",
+   "type": "sym",
+   "levels": {
+    "0.9": [
+     0.004,
+     0.004
+    ],
+    "0.5": [
+     0.007,
+     0.007
+    ],
+    "0.1": [
+     0.01,
+     0.01
+    ]
+   },
+   "src": "V2 blind vs T2 difference (run02-level CCA); kept (possible partial overlap with D121 'first-order/variational' not resolved)",
+   "files": "R16 keystone_blind V2; C154 inputs",
+   "change": "unchanged"
+  },
+  {
+   "id": "fulldim_T14a",
+   "type": "one_sided_plus",
+   "levels": {
+    "0.9": [
+     0.012349206522293581,
+     0.0
+    ],
+    "0.5": [
+     0.02021999936649762,
+     0.0
+    ],
+    "0.1": [
+     0.030682789073013774,
+     0.0
+    ]
+   },
+   "src": "D123: gamma_full/gamma_2D = 0.976 central, 0.937 envelope (WKB incl. B_w), converted with run05 dlnI/dm_t (5.269/3.218/2.121 per GeV); central correction +0.0046/+0.0075/+0.0115",
+   "files": "D123 Sec.3.3; C149_run05_summary.json P1_grid (slopes)",
+   "change": "0.9/0.5 re-converted with run05 slope; 0.1 computed (was +0.025 extrapolated)"
+  },
+  {
+   "id": "numerics",
+   "type": "sym",
+   "levels": {
+    "0.9": [
+     0.002,
+     0.002
+    ],
+    "0.5": [
+     0.002,
+     0.002
+    ],
+    "0.1": [
+     0.002,
+     0.002
+    ]
+   },
+   "src": "D116",
+   "files": "D116",
+   "change": "unchanged"
+  },
+  {
+   "id": "inflation_scale_vi",
+   "type": "sym",
+   "levels": {
+    "0.9": [
+     0.035,
+     0.035
+    ],
+    "0.5": [
+     0.067,
+     0.067
+    ],
+    "0.1": [
+     0.112,
+     0.112
+    ]
+   },
+   "src": "D124 (vi), r in [1e-3, 1e-2] (computed on the run02 centre; not recomputed)",
+   "files": "C152_input_dmc.json vi_inflation_scale",
+   "change": "unchanged"
+  },
+  {
+   "id": "w0_B3_rule",
+   "type": "one_sided_minus",
+   "levels": {
+    "0.9": [
+     0.0,
+     0.015969994968543233
+    ],
+    "0.5": [
+     0.0,
+     0.00647203896312476
+    ],
+    "0.1": [
+     0.0,
+     0.004117042756803357
+    ]
+   },
+   "src": "B3 rule w0(m_t) (walls 1.1/1.2/1.4/CAP mean) on run05, largest |Delta m_c| per level (D124 tiers [-0.016,0]/[-0.006,0]/[-0.004,0])",
+   "files": "run01/crit_variants.json B3_as0.1180.*.dmc",
+   "change": "level-dependent (was -0.016 at all levels)"
+  }
+ ],
+ "composite": {
+  "plus": {
+   "0.9": 0.039234485099266345,
+   "0.5": 0.07212538394742475,
+   "0.1": 0.11832764948160296
+  },
+  "minus": {
+   "0.9": 0.05567570988015682,
+   "0.5": 0.08416251868473378,
+   "0.1": 0.127392380719466
+  },
+  "plus_no_vi": {
+   "0.9": 0.01772977216448515,
+   "0.5": 0.026703389477057703,
+   "0.1": 0.03817633601907198
+  },
+  "minus_no_vi": {
+   "0.9": 0.043298783708776295,
+   "0.5": 0.05093456146231319,
+   "0.1": 0.060702707232654536
+  }
+ },
+ "old_composite": {
+  "total": [
+   "0.0401373",
+   "0.0541664",
+   "0.0728423",
+   "0.0849235",
+   "0.118284",
+   "0.128771"
+  ],
+  "no_vi": [
+   "0.0196469",
+   "0.0413401",
+   "0.0285832",
+   "0.0521824",
+   "0.0380395",
+   "0.0635453"
+  ]
+ },
+ "matching_detail": {
+  "0.9": {
+   "mu_plus": 0.00216442688429197,
+   "mu_minus": 0.03908636503135199,
+   "mu_plus_half_2": 0.00216442688429197,
+   "mu_minus_half_2": 0.009525331283015248,
+   "top_ct0p5": 0.008357147795408082,
+   "top_ct2": -0.008241506950014355,
+   "gauge_split": 0.002,
+   "quad_plus": 0.008861527126389672,
+   "quad_minus": 0.039995829384714986,
+   "nodup_plus": 0.008593132099199579,
+   "nodup_minus": 0.0391375003208444
+  },
+  "0.5": {
+   "mu_plus": 0.005372528082830286,
+   "mu_minus": 0.04890237481981785,
+   "mu_plus_half_2": 0.005372528082830286,
+   "mu_minus_half_2": 0.012843522619334635,
+   "top_ct0p5": 0.011967565967324845,
+   "top_ct2": -0.011729720106387731,
+   "gauge_split": 0.002,
+   "quad_plus": 0.013269766131438486,
+   "quad_minus": 0.050329202226859826,
+   "nodup_plus": 0.012133533499449855,
+   "nodup_minus": 0.048943255541677604
+  },
+  "0.1": {
+   "mu_plus": 0.008021078282467897,
+   "mu_minus": 0.05819680939976024,
+   "mu_plus_half_2": 0.008021078282467897,
+   "mu_minus_half_2": 0.01604305552982055,
+   "top_ct0p5": 0.015329679923013373,
+   "top_ct2": -0.014986222993883302,
+   "gauge_split": 0.002,
+   "quad_plus": 0.017416566348035352,
+   "quad_minus": 0.060128657925604984,
+   "nodup_plus": 0.015459595290370292,
+   "nodup_minus": 0.05823116540403448
+  }
+ },
+ "scan_dmc_vs_c1": {
+  "c1": {
+   "P1=0.9": 0.0,
+   "P1=0.5": 0.0,
+   "P1=0.1": 0.0
+  },
+  "c0.5": {
+   "P1=0.9": 0.00216442688429197,
+   "P1=0.5": 0.005372528082830286,
+   "P1=0.1": 0.008021078282467897
+  },
+  "c2": {
+   "P1=0.9": -0.009525331283015248,
+   "P1=0.5": -0.012843522619334635,
+   "P1=0.1": -0.01604305552982055
+  },
+  "c2pi": {
+   "P1=0.9": -0.03908636503135199,
+   "P1=0.5": -0.04890237481981785,
+   "P1=0.1": -0.05819680939976024
+  },
+  "ct0.5": {
+   "P1=0.9": 0.008357147795408082,
+   "P1=0.5": 0.011967565967324845,
+   "P1=0.1": 0.015329679923013373
+  },
+  "ct2": {
+   "P1=0.9": -0.008241506950014355,
+   "P1=0.5": -0.011729720106387731,
+   "P1=0.1": -0.014986222993883302
+  }
+ },
+ "scan_c1_minus_run05": {
+  "P1=0.9": -1.9610979506978765e-12,
+  "P1=0.5": 8.526512829121202e-13,
+  "P1=0.1": 5.684341886080802e-14
+ },
+ "t14a": {
+  "slope_dlnI_dm": {
+   "0.9": 5.26932614061014,
+   "0.5": 3.218199741961029,
+   "0.1": 2.1207979688178717
+  },
+  "central": {
+   "0.9": 0.0046102085771126166,
+   "0.5": 0.007548534745155903,
+   "0.1": 0.011454505769158805
+  },
+  "envelope": {
+   "0.9": 0.012349206522293581,
+   "0.5": 0.02021999936649762,
+   "0.1": 0.030682789073013774
+  },
+  "D123_original_0p9_0p5": {
+   "0.9": [
+    0.0043,
+    0.011
+   ],
+   "0.5": [
+    0.007,
+    0.018
+   ]
+  }
+ },
+ "sha256": {
+  "table1_rebuild.py": "844e12d37d9a70281fb6274bc88029e8de608df7da51c28908a8567536d2f5a6",
+  "mu_scan_summary.json": "f7a596a8371cb53a0aa33178dd9ff9ac69d732968205e1257307c8b8387cfd79",
+  "crit_variants.json": "6c6edade7ef683eac229c814829468066bf696831060459a9902f98bd9b450da",
+  "old_table": "f8d3fd0c6b2855d19a30640a7c89e0cd72719fcf4fd5b689a5f51fce0057c69c"
+ }
+}

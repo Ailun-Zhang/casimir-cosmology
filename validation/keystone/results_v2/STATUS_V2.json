@@ -1,0 +1,23 @@
+{
+  "task": "V2 blind zero-mode/nonzero-mode cross term (keystone-blind continuation)",
+  "agent": "keystone-blind",
+  "updated_utc": "2026-10-15T02:30:00Z",
+  "done": [
+    "T3 report section 6 written (cites R16_KEYSTONE_COMPARISON_CN.md)",
+    "twisted direction-averaged finite-volume sums; r=0 anchors reproduce v11 (SU3 -0.39261, SU2 -0.24209, UY +0.70036; dQ -0.7185/-0.1695/+0.2871)",
+    "stability: Higgs-only soft w unstable r<0.78; all fields stable",
+    "static resonances (v11 couplings) per part and total; all roots BO-bracketed",
+    "hazard alpha_s=0.1180 per part and total; checks (dr, Ns, CAP, kappa_1 variant, SU3 approximations)",
+    "BLIND_RESULTS_V2.json and R16_V2_CROSS_TERM_BLIND_CN.md written (comparison section empty)"
+  ],
+  "key_numbers": {
+    "gamma_ratio_all": {"-0.008": 1.613, "-0.010": 1.552, "-0.0143": 1.444},
+    "gamma_ratio_parts_-0.010": {"su3t": 1.177, "su2": 0.683, "uy": 1.914},
+    "mc_shift_GeV": {"su3t": [-0.031, -0.039, -0.047], "su2": [0.082, 0.109, 0.136], "uy": [-0.126, -0.180, -0.237], "all": [-0.081, -0.117, -0.157]},
+    "mc_with_cross_term_2D": [172.386, 172.824, 173.263],
+    "P1_with_cross_term": {"172.2": 0.9673, "172.6": 0.7432, "173.0": 0.3036},
+    "systematic_GeV": 0.015, "numerical_GeV": 0.005
+  },
+  "next_command": "none; on receipt of production V2 numbers fill section 7 of v2/R16_V2_CROSS_TERM_BLIND_CN.md",
+  "complete": true
+}

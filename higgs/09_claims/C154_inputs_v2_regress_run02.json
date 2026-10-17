@@ -1,0 +1,485 @@
+{
+ "_doc": "C161 claims-run05 copy of 04_calculations\\code\\20261014_claude_v12_r3\\claim_positioning\\C154_inputs_v2.json (regress_run02): only central_P1.file and out_dir changed; all other inputs/conventions identical to run02.",
+ "out_dir": "w/claims_run05/run01/regress_run02",
+ "central_P1": {
+  "file": "r3/holonomy_cross/run02/C149_run02_summary.json",
+  "note": "2D direct at nodes + T1 NNLO central couplings + zero-mode/non-zero-mode cross terms (T2 final); P1_grid at alpha_s 0.1180 (172.0-173.8 step 0.2); crit[alpha_s]['with_cross'] at 0.1171/0.1180/0.1189"
+ },
+ "t1_tables": "r3/sm_mapping/run01/hazard_runs/C144_hazard_central.json",
+ "alpha_s": {
+  "central": 0.118,
+  "sigma": 0.0009,
+  "src": "PDG 2026 (V12_ROUND3_DIRECTIVE line 52; QCD review Eq. 9.25)"
+ },
+ "Mh": {
+  "curve_baseline": 125.13,
+  "measured": 125.13,
+  "sigma": 0.11,
+  "dlam_dMh": 0.0031655014860756166,
+  "dlam_dMt": -0.006566065702598486,
+  "src": "PDG 2026 125.13 +- 0.11 (S=1.5), DECISIONS D-v12-R3-3; slopes from T1 C144_hazard_central rge"
+ },
+ "sm_mapping": {
+  "pole": 0.102,
+  "msbar": 0.07,
+  "pole_allorders_offset": 0.272,
+  "renormalon": [
+   0.07,
+   0.11
+  ],
+  "BKPV_FJ": {
+   "minus": 0.36,
+   "plus": 0.17
+  },
+  "components_mbar": {
+   "matching_scale_envelope": [
+    -0.0415,
+    0.0544
+   ],
+   "scheme_mr_vs_SMDR": 0.0419,
+   "rge": 0.005,
+   "alpha_s_order": 0.003,
+   "WZ_pole_convention": 0.011
+  },
+  "pole_series_O_as5": 0.075,
+  "src": "R16 V1 DIAGNOSIS.json 'recommended' (m-bar total 0.0698; pole 4-loop-truncated 0.1024; all-orders offset 0.272 one-sided; renormalon 0.07-0.11; BKPV/FJ reproduced -0.358/+0.173)"
+ },
+ "model_components": [
+  {
+   "id": "D112_inmodel",
+   "type": "asym",
+   "levels": {
+    "0.9": [
+     0.009,
+     0.012
+    ],
+    "0.5": [
+     0.012,
+     0.017
+    ],
+    "0.1": [
+     0.015,
+     0.022
+    ]
+   },
+   "src": "D116 0.4 / W2 item 3; P1=0.1 extrapolated linearly"
+  },
+  {
+   "id": "D110_matching",
+   "type": "asym",
+   "levels": {
+    "0.9": [
+     0.01,
+     0.035
+    ],
+    "0.5": [
+     0.014,
+     0.045
+    ],
+    "0.1": [
+     0.018,
+     0.055
+    ]
+   },
+   "src": "D116 0.4 (R15-corrected) / W2 item 3; P1=0.1 extrapolated linearly"
+  },
+  {
+   "id": "cross_T2",
+   "type": "sym",
+   "levels": {
+    "0.9": [
+     0.008,
+     0.008
+    ],
+    "0.5": [
+     0.01,
+     0.01
+    ],
+    "0.1": [
+     0.013,
+     0.013
+    ]
+   },
+   "src": "T2 final (W2 item 3)"
+  },
+  {
+   "id": "cross_V2_minus_T2",
+   "type": "sym",
+   "levels": {
+    "0.9": [
+     0.004,
+     0.004
+    ],
+    "0.5": [
+     0.007,
+     0.007
+    ],
+    "0.1": [
+     0.01,
+     0.01
+    ]
+   },
+   "src": "V2 vs T2 difference as systematic (W2 item 3)"
+  },
+  {
+   "id": "fulldim_T14a",
+   "type": "one_sided_plus",
+   "levels": {
+    "0.9": [
+     0.011,
+     0.0
+    ],
+    "0.5": [
+     0.018,
+     0.0
+    ],
+    "0.1": [
+     0.025,
+     0.0
+    ]
+   },
+   "central_correction": [
+    0.004,
+    0.007,
+    0.01
+   ],
+   "src": "T14a: central +0.004/+0.007, envelope <= +0.011/+0.018 (one-sided); P1=0.1 extrapolated"
+  },
+  {
+   "id": "numerics",
+   "type": "sym",
+   "levels": {
+    "0.9": [
+     0.002,
+     0.002
+    ],
+    "0.5": [
+     0.002,
+     0.002
+    ],
+    "0.1": [
+     0.002,
+     0.002
+    ]
+   },
+   "src": "D116"
+  },
+  {
+   "id": "inflation_scale_vi",
+   "type": "sym",
+   "levels": {
+    "0.9": [
+     0.035,
+     0.035
+    ],
+    "0.5": [
+     0.067,
+     0.067
+    ],
+    "0.1": [
+     0.112,
+     0.112
+    ]
+   },
+   "r1e-4_one_sided": [
+    -0.089,
+    -0.1725,
+    -0.2795
+   ],
+   "src": "T4 C152 vi recommended (r in [1e-3, 1e-2])"
+  },
+  {
+   "id": "w0_T15",
+   "type": "one_sided_minus",
+   "levels": {
+    "0.9": [
+     0.0,
+     0.016
+    ],
+    "0.5": [
+     0.0,
+     0.016
+    ],
+    "0.1": [
+     0.0,
+     0.016
+    ]
+   },
+   "src": "T15 B3 rule w0 = 0.980-0.995, one-sided <= -0.016 (W2 item 3)"
+  }
+ ],
+ "w0_B3_wall1p2": {
+  "m": [
+   172.2,
+   172.6,
+   173.0,
+   173.4
+  ],
+  "w0": [
+   0.9945005974474659,
+   0.9907469662438184,
+   0.9851791586144657,
+   0.9801067964252979
+  ],
+  "src": "C152 w0_B3_values w0_wall wall1.2 (multiplicative variant)"
+ },
+ "measurements": [
+  {
+   "id": "D1_direct_pole",
+   "label": "direct/MC (PDG 2026, S=1.5), m_MC = m_pole (4-loop-truncated convention)",
+   "m": 172.6,
+   "s": 0.27,
+   "extra": [],
+   "scheme": "pole",
+   "offset": 0.0
+  },
+  {
+   "id": "D1b_direct_pole_interp",
+   "label": "direct + MC-pole interpretation 0.5",
+   "m": 172.6,
+   "s": 0.27,
+   "extra": [
+    0.5
+   ],
+   "scheme": "pole",
+   "offset": 0.0
+  },
+  {
+   "id": "D1c_direct_interp_renorm",
+   "label": "direct + 0.5 interpretation + renormalon 0.11",
+   "m": 172.6,
+   "s": 0.27,
+   "extra": [
+    0.5,
+    0.11
+   ],
+   "scheme": "pole",
+   "offset": 0.0
+  },
+  {
+   "id": "D2_sigma_pole",
+   "label": "pole mass from sigma(tt), PDG 2026 172.1 +- 0.6",
+   "m": 172.1,
+   "s": 0.6,
+   "extra": [],
+   "scheme": "pole",
+   "offset": 0.0
+  },
+  {
+   "id": "D2b_sigma_pole_PDG2025",
+   "label": "sigma(tt) pole 172.4 +- 0.7 (PDG 2025 via SMDR; variant)",
+   "m": 172.4,
+   "s": 0.7,
+   "extra": [],
+   "scheme": "pole",
+   "offset": 0.0
+  },
+  {
+   "id": "D3_MSR",
+   "label": "m-bar-type: m_MC = m_MSR(1.3 GeV) +- 0.5 (Hoang 2020; pole-4L equivalent +0.36)",
+   "m": 172.6,
+   "s": 0.27,
+   "extra": [
+    0.5
+   ],
+   "scheme": "msbar",
+   "offset": 0.36
+  },
+  {
+   "id": "D4_direct_as_mbar",
+   "label": "m-bar formulation of the direct value (MC = pole converted with the 4-loop relation; renormalon 0.09 on the identification)",
+   "m": 172.6,
+   "s": 0.27,
+   "extra": [
+    0.09
+   ],
+   "scheme": "msbar",
+   "offset": 0.0
+  },
+  {
+   "id": "D3b_msbar_sigma",
+   "label": "m-bar(m-bar) from sigma(tt) 162.5 +2.1 -1.5 (PDG 2024 summary, not re-verified)",
+   "m_msbar": 162.5,
+   "s_plus": 2.1,
+   "s_minus": 1.5,
+   "scheme": "msbar",
+   "msbar_map": true
+  },
+  {
+   "id": "C1_ATLAS_CMS",
+   "label": "ATLAS+CMS 2024 172.52 +- 0.33",
+   "m": 172.52,
+   "s": 0.33,
+   "extra": [],
+   "scheme": "pole",
+   "offset": 0.0
+  },
+  {
+   "id": "C2_CMS",
+   "label": "CMS 171.77 +- 0.37",
+   "m": 171.77,
+   "s": 0.37,
+   "extra": [],
+   "scheme": "pole",
+   "offset": 0.0
+  }
+ ],
+ "msbar_points": {
+  "pole": [
+   172.58034240908086,
+   173.07447558854682,
+   173.5750669156031
+  ],
+  "mbar": [
+   162.80171579193345,
+   163.27271085809247,
+   163.74988788743622
+  ],
+  "src": "T1 C148 mt_definitions (QCD 4L): pole <-> m-bar relation only"
+ },
+ "priors": [
+  {
+   "id": "flat_170_176",
+   "type": "flat_m",
+   "lo": 170.0,
+   "hi": 176.0
+  },
+  {
+   "id": "flat_150_200",
+   "type": "flat_m",
+   "lo": 150.0,
+   "hi": 200.0
+  },
+  {
+   "id": "flat_lambda_pm0p05",
+   "type": "flat_lambda",
+   "lo": -0.05,
+   "hi": 0.05
+  }
+ ],
+ "kappa_msbar": 100.0,
+ "future": [
+  {
+   "id": "now_direct",
+   "label": "current direct (PDG 2026 0.27; m_MC = m_pole)",
+   "s_m": 0.27,
+   "extra": [],
+   "s_as": 0.0009,
+   "s_SM": 0.102,
+   "s_Mh": 0.11,
+   "scheme": "pole",
+   "kappa": 0.0,
+   "src": "PDG 2026"
+  },
+  {
+   "id": "now_direct_interp",
+   "label": "current direct + 0.5 interpretation",
+   "s_m": 0.27,
+   "extra": [
+    0.5
+   ],
+   "s_as": 0.0009,
+   "s_SM": 0.102,
+   "s_Mh": 0.11,
+   "scheme": "pole",
+   "kappa": 0.0,
+   "src": "Hoang 2020 p.16 via D120"
+  },
+  {
+   "id": "HLLHC_direct",
+   "label": "HL-LHC direct l+jets 0.2 GeV, alpha_s as now",
+   "s_m": 0.2,
+   "extra": [],
+   "s_as": 0.0009,
+   "s_SM": 0.102,
+   "s_Mh": 0.03,
+   "scheme": "pole",
+   "kappa": 0.0,
+   "src": "Corcella 2019 (arXiv:1903.06574) sec.4.2.10 p.13 (CMS ECFA-2016 via YR 1902.04070); s_Mh 0.03 assumed"
+  },
+  {
+   "id": "HLLHC_direct_interp",
+   "label": "HL-LHC direct 0.2 + 0.5 interpretation",
+   "s_m": 0.2,
+   "extra": [
+    0.5
+   ],
+   "s_as": 0.0009,
+   "s_SM": 0.102,
+   "s_Mh": 0.03,
+   "scheme": "pole",
+   "kappa": 0.0,
+   "src": "as above"
+  },
+  {
+   "id": "HLLHC_direct_as_permille",
+   "label": "HL-LHC direct 0.2 + per-mille alpha_s (0.00012)",
+   "s_m": 0.2,
+   "extra": [],
+   "s_as": 0.00012,
+   "s_SM": 0.102,
+   "s_Mh": 0.03,
+   "scheme": "pole",
+   "kappa": 0.0,
+   "src": "d'Enterria et al. 2024 (arXiv:2203.08271) abstract"
+  },
+  {
+   "id": "FCCee_base",
+   "label": "FCC-ee: m-bar 50 MeV, alpha_s 0.0002, SM mapping m-bar 0.070",
+   "s_m": 0.05,
+   "extra": [],
+   "s_as": 0.0002,
+   "s_SM": 0.07,
+   "s_Mh": 0.01,
+   "scheme": "msbar",
+   "kappa": 100.0,
+   "src": "Freitas et al. 2019 (arXiv:1906.05379) p.6 Eq.(1), p.4"
+  },
+  {
+   "id": "FCCee_ambitious",
+   "label": "FCC-ee ambitious: m-bar 38 MeV, alpha_s 0.0001",
+   "s_m": 0.038,
+   "extra": [],
+   "s_as": 0.0001,
+   "s_SM": 0.07,
+   "s_Mh": 0.01,
+   "scheme": "msbar",
+   "kappa": 100.0,
+   "src": "Defranchis et al. 2025 (arXiv:2503.18713) abstract + Freitas p.4"
+  },
+  {
+   "id": "FCCee_ambitious_SM0p04",
+   "label": "FCC-ee ambitious + SM mapping 0.04 (assumption)",
+   "s_m": 0.038,
+   "extra": [],
+   "s_as": 0.0001,
+   "s_SM": 0.04,
+   "s_Mh": 0.01,
+   "scheme": "msbar",
+   "kappa": 100.0,
+   "src": "assumption"
+  }
+ ],
+ "future_true_m": [
+  172.6,
+  173.3
+ ],
+ "xi": {
+  "T6": "r3/realtime_2d/run01/C157_summary.json",
+  "T21": "r3/inflation_stability/run01/C155_summary.json",
+  "lit": {
+   "Herranen2014": 0.06,
+   "MMR2021": 0.059,
+   "MMR2022_R2": 0.1,
+   "Herranen2015_upper": 1.0,
+   "note": "T21 conclusion: project plateau = minimally coupled Starobinsky-shaped -> MMR2021 field-theory criterion applies; MMR2022 R^2 cross terms absent"
+  }
+ },
+ "shift_scan": [
+  -0.1,
+  -0.05,
+  0.0,
+  0.05,
+  0.1
+ ]
+}

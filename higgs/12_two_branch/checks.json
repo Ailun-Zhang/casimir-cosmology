@@ -1,0 +1,19 @@
+{
+ "step": "12_two_branch",
+ "checks": [
+  {"id": "static_check", "mode": "tree", "what": "static-spectrum propagation: w0, P1, K, G, eps at m_t = 172.6/172.2", "paper": "PRD Sec. V D, App. D 2",
+   "computed": {"file": "WORK:r3/two_branch/run01/static_check.json", "key": "runs"},
+   "expected": {"file": "expected/r3/two_branch/run01/static_check.json", "key": "runs"}, "tol_abs": 1e-10, "tol_rel": 1e-7},
+  {"id": "headline", "mode": "tree", "what": "C159 headline: P2 = P1^2 critical masses, GH interference eps, laws", "paper": "PRD Sec. V D, App. D 2; PRL (172.376/172.759/173.124, run02 base)",
+   "computed": {"file": "WORK:r3/two_branch/run01/C159_summary.json", "key": "headline"},
+   "expected": {"file": "expected/r3/two_branch/run01/C159_summary.json", "key": "headline"}, "tol_abs": 1e-9, "tol_rel": 1e-7,
+   "ignore": ["GH_diag_law", "linear_law"], "note": "the two ignored text fields embed the R_G / R_K ranges; their numbers differ at 1e-13 and are compared numerically in full_tdse"},
+  {"id": "crit_tables", "mode": "tree", "what": "critical-mass tables for P1, P2_lin, Frechet band", "paper": "PRD Sec. V D, App. D 2 (Frechet [172.372, 172.498], [172.713, 172.954])",
+   "computed": {"file": "WORK:r3/two_branch/run01/C159_summary.json", "key": "crit"},
+   "expected": {"file": "expected/r3/two_branch/run01/C159_summary.json", "key": "crit"}, "tol_abs": 1e-9, "tol_rel": 1e-7},
+  {"id": "full_tdse", "mode": "tree", "modes": ["full"], "what": "TDSE results recomputed", "paper": "PRD Sec. V D, App. D 2",
+   "computed": {"file": "WORK:r3/two_branch/run01/tdse_results.json"},
+   "expected": {"file": "expected/r3/two_branch/run01/tdse_results.json"}, "tol_abs": 1e-9, "tol_rel": 1e-6,
+   "ignore": ["time_s", "code_sha256", "code", "table", "table_sha256"]}
+ ]
+}

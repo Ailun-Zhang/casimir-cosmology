@@ -1,0 +1,9 @@
+step,sigma_meas,Pbar
+curve only,0,0.842619
++ m_t exp 0.27,0.27,0.789259
++ alpha_s 0.0009,0.27,0.737243
++ M_h 0.11,0.27,0.736348
++ SM mapping pole 0.102,0.27,0.733116
++ model without (vi),0.27,0.727235
++ model incl. (vi) [primary],0.27,0.730009
++ MC-pole interpretation 0.5,0.568243,0.679752

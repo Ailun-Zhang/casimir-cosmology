@@ -1,0 +1,396 @@
+{
+ "step": "03_fossil",
+ "checks": [
+  {
+   "id": "C58",
+   "what": "turning-point states, floor, gain",
+   "paper": "PRD Sec. VII C",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r5/C58_turning_point_states/C58_results.json"
+   },
+   "expected": {
+    "file": "expected/r5/C58_turning_point_states/C58_results.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds"
+   ]
+  },
+  {
+   "id": "C62",
+   "what": "pivot calibration",
+   "paper": "PRD Sec. IV C (`sec:turning`)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r5/C62_SM_pivot/C62_results.json"
+   },
+   "expected": {
+    "file": "expected/r5/C62_SM_pivot/C62_results.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds"
+   ]
+  },
+  {
+   "id": "C63",
+   "what": "rolling plateau fossil",
+   "paper": "PRD Sec. VII E",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r5/C63_rolling_fossil/C63_results.json"
+   },
+   "expected": {
+    "file": "expected/r5/C63_rolling_fossil/C63_results.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds"
+   ]
+  },
+  {
+   "id": "C77",
+   "what": "preparation-time sensitivity",
+   "paper": "PRD Sec. VII E",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:fu/C77/C77_results.json"
+   },
+   "expected": {
+    "file": "expected/fu/C77/C77_results.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds"
+   ]
+  },
+  {
+   "id": "C82",
+   "what": "fossil vs xi, median coefficient, side difference",
+   "paper": "PRD Sec. VII E, Table III",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:fu/C82/C82_results.json"
+   },
+   "expected": {
+    "file": "expected/fu/C82/C82_results.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds"
+   ]
+  },
+  {
+   "id": "sigmaE_xi030",
+   "what": "sigma_E = 0.1041 (C60/C76 convention)",
+   "paper": "PRD Table III (FLOOR-06)",
+   "computed": {
+    "file": "WORK:fu/C82/C82_results.json",
+    "key": "sigma_E_leading/0.299897"
+   },
+   "expected": {
+    "file": "expected/fu/C82/C82_results.json",
+    "key": "sigma_E_leading/0.299897"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "median_coeff",
+   "what": "median ln(Lmax/Lmin)/sigma_E = 1.588",
+   "paper": "PRD Sec. VII E (FOS-04)",
+   "computed": {
+    "file": "WORK:fu/C82/C82_results.json",
+    "key": "median_coeff"
+   },
+   "expected": {
+    "file": "expected/fu/C82/C82_results.json",
+    "key": "median_coeff"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "C143",
+   "what": "observable relations",
+   "paper": "PRD Sec. VII E",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r2/observables/run01/C143_observables.json"
+   },
+   "expected": {
+    "file": "expected/r2/observables/run01/C143_observables.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ]
+  },
+  {
+   "id": "K_19p32_C143",
+   "what": "K(19.32) = 24.5501",
+   "paper": "PRD App. E 2 (FLOOR-01)",
+   "computed": {
+    "file": "WORK:r2/observables/run01/C143_observables.json",
+    "key": "F_kappaE"
+   },
+   "expected": {
+    "file": "expected/r2/observables/run01/C143_observables.json",
+    "key": "F_kappaE"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "dlnsigma",
+   "what": "dln sigma_E/dln kappa_E = 1.366",
+   "paper": "PRD Sec. VII E (FOS-14)",
+   "computed": {
+    "file": "WORK:r2/observables/run01/C143_observables.json",
+    "key": "dlnsigma_dlnkappa"
+   },
+   "expected": {
+    "file": "expected/r2/observables/run01/C143_observables.json",
+    "key": "dlnsigma_dlnkappa"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "C60_summary",
+   "what": "free-field ensemble statistics",
+   "paper": "PRD Table III (free row)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r5/nonlinear_SM/C60_summary.json"
+   },
+   "expected": {
+    "file": "expected/r5/nonlinear_SM/C60_summary.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ]
+  },
+  {
+   "id": "C76_summary",
+   "what": "xi = 0.30 ensemble statistics",
+   "paper": "PRD Sec. VII E (FOS-07)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:fu/C76/C76_summary.json"
+   },
+   "expected": {
+    "file": "expected/fu/C76/C76_summary.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ]
+  },
+  {
+   "id": "redraw_C60_n",
+   "what": "re-integrated archived C60 trajectories: mismatching records",
+   "paper": "numerics",
+   "computed": {
+    "file": "WORK:checks/redraw_C60.json",
+    "key": "n_mismatch"
+   },
+   "expected": {
+    "value": 0
+   },
+   "tol_abs": 0.0,
+   "tol_rel": null,
+   "modes": [
+    "quick"
+   ]
+  },
+  {
+   "id": "redraw_C60_fates",
+   "what": "re-integrated C60 trajectories: fate changes",
+   "paper": "numerics",
+   "computed": {
+    "file": "WORK:checks/redraw_C60.json",
+    "key": "n_fate_mismatch"
+   },
+   "expected": {
+    "value": 0
+   },
+   "tol_abs": 0.0,
+   "tol_rel": null,
+   "modes": [
+    "quick"
+   ]
+  },
+  {
+   "id": "redraw_C76_n",
+   "what": "re-integrated archived C76 trajectories: mismatching records",
+   "paper": "numerics",
+   "computed": {
+    "file": "WORK:checks/redraw_C76.json",
+    "key": "n_mismatch"
+   },
+   "expected": {
+    "value": 0
+   },
+   "tol_abs": 0.0,
+   "tol_rel": null,
+   "modes": [
+    "quick"
+   ]
+  },
+  {
+   "id": "redraw_C76_fates",
+   "what": "re-integrated C76 trajectories: fate changes",
+   "paper": "numerics",
+   "computed": {
+    "file": "WORK:checks/redraw_C76.json",
+    "key": "n_fate_mismatch"
+   },
+   "expected": {
+    "value": 0
+   },
+   "tol_abs": 0.0,
+   "tol_rel": null,
+   "modes": [
+    "quick"
+   ]
+  }
+ ]
+}

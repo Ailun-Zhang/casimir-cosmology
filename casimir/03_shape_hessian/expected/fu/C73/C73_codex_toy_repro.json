@@ -1,0 +1,56 @@
+{
+ "description": "C73: independent re-computation of the Codex four-level toy (vacuum + three axis pair levels,\nmultiplicity 1, no zero-mode energy) on the metric quoted in Codex's state_response_audit.json\n(metric numbers typed in here as data; no Codex code is imported or executed).\nOwn Ewald vacuum E_vac = -C_free(G), analytic forces, mp FD Laplacians (dps 40) with Richardson.\nOutput: results/.../C73/C73_codex_toy_repro.json\n",
+ "rows": [
+  {
+   "T_L": 8,
+   "U_own": -41.086053772323766,
+   "U_codex": -41.08605377232375,
+   "S_own": 1.0836696288834113,
+   "S_codex": 1.0836696288834125,
+   "corr_own": 0.027681733231237602,
+   "corr_codex": 0.027681733941915008,
+   "canonical_formula_own": -114.56514421169453,
+   "canonical_codex(eps=2.5e-4)": -114.56514426366283,
+   "canonical_numeric_own": -114.56514421169453,
+   "canonical_residual_own": "-8.739e-23",
+   "isentropic_formula_own": -114.5374624784633,
+   "isentropic_codex(eps=2.5e-4)": -114.53746252972091,
+   "isentropic_numeric_own": -114.5374624784633,
+   "isentropic_residual_own": "-8.729e-23"
+  },
+  {
+   "T_L": 12,
+   "U_own": -39.45957720302425,
+   "U_codex": -39.45957720302424,
+   "S_own": 1.2526942713578098,
+   "S_codex": 1.2526942713578102,
+   "corr_own": 0.0545686822821397,
+   "corr_codex": 0.05456868355255187,
+   "canonical_formula_own": -109.72386847563469,
+   "canonical_codex(eps=2.5e-4)": -109.72386852269828,
+   "canonical_numeric_own": -109.72386847563469,
+   "canonical_residual_own": "-8.734e-23",
+   "isentropic_formula_own": -109.66929979335255,
+   "isentropic_codex(eps=2.5e-4)": -109.66929983914572,
+   "isentropic_numeric_own": -109.66929979335255,
+   "isentropic_residual_own": "-8.729e-23"
+  },
+  {
+   "T_L": 20,
+   "U_own": -38.14210922301655,
+   "U_codex": -38.14210922301652,
+   "S_own": 1.3406644979942561,
+   "S_codex": 1.340664497994257,
+   "corr_own": 0.06223994189500882,
+   "corr_codex": 0.06223994317793281,
+   "canonical_formula_own": -104.97920971443202,
+   "canonical_codex(eps=2.5e-4)": -104.97920974874263,
+   "canonical_numeric_own": -104.97920971443202,
+   "canonical_residual_own": "-8.733e-23",
+   "isentropic_formula_own": -104.91696977253702,
+   "isentropic_codex(eps=2.5e-4)": -104.91696980556469,
+   "isentropic_numeric_own": -104.91696977253702,
+   "isentropic_residual_own": "-8.731e-23"
+  }
+ ]
+}

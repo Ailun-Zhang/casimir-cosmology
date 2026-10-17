@@ -1,0 +1,273 @@
+{
+ "step": "02_zero_mode_energy",
+ "checks": [
+  {
+   "id": "C72_dmc_test",
+   "what": "seeded DMC timing test (two cases), bit-level reproduction",
+   "paper": "PRD App. B 2 (method)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:fu/C72/C72_dmc_test.json"
+   },
+   "expected": {
+    "file": "expected/fu/C72/C72_dmc_test.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "wall_s",
+    "se_mixed_blocks_1_2_4",
+    "se_growth_blocks_1_2_4"
+   ],
+   "modes": [
+    "quick"
+   ]
+  },
+  {
+   "id": "C72_dmc_full",
+   "what": "production DMC energies, extrapolated per case (rows are stored in completion order)",
+   "paper": "PRD App. B 2",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:fu/C72/C72_dmc_results.json",
+    "key": "extrapolated"
+   },
+   "expected": {
+    "file": "expected/fu/C72/C72_dmc_results.json",
+    "key": "extrapolated"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "wall_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "C72_analysis",
+   "what": "C72 analysis parts A-E",
+   "paper": "PRD Sec. IV B; App. B 2",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:fu/C72/C72_analysis_results.json"
+   },
+   "expected": {
+    "file": "expected/fu/C72/C72_analysis_results.json"
+   },
+   "tol_abs": 1e-09,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds"
+   ]
+  },
+  {
+   "id": "C72_summary",
+   "what": "C72 summary (r band, Higgs cost, fossil table)",
+   "paper": "PRD Sec. IV B; App. B 2",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:fu/C72/C72_summary.json"
+   },
+   "expected": {
+    "file": "expected/fu/C72/C72_summary.json"
+   },
+   "tol_abs": 1e-09,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds"
+   ]
+  },
+  {
+   "id": "xi_dmc_lam001",
+   "what": "zero-mode fraction xi (exact-local DMC, lambda = 0.01) = 0.2999",
+   "paper": "PRD Sec. IV B; App. B 2 (BKG-11)",
+   "computed": {
+    "file": "WORK:fu/C72/C72_summary.json",
+    "key": [
+     "r_band",
+     "one-loop mu=1/L_b",
+     "exact_local_dmc_r",
+     "lam0.01"
+    ]
+   },
+   "expected": {
+    "file": "expected/fu/C72/C72_summary.json",
+    "key": [
+     "r_band",
+     "one-loop mu=1/L_b",
+     "exact_local_dmc_r",
+     "lam0.01"
+    ]
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-06
+  },
+  {
+   "id": "xi_lower",
+   "what": "pure-gauge lower bound xi >= 0.2580",
+   "paper": "PRD App. B 2",
+   "computed": {
+    "file": "WORK:fu/C72/C72_summary.json",
+    "key": [
+     "r_band",
+     "one-loop mu=1/L_b",
+     "lower_operator_bound_r"
+    ]
+   },
+   "expected": {
+    "file": "expected/fu/C72/C72_summary.json",
+    "key": [
+     "r_band",
+     "one-loop mu=1/L_b",
+     "lower_operator_bound_r"
+    ]
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "xi_upper",
+   "what": "Gaussian upper bound xi <= 0.3083",
+   "paper": "PRD App. B 2",
+   "computed": {
+    "file": "WORK:fu/C72/C72_summary.json",
+    "key": [
+     "r_band",
+     "one-loop mu=1/L_b",
+     "upper_gauss_r",
+     "0.01"
+    ]
+   },
+   "expected": {
+    "file": "expected/fu/C72/C72_summary.json",
+    "key": [
+     "r_band",
+     "one-loop mu=1/L_b",
+     "upper_gauss_r",
+     "0.01"
+    ]
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-06
+  },
+  {
+   "id": "C78",
+   "what": "next-order holonomy curvature, dQ, dr",
+   "paper": "PRD Sec. IV B; App. B 2",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:fu/C78/C78_results.json"
+   },
+   "expected": {
+    "file": "expected/fu/C78/C78_results.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds"
+   ]
+  },
+  {
+   "id": "C81",
+   "what": "Higgs zero-mode mass, r_first_order = 0.2826",
+   "paper": "PRD Sec. IV B; App. B 2",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:fu/C81/C81_results.json"
+   },
+   "expected": {
+    "file": "expected/fu/C81/C81_results.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds"
+   ]
+  },
+  {
+   "id": "xi_next",
+   "what": "next-order xi = 0.2826 (about 0.28)",
+   "paper": "PRD Sec. IV B (BKG-11 next order)",
+   "computed": {
+    "file": "WORK:fu/C81/C81_results.json",
+    "key": "r_first_order/landau_3pol"
+   },
+   "expected": {
+    "file": "expected/fu/C81/C81_results.json",
+    "key": "r_first_order/landau_3pol"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  }
+ ]
+}

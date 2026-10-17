@@ -1,0 +1,166 @@
+{
+ "step": "01_sm_casimir_weight",
+ "checks": [
+  {
+   "id": "C57_all",
+   "what": "all C57 numbers (Z_2 sums, N_C of eight spin structures, Hessians, kappa, gains)",
+   "paper": "PRD Sec. IV B; App. B 1, Table IV",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r5/C57_spin_structure/C57_spin_structures.json"
+   },
+   "expected": {
+    "file": "expected/r5/C57_spin_structure/C57_spin_structures.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds"
+   ]
+  },
+  {
+   "id": "NC_AAA",
+   "what": "N_C(AAA) = +25.515",
+   "paper": "PRD Eq. eq:pa-NC; Sec. IV (BKG-10)",
+   "computed": {
+    "file": "WORK:r5/C57_spin_structure/C57_spin_structures.json",
+    "key": "SM_spin_structures/AAA/N_C_signed"
+   },
+   "expected": {
+    "file": "expected/r5/C57_spin_structure/C57_spin_structures.json",
+    "key": "SM_spin_structures/AAA/N_C_signed"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "NC_PPP",
+   "what": "N_C(PPP) = -30",
+   "paper": "PRD Sec. IV A text",
+   "computed": {
+    "file": "WORK:r5/C57_spin_structure/C57_spin_structures.json",
+    "key": "SM_spin_structures/PPP/N_C_signed"
+   },
+   "expected": {
+    "file": "expected/r5/C57_spin_structure/C57_spin_structures.json",
+    "key": "SM_spin_structures/PPP/N_C_signed"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "trace_8_3_AAA",
+   "what": "tr Hess Z_eff / ((8/3) Z_eff) for AAA (= 1 to 1e-8)",
+   "paper": "PRD App. B 1; Eq. eq:s-Hesstrace (NOGO-02)",
+   "computed": {
+    "file": "WORK:r5/C57_spin_structure/C57_spin_structures.json",
+    "key": "SM_spin_structures/AAA/trace_over_8_3_Z"
+   },
+   "expected": {
+    "file": "expected/r5/C57_spin_structure/C57_spin_structures.json",
+    "key": "SM_spin_structures/AAA/trace_over_8_3_Z"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-07
+  },
+  {
+   "id": "C68_all",
+   "what": "all C68 numbers (holonomy sectors, preparation rows)",
+   "paper": "PRD Sec. IV B; App. B 1",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r5/C68_holonomy_preparation/C68_results.json"
+   },
+   "expected": {
+    "file": "expected/r5/C68_holonomy_preparation/C68_results.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds"
+   ]
+  },
+  {
+   "id": "PPP_centre",
+   "what": "PPP + SU(3) centre (1,1,1): N_C = 11.2",
+   "paper": "PRD Sec. IV B (sec:pa-spin)",
+   "computed": {
+    "file": "WORK:r5/C68_holonomy_preparation/C68_results.json",
+    "key": "PPP_centre_111"
+   },
+   "expected": {
+    "file": "expected/r5/C68_holonomy_preparation/C68_results.json",
+    "key": "PPP_centre_111"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "PPP_Ymax",
+   "what": "PPP hypercharge maximum N_C = 17.8",
+   "paper": "PRD Sec. IV B",
+   "computed": {
+    "file": "WORK:r5/C68_holonomy_preparation/C68_results.json",
+    "key": "PPP_Y_iso_scan_max/NC"
+   },
+   "expected": {
+    "file": "expected/r5/C68_holonomy_preparation/C68_results.json",
+    "key": "PPP_Y_iso_scan_max/NC"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "AAA_centre111",
+   "what": "AAA centre on three cycles: 9.86",
+   "paper": "PRD Sec. IV B; App. B 1",
+   "computed": {
+    "file": "WORK:r5/C68_holonomy_preparation/C68_results.json",
+    "key": "AAA_centre_111"
+   },
+   "expected": {
+    "file": "expected/r5/C68_holonomy_preparation/C68_results.json",
+    "key": "AAA_centre_111"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "AAA_centre100",
+   "what": "AAA centre on one cycle: 22.74",
+   "paper": "PRD Sec. IV B; App. B 1",
+   "computed": {
+    "file": "WORK:r5/C68_holonomy_preparation/C68_results.json",
+    "key": "AAA_centre_100"
+   },
+   "expected": {
+    "file": "expected/r5/C68_holonomy_preparation/C68_results.json",
+    "key": "AAA_centre_100"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "source_rge": "mr-master/math/rge.m (BPV 2012-13)",
+ "source_published": "Buttazzo et al. JHEP 12 (2013) 089, arXiv:1307.3536v2, App. B (tex lines 2656-2966)",
+ "convention": "d(x)/d ln mu^2, g1 GUT-normalised, V=lambda(|H|^2-v^2/2)^2",
+ "checks": [],
+ "g3_4loop": {
+  "own_b3_nf6": 2472.283742579716,
+  "Buttazzo": 2472.28
+ },
+ "n_monomials_compared": 276,
+ "n_mismatch": 0
+}

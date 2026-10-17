@@ -1,0 +1,8 @@
+eta_inf*hLb = 1.3110287771460598
+fraction 0.50 reached at h t = 0.764
+fraction 0.90 reached at h t = 2.378
+fraction 0.99 reached at h t = 4.681
+fraction of eta_inf by ht=1.093: 0.639
+fraction of eta_inf by ht=0.350: 0.257
+sqrt(3/gamma_C) = 1.3382697286787641 ; eps from hLb=0.00483: 3.122036067337402e-05
+Var H - PRD formula = 0

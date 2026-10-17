@@ -1,0 +1,18 @@
+{
+ "agent": "r15-timesym",
+ "task": "R15 independent check of D113 (+D114 s=10 criterion)",
+ "status": "complete",
+ "date": "2026-10-13",
+ "report": "R15_D113_INDEPENDENT_CHECK_CN.md",
+ "code": "R15_B3_check.py",
+ "results": ["R15_B3_results.json", "R15_B3_stdout.txt"],
+ "verdicts": {
+  "B1": "PASS-with-corrections (single-history = mode-independent real Airy factorization is an extra assumption; counterexample Ai*phi0+Bi*phi1; Airy width missing (hL_b)^(-1/3))",
+  "B2": "PASS-with-corrections (HH needs conjugation-closed contour; Godet single complex saddle not a CPT-real instance; BFT/KZ are analogies)",
+  "B3": "PASS (math, identical to C141; VarH-k/2m=(4(a^2+b^2)-km)^2/(32a^2m^2); min set = one orbit); significance paragraph PASS-with-corrections (Gaussian restriction essential: inf VarH over real states = 0)",
+  "S4_Godet": "PASS (minor: 'monotonic T' and 'broad' are D113 readings)",
+  "S4_cap_divergence": "PASS-with-corrections (homogeneous-formula breakdown != cap impossible; Argon -22.288496/B^4 recomputed)",
+  "D114_s10": "PASS (94/256=36.72%, Wilson [31.1,42.8]%; criterion reasonable; stale docstring 1e-6 vs EIG_STOP 1e-3)"
+ },
+ "tool_calls_used": 27
+}

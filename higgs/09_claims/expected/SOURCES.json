@@ -1,0 +1,392 @@
+{
+ "r3/claim_positioning/run02/C154_correction_log.txt": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/C154_correction_log.txt",
+  "sha256": "e09bf54ee902b69492dfb0b1ad9c00c407788cb98f87fe51699302308ee0da38",
+  "bytes": 1577
+ },
+ "r3/claim_positioning/run02/C154_correction_summary.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/C154_correction_summary.json",
+  "sha256": "a4d714547ddc1a10cd45db3064ba637bb015661c987120ddb20984f74f7ae93e",
+  "bytes": 16439
+ },
+ "r3/claim_positioning/run02/C154_log.txt": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/C154_log.txt",
+  "sha256": "95d7acc657ad9800a254718a4f182c952542cfae1a29b2945354ba673fc3fd2f",
+  "bytes": 7393
+ },
+ "r3/claim_positioning/run02/C154_summary.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/C154_summary.json",
+  "sha256": "048e1033c19853a9858c14332f5815f49c8c2c891290824b595063c6af8dde9f",
+  "bytes": 31117
+ },
+ "r3/claim_positioning/run02/STATUS.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/STATUS.json",
+  "sha256": "7be544fdd28221d81fed9b61571abeac7001f28090ed142a48728eb2031aeaa0",
+  "bytes": 1532
+ },
+ "r3/claim_positioning/run02/bayes_factors.csv": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/bayes_factors.csv",
+  "sha256": "033677c38025a3a346ea17f411d88d00e787fabe8de8879afe4620dec0ee632e",
+  "bytes": 2048
+ },
+ "r3/claim_positioning/run02/bayes_factors_corr.csv": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/bayes_factors_corr.csv",
+  "sha256": "265b664713bba519435b8f510c8ec42a4e344a6a2fcc3c8e0157af69aec9b68d",
+  "bytes": 2456
+ },
+ "r3/claim_positioning/run02/exclusion_mt.csv": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/exclusion_mt.csv",
+  "sha256": "d23cc5e8c76f6b23bf6f0817b2948a44a52e71b5c57f6f36f053a74719e32b04",
+  "bytes": 360
+ },
+ "r3/claim_positioning/run02/execution_contract.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/execution_contract.json",
+  "sha256": "daf8d3b192f064898755816459f5da49e41f3d0d07b2bafe260be0bc3aa23c2d",
+  "bytes": 1456
+ },
+ "r3/claim_positioning/run02/fig2a_P1_grid_mt_alphas.csv": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/fig2a_P1_grid_mt_alphas.csv",
+  "sha256": "54b908b9d5d7fb91a47e8062d349f9714f7f3ae9de7cc61cef0b74b5753fae09",
+  "bytes": 208769
+ },
+ "r3/claim_positioning/run02/fig2a_contours_mt_alphas.csv": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/fig2a_contours_mt_alphas.csv",
+  "sha256": "51543d4847ec070ab840d7bf73a63a07369921f464caa328c9f2380d736609bd",
+  "bytes": 6440
+ },
+ "r3/claim_positioning/run02/fig2a_ellipses.csv": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/fig2a_ellipses.csv",
+  "sha256": "3501b2019500a7e91884955b1a119d390fa28318373ab32a0b34a034653c6c6f",
+  "bytes": 119910
+ },
+ "r3/claim_positioning/run02/fig2b_points.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/fig2b_points.json",
+  "sha256": "d2f618ad227941f4016aa711b454d23926b731723a399f54a06ec56b12018a8b",
+  "bytes": 3131
+ },
+ "r3/claim_positioning/run02/fig2b_xi_curves.csv": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/fig2b_xi_curves.csv",
+  "sha256": "ad7cd7010fa872daa06564062771c1289c77aa5103f6d92c167ad612771d49b2",
+  "bytes": 13732
+ },
+ "r3/claim_positioning/run02/future_HLLHC_corr.csv": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/future_HLLHC_corr.csv",
+  "sha256": "c81b33ccc45265baaeb96fd228380e2ca2fcc066e8bc58deeefcf129e0becfe4",
+  "bytes": 983
+ },
+ "r3/claim_positioning/run02/future_reach.csv": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/future_reach.csv",
+  "sha256": "65118eff45f057ae66a219dc585a159849b7821ba69fea03ca542108eeada564",
+  "bytes": 2261
+ },
+ "r3/claim_positioning/run02/marginal_P1.csv": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/marginal_P1.csv",
+  "sha256": "b3f91e7959c990057cea86b06febfe673b75087d3978601cb33ecaa495f1c4d7",
+  "bytes": 1780
+ },
+ "r3/claim_positioning/run02/marginal_P1_corr.csv": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/marginal_P1_corr.csv",
+  "sha256": "0ae9bb1d235f0bca390bc00495f7414587625068f4ad8046ab0f478811958b00",
+  "bytes": 1128
+ },
+ "r3/claim_positioning/run02/shift_scan_mc.csv": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/shift_scan_mc.csv",
+  "sha256": "0ec35ea6dea20e436673b173b544f0c6cdc04393d25cdc9b0df84521d968eded",
+  "bytes": 515
+ },
+ "r3/claim_positioning/run02/table1_Pbar_progression_direct.csv": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/table1_Pbar_progression_direct.csv",
+  "sha256": "5f4a8a23e0e65d92f24a4070ded99b5193a245a4f5f0a3159e199f1101e268cf",
+  "bytes": 297
+ },
+ "r3/claim_positioning/run02/table1_error_budget_final.csv": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/claim_positioning/run02/table1_error_budget_final.csv",
+  "sha256": "f8d3fd0c6b2855d19a30640a7c89e0cd72719fcf4fd5b689a5f51fce0057c69c",
+  "bytes": 2476
+ },
+ "w/claims_run05/run01/C154_correction_summary.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/C154_correction_summary.json",
+  "sha256": "739d78e7388df1adb0bbda80afb51f45ae11fc0a05293c345ed63d90452e80cc",
+  "bytes": 16442
+ },
+ "w/claims_run05/run01/C154_summary.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/C154_summary.json",
+  "sha256": "04a75b7146b4d4fa25b461b04cfdcf992c5ddaebada470e7ef05f3bfea897783",
+  "bytes": 31149
+ },
+ "w/claims_run05/run01/claims_compare.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/claims_compare.json",
+  "sha256": "67a988fd1a61a601df1e1ad7fddfafcc8d93a310d897197cb7984105ce364cd2",
+  "bytes": 123269
+ },
+ "w/claims_run05/run01/claims_headline.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/claims_headline.csv",
+  "sha256": "badc80e5e4f53fc0d79f7ca690e33cae01ab40adb7127304e1608b28e6e8af1e",
+  "bytes": 70213
+ },
+ "w/claims_run05/run01/claims_run02_vs_run05_full.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/claims_run02_vs_run05_full.csv",
+  "sha256": "b269f31d9c0a86f1d8c8295b794c9acee411026d0ac9cc0b0b9a55e88689fe1e",
+  "bytes": 95947
+ },
+ "w/claims_run05/run01/crit_variants.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/crit_variants.json",
+  "sha256": "6c6edade7ef683eac229c814829468066bf696831060459a9902f98bd9b450da",
+  "bytes": 8616
+ },
+ "w/claims_run05/run01/exclusion_mt.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/exclusion_mt.csv",
+  "sha256": "413ed194d50205ab4f7fa39ba8e552d3b2e0d673e27144f1d2288d51c873c161",
+  "bytes": 357
+ },
+ "w/claims_run05/run01/fig2a_P1_grid_mt_alphas.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/fig2a_P1_grid_mt_alphas.csv",
+  "sha256": "3b9656cc998a3269a97f57d57d4e3fda5218950a76757d15aaea0c44d67aabcf",
+  "bytes": 208609
+ },
+ "w/claims_run05/run01/fig2a_contours_mt_alphas.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/fig2a_contours_mt_alphas.csv",
+  "sha256": "18649838a8beae95e7ed02402657d0a57ba78df7817045328c58ae8d074be1b5",
+  "bytes": 6436
+ },
+ "w/claims_run05/run01/fig2a_ellipses.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/fig2a_ellipses.csv",
+  "sha256": "3501b2019500a7e91884955b1a119d390fa28318373ab32a0b34a034653c6c6f",
+  "bytes": 119910
+ },
+ "w/claims_run05/run01/fig2b_points.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/fig2b_points.json",
+  "sha256": "90387a501c3b588bcf655751d0ce4f860d5323dd145580167b740ce6bdb331ae",
+  "bytes": 3132
+ },
+ "w/claims_run05/run01/fig2b_xi_curves.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/fig2b_xi_curves.csv",
+  "sha256": "3f34202c0155b34cb6d04c41688cc2c829bdde03192f395a70e13df7120cab72",
+  "bytes": 13733
+ },
+ "w/claims_run05/run01/future_reach.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/future_reach.csv",
+  "sha256": "f240789255aa0f753b55403bd00f476588e5fd2f5cd7fa59559de0302f2366f6",
+  "bytes": 2273
+ },
+ "w/claims_run05/run01/mu_scan/mu_scan_summary.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/mu_scan/mu_scan_summary.json",
+  "sha256": "f7a596a8371cb53a0aa33178dd9ff9ac69d732968205e1257307c8b8387cfd79",
+  "bytes": 5445
+ },
+ "w/claims_run05/run01/pbar_direct_mc.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/pbar_direct_mc.json",
+  "sha256": "b669d6698c77b82f32cb3dddd61aec5a279778b3c914bc233478d301fa17bc5c",
+  "bytes": 13170
+ },
+ "w/claims_run05/run01/regress_run02/C154_correction_log.txt": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/regress_run02/C154_correction_log.txt",
+  "sha256": "95670ae9564ea3af32745c5aa4803deb10dc19daab4e718db5d4ec59e9121606",
+  "bytes": 1577
+ },
+ "w/claims_run05/run01/regress_run02/C154_correction_summary.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/regress_run02/C154_correction_summary.json",
+  "sha256": "8d3540a0bb21726c7c762af32a64ffd207cddefdda00e659cd640e21fa202bbb",
+  "bytes": 16462
+ },
+ "w/claims_run05/run01/regress_run02/C154_log.txt": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/regress_run02/C154_log.txt",
+  "sha256": "eddcf86e258fd7b154e342b51884a8a25d7d89ee5b9690fd1a017b7cef225a21",
+  "bytes": 7393
+ },
+ "w/claims_run05/run01/regress_run02/C154_summary.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/regress_run02/C154_summary.json",
+  "sha256": "551222e93e9e3b6a5d139802d031378100dd8b60412e620975ac2a6d30c3b7da",
+  "bytes": 31147
+ },
+ "w/claims_run05/run01/regress_run02/bayes_factors.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/regress_run02/bayes_factors.csv",
+  "sha256": "033677c38025a3a346ea17f411d88d00e787fabe8de8879afe4620dec0ee632e",
+  "bytes": 2048
+ },
+ "w/claims_run05/run01/regress_run02/bayes_factors_corr.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/regress_run02/bayes_factors_corr.csv",
+  "sha256": "265b664713bba519435b8f510c8ec42a4e344a6a2fcc3c8e0157af69aec9b68d",
+  "bytes": 2456
+ },
+ "w/claims_run05/run01/regress_run02/exclusion_mt.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/regress_run02/exclusion_mt.csv",
+  "sha256": "d23cc5e8c76f6b23bf6f0817b2948a44a52e71b5c57f6f36f053a74719e32b04",
+  "bytes": 360
+ },
+ "w/claims_run05/run01/regress_run02/fig2a_P1_grid_mt_alphas.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/regress_run02/fig2a_P1_grid_mt_alphas.csv",
+  "sha256": "54b908b9d5d7fb91a47e8062d349f9714f7f3ae9de7cc61cef0b74b5753fae09",
+  "bytes": 208769
+ },
+ "w/claims_run05/run01/regress_run02/fig2a_contours_mt_alphas.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/regress_run02/fig2a_contours_mt_alphas.csv",
+  "sha256": "51543d4847ec070ab840d7bf73a63a07369921f464caa328c9f2380d736609bd",
+  "bytes": 6440
+ },
+ "w/claims_run05/run01/regress_run02/fig2a_ellipses.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/regress_run02/fig2a_ellipses.csv",
+  "sha256": "3501b2019500a7e91884955b1a119d390fa28318373ab32a0b34a034653c6c6f",
+  "bytes": 119910
+ },
+ "w/claims_run05/run01/regress_run02/fig2b_points.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/regress_run02/fig2b_points.json",
+  "sha256": "d2f618ad227941f4016aa711b454d23926b731723a399f54a06ec56b12018a8b",
+  "bytes": 3131
+ },
+ "w/claims_run05/run01/regress_run02/fig2b_xi_curves.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/regress_run02/fig2b_xi_curves.csv",
+  "sha256": "ad7cd7010fa872daa06564062771c1289c77aa5103f6d92c167ad612771d49b2",
+  "bytes": 13732
+ },
+ "w/claims_run05/run01/regress_run02/future_HLLHC_corr.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/regress_run02/future_HLLHC_corr.csv",
+  "sha256": "c81b33ccc45265baaeb96fd228380e2ca2fcc066e8bc58deeefcf129e0becfe4",
+  "bytes": 983
+ },
+ "w/claims_run05/run01/regress_run02/future_reach.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/regress_run02/future_reach.csv",
+  "sha256": "65118eff45f057ae66a219dc585a159849b7821ba69fea03ca542108eeada564",
+  "bytes": 2261
+ },
+ "w/claims_run05/run01/regress_run02/marginal_P1.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/regress_run02/marginal_P1.csv",
+  "sha256": "b3f91e7959c990057cea86b06febfe673b75087d3978601cb33ecaa495f1c4d7",
+  "bytes": 1780
+ },
+ "w/claims_run05/run01/regress_run02/marginal_P1_corr.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/regress_run02/marginal_P1_corr.csv",
+  "sha256": "0ae9bb1d235f0bca390bc00495f7414587625068f4ad8046ab0f478811958b00",
+  "bytes": 1128
+ },
+ "w/claims_run05/run01/regress_run02/shift_scan_mc.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/regress_run02/shift_scan_mc.csv",
+  "sha256": "0ec35ea6dea20e436673b173b544f0c6cdc04393d25cdc9b0df84521d968eded",
+  "bytes": 515
+ },
+ "w/claims_run05/run01/regress_run02/table1_Pbar_progression_direct.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/regress_run02/table1_Pbar_progression_direct.csv",
+  "sha256": "5f4a8a23e0e65d92f24a4070ded99b5193a245a4f5f0a3159e199f1101e268cf",
+  "bytes": 297
+ },
+ "w/claims_run05/run01/regress_run02/table1_error_budget_final.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/regress_run02/table1_error_budget_final.csv",
+  "sha256": "f8d3fd0c6b2855d19a30640a7c89e0cd72719fcf4fd5b689a5f51fce0057c69c",
+  "bytes": 2476
+ },
+ "w/claims_run05/run01/t1new/C154_correction_err.txt": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/C154_correction_err.txt",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "bytes": 0
+ },
+ "w/claims_run05/run01/t1new/C154_correction_log.txt": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/C154_correction_log.txt",
+  "sha256": "b9ab23e813f4fd287e07879b02c4e0927da98a40cd220ef848f41816de29cd91",
+  "bytes": 1574
+ },
+ "w/claims_run05/run01/t1new/C154_correction_summary.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/C154_correction_summary.json",
+  "sha256": "31de3caeb25a96862f50138b21daff89fb9610f75e0ba968870e93767689b537",
+  "bytes": 16434
+ },
+ "w/claims_run05/run01/t1new/C154_err.txt": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/C154_err.txt",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "bytes": 0
+ },
+ "w/claims_run05/run01/t1new/C154_log.txt": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/C154_log.txt",
+  "sha256": "84f640339c10e6acd96201b6f0d1a3a678880889d4fc576ada453b869d84534a",
+  "bytes": 7389
+ },
+ "w/claims_run05/run01/t1new/C154_summary.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/C154_summary.json",
+  "sha256": "ca640b380098dbdc1ce901cd9279c5a58c906c14d63ef8c1ce95893ad4f88acc",
+  "bytes": 31132
+ },
+ "w/claims_run05/run01/t1new/bayes_factors.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/bayes_factors.csv",
+  "sha256": "07de747eb0251e1c356a202eb8ce9d8b98a77541b45c76594205c9ce51f6c600",
+  "bytes": 2050
+ },
+ "w/claims_run05/run01/t1new/bayes_factors_corr.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/bayes_factors_corr.csv",
+  "sha256": "b911d45633dc76fb8586e88100091cc3bb66684aab6c5b06f1132fce2d71d82e",
+  "bytes": 2464
+ },
+ "w/claims_run05/run01/t1new/exclusion_mt.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/exclusion_mt.csv",
+  "sha256": "d1dc72dea177f128a4300b4c7c39a9f21b9428011324f70a35bd4d8ea62a8021",
+  "bytes": 357
+ },
+ "w/claims_run05/run01/t1new/fig2a_P1_grid_mt_alphas.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/fig2a_P1_grid_mt_alphas.csv",
+  "sha256": "9c041a68a94ea0c63f36e04013632c62981b05f55a0727d4e7c94c84209ad0f2",
+  "bytes": 208607
+ },
+ "w/claims_run05/run01/t1new/fig2a_contours_mt_alphas.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/fig2a_contours_mt_alphas.csv",
+  "sha256": "10c81216156c152cdb7166c97d3eb693b20df756eba2ba64ee064484db0f068a",
+  "bytes": 6435
+ },
+ "w/claims_run05/run01/t1new/fig2a_ellipses.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/fig2a_ellipses.csv",
+  "sha256": "3501b2019500a7e91884955b1a119d390fa28318373ab32a0b34a034653c6c6f",
+  "bytes": 119910
+ },
+ "w/claims_run05/run01/t1new/fig2b_points.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/fig2b_points.json",
+  "sha256": "90387a501c3b588bcf655751d0ce4f860d5323dd145580167b740ce6bdb331ae",
+  "bytes": 3132
+ },
+ "w/claims_run05/run01/t1new/fig2b_xi_curves.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/fig2b_xi_curves.csv",
+  "sha256": "3f34202c0155b34cb6d04c41688cc2c829bdde03192f395a70e13df7120cab72",
+  "bytes": 13733
+ },
+ "w/claims_run05/run01/t1new/future_HLLHC_corr.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/future_HLLHC_corr.csv",
+  "sha256": "6e9d1c324dd2785f1d15a7bf3ded21026a3100c65ac11ddd8a117ba3e559bee7",
+  "bytes": 983
+ },
+ "w/claims_run05/run01/t1new/future_reach.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/future_reach.csv",
+  "sha256": "c72c212b250fdae47a571efe63f46fd60d9224efdd3b5f2a909fe1116ed96586",
+  "bytes": 2260
+ },
+ "w/claims_run05/run01/t1new/marginal_P1.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/marginal_P1.csv",
+  "sha256": "1661f9de01e1bfe97edad50056df538060552d0727ea7bcf47b7162243c43d97",
+  "bytes": 1779
+ },
+ "w/claims_run05/run01/t1new/marginal_P1_corr.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/marginal_P1_corr.csv",
+  "sha256": "61b4b2493dd39376c362300431a9778bc562e80650d9c72cca17e408cbd35bd9",
+  "bytes": 1126
+ },
+ "w/claims_run05/run01/t1new/shift_scan_mc.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/shift_scan_mc.csv",
+  "sha256": "b3ded80195c037c56564f26888af061ed7fcfed9e323a34e7160819a97a01b3f",
+  "bytes": 519
+ },
+ "w/claims_run05/run01/t1new/table1_Pbar_progression_direct.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/table1_Pbar_progression_direct.csv",
+  "sha256": "efa0f252a39df89bdf4f9daef6bc7eb28b5d559473ce2909a9ba3f5cc8669469",
+  "bytes": 300
+ },
+ "w/claims_run05/run01/t1new/table1_error_budget_final.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/t1new/table1_error_budget_final.csv",
+  "sha256": "63a8e4895c4bc14cb194d6bb4d6cd17fd64e3a4a17285eec2923db4c78800235",
+  "bytes": 3340
+ },
+ "w/claims_run05/run01/table1_error_budget_run05.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/table1_error_budget_run05.csv",
+  "sha256": "67619fc994ac9efa00789010b5a46f3f74c89e17a1d2643adecdd9c29ae8a0e5",
+  "bytes": 5301
+ },
+ "w/claims_run05/run01/table1_rebuild.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/table1_rebuild.json",
+  "sha256": "56f96bfdc24e1ce1e589fbc9e53b9dd07debdbaa3c7640db915133b4824a79f5",
+  "bytes": 8044
+ }
+}

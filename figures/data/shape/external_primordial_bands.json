@@ -1,0 +1,9 @@
+{
+ "description": "Published constraints drawn as reference bands in prd_primordial (transcribed, not computed here). Values as used by the v11 figure (06_paper_draft/figures/v11/fig6_primordial.py, lines 29-30, 49-53) and quoted in the v12 PRD text (sections/s09_spectra.tex lines 50-55); external data versions not re-checked by fig-shape.",
+ "ns_bands_68": [
+  {"label": "CMB only (SPT+ACT+Planck)", "mean": 0.9679, "sigma": 0.0033, "bib": "SPT-3G:2025bzu"},
+  {"label": "CMB + DESI DR2 BAO (P-ACT-LB2)", "mean": 0.9752, "sigma": 0.0030, "bib": "AtacamaCosmologyTelescope:2025blo, DESI:2025zgx"}
+ ],
+ "r_upper_95": {"label": "BICEP/Keck 2018", "value": 0.036, "pivot": "0.05 Mpc^-1", "bib": "BICEP:2021xfz"},
+ "r_target": {"label": "LiteBIRD total uncertainty for r = 0", "value": 0.001, "bib": "LiteBIRD:2022cnt"}
+}

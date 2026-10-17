@@ -1,0 +1,31 @@
+{
+ "step": "08_robustness_w0",
+ "checks": [
+  {"id": "core_test_l0", "mode": "tree", "what": "scale-shifted solver at l = 0 reproduces the run02 base roots (dQ, rel. gamma ~1e-12)", "paper": "PRD App. D 2 (method check)",
+   "computed": {"file": "WORK:r3/higgs_robustness/run01/C152_core_test.json"},
+   "expected": {"file": "expected/r3/higgs_robustness/run01/C152_core_test.json"}, "tol_abs": 1e-10, "ignore": ["time_s", "time_profiles_s"]},
+  {"id": "post_tree", "mode": "tree", "what": "background sensitivities, (vi) inflation-scale item, slopes", "paper": "PRD Sec. V D\u2013F; PRL Table I (vi)",
+   "computed": {"file": "WORK:r3/higgs_robustness/run01/C152_post.json"},
+   "expected": {"file": "expected/r3/higgs_robustness/run01/C152_post.json"}, "tol_abs": 1e-9, "tol_rel": 1e-7,
+   "ignore": ["code_sha256", "base_shards_sha256_sample", "time_s"]},
+  {"id": "w0_B3_tree", "mode": "tree", "what": "B3-rule w0(m_t) and critical masses with P = w0 P1", "paper": "PRD Sec. V D, App. D 2 (w0 0.9945/0.9907/0.9852/0.9801)",
+   "computed": {"file": "WORK:r3/higgs_robustness/run01/C152_w0_B3.json"},
+   "expected": {"file": "expected/r3/higgs_robustness/run01/C152_w0_B3.json"}, "tol_abs": 1e-9, "tol_rel": 1e-7, "ignore": ["time_s"]},
+  {"id": "accounting_tree", "mode": "tree", "what": "background bookkeeping (h/M_P, L_b Mbar_P) and its m_c effect", "paper": "report Sec. 11.3",
+   "computed": {"file": "WORK:r3/higgs_robustness/run01/C152_accounting.json"},
+   "expected": {"file": "expected/r3/higgs_robustness/run01/C152_accounting.json"}, "tol_abs": 1e-9, "tol_rel": 1e-7,
+   "ignore": ["sha256", "time_s"]},
+  {"id": "input_dmc_tree", "mode": "tree", "what": "input sensitivities dm_c (vi range, r = 1e-4 tail, dlnI/dlam_b)", "paper": "PRL Table I (vi) +-0.035/+-0.067/+-0.112",
+   "computed": {"file": "WORK:r3/higgs_robustness/run01/C152_input_dmc.json"},
+   "expected": {"file": "expected/r3/higgs_robustness/run01/C152_input_dmc.json"}, "tol_abs": 1e-9, "tol_rel": 1e-7,
+   "ignore": ["sha256", "time_s"]},
+  {"id": "mc_w0_tree", "mode": "tree", "what": "m_c(w0) table and B3 critical masses 172.4819/172.9473/173.4076", "paper": "PRD Sec. V D, App. D 2",
+   "computed": {"file": "WORK:r3/higgs_robustness/run01/C152_mc_w0.json"},
+   "expected": {"file": "expected/r3/higgs_robustness/run01/C152_mc_w0.json"}, "tol_abs": 1e-9, "tol_rel": 1e-7,
+   "ignore": ["sha256", "time_s"]},
+  {"id": "full_shard_D-0.3147_u2.5", "mode": "tree", "modes": ["full"], "what": "one recomputed scale-shifted node shard (r-family)", "paper": "PRD Sec. V D, App. D 2",
+   "computed": {"file": "WORK:r3/higgs_robustness/run01/shards/D-0.3147_u2.5000.json", "key": "cols"},
+   "expected": {"file": "expected/r3/higgs_robustness/run01/shards/D-0.3147_u2.5000.json", "key": "cols"},
+   "tol_abs": 1e-12, "tol_rel": 1e-6, "ignore": ["prof", "time_s", "time_profiles_s"]}
+ ]
+}

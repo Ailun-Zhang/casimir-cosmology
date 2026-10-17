@@ -1,0 +1,31 @@
+{
+ "task": "R18 DA-01: central P1 and exclusion factor B_ex at the FCC-ee exclusion threshold (run05 centre)",
+ "alpha_s": 0.118,
+ "mhat_excl_P0p1": 173.67711571091886,
+ "sigma_tot": 0.13128632395874648,
+ "sigma_meas": 0.05245484716550054,
+ "inputs": {
+  "C154_summary": "w/claims_run05/run01/C154_summary.json#/future/FCCee_base",
+  "grid": "w/claims_run05/run01/fig2a_P1_grid_mt_alphas.csv (alpha_s = 0.1180, P1_central)"
+ },
+ "headline": {
+  "P1_central_at_mhat": 0.022972342692097917,
+  "Bex": 0.03319175056661322,
+  "prob_P1_le_0p1": 0.9499999999999929,
+  "definition": "P1 on the central curve at mhat (grid); B_ex = Pbar of PRD Eq. (h-bayes) for an FCC-ee measurement centred at mhat: C154 Theory2 (FCC-ee alpha_s, SM, M_h errors, asymmetric level-dependent model error) averaged over N(mhat, sigma_meas), as future.*.truth.*.Pbar"
+ },
+ "cross_check": {
+  "Bex_gauss_sigma_tot": 0.030172333360965628,
+  "P1_central_exact_at_mhat": 0.02296954617207602,
+  "Bex_gauss_exact_curve": 0.03016786097832793,
+  "replication": {
+   "sigma_meas": 0.05245484716550054,
+   "sigma_meas_archived": 0.05245484716550054,
+   "Pbar_truth_172p6": 0.8266063248433984,
+   "Pbar_truth_172p6_archived": 0.8266063248433984,
+   "mhat_excl_P0p1": 173.67711571091886,
+   "mhat_excl_P0p1_archived": 173.67711571091886
+  },
+  "definition": "Bex_gauss = posterior mean of P1_central over N(mhat, sigma_tot) (all FCC-ee errors in one Gaussian, model error symmetrised; the referee's estimate); exact = central curve S.P1(m - mu_Mh, 0.1180) instead of the grid"
+ }
+}

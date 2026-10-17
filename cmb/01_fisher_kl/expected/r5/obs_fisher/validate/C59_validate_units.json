@@ -1,0 +1,22 @@
+{
+  "real_harmonic_max_abs_diff_vs_scipy_C35_convention_l40": 7.038813976123492e-14,
+  "quadrature_orthonormality_max_abs_err_l30": 7.430861481694251e-14,
+  "half_lattice_matches_bruteforce_R7p3": true,
+  "half_lattice_count": 823,
+  "inversion_parity_max_err": 0.0,
+  "window_checks": {
+    "W_at_x1": 1.0,
+    "W_at_x2": 0.0,
+    "monotone": true
+  },
+  "timing_l30_TE_cube_L0_dLSS_xmax60": {
+    "seconds": 1.720398200002819,
+    "modes_half_used": 14519,
+    "modes_full_used": 29038,
+    "x_taper_start": 45.0,
+    "dims": [
+      990,
+      924
+    ]
+  }
+}

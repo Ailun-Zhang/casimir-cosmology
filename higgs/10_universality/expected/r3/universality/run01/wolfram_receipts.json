@@ -1,0 +1,17 @@
+{
+ "tool": "mcp__WolframLanguage__WolframLanguageEvaluator (local Mathematica 15.0), session zaZH0gr4, 2026-10-15",
+ "purpose": "independent check of the Python Mellin/Poisson twisted Epstein sums (U156_twist.Zs): one-direction closed forms (n3 or n1 sum in closed form, n_perp box |n_i| <= 25, exponential convergence for alternating n3)",
+ "code": "s1[a_] := Pi/(Sqrt[a] Sinh[Pi Sqrt[a]]); s2[a_] := -D[Pi/(Sqrt[x] Sinh[Pi Sqrt[x]]), x] /. x -> a; c1[a_] := Pi Coth[Pi Sqrt[a]]/Sqrt[a]; c2[a_] := -D[Pi Coth[Pi Sqrt[x]]/Sqrt[x], x] /. x -> a; M = 25; pts = Select[Tuples[Range[-M, M], 2], # =!= {0, 0} &]; z2PPA = -2 DirichletEta[4] + Total[N[s2[#.#], 30] & /@ pts]; z1PPA = -2 DirichletEta[2] + Total[N[s1[#.#], 30] & /@ pts]; y1PPA = 3 Total[N[#[[1]]^2 s2[#.#], 30] & /@ pts]; z2AAA = -2 DirichletEta[4] + Total[N[(-1)^(#[[1]] + #[[2]]) s2[#.#], 30] & /@ pts]; z1AAA = -2 DirichletEta[2] + Total[N[(-1)^(#[[1]] + #[[2]]) s1[#.#], 30] & /@ pts]; z2PAA = 2 Zeta[4] + Total[N[(-1)^(#[[1]] + #[[2]]) c2[#.#], 30] & /@ pts]; ToString[N[{...}, 12], InputForm]",
+ "output": {
+  "Z2PPA": 0.689222574389731, "Z1PPA": -0.301380224440825, "Y1PPA": 4.51468111262531,
+  "Z2AAA": -3.86316380719659, "Z1AAA": -2.51935615208945, "Z2PAA": -2.15685383454062,
+  "NC_PPA": 13.123976342881779, "NC_PAA": 20.870830365832315
+ },
+ "warnings": "none",
+ "comparison_python": {
+  "Z2PPA": [0.6892225743897127, "agree 1e-12"], "Z1PPA": [-0.3013802244408268, "agree 1e-12"],
+  "Y1PPA": [4.51468137297642, "agree 6e-8 relative (Python uses a central finite difference in the metric, h = 2e-4)"],
+  "Z2AAA": [-3.8631638071965986, "agree 1e-13 (v11: -3.8631638072)"], "Z1AAA": [-2.519356152089445, "agree 1e-13 (D121: -2.519356)"],
+  "Z2PAA": [-2.1568872986178294, "differ 3.3e-5: the Wolfram PAA form sums the NON-alternating periodic n1 in closed form, leaving a conditionally convergent alternating (n2,n3) box sum of ~A^(-3/2) (truncation ~1e-5); the Python Mellin value is exponentially convergent; N_C(PAA) 20.87092 vs 20.87083, v11 table 20.87"]
+ }
+}

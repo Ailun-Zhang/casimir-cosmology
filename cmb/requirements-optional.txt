@@ -1,0 +1,5 @@
+﻿# Optional: regenerate the CMB transfer tables -- cmb/01_fisher_kl --full (l <= 40: C59_transfer.py,
+# C59_transfer_cutoff_scan.py) and cmb/02_ensemble/data/C59_transfer.npz (l <= 80: data/high_l_transfer.py; run it on a
+# copy in an empty folder, since it writes next to itself, and compare with the shipped table; see data/README.md).
+# The archived production table was computed with CAMB 2.0.4 (Planck 2018 cosmology); the independent T19 cross-check used 2.0.5.
+camb==2.0.4

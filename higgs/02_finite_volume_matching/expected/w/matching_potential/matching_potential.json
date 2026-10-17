@@ -1,0 +1,174 @@
+{
+ "task": "R18 DA-04: one-loop finite-volume matching vs the gauge zero-point confinement (D112 2D_ex model)",
+ "inputs": {
+  "potential": "figures/data/higgs/generated/potential_2Dex_lam010_013.csv",
+  "resonance": "higgs/05_fulldim_validation/expected/r3/fulldim_dmc/run01/T14a_profile.json #/<lambda>/Q_2D_ex_siegert"
+ },
+ "lambda": {
+  "-0.01": {
+   "Q_2D_ex_siegert": 4.2867435348567415,
+   "slope": {
+    "1.0": {
+     "r": 1.0,
+     "dzeropoint_dr": 0.7224950000000092,
+     "ddV_dr": -0.07983178999999985,
+     "slope_reduction": 0.11049459165807214
+    },
+    "2.0": {
+     "r": 2.0,
+     "dzeropoint_dr": 0.9575705000000028,
+     "ddV_dr": -0.15903925000000108,
+     "slope_reduction": 0.16608620461887727
+    },
+    "3.0": {
+     "r": 3.0,
+     "dzeropoint_dr": 1.0777395000000354,
+     "ddV_dr": -0.2374475500000024,
+     "slope_reduction": 0.22031998456027138
+    },
+    "4.0": {
+     "r": 4.0,
+     "dzeropoint_dr": 1.154833999999994,
+     "ddV_dr": -0.31572945000000274,
+     "slope_reduction": 0.2733981247521327
+    },
+    "5.0": {
+     "r": 5.0,
+     "dzeropoint_dr": 1.1958520000000021,
+     "ddV_dr": -0.39571065000001227,
+     "slope_reduction": 0.3309026953168214
+    }
+   },
+   "slope_reduction_range_r1_5": [
+    0.11049459165807214,
+    0.3309026953168214
+   ],
+   "barrier_above_Q": {
+    "Uad": {
+     "with_matching": {
+      "r_top": 4.34,
+      "U_top": 5.002147,
+      "height_above_Q": 0.7154034651432584
+     },
+     "without_matching": {
+      "r_top": 4.91,
+      "U_top": 5.852094311999999,
+      "height_above_Q": 1.5653507771432578
+     },
+     "ratio_with_to_without": 0.4570243779153828
+    },
+    "Ug": {
+     "with_matching": {
+      "r_top": 4.36,
+      "U_top": 4.98235281,
+      "height_above_Q": 0.6956092751432585
+     },
+     "without_matching": {
+      "r_top": 4.92,
+      "U_top": 5.836596061,
+      "height_above_Q": 1.5498525261432583
+     },
+     "ratio_with_to_without": 0.44882288050609076
+    }
+   },
+   "U_top_archived_T14a": 5.002152649752775,
+   "r_top_archived_T14a": 4.344000000000004
+  },
+  "-0.013": {
+   "Q_2D_ex_siegert": 4.277898600312821,
+   "slope": {
+    "1.0": {
+     "r": 1.0,
+     "dzeropoint_dr": 0.7224950000000092,
+     "ddV_dr": -0.07573083999999985,
+     "slope_reduction": 0.10481849701381862
+    },
+    "2.0": {
+     "r": 2.0,
+     "dzeropoint_dr": 0.9575705000000028,
+     "ddV_dr": -0.15061635000000262,
+     "slope_reduction": 0.15729008986805898
+    },
+    "3.0": {
+     "r": 3.0,
+     "dzeropoint_dr": 1.0777395000000354,
+     "ddV_dr": -0.2242604000000057,
+     "slope_reduction": 0.2080840499953823
+    },
+    "4.0": {
+     "r": 4.0,
+     "dzeropoint_dr": 1.154833999999994,
+     "ddV_dr": -0.29711365000000356,
+     "slope_reduction": 0.2572782321961469
+    },
+    "5.0": {
+     "r": 5.0,
+     "dzeropoint_dr": 1.1958520000000021,
+     "ddV_dr": -0.37077910000000713,
+     "slope_reduction": 0.31005433782776337
+    }
+   },
+   "slope_reduction_range_r1_5": [
+    0.10481849701381862,
+    0.31005433782776337
+   ],
+   "barrier_above_Q": {
+    "Uad": {
+     "with_matching": {
+      "r_top": 4.02,
+      "U_top": 4.81189057,
+      "height_above_Q": 0.5339919696871789
+     },
+     "without_matching": {
+      "r_top": 4.48,
+      "U_top": 5.489369223,
+      "height_above_Q": 1.2114706226871785
+     },
+     "ratio_with_to_without": 0.4407799575880135
+    },
+    "Ug": {
+     "with_matching": {
+      "r_top": 4.04,
+      "U_top": 4.78881292,
+      "height_above_Q": 0.5109143196871786
+     },
+     "without_matching": {
+      "r_top": 4.49,
+      "U_top": 5.47073408,
+      "height_above_Q": 1.1928354796871785
+     },
+     "ratio_with_to_without": 0.42831918431967336
+    }
+   },
+   "U_top_archived_T14a": 4.811891911055713,
+   "r_top_archived_T14a": 4.022000000000004
+  }
+ },
+ "headline": {
+  "slope_reduction_range_r1_5": [
+   0.10481849701381862,
+   0.3309026953168214
+  ],
+  "barrier_above_Q_Uad": {
+   "-0.01": [
+    1.5653507771432578,
+    0.7154034651432584
+   ],
+   "-0.013": [
+    1.2114706226871785,
+    0.5339919696871789
+   ]
+  },
+  "barrier_above_Q_Ug": {
+   "-0.01": [
+    1.5498525261432583,
+    0.6956092751432585
+   ],
+   "-0.013": [
+    1.1928354796871785,
+    0.5109143196871786
+   ]
+  },
+  "note": "barrier pairs are [without, with] the one-loop matching, in units 1/L above the resonance level Q_2D_ex_siegert; Uad = potential of the radial problem (incl. 3/(8 r^2)), Ug = field-space potential (without it)"
+ }
+}

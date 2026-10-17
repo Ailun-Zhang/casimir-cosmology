@@ -1,0 +1,232 @@
+{
+ "_paths_note": "Machine-specific absolute paths in the recorded 'old'/'value'/diff strings were replaced by placeholders on 2026-10-15 (code-finalize): <RESEARCH_ROOT> = the private research tree of the project. <AGENT_TEMP> = the temporary directory of the agent session that assembled the package.",
+ "chain": "casimir",
+ "built_utc": "2026-10-15T20:10:43Z",
+ "agent": "code-shape-cmb",
+ "rule": "algorithms and numerics unchanged; only the listed line substitutions",
+ "files": {
+  "01_sm_casimir_weight/C57_spin_structure_Casimir.py": {
+   "source": "04_calculations/code/20261009_claude_R5/C57_spin_structure_Casimir.py",
+   "source_sha256": "02e507b003fd1fa0a3f045259de6170eadcbdb1b8624e9e85b6d19b7f1b073b0",
+   "copy_sha256": "e955c3d54838a64b56a4ccd780a2fb524425bfcbd293f3024158e12214b71713",
+   "substitutions": [
+    {
+     "line": 23,
+     "old": "ROOT = Path(__file__).resolve().parents[3]",
+     "new": "import sys  # package: work-tree path shim of the casimir chain (see casimir/_casimir_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _casimir_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 24,
+     "old": "OUT = ROOT / '04_calculations' / 'results' / '20261009_claude_R5' / 'C57_spin_structure'",
+     "new": "OUT = WP.wdir('r5/C57_spin_structure')"
+    }
+   ]
+  },
+  "01_sm_casimir_weight/C68_holonomy_and_preparation.py": {
+   "source": "04_calculations/code/20261009_claude_R5/C68_holonomy_and_preparation.py",
+   "source_sha256": "0f2ec5310f41b6a31f5d0e90efe2769d896a892efb97dc19789055c87a56f512",
+   "copy_sha256": "cf4e2772efc7ee931a2db76058cdd467c52c16c77da9fedcf13c5050e7e2a644",
+   "substitutions": [
+    {
+     "line": 28,
+     "old": "ROOT = Path(__file__).resolve().parents[3]",
+     "new": "import sys  # package: work-tree path shim of the casimir chain (see casimir/_casimir_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _casimir_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 29,
+     "old": "OUT = ROOT / '04_calculations' / 'results' / '20261009_claude_R5' / 'C68_holonomy_preparation'",
+     "new": "OUT = WP.wdir('r5/C68_holonomy_preparation')"
+    }
+   ]
+  },
+  "02_zero_mode_energy/C72_common.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C72/C72_common.py",
+   "source_sha256": "32741b21dc2070caf9d10930a89d9c84902a56d967b373d41cae0bf1da1834fe",
+   "copy_sha256": "2cc116c19d8db30e07676dcb8dc89401b93ac8ca3e29edfa9a237c298c6b37f1",
+   "substitutions": [
+    {
+     "line": 24,
+     "old": "ROOT = Path(r\"<RESEARCH_ROOT>\")",
+     "new": "import sys  # package: work-tree path shim of the casimir chain (see casimir/_casimir_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _casimir_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 25,
+     "old": "RES = ROOT / \"04_calculations\" / \"results\" / \"20261011_claude_followup\" / \"C72\"",
+     "new": "RES = WP.wdir(\"fu/C72\")"
+    }
+   ]
+  },
+  "02_zero_mode_energy/C72_dmc.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C72/C72_dmc.py",
+   "source_sha256": "52f45710b95ecd8fa66e1e0311a6e2b219d2345facef12b995491e6bce2a3f33",
+   "copy_sha256": "af8791e24c79f7f695b51ccbc85c250fb09bb956e1c36054d6418ae2d47a9463",
+   "substitutions": [
+    {
+     "line": 175,
+     "old": "with Pool(min(8, len(cs))) as pool:",
+     "new": "with Pool(min(int(os.environ.get(\"DNEC_WORKERS\", \"8\")), len(cs))) as pool:  # package: --workers"
+    }
+   ]
+  },
+  "02_zero_mode_energy/C72_analysis.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C72/C72_analysis.py",
+   "source_sha256": "64959fb16760797d11837c02bec4fbae8ed16535da5001ca88df34a4f83048ef",
+   "copy_sha256": "47aea772f31178f71deb0658330c4b4e848ff57ce5205b3f943b899b4ef599ca",
+   "substitutions": []
+  },
+  "02_zero_mode_energy/C72_summary.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C72/C72_summary.py",
+   "source_sha256": "8e401f6970fda7fdd5e264351b3b2202deb86a1cae30dcc4514d35a7cc11938a",
+   "copy_sha256": "06b8d51fbf89318e6d94801cf8d3f0f8ee0ce67bfe517fb8a23d4b030d76bbf0",
+   "substitutions": []
+  },
+  "02_zero_mode_energy/C78_next_order_zero_mode.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C78_next_order_zero_mode.py",
+   "source_sha256": "3e5cb458075ee03084d27ee418006ff98014736aad3bed7bdae842d4d51856e6",
+   "copy_sha256": "7512301523c6bd0bae8c3c026e984ec67976b5f68a85257a7053b53cc6d2b82d",
+   "substitutions": [
+    {
+     "line": 35,
+     "old": "OUT = Path(__file__).resolve().parents[2] / \"results\" / \"20261011_claude_followup\" / \"C78\"",
+     "new": "import sys  # package: work-tree path shim of the casimir chain (see casimir/_casimir_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _casimir_paths as WP  # noqa: E402\nOUT = WP.wdir(\"fu/C78\")"
+    }
+   ]
+  },
+  "02_zero_mode_energy/C81_higgs_zero_mode_mass.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C81_higgs_zero_mode_mass.py",
+   "source_sha256": "49406e3b112c34fbf179b49fee08a54685fdfd2ea50bce46c09a75bdcaf7a230",
+   "copy_sha256": "0b2527aa6bf3535f86cd44175a2523e6dc36571aa83ac5d368bb578884da0126",
+   "substitutions": [
+    {
+     "line": 27,
+     "old": "ROOT = Path(__file__).resolve().parents[3]",
+     "new": "import sys  # package: work-tree path shim of the casimir chain (see casimir/_casimir_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _casimir_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 28,
+     "old": "OUT = ROOT / \"04_calculations\" / \"results\" / \"20261011_claude_followup\" / \"C81\"",
+     "new": "OUT = WP.wdir(\"fu/C81\")"
+    },
+    {
+     "line": 29,
+     "old": "C78 = ROOT / \"04_calculations\" / \"results\" / \"20261011_claude_followup\" / \"C78\" / \"C78_results.json\"",
+     "new": "C78 = WP.wfile(\"fu/C78/C78_results.json\")"
+    },
+    {
+     "line": 30,
+     "old": "RGE = ROOT / \"02_literature\" / \"20261011_claude_followup\" / \"L25_work\" / \"rge_couplings.json\"",
+     "new": "RGE = WP.step_dir(\"02_zero_mode_energy\", \"inputs\", \"rge_couplings.json\")"
+    }
+   ]
+  },
+  "03_shape_hessian/c73_common.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C73/c73_common.py",
+   "source_sha256": "9cea90f8cb2d4911a0e722061c33ba30cef8bbb48e4aed73a4c9d516e9ae296c",
+   "copy_sha256": "b4ac919e5762f9fcc7780d8e81f158bdbb642788db3bd34f1d00736bb2e2ec84",
+   "substitutions": [
+    {
+     "line": 26,
+     "old": "PROJECT = Path(r\"<RESEARCH_ROOT>\")",
+     "new": "import sys  # package: work-tree path shim of the casimir chain (see casimir/_casimir_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _casimir_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 27,
+     "old": "RES = PROJECT / \"04_calculations\" / \"results\" / \"20261011_claude_followup\" / \"C73\"",
+     "new": "RES = WP.wdir(\"fu/C73\")"
+    }
+   ]
+  },
+  "03_shape_hessian/c73_symbolic.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C73/c73_symbolic.py",
+   "source_sha256": "90da9bf21160bfd0f5aaf7fba3553a09b061cea4c8a860852d1f2586391926e2",
+   "copy_sha256": "21537fc652724771d8f72ca4509842b824748b5622bff1e4d128ade68d57f83d",
+   "substitutions": []
+  },
+  "03_shape_hessian/c73_gain.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C73/c73_gain.py",
+   "source_sha256": "6c310846df9c109662fd0e62c5f7c8197d366274d5a3c6daabec77fde5f06031",
+   "copy_sha256": "1824458b1d2296c5d0d76afbb33aaafb47e9fd93efda89cc5e3e1023e3a9a8c5",
+   "substitutions": []
+  },
+  "03_shape_hessian/c73_thermo.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C73/c73_thermo.py",
+   "source_sha256": "256bf613846b63baed816027c8d156d8895ccd6a6edfea31b78ec8eb2aa3890b",
+   "copy_sha256": "d034f4cbe2aecc2a01704fec55723397162d3fd9576aca20cb8960b69a01badc",
+   "substitutions": [
+    {
+     "line": 357,
+     "old": "with Pool(14) as pool:",
+     "new": "with Pool(int(os.environ.get(\"DNEC_WORKERS\", \"14\"))) as pool:  # package: --workers"
+    }
+   ]
+  },
+  "03_shape_hessian/c73_zeta.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C73/c73_zeta.py",
+   "source_sha256": "a7f0a90b69392cc153cba80d5b9dde5ee1a662a35cb128e6b098b0a16b468459",
+   "copy_sha256": "0755acdcd63ec8c28f55f735ff71d6dafe9bf8ce6539af05824f51b246a6754d",
+   "substitutions": [
+    {
+     "line": 103,
+     "old": "with Pool(14) as pool:",
+     "new": "with Pool(int(os.environ.get(\"DNEC_WORKERS\", \"14\"))) as pool:  # package: --workers"
+    },
+    {
+     "line": 141,
+     "old": "sys.path.insert(0, str(RES.parents[3] / \"04_calculations\" / \"code\" / \"20261009_claude_R5\"))",
+     "new": "import _casimir_paths as WP; sys.path.insert(0, str(WP.step_dir(\"01_sm_casimir_weight\")))  # package: C57"
+    }
+   ]
+  },
+  "03_shape_hessian/c73_abelian_zeropoint.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C73/c73_abelian_zeropoint.py",
+   "source_sha256": "5920f6e4b5760e12b3ed128496943d2a5d79d4087dd7cdc264c529e69984af37",
+   "copy_sha256": "b7514c6b13f64efb59d7a23157ce0fa8e4f4290a142927ba1de14182567e48ce",
+   "substitutions": [
+    {
+     "line": 57,
+     "old": "with Pool(14) as pool:",
+     "new": "with Pool(int(os.environ.get(\"DNEC_WORKERS\", \"14\"))) as pool:  # package: --workers"
+    }
+   ]
+  },
+  "03_shape_hessian/c73_codex_toy_repro.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C73/c73_codex_toy_repro.py",
+   "source_sha256": "cd91c83a5587c515cc172fde02638d5a99430cf75692359de5b60a475c9a20b5",
+   "copy_sha256": "4ce3e80776dbabd5da5f515063c85f52f36af9c5c35ef57d499058e99c2176fb",
+   "substitutions": [
+    {
+     "line": 35,
+     "old": "with Pool(14) as pool:",
+     "new": "with Pool(int(os.environ.get(\"DNEC_WORKERS\", \"14\"))) as pool:  # package: --workers"
+    }
+   ]
+  },
+  "03_shape_hessian/C83_next_order_shape_hessian.py": {
+   "source": "04_calculations/code/20261011_claude_followup/C83_next_order_shape_hessian.py",
+   "source_sha256": "2d73265acb145c3fd5d012f053220210277d1fdefdc266ee2f23ea758391b760",
+   "copy_sha256": "afa12ba7763b6763843259aab341aaf9ab4f9b56a689b314059de230153157db",
+   "substitutions": [
+    {
+     "line": 37,
+     "old": "ROOT = Path(__file__).resolve().parents[3]",
+     "new": "import sys  # package: work-tree path shim of the casimir chain (see casimir/_casimir_paths.py)\nsys.path.insert(0, str(Path(__file__).resolve().parents[1]))\nimport _casimir_paths as WP  # noqa: E402"
+    },
+    {
+     "line": 38,
+     "old": "OUT = ROOT / \"04_calculations\" / \"results\" / \"20261011_claude_followup\" / \"C83\"",
+     "new": "OUT = WP.wdir(\"fu/C83\")"
+    },
+    {
+     "line": 39,
+     "old": "C78 = json.loads((ROOT / \"04_calculations\" / \"results\" / \"20261011_claude_followup\" / \"C78\" / \"C78_results.json\").read_text())",
+     "new": "C78 = json.loads(WP.wfile(\"fu/C78/C78_results.json\").read_text())"
+    },
+    {
+     "line": 40,
+     "old": "C81 = json.loads((ROOT / \"04_calculations\" / \"results\" / \"20261011_claude_followup\" / \"C81\" / \"C81_results.json\").read_text())",
+     "new": "C81 = json.loads(WP.wfile(\"fu/C81/C81_results.json\").read_text())"
+    }
+   ]
+  }
+ }
+}

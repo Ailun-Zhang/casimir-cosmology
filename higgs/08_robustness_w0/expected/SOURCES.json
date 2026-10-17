@@ -1,0 +1,282 @@
+{
+ "r3/higgs_robustness/run01/C152_accounting.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/C152_accounting.json",
+  "sha256": "720100a499eb94d058228705a26a4156356a5474eb551333cd349ee001621d72",
+  "bytes": 7050
+ },
+ "r3/higgs_robustness/run01/C152_core_test.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/C152_core_test.json",
+  "sha256": "0c53870f424d7fb57117f01391208043997cf8be7244345ef7b7276ca6f9c93f",
+  "bytes": 944
+ },
+ "r3/higgs_robustness/run01/C152_input_dmc.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/C152_input_dmc.json",
+  "sha256": "bb8612bdedd274c8e630b05857c0e599f3c90b2d53c3f7d33d79f1aeaf7e3b4f",
+  "bytes": 14920
+ },
+ "r3/higgs_robustness/run01/C152_mc_w0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/C152_mc_w0.json",
+  "sha256": "f9076a0c2babc5573feb82ff5630a2ad283ac6e9018c93b7d35ed3423a06cf87",
+  "bytes": 3568
+ },
+ "r3/higgs_robustness/run01/C152_post.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/C152_post.json",
+  "sha256": "8cf27ad6fa1e796a7c1a9bea822aa518502497f05e2bcebc1fb7a85d1452664b",
+  "bytes": 26766
+ },
+ "r3/higgs_robustness/run01/C152_summary.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/C152_summary.json",
+  "sha256": "e2e295c5fb3801c4fc06976c8a2ed08cf2be6b20315e1dd17146b8d8d05e7b1f",
+  "bytes": 2655
+ },
+ "r3/higgs_robustness/run01/C152_w0_B3.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/C152_w0_B3.json",
+  "sha256": "4e243d2f5e559c6b0c4b46acb4090221c7fcba1144b5452d837731faf810cd0c",
+  "bytes": 9603
+ },
+ "r3/higgs_robustness/run01/shards/D+0.2705_u0.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D+0.2705_u0.0000.json",
+  "sha256": "c504199b06c45b1c06b0cc28ed9643b2f5aecfe54c2f459bafdf784ba93d509e",
+  "bytes": 10289
+ },
+ "r3/higgs_robustness/run01/shards/D+0.2705_u0.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D+0.2705_u0.5000.json",
+  "sha256": "7d9257b0fbe52dcbd31b355ca2ae23ea4e0f132750dcc9ea6fc9d147d979b3a2",
+  "bytes": 10454
+ },
+ "r3/higgs_robustness/run01/shards/D+0.2705_u1.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D+0.2705_u1.0000.json",
+  "sha256": "0575a349904b989d7330e28e8b0c91182a0d71ed0869051c58730c75db61a9bf",
+  "bytes": 10442
+ },
+ "r3/higgs_robustness/run01/shards/D+0.2705_u1.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D+0.2705_u1.5000.json",
+  "sha256": "98d12bd4e7e1aacac7d2dd65102cd2b979fa86653daba65ac8dacf5d92e4240c",
+  "bytes": 10437
+ },
+ "r3/higgs_robustness/run01/shards/D+0.2705_u2.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D+0.2705_u2.0000.json",
+  "sha256": "529c8f4a508a4fe2441e3416e527f4e6073187a71012da7b4a8c83d8792e877e",
+  "bytes": 10417
+ },
+ "r3/higgs_robustness/run01/shards/D+0.2705_u2.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D+0.2705_u2.5000.json",
+  "sha256": "b074f0b2fde63ffc97f9f8db306898d2d0b609e3aa671342c3b1c9f5636a88aa",
+  "bytes": 10425
+ },
+ "r3/higgs_robustness/run01/shards/D+0.2705_u3.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D+0.2705_u3.0000.json",
+  "sha256": "1cbbf4ecc5840d05021629d797f8ba2a7f149ad7f55a9279928ca18aaffb3bc4",
+  "bytes": 10402
+ },
+ "r3/higgs_robustness/run01/shards/D+0.2705_u3.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D+0.2705_u3.5000.json",
+  "sha256": "6f3c31d776abc72f02126c75b0de4d0b1dae908eba2a487a8842639fc1bd225d",
+  "bytes": 10446
+ },
+ "r3/higgs_robustness/run01/shards/D+0.2705_u4.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D+0.2705_u4.0000.json",
+  "sha256": "ef0386759d43e1e9a29924f4eff0b07903c2ba45e783189e8301a28258b051a9",
+  "bytes": 10423
+ },
+ "r3/higgs_robustness/run01/shards/D+0.2705_u4.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D+0.2705_u4.5000.json",
+  "sha256": "fb8ed7ce382a576833a0fbc3300577e8ff29a0b4d22bd57b8fb43464b3de5344",
+  "bytes": 10440
+ },
+ "r3/higgs_robustness/run01/shards/D+0.2705_u5.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D+0.2705_u5.0000.json",
+  "sha256": "4428a6ce25d9c044e090f5bd8c5e06b2a05e5b294adbbfadee853980dbdc5607",
+  "bytes": 10411
+ },
+ "r3/higgs_robustness/run01/shards/D-0.0145_u0.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.0145_u0.0000.json",
+  "sha256": "59500ced6f98146daa39f4a87f09a719fc3af791733b9bd1b53b3c52285e1fb8",
+  "bytes": 10315
+ },
+ "r3/higgs_robustness/run01/shards/D-0.0145_u0.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.0145_u0.5000.json",
+  "sha256": "f757772b9eef3ee48a107f459cf8bfe87e1a64ea71d71bf53096ace55cce87cd",
+  "bytes": 10426
+ },
+ "r3/higgs_robustness/run01/shards/D-0.0145_u1.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.0145_u1.0000.json",
+  "sha256": "d2b0e7153edd325bd79d7e08cc9b31c10a5e870321ec339334924bdac2dac207",
+  "bytes": 10430
+ },
+ "r3/higgs_robustness/run01/shards/D-0.0145_u1.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.0145_u1.5000.json",
+  "sha256": "c5f59bf752ec3b6c93e3658ec9d4daea668c9618f7fb9528e672815416654dc7",
+  "bytes": 10433
+ },
+ "r3/higgs_robustness/run01/shards/D-0.0145_u2.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.0145_u2.0000.json",
+  "sha256": "04a1b3ab29c31618d1aaeb9076a07961830cda0382f0e78b21f90494c74fbb77",
+  "bytes": 10415
+ },
+ "r3/higgs_robustness/run01/shards/D-0.0145_u2.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.0145_u2.5000.json",
+  "sha256": "204e6af4c2240ec93baa2a0e9367af8ce298089a029855f71c8e4144d827b8a8",
+  "bytes": 10424
+ },
+ "r3/higgs_robustness/run01/shards/D-0.0145_u3.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.0145_u3.0000.json",
+  "sha256": "130f6ac8af5c37b240aed938f57e97e452e45206bbaa843c44f65712cbaaadef",
+  "bytes": 10419
+ },
+ "r3/higgs_robustness/run01/shards/D-0.0145_u3.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.0145_u3.5000.json",
+  "sha256": "beb324edbb62d848fa4aedffa99959ea93e3b583208b23f6c8eb99df94bc7d2c",
+  "bytes": 10404
+ },
+ "r3/higgs_robustness/run01/shards/D-0.0145_u4.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.0145_u4.0000.json",
+  "sha256": "b5e09147370a64819dd099759bd70853e0d25c22929830a502e61ea64045fd45",
+  "bytes": 10426
+ },
+ "r3/higgs_robustness/run01/shards/D-0.0145_u4.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.0145_u4.5000.json",
+  "sha256": "b03fb011bcf11c054788281bd525808953f6df1e8109a74cb9158feb0c3202cb",
+  "bytes": 10419
+ },
+ "r3/higgs_robustness/run01/shards/D-0.0145_u5.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.0145_u5.0000.json",
+  "sha256": "a4f4764268a75c8bfe7af8c3893f50b22bad96df4f2e4542fce026dfce40eb7e",
+  "bytes": 10437
+ },
+ "r3/higgs_robustness/run01/shards/D-0.3147_u0.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.3147_u0.0000.json",
+  "sha256": "6eb395ce902c013b0b54cc2e8042396914a7b99f36846b8e71bf9793871e86f8",
+  "bytes": 10290
+ },
+ "r3/higgs_robustness/run01/shards/D-0.3147_u0.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.3147_u0.5000.json",
+  "sha256": "e9e6f761b3e18aa2aed984cf205dc2cb6b2ec908ec85f16b4cf9d5f29b9db860",
+  "bytes": 10430
+ },
+ "r3/higgs_robustness/run01/shards/D-0.3147_u1.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.3147_u1.0000.json",
+  "sha256": "c64f36c4c07ecec63e588d601685dcae026e6b2b28c46d3fb6ba02d6d46bd5b1",
+  "bytes": 10429
+ },
+ "r3/higgs_robustness/run01/shards/D-0.3147_u1.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.3147_u1.5000.json",
+  "sha256": "ef41afe322159b9c05a0551694317bcd585b8ce31376f6e72604bdd904be960b",
+  "bytes": 10401
+ },
+ "r3/higgs_robustness/run01/shards/D-0.3147_u2.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.3147_u2.0000.json",
+  "sha256": "2c60ff1151f5d3ae1ac470f8be303fd553e8e5694dbcb846966e36ba24364662",
+  "bytes": 10437
+ },
+ "r3/higgs_robustness/run01/shards/D-0.3147_u2.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.3147_u2.5000.json",
+  "sha256": "ff8975c37d2dd7c9364251fec97bec62f6e8f0f3a16aba456ef72564d4e4e034",
+  "bytes": 10425
+ },
+ "r3/higgs_robustness/run01/shards/D-0.3147_u3.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.3147_u3.0000.json",
+  "sha256": "46654173342f8ac5c17c22b8dcfc42b96d3efc0f6f121f6552b1a47dfec462d4",
+  "bytes": 10415
+ },
+ "r3/higgs_robustness/run01/shards/D-0.3147_u3.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.3147_u3.5000.json",
+  "sha256": "ab8eaa6cedbe2b449cb3cde5f202c8ad0fa01762f397bc32a3551ec08de53773",
+  "bytes": 10424
+ },
+ "r3/higgs_robustness/run01/shards/D-0.3147_u4.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.3147_u4.0000.json",
+  "sha256": "3707d66806c18a3d378ebbd2cae2f8ab4f5ad60d1b6229fdad3dd28cb95333a4",
+  "bytes": 10420
+ },
+ "r3/higgs_robustness/run01/shards/D-0.3147_u4.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.3147_u4.5000.json",
+  "sha256": "24cbec85e07b3b3a1b8da989bedf474d6cb44d6dd7017c984831323533637b16",
+  "bytes": 10406
+ },
+ "r3/higgs_robustness/run01/shards/D-0.3147_u5.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.3147_u5.0000.json",
+  "sha256": "75cdb6be432aa96b1dda607e1b340b000fc4d4a46fcecf651d8e556c8dd26b5a",
+  "bytes": 10442
+ },
+ "r3/higgs_robustness/run01/shards/D-0.8803_u0.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.8803_u0.0000.json",
+  "sha256": "fda1e06076cc7297963b860ae5ec2748179eb4a298e19b67a4f95ddbdc8a8c3a",
+  "bytes": 10284
+ },
+ "r3/higgs_robustness/run01/shards/D-0.8803_u0.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.8803_u0.5000.json",
+  "sha256": "cebae6047f30c9a45cb4d2b9096b89c63df5dee6b62e3227646e522acd463eef",
+  "bytes": 10417
+ },
+ "r3/higgs_robustness/run01/shards/D-0.8803_u1.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.8803_u1.0000.json",
+  "sha256": "66a597ef07cab30cafc64cd17e3c1b61b02fd9d5d8d12acf4bbbd19f8726af6c",
+  "bytes": 10403
+ },
+ "r3/higgs_robustness/run01/shards/D-0.8803_u1.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.8803_u1.5000.json",
+  "sha256": "4869fe0daf830f6179fbc67e85787b618f3c6564fdf46de6f196d7dd8397635d",
+  "bytes": 10426
+ },
+ "r3/higgs_robustness/run01/shards/D-0.8803_u2.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.8803_u2.0000.json",
+  "sha256": "5a8d0cbba3600f71c539b976f6a886fa75a3550cf64d516a8cedcf2fa114abd8",
+  "bytes": 10436
+ },
+ "r3/higgs_robustness/run01/shards/D-0.8803_u2.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.8803_u2.5000.json",
+  "sha256": "1cef5ec0d33fd394374479f8c6ee8b4fdea3f958e2244fabf38da88347f2229a",
+  "bytes": 10413
+ },
+ "r3/higgs_robustness/run01/shards/D-0.8803_u3.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.8803_u3.0000.json",
+  "sha256": "74c7c8026ebd4c01641ab3bc74a0cdec89b8f09b17dea8b2d5890d0e0b966762",
+  "bytes": 10394
+ },
+ "r3/higgs_robustness/run01/shards/D-0.8803_u3.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.8803_u3.5000.json",
+  "sha256": "f3db282e869ecb8972012900cc0747be061f36703197fd664b90f26c1adba50f",
+  "bytes": 10409
+ },
+ "r3/higgs_robustness/run01/shards/D-0.8803_u4.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.8803_u4.0000.json",
+  "sha256": "aa13c883ef6cd50e98d541fc0f699229a00e4377c16776ec33fb6b68dc4c245a",
+  "bytes": 10407
+ },
+ "r3/higgs_robustness/run01/shards/D-0.8803_u4.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.8803_u4.5000.json",
+  "sha256": "6ab647806e5d1110a1bcf5373d85650354c5234097d7e51f4eb3a367eb6892c5",
+  "bytes": 10424
+ },
+ "r3/higgs_robustness/run01/shards/D-0.8803_u5.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/D-0.8803_u5.0000.json",
+  "sha256": "dccfc26d0a90c1d3a5491b282e7a13f96aa523be203932df0d91fd1ee061ed55",
+  "bytes": 10429
+ },
+ "r3/higgs_robustness/run01/shards/L_l+0.2800.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/L_l+0.2800.json",
+  "sha256": "7dfed166c2ea60f446bb4a9660d8bcf3958735d147b031a7ac7f1be04cb6bb22",
+  "bytes": 10242
+ },
+ "r3/higgs_robustness/run01/shards/L_l-5.1500.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/L_l-5.1500.json",
+  "sha256": "f323866661c7ac0dbf1dac0aac94b59ab9333b4f6409f02c1fc79eb48b3f5912",
+  "bytes": 10285
+ },
+ "r3/higgs_robustness/run01/shards/L_l-5.6000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/L_l-5.6000.json",
+  "sha256": "f94e378d2c4f150b7006b35388c7d61b068ecce503aabf3b686e90d6e75a8d84",
+  "bytes": 10270
+ },
+ "r3/higgs_robustness/run01/shards/TEST_l0_fresh0.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/TEST_l0_fresh0.json",
+  "sha256": "6e4e696aff81322d071e38253c02712c38f94074dff37c36ea8f49d7458bb225",
+  "bytes": 2302
+ },
+ "r3/higgs_robustness/run01/shards/TEST_l0_fresh1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/higgs_robustness/run01/shards/TEST_l0_fresh1.json",
+  "sha256": "93ba815951441ed5a7e45151c6c226748bf28e528145a4542bb88ecb91579acf",
+  "bytes": 2308
+ }
+}

@@ -1,0 +1,225 @@
+{
+ "generated_utc": "2026-10-15T19:31Z",
+ "agent": "fig-shape",
+ "generator": "figures/_collect_data_shape.py",
+ "root": "research tree root (paths below are relative to it)",
+ "files": {
+  "shape/C137c_results.json": {
+   "source": "04_calculations/results/20261013_claude_v12/state_selection/run03/C137c_results.json",
+   "sha256": "e570186921f375f3a10e42451bc1c6c9c26ddeb4934974dea068fd96ae0a5546",
+   "bytes": 3813,
+   "use": "C137c (D109): optimal real-state variance over the floor, opt_over_floor, and natural/optimal width ratio s_opt_over_s_adiabatic at t_x for kappa_E=19.32 and kappa_T2=-9.07",
+   "figures": [
+    "prd_turning_state"
+   ]
+  },
+  "shape/C153_summary.json": {
+   "source": "04_calculations/results/20261014_claude_v12_r3/shape_hardening/run01/C153_summary.json",
+   "sha256": "1a12ba3fa5c2ca11233f0eda009ae9113ef9af9e286fd08de9ee48704cce6ba1",
+   "bytes": 105174,
+   "use": "C153 (D125) run01: G(|t_x|) tables, closed-form transfer elements, floor conventions, next-order floor, conditional-theorem grid S2(|t_x|), never-real pairs, next-order NL survival, emptiness budget and preparation window, reheating excess, next-order ensemble summaries",
+   "figures": [
+    "prd_turning_state",
+    "prd_nonlinear_survival",
+    "prd_casimir_shape",
+    "prd_emptiness_gate",
+    "prd_fossil_shape",
+    "prd_fossil_sky"
+   ]
+  },
+  "shape/C153_run02_summary.json": {
+   "source": "04_calculations/results/20261014_claude_v12_r3/shape_hardening/run02/C153_run02_summary.json",
+   "sha256": "70398014cd826afd057e99ef6d088400c705e69047acb195e19abfc134311933",
+   "bytes": 10483,
+   "use": "C153 run02 (N=2048): S2 at h|t_x|=0.15-0.35, t_*(99%)=0.237, amplitude scan s=2.5-3.5 and s99, next order",
+   "figures": [
+    "prd_turning_state",
+    "prd_nonlinear_survival"
+   ]
+  },
+  "shape/C153_ensemble.json": {
+   "source": "04_calculations/results/20261014_claude_v12_r3/shape_hardening/run01/ensemble/C153_ensemble.json",
+   "sha256": "f60c4124af2fda6e7933416de11959494e2e22cc0b3701a20fddeeecb236628d",
+   "bytes": 82172,
+   "use": "C153 ensemble: P_joint(L0) and P_cond(L0) of the CMB fossil for sigma_E variants incl. next order 0.0940",
+   "figures": [
+    "prd_fossil_sky"
+   ]
+  },
+  "shape/C142_summary.json": {
+   "source": "04_calculations/results/20261013_claude_v12_r2/shape_nonlinear_threshold/run01/C142_summary.json",
+   "sha256": "e7f0941fa89df69ae4ee11acf1a76b63813f6d9308e16778b4f8410fb42eb448",
+   "bytes": 149072,
+   "use": "C142 (D114): nonlinear survival vs amplitude factor s (N=256), free-field and r=0.5 variants, real states set at t_x<0 (R1)",
+   "figures": [
+    "prd_nonlinear_survival"
+   ]
+  },
+  "shape/C160_summary.json": {
+   "source": "04_calculations/results/20261014_claude_v12_r3/shape_tier2/run01/C160_summary.json",
+   "sha256": "a26e83b98a358aec14d73253cdadab7fa6003627dbf18bf3bff7da3a72099443",
+   "bytes": 40232,
+   "use": "C160 (D131): plateau-background variant of the survival runs (paired, fates unchanged)",
+   "figures": [
+    "prd_nonlinear_survival"
+   ]
+  },
+  "shape/D114_own.json": {
+   "source": "07_reviews/R16_v12_round3/unverified_items/results/D114_own.json",
+   "sha256": "6625a51a433bde31dd5f46e8a1a2a1da955a0164968e5f54d2e56bc1446bcf29",
+   "bytes": 17702,
+   "use": "R16 T19 independent implementation (N=2048): survival vs s, critical-amplification quantiles s99/s90/s50, R1 states, plateau reference",
+   "figures": [
+    "prd_nonlinear_survival"
+   ]
+  },
+  "shape/BLIND_RESULTS.json": {
+   "source": "07_reviews/R16_v12_round3/shape_blind/results/BLIND_RESULTS.json",
+   "sha256": "717e523b44c7bafe07af874a936b3d6a82678118dc706c0945d5bb3a7d103f58",
+   "bytes": 52910,
+   "use": "R16 V4 blind check: G(|t_x|) grid, nonlinear survival S(t_x) with N=2048 and t_*(90/99%)",
+   "figures": [
+    "prd_turning_state",
+    "prd_nonlinear_survival"
+   ]
+  },
+  "shape/C63_results.json": {
+   "source": "04_calculations/results/20261009_claude_R5/C63_rolling_fossil/C63_results.json",
+   "sha256": "74849ecb23e6d9b91696ca417dd80cae1b4996b5ccc5afc216980dd3ad5d6ddd",
+   "bytes": 3377,
+   "use": "C63: free-field SM (f0=0) and Maxwell-toy shape stiffness, delta, natural and optimal widths",
+   "figures": [
+    "prd_turning_state"
+   ]
+  },
+  "shape/C76_summary.json": {
+   "source": "04_calculations/results/20261011_claude_followup/C76/C76_summary.json",
+   "sha256": "eaadc3a2dc216f46e5097382415edea3bed47ffed5ae52ac393bcec5dbdb37b5",
+   "bytes": 3731,
+   "use": "C76: f0=0.30 linear transfer (aspect, angle), natural widths, analytic linear sigma_E, sigma_T2",
+   "figures": [
+    "prd_turning_state",
+    "prd_fossil_shape"
+   ]
+  },
+  "shape/C57_spin_structures.json": {
+   "source": "04_calculations/results/20261009_claude_R5/C57_spin_structure/C57_spin_structures.json",
+   "sha256": "33c813620235cc98776f636732086d50482b809f3155d788a49fbfa739157918",
+   "bytes": 5964,
+   "use": "C57: signed Casimir weight N_C of the SM for the spin-structure classes",
+   "figures": [
+    "prd_casimir_shape"
+   ]
+  },
+  "shape/C55_window_gate.json": {
+   "source": "04_calculations/results/20261009_claude_R5/C55_window_gate/C55_window_gate.json",
+   "sha256": "a70555d684648aa53d19be01c1b18dbb2917bb71b1bd02716f5872a3e066c845",
+   "bytes": 39831,
+   "use": "C55: log10 R of photons from a reheating coupling in the time-symmetric remote contraction (97 modes)",
+   "figures": [
+    "prd_emptiness_gate"
+   ]
+  },
+  "shape/C55_window_gate_refined.json": {
+   "source": "04_calculations/results/20261009_claude_R5/C55_window_gate/C55_window_gate_refined.json",
+   "sha256": "09c4681e7960fdd1878bd8b142423c63961060e7fbd555bdd090016affad8a41",
+   "bytes": 45209,
+   "use": "C55 refined (401 modes)",
+   "figures": [
+    "prd_emptiness_gate"
+   ]
+  },
+  "shape/C56_SM_AAA.json": {
+   "source": "04_calculations/results/20261009_claude_R5/C56_preparation_gate/C56_SM_AAA.json",
+   "sha256": "14aa7c35ee497096cd8cf6a617e7687150f575d90e435f5e5a3585d4b12dfd15",
+   "bytes": 30594,
+   "use": "C56: excitation per non-conformal degree of freedom vs preparation time T (SM AAA)",
+   "figures": [
+    "prd_emptiness_gate"
+   ]
+  },
+  "shape/C56_NC100.json": {
+   "source": "04_calculations/results/20261009_claude_R5/C56_preparation_gate/C56_NC100.json",
+   "sha256": "b844be1ee08474e8940fd2ecc24f6c6e9f528cfa1a96a0fd9d5967a476aa9b91",
+   "bytes": 40403,
+   "use": "C56: same for the N_C=100 toy (drawn in v11 Fig. 3b; not drawn in v12, kept for reference)",
+   "figures": []
+  },
+  "shape/C58_results.json": {
+   "source": "04_calculations/results/20261009_claude_R5/C58_turning_point_states/C58_results.json",
+   "sha256": "bc1873e342abdc714de762d80aea58d1fa2d01a6efa1c4e14bfbac1465319294",
+   "bytes": 6004,
+   "use": "C58: free-field natural outgoing variances (linear reference of the free-field fossil)",
+   "figures": [
+    "prd_fossil_shape"
+   ]
+  },
+  "shape/C64_results.json": {
+   "source": "04_calculations/results/20261009_claude_R5/C64_plateau_ns_r/C64_results.json",
+   "sha256": "d8e1f7cb0c90f1448c7ae5fa56bfbfc8679b0cbb568a912e60585d607417f7b9",
+   "bytes": 1663,
+   "use": "C64: exact n_s and r of the plateau vs N_*",
+   "figures": [
+    "prd_primordial"
+   ]
+  },
+  "shape/S3_postcheck.json": {
+   "source": "04_calculations/results/20261013_argon_codex_intake/cmb_ensemble/run01/results/S3_postcheck.json",
+   "sha256": "bec6ebe34daf24ada5d7c67b21a6872e62a1451411a6007c1504fd46f2ef63ef",
+   "bytes": 65937,
+   "use": "C145/D117 production ensemble (pool-min profile): P_joint, P_cond vs L0 for TE80/TE40/TE30/T80/noise variants, read edges",
+   "figures": [
+    "prd_fossil_sky"
+   ]
+  },
+  "shape/fossil_table_v2.csv": {
+   "source": "04_calculations/results/20261014_claude_v12_r3/cleanup_t12/run01/fossil_table_v2.csv",
+   "sha256": "2350e589fdc7cd5c0cca0de0ece5c71f085ba34208472ae9f8cd507d5ce1ac0d",
+   "bytes": 11685,
+   "use": "T12 cleanup: KL divergence D_prof of 55 fossils vs shortest cycle u (columns xi=sin3theta, s=L0/d_LSS)",
+   "figures": [
+    "prd_fossil_sky"
+   ]
+  },
+  "shape/fossil_draws_C76_ind.csv": {
+   "source": "04_calculations/results/20261011_claude_followup/C76/draws/ind_*.json (2048 files, condensed)",
+   "sources_combined_sha256": "caa547c359391c3ca918557b9e911082a3faa1d6849f9c99d8ccf0d08133b63e",
+   "sha256": "dded0f44a220f9bffa51ee07edbd5873f323bd494b84f987edbf21eb1efa2733",
+   "bytes": 317483,
+   "use": "C76: 2048 independent-seed nonlinear draws, f0=0.2999, natural turning-point state",
+   "figures": [
+    "prd_fossil_shape"
+   ],
+   "columns": "beta_plus (5 shape moduli: X_d, X_d2, X_12, X_13, X_23), geometry_plus.ln_Lmax_over_Lmin, max_angle_deviation_deg, survivor, gates_pass"
+  },
+  "shape/fossil_draws_R5_hi.csv": {
+   "source": "04_calculations/results/20261009_claude_R5/nonlinear_SM/draws/hi_*.json (2048 files, condensed)",
+   "sources_combined_sha256": "a077cd132a5db21a6babb64c35294479baef91516a6a3d660f7c33b20a80cb06",
+   "sha256": "e83021a3609ff71eaafa07f8dcb919dfee6117ae09a782b556d7e1f7267626c3",
+   "bytes": 318705,
+   "use": "C60: 2048 nonlinear draws, free fields (f0=0), natural turning-point state",
+   "figures": [
+    "prd_fossil_shape"
+   ],
+   "columns": "beta_plus (5 shape moduli: X_d, X_d2, X_12, X_13, X_23), geometry_plus.ln_Lmax_over_Lmin, max_angle_deviation_deg, survivor, gates_pass"
+  },
+  "shape/casimir_slice_AAA.json": {
+   "source": "generated by figures/gen_casimir_slice_shape.py (Ewald sums copied unchanged from 04_calculations/code/20261009_claude_R5/C57_spin_structure_Casimir.py)",
+   "sha256": "a293c3f6027e4c488d41bc373992771b2e3f434a8555e4b6bb647c3f517c098a",
+   "bytes": 85394,
+   "use": "Delta rho_C/|rho_C| of the AAA Standard Model on the (beta_d, beta_a) shape slice",
+   "figures": [
+    "prd_casimir_shape"
+   ]
+  },
+  "shape/external_primordial_bands.json": {
+   "source": "transcribed from published results (bib keys inside); values as in 06_paper_draft/figures/v11/fig6_primordial.py and PRD sections/s09_spectra.tex",
+   "sha256": "556769e5b08589570208ba5cefac82feee773b057b9b071d63407aecc3ed7805",
+   "bytes": 820,
+   "use": "n_s 68% bands (SPT+ACT+Planck; P-ACT-LB2), BK18 r_T bound, LiteBIRD target",
+   "figures": [
+    "prd_primordial"
+   ]
+  }
+ }
+}

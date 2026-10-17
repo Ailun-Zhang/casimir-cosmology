@@ -1,0 +1,45 @@
+{
+  "agent": "r15-cmb",
+  "round": "R15_v12_round2",
+  "target": "C145 / D117 CMB shape-ensemble integration, measure and L0 windows",
+  "status": "complete",
+  "started": "2026-10-14",
+  "completed": "2026-10-14",
+  "scope": "ensemble + measure layer only; covariance / KL construction NOT recomputed (fossil_table.csv and kl_table.json used as data input). Noise variants, priors, T2, convergence, Brent not checked.",
+  "protocol": "own numbers on fossil_table.csv computed before reading producer STATUS/D117; pool-min rebuild from kl_table.json and convexity/producer-like variants added afterwards to localize differences",
+  "verdicts": {
+    "V1_setup_measure_D3_u_nocircle": "PASS (modeling note: iid-Gaussian E-plane measure, not random-tensor eigenvalue law)",
+    "V2a_kl_table_DPI_and_fixed_consistency": "PASS (0/1045 DPI violations, 0/216 fixed mismatches)",
+    "V2b_fossil_table_csv_prof_columns": "PASS-with-corrections (superseded parabolic values; 1 DPI violation; 82 pairs undershoot >1%; rewrite or annotate)",
+    "V3_TE80_prof_main_peak_windows_measure": "PASS",
+    "V4_other_readouts_and_P_nc": "PASS",
+    "V5_P_cond_near_circle_bound": "PASS-with-corrections (P_cond=1 at L0<=1.03 and P_cond_max=1.0@0.9875 are A<0.25 linear-extrapolation artefacts; P_cond->0 as L0->0.985+)",
+    "V6_u_max_table_and_invariant_fit_failure": "PASS (reproduced; '1.023-1.031' -> '1.023-1.032')",
+    "V7_2p17_KL_not_probability_ratio": "PASS (x1.24-1.31 across metrics)",
+    "V8_rep_window_probability_wording": "PASS-with-corrections (0.31->0.20 / 0.45->0.23 should be ~0.33->0.21 / ~0.50->0.24)"
+  },
+  "key_numbers": {
+    "TE80_prof_poolmin_methodA": {"P_joint_max": 0.350, "L0_at_max": 1.076, "variant_range": [0.340, 0.354], "MC": 0.350, "methodB": 0.373,
+      "win_Pj_0.3": [1.050, 1.107], "win_Pj_0.2": [1.032, 1.142], "win_Pj_0.1": [1.016, 1.184], "win_Pc_0.5": [0.987, 1.092],
+      "int_Pj_dlnL0": 0.0421, "P_cond_1.10": 0.446},
+    "producer_FINAL_TE80_prof": {"P_joint_max": 0.344, "bounds": [0.339, 0.351], "L0_at_max": 1.075, "win_Pj_0.1": [1.0175, 1.1825], "int": 0.0422},
+    "TE30_prof_poolmin": {"P_joint_max": 0.268, "producer": 0.264},
+    "TE40_prof_poolmin": {"P_joint_max": 0.309, "producer": 0.305},
+    "T80_prof_poolmin": {"P_joint_max": 0.289, "producer": 0.286},
+    "TE80_fixed": {"P_joint_max": 0.371, "convex_bounds": [0.353, 0.370], "producer": 0.360},
+    "csv_parabolic_TE80_prof": {"P_joint_max": 0.346, "L0": 1.0815, "producer_S3_primary": 0.3425, "producer_like_interp": 0.3428},
+    "ratio_TE80_over_TE30_prof": {"P_joint_max": 1.307, "int_measure": 1.297, "P_cond_1.10": 1.295, "rep_width": 1.242},
+    "KL_ratio_rep_point": {"x320_fixed_s1.13": 2.172, "x240_fixed_s1.13": 2.184, "x240_prof_s1.13": 2.266, "x240_prof_s1.14": 1.516},
+    "sigmaE_pm10pct_TE80_prof_Pmax": [0.383, 0.322]
+  },
+  "outputs": [
+    "07_reviews/R15_v12_round2/cmb_ensemble/R15_C145_ENSEMBLE_CHECK_CN.md",
+    "07_reviews/R15_v12_round2/cmb_ensemble/r15_ensemble_check.py",
+    "07_reviews/R15_v12_round2/cmb_ensemble/r15_inspect.py",
+    "07_reviews/R15_v12_round2/cmb_ensemble/r15_ensemble_results.json",
+    "07_reviews/R15_v12_round2/cmb_ensemble/r15_ensemble_results_poolmin.json",
+    "07_reviews/R15_v12_round2/cmb_ensemble/r15_curves_methodA.csv",
+    "07_reviews/R15_v12_round2/cmb_ensemble/r15_curves_methodA_poolmin.csv"
+  ],
+  "no_production_files_modified": true
+}

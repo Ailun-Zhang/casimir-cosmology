@@ -1,0 +1,25 @@
+{
+ "step": "11_inflation_stability",
+ "checks": [
+  {"id": "repro_tree", "mode": "tree", "what": "MMR 2021 reproduction xi_EW = 0.05946 (target 0.05938), MMR 2022 R^2", "paper": "PRD Sec. V H",
+   "computed": {"file": "WORK:r3/inflation_stability/run01/repro/repro_step1.json"},
+   "expected": {"file": "expected/r3/inflation_stability/run01/repro/repro_step1.json"}, "tol_abs": 1e-10, "tol_rel": 1e-7,
+   "ignore": ["time_s", "code_sha256", "sha256", "secs", "total_secs"]},
+  {"id": "xi_EW_172p6", "what": "xi_inf (EW reading), m_t = 172.6, alpha_s = 0.118", "paper": "PRL one sentence; PRD Sec. V H (0.05512)",
+   "computed": {"file": "WORK:r3/inflation_stability/run01/xi_inf_table.csv", "row": {"mt": "172.6", "als": "0.118"}, "col": "xi_inf_ew"},
+   "expected": {"file": "expected/r3/inflation_stability/run01/xi_inf_table.csv", "row": {"mt": "172.6", "als": "0.118"}, "col": "xi_inf_ew"}, "tol_abs": 1e-6},
+  {"id": "xi_mub_172p6", "what": "xi_inf (mu_b reading), m_t = 172.6", "paper": "PRD Sec. V H (0.03781)",
+   "computed": {"file": "WORK:r3/inflation_stability/run01/xi_inf_table.csv", "row": {"mt": "172.6", "als": "0.118"}, "col": "xi_inf_mub"},
+   "expected": {"file": "expected/r3/inflation_stability/run01/xi_inf_table.csv", "row": {"mt": "172.6", "als": "0.118"}, "col": "xi_inf_mub"}, "tol_abs": 1e-6},
+  {"id": "C155_rows", "mode": "tree", "what": "xi_inf rows for all (m_t, alpha_s)", "paper": "PRD Sec. V H table",
+   "computed": {"file": "WORK:r3/inflation_stability/run01/C155_summary.json", "key": "xi_inf_rows"},
+   "expected": {"file": "expected/r3/inflation_stability/run01/C155_summary.json", "key": "xi_inf_rows"}, "tol_abs": 1e-9, "tol_rel": 1e-7},
+  {"id": "C155_reproduction", "mode": "tree", "what": "reproduction block of the summary", "paper": "PRD Sec. V H",
+   "computed": {"file": "WORK:r3/inflation_stability/run01/C155_summary.json", "key": "reproduction"},
+   "expected": {"file": "expected/r3/inflation_stability/run01/C155_summary.json", "key": "reproduction"}, "tol_abs": 1e-9, "tol_rel": 1e-7},
+  {"id": "full_shard_sample", "mode": "tree", "modes": ["full"], "what": "scan recomputed: xi_compare", "paper": "PRD Sec. V H",
+   "computed": {"file": "WORK:r3/inflation_stability/run01/xi_compare.json"},
+   "expected": {"file": "expected/r3/inflation_stability/run01/xi_compare.json"}, "tol_abs": 1e-9, "tol_rel": 1e-6,
+   "ignore": ["time_s", "code_sha256", "sha256"]}
+ ]
+}

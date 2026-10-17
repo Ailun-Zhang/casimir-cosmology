@@ -1,0 +1,3 @@
+# Check out every file byte for byte (no line-ending conversion), so that
+# "python tools/sha256sums.py check" passes on every platform.
+* -text

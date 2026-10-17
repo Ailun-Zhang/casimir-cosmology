@@ -1,0 +1,540 @@
+{
+ "step": "02_realtime_theorem",
+ "checks": [
+  {
+   "id": "C137",
+   "what": "C137 shape gate",
+   "paper": "PRD App. E 2",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r1/state_selection/run01/C137_results.json"
+   },
+   "expected": {
+    "file": "expected/r1/state_selection/run01/C137_results.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ]
+  },
+  {
+   "id": "C137b",
+   "what": "C137b best case",
+   "paper": "PRD App. E 2",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r1/state_selection/run02/C137b_results.json"
+   },
+   "expected": {
+    "file": "expected/r1/state_selection/run02/C137b_results.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ]
+  },
+  {
+   "id": "C137c",
+   "what": "G(t_x) table",
+   "paper": "PRD Eq. eq:s-Gtx; App. E 2; report Table 19",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r1/state_selection/run03/C137c_results.json"
+   },
+   "expected": {
+    "file": "expected/r1/state_selection/run03/C137c_results.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ]
+  },
+  {
+   "id": "G_tx1",
+   "what": "G(|t_x| = 1/h) = 313.79",
+   "paper": "PRD Eq. eq:s-Gtx (TX-04)",
+   "computed": {
+    "file": "WORK:r1/state_selection/run03/C137c_results.json",
+    "key": "rows/4/opt_over_floor"
+   },
+   "expected": {
+    "file": "expected/r1/state_selection/run03/C137c_results.json",
+    "key": "rows/4/opt_over_floor"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-08
+  },
+  {
+   "id": "natural_over_floor",
+   "what": "natural state / floor = 1.000485",
+   "paper": "PRD Sec. VII D (FLOOR-10)",
+   "computed": {
+    "file": "WORK:r1/state_selection/run03/C137c_results.json",
+    "key": "rows/0/adiabatic_over_floor"
+   },
+   "expected": {
+    "file": "expected/r1/state_selection/run03/C137c_results.json",
+    "key": "rows/0/adiabatic_over_floor"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "C153_linear",
+   "what": "D125 linear layer",
+   "paper": "PRD Sec. VII C\u2013D; App. E 2",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run01/linear/C153_linear.json"
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run01/linear/C153_linear.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ]
+  },
+  {
+   "id": "K_19p32",
+   "what": "K(19.3237) = 24.5630",
+   "paper": "PRD App. E 2 (FLOOR-02)",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run01/linear/C153_linear.json",
+    "key": [
+     "floor_closed_form",
+     "19.3237",
+     "K_closed"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run01/linear/C153_linear.json",
+    "key": [
+     "floor_closed_form",
+     "19.3237",
+     "K_closed"
+    ]
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "Ginf",
+   "what": "G(inf) = 2 calG = 1348.5",
+   "paper": "PRD Sec. VII D (TX-07)",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run01/linear/C153_linear.json",
+    "key": [
+     "floor_closed_form",
+     "19.3237",
+     "G_inf_closed_2calG"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run01/linear/C153_linear.json",
+    "key": [
+     "floor_closed_form",
+     "19.3237",
+     "G_inf_closed_2calG"
+    ]
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "C153_nl_summary",
+   "what": "run01 analysis (S2 grid, t_*, families)",
+   "paper": "PRD Sec. VII D; report Table 20 (Sec. 15)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run01/C153_nl_summary.json"
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run01/C153_nl_summary.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ]
+  },
+  {
+   "id": "tstar99_run01",
+   "what": "t_*(99%) run01 = 0.232 (superseded by run02)",
+   "paper": "regression (report Sec. 15)",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run01/C153_nl_summary.json",
+    "key": "t_star_two_branch/0.99/central"
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run01/C153_nl_summary.json",
+    "key": "t_star_two_branch/0.99/central"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "C153_run02",
+   "what": "run02 analysis (N = 2048)",
+   "paper": "PRD Sec. VII D, F; report Sec. 15",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run02/C153_run02_summary.json"
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run02/C153_run02_summary.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ]
+  },
+  {
+   "id": "tstar99",
+   "what": "t_*(99%) = 0.237/h",
+   "paper": "PRD Sec. VII D (TX-19)",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run02/C153_run02_summary.json",
+    "key": "lo_t/t_star_linear_interp/0.99/central"
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run02/C153_run02_summary.json",
+    "key": "lo_t/t_star_linear_interp/0.99/central"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "tstar90_logit",
+   "what": "t_*(90%) logistic = 0.352/h (0.355 from the run02/run01 node interpolation, D125 table A3)",
+   "paper": "PRD Sec. VII D (TX-20)",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run02/C153_run02_summary.json",
+    "key": "lo_t/t_star_logistic/t_star/0.9"
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run02/C153_run02_summary.json",
+    "key": "lo_t/t_star_logistic/t_star/0.9"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "tstar99_next",
+   "what": "next-order t_*(99%) = 0.265/h",
+   "paper": "PRD Sec. VII D (TX-22)",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run02/C153_run02_summary.json",
+    "key": "nx_t/t_star_linear_interp/0.99/central"
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run02/C153_run02_summary.json",
+    "key": "nx_t/t_star_linear_interp/0.99/central"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "C153_summary",
+   "what": "C153 summary (all layers)",
+   "paper": "number keys of the papers",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run01/C153_summary.json"
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run01/C153_summary.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ]
+  },
+  {
+   "id": "C153_smoke",
+   "what": "smoke runs and mirror check",
+   "paper": "method check (report Sec. 15)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_hardening/run01/smoke.json"
+   },
+   "expected": {
+    "file": "expected/r3/shape_hardening/run01/smoke.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "redraw_C153_nl_n",
+   "what": "re-integrated archived C153_nl trajectories: mismatching records",
+   "paper": "numerics",
+   "computed": {
+    "file": "WORK:checks/redraw_C153_nl.json",
+    "key": "n_mismatch"
+   },
+   "expected": {
+    "value": 0
+   },
+   "tol_abs": 0.0,
+   "tol_rel": null,
+   "modes": [
+    "quick"
+   ]
+  },
+  {
+   "id": "redraw_C153_nl_fates",
+   "what": "re-integrated C153_nl trajectories: fate changes",
+   "paper": "numerics",
+   "computed": {
+    "file": "WORK:checks/redraw_C153_nl.json",
+    "key": "n_fate_mismatch"
+   },
+   "expected": {
+    "value": 0
+   },
+   "tol_abs": 0.0,
+   "tol_rel": null,
+   "modes": [
+    "quick"
+   ]
+  },
+  {
+   "id": "redraw_C153_run02_n",
+   "what": "re-integrated archived C153_run02 trajectories: mismatching records",
+   "paper": "numerics",
+   "computed": {
+    "file": "WORK:checks/redraw_C153_run02.json",
+    "key": "n_mismatch"
+   },
+   "expected": {
+    "value": 0
+   },
+   "tol_abs": 0.0,
+   "tol_rel": null,
+   "modes": [
+    "quick"
+   ]
+  },
+  {
+   "id": "redraw_C153_run02_fates",
+   "what": "re-integrated C153_run02 trajectories: fate changes",
+   "paper": "numerics",
+   "computed": {
+    "file": "WORK:checks/redraw_C153_run02.json",
+    "key": "n_fate_mismatch"
+   },
+   "expected": {
+    "value": 0
+   },
+   "tol_abs": 0.0,
+   "tol_rel": null,
+   "modes": [
+    "quick"
+   ]
+  }
+ ]
+}

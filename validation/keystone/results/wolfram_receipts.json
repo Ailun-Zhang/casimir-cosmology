@@ -1,0 +1,22 @@
+{
+  "agent": "keystone-blind",
+  "date": "2026-10-14",
+  "engine": "mcp__WolframLanguage__WolframLanguageEvaluator (local Mathematica 15.0), session FYQwsLHQ",
+  "receipts": [
+    {
+      "purpose": "independent integration of the two-loop SM RGE (Buttazzo 2013 App. B, y_b=y_tau=0) with thresholds Eqs.(55),(57)-(60); Delta_lambda from Eq.(61e) over 5 calibration inputs at mu=1.2209e19 GeV; couplings at mu_b=Mbar_P/722 for (172.6,0.1180,125.13,80.3692); Coulomb-mode infinite-volume MS-bar closed form vs subtracted numerical integral; scalar limit of the same subtraction scheme",
+      "code_summary": "beta[{G1,G2,G3,Yt,l}] in d/d ln mu^2 (GUT g1); NDSolveValue WorkingPrecision 25, PrecisionGoal 15; lam61e = -0.0143 - 0.0066 (Mt-173.34) + 0.0018 (as-0.1184)/0.0007 + 0.0029 (Mh-125.15); Ifin = NIntegrate[k (Sqrt[(k^2+A)(k^2+B)] - k^2 - (A+B)/2 + (A-B)^2/(8 (k^2+M^2))), {k,0,Infinity}] with A=7/10, B=23/10, M=13/10; ECnum = Ifin/(4 Pi^2) - (A-B)^2/(64 Pi^2)(Log[1/M^2] + 2 - 2 Log[2]); ECcl = ((A+B)^2 - 2(A+B)Sqrt[A B] + (A-B)^2 (Log[(Sqrt[A]+Sqrt[B])^2] - 5/2))/(64 Pi^2); scalar: A=m2=17/10, B=0 vs m2^2 (Log[m2]-3/2)/(64 Pi^2)",
+      "output": {
+        "diffs_61e_minus_2loop": [0.0007787113143536938, 0.0008861884859697414, 0.0009563989813226358, 0.0007370976216334695, 0.000940595821200884],
+        "Delta_lambda": 0.0008597984448960849,
+        "ref_at_mub_gY_g2_g3_yt_lam2loop_lamPlusDelta": [0.4423966476448233, 0.5277191152984821, 0.5358129878449567, 0.42835885788244654, -0.011052651682336006, -0.01019285323743992],
+        "EC_num": -0.0009997495278014282510633427174506654,
+        "EC_closed": -0.00099974952780142825106334271744821764,
+        "ES_num": -0.00443515173041205149841733310335983425,
+        "ES_CW": -0.00443515173041205149841733310448417985
+      },
+      "warnings": ["NDSolveValue::precw (machine-precision threshold inputs with WorkingPrecision 25; harmless)"],
+      "python_comparison": {"Delta_lambda_python": 0.0008597984448930543, "lam_mub_python": -0.010192853237439735, "agreement": "3e-15"}
+    }
+  ]
+}

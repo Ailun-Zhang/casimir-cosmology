@@ -1,0 +1,180 @@
+{
+ "meta": {
+  "generator": "numbers/derive_numbers.py",
+  "note": "derived claim-layer numbers (R18 MH-01/R2); sources of xiHminEW, lamcErrUp, lamcErrDn in numbers_v12.json; A_eff for the report and PRD (R18 A15); regenerate with python numbers/derive_numbers.py"
+ },
+ "xiHminEW": {
+  "value": 0.08923406465357363,
+  "formula": "1/6 + (xi_cons - 1/6) / Xi_mu_b",
+  "meaning": "electroweak-scale image of the conservative xi_H(mu_b) at m_t = 172.60 GeV",
+  "inputs": {
+   "xi_cons": {
+    "file": "higgs/07_realtime_xi/expected/w/claims_run05/run01/xi_run05_summary.json",
+    "pointer": "/run05/172.60/spread_all/1",
+    "value": 0.07721868679769121
+   },
+   "Xi_mu_b": {
+    "file": "higgs/07_realtime_xi/expected/w/claims_run05/run01/xi_run05_summary.json",
+    "pointer": "/run05/172.60/Xi_mu_b",
+    "value": 1.1551720792470688
+   }
+  }
+ },
+ "abs_dlam_dmt": {
+  "value": 0.00658608672679412,
+  "formula": "margin_lambda / margin_mc",
+  "meaning": "|d lambda(mu_b)/d m_t| in 1/GeV, from the safety margins at P1 = 1/2",
+  "inputs": {
+   "margin_lambda": {
+    "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json",
+    "pointer": "/relative_form/margin_lambda",
+    "value": 0.0023673697648530848
+   },
+   "margin_mc": {
+    "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json",
+    "pointer": "/relative_form/margin_mc05_minus_172p60",
+    "value": 0.35945013527106084
+   }
+  }
+ },
+ "lamcErrUp": {
+  "value": 0.0005543016472030872,
+  "formula": "err_mc_lower x abs_dlam_dmt",
+  "meaning": "model error of lambda_c at P1 = 1/2, upper",
+  "inputs": {
+   "err_mc_lower": {
+    "file": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json",
+    "pointer": "/composite/minus/0.5",
+    "value": 0.08416251868473378
+   },
+   "abs_dlam_dmt": {
+    "file": "numbers/derived_numbers.json",
+    "pointer": "/abs_dlam_dmt/value",
+    "value": 0.00658608672679412
+   }
+  }
+ },
+ "lamcErrDn": {
+  "value": 0.00047502403388106386,
+  "formula": "err_mc_upper x abs_dlam_dmt",
+  "meaning": "model error of lambda_c at P1 = 1/2, lower",
+  "inputs": {
+   "err_mc_upper": {
+    "file": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json",
+    "pointer": "/composite/plus/0.5",
+    "value": 0.07212538394742475
+   },
+   "abs_dlam_dmt": {
+    "file": "numbers/derived_numbers.json",
+    "pointer": "/abs_dlam_dmt/value",
+    "value": 0.00658608672679412
+   }
+  }
+ },
+ "A_eff": {
+  "value": 310.5149367140806,
+  "formula": "ln2 * exp(b_eff |lambda_c|^(-1/2)) / eta_inf",
+  "meaning": "effective prefactor of the closed form |lambda_c|^(1/2) = b_eff / ln(A_eff eta_inf / ln 2) at P1 = 1/2 (D128 model of higgs/10), fixed by the computed threshold (report Sec. 7.6)",
+  "inputs": {
+   "b_eff": {
+    "file": "higgs/10_universality/expected/r3/universality/run01/C156_eta.json",
+    "pointer": "/b_eff_hazard/P1=0.5/b_eff",
+    "value": 1.2990784158047495
+   },
+   "lambda_c": {
+    "file": "higgs/10_universality/expected/r3/universality/run01/C156_eta.json",
+    "pointer": "/b_eff_hazard/P1=0.5/lam_c",
+    "value": -0.012103710499118552
+   },
+   "eta_inf": {
+    "file": "higgs/10_universality/expected/r3/universality/run01/C156_eta.json",
+    "pointer": "/eta_inf",
+    "value": 299.83985498820107
+   }
+  }
+ },
+ "tstar90": {
+  "central": 0.3547089947089947,
+  "central_segment": "0.35-0.40",
+  "draws": 20000,
+  "draws_with_crossing": 20000,
+  "crossing_segments": {
+   "0.35-0.40": 18062,
+   "0.30-0.35": 1938
+  },
+  "median": 0.35456060442926424,
+  "p16": 0.35116964360224434,
+  "p84": 0.3578175481771786,
+  "half_width_68": 0.0033239522874671246,
+  "p2.5": 0.3465196669198315,
+  "p97.5": 0.36098642315063467,
+  "value": 0.3547089947089947,
+  "level": 0.9,
+  "method": "linear interpolation between neighbouring nodes; 68% interval from 2e4 draws of the Jeffreys posteriors Beta(k+1/2, n-k+1/2) of the node survival fractions (fixed seed)",
+  "nodes": [
+   {
+    "tau": 0.15,
+    "n": 1024,
+    "k": 1024,
+    "file": "shape/02_realtime_theorem/expected/r3/shape_hardening/run02/C153_run02_summary.json",
+    "pointer": "/lo_t/rows/0/A"
+   },
+   {
+    "tau": 0.2,
+    "n": 2048,
+    "k": 2046,
+    "file": "shape/02_realtime_theorem/expected/r3/shape_hardening/run02/C153_run02_summary.json",
+    "pointer": "/lo_t/rows/1/A"
+   },
+   {
+    "tau": 0.25,
+    "n": 2048,
+    "k": 2021,
+    "file": "shape/02_realtime_theorem/expected/r3/shape_hardening/run02/C153_run02_summary.json",
+    "pointer": "/lo_t/rows/2/A"
+   },
+   {
+    "tau": 0.3,
+    "n": 2048,
+    "k": 1967,
+    "file": "shape/02_realtime_theorem/expected/r3/shape_hardening/run02/C153_run02_summary.json",
+    "pointer": "/lo_t/rows/3/A"
+   },
+   {
+    "tau": 0.35,
+    "n": 2048,
+    "k": 1861,
+    "file": "shape/02_realtime_theorem/expected/r3/shape_hardening/run02/C153_run02_summary.json",
+    "pointer": "/lo_t/rows/4/A"
+   },
+   {
+    "tau": 0.4,
+    "n": 512,
+    "k": 418,
+    "file": "shape/02_realtime_theorem/expected/r3/shape_hardening/run01/C153_nl_summary.json",
+    "pointer": "/grid/8/two_branch"
+   }
+  ]
+ },
+ "tstar99_check": {
+  "central": 0.23696000000000003,
+  "central_segment": "0.20-0.25",
+  "draws": 20000,
+  "draws_with_crossing": 20000,
+  "crossing_segments": {
+   "0.25-0.30": 1555,
+   "0.20-0.25": 18445
+  },
+  "median": 0.2365964522912696,
+  "p16": 0.2297717915750753,
+  "p84": 0.2453935777204813,
+  "half_width_68": 0.007810893072702996,
+  "p2.5": 0.22464579202110366,
+  "p97.5": 0.251640713371395,
+  "level": 0.99,
+  "archived_central": 0.23696000000000003,
+  "archived_mc_p2_5": 0.22449919107895933,
+  "archived_mc_p97_5": 0.25178180975808395,
+  "note": "cross-check of the method against the archived t_*(99%) = 0.237 (95% 0.225-0.252)"
+ }
+}

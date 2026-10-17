@@ -1,0 +1,32 @@
+{
+ "r2/shape_nonlinear_threshold/run01/C142_summary.json": {
+  "source": "04_calculations/results/20261013_claude_v12_r2/shape_nonlinear_threshold/run01/C142_summary.json",
+  "sha256": "e7f0941fa89df69ae4ee11acf1a76b63813f6d9308e16778b4f8410fb42eb448",
+  "bytes": 149072
+ },
+ "r2/shape_nonlinear_threshold/run01/smoke.json": {
+  "source": "04_calculations/results/20261013_claude_v12_r2/shape_nonlinear_threshold/run01/smoke.json",
+  "sha256": "de083efd15c7d2b3463f620606ec888cc8e9abeffd4d1d8999cb6060d7412057",
+  "bytes": 14143
+ },
+ "r3/shape_tier2/run01/plateau/C160_plateau_summary.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/shape_tier2/run01/plateau/C160_plateau_summary.json",
+  "sha256": "189f17112d2bada3da260d097faf3a8d09d5feb3366ea4776b6e79ff673a1eca",
+  "bytes": 5685
+ },
+ "r3/shape_tier2/run01/plateau/smoke.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/shape_tier2/run01/plateau/smoke.json",
+  "sha256": "b234aa6b09ac9daf97aa0ec8e8787806aac7106cccd1ec9b925474031f33d0db",
+  "bytes": 6120
+ },
+ "r2/shape_nonlinear_threshold/run01/draws.zip": {
+  "source": "04_calculations/results/20261013_claude_v12_r2/shape_nonlinear_threshold/run01/draws/ (6656 files, zipped)",
+  "sha256": "32a27139a24cee767bac6a326d8e600e84194acd95254cb6c0581a14d645b5e2",
+  "bytes": 6906958
+ },
+ "r3/shape_tier2/run01/plateau/draws.zip": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/shape_tier2/run01/plateau/draws/ (2560 files, zipped)",
+  "sha256": "b2c9c20e44b85c2b8c71ecb6e51b5371d818aa281f28cc9ddb7a019724e4dff5",
+  "bytes": 2937289
+ }
+}

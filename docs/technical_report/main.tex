@@ -1,0 +1,116 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,bm,mathtools}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array,longtable}%
+\usepackage{tikz}
+\usepackage[compat=1.1.0]{tikz-feynman}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{orcidlink}
+\graphicspath{{figures/}}
+\allowdisplaybreaks
+\numberwithin{equation}{section}%
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{2.5em}%
+\makeatletter
+\renewcommand*\l@subsection{\@dottedtocline{2}{1.5em}{3.0em}}%
+\makeatother
+\usepackage{caption}
+\captionsetup[table]{position=top,skip=6pt}%
+
+\input{dnec_macros}
+\input{numbers}
+
+\hypersetup{pdftitle={Casimir Cosmology: Derivations and Numerical Validation},pdfauthor={Alan Zhang}}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+{\LARGE\bfseries Casimir Cosmology: Derivations and Numerical Validation\par}
+\vspace{1.2em}
+{\large Alan Zhang\,\orcidlink{0009-0000-1187-0755}\par}
+\vspace{0.5em}
+{\small Department of Physics and Astronomy, McMaster University, Hamilton, Ontario L8S 4M1, Canada\\
+Perimeter Institute for Theoretical Physics, Waterloo, Ontario N2L 2Y5, Canada\\
+\href{mailto:zhana142@McMaster.ca}{zhana142@McMaster.ca}\par}
+\vspace{1.2em}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.2\textwidth}>{\raggedright\arraybackslash}p{0.72\textwidth}@{}}
+Report version & 1.0 (October 17, 2026)\\
+Report record & doi:\href{https://doi.org/10.5281/zenodo.23434140}{10.5281/zenodo.23434140} (separate from the code and data)\\
+Companion Letter & A.~Zhang, \emph{Gauge Field Fluctuations Protect the Higgs Vacuum When a Small Universe Begins} (2026)\\
+Companion paper & A.~Zhang, \emph{A Casimir turning point as the beginning of a small flat universe} (2026)\\
+Code and data & version 1.0.0, doi:\href{https://doi.org/10.5281/zenodo.23434068}{10.5281/zenodo.23434068}\\
+Status & Companion technical report; not independently peer reviewed.
+\end{tabular}
+\end{center}
+\vspace{1em}
+\begin{abstract}
+This report is the companion of a Letter and a paper on a flat three-torus universe whose contraction is turned around by the negative Casimir energy of the Standard Model, with antiperiodic fermions, at an edge of $722$ reduced Planck lengths.
+Part~I derives the model step by step: the trace anomaly at a turning point, the Casimir energy and the zero modes of the Standard Model on the torus, the turning solution, and the Higgs zero mode, whose negative quartic coupling, $\lambda(\mub)\approx-0.0098$, is confined by the zero-point energy of the constant gauge modes down to a finite-volume threshold $\lambda_c\approx-0.012$.
+We give the finite-volume matching, the reduced two-dimensional model and its resonance, the cross terms with the non-zero modes, survival along the turn, the Standard Model mapping and the top-quark criterion (survival with probability above $1/2$ for a pole mass below $172.96$~GeV, and $\bar P_1\approx\PbarOne$ for current data, given a curvature coupling $\xiH\gtrsim\xiHmin$) with its error budget.
+Part~I then treats the emptiness gate, the shape of the torus and its quantum fossil, the primordial spectra and the fossil in the microwave background.
+Part~II validates these results: full-dimensional diffusion Monte Carlo moves the critical mass by at most $0.031$~GeV, blind reimplementations reproduce it to $0.005$~GeV, and every computation is shown to converge; it also collects conditional evidence from a separate line of calculation and maps every number and figure to the code that produces it.
+Part~III records superseded estimates and retracted statements.
+\end{abstract}
+\end{titlepage}
+
+\tableofcontents
+\clearpage
+
+\input{chapters/c00_guide}
+
+\part{Final model and methods}
+\input{chapters/c01_setup}
+\input{chapters/c02_trace}
+\input{chapters/c03_casimir}
+\input{chapters/c04_zeromodes}
+\input{chapters/c05_turning}
+\input{chapters/c06_h_matching}
+\input{chapters/c07_h_reduced}
+\input{chapters/c08_h_cross}
+\input{chapters/c09_h_survival}
+\input{chapters/c10_h_smmap}
+\input{chapters/c11_h_budget}
+\input{chapters/c12_h_universality}
+\input{chapters/c13_gate}
+\input{chapters/c14_shape}
+\input{chapters/c15_quantum_shape}
+\input{chapters/c16_spectra}
+\input{chapters/c17_sky}
+
+\clearpage
+\part{Alternative derivations and validation}
+\input{chapters/c18_v_fulldim}
+\input{chapters/c19_v_blind}
+\input{chapters/c20_v_convergence}
+\input{chapters/c21_v_conditional}
+\input{chapters/c22_v_repro}
+
+\clearpage
+\part{History: superseded estimates and failed approaches}
+\input{chapters/c23_history}
+
+\clearpage
+\appendix
+\input{chapters/a1_notation}
+\input{chapters/a2_numbers}
+
+\section*{Acknowledgments}
+\addcontentsline{toc}{section}{Acknowledgments}
+The author acknowledges graduate scholarship and research support through McMaster University.
+Research at Perimeter Institute is supported in part by the Government of Canada through the Department of Innovation, Science and Economic Development and by the Province of Ontario through the Ministry of Colleges, Universities, Research Excellence and Security.
+
+\emph{Use of AI assistants.}
+Anthropic Claude Code (model Claude Opus~5.5) and OpenAI Codex (model gpt-6-astra) were used throughout this work under the author's direction: for literature screening, for developing parts of the derivations and of the numerical code, for running the computations, for drafting the Letter, the paper and this report, and for English-language editing.
+The independent reimplementations of Sec.~\ref{rep:v-blind} were carried out by separately instructed AI agents at the levels of independence stated there; the blind checks worked from a written specification of the model (with an earlier draft as an external anchor) and the literature, without access to the derivations or code of the main calculation, and each recorded its results before the comparison.
+The separate line of calculation of Sec.~\ref{rep:v-conditional} was carried out with OpenAI Codex under the author's direction, with its own code and conventions.
+Symbolic steps were checked in SymPy or Wolfram Language, and every number quoted here is reproduced by the scripts of Ref.~\cite{DNECv12code} or contained in its archived outputs, including those of the independent reimplementations.
+The author checked all derivations, numbers and conclusions and takes full responsibility for this work.
+
+\bibliographystyle{unsrturl}%
+\bibliography{refs}
+
+\end{document}

@@ -1,0 +1,17 @@
+{
+  "agent": "r15-beyond-bo",
+  "task": "R15 independent check of D112 (higgs beyond BO)",
+  "status": "complete",
+  "milestone": "M5_report_final",
+  "calls_used": 35,
+  "report": "R15_D112_INDEPENDENT_CHECK_CN.md",
+  "verdicts": {
+    "item1_identities": "PASS (sympy id1-id5 = 0; tr vs sum <=7e-16; r^2 Bw -> 0.187500)",
+    "item2_lambda0": "PASS (2D_ex 4.4508626, 2D_G 4.5077007, diff vs D112 <1e-6; vs DMC +0.0031)",
+    "item3_resonance": "PASS (ratios 0.39136/0.42078/0.48362 vs D112 0.391/0.421/0.484, rel diff <=2e-4; |w| box S_max 10-18, basis, outer boundary insensitive <=1.2e-5; stabilisation confirms Q)",
+    "item4_critical_mt": "PASS with minor correction (linearised 172.509/173.002 reproduced; self-consistent 172.519/173.016, u-integrated 172.520/173.018 vs C144 172.517/173.012; P1(172.60)=0.858)",
+    "item5_cross_term": "PASS order of magnitude (crude rerun +0.05/+0.07 GeV vs D112 +0.04/+0.06; r_X 0.776 confirmed; suggest +0.04..0.09 indicative)"
+  },
+  "disclosure": "D112 md was returned in full by the Read tool before own computation (beyond allowed sec 0-1); D112 code never read; results JSON/stdout opened only after own numbers.",
+  "updated": "2026-10-14"
+}

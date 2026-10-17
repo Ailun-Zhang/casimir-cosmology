@@ -1,0 +1,3138 @@
+{
+ "regression_copies_vs_run02": {
+  "C154_summary.json": {
+   "n_common": 627,
+   "only_old": [],
+   "only_new": [],
+   "max_abs_diff": 0.0,
+   "worst": [
+    "xi_points.P1=0.9 point.xi_c_mu_b",
+    "xi_points.P1=0.9 point.xi_inf_EW",
+    "xi_points.P1=0.9 point.xi_inf_mu_b"
+   ]
+  },
+  "C154_correction_summary.json": {
+   "n_common": 339,
+   "only_old": [],
+   "only_new": [],
+   "max_abs_diff": 0.0,
+   "worst": [
+    "marginal.equal_mass.D4_direct_as_mbar.quantiles_025_16_50_84_975[2]",
+    "marginal.equal_mass.D4_direct_as_mbar.quantiles_025_16_50_84_975[3]",
+    "marginal.equal_mass.D4_direct_as_mbar.quantiles_025_16_50_84_975[4]"
+   ]
+  }
+ },
+ "alpha_s_interpolation_check": {
+  "points": [
+   {
+    "alpha_s": 0.1171,
+    "mt": 171.8,
+    "P1_direct": 0.990263821757789,
+    "P1_C154_surface": 0.990362268480211,
+    "diff": 9.844672242198538e-05
+   },
+   {
+    "alpha_s": 0.1171,
+    "mt": 172.2,
+    "P1_direct": 0.875661902274697,
+    "P1_C154_surface": 0.8759432389302151,
+    "diff": 0.00028133665551810516
+   },
+   {
+    "alpha_s": 0.1171,
+    "mt": 172.6,
+    "P1_direct": 0.5124665685085321,
+    "P1_C154_surface": 0.5125587527403842,
+    "diff": 9.218423185208824e-05
+   },
+   {
+    "alpha_s": 0.1171,
+    "mt": 173.0,
+    "P1_direct": 0.13812069944919597,
+    "P1_C154_surface": 0.1381683629533692,
+    "diff": 4.7663504173234283e-05
+   },
+   {
+    "alpha_s": 0.1171,
+    "mt": 173.4,
+    "P1_direct": 0.01405756177665733,
+    "P1_C154_surface": 0.014089199043982112,
+    "diff": 3.163726732478139e-05
+   },
+   {
+    "alpha_s": 0.118,
+    "mt": 172.0,
+    "P1_direct": 0.9975932627355026,
+    "P1_C154_surface": 0.9975932627355019,
+    "diff": -7.771561172376096e-16
+   },
+   {
+    "alpha_s": 0.118,
+    "mt": 172.2,
+    "P1_direct": 0.9850028088109863,
+    "P1_C154_surface": 0.985002808810983,
+    "diff": -3.3306690738754696e-15
+   },
+   {
+    "alpha_s": 0.118,
+    "mt": 172.4,
+    "P1_direct": 0.942402374606361,
+    "P1_C154_surface": 0.9424023746063516,
+    "diff": -9.43689570931383e-15
+   },
+   {
+    "alpha_s": 0.118,
+    "mt": 172.6,
+    "P1_direct": 0.8426309987006613,
+    "P1_C154_surface": 0.8426309987006421,
+    "diff": -1.9206858326015208e-14
+   },
+   {
+    "alpha_s": 0.118,
+    "mt": 172.8,
+    "P1_direct": 0.6720641336852861,
+    "P1_C154_surface": 0.6720641336852574,
+    "diff": -2.864375403532904e-14
+   },
+   {
+    "alpha_s": 0.118,
+    "mt": 173.0,
+    "P1_direct": 0.4548744055243261,
+    "P1_C154_surface": 0.45487440552429464,
+    "diff": -3.147482274812319e-14
+   },
+   {
+    "alpha_s": 0.118,
+    "mt": 173.2,
+    "P1_direct": 0.2507885078599287,
+    "P1_C154_surface": 0.2507885078599034,
+    "diff": -2.525757381022231e-14
+   },
+   {
+    "alpha_s": 0.118,
+    "mt": 173.4,
+    "P1_direct": 0.10926603193558748,
+    "P1_C154_surface": 0.10926603193557269,
+    "diff": -1.479372180313021e-14
+   },
+   {
+    "alpha_s": 0.118,
+    "mt": 173.6,
+    "P1_direct": 0.037187781525513094,
+    "P1_C154_surface": 0.03718778152550674,
+    "diff": -6.356026815979021e-15
+   },
+   {
+    "alpha_s": 0.118,
+    "mt": 173.8,
+    "P1_direct": 0.009864608131797747,
+    "P1_C154_surface": 0.009864608131795145,
+    "diff": -2.6020852139652106e-15
+   },
+   {
+    "alpha_s": 0.1189,
+    "mt": 172.4,
+    "P1_direct": 0.9958396882400966,
+    "P1_C154_surface": 0.9957494604323198,
+    "diff": -9.022780777678818e-05
+   },
+   {
+    "alpha_s": 0.1189,
+    "mt": 172.8,
+    "P1_direct": 0.9227514250145341,
+    "P1_C154_surface": 0.9224062861853046,
+    "diff": -0.00034513882922948547
+   },
+   {
+    "alpha_s": 0.1189,
+    "mt": 173.2,
+    "P1_direct": 0.6182704172984435,
+    "P1_C154_surface": 0.6186730799769289,
+    "diff": 0.0004026626784854326
+   },
+   {
+    "alpha_s": 0.1189,
+    "mt": 173.6,
+    "P1_direct": 0.2078033185719261,
+    "P1_C154_surface": 0.2082419089656327,
+    "diff": 0.0004385903937065838
+   },
+   {
+    "alpha_s": 0.1189,
+    "mt": 174.0,
+    "P1_direct": 0.027332534003958762,
+    "P1_C154_surface": 0.02734118578207639,
+    "diff": 8.651778117627767e-06
+   }
+  ],
+  "max_abs_diff_0p1180": 3.147482274812319e-14,
+  "max_abs_diff_other": 0.0004385903937065838
+ },
+ "bayes_ranges": {
+  "run02": {
+   "B_ex_min": 0.4939910499093844,
+   "B_ex_max": 0.9691422634180276,
+   "B_sel_min": 0.7950721376098633,
+   "B_sel_max": 2.1110520258988283,
+   "abs_lnB_max": 0.7471864137064232,
+   "B_sel_upper_direct_150_200": 2.178268460250043,
+   "B_sel_max_over_all_bounds": 2.178268460250043
+  },
+  "run05": {
+   "B_ex_min": 0.4970120312225613,
+   "B_ex_max": 0.9696808419840672,
+   "B_sel_min": 0.7994399980155761,
+   "B_sel_max": 2.111690645915902,
+   "abs_lnB_max": 0.7474888806439446,
+   "B_sel_upper_direct_150_200": 2.1777171977484513,
+   "B_sel_max_over_all_bounds": 2.1777171977484513
+  }
+ },
+ "headline": {
+  "crit m_t alpha_s=0.1171 P1=0.9": {
+   "run02": 172.15105859630214,
+   "run05": 172.15555132918962,
+   "diff": 0.004492732887484863,
+   "key": "C154_summary.json:critical_mt.0.1171.P1=0.9"
+  },
+  "crit m_t alpha_s=0.1171 P1=0.5": {
+   "run02": 172.6054894543709,
+   "run05": 172.6112321512557,
+   "diff": 0.005742696884794896,
+   "key": "C154_summary.json:critical_mt.0.1171.P1=0.5"
+  },
+  "crit m_t alpha_s=0.1171 P1=0.1": {
+   "run02": 173.06244626317414,
+   "run05": 173.0691099703865,
+   "diff": 0.006663707212368308,
+   "key": "C154_summary.json:critical_mt.0.1171.P1=0.1"
+  },
+  "crit m_t alpha_s=0.1171 P1=0.05": {
+   "run02": 173.19295761812458,
+   "run05": 173.1999094359689,
+   "diff": 0.006951817844310426,
+   "key": "C154_summary.json:critical_mt.0.1171.P1=0.05"
+  },
+  "crit m_t alpha_s=0.1180 P1=0.9": {
+   "run02": 172.49777844351922,
+   "run05": 172.5024127429905,
+   "diff": 0.004634299471263148,
+   "key": "C154_summary.json:critical_mt.0.1180.P1=0.9"
+  },
+  "crit m_t alpha_s=0.1180 P1=0.5": {
+   "run02": 172.9537275873908,
+   "run05": 172.95945013527106,
+   "diff": 0.0057225478802536145,
+   "key": "C154_summary.json:critical_mt.0.1180.P1=0.5"
+  },
+  "crit m_t alpha_s=0.1180 P1=0.1": {
+   "run02": 173.4116861772546,
+   "run05": 173.41836046768856,
+   "diff": 0.0066742904339491815,
+   "key": "C154_summary.json:critical_mt.0.1180.P1=0.1"
+  },
+  "crit m_t alpha_s=0.1180 P1=0.05": {
+   "run02": 173.54241016845512,
+   "run05": 173.5494081298959,
+   "diff": 0.006997961440788458,
+   "key": "C154_summary.json:critical_mt.0.1180.P1=0.05"
+  },
+  "crit m_t alpha_s=0.1189 P1=0.9": {
+   "run02": 172.84450549782937,
+   "run05": 172.84925992428788,
+   "diff": 0.004754426458504213,
+   "key": "C154_summary.json:critical_mt.0.1189.P1=0.9"
+  },
+  "crit m_t alpha_s=0.1189 P1=0.5": {
+   "run02": 173.30245731531727,
+   "run05": 173.30842651559254,
+   "diff": 0.005969200275274034,
+   "key": "C154_summary.json:critical_mt.0.1189.P1=0.5"
+  },
+  "crit m_t alpha_s=0.1189 P1=0.1": {
+   "run02": 173.76126723822725,
+   "run05": 173.76828643712636,
+   "diff": 0.0070191988991155085,
+   "key": "C154_summary.json:critical_mt.0.1189.P1=0.1"
+  },
+  "crit m_t alpha_s=0.1189 P1=0.05": {
+   "run02": 173.89207165229797,
+   "run05": 173.89943707782376,
+   "diff": 0.00736542552579067,
+   "key": "C154_summary.json:critical_mt.0.1189.P1=0.05"
+  },
+  "dm_c/dalpha_s P1=0.9": {
+   "run02": 385.2482786262436,
+   "run05": 385.39366394347655,
+   "diff": 0.14538531723297865,
+   "key": "C154_summary.json:dmc_dalpha_s.P1=0.9"
+  },
+  "dm_c/dalpha_s P1=0.5": {
+   "run02": 387.20436719242144,
+   "run05": 387.3302024093543,
+   "diff": 0.12583521693284183,
+   "key": "C154_summary.json:dmc_dalpha_s.P1=0.5"
+  },
+  "dm_c/dalpha_s P1=0.1": {
+   "run02": 388.23387502950544,
+   "run05": 388.4313704110317,
+   "diff": 0.19749538152626656,
+   "key": "C154_summary.json:dmc_dalpha_s.P1=0.1"
+  },
+  "P1 curve at 172.60": {
+   "run02": 0.8393220035403062,
+   "run05": 0.8426309987006421,
+   "diff": 0.0033089951603358925,
+   "key": "C154_summary.json:marginal.D1_direct_pole.P1_curve_at_center"
+  },
+  "Pbar equal-mass D1_direct_pole": {
+   "run02": 0.7271061513142756,
+   "run05": 0.7302153304270557,
+   "diff": 0.0031091791127800805,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1_direct_pole.Pbar"
+  },
+  "P(P1>=0.5) D1_direct_pole": {
+   "run02": 0.7740466664615043,
+   "run05": 0.7777745494635325,
+   "diff": 0.0037278830020281983,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1_direct_pole.prob_P_ge_0p5"
+  },
+  "q025 D1_direct_pole": {
+   "run02": 0.05453880371031687,
+   "run05": 0.05680861630222384,
+   "diff": 0.002269812591906971,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1_direct_pole.quantiles_025_16_50_84_975[0]"
+  },
+  "q16 D1_direct_pole": {
+   "run02": 0.3837644548319527,
+   "run05": 0.3901622945610981,
+   "diff": 0.0063978397291453715,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1_direct_pole.quantiles_025_16_50_84_975[1]"
+  },
+  "median D1_direct_pole": {
+   "run02": 0.8369580713131741,
+   "run05": 0.8402789408904154,
+   "diff": 0.0033208695772413144,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1_direct_pole.quantiles_025_16_50_84_975[2]"
+  },
+  "q84 D1_direct_pole": {
+   "run02": 0.989360160900977,
+   "run05": 0.9896794762886723,
+   "diff": 0.0003193153876952515,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1_direct_pole.quantiles_025_16_50_84_975[3]"
+  },
+  "q975 D1_direct_pole": {
+   "run02": 0.9996670380132827,
+   "run05": 0.9996800689703811,
+   "diff": 1.3030957098369989e-05,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1_direct_pole.quantiles_025_16_50_84_975[4]"
+  },
+  "Pbar continuous D1_direct_pole": {
+   "run02": 0.7245862371773927,
+   "run05": 0.7277176268989912,
+   "diff": 0.003131389721598543,
+   "key": "C154_correction_summary.json:marginal.continuous.D1_direct_pole.Pbar"
+  },
+  "Pbar BKPV/FJ equal-mass D1_direct_pole": {
+   "run02": 0.6715441782933919,
+   "run05": 0.6746806511865345,
+   "diff": 0.003136472893142672,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1_direct_pole.Pbar_BKPV_FJ"
+  },
+  "Pbar BKPV/FJ continuous D1_direct_pole": {
+   "run02": 0.623411378574065,
+   "run05": 0.6267639963554256,
+   "diff": 0.003352617781360534,
+   "key": "C154_correction_summary.json:marginal.continuous.D1_direct_pole.Pbar_BKPV_FJ"
+  },
+  "Pbar variant allorders_pole D1_direct_pole (v2 mixed conv.)": {
+   "run02": 0.8556169527466344,
+   "run05": 0.8576359170755621,
+   "diff": 0.002018964328927675,
+   "key": "C154_summary.json:marginal.D1_direct_pole.Pbar_allorders_pole"
+  },
+  "Pbar variant T14a_central_correction D1_direct_pole (v2 mixed conv.)": {
+   "run02": 0.7306034407588334,
+   "run05": 0.7336818526868987,
+   "diff": 0.003078411928065239,
+   "key": "C154_summary.json:marginal.D1_direct_pole.Pbar_T14a_central_correction"
+  },
+  "Pbar variant vi_r1e-4 D1_direct_pole (v2 mixed conv.)": {
+   "run02": 0.6404038708139894,
+   "run05": 0.6441971724090064,
+   "diff": 0.003793301595017007,
+   "key": "C154_summary.json:marginal.D1_direct_pole.Pbar_vi_r1e-4"
+  },
+  "Pbar variant model_without_vi D1_direct_pole (v2 mixed conv.)": {
+   "run02": 0.7244585196238226,
+   "run05": 0.7276111707069649,
+   "diff": 0.0031526510831423327,
+   "key": "C154_summary.json:marginal.D1_direct_pole.Pbar_model_without_vi"
+  },
+  "Pbar variant w0_multiplicative D1_direct_pole (v2 mixed conv.)": {
+   "run02": 0.7209187479356394,
+   "run05": 0.7239917037879958,
+   "diff": 0.0030729558523564515,
+   "key": "C154_summary.json:marginal.D1_direct_pole.Pbar_w0_multiplicative"
+  },
+  "Pbar equal-mass D1b_direct_pole_interp": {
+   "run02": 0.6772700316083003,
+   "run05": 0.6798832348175613,
+   "diff": 0.0026132032092609503,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1b_direct_pole_interp.Pbar"
+  },
+  "P(P1>=0.5) D1b_direct_pole_interp": {
+   "run02": 0.6952343036575179,
+   "run05": 0.6982102535656745,
+   "diff": 0.0029759499081565277,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1b_direct_pole_interp.prob_P_ge_0p5"
+  },
+  "q025 D1b_direct_pole_interp": {
+   "run02": 0.0017340801938353502,
+   "run05": 0.001848188634696168,
+   "diff": 0.00011410844086081782,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1b_direct_pole_interp.quantiles_025_16_50_84_975[0]"
+  },
+  "q16 D1b_direct_pole_interp": {
+   "run02": 0.18112384794070877,
+   "run05": 0.1860700394148908,
+   "diff": 0.004946191474182043,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1b_direct_pole_interp.quantiles_025_16_50_84_975[1]"
+  },
+  "median D1b_direct_pole_interp": {
+   "run02": 0.837063651768154,
+   "run05": 0.8404160321985406,
+   "diff": 0.003352380430386548,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1b_direct_pole_interp.quantiles_025_16_50_84_975[2]"
+  },
+  "q84 D1b_direct_pole_interp": {
+   "run02": 0.9984308268574716,
+   "run05": 0.9984844186851913,
+   "diff": 5.3591827719690066e-05,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1b_direct_pole_interp.quantiles_025_16_50_84_975[3]"
+  },
+  "q975 D1b_direct_pole_interp": {
+   "run02": 0.9999841721211197,
+   "run05": 0.9999848865540485,
+   "diff": 7.144329288166773e-07,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1b_direct_pole_interp.quantiles_025_16_50_84_975[4]"
+  },
+  "Pbar continuous D1b_direct_pole_interp": {
+   "run02": 0.6750637145491082,
+   "run05": 0.6776883405557016,
+   "diff": 0.0026246260065934113,
+   "key": "C154_correction_summary.json:marginal.continuous.D1b_direct_pole_interp.Pbar"
+  },
+  "Pbar BKPV/FJ equal-mass D1b_direct_pole_interp": {
+   "run02": 0.635932604512217,
+   "run05": 0.6385500320597871,
+   "diff": 0.002617427547570106,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1b_direct_pole_interp.Pbar_BKPV_FJ"
+  },
+  "Pbar BKPV/FJ continuous D1b_direct_pole_interp": {
+   "run02": 0.5972591491455371,
+   "run05": 0.5999830372966289,
+   "diff": 0.0027238881510918134,
+   "key": "C154_correction_summary.json:marginal.continuous.D1b_direct_pole_interp.Pbar_BKPV_FJ"
+  },
+  "Pbar variant allorders_pole D1b_direct_pole_interp (v2 mixed conv.)": {
+   "run02": 0.7908543561816489,
+   "run05": 0.7928836134973047,
+   "diff": 0.0020292573156558413,
+   "key": "C154_summary.json:marginal.D1b_direct_pole_interp.Pbar_allorders_pole"
+  },
+  "Pbar variant T14a_central_correction D1b_direct_pole_interp (v2 mixed conv.)": {
+   "run02": 0.6803265590992048,
+   "run05": 0.6829239652960352,
+   "diff": 0.002597406196830354,
+   "key": "C154_summary.json:marginal.D1b_direct_pole_interp.Pbar_T14a_central_correction"
+  },
+  "Pbar variant vi_r1e-4 D1b_direct_pole_interp (v2 mixed conv.)": {
+   "run02": 0.6040309496077976,
+   "run05": 0.6069674318473842,
+   "diff": 0.0029364822395866463,
+   "key": "C154_summary.json:marginal.D1b_direct_pole_interp.Pbar_vi_r1e-4"
+  },
+  "Pbar variant model_without_vi D1b_direct_pole_interp (v2 mixed conv.)": {
+   "run02": 0.6742536766004471,
+   "run05": 0.6768962688624363,
+   "diff": 0.0026425922619891518,
+   "key": "C154_summary.json:marginal.D1b_direct_pole_interp.Pbar_model_without_vi"
+  },
+  "Pbar variant w0_multiplicative D1b_direct_pole_interp (v2 mixed conv.)": {
+   "run02": 0.6717710449717073,
+   "run05": 0.6743502598231597,
+   "diff": 0.002579214851452405,
+   "key": "C154_summary.json:marginal.D1b_direct_pole_interp.Pbar_w0_multiplicative"
+  },
+  "Pbar equal-mass D1c_direct_interp_renorm": {
+   "run02": 0.6756170470126375,
+   "run05": 0.6782112156787649,
+   "diff": 0.0025941686661273833,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1c_direct_interp_renorm.Pbar"
+  },
+  "P(P1>=0.5) D1c_direct_interp_renorm": {
+   "run02": 0.6929424890582325,
+   "run05": 0.6958908748246834,
+   "diff": 0.002948385766450845,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1c_direct_interp_renorm.prob_P_ge_0p5"
+  },
+  "q025 D1c_direct_interp_renorm": {
+   "run02": 0.0013866610868244675,
+   "run05": 0.0014803586304340155,
+   "diff": 9.369754360954801e-05,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1c_direct_interp_renorm.quantiles_025_16_50_84_975[0]"
+  },
+  "q16 D1c_direct_interp_renorm": {
+   "run02": 0.1746412901787919,
+   "run05": 0.17956763701025288,
+   "diff": 0.0049263468314609815,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1c_direct_interp_renorm.quantiles_025_16_50_84_975[1]"
+  },
+  "median D1c_direct_interp_renorm": {
+   "run02": 0.8370925671627334,
+   "run05": 0.8404255927384527,
+   "diff": 0.0033330255757193505,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1c_direct_interp_renorm.quantiles_025_16_50_84_975[2]"
+  },
+  "q84 D1c_direct_interp_renorm": {
+   "run02": 0.998525872177988,
+   "run05": 0.9985764735849565,
+   "diff": 5.06014069684424e-05,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1c_direct_interp_renorm.quantiles_025_16_50_84_975[3]"
+  },
+  "q975 D1c_direct_interp_renorm": {
+   "run02": 0.9999860006229159,
+   "run05": 0.9999866445254206,
+   "diff": 6.439025047599856e-07,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1c_direct_interp_renorm.quantiles_025_16_50_84_975[4]"
+  },
+  "Pbar continuous D1c_direct_interp_renorm": {
+   "run02": 0.6734246832808161,
+   "run05": 0.6760299788508528,
+   "diff": 0.0026052955700367475,
+   "key": "C154_correction_summary.json:marginal.continuous.D1c_direct_interp_renorm.Pbar"
+  },
+  "Pbar BKPV/FJ equal-mass D1c_direct_interp_renorm": {
+   "run02": 0.6347235919595818,
+   "run05": 0.637321622485968,
+   "diff": 0.002598030526386186,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D1c_direct_interp_renorm.Pbar_BKPV_FJ"
+  },
+  "Pbar BKPV/FJ continuous D1c_direct_interp_renorm": {
+   "run02": 0.5963791442796891,
+   "run05": 0.5990807860656063,
+   "diff": 0.0027016417859172526,
+   "key": "C154_correction_summary.json:marginal.continuous.D1c_direct_interp_renorm.Pbar_BKPV_FJ"
+  },
+  "Pbar variant allorders_pole D1c_direct_interp_renorm (v2 mixed conv.)": {
+   "run02": 0.7885341786366784,
+   "run05": 0.7905586760088997,
+   "diff": 0.0020244973722213233,
+   "key": "C154_summary.json:marginal.D1c_direct_interp_renorm.Pbar_allorders_pole"
+  },
+  "Pbar variant T14a_central_correction D1c_direct_interp_renorm (v2 mixed conv.)": {
+   "run02": 0.6786541450656942,
+   "run05": 0.6812329249192742,
+   "diff": 0.0025787798535800155,
+   "key": "C154_summary.json:marginal.D1c_direct_interp_renorm.Pbar_T14a_central_correction"
+  },
+  "Pbar variant vi_r1e-4 D1c_direct_interp_renorm (v2 mixed conv.)": {
+   "run02": 0.6029144353015459,
+   "run05": 0.6058226200215966,
+   "diff": 0.0029081847200507216,
+   "key": "C154_summary.json:marginal.D1c_direct_interp_renorm.Pbar_vi_r1e-4"
+  },
+  "Pbar variant model_without_vi D1c_direct_interp_renorm (v2 mixed conv.)": {
+   "run02": 0.6726002695941108,
+   "run05": 0.6752232882662723,
+   "diff": 0.0026230186721615256,
+   "key": "C154_summary.json:marginal.D1c_direct_interp_renorm.Pbar_model_without_vi"
+  },
+  "Pbar variant w0_multiplicative D1c_direct_interp_renorm (v2 mixed conv.)": {
+   "run02": 0.6701417672898762,
+   "run05": 0.6727021105131824,
+   "diff": 0.0025603432233062273,
+   "key": "C154_summary.json:marginal.D1c_direct_interp_renorm.Pbar_w0_multiplicative"
+  },
+  "Pbar equal-mass D2_sigma_pole": {
+   "run02": 0.8595561044970744,
+   "run05": 0.8610658716480479,
+   "diff": 0.0015097671509735067,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D2_sigma_pole.Pbar"
+  },
+  "P(P1>=0.5) D2_sigma_pole": {
+   "run02": 0.8845391167785424,
+   "run05": 0.8861275753373735,
+   "diff": 0.0015884585588311628,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D2_sigma_pole.prob_P_ge_0p5"
+  },
+  "q025 D2_sigma_pole": {
+   "run02": 0.06285274062364439,
+   "run05": 0.06535880143777743,
+   "diff": 0.002506060814133043,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D2_sigma_pole.quantiles_025_16_50_84_975[0]"
+  },
+  "q16 D2_sigma_pole": {
+   "run02": 0.661679379492401,
+   "run05": 0.6673499394143839,
+   "diff": 0.005670559921982954,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D2_sigma_pole.quantiles_025_16_50_84_975[1]"
+  },
+  "median D2_sigma_pole": {
+   "run02": 0.9929053667588883,
+   "run05": 0.9931176456974125,
+   "diff": 0.00021227893852415747,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D2_sigma_pole.quantiles_025_16_50_84_975[2]"
+  },
+  "q84 D2_sigma_pole": {
+   "run02": 0.9999616040468258,
+   "run05": 0.999963241568548,
+   "diff": 1.6375217222197591e-06,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D2_sigma_pole.quantiles_025_16_50_84_975[3]"
+  },
+  "q975 D2_sigma_pole": {
+   "run02": 0.9999996767055261,
+   "run05": 0.9999996940252834,
+   "diff": 1.731975729502011e-08,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D2_sigma_pole.quantiles_025_16_50_84_975[4]"
+  },
+  "Pbar continuous D2_sigma_pole": {
+   "run02": 0.8583437049017375,
+   "run05": 0.8598645164174445,
+   "diff": 0.0015208115157070434,
+   "key": "C154_correction_summary.json:marginal.continuous.D2_sigma_pole.Pbar"
+  },
+  "Pbar BKPV/FJ equal-mass D2_sigma_pole": {
+   "run02": 0.8255435948128617,
+   "run05": 0.8272123233326519,
+   "diff": 0.0016687285197902746,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D2_sigma_pole.Pbar_BKPV_FJ"
+  },
+  "Pbar BKPV/FJ continuous D2_sigma_pole": {
+   "run02": 0.7995047020554685,
+   "run05": 0.801343360976001,
+   "diff": 0.0018386589205324766,
+   "key": "C154_correction_summary.json:marginal.continuous.D2_sigma_pole.Pbar_BKPV_FJ"
+  },
+  "Pbar variant allorders_pole D2_sigma_pole (v2 mixed conv.)": {
+   "run02": 0.9213721991849333,
+   "run05": 0.9223375482824434,
+   "diff": 0.0009653490975101153,
+   "key": "C154_summary.json:marginal.D2_sigma_pole.Pbar_allorders_pole"
+  },
+  "Pbar variant T14a_central_correction D2_sigma_pole (v2 mixed conv.)": {
+   "run02": 0.8612344079824424,
+   "run05": 0.8627288869967674,
+   "diff": 0.0014944790143249786,
+   "key": "C154_summary.json:marginal.D2_sigma_pole.Pbar_T14a_central_correction"
+  },
+  "Pbar variant vi_r1e-4 D2_sigma_pole (v2 mixed conv.)": {
+   "run02": 0.8178933626743288,
+   "run05": 0.8197585975831231,
+   "diff": 0.001865234908794311,
+   "key": "C154_summary.json:marginal.D2_sigma_pole.Pbar_vi_r1e-4"
+  },
+  "Pbar variant model_without_vi D2_sigma_pole (v2 mixed conv.)": {
+   "run02": 0.8582857245262543,
+   "run05": 0.859813153120601,
+   "diff": 0.0015274285943467358,
+   "key": "C154_summary.json:marginal.D2_sigma_pole.Pbar_model_without_vi"
+  },
+  "Pbar variant w0_multiplicative D2_sigma_pole (v2 mixed conv.)": {
+   "run02": 0.8539708032568993,
+   "run05": 0.8554629055334579,
+   "diff": 0.0014921022765586045,
+   "key": "C154_summary.json:marginal.D2_sigma_pole.Pbar_w0_multiplicative"
+  },
+  "Pbar equal-mass D2b_sigma_pole_PDG2025": {
+   "run02": 0.7377437495359638,
+   "run05": 0.7398238632776952,
+   "diff": 0.0020801137417314486,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D2b_sigma_pole_PDG2025.Pbar"
+  },
+  "P(P1>=0.5) D2b_sigma_pole_PDG2025": {
+   "run02": 0.7548158305772372,
+   "run05": 0.7571097668244451,
+   "diff": 0.0022939362472078617,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D2b_sigma_pole_PDG2025.prob_P_ge_0p5"
+  },
+  "q025 D2b_sigma_pole_PDG2025": {
+   "run02": 0.0013368248034775834,
+   "run05": 0.0014286627769565527,
+   "diff": 9.18379734789693e-05,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D2b_sigma_pole_PDG2025.quantiles_025_16_50_84_975[0]"
+  },
+  "q16 D2b_sigma_pole_PDG2025": {
+   "run02": 0.25466233889931994,
+   "run05": 0.2604702542895154,
+   "diff": 0.005807915390195484,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D2b_sigma_pole_PDG2025.quantiles_025_16_50_84_975[1]"
+  },
+  "median D2b_sigma_pole_PDG2025": {
+   "run02": 0.9384779653802633,
+   "run05": 0.9400189958044088,
+   "diff": 0.0015410304241455508,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D2b_sigma_pole_PDG2025.quantiles_025_16_50_84_975[2]"
+  },
+  "q84 D2b_sigma_pole_PDG2025": {
+   "run02": 0.9998274996944793,
+   "run05": 0.9998342746049718,
+   "diff": 6.7749104925018955e-06,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D2b_sigma_pole_PDG2025.quantiles_025_16_50_84_975[3]"
+  },
+  "q975 D2b_sigma_pole_PDG2025": {
+   "run02": 0.9999992035445882,
+   "run05": 0.9999992446953232,
+   "diff": 4.1150735041739495e-08,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D2b_sigma_pole_PDG2025.quantiles_025_16_50_84_975[4]"
+  },
+  "Pbar continuous D2b_sigma_pole_PDG2025": {
+   "run02": 0.7359995811428891,
+   "run05": 0.7380893296742271,
+   "diff": 0.0020897485313380315,
+   "key": "C154_correction_summary.json:marginal.continuous.D2b_sigma_pole_PDG2025.Pbar"
+  },
+  "Pbar BKPV/FJ equal-mass D2b_sigma_pole_PDG2025": {
+   "run02": 0.7019150443566953,
+   "run05": 0.7040530524784864,
+   "diff": 0.0021380081217911018,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D2b_sigma_pole_PDG2025.Pbar_BKPV_FJ"
+  },
+  "Pbar BKPV/FJ continuous D2b_sigma_pole_PDG2025": {
+   "run02": 0.6700405087342082,
+   "run05": 0.6722918667384888,
+   "diff": 0.002251358004280668,
+   "key": "C154_correction_summary.json:marginal.continuous.D2b_sigma_pole_PDG2025.Pbar_BKPV_FJ"
+  },
+  "Pbar variant allorders_pole D2b_sigma_pole_PDG2025 (v2 mixed conv.)": {
+   "run02": 0.8275868651331585,
+   "run05": 0.8291778952636154,
+   "diff": 0.0015910301304569163,
+   "key": "C154_summary.json:marginal.D2b_sigma_pole_PDG2025.Pbar_allorders_pole"
+  },
+  "Pbar variant T14a_central_correction D2b_sigma_pole_PDG2025 (v2 mixed conv.)": {
+   "run02": 0.7401591584924758,
+   "run05": 0.7422259376090912,
+   "diff": 0.002066779116615347,
+   "key": "C154_summary.json:marginal.D2b_sigma_pole_PDG2025.Pbar_T14a_central_correction"
+  },
+  "Pbar variant vi_r1e-4 D2b_sigma_pole_PDG2025 (v2 mixed conv.)": {
+   "run02": 0.6796968623652412,
+   "run05": 0.6820608614096636,
+   "diff": 0.0023639990444224157,
+   "key": "C154_summary.json:marginal.D2b_sigma_pole_PDG2025.Pbar_vi_r1e-4"
+  },
+  "Pbar variant model_without_vi D2b_sigma_pole_PDG2025 (v2 mixed conv.)": {
+   "run02": 0.7354019971210967,
+   "run05": 0.7375040837339857,
+   "diff": 0.0021020866128890203,
+   "key": "C154_summary.json:marginal.D2b_sigma_pole_PDG2025.Pbar_model_without_vi"
+  },
+  "Pbar variant w0_multiplicative D2b_sigma_pole_PDG2025 (v2 mixed conv.)": {
+   "run02": 0.7323411926724296,
+   "run05": 0.7343945491902968,
+   "diff": 0.0020533565178671997,
+   "key": "C154_summary.json:marginal.D2b_sigma_pole_PDG2025.Pbar_w0_multiplicative"
+  },
+  "Pbar equal-mass D3_MSR": {
+   "run02": 0.4968262812174938,
+   "run05": 0.49984585727130093,
+   "diff": 0.0030195760538071492,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D3_MSR.Pbar"
+  },
+  "P(P1>=0.5) D3_MSR": {
+   "run02": 0.4928233081605821,
+   "run05": 0.4962533701750363,
+   "diff": 0.0034300620144541716,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D3_MSR.prob_P_ge_0p5"
+  },
+  "q025 D3_MSR": {
+   "run02": 2.6146915644335623e-06,
+   "run05": 2.874329856566394e-06,
+   "diff": 2.596382921328317e-07,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[0]"
+  },
+  "q16 D3_MSR": {
+   "run02": 0.026737933991675508,
+   "run05": 0.028019459488115423,
+   "diff": 0.0012815254964399156,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[1]"
+  },
+  "median D3_MSR": {
+   "run02": 0.4937674914398961,
+   "run05": 0.5001331052298726,
+   "diff": 0.006365613789976521,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[2]"
+  },
+  "q84 D3_MSR": {
+   "run02": 0.9686806450325912,
+   "run05": 0.9695474248285413,
+   "diff": 0.0008667797959500678,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[3]"
+  },
+  "q975 D3_MSR": {
+   "run02": 0.9997899979595927,
+   "run05": 0.9997982300647535,
+   "diff": 8.232105160876912e-06,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[4]"
+  },
+  "Pbar continuous D3_MSR": {
+   "run02": 0.494173205740746,
+   "run05": 0.49719712820061285,
+   "diff": 0.0030239224598668235,
+   "key": "C154_correction_summary.json:marginal.continuous.D3_MSR.Pbar"
+  },
+  "Pbar equal-mass D4_direct_as_mbar": {
+   "run02": 0.7264075672931886,
+   "run05": 0.7295095599949186,
+   "diff": 0.003101992701730061,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D4_direct_as_mbar.Pbar"
+  },
+  "P(P1>=0.5) D4_direct_as_mbar": {
+   "run02": 0.7726836893996581,
+   "run05": 0.7764023378693335,
+   "diff": 0.0037186484696754007,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D4_direct_as_mbar.prob_P_ge_0p5"
+  },
+  "q025 D4_direct_as_mbar": {
+   "run02": 0.052894730190642496,
+   "run05": 0.05515989158001492,
+   "diff": 0.002265161389372425,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D4_direct_as_mbar.quantiles_025_16_50_84_975[0]"
+  },
+  "q16 D4_direct_as_mbar": {
+   "run02": 0.3803550294279338,
+   "run05": 0.38677534825762405,
+   "diff": 0.006420318829690241,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D4_direct_as_mbar.quantiles_025_16_50_84_975[1]"
+  },
+  "median D4_direct_as_mbar": {
+   "run02": 0.8370243166953033,
+   "run05": 0.8403378099451113,
+   "diff": 0.0033134932498080083,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D4_direct_as_mbar.quantiles_025_16_50_84_975[2]"
+  },
+  "q84 D4_direct_as_mbar": {
+   "run02": 0.9896032817541858,
+   "run05": 0.9899142667769248,
+   "diff": 0.00031098502273907425,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D4_direct_as_mbar.quantiles_025_16_50_84_975[3]"
+  },
+  "q975 D4_direct_as_mbar": {
+   "run02": 0.9996789969009503,
+   "run05": 0.9996915468715397,
+   "diff": 1.2549970589414983e-05,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D4_direct_as_mbar.quantiles_025_16_50_84_975[4]"
+  },
+  "Pbar continuous D4_direct_as_mbar": {
+   "run02": 0.7238787669894283,
+   "run05": 0.7270027278124195,
+   "diff": 0.0031239608229911564,
+   "key": "C154_correction_summary.json:marginal.continuous.D4_direct_as_mbar.Pbar"
+  },
+  "Pbar equal-mass D3b_msbar_sigma": {
+   "run02": 0.6186205790893154,
+   "run05": 0.6196193407422572,
+   "diff": 0.0009987616529417709,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D3b_msbar_sigma.Pbar"
+  },
+  "P(P1>=0.5) D3b_msbar_sigma": {
+   "run02": 0.6199668653040865,
+   "run05": 0.6209764902524575,
+   "diff": 0.0010096249483709796,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D3b_msbar_sigma.prob_P_ge_0p5"
+  },
+  "q025 D3b_msbar_sigma": {
+   "run02": 0.0,
+   "run05": 0.0,
+   "diff": 0.0,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D3b_msbar_sigma.quantiles_025_16_50_84_975[0]"
+  },
+  "q16 D3b_msbar_sigma": {
+   "run02": 7.0021028623144885e-09,
+   "run05": 7.854489928163317e-09,
+   "diff": 8.523870658488286e-10,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D3b_msbar_sigma.quantiles_025_16_50_84_975[1]"
+  },
+  "median D3b_msbar_sigma": {
+   "run02": 0.9645335720126458,
+   "run05": 0.965485831989471,
+   "diff": 0.0009522599768252427,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D3b_msbar_sigma.quantiles_025_16_50_84_975[2]"
+  },
+  "q84 D3b_msbar_sigma": {
+   "run02": 0.9999997956864721,
+   "run05": 0.9999998067773324,
+   "diff": 1.1090860230211774e-08,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D3b_msbar_sigma.quantiles_025_16_50_84_975[3]"
+  },
+  "q975 D3b_msbar_sigma": {
+   "run02": 0.9999999999966587,
+   "run05": 0.9999999999969179,
+   "diff": 2.5923707624997405e-13,
+   "key": "C154_correction_summary.json:marginal.equal_mass.D3b_msbar_sigma.quantiles_025_16_50_84_975[4]"
+  },
+  "Pbar continuous D3b_msbar_sigma": {
+   "run02": 0.5557741606731103,
+   "run05": 0.5569060490374715,
+   "diff": 0.0011318883643612887,
+   "key": "C154_correction_summary.json:marginal.continuous.D3b_msbar_sigma.Pbar"
+  },
+  "Pbar equal-mass C1_ATLAS_CMS": {
+   "run02": 0.7597653668094202,
+   "run05": 0.7625150423315528,
+   "diff": 0.0027496755221325664,
+   "key": "C154_correction_summary.json:marginal.equal_mass.C1_ATLAS_CMS.Pbar"
+  },
+  "P(P1>=0.5) C1_ATLAS_CMS": {
+   "run02": 0.8040066808088195,
+   "run05": 0.8071851575503345,
+   "diff": 0.003178476741514946,
+   "key": "C154_correction_summary.json:marginal.equal_mass.C1_ATLAS_CMS.prob_P_ge_0p5"
+  },
+  "q025 C1_ATLAS_CMS": {
+   "run02": 0.05694147141355295,
+   "run05": 0.059310964745769024,
+   "diff": 0.0023694933322160744,
+   "key": "C154_correction_summary.json:marginal.equal_mass.C1_ATLAS_CMS.quantiles_025_16_50_84_975[0]"
+  },
+  "q16 C1_ATLAS_CMS": {
+   "run02": 0.4299767551271151,
+   "run05": 0.43644465974082225,
+   "diff": 0.006467904613707165,
+   "key": "C154_correction_summary.json:marginal.equal_mass.C1_ATLAS_CMS.quantiles_025_16_50_84_975[1]"
+  },
+  "median C1_ATLAS_CMS": {
+   "run02": 0.8857822351471352,
+   "run05": 0.8882469215325961,
+   "diff": 0.0024646863854609347,
+   "key": "C154_correction_summary.json:marginal.equal_mass.C1_ATLAS_CMS.quantiles_025_16_50_84_975[2]"
+  },
+  "q84 C1_ATLAS_CMS": {
+   "run02": 0.9963741254747701,
+   "run05": 0.9964913371624227,
+   "diff": 0.00011721168765255197,
+   "key": "C154_correction_summary.json:marginal.equal_mass.C1_ATLAS_CMS.quantiles_025_16_50_84_975[3]"
+  },
+  "q975 C1_ATLAS_CMS": {
+   "run02": 0.9998875255665899,
+   "run05": 0.9998921898534229,
+   "diff": 4.664286832989362e-06,
+   "key": "C154_correction_summary.json:marginal.equal_mass.C1_ATLAS_CMS.quantiles_025_16_50_84_975[4]"
+  },
+  "Pbar continuous C1_ATLAS_CMS": {
+   "run02": 0.7575491188366776,
+   "run05": 0.7603189790557766,
+   "diff": 0.002769860219098974,
+   "key": "C154_correction_summary.json:marginal.continuous.C1_ATLAS_CMS.Pbar"
+  },
+  "Pbar BKPV/FJ equal-mass C1_ATLAS_CMS": {
+   "run02": 0.7071601232473357,
+   "run05": 0.7099981565622032,
+   "diff": 0.0028380333148675385,
+   "key": "C154_correction_summary.json:marginal.equal_mass.C1_ATLAS_CMS.Pbar_BKPV_FJ"
+  },
+  "Pbar BKPV/FJ continuous C1_ATLAS_CMS": {
+   "run02": 0.6632945094333784,
+   "run05": 0.6663572235658276,
+   "diff": 0.0030627141324491847,
+   "key": "C154_correction_summary.json:marginal.continuous.C1_ATLAS_CMS.Pbar_BKPV_FJ"
+  },
+  "Pbar variant allorders_pole C1_ATLAS_CMS (v2 mixed conv.)": {
+   "run02": 0.8727850897927022,
+   "run05": 0.8745429286669834,
+   "diff": 0.001757838874281159,
+   "key": "C154_summary.json:marginal.C1_ATLAS_CMS.Pbar_allorders_pole"
+  },
+  "Pbar variant T14a_central_correction C1_ATLAS_CMS (v2 mixed conv.)": {
+   "run02": 0.7628391335075366,
+   "run05": 0.7655608426259288,
+   "diff": 0.0027217091183922015,
+   "key": "C154_summary.json:marginal.C1_ATLAS_CMS.Pbar_T14a_central_correction"
+  },
+  "Pbar variant vi_r1e-4 C1_ATLAS_CMS (v2 mixed conv.)": {
+   "run02": 0.6834033101663677,
+   "run05": 0.6867848566961601,
+   "diff": 0.0033815465297923897,
+   "key": "C154_summary.json:marginal.C1_ATLAS_CMS.Pbar_vi_r1e-4"
+  },
+  "Pbar variant model_without_vi C1_ATLAS_CMS (v2 mixed conv.)": {
+   "run02": 0.7574762918070217,
+   "run05": 0.7602629037218733,
+   "diff": 0.0027866119148516333,
+   "key": "C154_summary.json:marginal.C1_ATLAS_CMS.Pbar_model_without_vi"
+  },
+  "Pbar variant w0_multiplicative C1_ATLAS_CMS (v2 mixed conv.)": {
+   "run02": 0.7537603831007408,
+   "run05": 0.7564782673561256,
+   "diff": 0.0027178842553847726,
+   "key": "C154_summary.json:marginal.C1_ATLAS_CMS.Pbar_w0_multiplicative"
+  },
+  "Pbar equal-mass C2_CMS": {
+   "run02": 0.9691422634180273,
+   "run05": 0.9696808419840668,
+   "diff": 0.0005385785660394493,
+   "key": "C154_correction_summary.json:marginal.equal_mass.C2_CMS.Pbar"
+  },
+  "P(P1>=0.5) C2_CMS": {
+   "run02": 0.9872958863722615,
+   "run05": 0.9876602116306491,
+   "diff": 0.0003643252583875878,
+   "key": "C154_correction_summary.json:marginal.equal_mass.C2_CMS.prob_P_ge_0p5"
+  },
+  "q025 C2_CMS": {
+   "run02": 0.6651607029869502,
+   "run05": 0.67093858544416,
+   "diff": 0.005777882457209782,
+   "key": "C154_correction_summary.json:marginal.equal_mass.C2_CMS.quantiles_025_16_50_84_975[0]"
+  },
+  "q16 C2_CMS": {
+   "run02": 0.9690335812883925,
+   "run05": 0.9698555186891336,
+   "diff": 0.0008219374007411018,
+   "key": "C154_correction_summary.json:marginal.equal_mass.C2_CMS.quantiles_025_16_50_84_975[1]"
+  },
+  "median C2_CMS": {
+   "run02": 0.9994821625833019,
+   "run05": 0.9995009226987766,
+   "diff": 1.8760115474636407e-05,
+   "key": "C154_correction_summary.json:marginal.equal_mass.C2_CMS.quantiles_025_16_50_84_975[2]"
+  },
+  "q84 C2_CMS": {
+   "run02": 0.9999864524685693,
+   "run05": 0.9999870662952569,
+   "diff": 6.138266875899134e-07,
+   "key": "C154_correction_summary.json:marginal.equal_mass.C2_CMS.quantiles_025_16_50_84_975[3]"
+  },
+  "q975 C2_CMS": {
+   "run02": 0.9999996054441977,
+   "run05": 0.9999996264716169,
+   "diff": 2.102741913923012e-08,
+   "key": "C154_correction_summary.json:marginal.equal_mass.C2_CMS.quantiles_025_16_50_84_975[4]"
+  },
+  "Pbar continuous C2_CMS": {
+   "run02": 0.9687505038008019,
+   "run05": 0.9692956767266199,
+   "diff": 0.000545172925818016,
+   "key": "C154_correction_summary.json:marginal.continuous.C2_CMS.Pbar"
+  },
+  "Pbar BKPV/FJ equal-mass C2_CMS": {
+   "run02": 0.9462834439025158,
+   "run05": 0.9470735974283262,
+   "diff": 0.0007901535258103554,
+   "key": "C154_correction_summary.json:marginal.equal_mass.C2_CMS.Pbar_BKPV_FJ"
+  },
+  "Pbar BKPV/FJ continuous C2_CMS": {
+   "run02": 0.9330069062345291,
+   "run05": 0.9339649620788711,
+   "diff": 0.0009580558443420539,
+   "key": "C154_correction_summary.json:marginal.continuous.C2_CMS.Pbar_BKPV_FJ"
+  },
+  "Pbar variant allorders_pole C2_CMS (v2 mixed conv.)": {
+   "run02": 0.9887017121575324,
+   "run05": 0.9889222312452004,
+   "diff": 0.00022051908766795858,
+   "key": "C154_summary.json:marginal.C2_CMS.Pbar_allorders_pole"
+  },
+  "Pbar variant T14a_central_correction C2_CMS (v2 mixed conv.)": {
+   "run02": 0.9696812180464094,
+   "run05": 0.9702106803904812,
+   "diff": 0.0005294623440718071,
+   "key": "C154_summary.json:marginal.C2_CMS.Pbar_T14a_central_correction"
+  },
+  "Pbar variant vi_r1e-4 C2_CMS (v2 mixed conv.)": {
+   "run02": 0.9548590637129885,
+   "run05": 0.9556335239294277,
+   "diff": 0.0007744602164392322,
+   "key": "C154_summary.json:marginal.C2_CMS.Pbar_vi_r1e-4"
+  },
+  "Pbar variant model_without_vi C2_CMS (v2 mixed conv.)": {
+   "run02": 0.968964080532897,
+   "run05": 0.9695071655681287,
+   "diff": 0.0005430850352317051,
+   "key": "C154_summary.json:marginal.C2_CMS.Pbar_model_without_vi"
+  },
+  "Pbar variant w0_multiplicative C2_CMS (v2 mixed conv.)": {
+   "run02": 0.9637226010233102,
+   "run05": 0.9642558532574839,
+   "diff": 0.0005332522341736645,
+   "key": "C154_summary.json:marginal.C2_CMS.Pbar_w0_multiplicative"
+  },
+  "progression + MC-pole interpretation 0.5": {
+   "run02": 0.6772700316083001,
+   "run05": 0.6798832348175611,
+   "diff": 0.0026132032092609503,
+   "key": "C154_summary.json:Pbar_progression_direct.+ MC-pole interpretation 0.5"
+  },
+  "progression + M_h 0.11": {
+   "run02": 0.7332022327550772,
+   "run05": 0.7363479214989909,
+   "diff": 0.0031456887439136327,
+   "key": "C154_summary.json:Pbar_progression_direct.+ M_h 0.11"
+  },
+  "progression + SM mapping pole 0.102": {
+   "run02": 0.729994870844252,
+   "run05": 0.7331160463116647,
+   "diff": 0.003121175467412751,
+   "key": "C154_summary.json:Pbar_progression_direct.+ SM mapping pole 0.102"
+  },
+  "progression + alpha_s 0.0009": {
+   "run02": 0.7340903374430151,
+   "run05": 0.7372426741927381,
+   "diff": 0.0031523367497230392,
+   "key": "C154_summary.json:Pbar_progression_direct.+ alpha_s 0.0009"
+  },
+  "progression + m_t exp 0.27": {
+   "run02": 0.7858641078001817,
+   "run05": 0.7892589301591848,
+   "diff": 0.0033948223590031246,
+   "key": "C154_summary.json:Pbar_progression_direct.+ m_t exp 0.27"
+  },
+  "progression + model incl. (vi) [primary]": {
+   "run02": 0.7271061513142757,
+   "run05": 0.7302153304270557,
+   "diff": 0.0031091791127799695,
+   "key": "C154_summary.json:Pbar_progression_direct.+ model incl. (vi) [primary]"
+  },
+  "progression + model without (vi)": {
+   "run02": 0.7244585196238226,
+   "run05": 0.7276111707069649,
+   "diff": 0.0031526510831423327,
+   "key": "C154_summary.json:Pbar_progression_direct.+ model without (vi)"
+  },
+  "progression curve only": {
+   "run02": 0.8393102660899739,
+   "run05": 0.8426193892637298,
+   "diff": 0.003309123173755868,
+   "key": "C154_summary.json:Pbar_progression_direct.curve only"
+  },
+  "Bayes D1_direct_pole flat_170_176 B_existence": {
+   "run02": 0.7271061513142758,
+   "run05": 0.730215330427056,
+   "diff": 0.0031091791127801915,
+   "key": "C154_correction_summary.json:bayes.D1_direct_pole.flat_170_176.B_existence"
+  },
+  "Bayes D1_direct_pole flat_170_176 B_selection": {
+   "run02": 1.4768515331950351,
+   "run05": 1.480255044409941,
+   "diff": 0.0034035112149057856,
+   "key": "C154_correction_summary.json:bayes.D1_direct_pole.flat_170_176.B_selection"
+  },
+  "Bayes D1_direct_pole flat_170_176 B_selection_max": {
+   "run02": 2.0311360734956816,
+   "run05": 2.0271486816693303,
+   "diff": -0.0039873918263513275,
+   "key": "C154_correction_summary.json:bayes.D1_direct_pole.flat_170_176.B_selection_max"
+  },
+  "Bayes D1_direct_pole flat_170_176 prior_mean_P1": {
+   "run02": 0.49233530586601837,
+   "run05": 0.4933037270736911,
+   "diff": 0.0009684212076727094,
+   "key": "C154_correction_summary.json:bayes.D1_direct_pole.flat_170_176.prior_mean_P1"
+  },
+  "Bayes D1_direct_pole flat_150_200 B_existence": {
+   "run02": 0.7271061513142758,
+   "run05": 0.730215330427056,
+   "diff": 0.0031091791127801915,
+   "key": "C154_correction_summary.json:bayes.D1_direct_pole.flat_150_200.B_existence"
+  },
+  "Bayes D1_direct_pole flat_150_200 B_selection": {
+   "run02": 1.5838323966616823,
+   "run05": 1.590202483130568,
+   "diff": 0.006370086468885594,
+   "key": "C154_correction_summary.json:bayes.D1_direct_pole.flat_150_200.B_selection"
+  },
+  "Bayes D1_direct_pole flat_150_200 B_selection_max": {
+   "run02": 2.178268460250043,
+   "run05": 2.1777171977484513,
+   "diff": -0.0005512625015917649,
+   "key": "C154_correction_summary.json:bayes.D1_direct_pole.flat_150_200.B_selection_max"
+  },
+  "Bayes D1_direct_pole flat_150_200 prior_mean_P1": {
+   "run02": 0.45908023654954366,
+   "run05": 0.4591964471024535,
+   "diff": 0.00011621055290983451,
+   "key": "C154_correction_summary.json:bayes.D1_direct_pole.flat_150_200.prior_mean_P1"
+  },
+  "Bayes D1_direct_pole flat_lambda_pm0p05 B_existence": {
+   "run02": 0.7263994239492079,
+   "run05": 0.7295131979183413,
+   "diff": 0.003113773969133482,
+   "key": "C154_correction_summary.json:bayes.D1_direct_pole.flat_lambda_pm0p05.B_existence"
+  },
+  "Bayes D1_direct_pole flat_lambda_pm0p05 B_selection": {
+   "run02": 1.1691321649150261,
+   "run05": 1.1734180668320322,
+   "diff": 0.004285901917006063,
+   "key": "C154_correction_summary.json:bayes.D1_direct_pole.flat_lambda_pm0p05.B_selection"
+  },
+  "Bayes D1_direct_pole flat_lambda_pm0p05 B_selection_max": {
+   "run02": 1.6094893888527857,
+   "run05": 1.6084946374930145,
+   "diff": -0.0009947513597712287,
+   "key": "C154_correction_summary.json:bayes.D1_direct_pole.flat_lambda_pm0p05.B_selection_max"
+  },
+  "Bayes D1_direct_pole flat_lambda_pm0p05 prior_mean_P1": {
+   "run02": 0.6213150623582436,
+   "run05": 0.6216993061031221,
+   "diff": 0.00038424374487844304,
+   "key": "C154_correction_summary.json:bayes.D1_direct_pole.flat_lambda_pm0p05.prior_mean_P1"
+  },
+  "Bayes D1b_direct_pole_interp flat_170_176 B_existence": {
+   "run02": 0.6772692576646916,
+   "run05": 0.679882467149442,
+   "diff": 0.0026132094847504117,
+   "key": "C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_170_176.B_existence"
+  },
+  "Bayes D1b_direct_pole_interp flat_170_176 B_selection": {
+   "run02": 1.3756260207123967,
+   "run05": 1.3782228469720832,
+   "diff": 0.002596826259686491,
+   "key": "C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_170_176.B_selection"
+  },
+  "Bayes D1b_direct_pole_interp flat_170_176 B_selection_max": {
+   "run02": 2.0311360734956816,
+   "run05": 2.0271486816693303,
+   "diff": -0.0039873918263513275,
+   "key": "C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_170_176.B_selection_max"
+  },
+  "Bayes D1b_direct_pole_interp flat_170_176 prior_mean_P1": {
+   "run02": 0.49233530586601837,
+   "run05": 0.4933037270736911,
+   "diff": 0.0009684212076727094,
+   "key": "C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_170_176.prior_mean_P1"
+  },
+  "Bayes D1b_direct_pole_interp flat_150_200 B_existence": {
+   "run02": 0.6772700316083003,
+   "run05": 0.6798832348175614,
+   "diff": 0.0026132032092610613,
+   "key": "C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_150_200.B_existence"
+  },
+  "Bayes D1b_direct_pole_interp flat_150_200 B_selection": {
+   "run02": 1.4752759489249103,
+   "run05": 1.4805934129230522,
+   "diff": 0.005317463998141925,
+   "key": "C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_150_200.B_selection"
+  },
+  "Bayes D1b_direct_pole_interp flat_150_200 B_selection_max": {
+   "run02": 2.178268460250043,
+   "run05": 2.1777171977484513,
+   "diff": -0.0005512625015917649,
+   "key": "C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_150_200.B_selection_max"
+  },
+  "Bayes D1b_direct_pole_interp flat_150_200 prior_mean_P1": {
+   "run02": 0.45908023654954366,
+   "run05": 0.4591964471024535,
+   "diff": 0.00011621055290983451,
+   "key": "C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_150_200.prior_mean_P1"
+  },
+  "Bayes D1b_direct_pole_interp flat_lambda_pm0p05 B_existence": {
+   "run02": 0.6747108246726767,
+   "run05": 0.6773339595413406,
+   "diff": 0.0026231348686638345,
+   "key": "C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_lambda_pm0p05.B_existence"
+  },
+  "Bayes D1b_direct_pole_interp flat_lambda_pm0p05 B_selection": {
+   "run02": 1.0859399128547855,
+   "run05": 1.0894880417141568,
+   "diff": 0.00354812885937128,
+   "key": "C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_lambda_pm0p05.B_selection"
+  },
+  "Bayes D1b_direct_pole_interp flat_lambda_pm0p05 B_selection_max": {
+   "run02": 1.6094893888527857,
+   "run05": 1.6084946374930145,
+   "diff": -0.0009947513597712287,
+   "key": "C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_lambda_pm0p05.B_selection_max"
+  },
+  "Bayes D1b_direct_pole_interp flat_lambda_pm0p05 prior_mean_P1": {
+   "run02": 0.6213150623582436,
+   "run05": 0.6216993061031221,
+   "diff": 0.00038424374487844304,
+   "key": "C154_correction_summary.json:bayes.D1b_direct_pole_interp.flat_lambda_pm0p05.prior_mean_P1"
+  },
+  "Bayes D1c_direct_interp_renorm flat_170_176 B_existence": {
+   "run02": 0.6756158930263032,
+   "run05": 0.6782100709378917,
+   "diff": 0.0025941779115884467,
+   "key": "C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_170_176.B_existence"
+  },
+  "Bayes D1c_direct_interp_renorm flat_170_176 B_selection": {
+   "run02": 1.372267812152724,
+   "run05": 1.37483265119661,
+   "diff": 0.002564839043885936,
+   "key": "C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_170_176.B_selection"
+  },
+  "Bayes D1c_direct_interp_renorm flat_170_176 B_selection_max": {
+   "run02": 2.0311360734956816,
+   "run05": 2.0271486816693303,
+   "diff": -0.0039873918263513275,
+   "key": "C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_170_176.B_selection_max"
+  },
+  "Bayes D1c_direct_interp_renorm flat_170_176 prior_mean_P1": {
+   "run02": 0.49233530586601837,
+   "run05": 0.4933037270736911,
+   "diff": 0.0009684212076727094,
+   "key": "C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_170_176.prior_mean_P1"
+  },
+  "Bayes D1c_direct_interp_renorm flat_150_200 B_existence": {
+   "run02": 0.6756170470126374,
+   "run05": 0.678211215678765,
+   "diff": 0.0025941686661276053,
+   "key": "C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_150_200.B_existence"
+  },
+  "Bayes D1c_direct_interp_renorm flat_150_200 B_selection": {
+   "run02": 1.4716753047148985,
+   "run05": 1.4769522280895306,
+   "diff": 0.0052769233746321476,
+   "key": "C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_150_200.B_selection"
+  },
+  "Bayes D1c_direct_interp_renorm flat_150_200 B_selection_max": {
+   "run02": 2.178268460250043,
+   "run05": 2.1777171977484513,
+   "diff": -0.0005512625015917649,
+   "key": "C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_150_200.B_selection_max"
+  },
+  "Bayes D1c_direct_interp_renorm flat_150_200 prior_mean_P1": {
+   "run02": 0.45908023654954366,
+   "run05": 0.4591964471024535,
+   "diff": 0.00011621055290983451,
+   "key": "C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_150_200.prior_mean_P1"
+  },
+  "Bayes D1c_direct_interp_renorm flat_lambda_pm0p05 B_existence": {
+   "run02": 0.6729832953656166,
+   "run05": 0.6755874894342864,
+   "diff": 0.0026041940686697407,
+   "key": "C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_lambda_pm0p05.B_existence"
+  },
+  "Bayes D1c_direct_interp_renorm flat_lambda_pm0p05 B_selection": {
+   "run02": 1.08315947276614,
+   "run05": 1.0866788539124181,
+   "diff": 0.0035193811462781444,
+   "key": "C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_lambda_pm0p05.B_selection"
+  },
+  "Bayes D1c_direct_interp_renorm flat_lambda_pm0p05 B_selection_max": {
+   "run02": 1.6094893888527857,
+   "run05": 1.6084946374930145,
+   "diff": -0.0009947513597712287,
+   "key": "C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_lambda_pm0p05.B_selection_max"
+  },
+  "Bayes D1c_direct_interp_renorm flat_lambda_pm0p05 prior_mean_P1": {
+   "run02": 0.6213150623582436,
+   "run05": 0.6216993061031221,
+   "diff": 0.00038424374487844304,
+   "key": "C154_correction_summary.json:bayes.D1c_direct_interp_renorm.flat_lambda_pm0p05.prior_mean_P1"
+  },
+  "Bayes D2_sigma_pole flat_170_176 B_existence": {
+   "run02": 0.8595231695214323,
+   "run05": 0.8610332907224714,
+   "diff": 0.0015101212010391052,
+   "key": "C154_correction_summary.json:bayes.D2_sigma_pole.flat_170_176.B_existence"
+  },
+  "Bayes D2_sigma_pole flat_170_176 B_selection": {
+   "run02": 1.7458085156203251,
+   "run05": 1.745442500161463,
+   "diff": -0.0003660154588620568,
+   "key": "C154_correction_summary.json:bayes.D2_sigma_pole.flat_170_176.B_selection"
+  },
+  "Bayes D2_sigma_pole flat_170_176 B_selection_max": {
+   "run02": 2.0311360734956816,
+   "run05": 2.0271486816693303,
+   "diff": -0.0039873918263513275,
+   "key": "C154_correction_summary.json:bayes.D2_sigma_pole.flat_170_176.B_selection_max"
+  },
+  "Bayes D2_sigma_pole flat_170_176 prior_mean_P1": {
+   "run02": 0.49233530586601837,
+   "run05": 0.4933037270736911,
+   "diff": 0.0009684212076727094,
+   "key": "C154_correction_summary.json:bayes.D2_sigma_pole.flat_170_176.prior_mean_P1"
+  },
+  "Bayes D2_sigma_pole flat_150_200 B_existence": {
+   "run02": 0.8595561044970743,
+   "run05": 0.8610658716480477,
+   "diff": 0.0015097671509733956,
+   "key": "C154_correction_summary.json:bayes.D2_sigma_pole.flat_150_200.B_existence"
+  },
+  "Bayes D2_sigma_pole flat_150_200 B_selection": {
+   "run02": 1.8723439522413672,
+   "run05": 1.875157957082214,
+   "diff": 0.0028140048408469287,
+   "key": "C154_correction_summary.json:bayes.D2_sigma_pole.flat_150_200.B_selection"
+  },
+  "Bayes D2_sigma_pole flat_150_200 B_selection_max": {
+   "run02": 2.178268460250043,
+   "run05": 2.1777171977484513,
+   "diff": -0.0005512625015917649,
+   "key": "C154_correction_summary.json:bayes.D2_sigma_pole.flat_150_200.B_selection_max"
+  },
+  "Bayes D2_sigma_pole flat_150_200 prior_mean_P1": {
+   "run02": 0.45908023654954366,
+   "run05": 0.4591964471024535,
+   "diff": 0.00011621055290983451,
+   "key": "C154_correction_summary.json:bayes.D2_sigma_pole.flat_150_200.prior_mean_P1"
+  },
+  "Bayes D2_sigma_pole flat_lambda_pm0p05 B_existence": {
+   "run02": 0.8578171885443855,
+   "run05": 0.8593404784827767,
+   "diff": 0.0015232899383912368,
+   "key": "C154_correction_summary.json:bayes.D2_sigma_pole.flat_lambda_pm0p05.B_existence"
+  },
+  "Bayes D2_sigma_pole flat_lambda_pm0p05 B_selection": {
+   "run02": 1.380647662537718,
+   "run05": 1.3822445514202275,
+   "diff": 0.0015968888825095284,
+   "key": "C154_correction_summary.json:bayes.D2_sigma_pole.flat_lambda_pm0p05.B_selection"
+  },
+  "Bayes D2_sigma_pole flat_lambda_pm0p05 B_selection_max": {
+   "run02": 1.6094893888527857,
+   "run05": 1.6084946374930145,
+   "diff": -0.0009947513597712287,
+   "key": "C154_correction_summary.json:bayes.D2_sigma_pole.flat_lambda_pm0p05.B_selection_max"
+  },
+  "Bayes D2_sigma_pole flat_lambda_pm0p05 prior_mean_P1": {
+   "run02": 0.6213150623582436,
+   "run05": 0.6216993061031221,
+   "diff": 0.00038424374487844304,
+   "key": "C154_correction_summary.json:bayes.D2_sigma_pole.flat_lambda_pm0p05.prior_mean_P1"
+  },
+  "Bayes D2b_sigma_pole_PDG2025 flat_170_176 B_existence": {
+   "run02": 0.7376637352661595,
+   "run05": 0.7397444847126627,
+   "diff": 0.0020807494465032716,
+   "key": "C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_170_176.B_existence"
+  },
+  "Bayes D2b_sigma_pole_PDG2025 flat_170_176 B_selection": {
+   "run02": 1.4982954228086651,
+   "run05": 1.4995720569574325,
+   "diff": 0.0012766341487673305,
+   "key": "C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_170_176.B_selection"
+  },
+  "Bayes D2b_sigma_pole_PDG2025 flat_170_176 B_selection_max": {
+   "run02": 2.0311360734956816,
+   "run05": 2.0271486816693303,
+   "diff": -0.0039873918263513275,
+   "key": "C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_170_176.B_selection_max"
+  },
+  "Bayes D2b_sigma_pole_PDG2025 flat_170_176 prior_mean_P1": {
+   "run02": 0.49233530586601837,
+   "run05": 0.4933037270736911,
+   "diff": 0.0009684212076727094,
+   "key": "C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_170_176.prior_mean_P1"
+  },
+  "Bayes D2b_sigma_pole_PDG2025 flat_150_200 B_existence": {
+   "run02": 0.7377437495359641,
+   "run05": 0.7398238632776957,
+   "diff": 0.0020801137417315596,
+   "key": "C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_150_200.B_existence"
+  },
+  "Bayes D2b_sigma_pole_PDG2025 flat_150_200 B_selection": {
+   "run02": 1.607003941360798,
+   "run05": 1.6111271503645368,
+   "diff": 0.004123209003738859,
+   "key": "C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_150_200.B_selection"
+  },
+  "Bayes D2b_sigma_pole_PDG2025 flat_150_200 B_selection_max": {
+   "run02": 2.178268460250043,
+   "run05": 2.1777171977484513,
+   "diff": -0.0005512625015917649,
+   "key": "C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_150_200.B_selection_max"
+  },
+  "Bayes D2b_sigma_pole_PDG2025 flat_150_200 prior_mean_P1": {
+   "run02": 0.45908023654954366,
+   "run05": 0.4591964471024535,
+   "diff": 0.00011621055290983451,
+   "key": "C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_150_200.prior_mean_P1"
+  },
+  "Bayes D2b_sigma_pole_PDG2025 flat_lambda_pm0p05 B_existence": {
+   "run02": 0.734619473628914,
+   "run05": 0.736713578704549,
+   "diff": 0.002094105075635011,
+   "key": "C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_lambda_pm0p05.B_existence"
+  },
+  "Bayes D2b_sigma_pole_PDG2025 flat_lambda_pm0p05 B_selection": {
+   "run02": 1.182362247650356,
+   "run05": 1.184999840714555,
+   "diff": 0.002637593064199084,
+   "key": "C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_lambda_pm0p05.B_selection"
+  },
+  "Bayes D2b_sigma_pole_PDG2025 flat_lambda_pm0p05 B_selection_max": {
+   "run02": 1.6094893888527857,
+   "run05": 1.6084946374930145,
+   "diff": -0.0009947513597712287,
+   "key": "C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_lambda_pm0p05.B_selection_max"
+  },
+  "Bayes D2b_sigma_pole_PDG2025 flat_lambda_pm0p05 prior_mean_P1": {
+   "run02": 0.6213150623582436,
+   "run05": 0.6216993061031221,
+   "diff": 0.00038424374487844304,
+   "key": "C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_lambda_pm0p05.prior_mean_P1"
+  },
+  "Bayes D3_MSR flat_170_176 B_existence": {
+   "run02": 0.49682625449829265,
+   "run05": 0.49984583097341,
+   "diff": 0.003019576475117358,
+   "key": "C154_correction_summary.json:bayes.D3_MSR.flat_170_176.B_existence"
+  },
+  "Bayes D3_MSR flat_170_176 B_selection": {
+   "run02": 1.0091008914167723,
+   "run05": 1.013241069282596,
+   "diff": 0.004140177865823658,
+   "key": "C154_correction_summary.json:bayes.D3_MSR.flat_170_176.B_selection"
+  },
+  "Bayes D3_MSR flat_170_176 B_selection_max": {
+   "run02": 2.0310941345798788,
+   "run05": 2.027107172844454,
+   "diff": -0.003986961735424899,
+   "key": "C154_correction_summary.json:bayes.D3_MSR.flat_170_176.B_selection_max"
+  },
+  "Bayes D3_MSR flat_170_176 prior_mean_P1": {
+   "run02": 0.4923454718197219,
+   "run05": 0.49331382839358784,
+   "diff": 0.0009683565738659583,
+   "key": "C154_correction_summary.json:bayes.D3_MSR.flat_170_176.prior_mean_P1"
+  },
+  "Bayes D3_MSR flat_150_200 B_existence": {
+   "run02": 0.4968262812174937,
+   "run05": 0.49984585727130093,
+   "diff": 0.0030195760538072047,
+   "key": "C154_correction_summary.json:bayes.D3_MSR.flat_150_200.B_existence"
+  },
+  "Bayes D3_MSR flat_150_200 B_selection": {
+   "run02": 1.0822181427734454,
+   "run05": 1.0885200461507973,
+   "diff": 0.006301903377351925,
+   "key": "C154_correction_summary.json:bayes.D3_MSR.flat_150_200.B_selection"
+  },
+  "Bayes D3_MSR flat_150_200 B_selection_max": {
+   "run02": 2.178262671856699,
+   "run05": 2.1777114490717526,
+   "diff": -0.000551222784946237,
+   "key": "C154_correction_summary.json:bayes.D3_MSR.flat_150_200.B_selection_max"
+  },
+  "Bayes D3_MSR flat_150_200 prior_mean_P1": {
+   "run02": 0.45908145648367743,
+   "run05": 0.45919765927953815,
+   "diff": 0.00011620279586072035,
+   "key": "C154_correction_summary.json:bayes.D3_MSR.flat_150_200.prior_mean_P1"
+  },
+  "Bayes D3_MSR flat_lambda_pm0p05 B_existence": {
+   "run02": 0.4939910499093844,
+   "run05": 0.4970120312225613,
+   "diff": 0.003020981313176907,
+   "key": "C154_correction_summary.json:bayes.D3_MSR.flat_lambda_pm0p05.B_existence"
+  },
+  "Bayes D3_MSR flat_lambda_pm0p05 B_selection": {
+   "run02": 0.7950721376098633,
+   "run05": 0.7994399980155761,
+   "diff": 0.004367860405712798,
+   "key": "C154_correction_summary.json:bayes.D3_MSR.flat_lambda_pm0p05.B_selection"
+  },
+  "Bayes D3_MSR flat_lambda_pm0p05 B_selection_max": {
+   "run02": 1.609486928469064,
+   "run05": 1.6084922452462482,
+   "diff": -0.0009946832228158176,
+   "key": "C154_correction_summary.json:bayes.D3_MSR.flat_lambda_pm0p05.B_selection_max"
+  },
+  "Bayes D3_MSR flat_lambda_pm0p05 prior_mean_P1": {
+   "run02": 0.6213160121475451,
+   "run05": 0.62170023073186,
+   "diff": 0.0003842185843149215,
+   "key": "C154_correction_summary.json:bayes.D3_MSR.flat_lambda_pm0p05.prior_mean_P1"
+  },
+  "Bayes D4_direct_as_mbar flat_170_176 B_existence": {
+   "run02": 0.7264075672931888,
+   "run05": 0.7295095599949187,
+   "diff": 0.00310199270172995,
+   "key": "C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_170_176.B_existence"
+  },
+  "Bayes D4_direct_as_mbar flat_170_176 B_selection": {
+   "run02": 1.4754021492436342,
+   "run05": 1.4787940617243014,
+   "diff": 0.0033919124806671697,
+   "key": "C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_170_176.B_selection"
+  },
+  "Bayes D4_direct_as_mbar flat_170_176 B_selection_max": {
+   "run02": 2.0310941345798788,
+   "run05": 2.027107172844454,
+   "diff": -0.003986961735424899,
+   "key": "C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_170_176.B_selection_max"
+  },
+  "Bayes D4_direct_as_mbar flat_170_176 prior_mean_P1": {
+   "run02": 0.4923454718197219,
+   "run05": 0.49331382839358784,
+   "diff": 0.0009683565738659583,
+   "key": "C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_170_176.prior_mean_P1"
+  },
+  "Bayes D4_direct_as_mbar flat_150_200 B_existence": {
+   "run02": 0.7264075672931889,
+   "run05": 0.7295095599949188,
+   "diff": 0.00310199270172995,
+   "key": "C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_150_200.B_existence"
+  },
+  "Bayes D4_direct_as_mbar flat_150_200 B_selection": {
+   "run02": 1.5823064883889864,
+   "run05": 1.5886613210082314,
+   "diff": 0.006354832619245077,
+   "key": "C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_150_200.B_selection"
+  },
+  "Bayes D4_direct_as_mbar flat_150_200 B_selection_max": {
+   "run02": 2.178262671856699,
+   "run05": 2.1777114490717526,
+   "diff": -0.000551222784946237,
+   "key": "C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_150_200.B_selection_max"
+  },
+  "Bayes D4_direct_as_mbar flat_150_200 prior_mean_P1": {
+   "run02": 0.45908145648367743,
+   "run05": 0.45919765927953815,
+   "diff": 0.00011620279586072035,
+   "key": "C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_150_200.prior_mean_P1"
+  },
+  "Bayes D4_direct_as_mbar flat_lambda_pm0p05 B_existence": {
+   "run02": 0.7256244227953201,
+   "run05": 0.7287314729317452,
+   "diff": 0.0031070501364250935,
+   "key": "C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_lambda_pm0p05.B_existence"
+  },
+  "Bayes D4_direct_as_mbar flat_lambda_pm0p05 B_selection": {
+   "run02": 1.1678830234669773,
+   "run05": 1.1721589230775884,
+   "diff": 0.004275899610611145,
+   "key": "C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_lambda_pm0p05.B_selection"
+  },
+  "Bayes D4_direct_as_mbar flat_lambda_pm0p05 B_selection_max": {
+   "run02": 1.609486928469064,
+   "run05": 1.6084922452462482,
+   "diff": -0.0009946832228158176,
+   "key": "C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_lambda_pm0p05.B_selection_max"
+  },
+  "Bayes D4_direct_as_mbar flat_lambda_pm0p05 prior_mean_P1": {
+   "run02": 0.6213160121475451,
+   "run05": 0.62170023073186,
+   "diff": 0.0003842185843149215,
+   "key": "C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_lambda_pm0p05.prior_mean_P1"
+  },
+  "Bayes D3b_msbar_sigma flat_170_176 B_existence": {
+   "run02": 0.6175740005336373,
+   "run05": 0.6187091491983033,
+   "diff": 0.0011351486646660192,
+   "key": "C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_170_176.B_existence"
+  },
+  "Bayes D3b_msbar_sigma flat_170_176 B_selection": {
+   "run02": 1.2543509301529014,
+   "run05": 1.25418975424437,
+   "diff": -0.00016117590853137465,
+   "key": "C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_170_176.B_selection"
+  },
+  "Bayes D3b_msbar_sigma flat_170_176 B_selection_max": {
+   "run02": 2.0310941345798788,
+   "run05": 2.027107172844454,
+   "diff": -0.003986961735424899,
+   "key": "C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_170_176.B_selection_max"
+  },
+  "Bayes D3b_msbar_sigma flat_170_176 prior_mean_P1": {
+   "run02": 0.4923454718197219,
+   "run05": 0.49331382839358784,
+   "diff": 0.0009683565738659583,
+   "key": "C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_170_176.prior_mean_P1"
+  },
+  "Bayes D3b_msbar_sigma flat_150_200 B_existence": {
+   "run02": 0.6186205789491213,
+   "run05": 0.6196193406018365,
+   "diff": 0.0009987616527152854,
+   "key": "C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_150_200.B_existence"
+  },
+  "Bayes D3b_msbar_sigma flat_150_200 B_selection": {
+   "run02": 1.3475181151672508,
+   "run05": 1.3493521320949093,
+   "diff": 0.0018340169276584994,
+   "key": "C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_150_200.B_selection"
+  },
+  "Bayes D3b_msbar_sigma flat_150_200 B_selection_max": {
+   "run02": 2.178262671856699,
+   "run05": 2.1777114490717526,
+   "diff": -0.000551222784946237,
+   "key": "C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_150_200.B_selection_max"
+  },
+  "Bayes D3b_msbar_sigma flat_150_200 prior_mean_P1": {
+   "run02": 0.45908145648367743,
+   "run05": 0.45919765927953815,
+   "diff": 0.00011620279586072035,
+   "key": "C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_150_200.prior_mean_P1"
+  },
+  "Bayes D3b_msbar_sigma flat_lambda_pm0p05 B_existence": {
+   "run02": 0.6080889485151765,
+   "run05": 0.6090979106471991,
+   "diff": 0.0010089621320226172,
+   "key": "C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_lambda_pm0p05.B_existence"
+  },
+  "Bayes D3b_msbar_sigma flat_lambda_pm0p05 B_selection": {
+   "run02": 0.9787112139816743,
+   "run05": 0.9797292658717119,
+   "diff": 0.0010180518900376745,
+   "key": "C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_lambda_pm0p05.B_selection"
+  },
+  "Bayes D3b_msbar_sigma flat_lambda_pm0p05 B_selection_max": {
+   "run02": 1.609486928469064,
+   "run05": 1.6084922452462482,
+   "diff": -0.0009946832228158176,
+   "key": "C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_lambda_pm0p05.B_selection_max"
+  },
+  "Bayes D3b_msbar_sigma flat_lambda_pm0p05 prior_mean_P1": {
+   "run02": 0.6213160121475451,
+   "run05": 0.62170023073186,
+   "diff": 0.0003842185843149215,
+   "key": "C154_correction_summary.json:bayes.D3b_msbar_sigma.flat_lambda_pm0p05.prior_mean_P1"
+  },
+  "Bayes C1_ATLAS_CMS flat_170_176 B_existence": {
+   "run02": 0.7597653668094176,
+   "run05": 0.76251504233155,
+   "diff": 0.0027496755221323443,
+   "key": "C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_170_176.B_existence"
+  },
+  "Bayes C1_ATLAS_CMS flat_170_176 B_selection": {
+   "run02": 1.5431868439192868,
+   "run05": 1.5457313628154352,
+   "diff": 0.0025445188961483733,
+   "key": "C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_170_176.B_selection"
+  },
+  "Bayes C1_ATLAS_CMS flat_170_176 B_selection_max": {
+   "run02": 2.0311360734956816,
+   "run05": 2.0271486816693303,
+   "diff": -0.0039873918263513275,
+   "key": "C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_170_176.B_selection_max"
+  },
+  "Bayes C1_ATLAS_CMS flat_170_176 prior_mean_P1": {
+   "run02": 0.49233530586601837,
+   "run05": 0.4933037270736911,
+   "diff": 0.0009684212076727094,
+   "key": "C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_170_176.prior_mean_P1"
+  },
+  "Bayes C1_ATLAS_CMS flat_150_200 B_existence": {
+   "run02": 0.7597653668094203,
+   "run05": 0.7625150423315527,
+   "diff": 0.0027496755221323443,
+   "key": "C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_150_200.B_existence"
+  },
+  "Bayes C1_ATLAS_CMS flat_150_200 B_selection": {
+   "run02": 1.654972935711265,
+   "run05": 1.6605421212273106,
+   "diff": 0.005569185516045572,
+   "key": "C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_150_200.B_selection"
+  },
+  "Bayes C1_ATLAS_CMS flat_150_200 B_selection_max": {
+   "run02": 2.178268460250043,
+   "run05": 2.1777171977484513,
+   "diff": -0.0005512625015917649,
+   "key": "C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_150_200.B_selection_max"
+  },
+  "Bayes C1_ATLAS_CMS flat_150_200 prior_mean_P1": {
+   "run02": 0.45908023654954366,
+   "run05": 0.4591964471024535,
+   "diff": 0.00011621055290983451,
+   "key": "C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_150_200.prior_mean_P1"
+  },
+  "Bayes C1_ATLAS_CMS flat_lambda_pm0p05 B_existence": {
+   "run02": 0.7588243408379143,
+   "run05": 0.7615806177886736,
+   "diff": 0.0027562769507593066,
+   "key": "C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_lambda_pm0p05.B_existence"
+  },
+  "Bayes C1_ATLAS_CMS flat_lambda_pm0p05 B_selection": {
+   "run02": 1.2213197245818326,
+   "run05": 1.2249983397316986,
+   "diff": 0.0036786151498660047,
+   "key": "C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_lambda_pm0p05.B_selection"
+  },
+  "Bayes C1_ATLAS_CMS flat_lambda_pm0p05 B_selection_max": {
+   "run02": 1.6094893888527857,
+   "run05": 1.6084946374930145,
+   "diff": -0.0009947513597712287,
+   "key": "C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_lambda_pm0p05.B_selection_max"
+  },
+  "Bayes C1_ATLAS_CMS flat_lambda_pm0p05 prior_mean_P1": {
+   "run02": 0.6213150623582436,
+   "run05": 0.6216993061031221,
+   "diff": 0.00038424374487844304,
+   "key": "C154_correction_summary.json:bayes.C1_ATLAS_CMS.flat_lambda_pm0p05.prior_mean_P1"
+  },
+  "Bayes C2_CMS flat_170_176 B_existence": {
+   "run02": 0.969142236427677,
+   "run05": 0.9696808154647942,
+   "diff": 0.0005385790371171817,
+   "key": "C154_correction_summary.json:bayes.C2_CMS.flat_170_176.B_existence"
+  },
+  "Bayes C2_CMS flat_170_176 B_selection": {
+   "run02": 1.9684597567565356,
+   "run05": 1.9656871867094987,
+   "diff": -0.002772570047036904,
+   "key": "C154_correction_summary.json:bayes.C2_CMS.flat_170_176.B_selection"
+  },
+  "Bayes C2_CMS flat_170_176 B_selection_max": {
+   "run02": 2.0311360734956816,
+   "run05": 2.0271486816693303,
+   "diff": -0.0039873918263513275,
+   "key": "C154_correction_summary.json:bayes.C2_CMS.flat_170_176.B_selection_max"
+  },
+  "Bayes C2_CMS flat_170_176 prior_mean_P1": {
+   "run02": 0.49233530586601837,
+   "run05": 0.4933037270736911,
+   "diff": 0.0009684212076727094,
+   "key": "C154_correction_summary.json:bayes.C2_CMS.flat_170_176.prior_mean_P1"
+  },
+  "Bayes C2_CMS flat_150_200 B_existence": {
+   "run02": 0.9691422634180276,
+   "run05": 0.9696808419840672,
+   "diff": 0.0005385785660396714,
+   "key": "C154_correction_summary.json:bayes.C2_CMS.flat_150_200.B_existence"
+  },
+  "Bayes C2_CMS flat_150_200 B_selection": {
+   "run02": 2.1110520258988283,
+   "run05": 2.111690645915902,
+   "diff": 0.0006386200170735989,
+   "key": "C154_correction_summary.json:bayes.C2_CMS.flat_150_200.B_selection"
+  },
+  "Bayes C2_CMS flat_150_200 B_selection_max": {
+   "run02": 2.178268460250043,
+   "run05": 2.1777171977484513,
+   "diff": -0.0005512625015917649,
+   "key": "C154_correction_summary.json:bayes.C2_CMS.flat_150_200.B_selection_max"
+  },
+  "Bayes C2_CMS flat_150_200 prior_mean_P1": {
+   "run02": 0.45908023654954366,
+   "run05": 0.4591964471024535,
+   "diff": 0.00011621055290983451,
+   "key": "C154_correction_summary.json:bayes.C2_CMS.flat_150_200.prior_mean_P1"
+  },
+  "Bayes C2_CMS flat_lambda_pm0p05 B_existence": {
+   "run02": 0.9688814604413215,
+   "run05": 0.9694239778726699,
+   "diff": 0.000542517431348366,
+   "key": "C154_correction_summary.json:bayes.C2_CMS.flat_lambda_pm0p05.B_existence"
+  },
+  "Bayes C2_CMS flat_lambda_pm0p05 B_selection": {
+   "run02": 1.559404429636497,
+   "run05": 1.5593132698653362,
+   "diff": -9.11597711608092e-05,
+   "key": "C154_correction_summary.json:bayes.C2_CMS.flat_lambda_pm0p05.B_selection"
+  },
+  "Bayes C2_CMS flat_lambda_pm0p05 B_selection_max": {
+   "run02": 1.6094893888527857,
+   "run05": 1.6084946374930145,
+   "diff": -0.0009947513597712287,
+   "key": "C154_correction_summary.json:bayes.C2_CMS.flat_lambda_pm0p05.B_selection_max"
+  },
+  "Bayes C2_CMS flat_lambda_pm0p05 prior_mean_P1": {
+   "run02": 0.6213150623582436,
+   "run05": 0.6216993061031221,
+   "diff": 0.00038424374487844304,
+   "key": "C154_correction_summary.json:bayes.C2_CMS.flat_lambda_pm0p05.prior_mean_P1"
+  },
+  "exclusion 0.1171 curve_P0.1": {
+   "run02": 173.06244626317414,
+   "run05": 173.0691099703865,
+   "diff": 0.006663707212368308,
+   "key": "C154_summary.json:exclusion_mt.0.1171.curve_P0.1"
+  },
+  "exclusion 0.1171 theory95_P0.1": {
+   "run02": 173.33240239290697,
+   "run05": 173.33907324600503,
+   "diff": 0.006670853098057705,
+   "key": "C154_summary.json:exclusion_mt.0.1171.theory95_P0.1"
+  },
+  "exclusion 0.1171 meas0p27_95_P0.1": {
+   "run02": 173.83419849212336,
+   "run05": 173.84098798090508,
+   "diff": 0.006789488781720365,
+   "key": "C154_summary.json:exclusion_mt.0.1171.meas0p27_95_P0.1"
+  },
+  "exclusion 0.1171 meas_interp_95_P0.1": {
+   "run02": 174.18869870233868,
+   "run05": 174.19546440708658,
+   "diff": 0.006765704747891732,
+   "key": "C154_summary.json:exclusion_mt.0.1171.meas_interp_95_P0.1"
+  },
+  "exclusion 0.1171 curve_P0.05": {
+   "run02": 173.19295761812458,
+   "run05": 173.1999094359689,
+   "diff": 0.006951817844310426,
+   "key": "C154_summary.json:exclusion_mt.0.1171.curve_P0.05"
+  },
+  "exclusion 0.1171 theory95_P0.05": {
+   "run02": 173.46291795899273,
+   "run05": 173.46986588700975,
+   "diff": 0.006947928017012828,
+   "key": "C154_summary.json:exclusion_mt.0.1171.theory95_P0.05"
+  },
+  "exclusion 0.1171 meas0p27_95_P0.05": {
+   "run02": 173.96492539524576,
+   "run05": 173.97204149597465,
+   "diff": 0.007116100728893571,
+   "key": "C154_summary.json:exclusion_mt.0.1171.meas0p27_95_P0.05"
+  },
+  "exclusion 0.1171 meas_interp_95_P0.05": {
+   "run02": 174.31937470647105,
+   "run05": 174.3264575996323,
+   "diff": 0.007082893161253878,
+   "key": "C154_summary.json:exclusion_mt.0.1171.meas_interp_95_P0.05"
+  },
+  "exclusion 0.1180 curve_P0.1": {
+   "run02": 173.4116861772546,
+   "run05": 173.41836046768856,
+   "diff": 0.0066742904339491815,
+   "key": "C154_summary.json:exclusion_mt.0.1180.curve_P0.1"
+  },
+  "exclusion 0.1180 theory95_P0.1": {
+   "run02": 173.6816491977038,
+   "run05": 173.68832291154413,
+   "diff": 0.006673713840342543,
+   "key": "C154_summary.json:exclusion_mt.0.1180.theory95_P0.1"
+  },
+  "exclusion 0.1180 meas0p27_95_P0.1": {
+   "run02": 174.18359437102447,
+   "run05": 174.1907432044216,
+   "diff": 0.007148833397138787,
+   "key": "C154_summary.json:exclusion_mt.0.1180.meas0p27_95_P0.1"
+  },
+  "exclusion 0.1180 meas_interp_95_P0.1": {
+   "run02": 174.53797590830385,
+   "run05": 174.5449942839788,
+   "diff": 0.007018375674959998,
+   "key": "C154_summary.json:exclusion_mt.0.1180.meas_interp_95_P0.1"
+  },
+  "exclusion 0.1180 curve_P0.05": {
+   "run02": 173.54241016845512,
+   "run05": 173.5494081298959,
+   "diff": 0.006997961440788458,
+   "key": "C154_summary.json:exclusion_mt.0.1180.curve_P0.05"
+  },
+  "exclusion 0.1180 theory95_P0.05": {
+   "run02": 173.8123666133653,
+   "run05": 173.8193699933327,
+   "diff": 0.007003379967414958,
+   "key": "C154_summary.json:exclusion_mt.0.1180.theory95_P0.05"
+  },
+  "exclusion 0.1180 meas0p27_95_P0.05": {
+   "run02": 174.31438752786264,
+   "run05": 174.32187893034416,
+   "diff": 0.007491402481520026,
+   "key": "C154_summary.json:exclusion_mt.0.1180.meas0p27_95_P0.05"
+  },
+  "exclusion 0.1180 meas_interp_95_P0.05": {
+   "run02": 174.6687428928488,
+   "run05": 174.6760974922671,
+   "diff": 0.007354599418306407,
+   "key": "C154_summary.json:exclusion_mt.0.1180.meas_interp_95_P0.05"
+  },
+  "exclusion 0.1189 curve_P0.1": {
+   "run02": 173.76126723822725,
+   "run05": 173.76828643712636,
+   "diff": 0.0070191988991155085,
+   "key": "C154_summary.json:exclusion_mt.0.1189.curve_P0.1"
+  },
+  "exclusion 0.1189 theory95_P0.1": {
+   "run02": 174.03123042757264,
+   "run05": 174.03824849031528,
+   "diff": 0.00701806274264527,
+   "key": "C154_summary.json:exclusion_mt.0.1189.theory95_P0.1"
+  },
+  "exclusion 0.1189 meas0p27_95_P0.1": {
+   "run02": 174.5330627522395,
+   "run05": 174.5408011948266,
+   "diff": 0.007738442587111649,
+   "key": "C154_summary.json:exclusion_mt.0.1189.meas0p27_95_P0.1"
+  },
+  "exclusion 0.1189 meas_interp_95_P0.1": {
+   "run02": 174.8874210463871,
+   "run05": 174.89494178679487,
+   "diff": 0.007520740407784388,
+   "key": "C154_summary.json:exclusion_mt.0.1189.meas_interp_95_P0.1"
+  },
+  "exclusion 0.1189 curve_P0.05": {
+   "run02": 173.89207165229797,
+   "run05": 173.89943707782376,
+   "diff": 0.00736542552579067,
+   "key": "C154_summary.json:exclusion_mt.0.1189.curve_P0.05"
+  },
+  "exclusion 0.1189 theory95_P0.05": {
+   "run02": 174.1620321799929,
+   "run05": 174.16939874306252,
+   "diff": 0.0073665630696098106,
+   "key": "C154_summary.json:exclusion_mt.0.1189.theory95_P0.05"
+  },
+  "exclusion 0.1189 meas0p27_95_P0.05": {
+   "run02": 174.6638667851577,
+   "run05": 174.67195118711226,
+   "diff": 0.008084401954562281,
+   "key": "C154_summary.json:exclusion_mt.0.1189.meas0p27_95_P0.05"
+  },
+  "exclusion 0.1189 meas_interp_95_P0.05": {
+   "run02": 175.0182204127505,
+   "run05": 175.0260857448199,
+   "diff": 0.00786533206940021,
+   "key": "C154_summary.json:exclusion_mt.0.1189.meas_interp_95_P0.05"
+  },
+  "future now_direct sigma_tot": {
+   "run02": 0.4624027886059109,
+   "run05": 0.4624881452840158,
+   "diff": 8.535667810488645e-05,
+   "key": "C154_summary.json:future.now_direct.sigma_tot"
+  },
+  "future now_direct separation_172p6_173p3": {
+   "run02": 1.5138317009514934,
+   "run05": 1.5135523086113423,
+   "diff": -0.0002793923401511744,
+   "key": "C154_summary.json:future.now_direct.separation_172p6_173p3"
+  },
+  "future now_direct mhat_surv95": {
+   "run02": 172.18741781651286,
+   "run05": 172.1932622910808,
+   "diff": 0.005844474567936686,
+   "key": "C154_summary.json:future.now_direct.mhat_surv95"
+  },
+  "future now_direct mhat_excl_P0p1": {
+   "run02": 174.18359437102447,
+   "run05": 174.1907432044216,
+   "diff": 0.007148833397138787,
+   "key": "C154_summary.json:future.now_direct.mhat_excl_P0p1"
+  },
+  "future now_direct mhat_excl_P0p05": {
+   "run02": 174.31438752786264,
+   "run05": 174.32187893034416,
+   "diff": 0.007491402481520026,
+   "key": "C154_summary.json:future.now_direct.mhat_excl_P0p05"
+  },
+  "future now_direct truth 172.6 Pbar": {
+   "run02": 0.7271061513142757,
+   "run05": 0.7302153304270557,
+   "diff": 0.0031091791127799695,
+   "key": "C154_summary.json:future.now_direct.truth.172.6.Pbar"
+  },
+  "future now_direct truth 172.6 prob_P_ge_0p5": {
+   "run02": 0.7740466664615043,
+   "run05": 0.7777745494635326,
+   "diff": 0.0037278830020283094,
+   "key": "C154_summary.json:future.now_direct.truth.172.6.prob_P_ge_0p5"
+  },
+  "future now_direct truth 172.6 prob_P_le_0p1": {
+   "run02": 0.04394842859561676,
+   "run05": 0.042630008429802246,
+   "diff": -0.0013184201658145156,
+   "key": "C154_summary.json:future.now_direct.truth.172.6.prob_P_le_0p1"
+  },
+  "future now_direct truth 172.6 power_surv": {
+   "run02": 0.06324606999335629,
+   "run05": 0.06597764775131532,
+   "diff": 0.002731577757959028,
+   "key": "C154_summary.json:future.now_direct.truth.172.6.power_surv"
+  },
+  "future now_direct truth 172.6 power_excl": {
+   "run02": 2.243440433424837e-09,
+   "run05": 1.9118902017112305e-09,
+   "diff": -3.3155023171360654e-10,
+   "key": "C154_summary.json:future.now_direct.truth.172.6.power_excl"
+  },
+  "future now_direct truth 173.3 Pbar": {
+   "run02": 0.27710642794741286,
+   "run05": 0.280601379795722,
+   "diff": 0.0034949518483091135,
+   "key": "C154_summary.json:future.now_direct.truth.173.3.Pbar"
+  },
+  "future now_direct truth 173.3 prob_P_ge_0p5": {
+   "run02": 0.22313340129372905,
+   "run05": 0.22695092980642087,
+   "diff": 0.00381752851269182,
+   "key": "C154_summary.json:future.now_direct.truth.173.3.prob_P_ge_0p5"
+  },
+  "future now_direct truth 173.3 prob_P_le_0p1": {
+   "run02": 0.4109113867583709,
+   "run05": 0.40538917081320225,
+   "diff": -0.0055222159451686625,
+   "key": "C154_summary.json:future.now_direct.truth.173.3.prob_P_le_0p1"
+  },
+  "future now_direct truth 173.3 power_surv": {
+   "run02": 1.8888220223341004e-05,
+   "run05": 2.0744392913110617e-05,
+   "diff": 1.856172689769613e-06,
+   "key": "C154_summary.json:future.now_direct.truth.173.3.power_surv"
+  },
+  "future now_direct truth 173.3 power_excl": {
+   "run02": 0.0005328691049559797,
+   "run05": 0.00048506504211220935,
+   "diff": -4.780406284377037e-05,
+   "key": "C154_summary.json:future.now_direct.truth.173.3.power_excl"
+  },
+  "future now_direct_interp sigma_tot": {
+   "run02": 0.6810406294124622,
+   "run05": 0.6810985864970275,
+   "diff": 5.795708456524107e-05,
+   "key": "C154_summary.json:future.now_direct_interp.sigma_tot"
+  },
+  "future now_direct_interp separation_172p6_173p3": {
+   "run02": 1.027838824541047,
+   "run05": 1.0277513621048382,
+   "diff": -8.746243620882943e-05,
+   "key": "C154_summary.json:future.now_direct_interp.separation_172p6_173p3"
+  },
+  "future now_direct_interp mhat_surv95": {
+   "run02": 171.82771696478625,
+   "run05": 171.83353699173037,
+   "diff": 0.005820026944121537,
+   "key": "C154_summary.json:future.now_direct_interp.mhat_surv95"
+  },
+  "future now_direct_interp mhat_excl_P0p1": {
+   "run02": 174.53797590830385,
+   "run05": 174.5449942839788,
+   "diff": 0.007018375674959998,
+   "key": "C154_summary.json:future.now_direct_interp.mhat_excl_P0p1"
+  },
+  "future now_direct_interp mhat_excl_P0p05": {
+   "run02": 174.6687428928485,
+   "run05": 174.67609749226676,
+   "diff": 0.007354599418249563,
+   "key": "C154_summary.json:future.now_direct_interp.mhat_excl_P0p05"
+  },
+  "future now_direct_interp truth 172.6 Pbar": {
+   "run02": 0.6772700316083001,
+   "run05": 0.6798832348175611,
+   "diff": 0.0026132032092609503,
+   "key": "C154_summary.json:future.now_direct_interp.truth.172.6.Pbar"
+  },
+  "future now_direct_interp truth 172.6 prob_P_ge_0p5": {
+   "run02": 0.6952343036575179,
+   "run05": 0.6982102535656745,
+   "diff": 0.0029759499081565277,
+   "key": "C154_summary.json:future.now_direct_interp.truth.172.6.prob_P_ge_0p5"
+  },
+  "future now_direct_interp truth 172.6 prob_P_le_0p1": {
+   "run02": 0.12056344124681595,
+   "run05": 0.11860727084143297,
+   "diff": -0.0019561704053829843,
+   "key": "C154_summary.json:future.now_direct_interp.truth.172.6.prob_P_le_0p1"
+  },
+  "future now_direct_interp truth 172.6 power_surv": {
+   "run02": 0.08706188367782602,
+   "run05": 0.08869580805391308,
+   "diff": 0.0016339243760870592,
+   "key": "C154_summary.json:future.now_direct_interp.truth.172.6.power_surv"
+  },
+  "future now_direct_interp truth 172.6 power_excl": {
+   "run02": 0.0003242539913422826,
+   "run05": 0.0003098733021924538,
+   "diff": -1.4380689149828818e-05,
+   "key": "C154_summary.json:future.now_direct_interp.truth.172.6.power_excl"
+  },
+  "future now_direct_interp truth 173.3 Pbar": {
+   "run02": 0.3266187294514211,
+   "run05": 0.32942509572457546,
+   "diff": 0.002806366273154337,
+   "key": "C154_summary.json:future.now_direct_interp.truth.173.3.Pbar"
+  },
+  "future now_direct_interp truth 173.3 prob_P_ge_0p5": {
+   "run02": 0.3025377859749512,
+   "run05": 0.3055471714658695,
+   "diff": 0.003009385490918337,
+   "key": "C154_summary.json:future.now_direct_interp.truth.173.3.prob_P_ge_0p5"
+  },
+  "future now_direct_interp truth 173.3 prob_P_le_0p1": {
+   "run02": 0.4385320035482947,
+   "run05": 0.43465261518004716,
+   "diff": -0.003879388368247527,
+   "key": "C154_summary.json:future.now_direct_interp.truth.173.3.prob_P_le_0p1"
+  },
+  "future now_direct_interp truth 173.3 power_surv": {
+   "run02": 0.004785714733044944,
+   "run05": 0.004930047875861569,
+   "diff": 0.0001443331428166248,
+   "key": "C154_summary.json:future.now_direct_interp.truth.173.3.power_surv"
+  },
+  "future now_direct_interp truth 173.3 power_excl": {
+   "run02": 0.014680572894775312,
+   "run05": 0.014227546916807943,
+   "diff": -0.00045302597796736954,
+   "key": "C154_summary.json:future.now_direct_interp.truth.173.3.power_excl"
+  },
+  "future HLLHC_direct sigma_tot": {
+   "run02": 0.4222715102005623,
+   "run05": 0.4223649771758896,
+   "diff": 9.346697532730541e-05,
+   "key": "C154_summary.json:future.HLLHC_direct.sigma_tot"
+  },
+  "future HLLHC_direct separation_172p6_173p3": {
+   "run02": 1.6577012256108103,
+   "run05": 1.6573343857260496,
+   "diff": -0.00036683988476071683,
+   "key": "C154_summary.json:future.HLLHC_direct.separation_172p6_173p3"
+  },
+  "future HLLHC_direct mhat_surv95": {
+   "run02": 172.25345425195076,
+   "run05": 172.2593110127852,
+   "diff": 0.005856760834433317,
+   "key": "C154_summary.json:future.HLLHC_direct.mhat_surv95"
+  },
+  "future HLLHC_direct mhat_excl_P0p1": {
+   "run02": 174.1191094069347,
+   "run05": 174.12630070555903,
+   "diff": 0.007191298624320552,
+   "key": "C154_summary.json:future.HLLHC_direct.mhat_excl_P0p1"
+  },
+  "future HLLHC_direct mhat_excl_P0p05": {
+   "run02": 174.24990775486347,
+   "run05": 174.2574431795545,
+   "diff": 0.007535424691042181,
+   "key": "C154_summary.json:future.HLLHC_direct.mhat_excl_P0p05"
+  },
+  "future HLLHC_direct truth 172.6 Pbar": {
+   "run02": 0.7382425928244699,
+   "run05": 0.74143932048431,
+   "diff": 0.0031967276598401373,
+   "key": "C154_summary.json:future.HLLHC_direct.truth.172.6.Pbar"
+  },
+  "future HLLHC_direct truth 172.6 prob_P_ge_0p5": {
+   "run02": 0.794957968430488,
+   "run05": 0.7988075592030263,
+   "diff": 0.003849590772538214,
+   "key": "C154_summary.json:future.HLLHC_direct.truth.172.6.prob_P_ge_0p5"
+  },
+  "future HLLHC_direct truth 172.6 prob_P_le_0p1": {
+   "run02": 0.0313677403725221,
+   "run05": 0.030271246002463892,
+   "diff": -0.0010964943700582097,
+   "key": "C154_summary.json:future.HLLHC_direct.truth.172.6.prob_P_le_0p1"
+  },
+  "future HLLHC_direct truth 172.6 power_surv": {
+   "run02": 0.041571946860175596,
+   "run05": 0.044242417202949635,
+   "diff": 0.0026704703427740395,
+   "key": "C154_summary.json:future.HLLHC_direct.truth.172.6.power_surv"
+  },
+  "future HLLHC_direct truth 172.6 power_excl": {
+   "run02": 1.532107773982716e-14,
+   "run05": 1.1546319456101628e-14,
+   "diff": -3.774758283725532e-15,
+   "key": "C154_summary.json:future.HLLHC_direct.truth.172.6.power_excl"
+  },
+  "future HLLHC_direct truth 173.3 Pbar": {
+   "run02": 0.26609100569374505,
+   "run05": 0.2697262059450868,
+   "diff": 0.0036352002513417303,
+   "key": "C154_summary.json:future.HLLHC_direct.truth.173.3.Pbar"
+  },
+  "future HLLHC_direct truth 173.3 prob_P_ge_0p5": {
+   "run02": 0.20213001520057514,
+   "run05": 0.20609011635920113,
+   "diff": 0.003960101158625995,
+   "key": "C154_summary.json:future.HLLHC_direct.truth.173.3.prob_P_ge_0p5"
+  },
+  "future HLLHC_direct truth 173.3 prob_P_le_0p1": {
+   "run02": 0.40301418124534716,
+   "run05": 0.39704135816493524,
+   "diff": -0.005972823080411915,
+   "key": "C154_summary.json:future.HLLHC_direct.truth.173.3.prob_P_le_0p1"
+  },
+  "future HLLHC_direct truth 173.3 power_surv": {
+   "run02": 8.351288237270987e-08,
+   "run05": 9.78138678942879e-08,
+   "diff": 1.4300985521578023e-08,
+   "key": "C154_summary.json:future.HLLHC_direct.truth.173.3.power_surv"
+  },
+  "future HLLHC_direct truth 173.3 power_excl": {
+   "run02": 2.105863524692886e-05,
+   "run05": 1.8019907975119764e-05,
+   "diff": -3.038727271809094e-06,
+   "key": "C154_summary.json:future.HLLHC_direct.truth.173.3.power_excl"
+  },
+  "future HLLHC_direct_interp sigma_tot": {
+   "run02": 0.6544564373027923,
+   "run05": 0.6545167484066317,
+   "diff": 6.03111038393056e-05,
+   "key": "C154_summary.json:future.HLLHC_direct_interp.sigma_tot"
+  },
+  "future HLLHC_direct_interp separation_172p6_173p3": {
+   "run02": 1.0695899071371442,
+   "run05": 1.0694913486997752,
+   "diff": -9.85584373689452e-05,
+   "key": "C154_summary.json:future.HLLHC_direct_interp.separation_172p6_173p3"
+  },
+  "future HLLHC_direct_interp mhat_surv95": {
+   "run02": 171.87144944778913,
+   "run05": 171.87727053473722,
+   "diff": 0.005821086948088805,
+   "key": "C154_summary.json:future.HLLHC_direct_interp.mhat_surv95"
+  },
+  "future HLLHC_direct_interp mhat_excl_P0p1": {
+   "run02": 174.4947039573813,
+   "run05": 174.50173264916953,
+   "diff": 0.007028691788235619,
+   "key": "C154_summary.json:future.HLLHC_direct_interp.mhat_excl_P0p1"
+  },
+  "future HLLHC_direct_interp mhat_excl_P0p05": {
+   "run02": 174.625473582767,
+   "run05": 174.6328390918901,
+   "diff": 0.00736550912310463,
+   "key": "C154_summary.json:future.HLLHC_direct_interp.mhat_excl_P0p05"
+  },
+  "future HLLHC_direct_interp truth 172.6 Pbar": {
+   "run02": 0.6824224819913811,
+   "run05": 0.6850936157272094,
+   "diff": 0.0026711337358282794,
+   "key": "C154_summary.json:future.HLLHC_direct_interp.truth.172.6.Pbar"
+  },
+  "future HLLHC_direct_interp truth 172.6 prob_P_ge_0p5": {
+   "run02": 0.7024596612810927,
+   "run05": 0.7055206930650394,
+   "diff": 0.003061031783946677,
+   "key": "C154_summary.json:future.HLLHC_direct_interp.truth.172.6.prob_P_ge_0p5"
+  },
+  "future HLLHC_direct_interp truth 172.6 prob_P_le_0p1": {
+   "run02": 0.1114646702807891,
+   "run05": 0.10954240034981244,
+   "diff": -0.001922269930976661,
+   "key": "C154_summary.json:future.HLLHC_direct_interp.truth.172.6.prob_P_le_0p1"
+  },
+  "future HLLHC_direct_interp truth 172.6 power_surv": {
+   "run02": 0.08804628005464604,
+   "run05": 0.08978585168438219,
+   "diff": 0.0017395716297361474,
+   "key": "C154_summary.json:future.HLLHC_direct_interp.truth.172.6.power_surv"
+  },
+  "future HLLHC_direct_interp truth 172.6 power_excl": {
+   "run02": 0.0002170975869457692,
+   "run05": 0.0002066605012399636,
+   "diff": -1.0437085705805593e-05,
+   "key": "C154_summary.json:future.HLLHC_direct_interp.truth.172.6.power_excl"
+  },
+  "future HLLHC_direct_interp truth 173.3 Pbar": {
+   "run02": 0.32154468083183796,
+   "run05": 0.3244257033193684,
+   "diff": 0.002881022487530416,
+   "key": "C154_summary.json:future.HLLHC_direct_interp.truth.173.3.Pbar"
+  },
+  "future HLLHC_direct_interp truth 173.3 prob_P_ge_0p5": {
+   "run02": 0.29524589700349174,
+   "run05": 0.2983441341066169,
+   "diff": 0.0030982371031251787,
+   "key": "C154_summary.json:future.HLLHC_direct_interp.truth.173.3.prob_P_ge_0p5"
+  },
+  "future HLLHC_direct_interp truth 173.3 prob_P_le_0p1": {
+   "run02": 0.4361087278444268,
+   "run05": 0.43208164412354133,
+   "diff": -0.004027083720885449,
+   "key": "C154_summary.json:future.HLLHC_direct_interp.truth.173.3.prob_P_le_0p1"
+  },
+  "future HLLHC_direct_interp truth 173.3 power_surv": {
+   "run02": 0.003991927951494277,
+   "run05": 0.004121604987116512,
+   "diff": 0.00012967703562223511,
+   "key": "C154_summary.json:future.HLLHC_direct_interp.truth.173.3.power_surv"
+  },
+  "future HLLHC_direct_interp truth 173.3 power_excl": {
+   "run02": 0.013260054450557779,
+   "run05": 0.012821979064788325,
+   "diff": -0.00043807538576945415,
+   "key": "C154_summary.json:future.HLLHC_direct_interp.truth.173.3.power_excl"
+  },
+  "future HLLHC_direct_as_permille sigma_tot": {
+   "run02": 0.2429632287516724,
+   "run05": 0.24296611698565287,
+   "diff": 2.888233980480326e-06,
+   "key": "C154_summary.json:future.HLLHC_direct_as_permille.sigma_tot"
+  },
+  "future HLLHC_direct_as_permille separation_172p6_173p3": {
+   "run02": 2.881094409209779,
+   "run05": 2.8810601605051573,
+   "diff": -3.42487046216533e-05,
+   "key": "C154_summary.json:future.HLLHC_direct_as_permille.separation_172p6_173p3"
+  },
+  "future HLLHC_direct_as_permille mhat_surv95": {
+   "run02": 172.54758987605894,
+   "run05": 172.5533102830919,
+   "diff": 0.00572040703295329,
+   "key": "C154_summary.json:future.HLLHC_direct_as_permille.mhat_surv95"
+  },
+  "future HLLHC_direct_as_permille mhat_excl_P0p1": {
+   "run02": 173.83447840633448,
+   "run05": 173.84116277467143,
+   "diff": 0.00668436833694841,
+   "key": "C154_summary.json:future.HLLHC_direct_as_permille.mhat_excl_P0p1"
+  },
+  "future HLLHC_direct_as_permille mhat_excl_P0p05": {
+   "run02": 173.96520692732025,
+   "run05": 173.97221604644017,
+   "diff": 0.007009119119913976,
+   "key": "C154_summary.json:future.HLLHC_direct_as_permille.mhat_excl_P0p05"
+  },
+  "future HLLHC_direct_as_permille truth 172.6 Pbar": {
+   "run02": 0.7927466406626357,
+   "run05": 0.7962015731908367,
+   "diff": 0.00345493252820106,
+   "key": "C154_summary.json:future.HLLHC_direct_as_permille.truth.172.6.Pbar"
+  },
+  "future HLLHC_direct_as_permille truth 172.6 prob_P_ge_0p5": {
+   "run02": 0.9236144413914698,
+   "run05": 0.9269282711347941,
+   "diff": 0.0033138297433243924,
+   "key": "C154_summary.json:future.HLLHC_direct_as_permille.truth.172.6.prob_P_ge_0p5"
+  },
+  "future HLLHC_direct_as_permille truth 172.6 prob_P_le_0p1": {
+   "run02": 0.0010478425057440788,
+   "run05": 0.000962214317313359,
+   "diff": -8.562818843071973e-05,
+   "key": "C154_summary.json:future.HLLHC_direct_as_permille.truth.172.6.prob_P_le_0p1"
+  },
+  "future HLLHC_direct_as_permille truth 172.6 power_surv": {
+   "run02": 0.39664120823385035,
+   "run05": 0.4077065450756458,
+   "diff": 0.011065336841795448,
+   "key": "C154_summary.json:future.HLLHC_direct_as_permille.truth.172.6.power_surv"
+  },
+  "future HLLHC_direct_as_permille truth 172.6 power_excl": {
+   "run02": 3.3632230334035285e-10,
+   "run05": 2.720726977045729e-10,
+   "diff": -6.424960563577997e-11,
+   "key": "C154_summary.json:future.HLLHC_direct_as_permille.truth.172.6.power_excl"
+  },
+  "future HLLHC_direct_as_permille truth 173.3 Pbar": {
+   "run02": 0.21259117980316053,
+   "run05": 0.21670669313562269,
+   "diff": 0.004115513332462156,
+   "key": "C154_summary.json:future.HLLHC_direct_as_permille.truth.173.3.Pbar"
+  },
+  "future HLLHC_direct_as_permille truth 173.3 prob_P_ge_0p5": {
+   "run02": 0.07327998759404934,
+   "run05": 0.07662634179782515,
+   "diff": 0.0033463542037758115,
+   "key": "C154_summary.json:future.HLLHC_direct_as_permille.truth.173.3.prob_P_ge_0p5"
+  },
+  "future HLLHC_direct_as_permille truth 173.3 prob_P_le_0p1": {
+   "run02": 0.341380259924008,
+   "run05": 0.3320553457383395,
+   "diff": -0.009324914185668498,
+   "key": "C154_summary.json:future.HLLHC_direct_as_permille.truth.173.3.prob_P_le_0p1"
+  },
+  "future HLLHC_direct_as_permille truth 173.3 power_surv": {
+   "run02": 8.426296386794963e-05,
+   "run05": 9.443788217131694e-05,
+   "diff": 1.0174918303367309e-05,
+   "key": "C154_summary.json:future.HLLHC_direct_as_permille.truth.173.3.power_surv"
+  },
+  "future HLLHC_direct_as_permille truth 173.3 power_excl": {
+   "run02": 0.0037656302928182894,
+   "run05": 0.003406861189710786,
+   "diff": -0.00035876910310750354,
+   "key": "C154_summary.json:future.HLLHC_direct_as_permille.truth.173.3.power_excl"
+  },
+  "future FCCee_base sigma_tot": {
+   "run02": 0.13127530990751032,
+   "run05": 0.13128632395874648,
+   "diff": 1.101405123615784e-05,
+   "key": "C154_summary.json:future.FCCee_base.sigma_tot"
+  },
+  "future FCCee_base separation_172p6_173p3": {
+   "run02": 5.332305065538852,
+   "run05": 5.331857720534226,
+   "diff": -0.0004473450046260652,
+   "key": "C154_summary.json:future.FCCee_base.separation_172p6_173p3"
+  },
+  "future FCCee_base mhat_surv95": {
+   "run02": 172.73016882155179,
+   "run05": 172.73588230520411,
+   "diff": 0.005713483652328932,
+   "key": "C154_summary.json:future.FCCee_base.mhat_surv95"
+  },
+  "future FCCee_base mhat_excl_P0p1": {
+   "run02": 173.67040778898317,
+   "run05": 173.67711571091886,
+   "diff": 0.00670792193568559,
+   "key": "C154_summary.json:future.FCCee_base.mhat_excl_P0p1"
+  },
+  "future FCCee_base mhat_excl_P0p05": {
+   "run02": 173.80114731542542,
+   "run05": 173.80818222571722,
+   "diff": 0.0070349102917930395,
+   "key": "C154_summary.json:future.FCCee_base.mhat_excl_P0p05"
+  },
+  "future FCCee_base truth 172.6 Pbar": {
+   "run02": 0.8231421700566208,
+   "run05": 0.8266063248433984,
+   "diff": 0.003464154786777529,
+   "key": "C154_summary.json:future.FCCee_base.truth.172.6.Pbar"
+  },
+  "future FCCee_base truth 172.6 prob_P_ge_0p5": {
+   "run02": 0.9955111038319919,
+   "run05": 0.9960377322523826,
+   "diff": 0.0005266284203906402,
+   "key": "C154_summary.json:future.FCCee_base.truth.172.6.prob_P_ge_0p5"
+  },
+  "future FCCee_base truth 172.6 prob_P_le_0p1": {
+   "run02": 5.314519970767151e-07,
+   "run05": 4.336394917592301e-07,
+   "diff": -9.781250531748498e-08,
+   "key": "C154_summary.json:future.FCCee_base.truth.172.6.prob_P_le_0p1"
+  },
+  "future FCCee_base truth 172.6 power_surv": {
+   "run02": 0.9934592056800914,
+   "run05": 0.9952076443464393,
+   "diff": 0.0017484386663478846,
+   "key": "C154_summary.json:future.FCCee_base.truth.172.6.power_surv"
+  },
+  "future FCCee_base truth 172.6 power_excl": {
+   "run02": 0.0,
+   "run05": 0.0,
+   "diff": 0.0,
+   "key": "C154_summary.json:future.FCCee_base.truth.172.6.power_excl"
+  },
+  "future FCCee_base truth 173.3 Pbar": {
+   "run02": 0.18371444206210702,
+   "run05": 0.18801646347510884,
+   "diff": 0.004302021413001816,
+   "key": "C154_summary.json:future.FCCee_base.truth.173.3.Pbar"
+  },
+  "future FCCee_base truth 173.3 prob_P_ge_0p5": {
+   "run02": 0.0032275187352636646,
+   "run05": 0.0036965280148899752,
+   "diff": 0.00046900927962631065,
+   "key": "C154_summary.json:future.FCCee_base.truth.173.3.prob_P_ge_0p5"
+  },
+  "future FCCee_base truth 173.3 prob_P_le_0p1": {
+   "run02": 0.25472092492599396,
+   "run05": 0.24186771044145916,
+   "diff": -0.012853214484534803,
+   "key": "C154_summary.json:future.FCCee_base.truth.173.3.prob_P_le_0p1"
+  },
+  "future FCCee_base truth 173.3 power_surv": {
+   "run02": 8.623021084317768e-28,
+   "run05": 2.8266111646919023e-27,
+   "diff": 1.9643090562601256e-27,
+   "key": "C154_summary.json:future.FCCee_base.truth.173.3.power_surv"
+  },
+  "future FCCee_base truth 173.3 power_excl": {
+   "run02": 8.237854842718662e-13,
+   "run05": 3.255173908200959e-13,
+   "diff": -4.982680934517703e-13,
+   "key": "C154_summary.json:future.FCCee_base.truth.173.3.power_excl"
+  },
+  "future FCCee_ambitious sigma_tot": {
+   "run02": 0.11660350892068641,
+   "run05": 0.11660660898696355,
+   "diff": 3.1000662771424325e-06,
+   "key": "C154_summary.json:future.FCCee_ambitious.sigma_tot"
+  },
+  "future FCCee_ambitious separation_172p6_173p3": {
+   "run02": 6.003249871975458,
+   "run05": 6.003090271480744,
+   "diff": -0.00015960049471441806,
+   "key": "C154_summary.json:future.FCCee_ambitious.separation_172p6_173p3"
+  },
+  "future FCCee_ambitious mhat_surv95": {
+   "run02": 172.7538058170239,
+   "run05": 172.7595251448294,
+   "diff": 0.005719327805508101,
+   "key": "C154_summary.json:future.FCCee_ambitious.mhat_surv95"
+  },
+  "future FCCee_ambitious mhat_excl_P0p1": {
+   "run02": 173.65070136905888,
+   "run05": 173.65738431829777,
+   "diff": 0.006682949238893343,
+   "key": "C154_summary.json:future.FCCee_ambitious.mhat_excl_P0p1"
+  },
+  "future FCCee_ambitious mhat_excl_P0p05": {
+   "run02": 173.78142985530368,
+   "run05": 173.78843733562795,
+   "diff": 0.0070074803242619055,
+   "key": "C154_summary.json:future.FCCee_ambitious.mhat_excl_P0p05"
+  },
+  "future FCCee_ambitious truth 172.6 Pbar": {
+   "run02": 0.826253389416685,
+   "run05": 0.8297091195964085,
+   "diff": 0.0034557301797234485,
+   "key": "C154_summary.json:future.FCCee_ambitious.truth.172.6.Pbar"
+  },
+  "future FCCee_ambitious truth 172.6 prob_P_ge_0p5": {
+   "run02": 0.998258249909509,
+   "run05": 0.9985056021129695,
+   "diff": 0.0002473522034605047,
+   "key": "C154_summary.json:future.FCCee_ambitious.truth.172.6.prob_P_ge_0p5"
+  },
+  "future FCCee_ambitious truth 172.6 prob_P_le_0p1": {
+   "run02": 8.081838631657234e-08,
+   "run05": 6.39490305154311e-08,
+   "diff": -1.686935580114124e-08,
+   "key": "C154_summary.json:future.FCCee_ambitious.truth.172.6.prob_P_le_0p1"
+  },
+  "future FCCee_ambitious truth 172.6 power_surv": {
+   "run02": 0.9999428641820514,
+   "run05": 0.9999685376137476,
+   "diff": 2.5673431696238147e-05,
+   "key": "C154_summary.json:future.FCCee_ambitious.truth.172.6.power_surv"
+  },
+  "future FCCee_ambitious truth 172.6 power_excl": {
+   "run02": 0.0,
+   "run05": 0.0,
+   "diff": 0.0,
+   "key": "C154_summary.json:future.FCCee_ambitious.truth.172.6.power_excl"
+  },
+  "future FCCee_ambitious truth 173.3 Pbar": {
+   "run02": 0.18077998528066863,
+   "run05": 0.18508399008988427,
+   "diff": 0.004304004809215639,
+   "key": "C154_summary.json:future.FCCee_ambitious.truth.173.3.Pbar"
+  },
+  "future FCCee_ambitious truth 173.3 prob_P_ge_0p5": {
+   "run02": 0.0010011142398346192,
+   "run05": 0.001187093425468456,
+   "diff": 0.00018597918563383682,
+   "key": "C154_summary.json:future.FCCee_ambitious.truth.173.3.prob_P_ge_0p5"
+  },
+  "future FCCee_ambitious truth 173.3 prob_P_le_0p1": {
+   "run02": 0.2386369514957154,
+   "run05": 0.225363425429293,
+   "diff": -0.013273526066422403,
+   "key": "C154_summary.json:future.FCCee_ambitious.truth.173.3.prob_P_le_0p1"
+  },
+  "future FCCee_ambitious truth 173.3 power_surv": {
+   "run02": 5.016392663019034e-43,
+   "run05": 3.581723290144206e-42,
+   "diff": 3.0800840238423026e-42,
+   "key": "C154_summary.json:future.FCCee_ambitious.truth.173.3.power_surv"
+  },
+  "future FCCee_ambitious truth 173.3 power_excl": {
+   "run02": 0.0,
+   "run05": 0.0,
+   "diff": 0.0,
+   "key": "C154_summary.json:future.FCCee_ambitious.truth.173.3.power_excl"
+  },
+  "future FCCee_ambitious_SM0p04 sigma_tot": {
+   "run02": 0.10147107121055043,
+   "run05": 0.1014746335762717,
+   "diff": 3.5623657212713322e-06,
+   "key": "C154_summary.json:future.FCCee_ambitious_SM0p04.sigma_tot"
+  },
+  "future FCCee_ambitious_SM0p04 separation_172p6_173p3": {
+   "run02": 6.8985178893747365,
+   "run05": 6.898275710193688,
+   "diff": -0.0002421791810487406,
+   "key": "C154_summary.json:future.FCCee_ambitious_SM0p04.separation_172p6_173p3"
+  },
+  "future FCCee_ambitious_SM0p04 mhat_surv95": {
+   "run02": 172.7779236010468,
+   "run05": 172.78364226871818,
+   "diff": 0.005718667671374078,
+   "key": "C154_summary.json:future.FCCee_ambitious_SM0p04.mhat_surv95"
+  },
+  "future FCCee_ambitious_SM0p04 mhat_excl_P0p1": {
+   "run02": 173.6313683935599,
+   "run05": 173.6380520194791,
+   "diff": 0.006683625919180258,
+   "key": "C154_summary.json:future.FCCee_ambitious_SM0p04.mhat_excl_P0p1"
+  },
+  "future FCCee_ambitious_SM0p04 mhat_excl_P0p05": {
+   "run02": 173.76209737647417,
+   "run05": 173.7691057880501,
+   "diff": 0.007008411575924356,
+   "key": "C154_summary.json:future.FCCee_ambitious_SM0p04.mhat_excl_P0p05"
+  },
+  "future FCCee_ambitious_SM0p04 truth 172.6 Pbar": {
+   "run02": 0.8291436425683474,
+   "run05": 0.832585245952014,
+   "diff": 0.0034416033836666138,
+   "key": "C154_summary.json:future.FCCee_ambitious_SM0p04.truth.172.6.Pbar"
+  },
+  "future FCCee_ambitious_SM0p04 truth 172.6 prob_P_ge_0p5": {
+   "run02": 0.9995536602761506,
+   "run05": 0.9996325220181279,
+   "diff": 7.886174197735407e-05,
+   "key": "C154_summary.json:future.FCCee_ambitious_SM0p04.truth.172.6.prob_P_ge_0p5"
+  },
+  "future FCCee_ambitious_SM0p04 truth 172.6 prob_P_le_0p1": {
+   "run02": 8.393897465985845e-09,
+   "run05": 6.405752484006655e-09,
+   "diff": -1.9881449819791897e-09,
+   "key": "C154_summary.json:future.FCCee_ambitious_SM0p04.truth.172.6.prob_P_le_0p1"
+  },
+  "future FCCee_ambitious_SM0p04 truth 172.6 power_surv": {
+   "run02": 0.9999959604424338,
+   "run05": 0.999997952730589,
+   "diff": 1.992288155228117e-06,
+   "key": "C154_summary.json:future.FCCee_ambitious_SM0p04.truth.172.6.power_surv"
+  },
+  "future FCCee_ambitious_SM0p04 truth 172.6 power_excl": {
+   "run02": 0.0,
+   "run05": 0.0,
+   "diff": 0.0,
+   "key": "C154_summary.json:future.FCCee_ambitious_SM0p04.truth.172.6.power_excl"
+  },
+  "future FCCee_ambitious_SM0p04 truth 173.3 Pbar": {
+   "run02": 0.1780512027673714,
+   "run05": 0.18237350982276088,
+   "diff": 0.004322307055389468,
+   "key": "C154_summary.json:future.FCCee_ambitious_SM0p04.truth.173.3.Pbar"
+  },
+  "future FCCee_ambitious_SM0p04 truth 173.3 prob_P_ge_0p5": {
+   "run02": 0.00016288478819031485,
+   "run05": 0.00020423379290491927,
+   "diff": 4.1349004714604426e-05,
+   "key": "C154_summary.json:future.FCCee_ambitious_SM0p04.truth.173.3.prob_P_ge_0p5"
+  },
+  "future FCCee_ambitious_SM0p04 truth 173.3 prob_P_le_0p1": {
+   "run02": 0.22130425269057064,
+   "run05": 0.20769059901583165,
+   "diff": -0.01361365367473899,
+   "key": "C154_summary.json:future.FCCee_ambitious_SM0p04.truth.173.3.prob_P_le_0p1"
+  },
+  "future FCCee_ambitious_SM0p04 truth 173.3 power_surv": {
+   "run02": 1.7380015137615085e-39,
+   "run05": 1.1380695320037228e-38,
+   "diff": 9.64269380627572e-39,
+   "key": "C154_summary.json:future.FCCee_ambitious_SM0p04.truth.173.3.power_surv"
+  },
+  "future FCCee_ambitious_SM0p04 truth 173.3 power_excl": {
+   "run02": 0.0,
+   "run05": 0.0,
+   "diff": 0.0,
+   "key": "C154_summary.json:future.FCCee_ambitious_SM0p04.truth.173.3.power_excl"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0002.Pbar_172p6": {
+   "run02": 0.7974068343411935,
+   "run05": 0.8008722614355515,
+   "diff": 0.0034654270943579313,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002.Pbar_172p6"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0002.Pbar_173p3": {
+   "run02": 0.20810004906944146,
+   "run05": 0.2122549642544017,
+   "diff": 0.004154915184960251,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002.Pbar_173p3"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0002.Pge05_172p6": {
+   "run02": 0.9365363686913292,
+   "run05": 0.9395926305822883,
+   "diff": 0.003056261890959089,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002.Pge05_172p6"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0002.Pge05_173p3": {
+   "run02": 0.06047149111950667,
+   "run05": 0.06356916654371927,
+   "diff": 0.0030976754242126037,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002.Pge05_173p3"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0002.mhat_excl_P0p1": {
+   "run02": 173.81090662327438,
+   "run05": 173.8176111103215,
+   "diff": 0.0067044870471306695,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002.mhat_excl_P0p1"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0002.mhat_surv95": {
+   "run02": 172.57292735393392,
+   "run05": 172.5786437370248,
+   "diff": 0.005716383090884847,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002.mhat_surv95"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0002.separation_172p6_173p3": {
+   "run02": 3.076536205685596,
+   "run05": 3.0764203710365403,
+   "diff": -0.00011583464905573493,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002.separation_172p6_173p3"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0002.sigma_meas": {
+   "run02": 0.17,
+   "run05": 0.17,
+   "diff": 0.0,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002.sigma_meas"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0002.sigma_tot": {
+   "run02": 0.2275286078890813,
+   "run05": 0.2275371748900975,
+   "diff": 8.567001016202003e-06,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002.sigma_tot"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0002_interp0.5.Pbar_172p6": {
+   "run02": 0.7051556062388248,
+   "run05": 0.7080380761644375,
+   "diff": 0.002882469925612696,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002_interp0.5.Pbar_172p6"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0002_interp0.5.Pbar_173p3": {
+   "run02": 0.298964877163652,
+   "run05": 0.3021040273185793,
+   "diff": 0.003139150154927328,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002_interp0.5.Pbar_173p3"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0002_interp0.5.Pge05_172p6": {
+   "run02": 0.7365917795023565,
+   "run05": 0.7399843765786144,
+   "diff": 0.0033925970762578306,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002_interp0.5.Pge05_172p6"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0002_interp0.5.Pge05_173p3": {
+   "run02": 0.26062091194834547,
+   "run05": 0.2640210125491673,
+   "diff": 0.0034001006008218537,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002_interp0.5.Pge05_173p3"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0002_interp0.5.mhat_excl_P0p1": {
+   "run02": 174.3230642777389,
+   "run05": 174.32975615242418,
+   "diff": 0.0066918746852877575,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002_interp0.5.mhat_excl_P0p1"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0002_interp0.5.mhat_surv95": {
+   "run02": 172.0439853995254,
+   "run05": 172.04970892331534,
+   "diff": 0.005723523789924911,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002_interp0.5.mhat_surv95"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0002_interp0.5.separation_172p6_173p3": {
+   "run02": 1.27426729198776,
+   "run05": 1.2742590609551303,
+   "diff": -8.231032629701929e-06,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002_interp0.5.separation_172p6_173p3"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0002_interp0.5.sigma_meas": {
+   "run02": 0.5281098370604357,
+   "run05": 0.5281098370604357,
+   "diff": 0.0,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002_interp0.5.sigma_meas"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0002_interp0.5.sigma_tot": {
+   "run02": 0.549335295978643,
+   "run05": 0.549338844391116,
+   "diff": 3.5484124730755795e-06,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0002_interp0.5.sigma_tot"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.00045.Pbar_172p6": {
+   "run02": 0.7825584447237206,
+   "run05": 0.7859861301495638,
+   "diff": 0.003427685425843152,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045.Pbar_172p6"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.00045.Pbar_173p3": {
+   "run02": 0.22245084972949303,
+   "run05": 0.22650766153069501,
+   "diff": 0.004056811801201987,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045.Pbar_173p3"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.00045.Pge05_172p6": {
+   "run02": 0.896129599232639,
+   "run05": 0.899814665435582,
+   "diff": 0.003685066202942955,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045.Pge05_172p6"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.00045.Pge05_173p3": {
+   "run02": 0.10071469299948968,
+   "run05": 0.1044849410354869,
+   "diff": 0.003770248035997223,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045.Pge05_173p3"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.00045.mhat_excl_P0p1": {
+   "run02": 173.8860249269314,
+   "run05": 173.89285146216216,
+   "diff": 0.006826535230743502,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045.mhat_excl_P0p1"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.00045.mhat_surv95": {
+   "run02": 172.49357226552954,
+   "run05": 172.49929190638133,
+   "diff": 0.0057196408517938835,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045.mhat_surv95"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.00045.separation_172p6_173p3": {
+   "run02": 2.536957330267558,
+   "run05": 2.53662855660519,
+   "diff": -0.0003287736623680537,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045.separation_172p6_173p3"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.00045.sigma_meas": {
+   "run02": 0.17,
+   "run05": 0.17,
+   "diff": 0.0,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045.sigma_meas"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.00045.sigma_tot": {
+   "run02": 0.2759210774452305,
+   "run05": 0.27595683971043083,
+   "diff": 3.5762265200356413e-05,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045.sigma_tot"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.00045_interp0.5.Pbar_172p6": {
+   "run02": 0.7001108072972324,
+   "run05": 0.7029483021124026,
+   "diff": 0.0028374948151701496,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045_interp0.5.Pbar_172p6"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.00045_interp0.5.Pbar_173p3": {
+   "run02": 0.3039655549825048,
+   "run05": 0.30705115233913993,
+   "diff": 0.003085597356635106,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045_interp0.5.Pbar_173p3"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.00045_interp0.5.Pge05_172p6": {
+   "run02": 0.7286890589123298,
+   "run05": 0.7320119393390939,
+   "diff": 0.0033228804267640966,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045_interp0.5.Pge05_172p6"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.00045_interp0.5.Pge05_173p3": {
+   "run02": 0.2686409980626512,
+   "run05": 0.2719807769502674,
+   "diff": 0.0033397788876162182,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045_interp0.5.Pge05_173p3"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.00045_interp0.5.mhat_excl_P0p1": {
+   "run02": 174.3585558032622,
+   "run05": 174.36532075218673,
+   "diff": 0.006764948924541159,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045_interp0.5.mhat_excl_P0p1"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.00045_interp0.5.mhat_surv95": {
+   "run02": 172.00828243732718,
+   "run05": 172.01401517295798,
+   "diff": 0.005732735630800789,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045_interp0.5.mhat_surv95"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.00045_interp0.5.separation_172p6_173p3": {
+   "run02": 1.2257475659514074,
+   "run05": 1.2257104786385504,
+   "diff": -3.708731285700928e-05,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045_interp0.5.separation_172p6_173p3"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.00045_interp0.5.sigma_meas": {
+   "run02": 0.5281098370604357,
+   "run05": 0.5281098370604357,
+   "diff": 0.0,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045_interp0.5.sigma_meas"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.00045_interp0.5.sigma_tot": {
+   "run02": 0.5710800652960466,
+   "run05": 0.5710973449272623,
+   "diff": 1.7279631215671998e-05,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.00045_interp0.5.sigma_tot"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0009.Pbar_172p6": {
+   "run02": 0.7420666572666268,
+   "run05": 0.7452916183064815,
+   "diff": 0.0032249610398547013,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009.Pbar_172p6"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0009.Pbar_173p3": {
+   "run02": 0.26229814083267317,
+   "run05": 0.26598007300386506,
+   "diff": 0.003681932171191893,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009.Pbar_173p3"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0009.Pge05_172p6": {
+   "run02": 0.8025197399416373,
+   "run05": 0.8064035664988741,
+   "diff": 0.003883826557236847,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009.Pge05_172p6"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0009.Pge05_173p3": {
+   "run02": 0.1945440218212517,
+   "run05": 0.1985465586735707,
+   "diff": 0.004002536852319022,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009.Pge05_173p3"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0009.mhat_excl_P0p1": {
+   "run02": 174.0977130065317,
+   "run05": 174.10492061802995,
+   "diff": 0.0072076114982451145,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009.mhat_excl_P0p1"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0009.mhat_surv95": {
+   "run02": 172.27543067929608,
+   "run05": 172.28129266217192,
+   "diff": 0.005861982875842386,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009.mhat_surv95"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0009.separation_172p6_173p3": {
+   "run02": 1.7118382419229594,
+   "run05": 1.7114342837714414,
+   "diff": -0.0004039581515180579,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009.separation_172p6_173p3"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0009.sigma_meas": {
+   "run02": 0.17,
+   "run05": 0.17,
+   "diff": 0.0,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009.sigma_meas"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0009.sigma_tot": {
+   "run02": 0.4089171411509471,
+   "run05": 0.40901365985109805,
+   "diff": 9.651870015092712e-05,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009.sigma_tot"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0009_interp0.5.Pbar_172p6": {
+   "run02": 0.6841214017212466,
+   "run05": 0.6868114344244696,
+   "diff": 0.0026900327032229887,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009_interp0.5.Pbar_172p6"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0009_interp0.5.Pbar_173p3": {
+   "run02": 0.31985976165925656,
+   "run05": 0.3227653245949483,
+   "diff": 0.002905562935691719,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009_interp0.5.Pbar_173p3"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0009_interp0.5.Pge05_172p6": {
+   "run02": 0.704887978743789,
+   "run05": 0.7079769695892094,
+   "diff": 0.0030889908454204695,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009_interp0.5.Pge05_172p6"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0009_interp0.5.Pge05_173p3": {
+   "run02": 0.2927956687311822,
+   "run05": 0.2959231903951445,
+   "diff": 0.003127521663962296,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009_interp0.5.Pge05_173p3"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0009_interp0.5.mhat_excl_P0p1": {
+   "run02": 174.4808174407977,
+   "run05": 174.4878496652931,
+   "diff": 0.007032224495418404,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009_interp0.5.mhat_excl_P0p1"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0009_interp0.5.mhat_surv95": {
+   "run02": 171.8854917580085,
+   "run05": 171.89131324827773,
+   "diff": 0.00582149026922707,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009_interp0.5.mhat_surv95"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0009_interp0.5.separation_172p6_173p3": {
+   "run02": 1.0837247829784855,
+   "run05": 1.083622265636179,
+   "diff": -0.00010251734230659615,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009_interp0.5.separation_172p6_173p3"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0009_interp0.5.sigma_meas": {
+   "run02": 0.5281098370604357,
+   "run05": 0.5281098370604357,
+   "diff": 0.0,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009_interp0.5.sigma_meas"
+  },
+  "HL-LHC corr HLLHC_0.17_as0.0009_interp0.5.sigma_tot": {
+   "run02": 0.6459204504635718,
+   "run05": 0.6459815585175708,
+   "diff": 6.110805399894836e-05,
+   "key": "C154_correction_summary.json:HLLHC.HLLHC_0.17_as0.0009_interp0.5.sigma_tot"
+  },
+  "relative_form.lambda_SM_mu_b_172p60": {
+   "run02": -0.00977414268808611,
+   "run05": -0.00977414268808611,
+   "diff": 0.0,
+   "key": "C154_summary.json:relative_form.lambda_SM_mu_b_172p60"
+  },
+  "relative_form.lambda_c_C149.P1=0.1": {
+   "run02": -0.015140424204472808,
+   "run05": -0.015184854005126681,
+   "diff": -4.4429800653873405e-05,
+   "key": "C154_summary.json:relative_form.lambda_c_C149.P1=0.1"
+  },
+  "relative_form.lambda_c_C149.P1=0.5": {
+   "run02": -0.012103710499348039,
+   "run05": -0.012141512452939195,
+   "diff": -3.780195359115619e-05,
+   "key": "C154_summary.json:relative_form.lambda_c_C149.P1=0.5"
+  },
+  "relative_form.lambda_c_C149.P1=0.9": {
+   "run02": -0.009103530811341631,
+   "run05": -0.009133908342503662,
+   "diff": -3.037753116203086e-05,
+   "key": "C154_summary.json:relative_form.lambda_c_C149.P1=0.9"
+  },
+  "relative_form.lambda_c_from_T1_lam_fit.P1=0.1": {
+   "run02": -0.015140422502898388,
+   "run05": -0.015184852338753437,
+   "diff": -4.442983585504871e-05,
+   "key": "C154_summary.json:relative_form.lambda_c_from_T1_lam_fit.P1=0.1"
+  },
+  "relative_form.lambda_c_from_T1_lam_fit.P1=0.5": {
+   "run02": -0.012103708550888763,
+   "run05": -0.012141510480253293,
+   "diff": -3.780192936453028e-05,
+   "key": "C154_summary.json:relative_form.lambda_c_from_T1_lam_fit.P1=0.5"
+  },
+  "relative_form.lambda_c_from_T1_lam_fit.P1=0.9": {
+   "run02": -0.009103532199230735,
+   "run05": -0.009133909691163367,
+   "diff": -3.0377491932631617e-05,
+   "key": "C154_summary.json:relative_form.lambda_c_from_T1_lam_fit.P1=0.9"
+  },
+  "relative_form.m0": {
+   "run02": 171.09212339454322,
+   "run05": 171.09212339454322,
+   "diff": 0.0,
+   "key": "C154_summary.json:relative_form.m0"
+  },
+  "relative_form.margin_lambda": {
+   "run02": 0.0023295678112619286,
+   "run05": 0.0023673697648530848,
+   "diff": 3.780195359115619e-05,
+   "key": "C154_summary.json:relative_form.margin_lambda"
+  },
+  "relative_form.margin_mc05_minus_172p60": {
+   "run02": 0.35372758739080723,
+   "run05": 0.35945013527106084,
+   "diff": 0.0057225478802536145,
+   "key": "C154_summary.json:relative_form.margin_mc05_minus_172p60"
+  },
+  "relative_form.mc_minus_m0.P1=0.1": {
+   "run02": 2.3195627827113867,
+   "run05": 2.326237073145336,
+   "diff": 0.0066742904339491815,
+   "key": "C154_summary.json:relative_form.mc_minus_m0.P1=0.1"
+  },
+  "relative_form.mc_minus_m0.P1=0.5": {
+   "run02": 1.8616041928475795,
+   "run05": 1.8673267407278331,
+   "diff": 0.0057225478802536145,
+   "key": "C154_summary.json:relative_form.mc_minus_m0.P1=0.5"
+  },
+  "relative_form.mc_minus_m0.P1=0.9": {
+   "run02": 1.4056550489760014,
+   "run05": 1.4102893484472645,
+   "diff": 0.004634299471263148,
+   "key": "C154_summary.json:relative_form.mc_minus_m0.P1=0.9"
+  },
+  "probit_check_D1.Pbar_probit": {
+   "run02": 0.7276725488303861,
+   "run05": 0.7307245956261917,
+   "diff": 0.0030520467958056186,
+   "key": "C154_summary.json:probit_check_D1.Pbar_probit"
+  },
+  "probit_check_D1.Pbar_quad": {
+   "run02": 0.7271061513142757,
+   "run05": 0.7302153304270557,
+   "diff": 0.0031091791127799695,
+   "key": "C154_summary.json:probit_check_D1.Pbar_quad"
+  },
+  "probit_check_D1.sigma_tot": {
+   "run02": 0.4624027886059109,
+   "run05": 0.4624881452840158,
+   "diff": 8.535667810488645e-05,
+   "key": "C154_summary.json:probit_check_D1.sigma_tot"
+  },
+  "probit_check_D1.w": {
+   "run02": 0.3565629872942242,
+   "run05": 0.3573588939758927,
+   "diff": 0.0007959066816685123,
+   "key": "C154_summary.json:probit_check_D1.w"
+  },
+  "Bayes ranges run02": {
+   "run02": 0.4939910499093844,
+   "run05": 0.9691422634180276,
+   "diff": 0.7471864137064232,
+   "key": "derived"
+  },
+  "Bayes ranges run05": {
+   "run02": 0.4970120312225613,
+   "run05": 0.9696808419840672,
+   "diff": 0.7474888806439446,
+   "key": "derived"
+  }
+ },
+ "sha256": {
+  "C154_summary.json": "04a75b7146b4d4fa25b461b04cfdcf992c5ddaebada470e7ef05f3bfea897783",
+  "C154_correction_summary.json": "739d78e7388df1adb0bbda80afb51f45ae11fc0a05293c345ed63d90452e80cc"
+ }
+}

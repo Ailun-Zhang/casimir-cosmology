@@ -1,0 +1,240 @@
+\section{Zero modes of the Standard Model}\label{rep:zeromodes}
+
+The constant modes of the gauge and Higgs fields are not free fields, and their energy is not part of the image sum of Sec.~\ref{rep:casimir}.
+We show that their ground energy $Q/L$ is positive and independent of the shape at fixed volume, and that it uses up a fraction
+\begin{equation}
+\fzm\equiv Q/C=0.30 %
+\label{eq:rA-fzero}
+\end{equation}
+of the free Casimir energy, between the lower bound $0.26$ and the Gaussian variational bound $0.31$. %
+The Higgs zero mode is held mainly by the zero-point fluctuations of the electroweak gauge modes.
+At next order in the small-volume expansion the fraction falls to about $0.28$ and the zero modes acquire a weak shape dependence.
+Sections~\ref{rA:zm-hamiltonian}--\ref{rA:zm-isospectral} derive the Hamiltonian and its shape independence, Secs.~\ref{rA:zm-bounds}--\ref{rA:zm-couplings} its ground energy, Secs.~\ref{rA:zm-nextorder}--\ref{rA:zm-shape} the next order, and Sec.~\ref{rA:zm-consequences} the consequences for the background and for the Higgs zero mode.
+
+\subsection{The constant modes and their Hamiltonian}
+\label{rA:zm-hamiltonian}
+
+Each of the twelve gauge fields has three constant modes, one per cycle, and the Higgs doublet has four.
+Their state is not fixed by the Hadamard condition~\cite{Negro:2026ooh}, which constrains only the short-distance behavior, and their nonlinear self-interaction gives their ground state a finite energy~\cite{Luscher:1982uv,Luscher:1982ma}.
+For antiperiodic fermions the vacuum lies at trivial holonomy and is unique~\cite{vanBaal:1988va}, and the AAA fermions themselves have no constant modes.
+
+\paragraph{Reduction of the action.}
+We use the covariant derivative $D=\partial-i(A^aT_a+YB)$ with ${\rm tr}\,T_aT_b=\tfrac12\delta_{ab}$, temporal gauge, and constant modes
+\begin{equation}
+A^a_i=g\,x^a_i(t),\qquad B_i=g_Y\,w_i(t)
+\label{eq:rA-xw}
+\end{equation}
+in coordinates of unit period, with $g=g_3$ or $g_2$ for the non-abelian factors.
+For constant spatial components the field strength is $F^a_{0i}=\dot A^a_i$ and $F^a_{ij}=f^{abc}A^b_iA^c_j=g^2F^a_{ij}[x]$, with $F^a_{ij}[x]=f^{abc}x^b_ix^c_j$.
+With $\sqrt{-g}=L^3$ and $g^{ij}=G^{ij}/L^2$ the Yang--Mills action $-\frac{1}{4g^2}\int\sqrt{-g}\,F^a_{\mu\nu}F^{a\mu\nu}$ of each gauge factor reduces to
+\begin{equation}
+L_{\rm YM}=\frac{L}{2}\,G^{ij}\dot x_i\cdot\dot x_j-\frac{g^2}{4L}\,G^{ik}G^{jl}F_{ij}[x]\cdot F_{kl}[x],
+\end{equation}
+where the dot product sums over the adjoint index.
+The constant Higgs doublet enters as $\Phi/L$, with $\Phi=(\phi_0+i\phi_1,\phi_2+i\phi_3)/\sqrt2$ and $r=|\bm\phi|$, so that $\Phi^\dagger\Phi=r^2/2$.
+At fixed volume its kinetic term is $L\,\dot\Phi^\dagger\dot\Phi=\tfrac{L}{2}\sum_a\dot\phi_a^2$.
+Its gradient term, $-\sqrt{-g}\,g^{ij}(D_i\Phi)^\dagger D_j\Phi$ with $D_i\Phi=-iM_i\Phi/L$ and
+\begin{equation}
+M_i=g_2\,x_i\cdot T+g_YY\,w_i ,
+\end{equation}
+contributes the potential $G^{ij}\Phi^\dagger M_iM_j\Phi/L$, and the quartic contributes $\lambda(\Phi^\dagger\Phi)^2/L$.
+The Legendre transform, with momenta $\pi_i=LG^{ij}\dot x_j$, $\pi^w_i=LG^{ij}\dot w_j$ and $p_a=L\dot\phi_a$, gives the zero-mode Hamiltonian
+\begin{equation}
+\begin{aligned}
+L\mathcal H_0={}&\sum_{\rm G}\Big[\tfrac12G_{ij}\,\pi_i\cdot\pi_j+\frac{g^2}{4}G^{ik}G^{jl}F_{ij}\cdot F_{kl}\Big]\\
+&+\tfrac12G_{ij}\,\pi^w_i\pi^w_j+\tfrac12p_\Phi^2\\
+&+G^{ij}\Phi^\dagger M_iM_j\Phi+\lambda(\Phi^\dagger\Phi)^2,
+\end{aligned}
+\label{eq:rA-H0}
+\end{equation}
+where the sum runs over the gauge factors $SU(3)$ and $SU(2)$, $F^a_{ij}=f^{abc}x^b_ix^c_j$, and $p_\Phi^2$ sums over the four real components $\phi_a$.
+The Gauss law, $f^{abc}x^b_i\pi^c_i$ for each non-abelian factor plus the Higgs charge density, annihilates physical states.
+The term $\lambda v^2\Phi^\dagger\Phi$ of the potential is negligible at $\mub$ and is omitted.
+
+\subsection{Isospectrality}
+\label{rA:zm-isospectral}
+
+\begin{rAprop}[Shape independence]\label{prop:rA-isospectral}
+On the local domain of the constant modes, the Hamiltonian~\eqref{eq:rA-H0} at shape $G$ is unitarily equivalent to the one at the cube.
+Its whole local spectrum, not only the ground energy, is therefore independent of the shape at fixed volume.
+\end{rAprop}
+
+\begin{rAproof}
+Write $G=SS^{\mathsf T}$ with $\det S=1$ and define the canonical map
+\begin{equation}
+x_i=S_{ij}\tilde x_j,\qquad w_i=S_{ij}\tilde w_j,\qquad \pi=S^{-\mathsf T}\tilde\pi,\qquad \pi^w=S^{-\mathsf T}\tilde\pi^w,
+\label{eq:rA-isomap}
+\end{equation}
+with $\Phi$ unchanged.
+The kinetic terms become $\pi^{\mathsf T}G\pi=\tilde\pi^{\mathsf T}S^{-1}SS^{\mathsf T}S^{-\mathsf T}\tilde\pi=\tilde\pi^2$.
+The field strength is bilinear, $F_{ij}[x]=S_{ia}S_{jb}F_{ab}[\tilde x]$, and $S^{\mathsf T}G^{-1}S=\rAone$, so $G^{ik}G^{jl}F_{ij}\cdot F_{kl}=F[\tilde x]^2$.
+Since $M_i$ is linear in $(x,w)$, $M_i(x,w)=S_{ij}M_j(\tilde x,\tilde w)$, and the same identity gives $G^{ij}\Phi^\dagger M_iM_j\Phi=\sum_j|M_j(\tilde x,\tilde w)\Phi|^2$.
+The Gauss generators are unchanged, $\sum_ix_i^b\pi_i^c=\tilde x^b\cdot\tilde\pi^c$, and the Jacobian of the configuration-space map is $\det(\rAone\otimes S)\det S=1$, so the flat Laplacian of the kinetic term is preserved.
+The map is therefore unitary on the local domain and carries $\mathcal H_0(G)$ into $\mathcal H_0(\rAone)$.
+\end{rAproof}
+
+We checked this exactly for a rational $S$ and numerically for 200 random $S$, to $2\times10^{-14}$. %
+The ground energy $Q/L$ is therefore a positive constant on the space of shapes at fixed volume.
+Only global features depend on the shape: the lattice of large holonomies is not invariant under the map, so their identification, tunneling between them and the matching to the nonzero modes can depend on the shape; for AAA fermions the ground state sits at trivial holonomy~\cite{vanBaal:1988va}, far from the copies (Sec.~\ref{rA:zm-consequences}).
+
+\subsection{Small-volume scaling and bounds}
+\label{rA:zm-bounds}
+
+\paragraph{Scaling.}
+At the cube the rescaling $x=g^{-1/3}y$, $\pi_x=g^{1/3}\pi_y$ turns the gauge part of each factor into
+\begin{equation}
+\tfrac12\pi_x^2+\frac{g^2}{4}F[x]^2=g^{2/3}\Big(\tfrac12\pi_y^2+\tfrac14F[y]^2\Big),
+\end{equation}
+whose ground energy defines $\epsilon_N$ for $SU(N)$.
+At leading order of the small-volume expansion the pure-gauge part of $Q$ is therefore $\epsilon_3g_3^{2/3}+\epsilon_2g_2^{2/3}$, with $\epsilon_2=4.1167$~\cite{Luscher:1983gm} and $\epsilon_3=12.587$~\cite{Weisz:1986vu,Pavel:2021mxn}, independent of the fermions at this order~\cite{vanBaal:1988va}. %
+With $g_3\simeq0.54$, $g_2\simeq0.53$ and $g_Y\simeq0.44$ at $\mub$, this is $26\%$ of the free Casimir coefficient $C=\NC\rAgam=42.74$. %
+
+\paragraph{Lower bound.}
+Write the electroweak part as $\mathcal H_{\rm EW}=\mathcal H_{SU(2)}\otimes\rAone+K$, where $K$ contains the hypercharge and Higgs kinetic terms, the Higgs gradient term and the quartic.
+For $\lambda\geq0$ every term of $K$ is non-negative, $K\geq0$, so ${\rm inf\,spec}\,\mathcal H_{\rm EW}\geq\epsilon_2g_2^{2/3}/L$.
+Restricting to gauge-invariant states can only raise the infimum, so
+\begin{equation}
+Q\geq\epsilon_2g_2^{2/3}+\epsilon_3g_3^{2/3}\qquad(\lambda\geq0).
+\end{equation}
+Because $\epsilon_3$ is a variational value~\cite{Weisz:1986vu,Pavel:2021mxn}, confirmed by the Monte Carlo below to $2\times10^{-4}$, this bound is numerical rather than rigorous. %
+For $\lambda\geq0$ the ground state exists because the zero-point energy lifts the flat valleys of the potential, and it is unique and positive because $e^{-t\mathcal H_0}$ is positivity improving on the connected configuration space; it is therefore gauge invariant.
+For $\lambda<0$ the Higgs direction is unbounded below and the ground state becomes a resonance, which Secs.~\ref{rep:h-matching} and~\ref{rep:h-reduced} treat.
+
+\paragraph{Gaussian upper bound.}
+The Gaussian
+\begin{equation}
+\psi\propto\exp\big[-\tfrac12\big(\alpha\,x^2+\beta\,w^2+z\,r^2\big)\big]
+\end{equation}
+for the $SU(2)$, hypercharge and Higgs zero modes has $\langle(x^a_i)^2\rangle=1/2\alpha$ for each of the nine $SU(2)$ components, $\langle w_i^2\rangle=1/2\beta$ for each of the three hypercharge components and $\langle\phi_a^2\rangle=1/2z$ for each of the four Higgs components.
+Its energy follows term by term.
+The kinetic terms give $\tfrac12\cdot9\cdot\tfrac\alpha2+\tfrac12\cdot3\cdot\tfrac\beta2+\tfrac12\cdot4\cdot\tfrac z2$.
+The magnetic term gives $\tfrac{g_2^2}{4}\langle F\cdot F\rangle$ with $\langle F^a_{ij}F^a_{ij}\rangle=\sum_{i\neq j}\epsilon^{abc}\epsilon^{abc}/(2\alpha)^2=6\cdot6/4\alpha^2$.
+The Higgs gradient term gives $g_2^2\sum_i\langle(x_i\cdot T)^2\rangle\langle\Phi^\dagger\Phi\rangle=g_2^2\cdot3\cdot\tfrac34\cdot\tfrac1{2\alpha}\cdot\tfrac1z$, using the doublet Casimir $T^aT^a=\tfrac34$ and $\langle\Phi^\dagger\Phi\rangle=\tfrac12\langle r^2\rangle=1/z$, and the hypercharge term the analogous $g_Y^2Y_H^2\cdot\tfrac3{2\beta}\cdot\tfrac1z$ with $Y_H=\tfrac12$.
+The quartic gives $\tfrac\lambda4\langle r^4\rangle=\tfrac\lambda4\cdot\tfrac{6}{z^2}$.
+Altogether the upper bound is
+\begin{equation}
+LE=\tfrac94\alpha+\tfrac34\beta+z+\frac{9g_2^2}{4\alpha^2}+\frac{9g_2^2}{8\alpha z}+\frac{3g_Y^2}{8\beta z}+\frac{3\lambda}{2z^2},
+\label{eq:rA-gauss-bound}
+\end{equation}
+to be minimized over $\alpha$, $\beta$ and $z$.
+For $SU(N)$ alone the Gaussian energy is $\tfrac34(N^2-1)\alpha+\tfrac38N(N^2-1)g^2/\alpha^2$; its minimum, at $\alpha^3=Ng^2$, is $\tfrac98(N^2-1)N^{1/3}g^{2/3}$, that is $4.252$ and $12.980$ in units of $g^{2/3}$ for $N=2$ and $3$, $3\%$ above $\epsilon_2$ and $\epsilon_3$. %
+
+\subsection{Diffusion Monte Carlo}
+\label{rA:zm-dmc}
+
+For $\lambda\geq0$ the ground state has no nodes, so importance-sampled diffusion Monte Carlo (DMC), guided by the optimal Gaussian, gives the exact local ground energy up to statistical and time-step errors.
+Walkers diffuse in the sixteen-dimensional configuration space of the $SU(2)$, hypercharge and Higgs modes with the drift of the guiding Gaussian and branch with the local energy.
+We used $10^4$ walkers and time steps $0.04$, $0.02$ and $0.01$, down to $0.005$ for the checks, with linear extrapolation to zero step. %
+The method reproduces the certified ground energy $2.1407$ of the four-dimensional quartic oscillator $\tfrac12p^2+\tfrac14(r^2)^2$ as $2.1402(5)$, $\epsilon_2=4.116720$ as $4.1171(14)$ and $\epsilon_3=12.5868$ as $12.5869(22)$. %
+With the couplings of Sec.~\ref{rA:zm-couplings}, the coupled electroweak sector has $LE_{\rm EW}=4.4478(13)$ at $\lambda=0$ and $4.4750(17)$ at $\lambda=0.01$, so $Q=12.790$ and $12.818$, and $\fzm=0.2993$ and $0.2999$. %
+At $\lambda=0.1$ the fraction is $0.3043$, and $g_2=g_3=0.5$, $g_Y=0.46$ give $0.2878$ at $\lambda=0.01$. %
+The pure-gauge bound gives $\fzm\geq0.2580$ and the Gaussian bound $\fzm\leq0.3083$ at $\lambda=0.01$. %
+A diffusion Monte Carlo computation of the coupled $SU(2)\times U(1)\times$Higgs ground state therefore gives $Q=12.8$ and Eq.~\eqref{eq:rA-fzero}. %
+
+\paragraph{The Higgs zero mode is held by the gauge modes.}
+At $\lambda=0.01$ the hypercharge and Higgs modes add $1.78/L$ to the $SU(2)$ energy, $3.9$ times the energy $2.1407\lambda^{1/3}/L=0.46/L$ of a decoupled quartic oscillator $\tfrac12p_\Phi^2+\lambda(\Phi^\dagger\Phi)^2$. %
+Together with hypercharge, the Higgs zero mode raises the $SU(2)$ energy by about four times what a decoupled quartic oscillator would contribute at the same $\lambda$: it is confined mainly by the zero-point fluctuations of the gauge modes through the term $G^{ij}\Phi^\dagger M_iM_j\Phi$, which acts as a mass $\propto g_2^2\langle x^2\rangle$ for $r$. %
+The fraction depends weakly on $\lambda$.
+It is $0.2993$, $0.2999$ and $0.3043$ for $\lambda=0$, $0.01$ and $0.1$; at the Standard Model value $\lambda(\mub)=-0.0098$, where the Higgs zero mode is a narrow resonance (Secs.~\ref{rep:h-matching}--\ref{rep:h-reduced}), the real part of the resonance energy lowers $Q$ by about $0.08$ relative to $\lambda=0.01$, which gives $\fzm=0.298$. %
+
+\subsection{Couplings}
+\label{rA:zm-couplings}
+
+The values above use one-loop couplings at $1/\Lb$, $g_2=0.5268$, $g_3=0.5396$ and $g_Y=0.4415$, with $Y_H=\tfrac12$; the top Yukawa coupling of this set is $y_t=0.4585$. %
+The NNLO couplings of assumption~\ref{assump:A2} at $\mub$ are $g_2=0.5278$, $g_3=0.5357$ and $g_Y=0.4428$, within $0.8\%$ of these. %
+At this order the zero-mode energies scale as $g^{2/3}$, so the difference moves $\fzm$ by less than $0.001$. %
+Taking $\mu=2\pi/\Lb$ instead of $1/\Lb$ lowers $\fzm$ by $0.003$, and determining $\Lb$ self-consistently from $(1-\fzm)C$ changes it by $10^{-4}$. %
+
+\subsection{Next order: the one-loop holonomy potential}
+\label{rA:zm-nextorder}
+
+At $\mathcal O(g^{4/3})$ the zero modes feel the curvature of the one-loop potential that the nonzero modes of charged fields create for constant connections~\cite{Luscher:1982ma,vanBaal:1988va} (Fig.~\ref{fig:rA-holonomy-loop}).
+A constant connection along the generator $T^a$ shifts the twist of a charged field, $\bm\vartheta\to\bm\vartheta+\bm A\,q/2\pi$ for a charge $q$, so the curvature follows from the twist dependence of the image sum~\eqref{eq:rA-E1}.
+Differentiating twice under the sum gives a factor $-(2\pi)^2n_in_j$, and at the cube the cubic average $\sum'n_in_jf(|\bm n|)=\tfrac13\delta_{ij}\sum'|\bm n|^2f(|\bm n|)$ turns $(\bm n^{\mathsf T}\bm n)^{-2}$ into $(\bm n^{\mathsf T}\bm n)^{-1}$.
+A field with weight $d_f$, statistics $s_f$, twist $\bm\vartheta_f$ and ${\rm tr}_f\,T^aT^b=t_f\delta^{ab}$ ($t_f=Y^2$ for hypercharge) therefore contributes
+\begin{equation}
+L\frac{\partial^2E}{\partial A^a_i\partial A^b_j}\bigg|_0=\frac{\delta^{ab}\delta_{ij}}{3\pi^2}\sum_fd_fs_ft_f\,Z_{\rAone}(1;\bm\vartheta_f),
+\label{eq:rA-holonomy-curvature}
+\end{equation}
+where $Z_G(s;\bm\vartheta)=\sum'\cos(2\pi\bm\vartheta\cdot\bm n)(\bm n^{\mathsf T}G\bm n)^{-s}$ is continued analytically to $s=1$.
+Its values are $Z_{\rAone}(1;0)=-8.913633$, with the slow-mode cusp removed, and $Z_{\rAone}(1;\bm\vartheta_{\rm AAA})=-2.519356$. %
+For periodic fields at trivial holonomy the charged mode with $\bm n+\bm\vartheta=0$ would make the potential non-analytic; that mode is part of the zero-mode Hamiltonian and is removed from the sum.
+For $SU(3)$ with six Dirac flavours this reproduces van Baal's coefficient $-0.19631$~\cite{vanBaal:1988va}. %
+For the Standard Model the curvatures are $-0.393$ for $SU(3)$, $-0.242$ for $SU(2)$, including the nonzero modes of the Higgs doublet, and $+0.700$ for hypercharge. %
+The AAA fermions confine hypercharge, whose curvature is positive, while the periodic bosons dominate the negative non-abelian curvatures.
+
+\begin{figure}[tbp]
+\centering
+\begin{tikzpicture}
+\begin{feynman}
+\vertex[crossed dot] (x1) at (-2.6,0) {};
+\vertex (a) at (-1.0,0);
+\vertex (b) at (1.0,0);
+\vertex[crossed dot] (x2) at (2.6,0) {};
+\diagram*{
+(x1) -- [photon, edge label=\(A^a_i\)] (a),
+(a) -- [fermion, half left, edge label=\(\bm n+\bm\vartheta_f\)] (b),
+(b) -- [fermion, half left] (a),
+(b) -- [photon, edge label=\(A^b_j\)] (x2),
+};
+\end{feynman}
+\end{tikzpicture}
+\caption{The one-loop curvature of the holonomy potential, Eq.~\eqref{eq:rA-holonomy-curvature}.
+The loop runs over the nonzero modes of every charged field, with momenta $2\pi(\bm n+\bm\vartheta_f)$ on the torus; the crossed dots are insertions of the constant gauge zero modes.
+Charged scalars and vectors contribute in addition through the seagull vertex with both insertions at one point.
+Summed over the modes, the diagram is the second twist derivative of the image sum, which turns the $s=2$ Epstein function of the Casimir energy into the $s=1$ function.}
+\label{fig:rA-holonomy-loop}
+\end{figure}
+
+\paragraph{First-order shift of the zero-mode energy.}
+In first-order perturbation theory the curvature shifts the ground energy by $\Delta Q=\tfrac12\sum_{\rm G}M_{\rm G}\langle A^2\rangle_{\rm G}$, where $M_{\rm G}$ is the curvature per component and $\langle A^2\rangle_{\rm G}$ the summed spread of the ground state of factor G.
+With the Gaussian spreads $\langle A^2\rangle=3.66$ for $SU(3)$ ($3.77$ from the virial theorem) and $1.40$ for $SU(2)$, and $\langle B^2\rangle=0.82$, the first-order shift is $\Delta Q=-0.72-0.17+0.29=-0.60$, or $\Delta\fzm=-0.014$; a virial spread for $SU(3)$ gives $-0.015$. %
+The gluon and $W$ modes lower $\fzm$ by $0.021$, and hypercharge, which the AAA fermions confine, raises it by $0.007$. %
+The dependence of the full one-loop potential on the Higgs radius $r$ enters the Higgs zero mode as cross terms (Sec.~\ref{rep:h-cross}).
+The nonzero modes also give the Higgs zero mode a mass, which Sec.~\ref{rep:h-matching} treats together with the one-loop finite-volume potential along $r$.
+In the Gaussian estimate used here this mass lowers $\fzm$ by a further $0.003$, and the NNLO top Yukawa coupling at $\mub$, $y_t=0.428$, changes that by $0.0003$. %
+Together the first-order terms give $\fzm\simeq0.28$. %
+
+\paragraph{Convergence of the small-volume expansion.}
+The expansion parameter $g^{2/3}\simeq0.66$ is not small, but the published $SU(2)$ series converges quickly at this coupling. %
+For three flavours its corrections are $-11\%$, $-0.4\%$ and $-0.15\%$ of the leading term at $g=0.53$. %
+For $SU(3)$ with three flavours perturbation theory is expected to fail only near $g\simeq0.64$, for the first excited level~\cite{vanBaal:1988va}. %
+We keep $\fzm=0.30$ as the benchmark and quote the first-order value $\fzm\simeq0.28$ as the next-order variant. %
+
+\subsection{Shape dependence at next order}
+\label{rA:zm-shape}
+
+The next-order terms depend on the shape through twisted Epstein sums at $s=1$.
+Section~\ref{rep:shape} shows that at fixed volume $Z_G(1;\bm\vartheta)$ is an eigenfunction of the shape Laplacian with eigenvalue $-\tfrac43$, so these terms enter the no-minimum argument in a controlled way.
+Their Hessians at the cube follow from those of the twisted Epstein sums along the aspect and angle geodesics, $9.050$ and $-2.072$ for $Z_G(1;0)$ and $-8.425$ and $6.736$ for $Z_G(1;\bm\vartheta_{\rm AAA})$, whose traces are $-\tfrac43$ times the sums; the same code reproduces $\lambda_E$ and $\lambda_{T_2}$ of Table~\ref{tab:rA-spin} at $s=2$. %
+The matching energy then has aspect and angle Hessians $7.75/L$ and $-4.90/L$, and the Higgs mass adds $0.60/L$ and $-0.34/L$. %
+Subtracting $\pi^2L$ times these from the Hessian eigenvalues of $Z_{\rm eff}$ gives $\kappa_E=18.0$ and $\kappa_{T_2}=-8.34$ at $\fzm\simeq0.28$. %
+The Hessian restores the aspect modes slightly: it lowers the aspect stiffness $\kappa_E$ of Sec.~\ref{rep:shape} by $4\%$, and together with the smaller zero-mode energy brings it from $19.32$ to $18.0$. %
+The Higgs-mass part accounts for only $0.14$ of the shift of $\kappa_E$, and the virial spread for $SU(3)$ changes these results by $0.2\%$. %
+The first-order estimate, $\fzm\simeq0.28$ together with this Hessian, lowers the shape fossil $\sigma_E$ of Sec.~\ref{rep:quantum-shape} by about $10\%$, by $6\%$ from the Hessian and $4\%$ from the energy, which we treat as a one-sided uncertainty at next order; higher orders are not estimated. %
+
+\subsection{Consequences for the background and for the Higgs zero mode}
+\label{rA:zm-consequences}
+
+\paragraph{Effective weight and stiffnesses.}
+At leading order $Q$ does not depend on the shape, so the zero modes leave the shape Hessian unchanged, lower the signed weight to
+\begin{equation}
+\rANeff=(1-\fzm)\NC=17.9 , %
+\end{equation}
+and raise every normalized shape stiffness $\kappa_A$ of Sec.~\ref{rep:shape} to $\kappa_A/(1-\fzm)$.
+With $\fzm=0.2999$ the leading-order stiffnesses are $\kappa_E=19.324$ and $\kappa_{T_2}=-9.074$, with $\sum_A\kappa_A=8/(1-\fzm)=11.43$, and the shape commutator $\delta$ of Sec.~\ref{rep:quantum-shape} grows by $(1-\fzm)^{-3/4}=1.307$ relative to free fields. %
+We quote results for free fields, $\fzm=0$, and with the zero-mode energy, $\fzm=0.30$; Table~\ref{tab:rA-fzero} of Sec.~\ref{rep:turning} collects the background quantities that change. %
+
+\paragraph{Adiabatic following.}
+The zero modes follow the shape adiabatically.
+In conformal time the shape changes at a rate of order $h\Lb\sigma_E\simeq5\times10^{-4}$, far below their gaps, which are of order $g^{2/3}$ for the non-abelian modes and about $0.4$ for the softer hypercharge mode (harmonic estimate $0.36$, variational bound $0.46$). %
+In the variables $y=g^{1/3}x$, in which the pure-gauge Hamiltonian is $g^{2/3}(\tfrac12\pi_y^2+\tfrac14F[y]^2)$, the copies of the vacuum under large gauge transformations lie at $|y|\simeq4\pi/g^{2/3}\simeq19$, far outside a ground state of rms width about $0.6$ per component. %
+Tunneling to the copies is therefore negligible, and the global features that could make the zero-mode energy shape dependent (Sec.~\ref{rA:zm-isospectral}) do not act.
+The excited levels are shape independent too, by Proposition~\ref{prop:rA-isospectral}; Sec.~\ref{rep:gate} returns to them.
+
+\paragraph{The Higgs zero mode.}
+The Higgs zero mode is the one constant mode whose fate this energy count does not settle.
+At $\mub$ the Standard Model quartic is negative, $\lambda(\mub)=-0.0098$ (assumption~\ref{assump:A2}), so the Hamiltonian~\eqref{eq:rA-H0} has no normalizable ground state along the Higgs direction. %
+The zero-point fluctuations of the electroweak gauge modes still confine the Higgs zero mode near the origin, and for $\lambda$ above a finite-volume threshold it is a narrow resonance.
+Sections~\ref{rep:h-matching}--\ref{rep:h-universality} compute that threshold and the survival of the resonance through the turn.
+A curvature coupling is negligible at the turn itself, where $R=6(\dot H+2H^2)=12h^2$ and $R\Lb^2=12(h\Lb)^2\simeq2\times10^{-4}$, but late in the expanding branch, $\tau\gtrsim4$, it decides whether the zero mode stays near the origin (Sec.~\ref{rep:h-universality}). %

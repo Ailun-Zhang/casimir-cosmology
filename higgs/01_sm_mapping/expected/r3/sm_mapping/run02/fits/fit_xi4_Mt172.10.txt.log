@@ -1,0 +1,39 @@
+Iteration 1: Total fractional error = 1.072990588713071e-003  (t=6.6s)
+Iteration 2: Total fractional error = 5.254507006019897e-005  (t=13.3s)
+Iteration 3: Total fractional error = 1.918574635377066e-006  (t=19.2s)
+Iteration 4: Total fractional error = 3.050283366829807e-008  (t=24.9s)
+Iteration 5: Total fractional error = 1.388636027219598e-009  (t=30.1s)
+Iteration 6: Total fractional error = 4.146418257863726e-011  (t=36.2s)
+done niter=5 t=36.2s
+WARNING: the input renormalization scale Q = 688.400000 seems too high.
+WARNING: the input renormalization scale Q = 640.000000 seems too high.
+WARNING: the input renormalization scale Q = 640.000000 seems too high.
+WARNING: the input renormalization scale Q = 640.000000 seems too high.
+WARNING: the input renormalization scale Q = 688.400000 seems too high.
+WARNING: the input renormalization scale Q = 688.400000 seems too high.
+WARNING: the input renormalization scale Q = 640.000000 seems too high.
+WARNING: the input renormalization scale Q = 640.000000 seems too high.
+WARNING: the input renormalization scale Q = 640.000000 seems too high.
+WARNING: the input renormalization scale Q = 688.400000 seems too high.
+WARNING: the input renormalization scale Q = 688.400000 seems too high.
+WARNING: the input renormalization scale Q = 640.000000 seems too high.
+WARNING: the input renormalization scale Q = 640.000000 seems too high.
+WARNING: the input renormalization scale Q = 640.000000 seems too high.
+WARNING: the input renormalization scale Q = 688.400000 seems too high.
+WARNING: the input renormalization scale Q = 688.400000 seems too high.
+WARNING: the input renormalization scale Q = 640.000000 seems too high.
+WARNING: the input renormalization scale Q = 640.000000 seems too high.
+WARNING: the input renormalization scale Q = 640.000000 seems too high.
+WARNING: the input renormalization scale Q = 688.400000 seems too high.
+WARNING: the input renormalization scale Q = 688.400000 seems too high.
+WARNING: the input renormalization scale Q = 640.000000 seems too high.
+WARNING: the input renormalization scale Q = 640.000000 seems too high.
+WARNING: the input renormalization scale Q = 640.000000 seems too high.
+WARNING: the input renormalization scale Q = 688.400000 seems too high.
+WARNING: the input renormalization scale Q = 688.400000 seems too high.
+WARNING: the input renormalization scale Q = 640.000000 seems too high.
+WARNING: the input renormalization scale Q = 640.000000 seems too high.
+WARNING: the input renormalization scale Q = 640.000000 seems too high.
+WARNING: the input renormalization scale Q = 688.400000 seems too high.
+
+rc=0 t=36.2

@@ -1,0 +1,129 @@
+
+\section{Conditional evidence from an independent line of calculation}\label{rep:v-conditional}
+
+A separate line of calculation was carried out under the author's direction (see the Acknowledgments), with its own code, conventions and numerical choices.
+It explored alternatives to the plateau and to the preparation of the state at the turn (assumptions~\ref{assump:A3}, \ref{assump:A4} and~\ref{assump:A8} of Sec.~\ref{rep:setup}), and it produced several inputs of the shape and sky analyses of Secs.~\ref{rep:quantum-shape} and~\ref{rep:sky}.
+This section collects its results, states the status of each, and says where it bears on the papers.
+The main results do not rest on them: the papers cite the flat core, the curved cigar and the fixed flux as remarks on open questions, and the sky analysis started from the single-fossil and size-prior inputs below, which we reproduced and then replaced by our own ensemble calculation.
+The curved cigar of Sec.~\ref{sec:v21-cap} is our extension of the flat-core result of this line.
+
+We use four status labels.
+A \emph{model result} holds within the stated model and history; a \emph{numerical result} was checked only within that line; \emph{reproduced} means that our own code gives the same numbers; and \emph{independently checked} that a separate implementation does (Sec.~\ref{rep:v-blind}).
+Results that our own calculations have replaced are marked as superseded and are listed again in Part~III.
+Table~\ref{tab:v21-summary} summarizes the items.
+
+\subsection{A turning point without a plateau}\label{sec:v21-noplateau}
+
+\paragraph{Winding vacuum.}
+Three free compact scalars wound around the cycles of a face-centred cubic lattice, with no potential, supply matter with $w=-1/3$; together with the negative Casimir energy they turn the torus around without a plateau.
+All five shape modes then have the same frequency in the far past and in the far future, and a single positive-frequency condition in the far past fixes both the widths and the phases of the shape state at the turn.
+The particle numbers produced are $3.0\times10^{-4}$ per aspect mode and $0.18$ per angle mode. %
+This is a model result for a fixed full-rank winding, obtained after a correction of the Ewald sum of the line; it is an example of a state selected by an incoming vacuum instead of by assumption~\ref{assump:A8}.
+
+\paragraph{Feedback.}
+With the five shape modes fed back into the volume constraint in the same incoming vacuum, all six cases computed, with decay constants $f/\MPbar=10^{-3}$ to $10^{-5}$, still turn around. %
+Numerical result.
+
+\paragraph{Large-charge completion.}
+A two-Higgs completion of the winding sector with charge $q=1000$ and effective decay constant $10^{-12}\MPbar$ keeps all Kaluza--Klein masses and all five shape Hessian eigenvalues positive. %
+Its common incoming vacuum gives $\sigma_E\simeq1.15\times10^{-6}$, so in this controlled completion the shape fossil is unobservable. %
+Model result for a fixed sector and a specified history.
+
+\paragraph{Size and amplitude.}
+Without a plateau the universe stays small and its perturbations are far too weak.
+For Casimir energies $E_C\ge1$~MeV the turning-point history without a cosmological constant leaves a fundamental cell smaller than $7.4\times10^{14}$~m after $14$~Gyr, far below $10$~Gpc; numerical result, independently checked. %
+A single-field slow roll at the same scale gives $A_s\sim10^{-83}$, against the observed $2.1\times10^{-9}$, and matching it needs a decay constant larger by a factor $10^{18}$, which destroys the control of the completion and of the turn; the computation is complete, but only a consistency recomputation exists. %
+
+\paragraph{Constant vacuum energy.}
+A constant vacuum energy changes the definition of the incoming state and costs late-time expansion, so adding a plateau removes the incoming vacuum on which the items above rest. %
+Model result, independently checked under stated conditions.
+
+These items bear on assumptions~\ref{assump:A3}, \ref{assump:A4} and~\ref{assump:A8}.
+A turning point without a plateau, with its state fixed by an incoming vacuum, is consistent as a model, but it leaves a universe too small and too smooth, and the plateau that cures this removes the incoming vacuum.
+
+\subsection{Shape stability and the Euclidean cap}\label{sec:v21-cap}
+
+\paragraph{Fixed flux.}
+Six compact Maxwell fields with fixed integer electric flux on a face-centred cubic lattice make all five shape modes locally stable, but along an explicit path the barrier is only $0.52\%$ of the negative energy at the start. %
+Numerical result.
+The example lies outside the hypotheses of the shape no-go theorem of Sec.~\ref{rep:shape}, and the minimum it provides is shallow.
+
+\paragraph{Finite Euclidean neck.}
+A finite Euclidean neck with Dirichlet data on a specified background gives an aspect width within $10\%$ of the floor, as expected for a preparation that is symmetric under time reflection and has a width of order one. %
+Model result; the neck is not a self-consistent cap.
+
+\paragraph{Flat core.}
+In a flat $\mathbb R^2\times T^2$ core with free Standard Model fields, periodic bosons and antiperiodic fermions on a square $T^2$ of side $B$, the one-loop energy density is
+\begin{equation}
+\rho_{\rm core}=-\frac{73}{3}\,\frac{\mathrm G}{B^4}=-\frac{22.288496}{B^4},
+\label{eq:v21-core}
+\end{equation}
+with $\mathrm G$ Catalan's constant. %
+The Einstein series is regular, the aspect Hessian is negative and the shear Hessian positive.
+Local result, independently recomputed (Sec.~\ref{rep:v-blind}).
+
+\paragraph{Curved cigar.}
+On a smooth cigar times $T^2$, with a $T^2$ of constant size and a profile of non-negative curvature, the $T^2$ compactification stress of a conformally coupled scalar is ultraviolet finite. %
+It reproduces the flat-core coefficient at the tip and the cylinder far away, and it is conserved to $2\times10^{-6}$. %
+The shape Hessian at fixed area is a positive spectral density times a kernel whose sign is the same for every eigenvalue $\lambda\ge0$ of the two-dimensional operator, so neither curvature nor matching at large distance can flip the negative aspect kernel.
+Its magnitude changes by $0.26\%$ for a cigar radius $R_0=L/2$ and by less for larger radii. %
+For Standard-Model-like matter the sign statement needs antiperiodic fermions on $T^2$, non-negative two-dimensional operators, square-symmetric twists with trivial holonomy, and one loop without gravitons; masses do not change it.
+Periodic fermions reverse the sum, from $-401.4$ to $+194.5$ for the aspect Hessian and from $+223.1$ to $-43.1$ for the shear Hessian, in units of $1/L^4$. %
+Proved under these conditions, with numerical and symbolic checks, and independently checked.
+This bears on the Euclidean continuation of Sec.~\ref{rep:quantum-shape}: the divergence of the homogeneous Casimir stress at a cap marks the precision of the homogeneous model, not an obstruction, and whether a self-consistent capped saddle exists, and where it would centre the shape, remains open.
+
+\paragraph{Spin structures.}
+The $168$ elements of $GL(3,\mathbb F_2)$, through which the large diffeomorphisms of $T^3$ act on spin structures, permute the seven spin structures other than the fully periodic one as a single orbit. %
+Of the two spin structures invariant under the cubic group, only AAA admits an ordinary cap, and an equal superposition of the three equivalent capped branches has a cubic mean shape but an unchanged spread, so it does not prepare a narrow cube.
+Checked by group theory and symbolic computation; it agrees with the choice of the AAA spin structure in assumption~\ref{assump:A1}.
+
+\subsection{Inputs to the sky analysis and to the Higgs zero mode}\label{sec:v21-inputs}
+
+\paragraph{Single fossil.}
+For the fossil $\beta=\sqrt2\,\sigma_EX_d$ with $\sigma_E=0.1041$ at $L_0=1.13\,\dLSS$, the divergences from the cube of equal volume are $5.226$, $7.125$ and $11.350$ for $\ell\le30$, $40$ and $80$, and a grid in the volume of the reference cube puts the readout edge at $1.135$--$1.140\,\dLSS$, all for the ideal full sky. %
+Reproduced to $2\times10^{-14}$ by our code (Sec.~\ref{rep:sky}). %
+Superseded by the ensemble of Sec.~\ref{rep:sky}, in which the factor of about $2.2$ in the divergence between $\ell\le30$ and $\ell\le80$ raises the probabilities only by factors $1.23$--$1.31$; a ratio of divergences at one representative fossil is not a ratio of probabilities. %
+
+\paragraph{Inflaton packet.}
+A constraint-projected Gaussian packet of the inflaton zero mode, propagated nonlinearly, gives $N_{\rm post}=68.25$ with $\sigma_N=1.91$. %
+Its width neglects the slope of the plateau and is twice the minimal-variance value of our joint-state calculation (Sec.~\ref{rep:sky}). %
+Superseded.
+
+\paragraph{Size priors.}
+Priors of the no-boundary type and the reuse of the plateau measure give a readability that is small and depends on the cutoff. %
+Recomputed with the readout edges for $\ell\le80$ in our sky analysis (Sec.~\ref{rep:sky}).
+The ensemble and the joint state of Sec.~\ref{rep:sky} started from these three inputs; they are part of our own calculation and were independently checked (Sec.~\ref{rep:v-blind}).
+
+\paragraph{Higgs zero mode.}
+An early toy of the Higgs zero mode at negative quartic coupling, with the gauge and top-quark matching taken in a conditional Gaussian subspace at trivial connection, gives a finite resonance width and a conditional threshold $\lambda\simeq-0.0074$. %
+Reproduced exactly by our code; superseded by the model of Secs.~\ref{rep:h-matching}--\ref{rep:h-smmap}.
+
+\paragraph{Not used.}
+Other results of that line are not used in the papers or in this report: control certificates for the incoming-vacuum branch, a probe of the future branch with a clock field, a quantum treatment of that clock, and sealed attempts at a finite Euclidean cap.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Results of the separate line of calculation: status and use. M: model result; N: numerical result; P: proved under stated conditions; R: reproduced by our code; I: independently checked; S: superseded.}
+\label{tab:v21-summary}
+\begin{tabular}{@{}p{0.22\textwidth}p{0.40\textwidth}p{0.10\textwidth}p{0.20\textwidth}@{}}
+\toprule
+Item & Result & Status & Use \\
+\midrule
+Winding vacuum & incoming vacuum fixes widths and phases; $3.0\times10^{-4}$ and $0.18$ quanta & M & alternative to A8 \\
+Feedback & six cases turn around & N & alternative to A8 \\
+Large-charge completion & positive KK masses and Hessians; $\sigma_E\simeq1.15\times10^{-6}$ & M & alternative to A3, A8 \\
+Size and amplitude & cell $<7.4\times10^{14}$~m; $A_s\sim10^{-83}$ & N, I & motivates A3 \\
+Constant vacuum energy & removes the incoming vacuum & M, I & motivates A3 \\
+Fixed flux & local stability; barrier $0.52\%$ & N & outside the no-go \\
+Euclidean neck & width within $10\%$ of the floor & M & remark (Sec.~\ref{rep:quantum-shape}) \\
+Flat core & $-\frac{73}{3}\mathrm G/B^4$; aspect $<0$, shear $>0$ & M, I & remark (Sec.~\ref{rep:quantum-shape}) \\
+Curved cigar & sign of the aspect kernel fixed & P, I & remark (Sec.~\ref{rep:quantum-shape}) \\
+Spin structures & one orbit of seven; AAA capped & P & agrees with A1 \\
+Single fossil & $D=5.226/\allowbreak 7.125/\allowbreak 11.350$; edge $1.135$--$1.140$ & R, S & input to Sec.~\ref{rep:sky} \\
+Inflaton packet & $\sigma_N=1.91$ & S & input to Sec.~\ref{rep:sky} \\
+Size priors & small, cutoff dependent & R & recomputed in Sec.~\ref{rep:sky} \\
+Higgs toy & $\lambda\simeq-0.0074$ & R, S & superseded by Secs.~\ref{rep:h-matching}--\ref{rep:h-smmap} \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,184 @@
+{
+ "step": "03_joint_state",
+ "checks": [
+  {
+   "id": "joint_state",
+   "what": "C147 joint-state results",
+   "paper": "PRD Sec. VIII B; report Sec. 21",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:ai/joint_state/run01/joint_state_results.json"
+   },
+   "expected": {
+    "file": "expected/ai/joint_state/run01/joint_state_results.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s",
+    "camb_path",
+    "created",
+    "script_sha256",
+    "snapshot_sha256_readonly",
+    "elapsed",
+    "build_seconds",
+    "seconds",
+    "wall",
+    "time",
+    "t_build",
+    "Codex_sigma_aspect_leading",
+    "Codex_read_error",
+    "source",
+    "note",
+    "source_edges",
+    "source_C79",
+    "generated_utc",
+    "path",
+    "pid"
+   ]
+  },
+  {
+   "id": "sigma_B3",
+   "what": "inflaton width sigma_phi = 0.009737",
+   "paper": "PRD Sec. VIII B (JOINT-01)",
+   "computed": {
+    "file": "WORK:ai/joint_state/run01/joint_state_results.json",
+    "key": "T3/B3/ref/sigma_B3"
+   },
+   "expected": {
+    "file": "expected/ai/joint_state/run01/joint_state_results.json",
+    "key": "T3/B3/ref/sigma_B3"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-08
+  },
+  {
+   "id": "floor_sigma_N",
+   "what": "sigma_N >= 0.935",
+   "paper": "PRD Sec. VIII B (JOINT-02)",
+   "computed": {
+    "file": "WORK:ai/joint_state/run01/joint_state_results.json",
+    "key": "T3/response/ref/floor_sigma_N"
+   },
+   "expected": {
+    "file": "expected/ai/joint_state/run01/joint_state_results.json",
+    "key": "T3/response/ref/floor_sigma_N"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-08
+  },
+  {
+   "id": "dphi_window",
+   "what": "Delta phi_b to enter the typical window = 6.18e-4",
+   "paper": "PRD Sec. VIII B (JOINT-04)",
+   "computed": {
+    "file": "WORK:ai/joint_state/run01/joint_state_results.json",
+    "key": "T4/typical_fossil_window/dphi_window"
+   },
+   "expected": {
+    "file": "expected/ai/joint_state/run01/joint_state_results.json",
+    "key": "T4/typical_fossil_window/dphi_window"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-08
+  },
+  {
+   "id": "C145_interface",
+   "what": "interface table to C145",
+   "paper": "PRD Sec. VIII B",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:ai/joint_state/run01/C145_interface.json"
+   },
+   "expected": {
+    "file": "expected/ai/joint_state/run01/C145_interface.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s",
+    "camb_path",
+    "created",
+    "script_sha256",
+    "snapshot_sha256_readonly",
+    "elapsed",
+    "build_seconds",
+    "seconds",
+    "wall",
+    "time",
+    "t_build",
+    "Codex_sigma_aspect_leading",
+    "Codex_read_error",
+    "source",
+    "note",
+    "source_edges",
+    "source_C79",
+    "generated_utc",
+    "path",
+    "pid"
+   ]
+  },
+  {
+   "id": "b3_text",
+   "what": "B3 slope SymPy output identical to the archive",
+   "paper": "PRD Sec. VIII B (B3 width)",
+   "computed": {
+    "file": "WORK:checks/b3_textcheck.json",
+    "key": "n_diff_lines"
+   },
+   "expected": {
+    "value": 0
+   },
+   "tol_abs": 0.0,
+   "tol_rel": null
+  }
+ ]
+}

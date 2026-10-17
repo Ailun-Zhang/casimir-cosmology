@@ -1,0 +1,203 @@
+\section{Error budget, marginalization and experimental reach}\label{rep:h-budget}
+
+This section collects the uncertainties of the critical top mass, combines them with the measured inputs into a survival probability, and asks what present and future measurements can decide.
+We find that the model error at $\Pone=1/2$ is $^{+\modelErrUp}_{-\modelErrDn}\GeV$, dominated by the inflation scale, which enters through the duration of the turn; without that item it is $^{+\modelErrUpNoVi}_{-\modelErrDnNoVi}\GeV$, comparable to the Standard Model theory error. %
+The parametric error from $\alpha_s$, $\pm0.35\GeV$, exceeds the theory and model errors combined; of all the items only the Monte Carlo--pole interpretation of the measured mass, $\pm0.5\GeV$, is larger. %
+Marginalizing over the measured masses, $\alpha_s$, and the theory and model errors gives a survival probability $\Pbar=\PbarOne$ for the direct top mass ($\PbarMSR$ to $\PbarSigma$ across top-mass definitions), provided the Higgs curvature coupling satisfies $\xiH(\mub)\gtrsim\xiHmin$ (Sec.~\ref{rep:h-universality}). %
+The survival probability is not evidence for this beginning: for all mass definitions and priors the Bayes factors obey $|\ln B|\le\BayesMax$. %
+A top-quark pole mass above $\mExclFCC\GeV$, within reach of FCC-ee, would establish $\Pone<0.1$ at $95\%$ confidence; at the threshold the central $\Pone$ is $\approx\PoneAtExclFCC$ and the Bayes factor $B_{\rm ex}\approx\BexFCC$, odds of about 30 to 1 against this beginning. %
+
+\subsection{Refinements of the model}
+\label{sec:rb-convergence}
+
+Table~\ref{tab:rb-convergence} follows the critical mass through the refinements of the model, all with the same hazard procedure at $\alpha_s(M_Z)=0.1180$. %
+The first five steps (rows 2--6) add distinct physical effects, not successive orders of one expansion: the $\MSbar$ continuum term of the matching, the Coulomb-gauge counting (Sec.~\ref{rep:h-matching}), the exact gauge shape from DMC, and the joint dynamics of the hypercharge mode (Sec.~\ref{rep:h-reduced}).
+Each moves $m_c$ by $0.04$ to $0.11\GeV$ toward larger values. %
+The last of these, the DMC shape in two dimensions, was first obtained by converting width ratios; a calibrated one-dimensional hazard and direct two-dimensional roots at every node change $m_c$ by only $0.011$ and $0.001\GeV$, so the numerical implementation of the reduced model has converged. %
+The NNLO mapping of Sec.~\ref{rep:h-smmap} then shifts all levels by $+0.063\GeV$ through $\lambda(\mub;m_t)$ alone. %
+The cross terms of Sec.~\ref{rep:h-cross} are the first refinement that lowers $m_c$, and their final one-loop terms move it back by $+0.005$ to $+0.007\GeV$; the row with the anticommutator vertex is an intermediate step whose vertex the background-covariant one replaces (Sec.~\ref{sec:rb-r2c2}). %
+Figure~\ref{fig:rb-cross}(b) shows the same sequence.
+
+\begin{table}[t]
+\centering
+\caption{Critical top mass (GeV) at $\Pone=0.9$ and $1/2$ through the refinements of the model, and the shift of each step at $\Pone=1/2$, at $\alpha_s(M_Z)=0.1180$.
+Rows above the NNLO step use the earlier Standard Model mapping.
+The vertex row uses the anticommutator vertex of ordinary Coulomb gauge; the final row adds the background-covariant vertex and the Coulomb mismatch.} %
+\label{tab:rb-convergence}
+\begin{tabular}{lccc}
+\toprule
+Stage & $\Pone=0.9$ & $\Pone=0.5$ & Shift \\
+\midrule
+Unitary, $D_\theta$ only & $172.210$ & $172.584$ & \\ %
+$+\,V_{\rm CW}$ & $172.276$ & $172.656$ & $+0.072$ \\ %
+Coulomb gauge & $172.348$ & $172.768$ & $+0.112$ \\ %
+1D $+$ DMC shape & $172.393$ & $172.831$ & $+0.063$ \\ %
+2D, Gaussian shape & $172.467$ & $172.941$ & $+0.110$ \\ %
+2D $+$ DMC (rescaled) & $172.509$ & $173.002$ & $+0.061$ \\ %
+Calibrated 1D hazard & $172.517$ & $173.013$ & $+0.011$ \\ %
+2D direct, all nodes & $172.518$ & $173.014$ & $+0.001$ \\ %
+$+$ NNLO mapping & $172.583$ & $173.078$ & $+0.063$ \\ %
+$+$ cross terms (CCA) & $172.498$ & $172.954$ & $-0.124$ \\ %
+$+$ vev, top vertices & $172.495$ & $172.950$ & $-0.003$ \\ %
+$+$ Coulomb (final) & $172.502$ & $172.960$ & $+0.009$ \\ %
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{The error budget}
+\label{sec:rb-table}
+
+Table~\ref{tab:rb-budget} is the error budget of the critical mass, the de-duplicated rebuild of the final model.
+Each model item is computed in the final model or converted with its hazard slopes, $d\ln I/dm_t=5.269$, $3.218$, and $2.121\GeV^{-1}$ at $\Pone=0.9$, $0.5$, and $0.1$; the entries at $\Pone=0.1$ are therefore computed rather than extrapolated. %
+Model items are combined in quadrature on each side; one-sided items carry their sign.
+
+\begin{table}[t]
+\centering
+\caption{Error budget for the critical top-quark mass $m_c$ at which $\Pone$ takes the value in the column header, for $\alpha_s(M_Z)=0.1180$ and $M_h=125.13\GeV$ (entries in GeV). %
+The first row gives $m_c$ for the pole mass and, in brackets, for $\mtbar$.
+The Standard Model mapping and $\alpha_s$ rows give the pole and [$\mtbar$] forms; the other rows are pole-mass shifts, which differ from their $\mtbar$ counterparts by about $5\%$. %
+Robustness variants not included: all-orders pole mass $+0.27$ (one-sided), renormalon ambiguity $0.07$--$0.11$, tadpole-including scale variation $+0.17/-0.36$, and $\rT=10^{-4}$ ($-0.09$, $-0.17$, $-0.28$).} %
+\label{tab:rb-budget}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccc}
+\toprule
+ & $\Pone=0.9$ & $\Pone=0.5$ & $\Pone=0.1$ & Sec. \\
+\midrule
+$m_c$ [$\bar m_c$] & $172.50$ [$162.73$] & $172.96$ [$163.16$] & $173.42$ [$163.60$] & \ref{rep:h-smmap} \\ %
+Reduced model: residual DMC shape & $\pm0.002$ & $\pm0.002$ & $\pm0.002$ & \ref{rep:h-reduced} \\ %
+One-loop matching ($\mu$, top threshold) & $^{+0.009}_{-0.039}$ & $^{+0.012}_{-0.049}$ & $^{+0.015}_{-0.058}$ & \ref{rep:h-matching} \\ %
+Cross terms, model-internal & $\pm0.008$ & $\pm0.010$ & $\pm0.013$ & \ref{rep:h-cross} \\ %
+Cross terms, independent recalculation & $\pm0.004$ & $\pm0.007$ & $\pm0.010$ & \ref{rep:h-cross} \\ %
+Full-dimensional validation (one-sided) & $+0.012$ & $+0.020$ & $+0.031$ & \ref{rep:h-reduced} \\ %
+Numerics & $\pm0.002$ & $\pm0.002$ & $\pm0.002$ & \ref{rep:h-reduced} \\ %
+Inflation scale, $\rT\in[10^{-3},10^{-2}]$ & $\pm0.035$ & $\pm0.067$ & $\pm0.112$ & \ref{rep:h-budget} \\ %
+Preparation weight $w_0$ (one-sided) & $-0.016$ & $-0.006$ & $-0.004$ & \ref{rep:h-survival} \\ %
+Model total & $^{+\modelErrUpPnine}_{-\modelErrDnPnine}$ & $^{+\modelErrUp}_{-\modelErrDn}$ & $^{+\modelErrUpPone}_{-\modelErrDnPone}$ & \\[2pt] %
+\quad without inflation scale & $^{+\modelErrUpNoViPnine}_{-\modelErrDnNoViPnine}$ & $^{+\modelErrUpNoVi}_{-\modelErrDnNoVi}$ & $^{+\modelErrUpNoViPone}_{-\modelErrDnNoViPone}$ & \\[2pt] %
+\midrule
+Standard Model mapping, pole [$\mtbar$] & $\pm0.10$ [$\pm0.07$] & $\pm0.10$ [$\pm0.07$] & $\pm0.10$ [$\pm0.07$] & \ref{rep:h-smmap} \\ %
+$\alpha_s(M_Z)\pm0.0009$ & $\pm0.35$ [$\pm0.25$] & $\pm0.35$ [$\pm0.25$] & $\pm0.35$ [$\pm0.25$] & \ref{rep:h-smmap} \\ %
+$M_h\pm0.11\GeV$ & $\pm0.053$ & $\pm0.053$ & $\pm0.053$ & \ref{rep:h-smmap} \\ %
+Measurement of $m_t$ (direct) & $\pm0.27$ & $\pm0.27$ & $\pm0.27$ & \ref{rep:h-smmap} \\ %
+Monte Carlo--pole interpretation & $\pm0.5$ & $\pm0.5$ & $\pm0.5$ & \ref{rep:h-smmap} \\ %
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Content of the model items.}
+\emph{Reduced model.}
+The earlier estimate of the reduction error had four parts: the $\pm1\sigma$ uncertainty of the DMC shape correction, the $x$-sector Born--Huang term, the transfer of width ratios computed at fixed couplings, and the difference between static and hazard conversions.
+The full-dimensional comparison of Sec.~\ref{sec:rb-fulldim} measures the first two directly, and the node-direct hazard has no ratio transfer and no static conversion.
+What remains is the use of fixed couplings in $\delta E_{\rm DMC}$, estimated at $\pm0.002\GeV$. %
+\emph{Matching.}
+The scale scan of Sec.~\ref{sec:rb-scale} gives $^{+0.009}_{-0.039}$, $^{+0.012}_{-0.049}$, and $^{+0.015}_{-0.058}\GeV$; it is asymmetric because the conservative range $c\in[\frac12,2\pi]$ extends upward beyond the natural scale $\mu_*=3.41/L$. %
+\emph{Cross terms.}
+The two cross-term items are the model-internal error of Table~\ref{tab:rb-xerr} and, separately, the difference between the blind and main calculations of the dominant part (Sec.~\ref{sec:rb-xfinal}).
+\emph{Full-dimensional validation.}
+This item is the one-sided WKB envelope of Sec.~\ref{sec:rb-fulldim}, $+0.012$, $+0.020$, and $+0.031\GeV$. %
+\emph{Numerics.}
+The numerical item, $\pm0.002\GeV$, covers the node set, the discretization, the root windows, and the order of the outgoing-wave condition (Sec.~\ref{sec:rb-nodes}). %
+\emph{Inflation scale.}
+This item varies the tensor-to-scalar ratio over $\rT\in[10^{-3},10^{-2}]$ in the plateau family at fixed scalar amplitude (assumption (A3)); its derivation follows. %
+\emph{Preparation.}
+This item consists of the one-sided shifts from the minimal-variance weight, $-0.016$, $-0.006$, and $-0.004\GeV$ (Sec.~\ref{sec:rb-w0}). %
+
+\subsection{The background of the turn and the inflation scale}
+\label{sec:rb-background}
+
+The background of the turn enters the Higgs calculation only through two numbers.
+The turning solution, $3\MPbar^2h^2=C_{\rm eff}/\Lb^4$ with $a^2=\cosh2\tau$, is an exact scaling solution (Sec.~\ref{rep:turning}).
+A change of an input therefore acts only through the matching scale and the duration, $\delta_\mu=\Delta\ln\mub=-\Delta\ln\Lb$ and $\delta_h=\Delta\ln(h\Lb)$.
+Taking the logarithm of the turning condition, $4\,\Delta\ln\Lb=\Delta\ln C_{\rm eff}-2\Delta\ln h$, so that
+\begin{align}
+\delta_\mu&=-\tfrac14\Delta\ln C_{\rm eff}+\tfrac12\Delta\ln h,\nonumber\\
+\delta_h&=+\tfrac14\Delta\ln C_{\rm eff}+\tfrac12\Delta\ln h,
+\label{eq:rb-background}
+\end{align}
+and the hazard becomes
+\begin{equation}
+I=\int_0^5\frac{\Gamma\bigl(m_t,\ell(\tau)+\delta_\mu\bigr)\,d\tau}{h\Lb\,e^{\delta_h}(\cosh2\tau)^{1/2}},\qquad \ell(\tau)=-\tfrac12\ln\cosh2\tau,
+\label{eq:rb-Ishift}
+\end{equation}
+where $\ell=\ln(\mu/\mub)$ labels the scale of the node couplings.
+We compute $\Gamma$ at the eleven nodes and at three further scales with recomputed gauge profiles and interpolate in $\ell$; four direct reruns with all nodes shifted agree with the interpolation to $1.1\times10^{-7}\GeV$. %
+
+For the plateau the scale obeys $h\propto(A_s\rT)^{1/2}$ at fixed scalar amplitude $A_s$, so a change of $\rT$ gives $\delta_\mu=\delta_h=\frac14\Delta\ln\rT$.
+With $d\ln I/d\lambda(\mub)=-805$, $-488$, and $-319$ at the three levels, $\rT\in[10^{-3},10^{-2}]$ gives the inflation-scale item $\pm0.035$, $\pm0.067$, and $\pm0.112\GeV$, and $\rT=10^{-4}$ gives $-0.089$, $-0.173$, and $-0.280\GeV$. %
+The dominant continuous input is the duration of the turn: changing $h\Lb$ by a factor $e^{\pm1}$ moves $m_c$ by $+0.214$ and $-0.170\GeV$ at $\Pone=0.9$ and by $+0.367$ and $-0.270\GeV$ at $\Pone=1/2$, consistent with the local derivative $dm_c/d\ln\eta_\infty=-0.31\GeV$ at $\Pone=1/2$ (Sec.~\ref{rep:h-universality}) and the curvature of $\ln I(m_t)$. %
+Inputs that change the matter content of the turn move $m_c$ by at most $0.009\GeV$: the zero-mode share $\fzm=0.28$, $0.258$, or $0.308$, an inflaton or three right-handed neutrinos through their Casimir weight alone, the next-order zero-mode energy, $A_s$ within $1\sigma$, the shape stiffness, and the $1\%$ difference between the Higgs-calculation value $h/\MPbar=6.054\times10^{-6}$ and the instantaneous-reheating value $6.116\times10^{-6}$. %
+A reheating history with weak visible decay changes $m_c$ by $+0.013\GeV$ at $\Pone=1/2$, inside the inflation-scale item. %
+
+\subsection{Combination}
+\label{sec:rb-combination}
+
+The total at $\Pone=1/2$ is $^{+\modelErrUp}_{-\modelErrDn}\GeV$, and $^{+\modelErrUpNoVi}_{-\modelErrDnNoVi}\GeV$ without the inflation-scale item; at $\Pone=0.9$ and $0.1$ it is $^{+\modelErrUpPnine}_{-\modelErrDnPnine}$ and $^{+\modelErrUpPone}_{-\modelErrDnPone}\GeV$. %
+Two items may overlap and are both kept, which errs on the conservative side: the blind-versus-main difference of the cross terms and the first-order-versus-variational part of their model-internal error.
+The inflation-scale item was computed with the cross terms before their final one-loop corrections; scaling with the hazard slopes changes it by at most $0.001\GeV$. %
+Rebuilding the budget changed the totals by at most $0.002\GeV$ relative to the earlier compilation, and the marginalized probability by $2\times10^{-4}$. %
+The model total is thus smaller than each of the parametric errors of $\alpha_s$, the measured mass, and its interpretation.
+
+\subsection{Marginalized survival probability}
+\label{sec:rb-pbar}
+
+The probability that the zero mode survives, given current data, is
+\begin{equation}
+\Pbar=\int\Pone\bigl(m_t,\alpha_s,M_h;\delta_{\rm SM},\delta_{\rm mod}(Z)\bigr)\,dP(m_t)\,dP(\alpha_s)\,dP(M_h)\,dP(\delta_{\rm SM})\,dP(Z),
+\label{eq:rb-Pbar}
+\end{equation}
+with Gaussian measurement and Standard Model errors.
+The asymmetric model error is carried by one nuisance parameter $Z\sim\mathcal N(0,1)$, coherent across the levels of $\Pone$, with $\delta_{\rm mod}=\sigma_+Z$ for $Z>0$ and $\sigma_-Z$ for $Z<0$, so that the central value is the median; $\sigma_\pm$ are interpolated between the levels.
+
+\paragraph{Surface.}
+We evaluate Eq.~(\ref{eq:rb-Pbar}) on a surface $\Pone(m_t,\alpha_s)$ built from the ten-point grid of Sec.~\ref{sec:rb-hazard} at $\alpha_s=0.1180$ and the critical masses at three levels for $\alpha_s=0.1171$, $0.1180$, and $0.1189$. %
+For the outer values of $\alpha_s$ we map the masses of the central grid level by level, quadratically in $m_t-m_c(\Pone=1/2)$, keep $\ln I$, and interpolate quadratically in $\alpha_s$.
+Direct hazards from the node widths at $\alpha_s=0.1171$ and $0.1189$, five masses each, agree with the surface to $|\Delta\Pone|\le4.4\times10^{-4}$. %
+
+\paragraph{Asymmetric errors.}
+For asymmetric errors we use an equal-mass split: the shift is $+\sigma_+|Z|$ or $-\sigma_-|Z|$ with probability $\frac12$ each, so the central value is the median and $\pm\sigma_\pm$ are the $16\%$ and $84\%$ points.
+This preserves the meaning of the asymmetric inputs, which are $68\%$ ranges or envelopes about a central value; a continuous two-piece normal would move the mean, for the tadpole-including variant by $(2/\pi)^{1/2}(\sigma_+-\sigma_-)=-0.15\GeV$. %
+Using continuous two-piece normals throughout lowers $\Pbar$ by $0.0025$. %
+
+\paragraph{Results.}
+For the direct mass $\Pbar=\PbarOne$; the central $68\%$ interval of $\Pone$ is $[\PbarQlo,\PbarQhi]$, and $\Pone\ge1/2$ with probability $\PbarGeHalf$. %
+Adding the errors one at a time, the measurement of $m_t$ lowers $\Pbar$ from the curve value $0.843$ by $0.054$, $\alpha_s$ by a further $0.052$, $M_h$ and the Standard Model mapping by $0.004$ together, and the model error changes it by $-0.003$, because its two sides nearly balance; a $0.5\GeV$ interpretation error lowers it by $0.050$. %
+The result depends on how the measured mass is interpreted: $\Pbar=\PbarInterp$ with a $0.5$-GeV Monte Carlo--pole interpretation error, $\PbarSigma$ for the cross-section pole mass, and $\PbarMSR$ for the MSR identification. %
+For the other measurements $\Pbar=\PbarATLASCMS$ (ATLAS+CMS), $\PbarCMS$ (CMS), and $\PbarMbarSigma$ for the $\MSbar$ cross-section value $162.5^{+2.1}_{-1.5}\GeV$. %
+Expressing the direct mass as $\mtbar$ gives the same value as the pole form, because the identification ambiguity of the direct mass returns on the measurement side; the $\mtbar$ form gains only for short-distance measurements such as a threshold scan. %
+The tadpole-including Standard Model variant gives $\Pbar=\PbarBKPV$, depending on how its asymmetric errors are combined. %
+
+\paragraph{Independent integration.}
+An independently written direct Monte Carlo integration, which shares no code with the quadrature and uses a different surface (monotone cubic interpolation in $\ln(-\ln\Pone)$ with clamped $\alpha_s$ offsets) and $4\times10^6$ samples per definition, agrees with it to $5\times10^{-4}$ for all eleven definitions. %
+The probability $P(\Pone\ge\frac12)$ differs by $0.005$ between the two codes because one assigns the model width at the threshold level and the other at the unshifted sample; both round to $\PbarGeHalf$. %
+A blind marginalization with the earlier model is described in Sec.~\ref{rep:v-blind}.
+
+\subsection{Bayes factors}
+\label{sec:rb-bayes}
+
+The survival probability is not evidence for this beginning.
+We compare the hypothesis that the zero mode survived with the same hypothesis without the survival requirement through
+\begin{equation}
+B_{\rm ex}=\Pbar,\qquad B_{\rm sel}=\frac{\Pbar}{\langle\Pone\rangle_{\rm prior}},
+\label{eq:rb-bayes}
+\end{equation}
+where $B_{\rm ex}\le1$ is the exclusion factor, the probability that the data leave the beginning viable, so that $1/B_{\rm ex}$ gives the odds against it, and $B_{\rm sel}$ asks whether the measured masses select the surviving region more often than a broad prior would.
+The priors are flat in $m_t$ on $[150,200]\GeV$ or $[170,176]\GeV$, or flat in $\lambda(\mub)$. %
+For the direct mass $B_{\rm sel}=\BselDirect$ for the first prior, against an upper bound $1/\langle\Pone\rangle_{\rm prior}=\BselMax$, and $1.48$ and $1.17$ for the other two. %
+Over all mass definitions and priors $B_{\rm ex}$ lies between $0.50$ and $0.97$ and $B_{\rm sel}$ between $0.80$ and $2.11$, so $|\ln B|\le\BayesMax$: current data neither favor nor disfavor this beginning. %
+In particular, the fact that the measured mass lies near the critical line is not evidence.
+
+\subsection{Exclusion and experimental reach}
+\label{sec:rb-reach}
+
+On the central curve $\Pone<0.1$ for $m_t>173.42\GeV$, and $173.07$ or $173.77\GeV$ for $\alpha_s$ one standard deviation lower or higher. %
+With the Standard Model, $M_h$, and model errors folded in, but without the $\alpha_s$ and measurement errors, $\Pone<0.1$ at $95\%$ confidence for $m_t>\mExclTheory\GeV$. %
+With the present measurement error of $0.27\GeV$ and $\alpha_s$ marginalized, a $95\%$ exclusion would need a measured central value of $\mExclMeas\GeV$, or $\mExclMeasInterp\GeV$ with a $0.5\GeV$ interpretation error. %
+
+Future measurements can decide.
+We fold the projected errors with the Standard Model error of the $\mtbar$ form and the model error.
+FCC-ee threshold scans aim at $\delta\mtbar=50\,\mathrm{MeV}$ with $\delta\alpha_s=0.0002$~\cite{Freitas:2019bre,FCC:2025lpp}, a total error of $0.131\GeV$. %
+They would separate true masses of $172.6$ and $173.3\GeV$ at $\sigFCC\sigma$, establish the surviving side for a measured value below $172.74\GeV$, and establish $\Pone<0.1$ at $95\%$ confidence for a measured pole mass above $\mExclFCC\GeV$; at the threshold the central $\Pone$ is $\approx\PoneAtExclFCC$ and the Bayes factor of Eq.~(\ref{eq:rb-bayes}) is $B_{\rm ex}\approx\BexFCC$, odds of about 30 to 1 against this beginning, and both are smaller above it. %
+With $38\,\mathrm{MeV}$ and $\delta\alpha_s=0.0001$ the separation is $6.0\sigma$. %
+At the HL-LHC, with $\delta m_t=0.17\GeV$~\cite{Azzi:2019yne}, a pole-mass determination separates the two masses at $1.71\sigma$, $2.54\sigma$, or $3.08\sigma$ for $\delta\alpha_s=0.0009$, $0.00045$, or $0.0002$, that is $\sigHLLHCmin\sigma$ for the present $\alpha_s$ and $\sigHLLHCmax\sigma$ if lattice determinations halve its error~\cite{FCC:2025lpp}; the gain comes almost entirely from $\alpha_s$. %
+For the direct mass with its $0.5\GeV$ interpretation uncertainty the separation is $1.08\sigma$, $1.23\sigma$, or $1.27\sigma$ for the same three values of $\delta\alpha_s$, that is $\sigHLLHCinterpMin$--$\sigHLLHCinterpMax\sigma$ for the present and the halved $\alpha_s$ error. %
+Today the separation is $1.5\sigma$. %

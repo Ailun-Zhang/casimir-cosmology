@@ -1,0 +1,23 @@
+chi_* = 13871.186029881328  d_LSS = 27742.372059762656
+raw CAMB transfer vs CAMB C_l: {'max_abs_rel_TT': 1.052857617245273e-05, 'max_abs_rel_EE': 2.1211411908028666e-05, 'max_abs_TE_over_sqrtTTEE': 1.148320142564363e-05, 'TE_sign_agreement': True, 'pass_1em3': True}
+patched: max rel TT 0.0005927354997725676  EE 0.0004314569559664694  TE/sqrt(TTEE) 0.0005056599756455457  TE plain 0.0007736287592368107  pass True
+patched rows: [(18, 'T', 0.090014), (18, 'E', 0.05815), (19, 'T', 0.041797), (19, 'E', 0.025336), (20, 'T', 0.018059), (20, 'E', 0.010379), (21, 'T', 0.007304), (21, 'E', 0.004006), (22, 'T', 0.00278), (22, 'E', 0.001463), (23, 'T', 0.001), (23, 'E', 0.000506), (24, 'T', 0.000337), (24, 'E', 0.000166), (25, 'T', 0.000107)]
+continuation validation max err/max: 0.0006650425848429705
+    {'l': 14, 'field': 'T', 'truncation_level': 0.09, 'x_t': 10.639360066520746, 'max_err_over_max': 9.186981367487446e-05, 'max_err_over_value_at_xt': 0.0010164210935927588}
+    {'l': 14, 'field': 'T', 'truncation_level': 0.04, 'x_t': 9.819534053137097, 'max_err_over_max': 2.3676665625615e-05, 'max_err_over_value_at_xt': 0.0005808814697819464}
+    {'l': 14, 'field': 'E', 'truncation_level': 0.09, 'x_t': 11.527632778961955, 'max_err_over_max': 0.0006650425848429705, 'max_err_over_value_at_xt': 0.00723811263095503}
+    {'l': 14, 'field': 'E', 'truncation_level': 0.04, 'x_t': 10.573936293203172, 'max_err_over_max': 0.0001498441019149496, 'max_err_over_value_at_xt': 0.0036559245089644913}
+    {'l': 15, 'field': 'T', 'truncation_level': 0.09, 'x_t': 11.527632778961955, 'max_err_over_max': 9.051056220906138e-05, 'max_err_over_value_at_xt': 0.0010041466993743352}
+    {'l': 15, 'field': 'T', 'truncation_level': 0.04, 'x_t': 10.705188634230526, 'max_err_over_max': 2.4739213995337534e-05, 'max_err_over_value_at_xt': 0.0005950220312923941}
+    {'l': 15, 'field': 'E', 'truncation_level': 0.09, 'x_t': 12.336930688735603, 'max_err_over_max': 0.00030014603477901473, 'max_err_over_value_at_xt': 0.003155138483862146}
+    {'l': 15, 'field': 'E', 'truncation_level': 0.04, 'x_t': 11.316279903921464, 'max_err_over_max': 6.813201236228706e-05, 'max_err_over_value_at_xt': 0.0017021089001500941}
+    {'l': 16, 'field': 'T', 'truncation_level': 0.09, 'x_t': 12.49006675737539, 'max_err_over_max': 9.806319386043035e-05, 'max_err_over_value_at_xt': 0.00102713630184367}
+    {'l': 16, 'field': 'T', 'truncation_level': 0.04, 'x_t': 11.598957327635821, 'max_err_over_max': 2.5390685844105526e-05, 'max_err_over_value_at_xt': 0.0005971353484721797}
+    {'l': 16, 'field': 'E', 'truncation_level': 0.09, 'x_t': 12.960974736191783, 'max_err_over_max': 5.2840408235367856e-05, 'max_err_over_value_at_xt': 0.000570564985245858}
+    {'l': 16, 'field': 'E', 'truncation_level': 0.04, 'x_t': 12.036268164930524, 'max_err_over_max': 1.7950531826136392e-05, 'max_err_over_value_at_xt': 0.00043117259152529496}
+    {'l': 17, 'field': 'T', 'truncation_level': 0.09, 'x_t': 13.366932382217717, 'max_err_over_max': 9.536764445226033e-05, 'max_err_over_value_at_xt': 0.0010171834780095773}
+    {'l': 17, 'field': 'T', 'truncation_level': 0.04, 'x_t': 12.413262580136657, 'max_err_over_max': 2.338716752940535e-05, 'max_err_over_value_at_xt': 0.0005833307878719239}
+    {'l': 17, 'field': 'E', 'truncation_level': 0.09, 'x_t': 13.87090047409109, 'max_err_over_max': 5.9660360019725215e-05, 'max_err_over_value_at_xt': 0.0006218264450933243}
+    {'l': 17, 'field': 'E', 'truncation_level': 0.04, 'x_t': 12.881274841854754, 'max_err_over_max': 2.6242154216364963e-05, 'max_err_over_value_at_xt': 0.0006345233480885193}
+C_l change from patch: {'TT': 0.0005910892469889184, 'EE': 0.00042874624177868803, 'TE_over_sqrtTTEE': 0.0005033849282871252}
+native grid {'x_first': 0.0326726811726422, 'x_last': 1176.2165222151193, 'max_dx_below_x300': 0.10890893724217676, 'median_dx_below_x300': 0.10890893724213413}  interp {'T': 3.1539251441410714e-07, 'E': 3.1376658661279212e-09}

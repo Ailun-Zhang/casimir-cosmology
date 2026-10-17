@@ -1,0 +1,30 @@
+{
+  "agent": "r15-argon-theory",
+  "round": "R15_v12_round2",
+  "targets": ["C146/D118 cigar_curved", "C147/D119 joint_state"],
+  "status": "complete",
+  "started": "2026-10-14",
+  "completed": "2026-10-14",
+  "protocol": "independent derivation and numerics first; producer code not read; first ~90 lines of each doc read before computing (disclosed in report)",
+  "verdicts": {
+    "C146_a_decomposition_sign_theorem": "PASS (2 wording fixes: sigma>=0 is automatic, H2>=0 fixes support; 'any smooth profile' -> 'any smooth profile with H2>=0')",
+    "C146_b_numerics": "PASS (closed forms H_asp^PP=-(4/3)G-(6/pi^2)G4(i)=-3.1369946387 etc.; (73/3)G=22.288496124979)",
+    "C146_curvature_magnitude": "PASS (heat-kernel b2 prediction matches D118 Sec.5 at R0=4L to ~1% for all four kernels); '<1%' valid only for R0>=L/2",
+    "C146_c_SM_wording": "PASS-with-corrections (add: fermion T^2 spin structure must be AA with trivial holonomy; PP fermions flip SM-like flat totals to asp +194.49, sh -43.05)",
+    "C147_theta_family_mean": "PASS (typo: 'L_b larger' for P!=0 should be 'smaller')",
+    "C147_sigma_phi_B3": "PASS (0.0097372 slope-only / 0.0097371 quartic)",
+    "C147_floor_0935": "PASS-with-corrections (needs Theta, Robertson, linearization, N depending only on (phi_b,P_b) or uncorrelated sectors; not Gaussian; value tied to phi_b ref: floor ~0.0137 N_post)",
+    "C147_pN_1_over_N": "PASS (approximate: p(N)=(1.15-1.20)/N over N in [38,125])"
+  },
+  "key_numbers": {
+    "A": 57.93248, "B": 0.01509284, "floor_linear": 0.935075, "floor_GH": 0.935278,
+    "sigmaN_B3_GH": 0.958846, "tau_h": 0.6007,
+    "h_kappa1": [-4.798738780281, 1.102166150431, 5.818138822593, -5.542289195306],
+    "h_kappa0_PP_kronecker": [-5.192845299662, 1.192845299662]
+  },
+  "deliverables": {
+    "report": "R15_ARGON_THEORY_CHECK_CN.md",
+    "code": ["code/c146_check.py", "code/c147_check.py"],
+    "results": ["code/c146_results.json", "code/c147_results.json"]
+  }
+}

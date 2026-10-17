@@ -1,0 +1,8 @@
+inverted  <x^2> = 1/(4*a)  Var(H) = (16*a**4 + 32*a**2*b**2 + 8*a**2*k*m + 16*b**4 - 8*b**2*k*m + k**2*m**2)/(32*a**2*m**2)
+  real-Gaussian stationary a: [sqrt(k)*sqrt(m)/2]  -> X = [1/(2*sqrt(k)*sqrt(m))]
+  natural width 1/(2 m |w|) with |w|=sqrt(k/m): 1/(2*sqrt(k)*sqrt(m))
+  Var at optimum: [k/(2*m)]
+  stationary a(b): [-(b**4 - b**2*k*m/2 + k**2*m**2/16)**(1/4), (b**4 - b**2*k*m/2 + k**2*m**2/16)**(1/4)]
+   Var_min(b) = (16*b**4 - 8*b**2*k*m + 4*b**2*sqrt(16*b**4 - 8*b**2*k*m + k**2*m**2) + k**2*m**2 + k*m*sqrt(16*b**4 - 8*b**2*k*m + k**2*m**2))/(4*m**2*sqrt(16*b**4 - 8*b**2*k*m + k**2*m**2))
+   Var_min(b) = (16*b**4 - 8*b**2*k*m + 4*b**2*sqrt(16*b**4 - 8*b**2*k*m + k**2*m**2) + k**2*m**2 + k*m*sqrt(16*b**4 - 8*b**2*k*m + k**2*m**2))/(4*m**2*sqrt(16*b**4 - 8*b**2*k*m + k**2*m**2))
+normal  <x^2> = 1/(4*a)  Var(H) = (16*a**4 + 32*a**2*b**2 - 8*a**2*k*m + 16*b**4 + 8*b**2*k*m + k**2*m**2)/(32*a**2*m**2)

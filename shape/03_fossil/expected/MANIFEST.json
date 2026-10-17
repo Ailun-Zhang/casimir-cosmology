@@ -1,0 +1,62 @@
+{
+ "r5/C58_turning_point_states/C58_results.json": {
+  "source": "04_calculations/results/20261009_claude_R5/C58_turning_point_states/C58_results.json",
+  "sha256": "bc1873e342abdc714de762d80aea58d1fa2d01a6efa1c4e14bfbac1465319294",
+  "bytes": 6004
+ },
+ "r5/C62_SM_pivot/C62_results.json": {
+  "source": "04_calculations/results/20261009_claude_R5/C62_SM_pivot/C62_results.json",
+  "sha256": "53a9eec9c6b10d5646b0736542a76f78794b66f63bec601c37657009728719e2",
+  "bytes": 531
+ },
+ "r5/C63_rolling_fossil/C63_results.json": {
+  "source": "04_calculations/results/20261009_claude_R5/C63_rolling_fossil/C63_results.json",
+  "sha256": "74849ecb23e6d9b91696ca417dd80cae1b4996b5ccc5afc216980dd3ad5d6ddd",
+  "bytes": 3377
+ },
+ "fu/C77/C77_results.json": {
+  "source": "04_calculations/results/20261011_claude_followup/C77/C77_results.json",
+  "sha256": "20ffc903b4eec3a670c133e2d61e107534ab03696540b2ee909a6b824257547f",
+  "bytes": 1972
+ },
+ "fu/C82/C82_results.json": {
+  "source": "04_calculations/results/20261011_claude_followup/C82/C82_results.json",
+  "sha256": "c214f6a7b1c25143fa2be93e41bf95befd773139bccbe335a975e04fad529c9e",
+  "bytes": 1644
+ },
+ "r2/observables/run01/C143_observables.json": {
+  "source": "04_calculations/results/20261013_claude_v12_r2/observables/run01/C143_observables.json",
+  "sha256": "17893ac706bb2c00e4527a605bc2ee45093e83ad87e1b81dbaafdde79444c43d",
+  "bytes": 1827
+ },
+ "r5/nonlinear_SM/C60_summary.json": {
+  "source": "04_calculations/results/20261009_claude_R5/nonlinear_SM/C60_summary.json",
+  "sha256": "8add6e1f07ba6a41f8d10cd73a1cc72501c78ca4d5c675c00ddd207baf3557c3",
+  "bytes": 46573
+ },
+ "r5/nonlinear_SM/C60_draw_manifest.json": {
+  "source": "04_calculations/results/20261009_claude_R5/nonlinear_SM/C60_draw_manifest.json",
+  "sha256": "3c23af9b623b322e44c34f44f4e6ad0d72970c044ef42ca32cc1f260779c224b",
+  "bytes": 395
+ },
+ "r5/nonlinear_SM/C60_validation_ewald.json": {
+  "source": "04_calculations/results/20261009_claude_R5/nonlinear_SM/C60_validation_ewald.json",
+  "sha256": "6563f267862f8a3f2b4c070dcdad0ae351c6c01c6228c0515c73f7d4b4c56d7d",
+  "bytes": 7547
+ },
+ "fu/C76/C76_summary.json": {
+  "source": "04_calculations/results/20261011_claude_followup/C76/C76_summary.json",
+  "sha256": "eaadc3a2dc216f46e5097382415edea3bed47ffed5ae52ac393bcec5dbdb37b5",
+  "bytes": 3731
+ },
+ "r5/nonlinear_SM/draws.zip": {
+  "source": "04_calculations/results/20261009_claude_R5/nonlinear_SM/draws/ (2592 files, zipped)",
+  "sha256": "47581d9a9f2b7b6c4d1587fe36d2680c55bf8fa71fe9a4263fa0135c575dd3a9",
+  "bytes": 2490829
+ },
+ "fu/C76/draws.zip": {
+  "source": "04_calculations/results/20261011_claude_followup/C76/draws/ (4224 files, zipped)",
+  "sha256": "d45a5779a7e23b67c35cbebe28bbe31e7177badd4dc726f42df8c5f5b35feae9",
+  "bytes": 4060598
+ }
+}

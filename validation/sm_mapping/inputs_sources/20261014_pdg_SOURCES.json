@@ -1,0 +1,38 @@
+[
+ {
+  "file": "rppYYYY-rev-phys-constants.pdf",
+  "url": "https://pdg.lbl.gov/2026/reviews/rpp2026-rev-phys-constants.pdf",
+  "final_url": "https://pdg.lbl.gov/2026/reviews/rpp2026-rev-phys-constants.pdf",
+  "content_type": "application/pdf",
+  "date_utc": "2026-10-14T23:58:07Z",
+  "bytes": 252551,
+  "sha256": "f54f2e23ca28f945158a01649e199653ef443773337c3fb99e1482baa9ac23c1"
+ },
+ {
+  "file": "rppYYYY-sum-gauge-higgs-bosons.pdf",
+  "url": "https://pdg.lbl.gov/2026/tables/rpp2026-sum-gauge-higgs-bosons.pdf",
+  "final_url": "https://pdg.lbl.gov/2026/tables/rpp2026-sum-gauge-higgs-bosons.pdf",
+  "content_type": "application/pdf",
+  "date_utc": "2026-10-14T23:58:07Z",
+  "bytes": 83021,
+  "sha256": "3c36db905ba91519d11d03b3675680d2314eceae81d5d39293daaee3a83d3132"
+ },
+ {
+  "file": "rppYYYY-sum-quarks.pdf",
+  "url": "https://pdg.lbl.gov/2026/tables/rpp2026-sum-quarks.pdf",
+  "final_url": "https://pdg.lbl.gov/2026/tables/rpp2026-sum-quarks.pdf",
+  "content_type": "application/pdf",
+  "date_utc": "2026-10-14T23:58:07Z",
+  "bytes": 48573,
+  "sha256": "36b6bce0e8982026dc1a64d4b3b1aca2f8d9fe3a12351e82400c60b1b8db552a"
+ },
+ {
+  "file": "rppYYYY-sum-leptons.pdf",
+  "url": "https://pdg.lbl.gov/2026/tables/rpp2026-sum-leptons.pdf",
+  "final_url": "https://pdg.lbl.gov/2026/tables/rpp2026-sum-leptons.pdf",
+  "content_type": "application/pdf",
+  "date_utc": "2026-10-14T23:58:07Z",
+  "bytes": 86934,
+  "sha256": "8479aace452921b2b835431ccbf8e01b166e5dc10028bbeda7981cc82e54577e"
+ }
+]

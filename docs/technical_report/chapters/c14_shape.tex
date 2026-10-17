@@ -1,0 +1,319 @@
+\section{Shape: no minimum, Hessians and transfer}\label{rep:shape}
+
+The negative energy that turns the volume around also acts on the shape of the torus, and we show that it cannot hold one.
+A negative Casimir energy of massless fields has no shape minimum at any shape, and thermal response, shape-independent zero-mode energy and static holonomies only strengthen the instability.
+At the turning point the instability amplifies some shape mode by at least $4.500465$ for any such field content, and the aspect modes by $674$ for the Standard Model with its zero-mode energy. %
+The chapter derives the shape Laplacian of an image term (Sec.~\ref{rA:sh-laplacian}) and its extension to every free mode frequency (Sec.~\ref{rA:sh-power}), proves the no-minimum theorem for finite-volume matter (Sec.~\ref{rA:sh-matter}), reduces the linear shape modes on the turning solution to Gauss's hypergeometric equation and obtains their transfer through the turn in closed form (Secs.~\ref{rA:sh-modes}--\ref{rA:sh-transfer}), evaluates the stiffnesses and gains (Sec.~\ref{rA:sh-gains}), and shows that the causal response of the fields and classical nonlinearity do not change these conclusions at the amplitudes that matter (Sec.~\ref{rA:sh-robust}).
+
+\subsection{The shape Laplacian of an image term}
+\label{rA:sh-laplacian}
+
+We use the physical shape metric $ds^2_{\rAsh}=\tfrac14\Tr(G^{-1}dG)^2$ on the five-dimensional space of unimodular metrics $G$ (Sec.~\ref{rA:geometry}).
+Through any $G$ the curves
+\begin{equation}
+G_A(\beta)=G^{1/2}e^{2\beta X_A}G^{1/2}
+\end{equation}
+are unit-speed geodesics with orthonormal initial tangents: at $\beta=0$ the tangent is $G_A^{-1}dG_A/d\beta=2G^{-1/2}X_AG^{1/2}$, and $\tfrac14\Tr(2X_A)^2=1$.
+On a Riemannian manifold the second derivative along a geodesic is the Hessian evaluated on its tangent, so the Laplace--Beltrami operator of the shape metric is $\Delta_{\rAsh}=\sum_Ad^2/d\beta^2|_{G_A}$.
+
+\paragraph{Hessian of an image term.}
+For a single image term let $\bm y=G^{1/2}\bm n$ and $f(\beta)=\bm n^{\mathsf T}G_A(\beta)\bm n=\bm y^{\mathsf T}e^{2\beta X_A}\bm y$, so that $f(0)=|\bm y|^2$, $f'(0)=2\bm y^{\mathsf T}X_A\bm y$ and $f''(0)=4\bm y^{\mathsf T}X_A^2\bm y$.
+Then $d^2f^{-s}/d\beta^2=s(s+1)f^{-s-2}f'^2-sf^{-s-1}f''$, that is
+\begin{equation}
+\frac{d^2}{d\beta^2}(\bm n^{\mathsf T}G_A\bm n)^{-s}\Big|_0
+=4s(s+1)\frac{(\bm y^{\mathsf T}X_A\bm y)^2}{|\bm y|^{2s+4}}-4s\frac{\bm y^{\mathsf T}X_A^2\bm y}{|\bm y|^{2s+2}} .
+\label{eq:rA-image-hessian}
+\end{equation}
+
+\paragraph{Completeness.}
+The five matrices $X_A$ are an orthonormal basis of symmetric trace-free matrices, so $\sum_A(X_A)_{ij}(X_A)_{kl}=\tfrac12(\delta_{ik}\delta_{jl}+\delta_{il}\delta_{jk})-\tfrac13\delta_{ij}\delta_{kl}$, the projector onto that space.
+Contracting with $y_iy_jy_ky_l$ and with $\delta_{jk}$ gives
+\begin{equation}
+\sum_A(\bm y^{\mathsf T}X_A\bm y)^2=\tfrac23|\bm y|^4,\qquad \sum_AX_A^2=\tfrac53\rAone .
+\label{eq:rA-completeness}
+\end{equation}
+Summing Eq.~\eqref{eq:rA-image-hessian} over $A$ therefore gives $4s(s+1)\tfrac23-4s\tfrac53=\tfrac{4s}3(2s-3)$ times $|\bm y|^{-2s}$:
+
+\begin{rAtheorem}[Shape Laplacian of the Casimir energy]\label{thm:rA-laplacian}
+Every image term is an eigenfunction of the shape Laplacian,
+\begin{equation}
+\Tr_{\rAsh}{\rm Hess}\,(\bm n^{\mathsf T}G\bm n)^{-s}=\frac{4s}{3}(2s-3)(\bm n^{\mathsf T}G\bm n)^{-s},
+\end{equation}
+so that for any mixture of twisted massless free fields
+\begin{equation}
+\Delta_{\rAsh}E_C=\Tr_{\rAsh}{\rm Hess}\,E_C=\frac83E_C .
+\label{eq:rA-Hesstrace}
+\end{equation}
+\end{rAtheorem} %
+
+The proof is the computation above at $s=2$; the twists enter only through the constant weights $w_{\bm n}$ of Eq.~\eqref{eq:rA-imagesum}.
+On an $n$-torus in $D$ spacetime dimensions the Casimir energy is a sum of $(\bm n^{\mathsf T}G\bm n)^{-D/2}$, the completeness relations become $\sum_A(\bm y^{\mathsf T}X_A\bm y)^2=(1-\tfrac1n)|\bm y|^4$ and $\sum_AX_A^2=\tfrac{(n+2)(n-1)}{2n}\rAone$, and the coefficient $8/3$ becomes $D(n-1)(D-n)/n$.
+
+The trace of the shape Hessian is the Laplace--Beltrami operator on the space of unimodular metrics, and each image term, like the Epstein zeta function, is one of its eigenfunctions.
+Equation~\eqref{eq:rA-Hesstrace} is the Laplace eigen-equation of the $SL(3,\mathbb Z)$ Eisenstein series~\cite{Obers:1999um}, whose eigenvalue $s(d-1)(2s-d)/2d$ equals $2/3$ at $d=3$ and $s=2$; our shape metric is a quarter of theirs, which turns the eigenvalue into $8/3$. %
+
+\paragraph{Consequence.}
+At a shape minimum every second derivative is non-negative, so the Laplacian is non-negative.
+By Eq.~\eqref{eq:rA-Hesstrace} a negative Casimir energy has a negative Laplacian everywhere: it has no shape minimum, at any shape, for any mixture of twisted massless free fields.
+The same mechanism is known on a two-torus~\cite{Ponton:2001hq,Luo:2022tqy,Aparici:2025kjj}.
+Casimir back-reaction makes a torus ever thinner in $2+1$ gravity~\cite{Seriu:1995hc}, a rectangular torus grows more elongated under Casimir back-reaction in de~Sitter space~\cite{COMPACT:2026vdj}, and a fully compactified Standard Model on $T^3$ is unstable against decompactification, crunching or anisotropic evolution~\cite{Arkani-Hamed:2007ryu}.
+The AAA Standard Model obeys Eq.~\eqref{eq:rA-Hesstrace} to $10^{-8}$, with aspect deformations lowering and angle deformations raising its energy [Fig.~\ref{fig:rA-casimir-shape}(b)]. %
+Numerically, Eq.~\eqref{eq:rA-completeness} holds to machine precision for random $\bm y$. %
+
+\subsection{Power laws and eigenfunctions}
+\label{rA:sh-power}
+
+The shape Laplacian $\Delta_{\rAsh}$ is the sum of second derivatives along the geodesics $G(t)=Se^{2tX_A}S$ through $G_0=S^2$.
+The identity extends from image sums to mode frequencies and to the Epstein function at any $s$.
+
+\begin{rAlemma}[Power laws]\label{lem:rA-power}
+For fixed $\bm k$ and $q=\bm k^{\mathsf T}G^{-1}\bm k$,
+\begin{equation}
+\Delta_{\rAsh}\,q^p=\frac{4p(2p+3)}{3}\,q^p .
+\label{eq:rA-powerlaw}
+\end{equation}
+\end{rAlemma}
+
+\begin{rAproof}
+The isometry $G\to SGS^{\mathsf T}$ reduces the computation to $G=\rAone$.
+Along $e^{2tX_A}$, $q(t)=\bm k^{\mathsf T}e^{-2tX_A}\bm k$ has $q'=-2\bm k^{\mathsf T}X_A\bm k$ and $q''=4\bm k^{\mathsf T}X_A^2\bm k$, so $d^2q^p/dt^2=4p(p-1)q^{p-2}(\bm k^{\mathsf T}X_A\bm k)^2+4pq^{p-1}\bm k^{\mathsf T}X_A^2\bm k$.
+The completeness relations~\eqref{eq:rA-completeness} turn the sum over $A$ into $q^p[\tfrac83p(p-1)+\tfrac{20}3p]=\tfrac{4p}3(2p+3)q^p$.
+\end{rAproof}
+
+For $p=\tfrac12$ the eigenvalue is $\tfrac83$: every mode frequency $2\pi|G^{-1/2}(\bm k+\bm\vartheta)|/L$, with any fixed twist, and hence every energy of fixed occupations, has the eigenvalue of the Casimir energy.
+For image sums $(\bm n^{\mathsf T}G\bm n)^{-s}$ the map $G\to G^{-1}$, an isometry of the shape metric, turns Eq.~\eqref{eq:rA-powerlaw} with $p=-s$ into the eigenvalue $4s(2s-3)/3$ of Theorem~\ref{thm:rA-laplacian}.
+The twisted Epstein function $Z_G(s;\bm\vartheta)=\sum'\cos(2\pi\bm\vartheta\cdot\bm n)(\bm n^{\mathsf T}G\bm n)^{-s}$ therefore has this eigenvalue at every regular $s$ by analytic continuation: $\tfrac83$ at $s=2$ and $-\tfrac43$ at $s=1$.
+Geodesic finite differences at 40 digits confirm both on the cube and on a generic non-cubic shape, for periodic and AAA twists, to $10^{-23}$. %
+For $p=1$ the eigenvalue is $\tfrac{20}3$, which matters for electric flux below.
+
+\subsection{Finite-volume matter}
+\label{rA:sh-matter}
+
+The identity~\eqref{eq:rA-Hesstrace} extends from the vacuum to excited and thermal states and to zero modes.
+Let the light fields have levels $E_s(G)=e_s(G)+q_s/L$ at fixed volume and couplings, where the free parts obey $\Delta_{\rAsh}e_s=\tfrac83e_s$, as every free mode frequency does by Lemma~\ref{lem:rA-power}, and the zero-mode energies $q_s\geq0$ do not depend on the shape (Proposition~\ref{prop:rA-isospectral}).
+For fixed occupations $\Delta_{\rAsh}\langle E\rangle=\tfrac83(U-\langle q\rangle/L)$, with $U$ the internal energy.
+
+\begin{rAtheorem}[No shape minimum for negative internal energy]\label{thm:rA-nogo}
+For a Gibbs state at temperature $T$ the free energy $F=-T\ln\sum_se^{-E_s/T}$ obeys
+\begin{equation}
+\Delta_{\rAsh}F=\frac83\Big(U-\frac{\langle q\rangle}{L}\Big)-\frac1T\sum_A\rAVar\,f_A ,
+\label{eq:rA-nogo}
+\end{equation}
+where $f_A=\partial_AE_s$ are the shape forces on the levels.
+At fixed thermodynamic entropy the variance is replaced by its part uncorrelated with the energy, $\rAVar\,f_A-\rACov(f_A,E)^2/\rAVar\,E\geq0$.
+In every case the shape Laplacian is at most $\tfrac83(U-\langle q\rangle/L)$, which is negative whenever the internal energy is, so matter with negative energy has no static shape minimum.
+\end{rAtheorem}
+
+\begin{rAproof}
+Differentiating $F$ gives $\partial_AF=\langle f_A\rangle$ and the covariant Hessian $\langle\nabla_A\nabla_BE\rangle-\rACov(f_A,f_B)/T$, whose trace is Eq.~\eqref{eq:rA-nogo} because $\langle\Delta_{\rAsh}E_s\rangle=\tfrac83\langle e_s\rangle=\tfrac83(U-\langle q\rangle/L)$.
+At fixed entropy $\mathcal S$, $U(\mathcal S,G)=F(T(\mathcal S,G),G)+T\mathcal S$ with $F_T=-\mathcal S$, so $\partial_AU|_{\mathcal S}=F_A$.
+Differentiating again with $\partial_BT|_{\mathcal S}=-F_{TB}/F_{TT}$, which follows from $\mathcal S=-F_T$ held fixed, gives
+\begin{equation}
+U_{AB}|_{\mathcal S}=F_{AB}-\frac{F_{AT}F_{TB}}{F_{TT}},\qquad F_{TT}=-\frac{\rAVar\,E}{T^3},\qquad F_{AT}=\frac{\rACov(f_A,E)}{T^2},
+\end{equation}
+so $U_{AA}|_{\mathcal S}=F_{AA}+\rACov(f_A,E)^2/(T\rAVar\,E)$, which replaces the variance by its part uncorrelated with the energy; that part is non-negative by the Cauchy--Schwarz inequality.
+\end{rAproof}
+
+Thermal response and positive zero modes make the instability stronger; the criterion is $U<0$, not $F<0$.
+Both identities hold to $10^{-22}$ for a 26-level set at three temperatures on a non-cubic shape, with the entropy held fixed by solving for $T$ at every stencil point. %
+They hold to the floating-point floor of $10^{-10}$ for the complete free Standard Model gas without zero modes. %
+At the cube $\rACov(f_A,E)=0$ by symmetry, and the two Laplacians coincide.
+
+\begin{rAprop}[Static holonomies]\label{prop:rA-holonomy}
+Let $E(G,\theta)$ obey $\Delta_GE\leq\tfrac83(E-q(\theta)/L)$ for every fixed $\theta$, with $q\geq0$.
+Then $E_{\rm eff}(G)=\min_\theta E(G,\theta)$ has no local minimum at negative energy.
+\end{rAprop}
+
+\begin{rAproof}
+Suppose $E_{\rm eff}$ had a local minimum $G_0$ with $E_{\rm eff}(G_0)<0$, attained at $\theta_0$.
+Near $G_0$, $E(G,\theta_0)\geq E_{\rm eff}(G)\geq E(G_0,\theta_0)$, so $G_0$ is a local minimum of $E(\cdot,\theta_0)$ and $\Delta_GE(G_0,\theta_0)\geq0$, while $E(G_0,\theta_0)<0$ forces $\Delta_GE<0$.
+\end{rAproof}
+
+The argument needs neither uniqueness nor smoothness of the minimizer and applies equally at fixed entropy; holonomies with their own kinetic terms are not covered.
+
+\paragraph{Scope.}
+These statements cover free massless fields, the zero-mode Hamiltonian and static holonomies.
+Massive fields and interactions beyond the zero-mode Hamiltonian lie outside them, and so do compact abelian flux sectors and holonomies pinned only by charged loops. %
+A compact $U(1)$ has electric-flux levels $(g^2/2L)\,\bm e^{\mathsf T}G\bm e$ with integer $\bm e$, which by Lemma~\ref{lem:rA-power} with $p=1$ (and $G\to G^{-1}$) have eigenvalue $\tfrac{20}3$ and add $4\langle\epsilon_{\rm flux}\rangle$ to the right side of the identities.
+An abelian holonomy pinned only by charged-fermion loops has harmonic levels with shape-dependent frequencies; its zero-point energy has $\Delta_{\rAsh}E_{\rm zp}/E_{\rm zp}=-8.88$ at the cube, which destabilizes the shape further but is not of the assumed form. %
+A sector with fixed electric flux lies outside the identities and can hold a local minimum. %
+Six compact Maxwell fields with fixed integer flux make all five shape modes stable on a face-centered cubic lattice, but along an explicit path the barrier is only $0.52\%$ of the negative energy at the start (Sec.~\ref{rep:v-conditional}). %
+
+\paragraph{First-order zero-mode energies.}
+At first order the zero modes feel the curvature $M_{ij}$ of the one-loop holonomy potential, in units of $1/L$ and per component of the gauge group (Sec.~\ref{rA:zm-nextorder}).
+Their local ground state is an $O(3)$ singlet in the canonical variables of Proposition~\ref{prop:rA-isospectral}, so $\langle c_ic_j\rangle=vG_{ij}$, summed over the components, with $v$ independent of the shape, and the matching energy is $E_{\rm m}=\tfrac{v}{2L}G_{ij}M_{ij}$.
+In van Baal's image form~\cite{vanBaal:1988va}, $G_{ij}M_{ij}$ is proportional to $Z_G(1;\bm\vartheta)$, after the cusp of the slow modes at trivial holonomy is removed for periodic fields.
+Finite differences confirm this to $10^{-24}$ on the cube and on a non-cubic shape, and reproduce van Baal's coefficients. %
+Hence $\Delta_{\rAsh}E_{\rm m}=-\tfrac43E_{\rm m}$, and for $U=E_{\rm free}+Q/L+E_{\rm m}$, with $\Delta_{\rAsh}E_{\rm free}=\tfrac83E_{\rm free}$ and $E_{\rm free}=U-Q/L-E_{\rm m}$,
+\begin{equation}
+\Delta_{\rAsh}U=\frac83\Big(U-\frac QL-E_{\rm m}\Big)-\frac43E_{\rm m}=\frac83\Big[U-\frac QL-\frac32E_{\rm m}\Big],
+\end{equation}
+so the no-minimum conclusion survives for $Q\geq-\tfrac32LE_{\rm m}$.
+The induced Higgs-mass energy $E_H$ of Sec.~\ref{rA:zm-nextorder} is also an $s=1$ sum and adds to $E_{\rm m}$ here.
+The first-order energies of the zero modes, $E_{\rm m}$ and $E_H$, are $s=1$ Epstein sums with eigenvalue $-\tfrac43$, and they preserve the conclusion as long as $Q\geq-\tfrac32L(E_{\rm m}+E_H)$, which with the estimates of Sec.~\ref{rep:zeromodes} is $1.1$, about twelve times less than the zero-mode energy $Q$. %
+The anisotropic part of the Hessian of both drops out of this trace but shifts single-mode stiffnesses: it lowers $\kappa_E$ by $4\%$, and together with the smaller zero-mode energy brings it from $19.32$ to $18.0$ at next order (Sec.~\ref{rA:zm-shape}). %
+More generally, a shape-dependent part $Q'$ of the zero-mode energy could create a minimum only if $\Delta_{\rAsh}Q'$ exceeded $\tfrac83C=114$ at the cube, a Laplacian eigenvalue of $9$ even if all of $Q$ depended on the shape. %
+
+\paragraph{Related results.}
+Related results concern other settings.
+Finite temperature washes out the vacua of the Standard Model compactified on a circle or a two-torus~\cite{Arnold:2011cz}, and Casimir energies can fix the shape of a two-torus with massive fields~\cite{Burikham:2008fg} or of an orbifold with Wilson lines after supersymmetry breaking~\cite{Buchmuller:2009er}.
+Thermal Casimir plates at fixed entropy can rest at a stable separation if an exterior radiation pressure acts on them~\cite{Mitter:1999hu}; nothing plays that role for the shape at fixed volume.
+
+\subsection{Shape modes at the turning point}
+\label{rA:sh-modes}
+
+At a stationary shape the shape modes decouple at linear order.
+With $E_C=-Z_{\rm eff}(G)/(\pi^2L)$ (Eq.~\eqref{eq:rA-Zeff}) and a stationary cube, $Z_{\rm eff}=Z_{\rm eff}(\rAone)+\tfrac12\sum_A\lambda_A\beta_A^2+\mathcal O(\beta^3)$, where $\lambda_A$ are the Hessian eigenvalues of $Z_{\rm eff}$.
+The Casimir potential of mode $A$ is therefore $-\lambda_A\beta_A^2/(2\pi^2L)$, and the minisuperspace action~\eqref{eq:rA-minisuperspace}, with kinetic term $\tfrac12\MPbar^2L^3\dot\beta_A^2$, gives
+\begin{equation}
+\frac{d}{dt}\big(\MPbar^2L^3\dot\beta_A\big)=\frac{\lambda_A}{\pi^2L}\beta_A
+\quad\Longrightarrow\quad
+\ddot\beta_A+3H\dot\beta_A=\frac{\lambda_A}{\pi^2\MPbar^2L^4}\beta_A .
+\end{equation}
+On the turning-point solution~\eqref{eq:rA-turning-solution}, $L^4=\Lb^4\cosh^22ht$ and $\Lb^4=(1-\fzm)Z_{\rm eff}(\rAone)/(3\pi^2\MPbar^2h^2)$, so the right side is $[3\lambda_A/(1-\fzm)Z_{\rm eff}]\,h^2{\rm sech}^22ht\,\beta_A$ and
+\begin{equation}
+\ddot\beta_A+3H\dot\beta_A-\kappa_Ah^2\,{\rm sech}^2(2ht)\,\beta_A=0,\qquad \kappa_A=\frac{3\lambda_A}{Z_{\rm eff}},
+\label{eq:rA-shapeode}
+\end{equation}
+with $\kappa_A\to\kappa_A/(1-\fzm)$ when the zero-mode energy is included.
+Theorem~\ref{thm:rA-laplacian} gives $\sum_A\lambda_A=\tfrac83Z_{\rm eff}$, hence $\sum_A\kappa_A=8$ for free fields and $8/(1-\fzm)$ with a shape-independent zero-mode energy.
+A positive $\kappa_A$ is anti-restoring: the aspect modes of the Standard Model are unstable at the turn and the angle modes are restoring.
+The stiffness acts only near the turn, where ${\rm sech}^2(2ht)$ is of order one; far from it the modes are frozen.
+
+\subsection{Transfer through the turn}
+\label{rA:sh-transfer}
+
+\paragraph{Reduction to Gauss's equation.}
+We measure time in units of $1/h$ and set $x=2t$ and
+\begin{equation}
+z=\tfrac12(1+\tanh x),\qquad 0<z<1 .
+\end{equation}
+Then $dz/dx=\tfrac12{\rm sech}^2x=2z(1-z)$ and $d/dt=4w\,d/dz$ with $w\equiv z(1-z)$, so that $\dot\beta=4w\beta_z$ and $\ddot\beta=16w^2\beta_{zz}+16w(1-2z)\beta_z$.
+With $3H\dot\beta=3(2z-1)\cdot4w\beta_z$ and $\kappa\,{\rm sech}^2x=4\kappa w$, Eq.~\eqref{eq:rA-shapeode} divided by $16w$ becomes
+\begin{equation}
+z(1-z)\beta_{zz}+\big(\tfrac14-\tfrac z2\big)\beta_z-\tfrac\kappa4\beta=0 .
+\label{eq:rA-gauss-eq}
+\end{equation}
+This is Gauss's hypergeometric equation $z(1-z)F''+[c_{\rm G}-(a+b+1)z]F'-abF=0$ with $c_{\rm G}=\tfrac14$, $a+b=-\tfrac12$ and $ab=\kappa/4$, that is
+\begin{equation}
+a,b=-\tfrac14\pm i\mu,\qquad \mu=\tfrac14\sqrt{4\kappa-1}.
+\end{equation}
+The far past is $z\to0$ and the far future $z\to1$, where $z\simeq e^{4t}$ and $1-z\simeq e^{-4t}$, respectively.
+
+\paragraph{Normalization.}
+We describe a mode by $\beta$ and the momentum $\Pi=P/p_0$ of Sec.~\ref{rA:s-floor}, with $P=\MPbar^2L^3\dot\beta$; in units of $\Lb$ and $1/h$ this means $\dot\beta=c\,\Pi/L^3$ with $c=3/2^{3/2}$.
+The exponents at $z=0$ are $0$ and $1-c_{\rm G}=\tfrac34$.
+The solution ${}_2F_1(a,b;\tfrac14;z)$ tends to $\beta=1$, and since $\dot\beta\simeq4z\cdot ab/c_{\rm G}=4\kappa z\propto e^{4t}$ while $L^3\propto e^{-3t}$, its momentum vanishes, $\Pi\to0$.
+The solution $z^{3/4}{}_2F_1(\tfrac12+i\mu,\tfrac12-i\mu;\tfrac74;z)$ tends to $\beta=0$ with $\dot\beta\simeq3z^{3/4}=3e^{3t}$ and $L^3\simeq e^{-3t}/2^{3/2}$, so $\Pi=L^3\dot\beta/c\to1$.
+
+\paragraph{Connection formulas.}
+At $z\to1$ the exponents are $0$ and $c_{\rm G}-a-b=\tfrac34$, so every solution approaches a constant plus a term that decays as $(1-z)^{3/4}\propto e^{-3t}$: the mode freezes.
+Gauss's summation formula ${}_2F_1(a,b;c;1)=\Gamma(c)\Gamma(c-a-b)/[\Gamma(c-a)\Gamma(c-b)]$ gives the frozen values.
+For the first solution, with $|\Gamma(\tfrac12+i\mu)|^2=\pi/\cosh\pi\mu$ and $\Gamma(\tfrac14)\Gamma(\tfrac34)=\sqrt2\,\pi$,
+\begin{equation}
+\rATm_{11}=\frac{\Gamma(\tfrac14)\Gamma(\tfrac34)}{|\Gamma(\tfrac12+i\mu)|^2}=\sqrt2\cosh\pi\mu .
+\end{equation}
+A mode that starts constant with zero incoming canonical momentum therefore leaves with $\beta_{A,+}=\rAGain(\kappa_A)\beta_{A,-}$, where
+\begin{equation}
+\rAGain(\kappa)=\sqrt2\cos\!\Big(\frac\pi4\sqrt{1-4\kappa}\Big)=\sqrt2\cosh\!\Big(\frac\pi4\sqrt{4\kappa-1}\Big),
+\label{eq:rA-gain}
+\end{equation}
+the second form holding for $\kappa>1/4$.
+For the second solution the same formula with $c=\tfrac74$ and $c-a-b=\tfrac34$ gives
+\begin{equation}
+\rATm_{12}=\frac{\Gamma(\tfrac74)\Gamma(\tfrac34)}{|\Gamma(\tfrac54+i\mu)|^2}.
+\label{eq:rA-T12}
+\end{equation}
+
+\paragraph{Time symmetry.}
+The background is even in $t$, and the mode equation is invariant under $t\to-t$, $\Pi\to-\Pi$.
+If $M$ is the transfer from the turn to the far future, the transfer from the far past to the turn is therefore $\mathsf RM^{-1}\mathsf R$ with $\mathsf R={\rm diag}(1,-1)$, and the full transfer is
+\begin{equation}
+\rATm=M\mathsf RM^{-1}\mathsf R
+=\begin{pmatrix}m_{11}m_{22}+m_{12}m_{21}&2m_{11}m_{12}\\2m_{21}m_{22}&m_{11}m_{22}+m_{12}m_{21}\end{pmatrix},
+\label{eq:rA-Tsym}
+\end{equation}
+using $\det M=1$.
+Hence $\rATm_{22}=\rATm_{11}$, $\det\rATm=1$ fixes $\rATm_{21}=(\rATm_{11}^2-1)/\rATm_{12}$, and $\rATm_{12}=2m_{11}m_{12}$.
+Numerically $\max|\rATm-M\mathsf RM^{-1}\mathsf R|<4\times10^{-9}$, or $2\times10^{-12}$ relative to $|\rATm|$. %
+The closed forms agree with direct integration to $5\times10^{-14}$ and with an independent 30-digit integration to at least seven digits. %
+
+\paragraph{A universal gain.}
+The gain grows monotonically with $\kappa$.
+For free fields $\sum_A\kappa_A=8$ over five modes, so some $\kappa_A\geq8/5$, and every stationary-shape turning point of this kind has a mode with
+\begin{equation}
+\rAGain\geq\sqrt2\cosh\!\Big(\frac\pi4\sqrt{27/5}\Big)=4.500465,
+\end{equation} %
+whatever $h$, $\MPbar$ and $\NC$.
+A shape-independent zero-mode energy leaves the Hessian unchanged and lowers $Z_{\rm eff}$ by the fraction $\fzm$, so every $\kappa_A$ grows to $\kappa_A/(1-\fzm)$ and the guaranteed gain to $6.72$ at $\fzm=0.30$. %
+
+\subsection{Stiffnesses and gains}
+\label{rA:sh-gains}
+
+For untwisted fields, and for the cubic-symmetric twist of all fermions considered here, the cube is a saddle of the lattice energy~\cite{Ennola:1964epstein,Betermin:2016cubic}; general twisted mixtures can make it a maximum or a minimum.
+For periodic Maxwell fields plus the graviton, the Maxwell toy, the aspect and angle modes have $\kappa=6.00$ and $-1.33$, with $2\times6.00+3\times(-1.33)=8$, and gains $30.6$ and $-0.557$. %
+On the leading solution the cubic Maxwell toy has the aspect transfer $\rATm_{\rm asp}=[[30.565,5.584],[167.13,30.565]]$. %
+The face- and body-centered cubic lattices are local minima of the Epstein function, so all five modes grow there.
+
+For the AAA Standard Model with free fields $\kappa_E=13.53$ and $\kappa_{T_2}=-6.35$: the aspect gain is $216.5$ and the angle gain $-0.885$ [Fig.~\ref{fig:rA-casimir-shape}(c)]. %
+Its aspect transfer has $\rATm_{11}=216.46$ and $\rATm_{12}=21.79$. %
+Its alternating image weights, $w_{\bm n}=15-45(-1)^{n_1+n_2+n_3}$, that is $+60$ on odd and $-30$ on even shells, make the instability stronger than for photons alone. %
+With the zero-mode energy $\kappa_E=19.32$ and $\kappa_{T_2}=-9.07$, and the aspect gain is $674$. %
+With $\fzm=0.30$ ($\kappa_E=19.3237$) the transfer from the turn to the far future is $m_{11}=10.554$, $m_{12}=2.4685$, $m_{21}=136.37$, $m_{22}=31.99$, so $\rATm_{12}=2m_{11}m_{12}=52.1$ and $\rATm_{11}=m_{11}m_{22}+m_{12}m_{21}=674.3$. %
+The next-order terms of the zero-mode energy (Sec.~\ref{rA:zm-shape}) lower $\kappa_E$ to $18.0$ and the gain to $529$. %
+Our own integration of Eq.~\eqref{eq:rA-shapeode} reproduces these matrices and Eq.~\eqref{eq:rA-Tsym} to $3\times10^{-8}$. %
+
+\subsection{Robustness: causal response and large deformations}
+\label{rA:sh-robust}
+
+These numbers are robust.
+Two effects lie outside the quasi-static treatment: the response of the fields to a moving shape, and the nonlinearity of large deformations.
+We compute the first for the Maxwell toy, where it is exact at one loop, and the second classically; the quantum state of the shape, which sets the amplitudes, is the subject of Sec.~\ref{rep:quantum-shape}.
+
+\paragraph{Causal response of the Maxwell toy.}
+Maxwell theory is Weyl invariant, so in conformal time $\eta$ the field sees only $\hat g=-d\eta^2+G_{ij}dx^idx^j$, and the shape enters as a time-dependent metric on the unit torus.
+For each $\bm n\neq0$ the Gauss constraint leaves a plane of physical modes, transverse to $\bm k=2\pi\bm n$, with the Hamiltonian
+\begin{equation}
+H_{\bm n}=\tfrac12\,p^{\mathsf T}\mathsf M\,p+\tfrac12\,\Omega_{\bm n}^2\,q^{\mathsf T}\mathsf M^{-1}q,
+\label{eq:rA-Hn}
+\end{equation}
+where $\mathsf M_{\alpha\beta}=\bm e_\alpha^{\mathsf T}G\,\bm e_\beta$ for a basis $\bm e_\alpha$ of the plane and $\Omega_{\bm n}^2=\bm k^{\mathsf T}G^{-1}\bm k$.
+The zeta-regularized sum of $\Omega_{\bm n}$ over $\bm n$ is the Casimir energy.
+Linearizing about the cube in the amplitude $\beta$ of a unit shape direction $X$, second-order perturbation theory in $\beta$ gives the retarded response of the shape force,
+\begin{equation}
+\begin{aligned}
+K_{\bm n}(\omega)&=-\partial_\beta^2\Omega_{\bm n}+\frac{2\Omega_{\bm n}\tau_{\bm n}\,\omega^2}{4\Omega_{\bm n}^2-\omega^2},\\
+\tau_{\bm n}&=1-2\hat k^{\mathsf T}X^2\hat k+\tfrac12\big(\hat k^{\mathsf T}X\hat k\big)^2,
+\end{aligned}
+\label{eq:rA-kernel}
+\end{equation}
+summed over $\bm n$ with the same regularization.
+The first term is the static Hessian of the zero-point energy; the second is the response of the two-quantum states of each mode pair, with its pole at the pair threshold $\omega=2\Omega_{\bm n}$.
+Its static limit reproduces the Casimir Hessians of Sec.~\ref{rA:sh-gains} to $10^{-14}$, and its $\omega^4$ logarithm equals the Maxwell anomaly coefficient $c=1/10$. %
+
+Below the pair threshold, $\omega<2\Omega_{\bm n}$, the $\omega^2$ term is a finite-volume shape inertia, $m_{\rm asp}=-0.0621$ and $m_{\rm ang}=-0.1091$ per field. %
+The two satisfy $\sum_Am_A=Z_1(G)/2\pi^2$, where $Z_1$ is the analytic continuation to $s=1$ of $\sum'_{\bm n}(\bm n^{\mathsf T}G\bm n)^{-s}$.
+In the shape equation~\eqref{eq:rA-shapeode} the inertia enters with the weight $1.338\,m_A\,\epsilon\,{\rm sech}\,2ht$, where $\epsilon=\sqrt{\NC}\,h/\MPbar=1.338\,(h\Lb)^2$ is the small parameter of Eq.~\eqref{eq:rA-epsilon}, and it changes the gains of the toy to %
+\begin{equation}
+\begin{aligned}
+\rAGain_{\rm asp}&=30.565\,(1+0.1106\,\epsilon),\\
+\rAGain_{\rm ang}&=-0.5570\,(1+0.2195\,\epsilon),
+\end{aligned}
+\label{eq:rA-causal-gains}
+\end{equation} %
+up to terms of order $\epsilon^2$.
+These are bounded by $(0.020+0.0069\,|\ln\mu_R\Lb|)\,\epsilon^2$ for the aspect mode and by $(0.033+0.011\,|\ln\mu_R\Lb|)\,\epsilon^2$ for the angle mode, where $\mu_R$ is the renormalization scale. %
+Pair creation is set by the future endpoint of the finite conformal interval of the turning-point solution (Sec.~\ref{rA:turn-duration}).
+It gives $E_{\rm pairs}/|E_C|=C_3\,\epsilon^3\beta_-^2$, with $C_3=0.234$ for the aspect and $4.8\times10^{-6}$ for the angle mode, where $\beta_-$ is the incoming amplitude. %
+Pair creation by the shape motion is thus suppressed by $\epsilon^3$, because the torus gap makes the motion adiabatic.
+These coefficients treat all $\NC$ fields with the Maxwell kernel; the minimally coupled graviton responds differently, at relative order $1/\NC$, which we do not compute.
+With $\epsilon\simeq3\times10^{-5}$ the causal response changes the gains by a few parts in $10^6$, and pair creation is negligible. %
+For the Maxwell toy the causal response of the field to the moving shape thus gives a finite-volume shape inertia, which changes the gain at relative order $0.11\,\epsilon$. %
+
+\paragraph{Classical large deformations.}
+Classically, large incoming deformations make one cycle collapse after the turn.
+For the Maxwell toy we integrated the full equations for the volume and the five shape moduli (Sec.~\ref{rA:s-nonlinear}) with prescribed incoming data of zero canonical momentum.
+One cycle collapses after the turn beyond $|\beta_-|=0.0270$ along $+X_{d2}$, $0.0315$ along $\pm X_d$ and $0.0615$ along $-X_{d2}$, so on the slice with zero incoming momentum the threshold is $0.027$--$0.061$ in $|\beta_-|$. %
+Integration from the far past and residual-gated shooting agree, and the thresholds are insensitive to the collapse criterion at the $4\times10^{-4}$ level. %
+With correlated incoming momentum the surviving set is a band about the stable manifold of the transfer, which contains incoming deformations of at least $0.8$. %
+A quantum state at the turning point has amplitudes of order $10^{-2}$ and fixed correlations, and we turn to it now. %

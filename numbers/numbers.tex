@@ -1,0 +1,60 @@
+% numbers.tex -- claim-layer numbers shared by the v12 PRD and PRL (identical copies in both folders).
+% Maintained by the main session. FINAL (run05 centre), from C161/D132, 2026-10-15:
+%   04_calculations/derivations/20261015_claude_v12_writing/claims_run05/D132_claims_run05_CN.md (section 8)
+%   04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/numbers_run05.csv (ids R5-xxx)
+% Do not type these numbers literally in the text; use the macros.
+\newcommand{\PbarOne}{0.73}        % marginalized P1, direct mass, rebuilt Table 1 composite: 0.7300 (t1new/C154_correction_summary marginal.equal_mass.D1_direct_pole)
+\newcommand{\PbarOneAbs}{0.7}      % one-digit headline value of \PbarOne
+\newcommand{\PbarMSR}{0.50}        % MSR identification: 0.4998 (R5-010)
+\newcommand{\PbarSigma}{0.86}      % sigma-pole PDG 2026: 0.8611 (R5-008)
+\newcommand{\PbarInterp}{0.68}     % direct + 0.5 GeV MC-pole interpretation: 0.6799 (R5-006)
+\newcommand{\PbarBKPV}{0.63\text{--}0.67} % BKPV/FJ convention: 0.67 equal-mass / 0.63 continuous (D132 section 8)
+\newcommand{\BayesMax}{0.75}       % upper bound on |ln B| (claims_compare.json bayes_ranges.run05)
+\newcommand{\mExclTheory}{173.7}   % theory-95% exclusion, P1<0.1: 173.69 (C154_summary exclusion_mt.0.1180.theory95_P0.1)
+\newcommand{\mExclFCC}{173.7}      % FCC-ee baseline: measured m_t above 173.7 excluded (future.FCCee_base)
+\newcommand{\sigFCC}{5.3}          % FCC-ee separation of 172.6 and 173.3 GeV, in sigma (5.33)
+\newcommand{\sigHLLHCmin}{1.7}     % HL-LHC, alpha_s unchanged
+\newcommand{\sigHLLHCmax}{2.5}     % HL-LHC, lattice alpha_s improved twofold
+\newcommand{\xiHmin}{0.08}         % conservative xi_H(mu_b) needed at the measured m_t
+\newcommand{\xiHcentral}{0.074}    % central xi_c(mu_b) at m_t = 172.60 GeV: 0.0737 +- 0.0025 (xi_run05_summary run05.172.60)
+\newcommand{\xiHhalf}{0.12}        % xi_c at the P1 = 1/2 point: 0.1205 (P1_half_point_run05)
+\newcommand{\marginGeV}{0.36}      % m_c(P1=1/2) - 172.60 GeV: 0.3595
+\newcommand{\marginLam}{0.0024}    % lambda_SM(mu_b) - lambda_c(P1=1/2): 0.00237
+\newcommand{\mcMinusMzero}{1.9}    % m_c(P1=1/2) - m_0, with lambda(mu_b; m_0) = 0: 1.87
+\newcommand{\modelErrUp}{0.07}     % model error on m_c at P1 = 1/2, upper: +0.072 (table1_rebuild.json composite)
+\newcommand{\modelErrDn}{0.08}     % model error on m_c at P1 = 1/2, lower: -0.084
+% ---- added 2026-10-15 19:20Z from PRD-B (s05_higgs.tex header); run05 values from C161 unless marked ----
+\newcommand{\modelErrUpPnine}{0.04}     % model total, P1 = 0.9, upper (R5-039: 0.0392)
+\newcommand{\modelErrDnPnine}{0.06}     % model total, P1 = 0.9, lower (0.0557)
+\newcommand{\modelErrUpPone}{0.12}      % model total, P1 = 0.1, upper (0.1183)
+\newcommand{\modelErrDnPone}{0.13}      % model total, P1 = 0.1, lower (0.1274)
+\newcommand{\modelErrUpNoViPnine}{0.02} % without the inflation-scale item, P1 = 0.9 (0.0177)
+\newcommand{\modelErrDnNoViPnine}{0.04} % (0.0433)
+\newcommand{\modelErrUpNoVi}{0.03}      % P1 = 0.5 (0.0267)
+\newcommand{\modelErrDnNoVi}{0.05}      % (0.0509)
+\newcommand{\modelErrUpNoViPone}{0.04}  % P1 = 0.1 (0.0382)
+\newcommand{\modelErrDnNoViPone}{0.06}  % (0.0607)
+\newcommand{\PbarQlo}{0.39}             % 16% quantile of P1, direct mass (R5-005: 0.390)
+\newcommand{\PbarQhi}{0.99}             % 84% quantile (R5-005: 0.990)
+\newcommand{\PbarGeHalf}{0.78}          % probability that P1 >= 1/2, direct mass (R5-005: 0.778)
+\newcommand{\xiHminEW}{0.09}            % electroweak-scale image of \xiHmin (0.0772 -> xi_EW 0.089; D126 v2 sec. 4)
+\newcommand{\xiHbandSM}{0.013}          % SM-theory band of xi_c at 172.6 GeV (C157 run02; not recomputed at run05)
+\newcommand{\xiHbandAs}{0.04}           % alpha_s band of xi_c at 172.6 GeV (C157 run02: 0.0397; not recomputed at run05)
+% ---- added 2026-10-15 by the integrator from PRD appendix a11 (PRD-C); run05 values from C161 ----
+\newcommand{\PbarATLASCMS}{0.76}     % Pbar1 for ATLAS+CMS 172.52 +- 0.33 (R5-013: 0.7625)
+\newcommand{\PbarCMS}{0.97}          % Pbar1 for CMS 171.77 +- 0.37 (R5-014: 0.9697)
+\newcommand{\PbarMbarSigma}{0.62}    % Pbar1 for the MS-bar cross-section value 162.5 +2.1/-1.5 (R5-012: 0.6196)
+\newcommand{\BselDirect}{1.59}       % B_sel, direct mass, flat prior on [150,200] GeV (R5-019: 1.590)
+\newcommand{\BselMax}{2.18}          % upper bound 1/<P1>_prior for that prior (R5-019)
+\newcommand{\mExclMeas}{174.2}       % measured centre needed for 95% exclusion at present precision (R5-022: 174.19)
+\newcommand{\mExclMeasInterp}{174.5} % same with the 0.5 GeV interpretation error (R5-022: 174.54)
+% ---- added 2026-10-16 by code-finalize from the PRL preamble (local \providecommand definitions of the revision agent); R5 ids = numbers_run05.csv ----
+\newcommand{\mSurvFCC}{172.7}         % FCC-ee baseline: measured pole mass below this establishes P1 > 1/2 at 95% (R5-024: mhat_surv95 172.74)
+\newcommand{\sigFCCamb}{6.0}          % FCC-ee with dmbar 38 MeV and dalpha_s 0.0001: separation of 172.6 and 173.3 GeV (R5-025: 6.00)
+\newcommand{\sigHLLHCinterpMin}{1.1}  % HL-LHC separation with the 0.5 GeV interpretation error, dalpha_s 0.0009 (R5-027: 1.08)
+\newcommand{\sigHLLHCinterpMax}{1.2}  % same, dalpha_s 0.00045 (R5-027: 1.23)
+\newcommand{\lamcErrUp}{0.0006}       % model error of lambda_c at P1 = 1/2: 0.0842 GeV x 0.00659/GeV (R5-039; R5-030/R5-031; D126 v2 Sec. 3(a))
+\newcommand{\lamcErrDn}{0.0005}       % 0.0721 GeV x 0.00659/GeV
+% ---- added 2026-10-16 by rev-code (R18 DA-01/EIC-01): strength of the FCC-ee exclusion (higgs/09_claims/fcc_exclusion.py) ----
+\newcommand{\PoneAtExclFCC}{0.023} % central P1 at the FCC-ee exclusion threshold mhat = 173.68 GeV (alpha_s 0.1180): 0.0230 (fcc_exclusion.json headline)
+\newcommand{\BexFCC}{0.033}        % B_ex = Pbar for an FCC-ee measurement at that threshold (C154 machinery): 0.0332; one-Gaussian estimate 0.030

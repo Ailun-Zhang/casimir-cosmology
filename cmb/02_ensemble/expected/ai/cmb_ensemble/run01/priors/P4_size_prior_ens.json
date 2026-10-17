@@ -1,0 +1,1623 @@
+{
+ "scope": "Normalized independent size-and-Gaussian-E-shape benchmark with the real ell<=80 ensemble edges (ENS_*) and the original C79/C84 ell30 edges (A/B/C) for comparison. Conditional priors; ideal full-sky readability threshold D>=4.5, not a sky likelihood or detection probability.",
+ "source_edges": "D:\\0PhD\\Perimeter\\Research\\2026\\Directional_Null_Energy_Cosmology\\04_calculations\\results\\20261013_argon_codex_intake\\cmb_ensemble\\run01\\results\\S3_analysis.json",
+ "source_C79": "D:\\0PhD\\Perimeter\\Research\\2026\\Directional_Null_Energy_Cosmology\\04_calculations\\results\\20261011_claude_followup\\C79\\C79_results.json",
+ "samples": 2000000,
+ "seed": 20261013,
+ "sigma_E": 0.1041,
+ "circle": 0.985,
+ "Godet_effective_alpha": 0.00032202230004427804,
+ "Godet_observational_bound_alpha": 0.004,
+ "models": {
+  "A_fixed_typical": {
+   "mean_log_readable_span": 0.03618996341196449,
+   "max_log_readable_span": 0.03618996341196449,
+   "exponential": [
+    {
+     "alpha_per_efold": 0.00032202230004427804,
+     "probability": 1.165390734913323e-05,
+     "mc_standard_error": 6.61562731240978e-27,
+     "upper_bound_from_max_edge": 1.1653907349133231e-05
+    },
+    {
+     "alpha_per_efold": 0.004,
+     "probability": 0.0001447493764458094,
+     "mc_standard_error": 0.0,
+     "upper_bound_from_max_edge": 0.0001447493764458094
+    },
+    {
+     "alpha_per_efold": 0.01,
+     "probability": 0.00036183415634608924,
+     "mc_standard_error": 0.0,
+     "upper_bound_from_max_edge": 0.00036183415634608924
+    },
+    {
+     "alpha_per_efold": 0.1,
+     "probability": 0.0036124556665425166,
+     "mc_standard_error": 0.0,
+     "upper_bound_from_max_edge": 0.0036124556665425166
+    },
+    {
+     "alpha_per_efold": 1,
+     "probability": 0.03554293547439547,
+     "mc_standard_error": 1.3260340223940136e-21,
+     "upper_bound_from_max_edge": 0.03554293547439548
+    },
+    {
+     "alpha_per_efold": 10,
+     "probability": 0.30364774565835334,
+     "mc_standard_error": 3.659940513589538e-20,
+     "upper_bound_from_max_edge": 0.30364774565835345
+    },
+    {
+     "alpha_per_efold": 20,
+     "probability": 0.5150935378733068,
+     "mc_standard_error": 0.0,
+     "upper_bound_from_max_edge": 0.5150935378733068
+    },
+    {
+     "alpha_per_efold": 30,
+     "probability": 0.6623342919532451,
+     "mc_standard_error": 9.699619220204609e-20,
+     "upper_bound_from_max_edge": 0.662334291953245
+    },
+    {
+     "alpha_per_efold": 50,
+     "probability": 0.8362637161295432,
+     "mc_standard_error": 0.0,
+     "upper_bound_from_max_edge": 0.8362637161295432
+    },
+    {
+     "alpha_per_efold": 100,
+     "probability": 0.9731904293442932,
+     "mc_standard_error": 0.0,
+     "upper_bound_from_max_edge": 0.9731904293442932
+    }
+   ],
+   "alpha_needed_for_probability_within_0_to_300": {
+    "0.5": 19.153022418662427,
+    "0.6": 25.31891843723806,
+    "0.9": 63.62496327456373
+   },
+   "at_alpha_300": {
+    "probability": 0.9999807305385512,
+    "mc_standard_error": 1.63415851534121e-18
+   },
+   "normal_logsize_prior": [
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.469417324557883,
+     "probability": 0.03218185675752213,
+     "mc_standard_error": 8.645379761442273e-07
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.52063254967681,
+     "probability": 0.029133664624760927,
+     "mc_standard_error": 8.342247153198666e-07
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.7427661592682314,
+     "probability": 0.016723709053834003,
+     "mc_standard_error": 6.523971397729227e-07
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.9904518187967412,
+     "probability": 0.0010279901431827117,
+     "mc_standard_error": 9.287383592098418e-08
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.4847518936643924,
+     "probability": 0.015577702117322848,
+     "mc_standard_error": 2.1817041862716382e-07
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.5102781239304582,
+     "probability": 0.014813318898820028,
+     "mc_standard_error": 2.1389160095905676e-07
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.6273044071987822,
+     "probability": 0.01146722543492648,
+     "mc_standard_error": 1.9154130155656212e-07
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.8784898490478584,
+     "probability": 0.004401513260236457,
+     "mc_standard_error": 1.1251499980891675e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.4923357502207509,
+     "probability": 0.00771418279300514,
+     "mc_standard_error": 5.549582043738577e-08
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.505165040049651,
+     "probability": 0.007520180370840092,
+     "mc_standard_error": 5.491752650013299e-08
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.56481126979477,
+     "probability": 0.006642371853864578,
+     "mc_standard_error": 5.207106802093462e-08
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.7212904389312547,
+     "probability": 0.004446661825523383,
+     "mc_standard_error": 4.2834524379453045e-08
+    }
+   ]
+  },
+  "B_C79_clamped": {
+   "mean_log_readable_span": 0.03360067510949982,
+   "max_log_readable_span": 0.03837639097883633,
+   "exponential": [
+    {
+     "alpha_per_efold": 0.00032202230004427804,
+     "probability": 1.082008937761828e-05,
+     "mc_standard_error": 9.452239361625348e-10,
+     "upper_bound_from_max_edge": 1.2357977329972406e-05
+    },
+    {
+     "alpha_per_efold": 0.004,
+     "probability": 0.00013439077365077766,
+     "mc_standard_error": 1.1740437585798226e-08,
+     "upper_bound_from_max_edge": 0.00015349378253911217
+    },
+    {
+     "alpha_per_efold": 0.01,
+     "probability": 0.00033593221640591467,
+     "mc_standard_error": 2.9348396370730078e-08,
+     "upper_bound_from_max_edge": 0.00038369028183801984
+    },
+    {
+     "alpha_per_efold": 0.1,
+     "probability": 0.0033526256261852466,
+     "mc_standard_error": 2.9307987053284665e-07,
+     "upper_bound_from_max_edge": 0.003830284771718566
+    },
+    {
+     "alpha_per_efold": 1,
+     "probability": 0.032867942677585645,
+     "mc_standard_error": 2.8908747466778565e-06,
+     "upper_bound_from_max_edge": 0.03764934738966346
+    },
+    {
+     "alpha_per_efold": 10,
+     "probability": 0.27294479708607483,
+     "mc_standard_error": 2.4933225044980853e-05,
+     "upper_bound_from_max_edge": 0.3187077453735117
+    },
+    {
+     "alpha_per_efold": 20,
+     "probability": 0.4556353531801853,
+     "mc_standard_error": 4.014209598677848e-05,
+     "upper_bound_from_max_edge": 0.5358408637859562
+    },
+    {
+     "alpha_per_efold": 30,
+     "probability": 0.5840104284427158,
+     "mc_standard_error": 4.576522120056404e-05,
+     "upper_bound_from_max_edge": 0.6837719755832508
+    },
+    {
+     "alpha_per_efold": 50,
+     "probability": 0.7492038323105487,
+     "mc_standard_error": 3.895034897482609e-05,
+     "upper_bound_from_max_edge": 0.8532198733400481
+    },
+    {
+     "alpha_per_efold": 100,
+     "probability": 0.926846171656497,
+     "mc_standard_error": 1.0260407384760967e-05,
+     "upper_bound_from_max_edge": 0.9784555944176885
+    }
+   ],
+   "alpha_needed_for_probability_within_0_to_300": {
+    "0.5": 23.09476384204113,
+    "0.6": 31.503756022485863,
+    "0.9": 87.37499002484432
+   },
+   "at_alpha_300": {
+    "probability": 0.99954876916077,
+    "mc_standard_error": 3.93670920483666e-09
+   },
+   "normal_logsize_prior": [
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.469417324557883,
+     "probability": 0.029864048196825803,
+     "mc_standard_error": 3.322742732410667e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.52063254967681,
+     "probability": 0.027050318802114344,
+     "mc_standard_error": 3.0512166756439785e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.7427661592682314,
+     "probability": 0.015568503854510042,
+     "mc_standard_error": 1.8993211283401538e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.9904518187967412,
+     "probability": 0.0009644029630273652,
+     "mc_standard_error": 1.639766359575801e-07
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.4847518936643924,
+     "probability": 0.014461323044727572,
+     "mc_standard_error": 1.4391064396027868e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.5102781239304582,
+     "probability": 0.013753604500632179,
+     "mc_standard_error": 1.3736768821026552e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.6273044071987822,
+     "probability": 0.010653729145788543,
+     "mc_standard_error": 1.0844738717187313e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.8784898490478584,
+     "probability": 0.004096770610547232,
+     "mc_standard_error": 4.485960258968719e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.4923357502207509,
+     "probability": 0.0071620250253077175,
+     "mc_standard_error": 6.696862993253912e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.505165040049651,
+     "probability": 0.006982150425362284,
+     "mc_standard_error": 6.534873549387053e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.56481126979477,
+     "probability": 0.006168142989723207,
+     "mc_standard_error": 5.800176140899921e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.7212904389312547,
+     "probability": 0.0041310850988803445,
+     "mc_standard_error": 3.946233465175445e-07
+    }
+   ]
+  },
+  "C_zero_fossil_edge": {
+   "mean_log_readable_span": 0.032730816886160495,
+   "max_log_readable_span": 0.03837639097883633,
+   "exponential": [
+    {
+     "alpha_per_efold": 0.00032202230004427804,
+     "probability": 1.0539970852101005e-05,
+     "mc_standard_error": 1.467111228384658e-09,
+     "upper_bound_from_max_edge": 1.2357977329972406e-05
+    },
+    {
+     "alpha_per_efold": 0.004,
+     "probability": 0.0001309106032637532,
+     "mc_standard_error": 1.822475390883539e-08,
+     "upper_bound_from_max_edge": 0.00015349378253911217
+    },
+    {
+     "alpha_per_efold": 0.01,
+     "probability": 0.0003272290247110292,
+     "mc_standard_error": 4.5566093910936665e-08,
+     "upper_bound_from_max_edge": 0.00038369028183801984
+    },
+    {
+     "alpha_per_efold": 0.1,
+     "probability": 0.003265178670093701,
+     "mc_standard_error": 4.562940506584967e-07,
+     "upper_bound_from_max_edge": 0.003830284771718566
+    },
+    {
+     "alpha_per_efold": 1,
+     "probability": 0.03195179887493511,
+     "mc_standard_error": 4.627909235062694e-06,
+     "upper_bound_from_max_edge": 0.03764934738966346
+    },
+    {
+     "alpha_per_efold": 10,
+     "probability": 0.2595891594702039,
+     "mc_standard_error": 5.342683679886981e-05,
+     "upper_bound_from_max_edge": 0.3187077453735117
+    },
+    {
+     "alpha_per_efold": 20,
+     "probability": 0.4204672604248491,
+     "mc_standard_error": 0.00012104735528054115,
+     "upper_bound_from_max_edge": 0.5358408637859562
+    },
+    {
+     "alpha_per_efold": 30,
+     "probability": 0.5212847023044826,
+     "mc_standard_error": 0.00019703493247471703,
+     "upper_bound_from_max_edge": 0.6837719755832508
+    },
+    {
+     "alpha_per_efold": 50,
+     "probability": 0.626510803003651,
+     "mc_standard_error": 0.0003552082280673017,
+     "upper_bound_from_max_edge": 0.8532198733400481
+    },
+    {
+     "alpha_per_efold": 100,
+     "probability": 0.6973246650458162,
+     "mc_standard_error": 0.0007268503572759491,
+     "upper_bound_from_max_edge": 0.9784555944176885
+    }
+   ],
+   "alpha_needed_for_probability_within_0_to_300": {
+    "0.5": 27.47272480395516,
+    "0.6": 43.09219352631524,
+    "0.9": null
+   },
+   "at_alpha_300": {
+    "probability": 0.7165738691927847,
+    "mc_standard_error": 0.00214457626278229
+   },
+   "normal_logsize_prior": [
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.469417324557883,
+     "probability": 0.02908610397096505,
+     "mc_standard_error": 4.6817056152648055e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.52063254967681,
+     "probability": 0.026352792707037533,
+     "mc_standard_error": 4.261001922635375e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.7427661592682314,
+     "probability": 0.015185898659710904,
+     "mc_standard_error": 2.53742315068756e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.9904518187967412,
+     "probability": 0.0009438264296827264,
+     "mc_standard_error": 1.9319802628827334e-07
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.4847518936643924,
+     "probability": 0.014086368339518035,
+     "mc_standard_error": 2.1138564643041325e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.5102781239304582,
+     "probability": 0.01339789693598784,
+     "mc_standard_error": 2.0126677434891766e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.6273044071987822,
+     "probability": 0.01038142774218623,
+     "mc_standard_error": 1.5693196061390378e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.8784898490478584,
+     "probability": 0.003995523462277377,
+     "mc_standard_error": 6.232341162124974e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.4923357502207509,
+     "probability": 0.006976541385603256,
+     "mc_standard_error": 1.0091045021933832e-06
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.505165040049651,
+     "probability": 0.006801440217060823,
+     "mc_standard_error": 9.840267053162084e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.56481126979477,
+     "probability": 0.006008974834802849,
+     "mc_standard_error": 8.705402370654075e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.7212904389312547,
+     "probability": 0.004025375361217813,
+     "mc_standard_error": 5.86280697938022e-07
+    }
+   ]
+  },
+  "ENS_TE80_prof": {
+   "mean_log_readable_span": 0.04126656215759441,
+   "max_log_readable_span": 0.046734777621924024,
+   "exponential": [
+    {
+     "alpha_per_efold": 0.00032202230004427804,
+     "probability": 1.3288654428109098e-05,
+     "mc_standard_error": 8.448740817078859e-10,
+     "upper_bound_from_max_edge": 1.504952733659711e-05
+    },
+    {
+     "alpha_per_efold": 0.004,
+     "probability": 0.0001650510002417076,
+     "mc_standard_error": 1.0494849321357217e-08,
+     "upper_bound_from_max_edge": 0.00018692163846093315
+    },
+    {
+     "alpha_per_efold": 0.01,
+     "probability": 0.00041257032817868254,
+     "mc_standard_error": 2.623812523205461e-08,
+     "upper_bound_from_max_edge": 0.00046723858625782937
+    },
+    {
+     "alpha_per_efold": 0.1,
+     "probability": 0.004117140410698639,
+     "mc_standard_error": 2.625300579001998e-07,
+     "upper_bound_from_max_edge": 0.004662574057682342
+    },
+    {
+     "alpha_per_efold": 1,
+     "probability": 0.04032838054055146,
+     "mc_standard_error": 2.638622246560352e-06,
+     "upper_bound_from_max_edge": 0.045659523521538875
+    },
+    {
+     "alpha_per_efold": 10,
+     "probability": 0.3309517390528162,
+     "mc_standard_error": 2.6078432637339884e-05,
+     "upper_bound_from_max_edge": 0.37333788566973775
+    },
+    {
+     "alpha_per_efold": 20,
+     "probability": 0.5423838004212834,
+     "mc_standard_error": 4.5834364276405246e-05,
+     "upper_bound_from_max_edge": 0.6072945944631253
+    },
+    {
+     "alpha_per_efold": 30,
+     "probability": 0.6808500932231207,
+     "mc_standard_error": 5.5588782134053836e-05,
+     "upper_bound_from_max_edge": 0.753906400257339
+    },
+    {
+     "alpha_per_efold": 50,
+     "probability": 0.8389283753429724,
+     "mc_standard_error": 5.386379189266983e-05,
+     "upper_bound_from_max_edge": 0.903357713113029
+    },
+    {
+     "alpha_per_efold": 100,
+     "probability": 0.9700541842282843,
+     "mc_standard_error": 2.506055900981044e-05,
+     "upper_bound_from_max_edge": 0.9906602683852563
+    }
+   ],
+   "alpha_needed_for_probability_within_0_to_300": {
+    "0.5": 17.61723892775375,
+    "0.6": 23.678217926620135,
+    "0.9": 64.28693393762136
+   },
+   "at_alpha_300": {
+    "probability": 0.9999801822703962,
+    "mc_standard_error": 8.664566571361985e-08
+   },
+   "normal_logsize_prior": [
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.469417324557883,
+     "probability": 0.03667549179147706,
+     "mc_standard_error": 2.9804515615014723e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.52063254967681,
+     "probability": 0.0332240955672595,
+     "mc_standard_error": 2.7357742318756274e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.7427661592682314,
+     "probability": 0.01913239518242518,
+     "mc_standard_error": 1.708393819233314e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.9904518187967412,
+     "probability": 0.0011868314935891454,
+     "mc_standard_error": 1.5594680913283976e-07
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.4847518936643924,
+     "probability": 0.01776039525023919,
+     "mc_standard_error": 1.2778750282255394e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.5102781239304582,
+     "probability": 0.01689173956074576,
+     "mc_standard_error": 1.2191347739892059e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.6273044071987822,
+     "probability": 0.013086420382655067,
+     "mc_standard_error": 9.604667922991136e-07
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.8784898490478584,
+     "probability": 0.005034187158367222,
+     "mc_standard_error": 3.96965662761025e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.4923357502207509,
+     "probability": 0.008795989171025297,
+     "mc_standard_error": 5.946776455801179e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.505165040049651,
+     "probability": 0.008575143493355862,
+     "mc_standard_error": 5.801647937253716e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.56481126979477,
+     "probability": 0.007575690310269084,
+     "mc_standard_error": 5.14412899855564e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.7212904389312547,
+     "probability": 0.005074293306093231,
+     "mc_standard_error": 3.4904092453610263e-07
+    }
+   ]
+  },
+  "ENS_TE80_fixed": {
+   "mean_log_readable_span": 0.04437194559410529,
+   "max_log_readable_span": 0.05317393058972762,
+   "exponential": [
+    {
+     "alpha_per_efold": 0.00032202230004427804,
+     "probability": 1.4288649254052806e-05,
+     "mc_standard_error": 7.780372379197415e-10,
+     "upper_bound_from_max_edge": 1.712304482989325e-05
+    },
+    {
+     "alpha_per_efold": 0.004,
+     "probability": 0.00017747131650337292,
+     "mc_standard_error": 9.663603004866034e-09,
+     "upper_bound_from_max_edge": 0.0002126731042273773
+    },
+    {
+     "alpha_per_efold": 0.01,
+     "probability": 0.0004436165534316452,
+     "mc_standard_error": 2.4155801260910792e-08,
+     "upper_bound_from_max_edge": 0.0005315979576071488
+    },
+    {
+     "alpha_per_efold": 0.1,
+     "probability": 0.00442691809233004,
+     "mc_standard_error": 2.410793607661678e-07,
+     "upper_bound_from_max_edge": 0.005303280749147044
+    },
+    {
+     "alpha_per_efold": 1,
+     "probability": 0.04335796068680859,
+     "mc_standard_error": 2.3652098561014144e-06,
+     "upper_bound_from_max_edge": 0.051784925468265436
+    },
+    {
+     "alpha_per_efold": 10,
+     "probability": 0.3547914521899297,
+     "mc_standard_error": 2.067606065257668e-05,
+     "upper_bound_from_max_edge": 0.41241790461306355
+    },
+    {
+     "alpha_per_efold": 20,
+     "probability": 0.5777472377613131,
+     "mc_standard_error": 3.713693764023575e-05,
+     "upper_bound_from_max_edge": 0.6547472811806971
+    },
+    {
+     "alpha_per_efold": 30,
+     "probability": 0.7189742861453968,
+     "mc_standard_error": 4.878580389940994e-05,
+     "upper_bound_from_max_edge": 0.7971356840381172
+    },
+    {
+     "alpha_per_efold": 50,
+     "probability": 0.8690415682587148,
+     "mc_standard_error": 5.5933053193530325e-05,
+     "upper_bound_from_max_edge": 0.9299605433627418
+    },
+    {
+     "alpha_per_efold": 100,
+     "probability": 0.9759816393415884,
+     "mc_standard_error": 3.282467994165145e-05,
+     "upper_bound_from_max_edge": 0.9950944745139576
+    }
+   ],
+   "alpha_needed_for_probability_within_0_to_300": {
+    "0.5": 15.968177371361424,
+    "0.6": 21.305574452435344,
+    "0.9": 57.47192788563484
+   },
+   "at_alpha_300": {
+    "probability": 0.999939962748923,
+    "mc_standard_error": 5.642663986086263e-07
+   },
+   "normal_logsize_prior": [
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.469417324557883,
+     "probability": 0.03943590611519794,
+     "mc_standard_error": 2.615835654593243e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.52063254967681,
+     "probability": 0.035725223252987194,
+     "mc_standard_error": 2.4053283846098795e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.7427661592682314,
+     "probability": 0.020573783456282635,
+     "mc_standard_error": 1.5168447127751324e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.9904518187967412,
+     "probability": 0.001276314595201791,
+     "mc_standard_error": 1.4508567059221092e-07
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.4847518936643924,
+     "probability": 0.01909696031674892,
+     "mc_standard_error": 1.133391150848298e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.5102781239304582,
+     "probability": 0.018162993929143778,
+     "mc_standard_error": 1.0813134228996416e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.6273044071987822,
+     "probability": 0.014071499665317053,
+     "mc_standard_error": 8.518535660768896e-07
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.8784898490478584,
+     "probability": 0.005413331034286907,
+     "mc_standard_error": 3.521362753797155e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.4923357502207509,
+     "probability": 0.009457911201552037,
+     "mc_standard_error": 5.349843052046285e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.505165040049651,
+     "probability": 0.009220453987514613,
+     "mc_standard_error": 5.218874778154534e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.56481126979477,
+     "probability": 0.008145819787298454,
+     "mc_standard_error": 4.625446989418996e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.7212904389312547,
+     "probability": 0.005456230631484107,
+     "mc_standard_error": 3.1331568841461334e-07
+    }
+   ]
+  },
+  "ENS_TE30_prof": {
+   "mean_log_readable_span": 0.03192947619640555,
+   "max_log_readable_span": 0.03809575884763217,
+   "exponential": [
+    {
+     "alpha_per_efold": 0.00032202230004427804,
+     "probability": 1.0281931703250372e-05,
+     "mc_standard_error": 1.1451143667897303e-09,
+     "upper_bound_from_max_edge": 1.2267608638320408e-05
+    },
+    {
+     "alpha_per_efold": 0.004,
+     "probability": 0.0001277068486057481,
+     "mc_standard_error": 1.4224359944509397e-08,
+     "upper_bound_from_max_edge": 0.00015237142568550613
+    },
+    {
+     "alpha_per_efold": 0.01,
+     "probability": 0.0003192256671184554,
+     "mc_standard_error": 3.5562212290285886e-08,
+     "upper_bound_from_max_edge": 0.000380885033347981
+    },
+    {
+     "alpha_per_efold": 0.1,
+     "probability": 0.0031860475455741622,
+     "mc_standard_error": 3.558187889478481e-07,
+     "upper_bound_from_max_edge": 0.003802328656428635
+    },
+    {
+     "alpha_per_efold": 1,
+     "probability": 0.031248802343130128,
+     "mc_standard_error": 3.577597104765975e-06,
+     "upper_bound_from_max_edge": 0.03737924297683986
+    },
+    {
+     "alpha_per_efold": 10,
+     "probability": 0.25977409574116883,
+     "mc_standard_error": 3.7142046576996245e-05,
+     "upper_bound_from_max_edge": 0.31679313515042073
+    },
+    {
+     "alpha_per_efold": 20,
+     "probability": 0.43195690007782983,
+     "mc_standard_error": 7.416121398151881e-05,
+     "upper_bound_from_max_edge": 0.5332283798224087
+    },
+    {
+     "alpha_per_efold": 30,
+     "probability": 0.5502220183034214,
+     "mc_standard_error": 0.00010700047652410488,
+     "upper_bound_from_max_edge": 0.6810984247777092
+    },
+    {
+     "alpha_per_efold": 50,
+     "probability": 0.697838634038145,
+     "mc_standard_error": 0.00015356137512037197,
+     "upper_bound_from_max_edge": 0.8511457950563054
+    },
+    {
+     "alpha_per_efold": 100,
+     "probability": 0.8633612538971099,
+     "mc_standard_error": 0.00017788858869981452,
+     "upper_bound_from_max_edge": 0.9778424256705806
+    }
+   ],
+   "alpha_needed_for_probability_within_0_to_300": {
+    "0.5": 25.31549232808797,
+    "0.6": 35.49766008788262,
+    "0.9": 121.99516283277136
+   },
+   "at_alpha_300": {
+    "probability": 0.9907450010402741,
+    "mc_standard_error": 5.309192616977718e-05
+   },
+   "normal_logsize_prior": [
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.469417324557883,
+     "probability": 0.028381672329036566,
+     "mc_standard_error": 3.7410307179467315e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.52063254967681,
+     "probability": 0.025705740268343352,
+     "mc_standard_error": 3.4137834372394314e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.7427661592682314,
+     "probability": 0.014789307404180035,
+     "mc_standard_error": 2.060392226225816e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.9904518187967412,
+     "probability": 0.0009150262014090758,
+     "mc_standard_error": 1.6409125375484035e-07
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.4847518936643924,
+     "probability": 0.013742418323502512,
+     "mc_standard_error": 1.6696497182764508e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.5102781239304582,
+     "probability": 0.013069644660455097,
+     "mc_standard_error": 1.5907803191018984e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.6273044071987822,
+     "probability": 0.010123052353077245,
+     "mc_standard_error": 1.2444442016424495e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.8784898490478584,
+     "probability": 0.0038917141817063038,
+     "mc_standard_error": 4.997504693732841e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.4923357502207509,
+     "probability": 0.006805851884028105,
+     "mc_standard_error": 7.923125847381047e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.505165040049651,
+     "probability": 0.006634892106135959,
+     "mc_standard_error": 7.727511516856398e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.56481126979477,
+     "probability": 0.005861243169591869,
+     "mc_standard_error": 6.841790663947014e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.7212904389312547,
+     "probability": 0.003925299052163285,
+     "mc_standard_error": 4.619207291084284e-07
+    }
+   ]
+  },
+  "ENS_T80_prof": {
+   "mean_log_readable_span": 0.03482055392053547,
+   "max_log_readable_span": 0.03966818757707581,
+   "exponential": [
+    {
+     "alpha_per_efold": 0.00032202230004427804,
+     "probability": 1.1212914964649739e-05,
+     "mc_standard_error": 1.0168016860788979e-09,
+     "upper_bound_from_max_edge": 1.277395941444345e-05
+    },
+    {
+     "alpha_per_efold": 0.004,
+     "probability": 0.0001392698886833925,
+     "mc_standard_error": 1.263046213337008e-08,
+     "upper_bound_from_max_edge": 0.00015866016245325005
+    },
+    {
+     "alpha_per_efold": 0.01,
+     "probability": 0.0003481285026336573,
+     "mc_standard_error": 3.157721539437511e-08,
+     "upper_bound_from_max_edge": 0.0003966032079178566
+    },
+    {
+     "alpha_per_efold": 0.1,
+     "probability": 0.00347436248129011,
+     "mc_standard_error": 3.159307677049112e-07,
+     "upper_bound_from_max_edge": 0.003958961325283027
+    },
+    {
+     "alpha_per_efold": 1,
+     "probability": 0.03406191299660065,
+     "mc_standard_error": 3.174715081136194e-06,
+     "upper_bound_from_max_edge": 0.03889170607889047
+    },
+    {
+     "alpha_per_efold": 10,
+     "probability": 0.28203389006659185,
+     "mc_standard_error": 3.258280275431855e-05,
+     "upper_bound_from_max_edge": 0.3274520545989186
+    },
+    {
+     "alpha_per_efold": 20,
+     "probability": 0.4671100598898889,
+     "mc_standard_error": 6.389616272682743e-05,
+     "upper_bound_from_max_edge": 0.547679261136784
+    },
+    {
+     "alpha_per_efold": 30,
+     "probability": 0.5928097089214259,
+     "mc_standard_error": 9.10608340452871e-05,
+     "upper_bound_from_max_edge": 0.695792616415245
+    },
+    {
+     "alpha_per_efold": 50,
+     "probability": 0.7466054542500744,
+     "mc_standard_error": 0.00013261419981299243,
+     "upper_bound_from_max_edge": 0.8624006914892979
+    },
+    {
+     "alpha_per_efold": 100,
+     "probability": 0.9063646216284347,
+     "mc_standard_error": 0.00018115989513808027,
+     "upper_bound_from_max_edge": 0.9810664302973766
+    }
+   ],
+   "alpha_needed_for_probability_within_0_to_300": {
+    "0.5": 22.28051861093972,
+    "0.6": 30.69685070573255,
+    "0.9": 96.42901987736875
+   },
+   "at_alpha_300": {
+    "probability": 0.9952247658029174,
+    "mc_standard_error": 7.847159104356202e-05
+   },
+   "normal_logsize_prior": [
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.469417324557883,
+     "probability": 0.030949777553973646,
+     "mc_standard_error": 3.4595676256275757e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.52063254967681,
+     "probability": 0.028033544435188733,
+     "mc_standard_error": 3.1650372825363426e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.7427661592682314,
+     "probability": 0.01613352185853645,
+     "mc_standard_error": 1.9373710916712826e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.9904518187967412,
+     "probability": 0.0009990815066363817,
+     "mc_standard_error": 1.622163568362086e-07
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.4847518936643924,
+     "probability": 0.014986526859277812,
+     "mc_standard_error": 1.515722544679446e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.5102781239304582,
+     "probability": 0.014253077793118737,
+     "mc_standard_error": 1.4451215025900211e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.6273044071987822,
+     "probability": 0.011040514814432058,
+     "mc_standard_error": 1.134530493530808e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.8784898490478584,
+     "probability": 0.004245338085351038,
+     "mc_standard_error": 4.61702674006343e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.4923357502207509,
+     "probability": 0.007422066588233561,
+     "mc_standard_error": 7.116900669448704e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.505165040049651,
+     "probability": 0.007235657433237842,
+     "mc_standard_error": 6.942428744251203e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.56481126979477,
+     "probability": 0.006392079797321449,
+     "mc_standard_error": 6.152089992175487e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.7212904389312547,
+     "probability": 0.0042810339911463,
+     "mc_standard_error": 4.1656524580373526e-07
+    }
+   ]
+  },
+  "ENS_TE80ampfree_prof": {
+   "mean_log_readable_span": 0.04130944818749839,
+   "max_log_readable_span": 0.0467353214398915,
+   "exponential": [
+    {
+     "alpha_per_efold": 0.00032202230004427804,
+     "probability": 1.3302464797197047e-05,
+     "mc_standard_error": 8.16328720252114e-10,
+     "upper_bound_from_max_edge": 1.504970245547429e-05
+    },
+    {
+     "alpha_per_efold": 0.004,
+     "probability": 0.00016522256150090537,
+     "mc_standard_error": 1.0140240219164272e-08,
+     "upper_bound_from_max_edge": 0.0001869238133261953
+    },
+    {
+     "alpha_per_efold": 0.01,
+     "probability": 0.00041299929557754925,
+     "mc_standard_error": 2.535146837260124e-08,
+     "upper_bound_from_max_edge": 0.000467244021896562
+    },
+    {
+     "alpha_per_efold": 0.1,
+     "probability": 0.004121439689795201,
+     "mc_standard_error": 2.536434512633933e-07,
+     "upper_bound_from_max_edge": 0.004662628185918463
+    },
+    {
+     "alpha_per_efold": 1,
+     "probability": 0.04037229994269571,
+     "mc_standard_error": 2.547832571227886e-06,
+     "upper_bound_from_max_edge": 0.04566004250889596
+    },
+    {
+     "alpha_per_efold": 10,
+     "probability": 0.331448100764326,
+     "mc_standard_error": 2.5055484535723203e-05,
+     "upper_bound_from_max_edge": 0.3733412935616444
+    },
+    {
+     "alpha_per_efold": 20,
+     "probability": 0.5433643094713666,
+     "mc_standard_error": 4.379037418048968e-05,
+     "upper_bound_from_max_edge": 0.6072988656450069
+    },
+    {
+     "alpha_per_efold": 30,
+     "probability": 0.68215587772426,
+     "mc_standard_error": 5.2733648767547115e-05,
+     "upper_bound_from_max_edge": 0.7539104151282252
+    },
+    {
+     "alpha_per_efold": 50,
+     "probability": 0.8403316898041234,
+     "mc_standard_error": 5.007095862904048e-05,
+     "upper_bound_from_max_edge": 0.9033603408679047
+    },
+    {
+     "alpha_per_efold": 100,
+     "probability": 0.9705874483560236,
+     "mc_standard_error": 2.2270512702849975e-05,
+     "upper_bound_from_max_edge": 0.9906607762828324
+    }
+   ],
+   "alpha_needed_for_probability_within_0_to_300": {
+    "0.5": 17.570574449472186,
+    "0.6": 23.60109134267849,
+    "0.9": 63.930074946756584
+   },
+   "at_alpha_300": {
+    "probability": 0.9999804988544113,
+    "mc_standard_error": 7.885456732739546e-08
+   },
+   "normal_logsize_prior": [
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.469417324557883,
+     "probability": 0.036713806894396336,
+     "mc_standard_error": 2.9088778602108137e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.52063254967681,
+     "probability": 0.03325858046115631,
+     "mc_standard_error": 2.6718814784651928e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.7427661592682314,
+     "probability": 0.01915164856454182,
+     "mc_standard_error": 1.6744293559385403e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.9904518187967412,
+     "probability": 0.0011879197948465865,
+     "mc_standard_error": 1.5441252545606072e-07
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.4847518936643924,
+     "probability": 0.017778876689046583,
+     "mc_standard_error": 1.2414100309465069e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.5102781239304582,
+     "probability": 0.01690928878513693,
+     "mc_standard_error": 1.1845702284835777e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.6273044071987822,
+     "probability": 0.013099913727596328,
+     "mc_standard_error": 9.341404207028052e-07
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.8784898490478584,
+     "probability": 0.005039266640040948,
+     "mc_standard_error": 3.87440076730506e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.4923357502207509,
+     "probability": 0.008805133358364293,
+     "mc_standard_error": 5.761721426002805e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.505165040049651,
+     "probability": 0.008584054466560471,
+     "mc_standard_error": 5.621379878875113e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.56481126979477,
+     "probability": 0.007583547722043703,
+     "mc_standard_error": 4.985470194219383e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.7212904389312547,
+     "probability": 0.005079528029297995,
+     "mc_standard_error": 3.3853885641267116e-07
+    }
+   ]
+  },
+  "ENS_noise_planck143_TE80_prof": {
+   "mean_log_readable_span": 0.037984294491929874,
+   "max_log_readable_span": 0.042229483890978844,
+   "exponential": [
+    {
+     "alpha_per_efold": 0.00032202230004427804,
+     "probability": 1.223170251215861e-05,
+     "mc_standard_error": 7.608091728975977e-10,
+     "upper_bound_from_max_edge": 1.3598743068511013e-05
+    },
+    {
+     "alpha_per_efold": 0.004,
+     "probability": 0.00015192369876958987,
+     "mc_standard_error": 9.45041909033338e-09,
+     "upper_bound_from_max_edge": 0.00016890366973270067
+    },
+    {
+     "alpha_per_efold": 0.01,
+     "probability": 0.0003797587078260734,
+     "mc_standard_error": 2.3626161470644878e-08,
+     "upper_bound_from_max_edge": 0.00042220568499449124
+    },
+    {
+     "alpha_per_efold": 0.1,
+     "probability": 0.0037900175709505222,
+     "mc_standard_error": 2.3627831268283684e-07,
+     "upper_bound_from_max_edge": 0.004214044280822205
+    },
+    {
+     "alpha_per_efold": 1,
+     "probability": 0.03715481906135904,
+     "mc_standard_error": 2.3640297163142903e-06,
+     "upper_bound_from_max_edge": 0.041350239349223814
+    },
+    {
+     "alpha_per_efold": 10,
+     "probability": 0.3074688563986778,
+     "mc_standard_error": 2.3081362765083823e-05,
+     "upper_bound_from_max_edge": 0.34445926801717075
+    },
+    {
+     "alpha_per_efold": 20,
+     "probability": 0.5084646482150172,
+     "mc_standard_error": 4.193091529945407e-05,
+     "upper_bound_from_max_edge": 0.5702663487114165
+    },
+    {
+     "alpha_per_efold": 30,
+     "probability": 0.6435036161025995,
+     "mc_standard_error": 5.4219665101536654e-05,
+     "upper_bound_from_max_edge": 0.7182920876766281
+    },
+    {
+     "alpha_per_efold": 50,
+     "probability": 0.803514832640186,
+     "mc_standard_error": 6.304873557327645e-05,
+     "upper_bound_from_max_edge": 0.8789406302403932
+    },
+    {
+     "alpha_per_efold": 100,
+     "probability": 0.949978140871985,
+     "mc_standard_error": 5.140411448519758e-05,
+     "upper_bound_from_max_edge": 0.9853446289934068
+    }
+   ],
+   "alpha_needed_for_probability_within_0_to_300": {
+    "0.5": 19.485531627795588,
+    "0.6": 26.345983768343036,
+    "0.9": 74.24402467346852
+   },
+   "at_alpha_300": {
+    "probability": 0.9996780638293512,
+    "mc_standard_error": 3.0418979595376787e-06
+   },
+   "normal_logsize_prior": [
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.469417324557883,
+     "probability": 0.033761567239471636,
+     "mc_standard_error": 2.826570593286552e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.52063254967681,
+     "probability": 0.030580607354758156,
+     "mc_standard_error": 2.6005957630611927e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.7427661592682314,
+     "probability": 0.017599968317182593,
+     "mc_standard_error": 1.6404778738717054e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.9904518187967412,
+     "probability": 0.0010900105359959778,
+     "mc_standard_error": 1.5112452969054097e-07
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.4847518936643924,
+     "probability": 0.016348147471997084,
+     "mc_standard_error": 1.1905256678638338e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.5102781239304582,
+     "probability": 0.015548087353072148,
+     "mc_standard_error": 1.1368856156529962e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.6273044071987822,
+     "probability": 0.012043736547430694,
+     "mc_standard_error": 8.998457460959751e-07
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.8784898490478584,
+     "probability": 0.004631211688705103,
+     "mc_standard_error": 3.771170304598788e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.4923357502207509,
+     "probability": 0.008096419879911058,
+     "mc_standard_error": 5.461897677864661e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.505165040049651,
+     "probability": 0.007893077515643639,
+     "mc_standard_error": 5.330232547146509e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.56481126979477,
+     "probability": 0.006972868392025699,
+     "mc_standard_error": 4.733148766385965e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.7212904389312547,
+     "probability": 0.0046700393106658975,
+     "mc_standard_error": 3.226515227608853e-07
+    }
+   ]
+  },
+  "ENS_noise_planck143_TE80_fixed": {
+   "mean_log_readable_span": 0.04044868054570678,
+   "max_log_readable_span": 0.05108224044735991,
+   "exponential": [
+    {
+     "alpha_per_efold": 0.00032202230004427804,
+     "probability": 1.3025279645921277e-05,
+     "mc_standard_error": 1.0605887241456235e-09,
+     "upper_bound_from_max_edge": 1.6449485266007246e-05
+    },
+    {
+     "alpha_per_efold": 0.004,
+     "probability": 0.00016177967983614728,
+     "mc_standard_error": 1.3173670328825357e-08,
+     "upper_bound_from_max_edge": 0.00020430808804885412
+    },
+    {
+     "alpha_per_efold": 0.01,
+     "probability": 0.00040439279943294183,
+     "mc_standard_error": 3.293241254783964e-08,
+     "upper_bound_from_max_edge": 0.0005106919569219325
+    },
+    {
+     "alpha_per_efold": 0.1,
+     "probability": 0.004035480406004717,
+     "mc_standard_error": 3.290605748120874e-07,
+     "upper_bound_from_max_edge": 0.005095199255575006
+    },
+    {
+     "alpha_per_efold": 1,
+     "probability": 0.039522765045778493,
+     "mc_standard_error": 3.2651624185409656e-06,
+     "upper_bound_from_max_edge": 0.049799477597041626
+    },
+    {
+     "alpha_per_efold": 10,
+     "probability": 0.3236749563363604,
+     "mc_standard_error": 3.0551846527966987e-05,
+     "upper_bound_from_max_edge": 0.3999980684214559
+    },
+    {
+     "alpha_per_efold": 20,
+     "probability": 0.5291376152996164,
+     "mc_standard_error": 5.6095451651808256e-05,
+     "upper_bound_from_max_edge": 0.639997682102016
+    },
+    {
+     "alpha_per_efold": 30,
+     "probability": 0.6628689420308517,
+     "mc_standard_error": 7.491062746937365e-05,
+     "upper_bound_from_max_edge": 0.7839979138884565
+    },
+    {
+     "alpha_per_efold": 50,
+     "probability": 0.8151193584796596,
+     "mc_standard_error": 9.192586170953111e-05,
+     "upper_bound_from_max_edge": 0.9222387483290444
+    },
+    {
+     "alpha_per_efold": 100,
+     "probability": 0.9491301350845717,
+     "mc_standard_error": 7.370271754240502e-05,
+     "upper_bound_from_max_edge": 0.9939531877385663
+    }
+   ],
+   "alpha_needed_for_probability_within_0_to_300": {
+    "0.5": 18.284666995696178,
+    "0.6": 24.783434561414026,
+    "0.9": 72.87284822843444
+   },
+   "at_alpha_300": {
+    "probability": 0.9994457168009729,
+    "mc_standard_error": 5.831065915817281e-06
+   },
+   "normal_logsize_prior": [
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.469417324557883,
+     "probability": 0.03594850286229239,
+     "mc_standard_error": 3.51670201468086e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.52063254967681,
+     "probability": 0.03256618699649133,
+     "mc_standard_error": 3.2189793978196316e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.7427661592682314,
+     "probability": 0.018755212200959548,
+     "mc_standard_error": 1.975224635511842e-06
+    },
+    {
+     "logsize_sigma": 0.95,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.9904518187967412,
+     "probability": 0.0011636577872761308,
+     "mc_standard_error": 1.679478578491988e-07
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.4847518936643924,
+     "probability": 0.01740838276160708,
+     "mc_standard_error": 1.5525360026088726e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.5102781239304582,
+     "probability": 0.016557026728440255,
+     "mc_standard_error": 1.4801886646973878e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.6273044071987822,
+     "probability": 0.01282740574610448,
+     "mc_standard_error": 1.1617805008049947e-06
+    },
+    {
+     "logsize_sigma": 1.9091,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.8784898490478584,
+     "probability": 0.004934851052234392,
+     "mc_standard_error": 4.7209284590820597e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 1.0,
+     "no_circle_prior_mass": 0.4923357502207509,
+     "probability": 0.00862165597134837,
+     "mc_standard_error": 7.343072690695805e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 1.13,
+     "no_circle_prior_mass": 0.505165040049651,
+     "probability": 0.008405197952309448,
+     "mc_standard_error": 7.162820092030171e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 2.0,
+     "no_circle_prior_mass": 0.56481126979477,
+     "probability": 0.007425595816102415,
+     "mc_standard_error": 6.346212217894948e-07
+    },
+    {
+     "logsize_sigma": 3.8,
+     "geometric_center_L0_over_dLSS": 10.0,
+     "no_circle_prior_mass": 0.7212904389312547,
+     "probability": 0.004973839214512885,
+     "mc_standard_error": 4.2936073341159495e-07
+    }
+   ]
+  }
+ }
+}

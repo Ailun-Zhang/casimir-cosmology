@@ -1,0 +1,74 @@
+{
+ "Z2_cube": 16.532315959761668,
+ "NC_PPP": -29.999999999999996,
+ "NC_AAA": 25.51530661202972,
+ "PPP_centre_111": 11.193531467925467,
+ "PPP_centre_100": 0.5634524589154974,
+ "AAA_centre_111": 9.86137986098472,
+ "AAA_centre_100": 22.739787018730684,
+ "PPP_Y_1.5_iso": 7.125382798575499,
+ "PPP_Y_iso_scan_max": {
+  "g": 2.375,
+  "NC": 17.79309984518106
+ },
+ "AAA_Y_iso_scan_max": {
+  "g": 0.0,
+  "NC": 25.51530661202972
+ },
+ "AAA_Y_iso_scan_near0": [
+  25.51530661202972,
+  25.33739407060701,
+  25.128315887957925,
+  24.88750756940792,
+  24.614006466302918,
+  24.306424133361258
+ ],
+ "preparation_time": {
+  "T12_direct": 21.789416656112255,
+  "T12_time_symmetry": 21.789416656102652,
+  "rows": [
+   {
+    "ht_prep": 0.0,
+    "s_nat_over_delta": 0.2883700665361018,
+    "var_over_floor_natural": 1.001182374078072,
+    "rms_ratio_natural": 1.0005910123912127,
+    "var_over_floor_min": 1.0
+   },
+   {
+    "ht_prep": -0.1,
+    "s_nat_over_delta": 0.28551956984687876,
+    "var_over_floor_natural": 2.077758659396434,
+    "rms_ratio_natural": 1.441443255697717,
+    "var_over_floor_min": 2.077508849387578
+   },
+   {
+    "ht_prep": -0.25,
+    "s_nat_over_delta": 0.2715611529451337,
+    "var_over_floor_natural": 5.857935924230299,
+    "rms_ratio_natural": 2.420317318913018,
+    "var_over_floor_min": 5.855626194817127
+   },
+   {
+    "ht_prep": -0.5,
+    "s_nat_over_delta": 0.23214314676222622,
+    "var_over_floor_natural": 24.353146521309167,
+    "rms_ratio_natural": 4.934890730432556,
+    "var_over_floor_min": 24.23598826266077
+   },
+   {
+    "ht_prep": -1.0,
+    "s_nat_over_delta": 0.14867210373049944,
+    "var_over_floor_natural": 128.1142886692192,
+    "rms_ratio_natural": 11.318758265340735,
+    "var_over_floor_min": 123.46842332895656
+   },
+   {
+    "ht_prep": -2.0,
+    "s_nat_over_delta": 0.05518275503206904,
+    "var_over_floor_natural": 446.88640842783815,
+    "rms_ratio_natural": 21.13968799267951,
+    "var_over_floor_min": 320.51572246753307
+   }
+  ]
+ }
+}

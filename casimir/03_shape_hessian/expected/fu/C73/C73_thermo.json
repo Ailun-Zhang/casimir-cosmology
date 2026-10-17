@@ -1,0 +1,370 @@
+{
+ "description": "C73 (i): Gibbs (fixed T) and fixed-entropy shape-Laplacian tests on free lattice-mode states.\n\n(a) mpmath (dps 40): finite level set on the NON-cubic unimodular G_nc (off-diagonal entries):\n    vacuum E_vac(G) = -C_free(G)/L  (SM, AAA fermions, static graviton; own Ewald)\n    + photon-pair states (+k,-k), energy 2 omega_k, omega_k = 2 pi |G^{-1/2} k| / L\n      (3 axis pairs, 6 face-diagonal pairs, 3 double axis pairs; polarization multiplicities)\n    + every level duplicated with a shape-independent zero-mode excitation (q0 -> q0+q1).\n    Five-direction geodesic second differences, Richardson in eps^2.\n(b) numpy: the COMPLETE free Gibbs ensemble (all oscillator occupation states) of the massless\n    free SM content: 30 bosonic dof (periodic, k != 0), 90 fermionic dof (AAA), on G_nc.\n(c) numpy: a free compact U(1) electric-flux sector, energies (g^2/2L) e^T G e (e in Z^3), which is\n    NOT shape independent (Delta = 20/3): the identity acquires the extra term +4 <eps_flux>.\nFormulas tested:\n    Delta F|_T  = (8/3)(U - <q>/L) - (1/T) sum_A Var(f_A)\n    Delta U|_S  = (8/3)(U - <q>/L) - (1/T) sum_A [Var(f_A) - Cov(f_A,E)^2/Var(E)]\nOutput: results/.../C73/C73_thermo.json\n",
+ "levelset_Gnc": {
+  "label": "G_nc",
+  "q0": "0.75",
+  "q1": "2.5",
+  "n_levels": 26,
+  "vacuum_E": "-48.389786701645845904",
+  "vacuum_lap_over_E": "2.6666666666666666667",
+  "max_level_identity_residual |Delta e_s - (8/3)e_s|": "9.0704e-23",
+  "temps": [
+   {
+    "T_L": 4.0,
+    "U": "-39.63842561869685465",
+    "F": "-51.945763049096008783",
+    "S": "3.0768343575997885331",
+    "<q>": "1.6216128383348643909",
+    "Var(E)": "66.043870855602333393",
+    "(8/3)(U-<q>)": "-110.02676921875125078",
+    "sum_A Var(f_A)/T": "15.611117400971601072",
+    "fixed_S_correction sum_A Cov(f_A,E)^2/(T Var E)": "0.065255296805051978527",
+    "Cov(f_A,E)": [
+     "0.673544813671",
+     "-0.530817072163",
+     "2.23654677812",
+     "-1.44589403486",
+     "3.06768139618"
+    ],
+    "projected variances Var(f_A)-Cov^2/VarE (>=0)": [
+     "21.152986167",
+     "18.9581530011",
+     "6.07107443248",
+     "9.70819211591",
+     "6.29304270018"
+    ],
+    "LapF_T numeric (Richardson)": "-125.637886619722851849317",
+    "LapF_T formula": "-125.6378866197228518493169",
+    "LapF_T residual": "-9.1305e-23",
+    "LapF_T raw eps=1e-6": "-125.6378866202985225",
+    "LapU_S numeric (Richardson)": "-125.5726313229177998707902",
+    "LapU_S formula": "-125.5726313229177998707901",
+    "LapU_S residual": "-9.1086e-23",
+    "LapU_S raw eps=1e-6": "-125.5726313234913063",
+    "LapU_S - LapF_T (numeric)": "0.065255296805051978527"
+   },
+   {
+    "T_L": 8.0,
+    "U": "-30.844376144239128125",
+    "F": "-68.704548377763550325",
+    "S": "4.732521529190552775",
+    "<q>": "1.8062615870354706207",
+    "Var(E)": "62.137575939309701111",
+    "(8/3)(U-<q>)": "-87.068367283398929988",
+    "sum_A Var(f_A)/T": "15.853669846032151588",
+    "fixed_S_correction sum_A Cov(f_A,E)^2/(T Var E)": "0.47688022808488150517",
+    "Cov(f_A,E)": [
+     "11.3767169056",
+     "-6.8275343684",
+     "4.31875326522",
+     "-3.13685523704",
+     "5.70272280997"
+    ],
+    "projected variances Var(f_A)-Cov^2/VarE (>=0)": [
+     "42.4816132491",
+     "32.392947801",
+     "15.4324848247",
+     "17.229717963",
+     "15.4775531058"
+    ],
+    "LapF_T numeric (Richardson)": "-102.9220371294310815760176",
+    "LapF_T formula": "-102.9220371294310815760175",
+    "LapF_T residual": "-9.0835e-23",
+    "LapF_T raw eps=1e-6": "-102.92203713000823733",
+    "LapU_S numeric (Richardson)": "-102.4451569013462000708497",
+    "LapU_S formula": "-102.4451569013462000708496",
+    "LapU_S residual": "-9.0964e-23",
+    "LapU_S raw eps=1e-6": "-102.44515690191744462",
+    "LapU_S - LapF_T (numeric)": "0.47688022808488150517"
+   },
+   {
+    "T_L": 16.0,
+    "U": "-27.468203847107704307",
+    "F": "-108.3362573212688652",
+    "S": "5.0542533421350725561",
+    "<q>": "1.9025419482807897646",
+    "Var(E)": "46.23105909567699566",
+    "(8/3)(U-<q>)": "-78.321988787702650859",
+    "sum_A Var(f_A)/T": "8.6778625557679803249",
+    "fixed_S_correction sum_A Cov(f_A,E)^2/(T Var E)": "0.39622144105703327491",
+    "Cov(f_A,E)": [
+     "13.1115103797",
+     "-7.7573298216",
+     "4.42196924106",
+     "-2.83598580506",
+     "5.77921204411"
+    ],
+    "projected variances Var(f_A)-Cov^2/VarE (>=0)": [
+     "47.0056382428",
+     "35.714667688",
+     "17.0394404607",
+     "15.8602495851",
+     "16.8862618587"
+    ],
+    "LapF_T numeric (Richardson)": "-86.99985134347063118346579",
+    "LapF_T formula": "-86.9998513434706311834657",
+    "LapF_T residual": "-9.0545e-23",
+    "LapF_T raw eps=1e-6": "-86.99985134404430088",
+    "LapU_S numeric (Richardson)": "-86.60362990241359790855301",
+    "LapU_S formula": "-86.60362990241359790855292",
+    "LapU_S residual": "-9.0673e-23",
+    "LapU_S raw eps=1e-6": "-86.603629902983294029",
+    "LapU_S - LapF_T (numeric)": "0.39622144105703327491"
+   }
+  ]
+ },
+ "levelset_cube": {
+  "label": "cube",
+  "q0": "0.75",
+  "q1": "2.5",
+  "n_levels": 26,
+  "vacuum_E": "-42.740022150605365707",
+  "vacuum_lap_over_E": "2.6666666666666666667",
+  "max_level_identity_residual |Delta e_s - (8/3)e_s|": "7.7843e-23",
+  "temps": [
+   {
+    "T_L": 8.0,
+    "U": "-25.05742748046688906",
+    "F": "-63.187863998727335938",
+    "S": "4.7663045647825558598",
+    "<q>": "1.8062615870354706207",
+    "Var(E)": "58.607718496547969171",
+    "(8/3)(U-<q>)": "-71.636504180006292481",
+    "sum_A Var(f_A)/T": "15.740683044149925541",
+    "fixed_S_correction sum_A Cov(f_A,E)^2/(T Var E)": "0.0",
+    "Cov(f_A,E)": [
+     "0.0",
+     "0.0",
+     "0.0",
+     "0.0",
+     "0.0"
+    ],
+    "projected variances Var(f_A)-Cov^2/VarE (>=0)": [
+     "37.8132248764",
+     "37.8132248764",
+     "16.7663382001",
+     "16.7663382001",
+     "16.7663382001"
+    ],
+    "LapF_T numeric (Richardson)": "-87.37718722415621802231034",
+    "LapF_T formula": "-87.37718722415621802231027",
+    "LapF_T residual": "-7.8108e-23",
+    "LapF_T raw eps=1e-6": "-87.377187224711270153",
+    "LapU_S numeric (Richardson)": "-87.37718722415621802231034",
+    "LapU_S formula": "-87.37718722415621802231027",
+    "LapU_S residual": "-7.8427e-23",
+    "LapU_S raw eps=1e-6": "-87.377187224704887977",
+    "LapU_S - LapF_T (numeric)": "-3.1909773731696581686e-25"
+   }
+  ]
+ },
+ "full_free_SM_gas_Gnc": {
+  "vacuum_E": -48.38978670164588,
+  "vacuum_lap_over_E": 2.6666666654281084,
+  "rows": [
+   {
+    "T_L": 0.6,
+    "n_boson_modes": 280,
+    "n_fermion_modes": 258,
+    "U": -47.913410544770514,
+    "F": -48.442323331183374,
+    "S": 0.8815213106880884,
+    "(8/3)U": -127.7690947860547,
+    "sum_A Var(f_A)/T": 2.8931936835598404,
+    "fixed_S_correction": 0.1400468467268367,
+    "projected variances": [
+     0.1047051181932554,
+     0.13621389768952688,
+     0.5684333256225625,
+     0.3240395211684717,
+     0.5184962394259856
+    ],
+    "LapF_T numeric": -130.6622884089954,
+    "LapF_T formula": -130.66228846961454,
+    "LapF_T rel.residual": 4.639374526636767e-10,
+    "LapU_S numeric": -130.52224156517767,
+    "LapU_S formula": -130.5222416228877,
+    "LapU_S rel.residual": 4.4214705850509035e-10,
+    "Richardson D(eps) LapF": [
+     -130.88976831786775,
+     -130.71916884356938,
+     -130.67650917122364
+    ],
+    "Richardson D(eps) LapU_S": [
+     -130.74861051800113,
+     -130.57884407892573,
+     -130.53639283583607
+    ]
+   },
+   {
+    "T_L": 1.0,
+    "n_boson_modes": 1258,
+    "n_fermion_modes": 1232,
+    "U": -28.667416745746696,
+    "F": -51.86654333939464,
+    "S": 23.199126593647943,
+    "(8/3)U": -76.44644465532451,
+    "sum_A Var(f_A)/T": 76.51676223328721,
+    "fixed_S_correction": 1.083511932349316,
+    "projected variances": [
+     7.036535627985675,
+     8.278642313271888,
+     23.28847386052175,
+     14.38012620568526,
+     22.449472293473317
+    ],
+    "LapF_T numeric": -152.96320683612583,
+    "LapF_T formula": -152.96320688861172,
+    "LapF_T rel.residual": 3.431275318010765e-10,
+    "LapU_S numeric": -151.87969490317917,
+    "LapU_S formula": -151.8796949562624,
+    "LapU_S rel.residual": 3.4950838371417737e-10,
+    "Richardson D(eps) LapF": [
+     -153.19190384744275,
+     -153.02039167096382,
+     -152.97750370621088
+    ],
+    "Richardson D(eps) LapU_S": [
+     -152.10401313590083,
+     -151.93578484350212,
+     -151.8937180371438
+    ]
+   },
+   {
+    "T_L": 1.5,
+    "n_boson_modes": 4212,
+    "n_fermion_modes": 4218,
+    "U": 107.52821579726752,
+    "F": -85.6858830405229,
+    "S": 128.80939922519357,
+    "(8/3)U": 286.7419087927134,
+    "sum_A Var(f_A)/T": 473.04548935780895,
+    "fixed_S_correction": 1.037946766410902,
+    "projected variances": [
+     97.21910366286863,
+     107.23979239099552,
+     184.61924982946718,
+     137.22619758584486,
+     181.70697041792081
+    ],
+    "LapF_T numeric": -186.30358053529977,
+    "LapF_T formula": -186.30358056509556,
+    "LapF_T rel.residual": 1.599313620497782e-10,
+    "LapU_S numeric": -185.26563380495512,
+    "LapU_S formula": -185.26563379868466,
+    "LapU_S rel.residual": -3.384575028506508e-11,
+    "Richardson D(eps) LapF": [
+     -186.53133487035234,
+     -186.36052919489998,
+     -186.31781832993966
+    ],
+    "Richardson D(eps) LapU_S": [
+     -185.49082783202664,
+     -185.32194238261468,
+     -185.27971157880074
+    ]
+   }
+  ],
+  "note": "complete free-field Gibbs ensemble (all occupations) of 30 bosonic (periodic, k!=0) + 90 fermionic (AAA) massless dof; zero modes excluded (<q>=0)"
+ },
+ "compact_U1_flux_Gnc": {
+  "single_level_check": [
+   {
+    "e": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "Delta eps / eps": 6.666666666869127,
+    "expected 20/3": 6.666666666666667
+   },
+   {
+    "e": [
+     1.0,
+     1.0,
+     0.0
+    ],
+    "Delta eps / eps": 6.66666666726007,
+    "expected 20/3": 6.666666666666667
+   },
+   {
+    "e": [
+     1.0,
+     2.0,
+     -1.0
+    ],
+    "Delta eps / eps": 6.666666667201478,
+    "expected 20/3": 6.666666666666667
+   }
+  ],
+  "thermal": [
+   {
+    "g": 0.36,
+    "T_L": 1.0,
+    "<eps_flux>": 1.5000000000000002,
+    "extra term 4<eps_flux> in Delta<E>": 6.000000000000001,
+    "equipartition 1.5 T": 1.5
+   },
+   {
+    "g": 0.36,
+    "T_L": 3.0,
+    "<eps_flux>": 4.499999999999999,
+    "extra term 4<eps_flux> in Delta<E>": 17.999999999999996,
+    "equipartition 1.5 T": 4.5
+   },
+   {
+    "g": 1.0,
+    "T_L": 1.0,
+    "<eps_flux>": 1.4999949713952854,
+    "extra term 4<eps_flux> in Delta<E>": 5.9999798855811415,
+    "equipartition 1.5 T": 1.5
+   },
+   {
+    "g": 1.0,
+    "T_L": 3.0,
+    "<eps_flux>": 4.500000000000001,
+    "extra term 4<eps_flux> in Delta<E>": 18.000000000000004,
+    "equipartition 1.5 T": 4.5
+   }
+  ],
+  "gibbs_flux_sector": [
+   {
+    "g": 0.36,
+    "T_L": 1.0,
+    "LapF_flux numeric": 9.325873406851315e-10,
+    "free-mode formula (8/3)<eps>-(1/T)sumVar": -6.000000000000025,
+    "corrected (20/3)<eps>-(1/T)sumVar": -2.398081733190338e-14,
+    "numeric - free formula": 6.000000000932612,
+    "4<eps_flux>": 6.000000000000001
+   },
+   {
+    "g": 0.36,
+    "T_L": 3.0,
+    "LapF_flux numeric": 1.6630647476429456e-09,
+    "free-mode formula (8/3)<eps>-(1/T)sumVar": -18.00000000000007,
+    "corrected (20/3)<eps>-(1/T)sumVar": -7.460698725481052e-14,
+    "numeric - free formula": 18.000000001663135,
+    "4<eps_flux>": 17.999999999999996
+   },
+   {
+    "g": 1.0,
+    "T_L": 1.0,
+    "LapF_flux numeric": -0.00018607726428834486,
+    "free-mode formula (8/3)<eps>-(1/T)sumVar": -6.000165963674075,
+    "corrected (20/3)<eps>-(1/T)sumVar": -0.00018607809293325062,
+    "numeric - free formula": 5.999979886409786,
+    "4<eps_flux>": 5.9999798855811415
+   },
+   {
+    "g": 1.0,
+    "T_L": 3.0,
+    "LapF_flux numeric": 3.706763291372934e-09,
+    "free-mode formula (8/3)<eps>-(1/T)sumVar": -18.00000000000006,
+    "corrected (20/3)<eps>-(1/T)sumVar": -6.039613253960852e-14,
+    "numeric - free formula": 18.000000003706823,
+    "4<eps_flux>": 18.0
+   }
+  ]
+ },
+ "wall_seconds": 19.92029595375061
+}

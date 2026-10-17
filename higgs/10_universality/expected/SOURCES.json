@@ -1,0 +1,267 @@
+{
+ "r3/universality/run01/C156_centre.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/C156_centre.json",
+  "sha256": "f02d7264a930b774aadf41526cba63d13b666dee833bb50d6f8b61f27348c3bf",
+  "bytes": 11922
+ },
+ "r3/universality/run01/C156_coup.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/C156_coup.json",
+  "sha256": "56e662778ae5d36b895a6ee72b145210d657fa982cce62baff1afa14b0186904",
+  "bytes": 28481
+ },
+ "r3/universality/run01/C156_eta.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/C156_eta.json",
+  "sha256": "25439f6109ea1ca408cfc11f2b5acb98e3ca0cf3dcecf9e50f98701db18c974b",
+  "bytes": 11610
+ },
+ "r3/universality/run01/C156_hol2.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/C156_hol2.json",
+  "sha256": "4afac5d0ada474ca53ac56b5100cc99cc2f996b506f7b5d36348fd6e4210eb07",
+  "bytes": 6955
+ },
+ "r3/universality/run01/C156_summary.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/C156_summary.json",
+  "sha256": "35ec832e55b18ae455dd757106b5db22b53c3e1d0786e477617dc8c89f0eae82",
+  "bytes": 34181
+ },
+ "r3/universality/run01/C156_twist.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/C156_twist.json",
+  "sha256": "061153f9c01f2d17b04aa82ac3a1f3059265ec67000c7791e07506a7279c6476",
+  "bytes": 30210
+ },
+ "r3/universality/run01/shards/TEST_base_u0.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/TEST_base_u0.0000.json",
+  "sha256": "a19a9c3918c2d1413040a5ad813407ebbd4efa3f282448346d7f842b1451938a",
+  "bytes": 2801
+ },
+ "r3/universality/run01/shards/TEST_g2p_u0.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/TEST_g2p_u0.0000.json",
+  "sha256": "6d1e36039a2a42b78b97ec9552588b27b0618c78fb91bedb1b6eacf7404372e0",
+  "bytes": 2789
+ },
+ "r3/universality/run01/shards/V_g2+_u0.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_g2+_u0.0000.json",
+  "sha256": "ccc79bd9a26c200aead1b539619c307fcbe96738889817f4275144f411b50a61",
+  "bytes": 6521
+ },
+ "r3/universality/run01/shards/V_g2+_u1.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_g2+_u1.0000.json",
+  "sha256": "3d256a30ee8ca875c26ac98ba08a067b912702a4b601c7d1dd9f13e5bb7f99bc",
+  "bytes": 6525
+ },
+ "r3/universality/run01/shards/V_g2+_u2.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_g2+_u2.0000.json",
+  "sha256": "305950c2e527d86c441e218638b20b6b7268d93268e7267aadcfa7a7a11b2e63",
+  "bytes": 6490
+ },
+ "r3/universality/run01/shards/V_g2+_u3.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_g2+_u3.5000.json",
+  "sha256": "f264d04197892fed50ea561cf5d0c44b5abd84257bfdd773002b66b834fe1fdd",
+  "bytes": 6469
+ },
+ "r3/universality/run01/shards/V_g2+_u3.5000_bad.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_g2+_u3.5000_bad.json",
+  "sha256": "0220f92c81bb11bb4b45ed87494d96874a4eee955a875a8a6664a661e642a65e",
+  "bytes": 6472
+ },
+ "r3/universality/run01/shards/V_g2+_u5.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_g2+_u5.0000.json",
+  "sha256": "d3f49528f2f1861033ca06f57b0a5028873b95f0f3f7658c28efd3d2db7bf219",
+  "bytes": 6477
+ },
+ "r3/universality/run01/shards/V_g2+_u5.0000_bad.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_g2+_u5.0000_bad.json",
+  "sha256": "e6bca97731d1703dce1e611629d667120967852fccac85327b371a4e79e380db",
+  "bytes": 6469
+ },
+ "r3/universality/run01/shards/V_g2-_u0.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_g2-_u0.0000.json",
+  "sha256": "645b20d0013233420578003b847cac9d0fdfd1e04f88a6485e967e21f2e5fdeb",
+  "bytes": 6511
+ },
+ "r3/universality/run01/shards/V_g2-_u1.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_g2-_u1.0000.json",
+  "sha256": "57d857a486930ae4b204b9c414ec6f7915e1dfe413f89c3aaa27b280f39307e7",
+  "bytes": 6534
+ },
+ "r3/universality/run01/shards/V_g2-_u2.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_g2-_u2.0000.json",
+  "sha256": "dadabbe36c29d57656812313d8cee2217fb80a539d42b4f8f792d6d4ce580790",
+  "bytes": 6532
+ },
+ "r3/universality/run01/shards/V_g2-_u3.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_g2-_u3.5000.json",
+  "sha256": "35c44c184cf630499ede451b164e23bc1a070756dd13cfaed5b40fdbf4e0b136",
+  "bytes": 6543
+ },
+ "r3/universality/run01/shards/V_g2-_u5.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_g2-_u5.0000.json",
+  "sha256": "b0ca0ddbd8917a15b3f6c4091096143488f361bc624e28caee663ce34b9abbba",
+  "bytes": 6553
+ },
+ "r3/universality/run01/shards/V_gY+_u0.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_gY+_u0.0000.json",
+  "sha256": "d20485fe0540d9e151f5a128d8905cdd8bbb127769db8fbfabf16a0e149f05c4",
+  "bytes": 6520
+ },
+ "r3/universality/run01/shards/V_gY+_u1.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_gY+_u1.0000.json",
+  "sha256": "bc63dbb8167d6df982c317b4c28e579d0116447e0cd3163850ee4a7b0c45738b",
+  "bytes": 6524
+ },
+ "r3/universality/run01/shards/V_gY+_u2.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_gY+_u2.0000.json",
+  "sha256": "fa620b6c2553fc1a00d89ac0e0b0dec4899c0edeedbd9c30998f007fcdbf2224",
+  "bytes": 6527
+ },
+ "r3/universality/run01/shards/V_gY+_u3.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_gY+_u3.5000.json",
+  "sha256": "29249b63b521b25f1611405cc868ee1747a6140ca95f4c7202a8a2970a541539",
+  "bytes": 6529
+ },
+ "r3/universality/run01/shards/V_gY+_u5.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_gY+_u5.0000.json",
+  "sha256": "95b529f6a634a09b0b763bd9eee1ac33d790f66df387db95c733449666d99180",
+  "bytes": 6538
+ },
+ "r3/universality/run01/shards/V_gY-_u0.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_gY-_u0.0000.json",
+  "sha256": "0088a2dd92c2891a392efe425f6625fbd399a8ba9381b0029598a9eec8372fc1",
+  "bytes": 6474
+ },
+ "r3/universality/run01/shards/V_gY-_u1.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_gY-_u1.0000.json",
+  "sha256": "ff4081ff6c19e9e2e5cf2da2a67c4386ddbc8f85d38671b7c04b85415f2bc57d",
+  "bytes": 6446
+ },
+ "r3/universality/run01/shards/V_gY-_u2.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_gY-_u2.0000.json",
+  "sha256": "dfaf5e01e29f68d971fcbdf4a8142d1f4de0eafe676a85d7f1c21fe301675515",
+  "bytes": 6478
+ },
+ "r3/universality/run01/shards/V_gY-_u2.0000_bad.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_gY-_u2.0000_bad.json",
+  "sha256": "c3247c291196c2bdc43b62f7e8143f27b83b7f9fef27df6d2b7d1f584f60d5a4",
+  "bytes": 6470
+ },
+ "r3/universality/run01/shards/V_gY-_u3.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_gY-_u3.5000.json",
+  "sha256": "a9cc6af91e77187fbf79c6307730846d491395b865ef10f26af0a289991385e2",
+  "bytes": 6477
+ },
+ "r3/universality/run01/shards/V_gY-_u3.5000_bad.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_gY-_u3.5000_bad.json",
+  "sha256": "21e7af0e99945e2b890416de36e49ed37e9dbdb813c00d7076ae98b16c4a2477",
+  "bytes": 6473
+ },
+ "r3/universality/run01/shards/V_gY-_u5.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_gY-_u5.0000.json",
+  "sha256": "8c8e137e75bda6760fffca854fd39ddc4489d4830396e8e0c15d65d8a0fdfd79",
+  "bytes": 6496
+ },
+ "r3/universality/run01/shards/V_gY-_u5.0000_bad.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_gY-_u5.0000_bad.json",
+  "sha256": "7a12ef2ae0cd1ad26acf8c68f3b08267e3f52ef45dd7e1c2c8065e2e54ed4f79",
+  "bytes": 6492
+ },
+ "r3/universality/run01/shards/V_scal_u0.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_scal_u0.0000.json",
+  "sha256": "41fa90faeef9e64ce0b8173986014546ec601328980caa7b94f5b6513c1ce83c",
+  "bytes": 6528
+ },
+ "r3/universality/run01/shards/V_scalt_u0.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_scalt_u0.0000.json",
+  "sha256": "6f253be5b2d4bbfcd3a76106cbe93d394ce4639d4fe96a5e7d752b8a578fff97",
+  "bytes": 6547
+ },
+ "r3/universality/run01/shards/V_yt+_u0.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_yt+_u0.0000.json",
+  "sha256": "9446e93b89f91fb2cb5bff9f687c278dced13f39ac2a3f7b5a8ddd3677eee203",
+  "bytes": 6529
+ },
+ "r3/universality/run01/shards/V_yt+_u1.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_yt+_u1.0000.json",
+  "sha256": "062c1853610d0db058d865c4b16e5efaba1e56a3708a01f8e3c3ad2359e37fe8",
+  "bytes": 6534
+ },
+ "r3/universality/run01/shards/V_yt+_u2.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_yt+_u2.0000.json",
+  "sha256": "b0f7b5f22090c95148b09d6fda03d13f25d3775197339b39a7a11207081ab83e",
+  "bytes": 6536
+ },
+ "r3/universality/run01/shards/V_yt+_u3.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_yt+_u3.5000.json",
+  "sha256": "3947a0aef2675b13c6192d7bac31ea36ab47fe34f6ee040ece2211d2f1d9c431",
+  "bytes": 6531
+ },
+ "r3/universality/run01/shards/V_yt+_u5.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_yt+_u5.0000.json",
+  "sha256": "8cd3d66181773f716972c49480666a68695720418229a321189e378cc3ba7f6e",
+  "bytes": 6536
+ },
+ "r3/universality/run01/shards/V_yt-_u0.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_yt-_u0.0000.json",
+  "sha256": "6bfb7048679a79564e9e2cf46143d76833d9b2459bbfba509a2343c8ab1a45e1",
+  "bytes": 6534
+ },
+ "r3/universality/run01/shards/V_yt-_u1.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_yt-_u1.0000.json",
+  "sha256": "e0aa1297573732bbd9025a9c596dcfc6dc211b03fed2be7459991084da9effa5",
+  "bytes": 6530
+ },
+ "r3/universality/run01/shards/V_yt-_u2.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_yt-_u2.0000.json",
+  "sha256": "280e7c635a766243fcb3b49d9ecaf796b7d792fc5b93dfce84e6d3df889346d6",
+  "bytes": 6542
+ },
+ "r3/universality/run01/shards/V_yt-_u3.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_yt-_u3.5000.json",
+  "sha256": "7ac4709f07f00e2af10f1d2b3079973ea83852fe445d69aaa84af17a65d8d3bf",
+  "bytes": 6542
+ },
+ "r3/universality/run01/shards/V_yt-_u5.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/shards/V_yt-_u5.0000.json",
+  "sha256": "766d7e7391910b3a715c43e4659ea8d4d1d0f1775caa6455adba0bcd3c3bf0f8",
+  "bytes": 6543
+ },
+ "r3/universality/run01/wolfram_receipts.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run01/wolfram_receipts.json",
+  "sha256": "25d86b92612b734335797680fdb675d769df379801759b59eacb6f6e9a0bdf78",
+  "bytes": 2030
+ },
+ "r3/universality/run02/C156_run02.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run02/C156_run02.json",
+  "sha256": "836fee1b74ba3c69ebf7744ae54bd75574a6648d45a79bac539dbca3206fff03",
+  "bytes": 11083
+ },
+ "r3/universality/run02/repair_rb.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run02/repair_rb.json",
+  "sha256": "874340fe926efef29c31a7a81f2b50157891c79897cc6a47e23f2ba20e051164",
+  "bytes": 5654
+ },
+ "r3/universality/run02/shards/V_g2+_u3.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run02/shards/V_g2+_u3.5000.json",
+  "sha256": "66c6785beab15e93762a4cd9579776687ea61a5553b54c088e099f82a059b52d",
+  "bytes": 12894
+ },
+ "r3/universality/run02/shards/V_g2+_u5.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run02/shards/V_g2+_u5.0000.json",
+  "sha256": "a409fe10ec79aa79107e710fe0a004f29c8e764c267c9d52f14f2f1d5fdd7c29",
+  "bytes": 12874
+ },
+ "r3/universality/run02/shards/V_gY-_u2.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run02/shards/V_gY-_u2.0000.json",
+  "sha256": "b8010451ce0594ff6671a715175b207864cc0b46536803ff6dea402b27b5c1dc",
+  "bytes": 12901
+ },
+ "r3/universality/run02/shards/V_gY-_u3.5000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run02/shards/V_gY-_u3.5000.json",
+  "sha256": "92f221e3be6432ea5674985edfc0677c3ad28ff48f5a3b928f0dfce3564255f9",
+  "bytes": 12926
+ },
+ "r3/universality/run02/shards/V_gY-_u5.0000.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/universality/run02/shards/V_gY-_u5.0000.json",
+  "sha256": "de82c97e210484f2769e9faf148c9cf872b58ef0eea889d2c9a899b19d94c465",
+  "bytes": 12870
+ }
+}

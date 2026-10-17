@@ -1,0 +1,110 @@
+
+\section{Convergence and numerical controls}\label{rep:v-convergence}
+
+This section collects the evidence that the numbers of Part~I are converged and that their numerical errors are small compared with the model items.
+We find that the critical top mass has converged in the numerical implementation of the reduced model to $0.001\GeV$, that every numerical control of the Higgs chain together moves it by at most $0.002\GeV$, the ``numerics'' item of the error budget, and that the statistical and discretization errors of the shape and microwave-background calculations are below the precision at which their results are quoted. %
+The section has three parts: the convergence of the critical mass through the physical refinements of the model (Sec.~\ref{sec:v20-refinements}), the numerical controls of each chain (Secs.~\ref{sec:v20-higgs}--\ref{sec:v20-cmb}), and the verification of the code package against the archived original runs (Sec.~\ref{sec:v20-package}).
+
+\subsection{The critical mass through the refinements of the model}\label{sec:v20-refinements}
+
+Table~\ref{tab:rb-convergence} of Sec.~\ref{rep:h-budget} follows the critical top mass at $\Pone=0.9$ and $1/2$ through the refinements of the Higgs zero-mode model, all with the same hazard procedure at $\alpha_s(M_Z)=0.1180$. %
+The table is a record of how the model was built, not a sequence of successive orders of one expansion, and it should be read with that in mind.
+
+
+The first five steps add distinct physical effects: the $\MSbar$ continuum term of the finite-volume matching and the Coulomb-gauge counting of the massive vectors (Sec.~\ref{rep:h-matching}), the exact gauge shape from DMC and the joint dynamics of the hypercharge mode (Sec.~\ref{rep:h-reduced}).
+Each moves $m_c$ by $0.04$ to $0.11\GeV$ toward larger values. %
+The next three rows test the numerical implementation of one and the same model, the two-dimensional model with the DMC shape.
+It was first evaluated by converting widths with ratios computed at fixed couplings; a calibrated one-dimensional hazard and the direct two-dimensional roots at every node change $m_c$ by only $0.011$ and $0.001\GeV$. %
+This is the sense in which the numerical implementation of the reduced model has converged: the remaining rows change the physics, not the numerics.
+The NNLO mapping of Sec.~\ref{rep:h-smmap} shifts all levels by $+0.063\GeV$ through $\lambda(\mub;m_t)$ alone. %
+The cross terms of Sec.~\ref{rep:h-cross} are the only refinement that lowers $m_c$; their final one-loop terms (background-covariant vev mixing, the Coulomb mismatch and the top chiral loop) move it back by $+0.005$ to $+0.007\GeV$. %
+The vertex row uses the anticommutator vertex that the final calculation replaced; it is kept to show the size of the step, which is $-0.003\GeV$. %
+The final critical masses are $172.502$, $172.960$ and $173.418\GeV$ at $\Pone=0.9$, $0.5$ and $0.1$; the package reproduces the full table from the archived summaries (\texttt{higgs/06\_hazard\_criterion}, key \texttt{convergence\_table\_0p1180}). %
+
+\subsection{Numerical controls of the Higgs chain}\label{sec:v20-higgs}
+
+\paragraph{Resonance roots.}
+The two-dimensional Siegert roots are computed with a sine discrete-variable representation of $N$ points on $(0,S_{\max})$ in $s$, a renormalized matrix Numerov integration with step $h$ in $r$, and a second-order WKB outgoing condition at $R_{\rm out}$ (Sec.~\ref{rep:h-reduced}).
+At $\lambda=-0.010$ and $-0.0143$ with the one-loop couplings, changing $(N,S_{\max})$ from $(32,14)$ to $(48,16)$ or $(24,12)$ changes $\Gamma$ by $2\times10^{-10}$; halving the step to $h=0.001$ changes it by at most $8\times10^{-8}$; moving $R_{\rm out}$ to $14$ by $7\times10^{-7}$; and dropping the second-order terms of the outgoing condition by $3.4\times10^{-3}$ (relative), which measures the order of the boundary condition rather than an error of the standard setting. %
+The standard configuration of the hazard, $N=24$, $S_{\max}=12$, $h=0.004$, $R_{\rm out}=16$, differs from the reference configuration by at most $1.2\times10^{-6}$ in $\Gamma$; $R_{\rm out}=14$ changes $\Gamma$ by $2.7\times10^{-6}$ and a zeroth-order outgoing condition by $3.0\times10^{-3}$. %
+On the critical mass these are below $4\times10^{-7}$, $9\times10^{-7}$ and $1.0\times10^{-3}\GeV$. %
+Every root is recomputed with a larger $s$ box, and a change $|\Delta E|>\max(2\times10^{-7},\,2\times10^{-3}\Gamma)$ flags a box state; in the runs with the earlier mapping all 377 two-dimensional columns passed at the first attempt, with $|\Delta E|\le1.4\times10^{-11}$ and relative changes of $\Gamma$ of at most $7.8\times10^{-5}$, and the 220 columns with the NNLO mapping passed in the same way. %
+Eleven nodes instead of 29 change $m_c$ by $7\times10^{-5}\GeV$. %
+With the one-loop couplings the node code reproduces the static widths of the reduced-model calculation to $4.4\times10^{-6}$. %
+
+\paragraph{Independent width methods.}
+Three methods with different boundary treatments agree with the Siegert roots.
+Finite differences with the complex absorbing potential $-i\eta(r-7)^2\theta(r-7)$ give $\Gamma_{\rm 2D}/\Gamma_{\rm 1D}=0.5313$ and $0.5317$ at $h=0.04$ and $0.03$, against $0.5303$ from the Siegert roots; the absolute widths of both models are low by $2.6\%$, which cancels in the ratio. %
+A real wall moved from $R_w=8$ to $11$ at $\lambda=-0.0143$ shows one level that stays at $\varepsilon=4.2737\pm0.002$ while the others cross it, matching the Siegert value $4.27375$. %
+For the one-dimensional model exterior complex scaling agrees with the Siegert root for the same inner boundary to $3\times10^{-9}$ in $E$ and $3\times10^{-7}$ relative in $\Gamma$. %
+The absorbing-potential eigenvector has $P(r<5)=0.9988$ at $\lambda=-0.010$ and probability $10^{-10}$ beyond $0.75\,S_{\max}$ in $s$, so the resonance is localized in the well and the $s$ box plays no role. %
+
+\paragraph{Analytic limits.}
+A three-dimensional isotropic oscillator in the s wave gives $0.4500000000041$ against the exact $0.45$, and the uncoupled limit $\Omega\equiv0.3$ separates to $8\times10^{-11}$. %
+Over $\lambda=-0.004$ to $-0.020$ the Kemble WKB width agrees with the exact width to $3\%$ for tunnelling exponents $S\approx2$--$25$. %
+Changing the potential beyond $1.5$ times the outer turning point (linear tail, doubled quartic, frozen matching) changes $\Gamma$ by at most $0.75\%$, and beyond twice that radius by $10^{-4}$. %
+
+\paragraph{Hazard integral and roots in $m_t$.}
+The hazard $I=\int_0^5\Gamma\,d\tau/(hL_b\sqrt{\cosh2\tau})$ is evaluated from a cubic spline of $\ln\Gamma$ in $\tau$ on the eleven nodes and Simpson's rule on $20\,001$ points; the critical masses come from a cubic spline of $\ln I$ in $m_t$ on a $0.2\GeV$ grid and a Brent root.
+An independent adaptive quadrature agrees with the standard integration to better than $10^{-12}\GeV$ in $m_c$.
+Monotone PCHIP interpolants, which are less accurate than the cubic splines of the main calculation, move $m_c$ by at most $0.0002\GeV$ (interpolation in $\tau$) and $0.0025\GeV$ (in $m_t$); this is an upper bound on the interpolation sensitivity, compatible with the numerical item of the budget. %
+For the background inputs the widths are computed at the eleven nodes and at three further scales and interpolated in $\ell=\ln(\mu/\mub)$; four direct reruns with all nodes shifted agree with the interpolation to $1.1\times10^{-7}\GeV$. %
+
+\paragraph{Diffusion Monte Carlo.}
+The zero-mode DMC code was validated on problems with known spectra: the quartic oscillator gives $2.1402(5)$ against the certified $2.1407$, and two further benchmark levels give $4.1171(14)$ and $12.5869(22)$ against $4.116720$ and $12.5868$. %
+The walled DMC of Sec.~\ref{rep:v-fulldim} reproduces the unwalled value at $\lambda=0$ to $0.75\sigma$; its time-step extrapolation and statistics are described there.
+
+\paragraph{Cross terms.}
+The logarithms of the one-loop cross terms close the renormalization group of the Higgs field: the closure ratio is $0.994$, $0.973$, $0.993$ and $0.990$ at $r=2$, $3$, $4$ and $5$, so $\mu=1/L$ is a consistent matching scale (Sec.~\ref{rep:h-cross}). %
+The top chiral logarithm satisfies $B/(q_\Phi^2\tilde m_t^2)=1.000\pm0.001$, and the groups of cross terms add to the total to $2\times10^{-4}\GeV$. %
+A recomputation of all 22 node jobs of the final run from scratch in the package (701~s on eleven workers, gauge profiles recomputed) is bit-identical to the original shards, and so are the critical masses.
+
+\paragraph{Standard Model mapping and matching-scale scan.}
+The Python port of the SMDR matching and running was cross-checked against the compiled SMDR~1.3 at all matching scales, and the driver used for the compiled refits reproduces the archived fits bit for bit (Sec.~\ref{rep:h-smmap}).
+The matching-scale scan of the final model reproduces the final roots and critical masses at $c=1$ to $2\times10^{-12}$. %
+
+\paragraph{Marginalization.}
+The quadrature of the marginalized probability and an independently written, seeded Monte Carlo integration with a different interpolating surface agree to $5\times10^{-4}$ for all eleven mass definitions; the curves at $\alpha_s\neq0.1180$, obtained from a quadratic map, agree with direct hazards at $\alpha_s=0.1171$ and $0.1189$ to $|\Delta\Pone|\le4.4\times10^{-4}$ (Sec.~\ref{rep:h-budget}). %
+
+\subsection{Numerical controls of the shape chain}\label{sec:v20-shape}
+
+\paragraph{Casimir sums and identities.}
+The Casimir energies are exact image sums evaluated with an Ewald split at $s=2$ and checked against direct sums; the shape Hessians use five-point finite differences along geodesics $G=\exp(2\sum_A\beta_AX_A)$.
+The trace identity ${\rm Tr}\,{\rm Hess}\,Z_{\rm eff}=\frac83Z_{\rm eff}$ holds to $10^{-8}$ for all eight spin structures (Sec.~\ref{rep:casimir}). %
+The no-go identities of Sec.~\ref{rep:shape} were checked symbolically and with $40$--$60$-digit numerics (Chowla--Selberg and Ewald forms in mpmath), and the closed-form gain $\mathcal G(\kappa)=\sqrt2\cosh(\pi\sqrt{4\kappa-1}/4)$ against direct integration of the mode equation. %
+
+\paragraph{Linear shape layer.}
+The closed-form floor, $\sigma_{\rm floor}^2=K(\kappa_E)/X$ with $K(19.32)=24.550$, the correlation lemma behind the real-moment theorem and the tables of $G(|t_x|)$ were checked against direct integration and in Wolfram Language (Sec.~\ref{rep:quantum-shape}); an independent code reproduced $G(|t_x|)$ (Sec.~\ref{rep:v-blind}). %
+
+\paragraph{Nonlinear trajectories.}
+The nonlinear model evolves the volume and the five shape moduli with the twisted Ewald force of the Standard Model and the zero-mode energy, with the Dormand--Prince integrator DOP853 at relative tolerance $10^{-11}$ and absolute tolerance $10^{-13}$; a trajectory is declared pinched when the smallest eigenvalue of the shape metric falls below $10^{-3}$. %
+(A header comment of the original script stated a pinch threshold of $10^{-6}$; the original runs used $10^{-3}$, and an erratum is archived with the code.)
+Initial conditions are sampled from the truncated Wigner function with recorded seeds and mirror pairing, which makes the two-branch survival exactly symmetric under $t_x\to-t_x$; re-integrating archived trajectories reproduces them bit for bit.
+Survival fractions are binomial and are quoted with Wilson $95\%$ intervals.
+The levels of the conditional theorem were recomputed with $N=2048$ paired draws per node: $t_*(99\%)=0.237/h$ with the $95\%$ range $0.225$--$0.252/h$, and $t_*(90\%)\approx0.35/h$ (logistic fit $0.352$; $0.355$ from interpolation between nodes), so the quoted ``$0.35$ and $0.24$ Hubble times'' carry their statistical error. %
+For the amplitude threshold the log-linear and logistic fits give $s_{99}=2.76$ and $2.86$ at $N=2048$ and an independent code gives $2.95$, which is why the papers quote $s_{99}\approx2.8$--$2.95$. %
+On the $A_s$-calibrated plateau history instead of the leading $\cosh$ background none of $2560$ paired trajectories changes its fate. %
+
+\paragraph{Quantum corrections to the sampling.}
+The leading Moyal correction to the fossil variance is $-2.03\times10^{-4}$ (aspect) and $-1.08\times10^{-3}$ (angle) relative; in a one-mode model the exact quantum evolution and the truncated Wigner evolution differ by $-0.011\%$ (Sec.~\ref{rep:quantum-shape}). %
+
+\paragraph{Emptiness gate and primordial spectra.}
+The mode integrations of the emptiness gate conserve the Wronskian to $4\times10^{-10}$ (standard with 97 and refined with 401 wave numbers). %
+For the primordial spectra, changing the initial state (adiabatic order $0$ or $2$, $6$--$10$ e-folds of preparation) changes $n_s$ by less than $10^{-7}$ (Sec.~\ref{rep:spectra}). %
+
+\subsection{Numerical controls of the microwave-background chain}\label{sec:v20-cmb}
+
+The covariance of the temperature and $E$-mode fields on the torus is a sum over the discrete wave vectors with CAMB~2.0.4 transfer functions (with a fix of the low-$k$ continuation and a scan of the transfer cutoff), completed by the isotropic continuum above the cutoff (Sec.~\ref{rep:sky}).
+The ensemble uses $x_{\max}=k_{\max}\chi_*=240$ with a smooth taper of width $0.25$.
+At the representative edge, raising $x_{\max}$ to $320$ changes the divergence $D$ for $\ell\le80$ by $-0.7\%$, and halving the taper changes it by $+0.17\%$, which moves the read edge by about $10^{-4}\,\dLSS$. %
+The Kullback--Leibler divergences use traces and log-determinants of packed inverses, with a relative error of at most $1.7\times10^{-12}$ in the eigenvalue form. %
+The profile over the volume of the reference cube is a minimum over a pool of 19 computed cubes; it replaced an earlier parabolic profile that underestimated 82 pairs by more than $1\%$ and violated the data-processing inequality once, and the corrected table reproduces the peak readability $0.34398$ at $L_0=1.075\,\dLSS$ of the ensemble analysis bit for bit. %
+Convergence was tested directly only at the representative edge; all readability statements are for the ideal full sky, $\ell\le80$, and the read criterion $D\ge4.5$. %
+
+\subsection{Verification of the code package}\label{sec:v20-package}
+
+Every result directory of the code package (Sec.~\ref{rep:v-repro}) has a list of checks with tolerances fixed in advance: critical top masses to $0.001\GeV$, trajectory records to $10^{-9}$ relative, and most analysis layers bit for bit.
+A quick mode recomputes a non-trivial part of each calculation (a two-dimensional node job, a DMC shard, the hazard integral, the claims layer, re-integrated nonlinear trajectories, covariance builds) and compares it with the archived outputs; a full mode repeats all original runs.
+Table~\ref{tab:v22-verify} of Sec.~\ref{rep:v-repro} lists the state of all checks.
+Recomputing every covariance matrix of the microwave-background ensemble for $\ell\le80$ from the shipped transfer table (about 70~min on 12 workers, with a 15.5~GB cache) reproduces the tabulated divergences to $2.3\times10^{-13}$, and the window edges, the peak of $P_{\rm joint}$ and the integrated measure to all quoted digits (Sec.~\ref{sec:v22-verify}). %
+Two optional comparisons of the Fisher chain need inputs that are not shipped with the package, so its full mode covers only the C59 part.

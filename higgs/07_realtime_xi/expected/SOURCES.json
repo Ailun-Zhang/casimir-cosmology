@@ -1,0 +1,345 @@
+{
+ "r3/realtime_2d/run01/C157_calib.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/realtime_2d/run01/C157_calib.json",
+  "sha256": "7245a28bd8004d46856aaa87f956bd5a950f1011323a71acd909a429daf35a9d",
+  "bytes": 32152
+ },
+ "r3/realtime_2d/run01/C157_r15_items.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/realtime_2d/run01/C157_r15_items.json",
+  "sha256": "790803813b6494a4075c21cb550618d457fc58b9f4ecbf04525fff9538cf8929",
+  "bytes": 11115
+ },
+ "r3/realtime_2d/run01/C157_summary.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/realtime_2d/run01/C157_summary.json",
+  "sha256": "3e80b84a31b9fa3d3c9723b3e413fb68fcda67ecd9dc42ad017042e767a4c59d",
+  "bytes": 28091
+ },
+ "r3/realtime_2d/run01/C157_twod.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/realtime_2d/run01/C157_twod.json",
+  "sha256": "897280778d56ff228db9b672a5604ccdce980ced426cbaf9a06c7d558d34a828",
+  "bytes": 29463
+ },
+ "r3/realtime_2d/run01/C157_xi_quick.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/realtime_2d/run01/C157_xi_quick.json",
+  "sha256": "151e293a3263bbc42d1cf76ffb0045abe3251fb97fce926150b5edceb598f6d0",
+  "bytes": 43625
+ },
+ "r3/realtime_2d/run01/nodes/node_mt172.60_u0.0000.npz": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/realtime_2d/run01/nodes/node_mt172.60_u0.0000.npz",
+  "sha256": "fd14553d170848087ccb5005c958169fdef6fdbe8546577011f58adf847970af",
+  "bytes": 620850
+ },
+ "r3/realtime_2d/run02/C157_run02_summary.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/realtime_2d/run02/C157_run02_summary.json",
+  "sha256": "c7fc8249f6368d3abacccc0f09bff261f532e794eb27356288b22ab886db52df",
+  "bytes": 18323
+ },
+ "r3/realtime_2d/run02/run02_P1.json": {
+  "source": "04_calculations/results/20261014_claude_v12_r3/realtime_2d/run02/run02_P1.json",
+  "sha256": "5dafcb4e81222624aa2243ab69c792526e348d4b9e394d48e1a5505febb2c7c7",
+  "bytes": 6382
+ },
+ "w/claims_run05/run01/xi_run05/C157_calib.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/C157_calib.json",
+  "sha256": "2813e9129a45e52d07f2be48751bdaeefbd4f0a0dfd2d5c6d5a67c492d21c429",
+  "bytes": 31924
+ },
+ "w/claims_run05/run01/xi_run05/C157_xi_quick.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/C157_xi_quick.json",
+  "sha256": "eeae1ed23f6d6c097ee6a749453e49b57ac9ad2fbfebae4ad0b07b5f56df52de",
+  "bytes": 43680
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.0000.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.0000.json",
+  "sha256": "81d31910d93e4023eb9124955953e67e7058524c2fcb438702e9a36b25042777",
+  "bytes": 5073
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.0200.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.0200.json",
+  "sha256": "4a7b46b4771f34ffc56123bd194acdee0b32d8598c7349cdf20897a2d5556f29",
+  "bytes": 5079
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.0300.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.0300.json",
+  "sha256": "93129de08a390296de0ad3e72edda0390e2deb440da978141a967eb4641887b7",
+  "bytes": 5093
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.0400.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.0400.json",
+  "sha256": "1bea086f31c4d9837c18e0bc9937a8d221c7261becdfc6a26af83e795e91cce6",
+  "bytes": 5107
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.0500.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.0500.json",
+  "sha256": "72ed3df78a7e3fa1aa69bb22c20b0f1d7465711173d29b91c80e6c612bd80ff8",
+  "bytes": 5121
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.0600.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.0600.json",
+  "sha256": "3da6f91c55ff2bcc311d5bdc6a9048cfc8ba2ace19196131663367f2567a1f19",
+  "bytes": 5063
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.0800.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.0800.json",
+  "sha256": "28fa60635fabbb489f961fa0a3e596d64a1ec680495c55ae3b291a66f3fb5bc0",
+  "bytes": 5083
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.1000.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.1000.json",
+  "sha256": "836a93f6051a50a5146743f2e0c9a2fdd57011d9748e811a38ffb09fc4e13e19",
+  "bytes": 5111
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.1200.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.1200.json",
+  "sha256": "8d0edf8552aaef4dbf05677800dc4cc5e949522f1fabf518ad227c88127cc676",
+  "bytes": 5069
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.1400.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.1400.json",
+  "sha256": "32574e80b0252eb11acd46cf8c9f839e64a304b2e2a1d567f8fab648686be156",
+  "bytes": 5100
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.1667.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.20_xi0.1667.json",
+  "sha256": "7e1723c2eff0176b72e92843637da1c4febf06d5a05147458bc7a0ed8f9804c7",
+  "bytes": 5099
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.0000.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.0000.json",
+  "sha256": "2b4087b6213ffade45a23f494159c7e08be4f8bcf982089fb57eb6a1c32388cd",
+  "bytes": 4971
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.0200.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.0200.json",
+  "sha256": "8bf3ac7b06f293f2422f4c813477d2d4812f1eedec27c18348b0e31feb98fab2",
+  "bytes": 5076
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.0400.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.0400.json",
+  "sha256": "f39f4cc3eed9551f58ad7b0a413c8fb16fb973fbb8036c5ae232c51164c4f9b9",
+  "bytes": 5022
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.0600.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.0600.json",
+  "sha256": "76c15e3c20865cc9abad9247adb3c68df2e683cb3c6c63bcc682d7a4e65283f4",
+  "bytes": 5178
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.0700.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.0700.json",
+  "sha256": "3b2eaade7abd2da69ba9979e2235cf3098c79a6f1dd165ad63e2720c59ee55bb",
+  "bytes": 5086
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.0800.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.0800.json",
+  "sha256": "2d3921273b830698ab436247cc0d30d025ba7cd6f455d5dc237eaee6bb57ff42",
+  "bytes": 5124
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.0900.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.0900.json",
+  "sha256": "a7a807b2c9e15960bc195bd981d9bb5e1fc6d29db6ffaec4461a4dab5d6f14ab",
+  "bytes": 5172
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.1000.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.1000.json",
+  "sha256": "1bc4c97bc9a2f41042fc95d09524be24a9da2dad23a65dc8c8bc2d42698358c9",
+  "bytes": 5121
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.1200.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.1200.json",
+  "sha256": "266ed425fc9cc1d28afa6b5d110c913d03cc8424586ebf6a4689d33b66ca730e",
+  "bytes": 5123
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.1400.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.1400.json",
+  "sha256": "9fef71b13ec72c0e2be939ab55aab443e84161ecb434cd527bcc377143ed8f89",
+  "bytes": 5082
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.1667.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.60_xi0.1667.json",
+  "sha256": "fdfb523316810315ab8e8582de0696888427446f17c17de18b0598fefd01f38e",
+  "bytes": 5166
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.0000.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.0000.json",
+  "sha256": "869c464d3fdb91b96ed9094813259734c81f11d99b03b7b0ddea0539fb03e279",
+  "bytes": 4995
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.0200.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.0200.json",
+  "sha256": "caecbb009929c1517bb92ab8a5d7ee4f1e0fee231b4f37544764cf5b1d2f92d5",
+  "bytes": 5123
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.0400.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.0400.json",
+  "sha256": "c246b206de79c76a9c2747333af2c775dd28f2d0efd7c84443ea8d98401f6f79",
+  "bytes": 5027
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.0600.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.0600.json",
+  "sha256": "8411866cb3c20765d454203f7a1a039e212d37b1e743e918d130735bc05dca5f",
+  "bytes": 5045
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.0800.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.0800.json",
+  "sha256": "fb46b6201e8a53c7a411dfb64772a928922d835da8b650da269d0f7528ddb163",
+  "bytes": 5086
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.1000.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.1000.json",
+  "sha256": "c6b84d857f3621feed0f7fa4ea3fca7331460e4142260733d1a38552cbba1775",
+  "bytes": 5063
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.1100.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.1100.json",
+  "sha256": "59e969f552cf60e5d0eaab083ae68f4baa5a805c9b4895eb082f823c696ca3bc",
+  "bytes": 5130
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.1200.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.1200.json",
+  "sha256": "91bcbfb5244b111bae79226388c80fa1cab6a58998951fda44c1acf640689763",
+  "bytes": 5093
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.1300.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.1300.json",
+  "sha256": "75eed1bfac68e93fb52004ed980aeeb3a516fd15ea00971ab8c65f841284979c",
+  "bytes": 5092
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.1400.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.1400.json",
+  "sha256": "16f4ba65b3216c966d9f6a2661832ee6d9efd2a368c13c91095e51a432a1d7b3",
+  "bytes": 5073
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.1667.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.95_xi0.1667.json",
+  "sha256": "8a8f9f8e427c354caac59b70c7d073a990fcc43001e5aad6225dc55e0d800941",
+  "bytes": 5133
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.0000.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.0000.json",
+  "sha256": "c14e02586711933d037eacafd866e4decf21f2abebadfae0d06578dbc3d73301",
+  "bytes": 4974
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.0200.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.0200.json",
+  "sha256": "f5982d0dc5a049db2a147d9a6176abe45dbd9b49c9fab39fe652595aa4258924",
+  "bytes": 5096
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.0400.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.0400.json",
+  "sha256": "d603b49d27f2dba19fef858a28bd6186c9530626f8a28763c3dca89c4b31e148",
+  "bytes": 5083
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.0600.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.0600.json",
+  "sha256": "ddae7a681b27be3e636fb699a4e2a0458c45598415ab43ea21f9189a9391a33b",
+  "bytes": 5047
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.0800.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.0800.json",
+  "sha256": "3a9a805912eccdc06e8bb4ab6993d5a09e11e1d032b84a2b030f87c4bcd32d7a",
+  "bytes": 5087
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.1000.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.1000.json",
+  "sha256": "9f494f63b6cad312b740fc4a1b3e05195352b1958c8647124496020387b7a3ee",
+  "bytes": 5100
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.1100.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.1100.json",
+  "sha256": "5f7bf7fd876176ee920f9baeca53c6a76febbd5b9edf4b880b47e5cec231702b",
+  "bytes": 5129
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.1200.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.1200.json",
+  "sha256": "f54417258a7951196a3fb2dec82427b2a307a94456fe0f63f3f52a4e99e1a182",
+  "bytes": 5093
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.1300.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.1300.json",
+  "sha256": "0ea28ffcd7429d556f96b59d222ce92be53fa678a19661365d7c236d3e77aa75",
+  "bytes": 5097
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.1400.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.1400.json",
+  "sha256": "175d823b8423829f1dd770b66947588cfcf2a64086eefc8aec99c91c08f6535d",
+  "bytes": 5117
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.1667.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt172.96_xi0.1667.json",
+  "sha256": "b43da142c85c6156eef2cc90f8d04bdd02fa753aba18b356edbcdcca74170627",
+  "bytes": 5110
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.0000.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.0000.json",
+  "sha256": "2d9ef01fce07be307475497ce2c948a64699d68bc5a3cfe250b46e8830a41b23",
+  "bytes": 4969
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.0200.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.0200.json",
+  "sha256": "829ac47e790d067854cb032e7ca990f22365b18edd7d93dc541157a0c2037def",
+  "bytes": 5082
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.0400.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.0400.json",
+  "sha256": "d05f4853cb4fedd4bb64c88c518d44176fef57ac2f08dc113e8ee44b8697953c",
+  "bytes": 5053
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.0600.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.0600.json",
+  "sha256": "8129066509bd7fbdf29806c3cbc5025c920c64160c7df82c4d850753b588a1e4",
+  "bytes": 5076
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.0800.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.0800.json",
+  "sha256": "64a925722a028f35242a08f34937fbc6bff803d32505875105fe81452beda977",
+  "bytes": 5124
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.1000.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.1000.json",
+  "sha256": "4b44be460ef8fe4dcee4e165fb52e04c9a846eea58837ebb6db5048b938d95f3",
+  "bytes": 5129
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.1100.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.1100.json",
+  "sha256": "4b82beb08e7080f4b7cccc72f55f39e930286a5e03c989a9eaaf2cc3440be295",
+  "bytes": 5090
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.1200.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.1200.json",
+  "sha256": "7e599a5f4a2d9f27967dac03fb0b1691129b0ce9275979ae27f75d69bcba10df",
+  "bytes": 5129
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.1300.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.1300.json",
+  "sha256": "1aa359b1d014a34e19ac008743af9e247fbdcd8ebdc1f0b756ce202e7d3d52c2",
+  "bytes": 5117
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.1400.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.1400.json",
+  "sha256": "1cef67ec4ab3b3eb1b8f29d642ee191f5545ebb3a34b64f7b07e4e5882929635",
+  "bytes": 5163
+ },
+ "w/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.1667.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/part2/p2_main_mt173.00_xi0.1667.json",
+  "sha256": "031ab85f09614d5799e062aaa43d03483381eb956ea7c1f0ca1fe645bb569bb9",
+  "bytes": 5152
+ },
+ "w/claims_run05/run01/xi_run05/xi_regress.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05/xi_regress.json",
+  "sha256": "11ab307c9328d3cbdb475fe3eead12da3e5297733f4c4dca8a8122faa666fd7b",
+  "bytes": 674
+ },
+ "w/claims_run05/run01/xi_run05_compare.csv": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05_compare.csv",
+  "sha256": "0a97c8f0d1188396d80c42c7e775138b94e5a78b010c2166c73f228c9ff581f5",
+  "bytes": 623
+ },
+ "w/claims_run05/run01/xi_run05_summary.json": {
+  "source": "04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/xi_run05_summary.json",
+  "sha256": "0a18f5a95155fc37b1d5cb616f76f427c46a5c087c98960fce8d263be67e10d5",
+  "bytes": 6802,
+  "package_sha256": "b7bfc09b76da27dbd9479b3cb89bb098166ed0a9edd6c26a47658ca771479eda",
+  "package_bytes": 9067,
+  "package_note": "R18 (rev-code, 2026-10-16): regenerated by the package xi_compare.py, which adds universality.interpolation_range (MH-13); every other key is identical to the source file"
+ }
+}

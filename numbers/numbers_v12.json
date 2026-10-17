@@ -1,0 +1,1494 @@
+{
+ "meta": {
+  "title": "DNEC v12 claim-layer numbers (single source)",
+  "shared_by": [
+   "PRL: Gauge Field Fluctuations Protect the Higgs Vacuum When a Small Universe Begins",
+   "PRD: A Casimir turning point as the beginning of a small flat universe",
+   "Technical report: Casimir Cosmology: Derivations and Numerical Validation"
+  ],
+  "rule": "Change numbers only here (values/precision), then run numbers/make_numbers_tex.py and copy numbers.tex to the three documents; run numbers/check_numbers.py --write to re-check them against the archived outputs (each entry's 'source' names the package file and JSON pointer of every value; derived numbers come from numbers/derived_numbers.json, written by numbers/derive_numbers.py).",
+  "imported_from": "06_paper_draft/versions/v12/PRD/numbers.tex (identical copy in v12/PRL/)",
+  "imported_sha256": "a3803f4ea804c07bfb684b7702e2c68d2706e61a8ad9824981c75c46d73a4342",
+  "imported_utc": "2026-10-16T05:00:39Z",
+  "imported_by": "code-finalize",
+  "newline": "\n",
+  "final_newline": true,
+  "n_macros": 51,
+  "check_summary": {
+   "verified": 51
+  },
+  "changes": [
+   "2026-10-16: 6 macros added from the PRL preamble (mSurvFCC, sigFCCamb, sigHLLHCinterpMin, sigHLLHCinterpMax, lamcErrUp, lamcErrDn)",
+   "2026-10-16 (final check m1): sigHLLHCinterpMax 1.3 -> 1.2 (dalpha_s 0.00045, R5-027: 1.23; was dalpha_s 0.0002: 1.27), so that the interpretation-error range pairs with sigHLLHCmin/sigHLLHCmax (dalpha_s 0.0009 / 0.00045), the two cases quoted in the papers",
+   "2026-10-16 (R18 MH-01/R2, rev-code): explicit 'source' (package file + JSON pointer, key-exact, sign-aware) added to all 49 macros; the 10 formerly unresolved macros now point to C154_summary relative_form, C154_correction_summary HLLHC / Pbar_BKPV_FJ, xi_run05_summary spread_all, C157_run02_summary bands and numbers/derived_numbers.json (xiHminEW = 1/6 + (0.0772 - 1/6)/1.155; lamcErrUp/Dn products). Values, comments and numbers.tex unchanged.",
+   "2026-10-16 (R18 DA-01/EIC-01, rev-code): 2 macros added, PoneAtExclFCC = 0.023 and BexFCC = 0.033 (higgs/09_claims/fcc_exclusion.py -> fcc_exclusion.json headline); numbers.tex regenerated and copied to PRL, PRD, REPORT and docs/technical_report",
+   "2026-10-16 (R18 DA-13, rev-code): PbarOne names the rebuilt Table 1 composite (t1new, 0.7300; quoted by the text) and the round-3 composite (0.7302); same rounding, value and comment unchanged",
+   "2026-10-16 (R18 final, RR-DA-08): PbarOne and PbarOneAbs point to the rebuilt Table 1 composite (t1new, 0.7300); comment of PbarOne updated (numbers.tex regenerated and copied to the three documents and docs/)"
+  ]
+ },
+ "layout": [
+  {
+   "text": "% numbers.tex -- claim-layer numbers shared by the v12 PRD and PRL (identical copies in both folders)."
+  },
+  {
+   "text": "% Maintained by the main session. FINAL (run05 centre), from C161/D132, 2026-10-15:"
+  },
+  {
+   "text": "%   04_calculations/derivations/20261015_claude_v12_writing/claims_run05/D132_claims_run05_CN.md (section 8)"
+  },
+  {
+   "text": "%   04_calculations/results/20261015_claude_v12_writing/claims_run05/run01/numbers_run05.csv (ids R5-xxx)"
+  },
+  {
+   "text": "% Do not type these numbers literally in the text; use the macros."
+  },
+  {
+   "macro": "PbarOne"
+  },
+  {
+   "macro": "PbarOneAbs"
+  },
+  {
+   "macro": "PbarMSR"
+  },
+  {
+   "macro": "PbarSigma"
+  },
+  {
+   "macro": "PbarInterp"
+  },
+  {
+   "macro": "PbarBKPV"
+  },
+  {
+   "macro": "BayesMax"
+  },
+  {
+   "macro": "mExclTheory"
+  },
+  {
+   "macro": "mExclFCC"
+  },
+  {
+   "macro": "sigFCC"
+  },
+  {
+   "macro": "sigHLLHCmin"
+  },
+  {
+   "macro": "sigHLLHCmax"
+  },
+  {
+   "macro": "xiHmin"
+  },
+  {
+   "macro": "xiHcentral"
+  },
+  {
+   "macro": "xiHhalf"
+  },
+  {
+   "macro": "marginGeV"
+  },
+  {
+   "macro": "marginLam"
+  },
+  {
+   "macro": "mcMinusMzero"
+  },
+  {
+   "macro": "modelErrUp"
+  },
+  {
+   "macro": "modelErrDn",
+   "eol": "\r\n"
+  },
+  {
+   "text": "% ---- added 2026-10-15 19:20Z from PRD-B (s05_higgs.tex header); run05 values from C161 unless marked ----"
+  },
+  {
+   "macro": "modelErrUpPnine"
+  },
+  {
+   "macro": "modelErrDnPnine"
+  },
+  {
+   "macro": "modelErrUpPone"
+  },
+  {
+   "macro": "modelErrDnPone"
+  },
+  {
+   "macro": "modelErrUpNoViPnine"
+  },
+  {
+   "macro": "modelErrDnNoViPnine"
+  },
+  {
+   "macro": "modelErrUpNoVi"
+  },
+  {
+   "macro": "modelErrDnNoVi"
+  },
+  {
+   "macro": "modelErrUpNoViPone"
+  },
+  {
+   "macro": "modelErrDnNoViPone"
+  },
+  {
+   "macro": "PbarQlo"
+  },
+  {
+   "macro": "PbarQhi"
+  },
+  {
+   "macro": "PbarGeHalf"
+  },
+  {
+   "macro": "xiHminEW"
+  },
+  {
+   "macro": "xiHbandSM"
+  },
+  {
+   "macro": "xiHbandAs",
+   "eol": "\r\n"
+  },
+  {
+   "text": "% ---- added 2026-10-15 by the integrator from PRD appendix a11 (PRD-C); run05 values from C161 ----"
+  },
+  {
+   "macro": "PbarATLASCMS"
+  },
+  {
+   "macro": "PbarCMS"
+  },
+  {
+   "macro": "PbarMbarSigma"
+  },
+  {
+   "macro": "BselDirect"
+  },
+  {
+   "macro": "BselMax"
+  },
+  {
+   "macro": "mExclMeas"
+  },
+  {
+   "macro": "mExclMeasInterp"
+  },
+  {
+   "text": "% ---- added 2026-10-16 by code-finalize from the PRL preamble (local \\providecommand definitions of the revision agent); R5 ids = numbers_run05.csv ----"
+  },
+  {
+   "macro": "mSurvFCC"
+  },
+  {
+   "macro": "sigFCCamb"
+  },
+  {
+   "macro": "sigHLLHCinterpMin"
+  },
+  {
+   "macro": "sigHLLHCinterpMax"
+  },
+  {
+   "macro": "lamcErrUp"
+  },
+  {
+   "macro": "lamcErrDn"
+  },
+  {
+   "text": "% ---- added 2026-10-16 by rev-code (R18 DA-01/EIC-01): strength of the FCC-ee exclusion (higgs/09_claims/fcc_exclusion.py) ----"
+  },
+  {
+   "macro": "PoneAtExclFCC"
+  },
+  {
+   "macro": "BexFCC"
+  }
+ ],
+ "numbers": {
+  "PbarOne": {
+   "macro": "\\PbarOne",
+   "template": "{0}",
+   "values": [
+    0.73
+   ],
+   "precision": 2,
+   "pad": "        ",
+   "comment": " marginalized P1, direct mass, rebuilt Table 1 composite: 0.7300 (t1new/C154_correction_summary marginal.equal_mass.D1_direct_pole)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/t1new/C154_correction_summary.json",
+     "pointer": "/marginal/equal_mass/D1_direct_pole/Pbar"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/t1new/C154_correction_summary.json#/marginal/equal_mass/D1_direct_pole/Pbar",
+    "unrounded_in_comment": [
+     "0.7300"
+    ]
+   }
+  },
+  "PbarOneAbs": {
+   "macro": "\\PbarOneAbs",
+   "template": "{0}",
+   "values": [
+    0.7
+   ],
+   "precision": 1,
+   "pad": "      ",
+   "comment": " one-digit headline value of \\PbarOne",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/t1new/C154_correction_summary.json",
+     "pointer": "/marginal/equal_mass/D1_direct_pole/Pbar"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/t1new/C154_correction_summary.json#/marginal/equal_mass/D1_direct_pole/Pbar [shown value only]",
+    "unrounded_in_comment": []
+   }
+  },
+  "PbarMSR": {
+   "macro": "\\PbarMSR",
+   "template": "{0}",
+   "values": [
+    0.5
+   ],
+   "precision": 2,
+   "pad": "        ",
+   "comment": " MSR identification: 0.4998 (R5-010)",
+   "registry_ids": [
+    "R5-010"
+   ],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json",
+     "pointer": "/marginal/equal_mass/D3_MSR/Pbar"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/D3_MSR/Pbar; registry R5-010 = higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/D3_MSR/Pbar (agrees)",
+    "unrounded_in_comment": [
+     "0.4998"
+    ]
+   }
+  },
+  "PbarSigma": {
+   "macro": "\\PbarSigma",
+   "template": "{0}",
+   "values": [
+    0.86
+   ],
+   "precision": 2,
+   "pad": "      ",
+   "comment": " sigma-pole PDG 2026: 0.8611 (R5-008)",
+   "registry_ids": [
+    "R5-008"
+   ],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json",
+     "pointer": "/marginal/equal_mass/D2_sigma_pole/Pbar"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/D2_sigma_pole/Pbar; registry R5-008 = higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/D2_sigma_pole/Pbar (agrees)",
+    "unrounded_in_comment": [
+     "0.8611"
+    ]
+   }
+  },
+  "PbarInterp": {
+   "macro": "\\PbarInterp",
+   "template": "{0}",
+   "values": [
+    0.68
+   ],
+   "precision": 2,
+   "pad": "     ",
+   "comment": " direct + 0.5 GeV MC-pole interpretation: 0.6799 (R5-006)",
+   "registry_ids": [
+    "R5-006"
+   ],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json",
+     "pointer": "/marginal/equal_mass/D1b_direct_pole_interp/Pbar"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/D1b_direct_pole_interp/Pbar; registry R5-006 = higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/D1b_direct_pole_interp/Pbar (agrees)",
+    "unrounded_in_comment": [
+     "0.6799"
+    ]
+   }
+  },
+  "PbarBKPV": {
+   "macro": "\\PbarBKPV",
+   "template": "{0}\\text{{--}}{1}",
+   "values": [
+    0.63,
+    0.67
+   ],
+   "precision": 2,
+   "pad": " ",
+   "comment": " BKPV/FJ convention: 0.67 equal-mass / 0.63 continuous (D132 section 8)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json",
+     "pointer": "/marginal/continuous/D1_direct_pole/Pbar_BKPV_FJ"
+    },
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json",
+     "pointer": "/marginal/equal_mass/D1_direct_pole/Pbar_BKPV_FJ"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/continuous/D1_direct_pole/Pbar_BKPV_FJ; higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/D1_direct_pole/Pbar_BKPV_FJ",
+    "unrounded_in_comment": [
+     "0.67",
+     "0.63"
+    ]
+   }
+  },
+  "BayesMax": {
+   "macro": "\\BayesMax",
+   "template": "{0}",
+   "values": [
+    0.75
+   ],
+   "precision": 2,
+   "pad": "       ",
+   "comment": " upper bound on |ln B| (claims_compare.json bayes_ranges.run05)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/claims_compare.json",
+     "pointer": "/bayes_ranges/run05/abs_lnB_max"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/claims_compare.json#/bayes_ranges/run05/abs_lnB_max [shown value only]",
+    "unrounded_in_comment": []
+   }
+  },
+  "mExclTheory": {
+   "macro": "\\mExclTheory",
+   "template": "{0}",
+   "values": [
+    173.7
+   ],
+   "precision": 1,
+   "pad": "   ",
+   "comment": " theory-95% exclusion, P1<0.1: 173.69 (C154_summary exclusion_mt.0.1180.theory95_P0.1)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json",
+     "pointer": "/exclusion_mt/0.1180/theory95_P0.1"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json#/exclusion_mt/0.1180/theory95_P0.1",
+    "unrounded_in_comment": [
+     "173.69"
+    ]
+   }
+  },
+  "mExclFCC": {
+   "macro": "\\mExclFCC",
+   "template": "{0}",
+   "values": [
+    173.7
+   ],
+   "precision": 1,
+   "pad": "      ",
+   "comment": " FCC-ee baseline: measured m_t above 173.7 excluded (future.FCCee_base)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json",
+     "pointer": "/future/FCCee_base/mhat_excl_P0p1"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json#/future/FCCee_base/mhat_excl_P0p1",
+    "unrounded_in_comment": [
+     "173.7"
+    ]
+   }
+  },
+  "sigFCC": {
+   "macro": "\\sigFCC",
+   "template": "{0}",
+   "values": [
+    5.3
+   ],
+   "precision": 1,
+   "pad": "          ",
+   "comment": " FCC-ee separation of 172.6 and 173.3 GeV, in sigma (5.33)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json",
+     "pointer": "/future/FCCee_base/separation_172p6_173p3"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json#/future/FCCee_base/separation_172p6_173p3",
+    "unrounded_in_comment": [
+     "5.33"
+    ]
+   }
+  },
+  "sigHLLHCmin": {
+   "macro": "\\sigHLLHCmin",
+   "template": "{0}",
+   "values": [
+    1.7
+   ],
+   "precision": 1,
+   "pad": "     ",
+   "comment": " HL-LHC, alpha_s unchanged",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json",
+     "pointer": "/HLLHC/HLLHC_0.17_as0.0009/separation_172p6_173p3"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/HLLHC/HLLHC_0.17_as0.0009/separation_172p6_173p3 [shown value only]",
+    "unrounded_in_comment": []
+   }
+  },
+  "sigHLLHCmax": {
+   "macro": "\\sigHLLHCmax",
+   "template": "{0}",
+   "values": [
+    2.5
+   ],
+   "precision": 1,
+   "pad": "     ",
+   "comment": " HL-LHC, lattice alpha_s improved twofold",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json",
+     "pointer": "/HLLHC/HLLHC_0.17_as0.00045/separation_172p6_173p3"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/HLLHC/HLLHC_0.17_as0.00045/separation_172p6_173p3 [shown value only]",
+    "unrounded_in_comment": []
+   }
+  },
+  "xiHmin": {
+   "macro": "\\xiHmin",
+   "template": "{0}",
+   "values": [
+    0.08
+   ],
+   "precision": 2,
+   "pad": "         ",
+   "comment": " conservative xi_H(mu_b) needed at the measured m_t",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/07_realtime_xi/expected/w/claims_run05/run01/xi_run05_summary.json",
+     "pointer": "/run05/172.60/spread_all/1"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/07_realtime_xi/expected/w/claims_run05/run01/xi_run05_summary.json#/run05/172.60/spread_all/1 [shown value only]",
+    "unrounded_in_comment": []
+   }
+  },
+  "xiHcentral": {
+   "macro": "\\xiHcentral",
+   "template": "{0}",
+   "values": [
+    0.074
+   ],
+   "precision": 3,
+   "pad": "    ",
+   "comment": " central xi_c(mu_b) at m_t = 172.60 GeV: 0.0737 +- 0.0025 (xi_run05_summary run05.172.60)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/07_realtime_xi/expected/w/claims_run05/run01/xi_run05_summary.json",
+     "pointer": "/run05/172.60/xi_c"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/07_realtime_xi/expected/w/claims_run05/run01/xi_run05_summary.json#/run05/172.60/xi_c",
+    "unrounded_in_comment": [
+     "0.0737"
+    ]
+   }
+  },
+  "xiHhalf": {
+   "macro": "\\xiHhalf",
+   "template": "{0}",
+   "values": [
+    0.12
+   ],
+   "precision": 2,
+   "pad": "        ",
+   "comment": " xi_c at the P1 = 1/2 point: 0.1205 (P1_half_point_run05)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/07_realtime_xi/expected/w/claims_run05/run01/xi_run05_summary.json",
+     "pointer": "/P1_half_point_run05/xi_c"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/07_realtime_xi/expected/w/claims_run05/run01/xi_run05_summary.json#/P1_half_point_run05/xi_c",
+    "unrounded_in_comment": [
+     "0.1205"
+    ]
+   }
+  },
+  "marginGeV": {
+   "macro": "\\marginGeV",
+   "template": "{0}",
+   "values": [
+    0.36
+   ],
+   "precision": 2,
+   "pad": "      ",
+   "comment": " m_c(P1=1/2) - 172.60 GeV: 0.3595",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json",
+     "pointer": "/relative_form/margin_mc05_minus_172p60"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json#/relative_form/margin_mc05_minus_172p60",
+    "unrounded_in_comment": [
+     "0.3595"
+    ]
+   }
+  },
+  "marginLam": {
+   "macro": "\\marginLam",
+   "template": "{0}",
+   "values": [
+    0.0024
+   ],
+   "precision": 4,
+   "pad": "    ",
+   "comment": " lambda_SM(mu_b) - lambda_c(P1=1/2): 0.00237",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json",
+     "pointer": "/relative_form/margin_lambda"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json#/relative_form/margin_lambda",
+    "unrounded_in_comment": [
+     "0.00237"
+    ]
+   }
+  },
+  "mcMinusMzero": {
+   "macro": "\\mcMinusMzero",
+   "template": "{0}",
+   "values": [
+    1.9
+   ],
+   "precision": 1,
+   "pad": "    ",
+   "comment": " m_c(P1=1/2) - m_0, with lambda(mu_b; m_0) = 0: 1.87",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json",
+     "pointer": "/relative_form/mc_minus_m0/P1=0.5"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json#/relative_form/mc_minus_m0/P1=0.5",
+    "unrounded_in_comment": [
+     "1.87"
+    ]
+   }
+  },
+  "modelErrUp": {
+   "macro": "\\modelErrUp",
+   "template": "{0}",
+   "values": [
+    0.07
+   ],
+   "precision": 2,
+   "pad": "     ",
+   "comment": " model error on m_c at P1 = 1/2, upper: +0.072 (table1_rebuild.json composite)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json",
+     "pointer": "/composite/plus/0.5"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json#/composite/plus/0.5",
+    "unrounded_in_comment": [
+     "+0.072"
+    ]
+   }
+  },
+  "modelErrDn": {
+   "macro": "\\modelErrDn",
+   "template": "{0}",
+   "values": [
+    0.08
+   ],
+   "precision": 2,
+   "pad": "     ",
+   "comment": " model error on m_c at P1 = 1/2, lower: -0.084",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json",
+     "pointer": "/composite/minus/0.5",
+     "sign": -1,
+     "magnitude": true
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json#/composite/minus/0.5 (x -1) (magnitude shown)",
+    "unrounded_in_comment": [
+     "-0.084"
+    ]
+   }
+  },
+  "modelErrUpPnine": {
+   "macro": "\\modelErrUpPnine",
+   "template": "{0}",
+   "values": [
+    0.04
+   ],
+   "precision": 2,
+   "pad": "     ",
+   "comment": " model total, P1 = 0.9, upper (R5-039: 0.0392)",
+   "registry_ids": [
+    "R5-039"
+   ],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json",
+     "pointer": "/composite/plus/0.9"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json#/composite/plus/0.9; registry R5-039 = higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json#/composite (agrees)",
+    "unrounded_in_comment": [
+     "0.0392"
+    ]
+   }
+  },
+  "modelErrDnPnine": {
+   "macro": "\\modelErrDnPnine",
+   "template": "{0}",
+   "values": [
+    0.06
+   ],
+   "precision": 2,
+   "pad": "     ",
+   "comment": " model total, P1 = 0.9, lower (0.0557)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json",
+     "pointer": "/composite/minus/0.9",
+     "sign": -1,
+     "magnitude": true
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json#/composite/minus/0.9 (x -1) (magnitude shown)",
+    "unrounded_in_comment": [
+     "0.0557"
+    ]
+   }
+  },
+  "modelErrUpPone": {
+   "macro": "\\modelErrUpPone",
+   "template": "{0}",
+   "values": [
+    0.12
+   ],
+   "precision": 2,
+   "pad": "      ",
+   "comment": " model total, P1 = 0.1, upper (0.1183)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json",
+     "pointer": "/composite/plus/0.1"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json#/composite/plus/0.1",
+    "unrounded_in_comment": [
+     "0.1183"
+    ]
+   }
+  },
+  "modelErrDnPone": {
+   "macro": "\\modelErrDnPone",
+   "template": "{0}",
+   "values": [
+    0.13
+   ],
+   "precision": 2,
+   "pad": "      ",
+   "comment": " model total, P1 = 0.1, lower (0.1274)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json",
+     "pointer": "/composite/minus/0.1",
+     "sign": -1,
+     "magnitude": true
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json#/composite/minus/0.1 (x -1) (magnitude shown)",
+    "unrounded_in_comment": [
+     "0.1274"
+    ]
+   }
+  },
+  "modelErrUpNoViPnine": {
+   "macro": "\\modelErrUpNoViPnine",
+   "template": "{0}",
+   "values": [
+    0.02
+   ],
+   "precision": 2,
+   "pad": " ",
+   "comment": " without the inflation-scale item, P1 = 0.9 (0.0177)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json",
+     "pointer": "/composite/plus_no_vi/0.9"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json#/composite/plus_no_vi/0.9",
+    "unrounded_in_comment": [
+     "0.0177"
+    ]
+   }
+  },
+  "modelErrDnNoViPnine": {
+   "macro": "\\modelErrDnNoViPnine",
+   "template": "{0}",
+   "values": [
+    0.04
+   ],
+   "precision": 2,
+   "pad": " ",
+   "comment": " (0.0433)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json",
+     "pointer": "/composite/minus_no_vi/0.9",
+     "sign": -1,
+     "magnitude": true
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json#/composite/minus_no_vi/0.9 (x -1) (magnitude shown)",
+    "unrounded_in_comment": [
+     "0.0433"
+    ]
+   }
+  },
+  "modelErrUpNoVi": {
+   "macro": "\\modelErrUpNoVi",
+   "template": "{0}",
+   "values": [
+    0.03
+   ],
+   "precision": 2,
+   "pad": "      ",
+   "comment": " P1 = 0.5 (0.0267)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json",
+     "pointer": "/composite/plus_no_vi/0.5"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json#/composite/plus_no_vi/0.5",
+    "unrounded_in_comment": [
+     "0.0267"
+    ]
+   }
+  },
+  "modelErrDnNoVi": {
+   "macro": "\\modelErrDnNoVi",
+   "template": "{0}",
+   "values": [
+    0.05
+   ],
+   "precision": 2,
+   "pad": "      ",
+   "comment": " (0.0509)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json",
+     "pointer": "/composite/minus_no_vi/0.5",
+     "sign": -1,
+     "magnitude": true
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json#/composite/minus_no_vi/0.5 (x -1) (magnitude shown)",
+    "unrounded_in_comment": [
+     "0.0509"
+    ]
+   }
+  },
+  "modelErrUpNoViPone": {
+   "macro": "\\modelErrUpNoViPone",
+   "template": "{0}",
+   "values": [
+    0.04
+   ],
+   "precision": 2,
+   "pad": "  ",
+   "comment": " P1 = 0.1 (0.0382)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json",
+     "pointer": "/composite/plus_no_vi/0.1"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json#/composite/plus_no_vi/0.1",
+    "unrounded_in_comment": [
+     "0.0382"
+    ]
+   }
+  },
+  "modelErrDnNoViPone": {
+   "macro": "\\modelErrDnNoViPone",
+   "template": "{0}",
+   "values": [
+    0.06
+   ],
+   "precision": 2,
+   "pad": "  ",
+   "comment": " (0.0607)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json",
+     "pointer": "/composite/minus_no_vi/0.1",
+     "sign": -1,
+     "magnitude": true
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json#/composite/minus_no_vi/0.1 (x -1) (magnitude shown)",
+    "unrounded_in_comment": [
+     "0.0607"
+    ]
+   }
+  },
+  "PbarQlo": {
+   "macro": "\\PbarQlo",
+   "template": "{0}",
+   "values": [
+    0.39
+   ],
+   "precision": 2,
+   "pad": "             ",
+   "comment": " 16% quantile of P1, direct mass (R5-005: 0.390)",
+   "registry_ids": [
+    "R5-005"
+   ],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json",
+     "pointer": "/marginal/equal_mass/D1_direct_pole/quantiles_025_16_50_84_975/1"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/D1_direct_pole/quantiles_025_16_50_84_975/1; registry R5-005 = higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/D1_direct_pole/prob_P_ge_0p5; higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/D1_direct_pole/quantiles_025_16_50_84_975 (agrees)",
+    "unrounded_in_comment": [
+     "0.390"
+    ]
+   }
+  },
+  "PbarQhi": {
+   "macro": "\\PbarQhi",
+   "template": "{0}",
+   "values": [
+    0.99
+   ],
+   "precision": 2,
+   "pad": "             ",
+   "comment": " 84% quantile (R5-005: 0.990)",
+   "registry_ids": [
+    "R5-005"
+   ],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json",
+     "pointer": "/marginal/equal_mass/D1_direct_pole/quantiles_025_16_50_84_975/3"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/D1_direct_pole/quantiles_025_16_50_84_975/3; registry R5-005 = higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/D1_direct_pole/prob_P_ge_0p5; higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/D1_direct_pole/quantiles_025_16_50_84_975 (agrees)",
+    "unrounded_in_comment": [
+     "0.990"
+    ]
+   }
+  },
+  "PbarGeHalf": {
+   "macro": "\\PbarGeHalf",
+   "template": "{0}",
+   "values": [
+    0.78
+   ],
+   "precision": 2,
+   "pad": "          ",
+   "comment": " probability that P1 >= 1/2, direct mass (R5-005: 0.778)",
+   "registry_ids": [
+    "R5-005"
+   ],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json",
+     "pointer": "/marginal/equal_mass/D1_direct_pole/prob_P_ge_0p5"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/D1_direct_pole/prob_P_ge_0p5; registry R5-005 = higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/D1_direct_pole/prob_P_ge_0p5; higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/D1_direct_pole/quantiles_025_16_50_84_975 (agrees)",
+    "unrounded_in_comment": [
+     "0.778"
+    ]
+   }
+  },
+  "xiHminEW": {
+   "macro": "\\xiHminEW",
+   "template": "{0}",
+   "values": [
+    0.09
+   ],
+   "precision": 2,
+   "pad": "            ",
+   "comment": " electroweak-scale image of \\xiHmin (0.0772 -> xi_EW 0.089; D126 v2 sec. 4)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "numbers/derived_numbers.json",
+     "pointer": "/xiHminEW/value"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "numbers/derived_numbers.json#/xiHminEW/value; derived by numbers/derive_numbers.py (up to date)",
+    "unrounded_in_comment": [
+     "0.0772",
+     "0.089"
+    ]
+   }
+  },
+  "xiHbandSM": {
+   "macro": "\\xiHbandSM",
+   "template": "{0}",
+   "values": [
+    0.013
+   ],
+   "precision": 3,
+   "pad": "          ",
+   "comment": " SM-theory band of xi_c at 172.6 GeV (C157 run02; not recomputed at run05)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/07_realtime_xi/expected/r3/realtime_2d/run02/C157_run02_summary.json",
+     "pointer": "/bands/172.60/SM_theory_pole0.10|mu_b/half_diff"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/07_realtime_xi/expected/r3/realtime_2d/run02/C157_run02_summary.json#/bands/172.60/SM_theory_pole0.10|mu_b/half_diff [shown value only]",
+    "unrounded_in_comment": []
+   }
+  },
+  "xiHbandAs": {
+   "macro": "\\xiHbandAs",
+   "template": "{0}",
+   "values": [
+    0.04
+   ],
+   "precision": 2,
+   "pad": "           ",
+   "comment": " alpha_s band of xi_c at 172.6 GeV (C157 run02: 0.0397; not recomputed at run05)",
+   "registry_ids": [],
+   "source": [
+    {
+     "file": "higgs/07_realtime_xi/expected/r3/realtime_2d/run02/C157_run02_summary.json",
+     "pointer": "/bands/172.60/alpha_s_0.0009|mu_b/half_diff"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/07_realtime_xi/expected/r3/realtime_2d/run02/C157_run02_summary.json#/bands/172.60/alpha_s_0.0009|mu_b/half_diff",
+    "unrounded_in_comment": [
+     "0.0397"
+    ]
+   }
+  },
+  "PbarATLASCMS": {
+   "macro": "\\PbarATLASCMS",
+   "template": "{0}",
+   "values": [
+    0.76
+   ],
+   "precision": 2,
+   "pad": "     ",
+   "comment": " Pbar1 for ATLAS+CMS 172.52 +- 0.33 (R5-013: 0.7625)",
+   "registry_ids": [
+    "R5-013"
+   ],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json",
+     "pointer": "/marginal/equal_mass/C1_ATLAS_CMS/Pbar"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/C1_ATLAS_CMS/Pbar; registry R5-013 = higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/C1_ATLAS_CMS/Pbar (agrees)",
+    "unrounded_in_comment": [
+     "0.7625"
+    ]
+   }
+  },
+  "PbarCMS": {
+   "macro": "\\PbarCMS",
+   "template": "{0}",
+   "values": [
+    0.97
+   ],
+   "precision": 2,
+   "pad": "          ",
+   "comment": " Pbar1 for CMS 171.77 +- 0.37 (R5-014: 0.9697)",
+   "registry_ids": [
+    "R5-014"
+   ],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json",
+     "pointer": "/marginal/equal_mass/C2_CMS/Pbar"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/C2_CMS/Pbar; registry R5-014 = higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/C2_CMS/Pbar (agrees)",
+    "unrounded_in_comment": [
+     "0.9697"
+    ]
+   }
+  },
+  "PbarMbarSigma": {
+   "macro": "\\PbarMbarSigma",
+   "template": "{0}",
+   "values": [
+    0.62
+   ],
+   "precision": 2,
+   "pad": "    ",
+   "comment": " Pbar1 for the MS-bar cross-section value 162.5 +2.1/-1.5 (R5-012: 0.6196)",
+   "registry_ids": [
+    "R5-012"
+   ],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json",
+     "pointer": "/marginal/equal_mass/D3b_msbar_sigma/Pbar"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/D3b_msbar_sigma/Pbar; registry R5-012 = higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/D3b_msbar_sigma/Pbar (agrees)",
+    "unrounded_in_comment": [
+     "0.6196"
+    ]
+   }
+  },
+  "BselDirect": {
+   "macro": "\\BselDirect",
+   "template": "{0}",
+   "values": [
+    1.59
+   ],
+   "precision": 2,
+   "pad": "       ",
+   "comment": " B_sel, direct mass, flat prior on [150,200] GeV (R5-019: 1.590)",
+   "registry_ids": [
+    "R5-019"
+   ],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json",
+     "pointer": "/bayes/D1_direct_pole/flat_150_200/B_selection"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/bayes/D1_direct_pole/flat_150_200/B_selection; registry R5-019 = higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/bayes/D1_direct_pole/flat_150_200; higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/bayes/D1_direct_pole/flat_170_176; higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/bayes/D1_direct_pole/flat_lambda_pm0p05 (agrees)",
+    "unrounded_in_comment": [
+     "1.590"
+    ]
+   }
+  },
+  "BselMax": {
+   "macro": "\\BselMax",
+   "template": "{0}",
+   "values": [
+    2.18
+   ],
+   "precision": 2,
+   "pad": "          ",
+   "comment": " upper bound 1/<P1>_prior for that prior (R5-019)",
+   "registry_ids": [
+    "R5-019"
+   ],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json",
+     "pointer": "/bayes/D1_direct_pole/flat_150_200/B_selection_max"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/bayes/D1_direct_pole/flat_150_200/B_selection_max; registry R5-019 = higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/bayes/D1_direct_pole/flat_150_200; higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/bayes/D1_direct_pole/flat_170_176; higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/bayes/D1_direct_pole/flat_lambda_pm0p05 (agrees) [shown value only]",
+    "unrounded_in_comment": []
+   }
+  },
+  "mExclMeas": {
+   "macro": "\\mExclMeas",
+   "template": "{0}",
+   "values": [
+    174.2
+   ],
+   "precision": 1,
+   "pad": "       ",
+   "comment": " measured centre needed for 95% exclusion at present precision (R5-022: 174.19)",
+   "registry_ids": [
+    "R5-022"
+   ],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json",
+     "pointer": "/exclusion_mt/0.1180/meas0p27_95_P0.1"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json#/exclusion_mt/0.1180/meas0p27_95_P0.1; registry R5-022 = higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json#/exclusion_mt/0.1180/meas0p27_95_P0.1; higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json#/exclusion_mt/0.1180/meas_interp_95_P0.1 (agrees)",
+    "unrounded_in_comment": [
+     "174.19"
+    ]
+   }
+  },
+  "mExclMeasInterp": {
+   "macro": "\\mExclMeasInterp",
+   "template": "{0}",
+   "values": [
+    174.5
+   ],
+   "precision": 1,
+   "pad": " ",
+   "comment": " same with the 0.5 GeV interpretation error (R5-022: 174.54)",
+   "registry_ids": [
+    "R5-022"
+   ],
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json",
+     "pointer": "/exclusion_mt/0.1180/meas_interp_95_P0.1"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json#/exclusion_mt/0.1180/meas_interp_95_P0.1; registry R5-022 = higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json#/exclusion_mt/0.1180/meas0p27_95_P0.1; higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json#/exclusion_mt/0.1180/meas_interp_95_P0.1 (agrees)",
+    "unrounded_in_comment": [
+     "174.54"
+    ]
+   }
+  },
+  "mSurvFCC": {
+   "macro": "\\mSurvFCC",
+   "template": "{0}",
+   "values": [
+    172.7
+   ],
+   "precision": 1,
+   "pad": "         ",
+   "comment": " FCC-ee baseline: measured pole mass below this establishes P1 > 1/2 at 95% (R5-024: mhat_surv95 172.74)",
+   "registry_ids": [
+    "R5-024"
+   ],
+   "origin": "PRL/main.tex preamble (2026-10-16)",
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json",
+     "pointer": "/future/FCCee_base/mhat_surv95"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json#/future/FCCee_base/mhat_surv95; registry R5-024 = higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json#/future/FCCee_base (agrees)",
+    "unrounded_in_comment": [
+     "172.74"
+    ]
+   }
+  },
+  "sigFCCamb": {
+   "macro": "\\sigFCCamb",
+   "template": "{0}",
+   "values": [
+    6.0
+   ],
+   "precision": 1,
+   "pad": "          ",
+   "comment": " FCC-ee with dmbar 38 MeV and dalpha_s 0.0001: separation of 172.6 and 173.3 GeV (R5-025: 6.00)",
+   "registry_ids": [
+    "R5-025"
+   ],
+   "origin": "PRL/main.tex preamble (2026-10-16)",
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json",
+     "pointer": "/future/FCCee_ambitious/separation_172p6_173p3"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json#/future/FCCee_ambitious/separation_172p6_173p3; registry R5-025 = higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json#/future/FCCee_ambitious (agrees)",
+    "unrounded_in_comment": [
+     "6.00"
+    ]
+   }
+  },
+  "sigHLLHCinterpMin": {
+   "macro": "\\sigHLLHCinterpMin",
+   "template": "{0}",
+   "values": [
+    1.1
+   ],
+   "precision": 1,
+   "pad": "  ",
+   "comment": " HL-LHC separation with the 0.5 GeV interpretation error, dalpha_s 0.0009 (R5-027: 1.08)",
+   "registry_ids": [
+    "R5-027"
+   ],
+   "origin": "PRL/main.tex preamble (2026-10-16)",
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json",
+     "pointer": "/HLLHC/HLLHC_0.17_as0.0009_interp0.5/separation_172p6_173p3"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/HLLHC/HLLHC_0.17_as0.0009_interp0.5/separation_172p6_173p3; registry R5-027 = higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/HLLHC/HLLHC_0.17_as0.0002/separation_172p6_173p3; higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/HLLHC/HLLHC_0.17_as0.0002_interp0.5/separation_172p6_173p3; higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/HLLHC/HLLHC_0.17_as0.00045/separation_172p6_173p3; higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/HLLHC/HLLHC_0.17_as0.00045_interp0.5/separation_172p6_173p3; higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/HLLHC/HLLHC_0.17_as0.0009/separation_172p6_173p3; higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/HLLHC/HLLHC_0.17_as0.0009_interp0.5/separation_172p6_173p3 (agrees)",
+    "unrounded_in_comment": [
+     "1.08"
+    ]
+   }
+  },
+  "sigHLLHCinterpMax": {
+   "macro": "\\sigHLLHCinterpMax",
+   "template": "{0}",
+   "values": [
+    1.2
+   ],
+   "precision": 1,
+   "pad": "  ",
+   "comment": " same, dalpha_s 0.00045 (R5-027: 1.23)",
+   "registry_ids": [
+    "R5-027"
+   ],
+   "origin": "PRL/main.tex preamble (2026-10-16)",
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json",
+     "pointer": "/HLLHC/HLLHC_0.17_as0.00045_interp0.5/separation_172p6_173p3"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/HLLHC/HLLHC_0.17_as0.00045_interp0.5/separation_172p6_173p3; registry R5-027 = higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/HLLHC/HLLHC_0.17_as0.0002/separation_172p6_173p3; higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/HLLHC/HLLHC_0.17_as0.0002_interp0.5/separation_172p6_173p3; higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/HLLHC/HLLHC_0.17_as0.00045/separation_172p6_173p3; higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/HLLHC/HLLHC_0.17_as0.00045_interp0.5/separation_172p6_173p3; higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/HLLHC/HLLHC_0.17_as0.0009/separation_172p6_173p3; higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/HLLHC/HLLHC_0.17_as0.0009_interp0.5/separation_172p6_173p3 (agrees)",
+    "unrounded_in_comment": [
+     "1.23"
+    ]
+   }
+  },
+  "lamcErrUp": {
+   "macro": "\\lamcErrUp",
+   "template": "{0}",
+   "values": [
+    0.0006
+   ],
+   "precision": 4,
+   "pad": "       ",
+   "comment": " model error of lambda_c at P1 = 1/2: 0.0842 GeV x 0.00659/GeV (R5-039; R5-030/R5-031; D126 v2 Sec. 3(a))",
+   "registry_ids": [
+    "R5-039",
+    "R5-030",
+    "R5-031"
+   ],
+   "origin": "PRL/main.tex preamble (2026-10-16)",
+   "source": [
+    {
+     "file": "numbers/derived_numbers.json",
+     "pointer": "/lamcErrUp/value"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "numbers/derived_numbers.json#/lamcErrUp/value; derived by numbers/derive_numbers.py (up to date); registry R5-039 = higgs/09_claims/expected/w/claims_run05/run01/table1_rebuild.json#/composite (agrees); registry R5-030 = higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json#/relative_form/lambda_c_C149; higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json#/relative_form/margin_lambda (agrees); registry R5-031 = higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json#/relative_form/margin_mc05_minus_172p60 (agrees)",
+    "unrounded_in_comment": [
+     "0.0842",
+     "0.00659"
+    ]
+   }
+  },
+  "lamcErrDn": {
+   "macro": "\\lamcErrDn",
+   "template": "{0}",
+   "values": [
+    0.0005
+   ],
+   "precision": 4,
+   "pad": "       ",
+   "comment": " 0.0721 GeV x 0.00659/GeV",
+   "registry_ids": [],
+   "origin": "PRL/main.tex preamble (2026-10-16)",
+   "source": [
+    {
+     "file": "numbers/derived_numbers.json",
+     "pointer": "/lamcErrDn/value"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "numbers/derived_numbers.json#/lamcErrDn/value; derived by numbers/derive_numbers.py (up to date)",
+    "unrounded_in_comment": [
+     "0.0721",
+     "0.00659"
+    ]
+   }
+  },
+  "PoneAtExclFCC": {
+   "macro": "\\PoneAtExclFCC",
+   "template": "{0}",
+   "values": [
+    0.023
+   ],
+   "precision": 3,
+   "pad": " ",
+   "comment": " central P1 at the FCC-ee exclusion threshold mhat = 173.68 GeV (alpha_s 0.1180): 0.0230 (fcc_exclusion.json headline)",
+   "registry_ids": [],
+   "origin": "R18 DA-01/EIC-01 (rev-code, 2026-10-16)",
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/fcc_exclusion.json",
+     "pointer": "/headline/P1_central_at_mhat"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/fcc_exclusion.json#/headline/P1_central_at_mhat",
+    "unrounded_in_comment": [
+     "0.0230"
+    ]
+   }
+  },
+  "BexFCC": {
+   "macro": "\\BexFCC",
+   "template": "{0}",
+   "values": [
+    0.033
+   ],
+   "precision": 3,
+   "pad": "        ",
+   "comment": " B_ex = Pbar for an FCC-ee measurement at that threshold (C154 machinery): 0.0332; one-Gaussian estimate 0.030",
+   "registry_ids": [],
+   "origin": "R18 DA-01/EIC-01 (rev-code, 2026-10-16)",
+   "source": [
+    {
+     "file": "higgs/09_claims/expected/w/claims_run05/run01/fcc_exclusion.json",
+     "pointer": "/headline/Bex"
+    }
+   ],
+   "check": {
+    "status": "verified",
+    "evidence": "higgs/09_claims/expected/w/claims_run05/run01/fcc_exclusion.json#/headline/Bex",
+    "unrounded_in_comment": [
+     "0.0332"
+    ]
+   }
+  }
+ }
+}

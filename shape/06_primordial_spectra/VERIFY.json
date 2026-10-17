@@ -1,0 +1,205 @@
+{
+ "step": "06_primordial_spectra",
+ "quick": {
+  "step": "06_primordial_spectra",
+  "mode": "quick",
+  "utc": "2026-10-17T02:19:37Z",
+  "python": "3.12.13",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 204 Stepping 2, GenuineIntel",
+  "cpu_count": 16,
+  "numpy": "2.5.1",
+  "scipy": "1.17.1",
+  "n_checks": 5,
+  "n_pass": 5,
+  "n_skipped": 0,
+  "all_pass": true,
+  "checks": [
+   {
+    "id": "C64",
+    "what": "n_s, r vs N_*, initial-state tests",
+    "paper": "PRD Sec. VIII A",
+    "tol_abs": 1e-12,
+    "tol_rel": 1e-08,
+    "mode": "tree",
+    "computed_from": "output/shape/quick/r5/C64_plateau_ns_r/C64_results.json",
+    "expected_from": "shape/06_primordial_spectra/expected/r5/C64_plateau_ns_r/C64_results.json",
+    "n_leaves": 53,
+    "n_leaves_all": 53,
+    "max_abs_diff": 0.0,
+    "max_rel_diff": 0.0,
+    "n_mismatch": 0,
+    "first_mismatches": [],
+    "passed": true
+   },
+   {
+    "id": "ns_instant",
+    "what": "n_s = 0.96534 (N_* = 55.72)",
+    "paper": "PRD Sec. VIII A (PRIM-01)",
+    "tol_abs": null,
+    "tol_rel": 1e-09,
+    "mode": "scalar",
+    "computed_from": "output/shape/quick/r5/C64_plateau_ns_r/C64_results.json",
+    "expected_from": "shape/06_primordial_spectra/expected/r5/C64_plateau_ns_r/C64_results.json",
+    "computed": 0.965340706020589,
+    "expected": 0.965340706020589,
+    "abs_diff": 0.0,
+    "passed": true
+   },
+   {
+    "id": "r_instant",
+    "what": "r = 0.00346",
+    "paper": "PRD Sec. VIII A (PRIM-02)",
+    "tol_abs": null,
+    "tol_rel": 1e-09,
+    "mode": "scalar",
+    "computed_from": "output/shape/quick/r5/C64_plateau_ns_r/C64_results.json",
+    "expected_from": "shape/06_primordial_spectra/expected/r5/C64_plateau_ns_r/C64_results.json",
+    "computed": 0.0034624182111967464,
+    "expected": 0.0034624182111967464,
+    "abs_diff": 0.0,
+    "passed": true
+   },
+   {
+    "id": "ns_weak",
+    "what": "n_s = 0.96174 (N_* = 50.33)",
+    "paper": "PRD Sec. VIII A (PRIM-03)",
+    "tol_abs": null,
+    "tol_rel": 1e-09,
+    "mode": "scalar",
+    "computed_from": "output/shape/quick/r5/C64_plateau_ns_r/C64_results.json",
+    "expected_from": "shape/06_primordial_spectra/expected/r5/C64_plateau_ns_r/C64_results.json",
+    "computed": 0.9617386085070336,
+    "expected": 0.9617386085070336,
+    "abs_diff": 0.0,
+    "passed": true
+   },
+   {
+    "id": "r_weak",
+    "what": "r = 0.00420",
+    "paper": "PRD Sec. VIII A (PRIM-04)",
+    "tol_abs": null,
+    "tol_rel": 1e-09,
+    "mode": "scalar",
+    "computed_from": "output/shape/quick/r5/C64_plateau_ns_r/C64_results.json",
+    "expected_from": "shape/06_primordial_spectra/expected/r5/C64_plateau_ns_r/C64_results.json",
+    "computed": 0.004202181061597778,
+    "expected": 0.004202181061597778,
+    "abs_diff": 0.0,
+    "passed": true
+   }
+  ],
+  "timings_s": {
+   "C64 n_s and r": 206.86
+  },
+  "workers": 8,
+  "note": "final self-test of the release: fresh copy without output/, python run_all.py --quick --workers 8, 2026-10-17T01:48-02:23Z; 25/25 runs fresh and passing"
+ },
+ "summary": {
+  "quick": {
+   "all_pass": true,
+   "n_pass": 5,
+   "n_checks": 5,
+   "utc": "2026-10-17T02:19:37Z"
+  },
+  "full": {
+   "all_pass": true,
+   "n_pass": 5,
+   "n_checks": 5,
+   "utc": "2026-10-15T23:19:45Z"
+  }
+ },
+ "full": {
+  "step": "06_primordial_spectra",
+  "mode": "full",
+  "utc": "2026-10-15T23:19:45Z",
+  "python": "3.12.13",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 204 Stepping 2, GenuineIntel",
+  "cpu_count": 16,
+  "numpy": "2.5.1",
+  "scipy": "1.17.1",
+  "n_checks": 5,
+  "n_pass": 5,
+  "n_skipped": 0,
+  "all_pass": true,
+  "checks": [
+   {
+    "id": "C64",
+    "what": "n_s, r vs N_*, initial-state tests",
+    "paper": "PRD Sec. VIII A",
+    "tol_abs": 1e-12,
+    "tol_rel": 1e-08,
+    "mode": "tree",
+    "computed_from": "output/shape/full/r5/C64_plateau_ns_r/C64_results.json",
+    "expected_from": "shape/06_primordial_spectra/expected/r5/C64_plateau_ns_r/C64_results.json",
+    "n_leaves": 53,
+    "max_abs_diff": 0.0,
+    "max_rel_diff": 0.0,
+    "n_mismatch": 0,
+    "first_mismatches": [],
+    "passed": true
+   },
+   {
+    "id": "ns_instant",
+    "what": "n_s = 0.96534 (N_* = 55.72)",
+    "paper": "PRD Sec. VIII A (PRIM-01)",
+    "tol_abs": null,
+    "tol_rel": 1e-09,
+    "mode": "scalar",
+    "computed_from": "output/shape/full/r5/C64_plateau_ns_r/C64_results.json",
+    "expected_from": "shape/06_primordial_spectra/expected/r5/C64_plateau_ns_r/C64_results.json",
+    "computed": 0.965340706020589,
+    "expected": 0.965340706020589,
+    "abs_diff": 0.0,
+    "passed": true
+   },
+   {
+    "id": "r_instant",
+    "what": "r = 0.00346",
+    "paper": "PRD Sec. VIII A (PRIM-02)",
+    "tol_abs": null,
+    "tol_rel": 1e-09,
+    "mode": "scalar",
+    "computed_from": "output/shape/full/r5/C64_plateau_ns_r/C64_results.json",
+    "expected_from": "shape/06_primordial_spectra/expected/r5/C64_plateau_ns_r/C64_results.json",
+    "computed": 0.0034624182111967464,
+    "expected": 0.0034624182111967464,
+    "abs_diff": 0.0,
+    "passed": true
+   },
+   {
+    "id": "ns_weak",
+    "what": "n_s = 0.96174 (N_* = 50.33)",
+    "paper": "PRD Sec. VIII A (PRIM-03)",
+    "tol_abs": null,
+    "tol_rel": 1e-09,
+    "mode": "scalar",
+    "computed_from": "output/shape/full/r5/C64_plateau_ns_r/C64_results.json",
+    "expected_from": "shape/06_primordial_spectra/expected/r5/C64_plateau_ns_r/C64_results.json",
+    "computed": 0.9617386085070336,
+    "expected": 0.9617386085070336,
+    "abs_diff": 0.0,
+    "passed": true
+   },
+   {
+    "id": "r_weak",
+    "what": "r = 0.00420",
+    "paper": "PRD Sec. VIII A (PRIM-04)",
+    "tol_abs": null,
+    "tol_rel": 1e-09,
+    "mode": "scalar",
+    "computed_from": "output/shape/full/r5/C64_plateau_ns_r/C64_results.json",
+    "expected_from": "shape/06_primordial_spectra/expected/r5/C64_plateau_ns_r/C64_results.json",
+    "computed": 0.004202181061597778,
+    "expected": 0.004202181061597778,
+    "abs_diff": 0.0,
+    "passed": true
+   }
+  ],
+  "timings_s": {
+   "C64 n_s and r": 137.02
+  },
+  "workers": 10
+ }
+}

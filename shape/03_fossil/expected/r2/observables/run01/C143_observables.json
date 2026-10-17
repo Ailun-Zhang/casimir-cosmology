@@ -1,0 +1,69 @@
+{
+ "F_kappaE": 24.55010600442855,
+ "M2L3h": 2279.27780012,
+ "sigma_floor": 0.1037834385362791,
+ "F_kappaE_free": 10.26406754348143,
+ "dlnsigma_dlnkappa": 1.365801779161629,
+ "sigma_vs_r": [
+  {
+   "r": 0.0001,
+   "sigma_ratio": 0.6305833524471807,
+   "sigma_E": 0.0654441086007028
+  },
+  {
+   "r": 0.0003,
+   "sigma_ratio": 0.723406918474003,
+   "sigma_E": 0.07507765746016574
+  },
+  {
+   "r": 0.001,
+   "sigma_ratio": 0.8408964152537145,
+   "sigma_E": 0.08727112142786131
+  },
+  {
+   "r": 0.002,
+   "sigma_ratio": 0.9170040432046712,
+   "sigma_E": 0.09516983275545142
+  },
+  {
+   "r": 0.003,
+   "sigma_ratio": 0.9646786299603094,
+   "sigma_E": 0.1001176652997477
+  },
+  {
+   "r": 0.004,
+   "sigma_ratio": 1.0,
+   "sigma_E": 0.1037834385362791
+  },
+  {
+   "r": 0.006,
+   "sigma_ratio": 1.0519895055086441,
+   "sigma_E": 0.109179088185767
+  },
+  {
+   "r": 0.01,
+   "sigma_ratio": 1.1213533919701386,
+   "sigma_E": 0.11637791083298096
+  }
+ ],
+ "frac_sigma_per_frac_r": 0.125,
+ "LiteBIRD_sigma_r_1e-3_at_r_4e-3_frac_sigma": 0.03125,
+ "CMBS4_sigma_r_5e-4_at_r_4e-3_frac_sigma": 0.015625,
+ "dmc_dlnr_GeV": 0.036921600030873726,
+ "dmc_dlnr_parts": {
+  "duration": 0.04824019759184934,
+  "mu_b_running": -0.011318597560975611
+ },
+ "dmc_per_efold_duration_GeV": -0.19296079036739736,
+ "dmc_range_r_0.001_0.01": [
+  -0.05118420592632422,
+  0.03383091991425411
+ ],
+ "dmc_range_r_0.0001_0.01": [
+  -0.13619933176690258,
+  0.03383091991425411
+ ],
+ "dmc_dlnCeff_GeV": 0.05955879515282495,
+ "notes": "sigma_E \u221d (A_s r)^{1/8} C_eff^{-3/8} F(kappa_E)^{1/2}; m_c shifts by dmc_dlnr per e-fold of r at fixed SM content; dlng_dlam from Stage-3 MU, to be updated with the A-I main model.",
+ "code_sha256": "474daa4ad393390c73cad33a127284f31d3af2dfd9786624978c2ec9c065daa5"
+}

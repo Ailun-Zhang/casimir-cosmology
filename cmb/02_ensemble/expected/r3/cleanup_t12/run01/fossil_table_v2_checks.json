@@ -1,0 +1,346 @@
+{
+ "task": "T12/C158 (W14) fossil_table_v2",
+ "agent": "cleanup-t12",
+ "generated_utc": "2026-10-15T03:15:24Z",
+ "script": "D:\\0PhD\\Perimeter\\Research\\2026\\Directional_Null_Energy_Cosmology\\04_calculations\\code\\20261014_claude_v12_r3\\cleanup_t12\\make_fossil_table_v2.py",
+ "script_sha256": "b8bea5a85059bef1b166c85031a9723e1bb7f42087608882976388966ed91cc1",
+ "inputs": {
+  "fossil_table.csv": {
+   "path": "D:\\0PhD\\Perimeter\\Research\\2026\\Directional_Null_Energy_Cosmology\\04_calculations\\results\\20261013_argon_codex_intake\\cmb_ensemble\\run01\\results\\fossil_table.csv",
+   "sha256": "fdf177306c53d46c4439e6a760955aa0213d9c97c8e07ad0076b32d8b8cf983a"
+  },
+  "S2_profiles.json": {
+   "path": "D:\\0PhD\\Perimeter\\Research\\2026\\Directional_Null_Energy_Cosmology\\04_calculations\\results\\20261013_argon_codex_intake\\cmb_ensemble\\run01\\results\\S2_profiles.json",
+   "sha256": "4713fe567c753b06a9ae8606abd3583766e1064957b5260ef7638b54f1cfed05"
+  },
+  "kl_table.json": {
+   "path": "D:\\0PhD\\Perimeter\\Research\\2026\\Directional_Null_Energy_Cosmology\\04_calculations\\results\\20261013_argon_codex_intake\\cmb_ensemble\\run01\\results\\kl_table.json",
+   "sha256": "21eb6ef468247bdb0a528cb1b99d72dd320e4d039eec692e27ea5e4e6d74a36e"
+  },
+  "S2_brent.json": {
+   "path": "D:\\0PhD\\Perimeter\\Research\\2026\\Directional_Null_Energy_Cosmology\\04_calculations\\results\\20261013_argon_codex_intake\\cmb_ensemble\\run01\\results\\S2_brent.json",
+   "sha256": "f5fc07fac9ef955856a23a0bedc01e78c300c3e09ed696638f758cb7be7547a9"
+  },
+  "S3_postcheck.json": {
+   "path": "D:\\0PhD\\Perimeter\\Research\\2026\\Directional_Null_Energy_Cosmology\\04_calculations\\results\\20261013_argon_codex_intake\\cmb_ensemble\\run01\\results\\S3_postcheck.json",
+   "sha256": "bec6ebe34daf24ada5d7c67b21a6872e62a1451411a6007c1504fd46f2ef63ef"
+  }
+ },
+ "outputs": {
+  "fossil_table_v2.csv": {
+   "path": "D:\\0PhD\\Perimeter\\Research\\2026\\Directional_Null_Energy_Cosmology\\04_calculations\\results\\20261014_claude_v12_r3\\cleanup_t12\\run01\\fossil_table_v2.csv",
+   "sha256": "2350e589fdc7cd5c0cca0de0ece5c71f085ba34208472ae9f8cd507d5ce1ac0d"
+  },
+  "fossil_table_v2_diff.csv": {
+   "path": "D:\\0PhD\\Perimeter\\Research\\2026\\Directional_Null_Energy_Cosmology\\04_calculations\\results\\20261014_claude_v12_r3\\cleanup_t12\\run01\\fossil_table_v2_diff.csv",
+   "sha256": "2026a8c4b9780c51ca92675cd851239916eef4718b484b7f2f1bfe714d9eb1bf"
+  }
+ },
+ "columns": {
+  "old": [
+   "name",
+   "A",
+   "lab",
+   "theta",
+   "xi",
+   "s",
+   "u",
+   "s_low",
+   "TE30_fixed",
+   "TE30_prof",
+   "TE30_sprof",
+   "TE40_fixed",
+   "TE40_prof",
+   "TE40_sprof",
+   "TE80_fixed",
+   "TE80_prof",
+   "TE80_sprof",
+   "T80_fixed",
+   "T80_prof",
+   "T80_sprof"
+  ],
+  "v2": [
+   "name",
+   "A",
+   "lab",
+   "theta",
+   "xi",
+   "s",
+   "u",
+   "s_low",
+   "TE30_fixed",
+   "TE30_prof",
+   "TE30_sprof",
+   "TE40_fixed",
+   "TE40_prof",
+   "TE40_sprof",
+   "TE80_fixed",
+   "TE80_prof",
+   "TE80_sprof",
+   "T80_fixed",
+   "T80_prof",
+   "T80_sprof",
+   "TE80_brent",
+   "TE80_sbrent",
+   "prof_source"
+  ]
+ },
+ "integrity": {
+  "n_rows": 55,
+  "n_S2": 55,
+  "n_kl": 55,
+  "geom_max_absdiff": 4.858475690205921e-06,
+  "fixed_max_reldiff_vs_S2": 4.587516328607127e-06,
+  "parab_max_reldiff_vs_S2": 4.533196810009911e-06,
+  "curve_vs_kl_max_reldiff": 0.0,
+  "kl_vs_curve_set_mismatch": 0,
+  "n_kl_cubes_below_circ": 0,
+  "curve_npts": [
+   19
+  ],
+  "prof_kind": {
+   "parabolic": 218,
+   "boundary": 2
+  },
+  "n_fixed_empty": 4,
+  "poolmin_S2_vs_kl_max_reldiff": 0.0
+ },
+ "brent": {
+  "shape_A2.00000_th+0.52360_s1.12000_l80_x240_t0.25": {
+   "readout": "TE80",
+   "matched_readouts": [
+    "TE80"
+   ],
+   "s_star": 1.0432213867572118,
+   "D_star": 5.033619991842194,
+   "poolmin": 5.061375583162487,
+   "rel_below_poolmin": 0.005483803931213239,
+   "ok": true,
+   "interior": true,
+   "in_csv": true
+  },
+  "shape_A1.00000_th-0.52360_s1.12000_l80_x240_t0.25": {
+   "readout": "TE80",
+   "matched_readouts": [
+    "TE80"
+   ],
+   "s_star": 1.0770951506776534,
+   "D_star": 3.8040379410168157,
+   "poolmin": 3.805867801571651,
+   "rel_below_poolmin": 0.00048079982023537454,
+   "ok": true,
+   "interior": true,
+   "in_csv": true
+  },
+  "fossil_s1.14000_l80_x240_t0.25": {
+   "readout": "TE80",
+   "matched_readouts": [
+    "TE80"
+   ],
+   "s_star": 1.077064012371957,
+   "D_star": 4.4437651169128145,
+   "poolmin": 4.4453347870701805,
+   "rel_below_poolmin": 0.00035310504890015507,
+   "ok": true,
+   "interior": true,
+   "in_csv": true
+  }
+ },
+ "diff_summary": {
+  "n_pairs": 220,
+  "n_pairs_low_gt_1pct": 82,
+  "n_pairs_old_above_new": 1,
+  "per_readout": {
+   "TE30": {
+    "min_rel": -0.133,
+    "at": "(1.00000,pro,1.06000)",
+    "n_low_gt_1pct": 22,
+    "n_low_ge_3pct": 13,
+    "n_cells_prof_changed": 55,
+    "n_cells_sprof_changed": 55
+   },
+   "TE40": {
+    "min_rel": -0.4874,
+    "at": "(0.50000,pro,1.04500)",
+    "n_low_gt_1pct": 20,
+    "n_low_ge_3pct": 12,
+    "n_cells_prof_changed": 53,
+    "n_cells_sprof_changed": 55
+   },
+   "TE80": {
+    "min_rel": -0.974,
+    "at": "(0.50000,pro,1.04500)",
+    "n_low_gt_1pct": 18,
+    "n_low_ge_3pct": 9,
+    "n_cells_prof_changed": 54,
+    "n_cells_sprof_changed": 55
+   },
+   "T80": {
+    "min_rel": -0.2543,
+    "at": "(0.50000,pro,1.04500)",
+    "n_low_gt_1pct": 22,
+    "n_low_ge_3pct": 11,
+    "n_cells_prof_changed": 52,
+    "n_cells_sprof_changed": 53
+   }
+  },
+  "worst": {
+   "rel": -0.974,
+   "row": {
+    "name": "shape_A0.50000_th+0.52360_s1.04500_l80_x240_t0.25",
+    "A": "0.50000",
+    "lab": "pro",
+    "s": "1.04500",
+    "u": "1.02303",
+    "readout": "TE80",
+    "D_fixed": "6.95202",
+    "D_prof_parab_old": "0.144313",
+    "s_prof_parab_old": "1.03707",
+    "D_poolmin_new": "5.56072",
+    "s_poolmin_new": "1.03000",
+    "rel_old_minus_new": "-0.974048",
+    "ds_old_minus_new": "0.00707",
+    "low_gt_1pct": 1,
+    "low_ge_3pct": 1,
+    "poolmin_at_boundary_0p985": 0
+   }
+  },
+  "dpi_violations_old_prof": {
+   "shape_A0.50000_th+0.52360_s1.04500_l80_x240_t0.25": [
+    "TE30>TE40",
+    "TE40>TE80",
+    "T80>TE80"
+   ]
+  },
+  "dpi_violations_new_prof": {},
+  "dpi_violations_fixed": {},
+  "boundary_minima": [
+   [
+    "1.00000",
+    "pro",
+    "1.03000",
+    "T80",
+    "23.6673"
+   ],
+   [
+    "2.00000",
+    "pro",
+    "1.07500",
+    "T80",
+    "26.3132"
+   ]
+  ],
+  "max_abs_dsprof": 0.00749,
+  "postcheck_flags_match": true,
+  "n_flags": 9,
+  "flags": [
+   [
+    0.25,
+    "obl",
+    1.03
+   ],
+   [
+    0.25,
+    "pro",
+    1.015
+   ],
+   [
+    0.25,
+    "pro",
+    1.03
+   ],
+   [
+    0.25,
+    "tri",
+    1.03
+   ],
+   [
+    0.5,
+    "pro",
+    1.045
+   ],
+   [
+    0.5,
+    "tri",
+    1.03
+   ],
+   [
+    0.5,
+    "tri",
+    1.06
+   ],
+   [
+    1.0,
+    "pro",
+    1.06
+   ],
+   [
+    2.0,
+    "pro",
+    1.15
+   ]
+  ]
+ },
+ "reproduction_mid_mode": {
+  "v2:TE80_prof vs S3_postcheck.TE80_grid": {
+   "Pj_max": 0.34398,
+   "ref_Pj_max": 0.34398,
+   "L0": 1.075,
+   "ref_L0": 1.075,
+   "mean_span": 0.042232,
+   "ref_mean_span": 0.042232,
+   "max_abs_dPj": 0.0,
+   "max_abs_dPc": 0.0
+  },
+  "v2:TE40_prof vs S3_postcheck.TE40_grid": {
+   "Pj_max": 0.30535,
+   "ref_Pj_max": 0.30535,
+   "L0": 1.075,
+   "ref_L0": 1.075,
+   "mean_span": 0.037677,
+   "ref_mean_span": 0.037677,
+   "max_abs_dPj": 0.0,
+   "max_abs_dPc": 0.0
+  },
+  "v2:TE30_prof vs S3_postcheck.TE30_grid": {
+   "Pj_max": 0.26418,
+   "ref_Pj_max": 0.26418,
+   "L0": 1.0775,
+   "ref_L0": 1.0775,
+   "mean_span": 0.032513,
+   "ref_mean_span": 0.032513,
+   "max_abs_dPj": 0.0,
+   "max_abs_dPc": 0.0
+  },
+  "v2:T80_prof vs S3_postcheck.T80_grid": {
+   "Pj_max": 0.28562,
+   "ref_Pj_max": 0.28562,
+   "L0": 1.0775,
+   "ref_L0": 1.0775,
+   "mean_span": 0.035216,
+   "ref_mean_span": 0.035216,
+   "max_abs_dPj": 0.0,
+   "max_abs_dPc": 0.0
+  },
+  "v2:TE80_fixed vs S3_postcheck.TE80_fixed": {
+   "Pj_max": 0.3597,
+   "ref_Pj_max": 0.3597,
+   "L0": 1.0775,
+   "ref_L0": 1.0775,
+   "mean_span": 0.044197,
+   "ref_mean_span": 0.044197,
+   "max_abs_dPj": 0.0,
+   "max_abs_dPc": 0.0
+  },
+  "old:TE80_prof vs S3_postcheck.TE80_parab": {
+   "Pj_max": 0.3383,
+   "ref_Pj_max": 0.3383,
+   "L0": 1.0825,
+   "ref_L0": 1.0825,
+   "mean_span": 0.041263,
+   "ref_mean_span": 0.041263,
+   "max_abs_dPj": 0.0,
+   "max_abs_dPc": 0.0
+  }
+ }
+}

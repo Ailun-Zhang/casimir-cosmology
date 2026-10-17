@@ -1,0 +1,44 @@
+{
+ "title": "Code and data for: A Casimir turning point as the beginning of a small flat universe",
+ "upload_type": "software",
+ "version": "1.0.0",
+ "publication_date": "2026-10-17",
+ "access_right": "open",
+ "license": "MIT",
+ "creators": [
+  {
+   "name": "Zhang, Alan",
+   "affiliation": "McMaster University; Perimeter Institute for Theoretical Physics",
+   "orcid": "0009-0000-1187-0755"
+  }
+ ],
+ "description": "<p>Code, archived production results and figure scripts that reproduce the numbers and figures of two papers on a small flat universe (cubic three-torus) that begins at a Casimir turning point: <em>Gauge Field Fluctuations Protect the Higgs Vacuum When a Small Universe Begins</em> (Physical Review Letters, in preparation) and <em>A Casimir turning point as the beginning of a small flat universe</em> (Physical Review D, in preparation).</p><p>Four chains of result directories: casimir/ (Standard-Model Casimir weight, gauge/Higgs zero-mode energy, shape Hessian), higgs/ (finite-volume Higgs zero-mode criterion: SM couplings at the turning-point scale, one-loop finite-volume matching, 2D zero-mode model with cross terms, hazard integral, critical top-quark masses and error budget, real-time xi_H condition, robustness, universality, two-branch analysis), shape/ (emptiness gate, real-moment theorem, shape fossil, nonlinear survival, Moyal and Wheeler-DeWitt checks, primordial spectra) and cmb/ (T+E covariance of a three-torus, Fisher information and exact KL divergences, fossil ensemble, joint inflaton-shape state). Every result directory has a quick and a full mode and compares fresh output with the archived production values (expected/) under stated tolerances; python run_all.py --quick reproduces the quick checks and all figures.</p><p>validation/ archives the independent reimplementations of the results (blind and compute-first checks, with their specifications, code and outputs) and compares them with the main calculation; cmb/02_ensemble/data/ ships the l &lt;= 80 CAMB transfer table.</p><p>Code: MIT. Data and text: CC BY 4.0. SMDR 1.3 (tarball shipped unmodified) and the four files derived from it (higgs/01_sm_mapping/c148_fit.c, higgs/zmlib/_smdr_betas.py, validation/sm_mapping/code/drivers/c148_fit_copy.c and smdr_driver.c): GPL-2.0-or-later.</p><p>The companion technical report (<em>Casimir Cosmology: Derivations and Numerical Validation</em>) is deposited as a separate Zenodo record (publication/report, DOI 10.5281/zenodo.23434140), which the papers cite; a copy is included here in docs/technical_report/.</p>",
+ "keywords": [
+  "cosmology",
+  "small universe",
+  "three-torus",
+  "Casimir energy",
+  "null energy condition",
+  "Higgs vacuum stability",
+  "Standard Model",
+  "gauge zero modes",
+  "finite-volume effective potential",
+  "diffusion Monte Carlo",
+  "quantum cosmology",
+  "cosmic topology",
+  "cosmic microwave background",
+  "Fisher information"
+ ],
+ "related_identifiers": [
+  {
+   "identifier": "https://github.com/Ailun-Zhang/casimir-cosmology",
+   "relation": "isSupplementTo",
+   "resource_type": "software"
+  }
+ ],
+ "references": [
+  "A. Zhang, Gauge Field Fluctuations Protect the Higgs Vacuum When a Small Universe Begins, Physical Review Letters (in preparation)",
+  "A. Zhang, A Casimir turning point as the beginning of a small flat universe, Physical Review D (in preparation)",
+  "S.P. Martin and D.G. Robertson, SMDR (Standard Model in Dimensional Regularization) version 1.3, https://www.niu.edu/spmartin/SMDR/, arXiv:1907.02500"
+ ]
+}

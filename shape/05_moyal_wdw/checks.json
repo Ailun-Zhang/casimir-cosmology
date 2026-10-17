@@ -1,0 +1,1046 @@
+{
+ "step": "05_moyal_wdw",
+ "checks": [
+  {
+   "id": "C141_text",
+   "what": "C141 SymPy output identical to the archive",
+   "paper": "PRD App. E 2 (TS-05)",
+   "computed": {
+    "file": "WORK:checks/C141_textcheck.json",
+    "key": "n_diff_lines"
+   },
+   "expected": {
+    "value": 0
+   },
+   "tol_abs": 0.0,
+   "tol_rel": null
+  },
+  {
+   "id": "C160_moyal",
+   "what": "SM Moyal coefficients and relative corrections",
+   "paper": "PRD Sec. VII E (FOS-08..11)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/moyal/C160_moyal.json"
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/moyal/C160_moyal.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ]
+  },
+  {
+   "id": "moyal_aspect",
+   "what": "Moyal correction, aspect variance = -2.03e-4",
+   "paper": "PRD Sec. VII E (FOS-08)",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/moyal/C160_moyal.json",
+    "key": "SM/xi030/rows/0/rel/a_Heff/aspect"
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/moyal/C160_moyal.json",
+    "key": "SM/xi030/rows/0/rel/a_Heff/aspect"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-07
+  },
+  {
+   "id": "C160_moyal_1d",
+   "what": "exact one-mode quantum vs TWA",
+   "paper": "PRD App. E 2 (FOS-13 analogue)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/moyal/C160_moyal_1d.json"
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/moyal/C160_moyal_1d.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-07,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "C160_shear",
+   "what": "shear criterion with quantum volume",
+   "paper": "PRD App. E 2 (NL-17)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/shear/C160_shear_wdw.json"
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/shear/C160_shear_wdw.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-07,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ]
+  },
+  {
+   "id": "C160_b1_zs0",
+   "what": "B1 WDW z_s = 0 set",
+   "paper": "PRD App. E 2 (TS-03, TS-04)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/C160_b1_wdw_zs0.json"
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/C160_b1_wdw_zs0.json"
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "C160_summary",
+   "what": "C160 summary",
+   "paper": "number keys of the papers",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/C160_summary.json"
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/C160_summary.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-07,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds",
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s",
+    "status"
+   ]
+  },
+  {
+   "id": "b1_quick_A_Ai_real@100",
+   "what": "B1 WDW case A_Ai_real@100 (rows: D_re, D_sh, F_in, ...)",
+   "paper": "PRD Sec. VII D (sec:s-equivalent; TS-01/TS-02)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/b1_cases.json",
+    "key": [
+     "cases",
+     "A_Ai_real@100"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/b1_cases_rekeyed.json",
+    "key": [
+     "cases",
+     "A_Ai_real@100"
+    ]
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "quick"
+   ]
+  },
+  {
+   "id": "b1_quick_A_sep_control@100",
+   "what": "B1 WDW case A_sep_control@100 (rows: D_re, D_sh, F_in, ...)",
+   "paper": "PRD Sec. VII D (sec:s-equivalent; TS-01/TS-02)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/b1_cases.json",
+    "key": [
+     "cases",
+     "A_sep_control@100"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/b1_cases_rekeyed.json",
+    "key": [
+     "cases",
+     "A_sep_control@100"
+    ]
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "quick"
+   ]
+  },
+  {
+   "id": "b1_quick_B1_Ai_chi0_plus_Bi_h1_eps1@100",
+   "what": "B1 WDW case B1_Ai_chi0_plus_Bi_h1_eps1@100 (rows: D_re, D_sh, F_in, ...)",
+   "paper": "PRD Sec. VII D (sec:s-equivalent; TS-01/TS-02)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/b1_cases.json",
+    "key": [
+     "cases",
+     "B1_Ai_chi0_plus_Bi_h1_eps1@100"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/b1_cases_rekeyed.json",
+    "key": [
+     "cases",
+     "B1_Ai_chi0_plus_Bi_h1_eps1@100"
+    ]
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "quick"
+   ]
+  },
+  {
+   "id": "b1_quick_A_Ai_real@2282.49",
+   "what": "B1 WDW case A_Ai_real@2282.49 (rows: D_re, D_sh, F_in, ...)",
+   "paper": "PRD Sec. VII D (sec:s-equivalent; TS-01/TS-02)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/b1_cases.json",
+    "key": [
+     "cases",
+     "A_Ai_real@2282.49"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/b1_cases_rekeyed.json",
+    "key": [
+     "cases",
+     "A_Ai_real@2282.49"
+    ]
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "quick"
+   ]
+  },
+  {
+   "id": "b1_full_A_Ai_real@100",
+   "what": "B1 WDW case A_Ai_real@100 (rows: D_re, D_sh, F_in, ...)",
+   "paper": "PRD Sec. VII D (sec:s-equivalent; TS-01/TS-02)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/b1_cases.json",
+    "key": [
+     "cases",
+     "A_Ai_real@100"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/b1_cases_rekeyed.json",
+    "key": [
+     "cases",
+     "A_Ai_real@100"
+    ]
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "b1_full_A_Ai_real@300",
+   "what": "B1 WDW case A_Ai_real@300 (rows: D_re, D_sh, F_in, ...)",
+   "paper": "PRD Sec. VII D (sec:s-equivalent; TS-01/TS-02)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/b1_cases.json",
+    "key": [
+     "cases",
+     "A_Ai_real@300"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/b1_cases_rekeyed.json",
+    "key": [
+     "cases",
+     "A_Ai_real@300"
+    ]
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "b1_full_A_Ai_real@1000",
+   "what": "B1 WDW case A_Ai_real@1000 (rows: D_re, D_sh, F_in, ...)",
+   "paper": "PRD Sec. VII D (sec:s-equivalent; TS-01/TS-02)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/b1_cases.json",
+    "key": [
+     "cases",
+     "A_Ai_real@1000"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/b1_cases_rekeyed.json",
+    "key": [
+     "cases",
+     "A_Ai_real@1000"
+    ]
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "b1_full_A_Ai_real@2282.49",
+   "what": "B1 WDW case A_Ai_real@2282.49 (rows: D_re, D_sh, F_in, ...)",
+   "paper": "PRD Sec. VII D (sec:s-equivalent; TS-01/TS-02)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/b1_cases.json",
+    "key": [
+     "cases",
+     "A_Ai_real@2282.49"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/b1_cases_rekeyed.json",
+    "key": [
+     "cases",
+     "A_Ai_real@2282.49"
+    ]
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "b1_full_A_sep_control@100",
+   "what": "B1 WDW case A_sep_control@100 (rows: D_re, D_sh, F_in, ...)",
+   "paper": "PRD Sec. VII D (sec:s-equivalent; TS-01/TS-02)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/b1_cases.json",
+    "key": [
+     "cases",
+     "A_sep_control@100"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/b1_cases_rekeyed.json",
+    "key": [
+     "cases",
+     "A_sep_control@100"
+    ]
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "b1_full_B1_Ai_chi0_plus_Bi_h1_eps1@100",
+   "what": "B1 WDW case B1_Ai_chi0_plus_Bi_h1_eps1@100 (rows: D_re, D_sh, F_in, ...)",
+   "paper": "PRD Sec. VII D (sec:s-equivalent; TS-01/TS-02)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/b1_cases.json",
+    "key": [
+     "cases",
+     "B1_Ai_chi0_plus_Bi_h1_eps1@100"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/b1_cases_rekeyed.json",
+    "key": [
+     "cases",
+     "B1_Ai_chi0_plus_Bi_h1_eps1@100"
+    ]
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "b1_full_A_sep_control@300",
+   "what": "B1 WDW case A_sep_control@300 (rows: D_re, D_sh, F_in, ...)",
+   "paper": "PRD Sec. VII D (sec:s-equivalent; TS-01/TS-02)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/b1_cases.json",
+    "key": [
+     "cases",
+     "A_sep_control@300"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/b1_cases_rekeyed.json",
+    "key": [
+     "cases",
+     "A_sep_control@300"
+    ]
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "b1_full_B1_Ai_chi0_plus_Bi_h1_eps1@300",
+   "what": "B1 WDW case B1_Ai_chi0_plus_Bi_h1_eps1@300 (rows: D_re, D_sh, F_in, ...)",
+   "paper": "PRD Sec. VII D (sec:s-equivalent; TS-01/TS-02)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/b1_cases.json",
+    "key": [
+     "cases",
+     "B1_Ai_chi0_plus_Bi_h1_eps1@300"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/b1_cases_rekeyed.json",
+    "key": [
+     "cases",
+     "B1_Ai_chi0_plus_Bi_h1_eps1@300"
+    ]
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "b1_full_A_sep_control@1000",
+   "what": "B1 WDW case A_sep_control@1000 (rows: D_re, D_sh, F_in, ...)",
+   "paper": "PRD Sec. VII D (sec:s-equivalent; TS-01/TS-02)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/b1_cases.json",
+    "key": [
+     "cases",
+     "A_sep_control@1000"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/b1_cases_rekeyed.json",
+    "key": [
+     "cases",
+     "A_sep_control@1000"
+    ]
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "b1_full_B1_Ai_chi0_plus_Bi_h1_eps1@1000",
+   "what": "B1 WDW case B1_Ai_chi0_plus_Bi_h1_eps1@1000 (rows: D_re, D_sh, F_in, ...)",
+   "paper": "PRD Sec. VII D (sec:s-equivalent; TS-01/TS-02)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/b1_cases.json",
+    "key": [
+     "cases",
+     "B1_Ai_chi0_plus_Bi_h1_eps1@1000"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/b1_cases_rekeyed.json",
+    "key": [
+     "cases",
+     "B1_Ai_chi0_plus_Bi_h1_eps1@1000"
+    ]
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "b1_full_A_Ai_real_zs5@300",
+   "what": "B1 WDW case A_Ai_real_zs5@300 (rows: D_re, D_sh, F_in, ...)",
+   "paper": "PRD Sec. VII D (sec:s-equivalent; TS-01/TS-02)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/b1_cases.json",
+    "key": [
+     "cases",
+     "A_Ai_real_zs5@300"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/b1_cases_rekeyed.json",
+    "key": [
+     "cases",
+     "A_Ai_real_zs5@300"
+    ]
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "b1_full_A_Ai_real_nb512_bmax16@300",
+   "what": "B1 WDW case A_Ai_real_nb512_bmax16@300 (rows: D_re, D_sh, F_in, ...)",
+   "paper": "PRD Sec. VII D (sec:s-equivalent; TS-01/TS-02)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/b1_cases.json",
+    "key": [
+     "cases",
+     "A_Ai_real_nb512_bmax16@300"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/b1_cases_rekeyed.json",
+    "key": [
+     "cases",
+     "A_Ai_real_nb512_bmax16@300"
+    ]
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "b1_full_A_Ai_real_nb512_bmax12@300",
+   "what": "B1 WDW case A_Ai_real_nb512_bmax12@300 (rows: D_re, D_sh, F_in, ...)",
+   "paper": "PRD Sec. VII D (sec:s-equivalent; TS-01/TS-02)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/b1_cases.json",
+    "key": [
+     "cases",
+     "A_Ai_real_nb512_bmax12@300"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/b1_cases_rekeyed.json",
+    "key": [
+     "cases",
+     "A_Ai_real_nb512_bmax12@300"
+    ]
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "b1_full_A_Ai_real_quadratic@300",
+   "what": "B1 WDW case A_Ai_real_quadratic@300 (rows: D_re, D_sh, F_in, ...)",
+   "paper": "PRD Sec. VII D (sec:s-equivalent; TS-01/TS-02)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/b1_cases.json",
+    "key": [
+     "cases",
+     "A_Ai_real_quadratic@300"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/b1_cases_rekeyed.json",
+    "key": [
+     "cases",
+     "A_Ai_real_quadratic@300"
+    ]
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "b1_full_B2_eps0.3@300",
+   "what": "B1 WDW case B2_eps0.3@300 (rows: D_re, D_sh, F_in, ...)",
+   "paper": "PRD Sec. VII D (sec:s-equivalent; TS-01/TS-02)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/b1_cases.json",
+    "key": [
+     "cases",
+     "B2_eps0.3@300"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/b1_cases_rekeyed.json",
+    "key": [
+     "cases",
+     "B2_eps0.3@300"
+    ]
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "b1_full_B3_Ai_plus_0.7Bi_same_chi0@300",
+   "what": "B1 WDW case B3_Ai_plus_0.7Bi_same_chi0@300 (rows: D_re, D_sh, F_in, ...)",
+   "paper": "PRD Sec. VII D (sec:s-equivalent; TS-01/TS-02)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:r3/shape_tier2/run01/b1/b1_cases.json",
+    "key": [
+     "cases",
+     "B3_Ai_plus_0.7Bi_same_chi0@300"
+    ]
+   },
+   "expected": {
+    "file": "expected/r3/shape_tier2/run01/b1/b1_cases_rekeyed.json",
+    "key": [
+     "cases",
+     "B3_Ai_plus_0.7Bi_same_chi0@300"
+    ]
+   },
+   "tol_abs": 1e-10,
+   "tol_rel": 1e-06,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "runtime_s",
+    "codes_sha256",
+    "inputs_sha256",
+    "provenance_file",
+    "wolfram_receipt",
+    "max_runtime_s",
+    "code",
+    "script",
+    "ewald_sha256",
+    "runtime_mean_s",
+    "runtime_max_s"
+   ],
+   "modes": [
+    "full"
+   ]
+  }
+ ]
+}

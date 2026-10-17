@@ -1,0 +1,177 @@
+{
+ "control_s2": {
+  "lambda_E": 1902.240434238441,
+  "lambda_T2": -893.2028573553907,
+  "Zeff_cube": 421.8271107202713,
+  "table": {
+   "lambda_E": 1902.24,
+   "lambda_T2": -893.2
+  }
+ },
+ "hessians_s1": {
+  "P": {
+   "Z1": -8.91363291758515,
+   "HessE": 9.049713085869845,
+   "HessT2": -2.071527431368736,
+   "trace_over_Z": -1.333333331933225
+  },
+  "AAA": {
+   "Z1": -2.519356152089445,
+   "HessE": -8.42471274949593,
+   "HessT2": 6.736189011147253,
+   "trace_over_Z": -1.3333333326707197
+  }
+ },
+ "next_order": {
+  "gauss": {
+   "E_m": -0.598656687865633,
+   "HessE_m": 7.752526942443346,
+   "HessT2_m": -4.9022816565931455,
+   "E_H": -0.13892875040697944,
+   "HessE_H": 0.5966100637054064,
+   "HessT2_H": -0.3359939312688089,
+   "cases": {
+    "LO": {
+     "xi": 0.299897,
+     "kappa_E": 19.324025055453024,
+     "kappa_T2": -9.073628553458366,
+     "delta": 0.00020771720466629355,
+     "sigma_E_leading": 0.10406266318944556,
+     "sigma_E_plateau": 0.10372515883955875,
+     "typical_side_difference": 0.17903323134992788,
+     "circle_bound": 1.0930249383746988,
+     "window_upper_edge": 1.1333018341250003,
+     "shortest_cycle_edge": 1.0212962828396572,
+     "sigma_ratio_to_LO": 1.0
+    },
+    "energy_only": {
+     "xi": 0.2826395115580513,
+     "kappa_E": 18.859140620310413,
+     "kappa_T2": -8.855341282940776,
+     "delta": 0.00020395797885643392,
+     "sigma_E_leading": 0.0997697395961123,
+     "sigma_E_plateau": 0.0994461583992765,
+     "typical_side_difference": 0.17104979864276948,
+     "circle_bound": 1.0883427232153964,
+     "window_upper_edge": 1.1279748505511409,
+     "shortest_cycle_edge": 1.020868890004038,
+     "sigma_ratio_to_LO": 0.9587467448769976
+    },
+    "hessian_only": {
+     "xi": 0.299897,
+     "kappa_E": 18.486932238444915,
+     "kappa_T2": -8.548433809992202,
+     "delta": 0.00020771720466629355,
+     "sigma_E_leading": 0.09803842986626342,
+     "sigma_E_plateau": 0.09772046379157534,
+     "typical_side_difference": 0.1678454464530177,
+     "circle_bound": 1.0864600950457717,
+     "window_upper_edge": 1.125833546873205,
+     "shortest_cycle_edge": 1.020696525097305,
+     "sigma_ratio_to_LO": 0.9421095603500456
+    },
+    "both": {
+     "xi": 0.2826395115580513,
+     "kappa_E": 18.042186020898278,
+     "kappa_T2": -8.342781322391499,
+     "delta": 0.00020395797885643392,
+     "sigma_E_leading": 0.09407925770488067,
+     "sigma_E_plateau": 0.09377413233391343,
+     "typical_side_difference": 0.160550622795806,
+     "circle_bound": 1.08216711641148,
+     "window_upper_edge": 1.1209519416181453,
+     "shortest_cycle_edge": 1.0203023597272558,
+     "sigma_ratio_to_LO": 0.9040635211652218
+    },
+    "both_without_Higgs": {
+     "xi": 0.28589006556846913,
+     "kappa_E": 18.182956977737707,
+     "kappa_T2": -8.413783752221523,
+     "delta": 0.0002046538917264765,
+     "sigma_E_leading": 0.09520468517556825,
+     "sigma_E_plateau": 0.09489590972824127,
+     "typical_side_difference": 0.16261958902331108,
+     "circle_bound": 1.0833857025987292,
+     "window_upper_edge": 1.1223374381304174,
+     "shortest_cycle_edge": 1.0204144044975676,
+     "sigma_ratio_to_LO": 0.9148784228426732
+    }
+   }
+  },
+  "virial_SU3": {
+   "E_m": -0.6210857853874971,
+   "HessE_m": 7.902438221410556,
+   "HessT2_m": -4.992254021468094,
+   "E_H": -0.13892875040697944,
+   "HessE_H": 0.5966100637054064,
+   "HessT2_H": -0.3359939312688089,
+   "cases": {
+    "LO": {
+     "xi": 0.299897,
+     "kappa_E": 19.324025055453024,
+     "kappa_T2": -9.073628553458366,
+     "delta": 0.00020771720466629355,
+     "sigma_E_leading": 0.10406266318944556,
+     "sigma_E_plateau": 0.10372515883955875,
+     "typical_side_difference": 0.17903323134992788,
+     "circle_bound": 1.0930249383746988,
+     "window_upper_edge": 1.1333018341250003,
+     "shortest_cycle_edge": 1.0212962828396572,
+     "sigma_ratio_to_LO": 1.0
+    },
+    "energy_only": {
+     "xi": 0.2821147318224949,
+     "kappa_E": 18.84535421051125,
+     "kappa_T2": -8.848867850969725,
+     "delta": 0.00020384614560725858,
+     "sigma_E_leading": 0.09964437204304154,
+     "sigma_E_plateau": 0.09932119744827798,
+     "typical_side_difference": 0.17081747019067328,
+     "circle_bound": 1.0882062889036812,
+     "window_upper_edge": 1.1278196589217535,
+     "shortest_cycle_edge": 1.0208564087210994,
+     "sigma_ratio_to_LO": 0.9575420135235195
+    },
+    "hessian_only": {
+     "xi": 0.299897,
+     "kappa_E": 18.47190198385459,
+     "kappa_T2": -8.53941309080762,
+     "delta": 0.00020771720466629355,
+     "sigma_E_leading": 0.09793262517071136,
+     "sigma_E_plateau": 0.09761500225027181,
+     "typical_side_difference": 0.16764990496203147,
+     "circle_bound": 1.0863451485472329,
+     "window_upper_edge": 1.125702817254109,
+     "shortest_cycle_edge": 1.0206859914439868,
+     "sigma_ratio_to_LO": 0.9410928201253653
+    },
+    "both": {
+     "xi": 0.2821147318224949,
+     "kappa_E": 18.01433887757005,
+     "kappa_T2": -8.327885312937646,
+     "delta": 0.00020384614560725858,
+     "sigma_E_leading": 0.09386376560631973,
+     "sigma_E_plateau": 0.09355933913655684,
+     "typical_side_difference": 0.16015488607225747,
+     "circle_bound": 1.0819339430729793,
+     "window_upper_edge": 1.1206868462210284,
+     "shortest_cycle_edge": 1.020280905867886,
+     "sigma_ratio_to_LO": 0.9019927294714841
+    },
+    "both_without_Higgs": {
+     "xi": 0.28536528583291276,
+     "kappa_E": 18.154879793592794,
+     "kappa_T2": -8.398767846044636,
+     "delta": 0.0002045411664271553,
+     "sigma_E_leading": 0.09498546572555375,
+     "sigma_E_plateau": 0.09467740126827538,
+     "typical_side_difference": 0.16221629075862243,
+     "circle_bound": 1.0831482294111738,
+     "window_upper_edge": 1.1220674272552273,
+     "shortest_cycle_edge": 1.020392579552323,
+     "sigma_ratio_to_LO": 0.9127718128127587
+    }
+   }
+  }
+ }
+}

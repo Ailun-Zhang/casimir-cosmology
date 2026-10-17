@@ -1,0 +1,26 @@
+2026-10-15T05:19:32Z start 24 tasks pid 75836 args {'mode': 'run', 'tx': '-0.38,-0.3,-0.2', 'dirs': 'fwd', 'n0': 0, 'n1': 256, 'shard': 32, 'workers': 4, 'tag': 'R12', 'xi': 0.3, 'rtol': 1e-12, 'conv': 'canonical'}
+05:19:43 done 1/24 R12_tx-0.380_fwd_00096.json 8.8s
+05:19:43 done 2/24 R12_tx-0.380_fwd_00032.json 9.4s
+05:19:43 done 3/24 R12_tx-0.380_fwd_00000.json 9.5s
+05:19:45 done 4/24 R12_tx-0.380_fwd_00064.json 11.3s
+05:19:52 done 5/24 R12_tx-0.380_fwd_00192.json 9.2s
+05:19:53 done 6/24 R12_tx-0.380_fwd_00160.json 10.0s
+05:19:54 done 7/24 R12_tx-0.380_fwd_00128.json 11.4s
+05:19:56 done 8/24 R12_tx-0.380_fwd_00224.json 10.6s
+05:20:00 done 9/24 R12_tx-0.300_fwd_00000.json 7.7s
+05:20:00 done 10/24 R12_tx-0.300_fwd_00032.json 7.4s
+05:20:02 done 11/24 R12_tx-0.300_fwd_00064.json 8.3s
+05:20:04 done 12/24 R12_tx-0.300_fwd_00096.json 8.0s
+05:20:07 done 13/24 R12_tx-0.300_fwd_00128.json 6.9s
+05:20:08 done 14/24 R12_tx-0.300_fwd_00160.json 7.7s
+05:20:10 done 15/24 R12_tx-0.300_fwd_00192.json 8.1s
+05:20:12 done 16/24 R12_tx-0.300_fwd_00224.json 8.7s
+05:20:14 done 17/24 R12_tx-0.200_fwd_00000.json 7.3s
+05:20:15 done 18/24 R12_tx-0.200_fwd_00032.json 7.2s
+05:20:18 done 19/24 R12_tx-0.200_fwd_00064.json 7.7s
+05:20:20 done 20/24 R12_tx-0.200_fwd_00096.json 7.9s
+05:20:21 done 21/24 R12_tx-0.200_fwd_00128.json 7.4s
+05:20:22 done 22/24 R12_tx-0.200_fwd_00160.json 6.9s
+05:20:26 done 23/24 R12_tx-0.200_fwd_00192.json 7.6s
+05:20:27 done 24/24 R12_tx-0.200_fwd_00224.json 6.8s
+2026-10-15T05:20:27Z ALL DONE

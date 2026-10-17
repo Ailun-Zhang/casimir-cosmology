@@ -1,0 +1,357 @@
+{
+ "step": "03_shape_hessian",
+ "checks": [
+  {
+   "id": "S2_trace_8_3",
+   "what": "shape-Laplacian eigenvalue at p = -2: 8/3 (trace identity)",
+   "paper": "PRD Eq. eq:s-Hesstrace; App. E 1",
+   "computed": {
+    "file": "WORK:fu/C73/C73_symbolic.json",
+    "key": "S2/values/-2"
+   },
+   "expected": {
+    "file": "expected/fu/C73/C73_symbolic.json",
+    "key": "S2/values/-2"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "S2_general_p",
+   "what": "eigenvalue 4p(2p+3)/3",
+   "paper": "PRD App. E 1",
+   "computed": {
+    "file": "WORK:fu/C73/C73_symbolic.json",
+    "key": [
+     "S2",
+     "Delta q^p / q^p (q=n^T G n)"
+    ]
+   },
+   "expected": {
+    "file": "expected/fu/C73/C73_symbolic.json",
+    "key": [
+     "S2",
+     "Delta q^p / q^p (q=n^T G n)"
+    ]
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "S5_DeltaU",
+   "what": "Delta U = (8/3)[U - Q - 3N/2] (residual 0)",
+   "paper": "PRD Eq. eq:s-nogo; App. E 1",
+   "computed": {
+    "file": "WORK:fu/C73/C73_symbolic.json",
+    "key": [
+     "S5",
+     "Delta U - (8/3)[U - Q - 3N/2] (Phi=0)"
+    ]
+   },
+   "expected": {
+    "file": "expected/fu/C73/C73_symbolic.json",
+    "key": [
+     "S5",
+     "Delta U - (8/3)[U - Q - 3N/2] (Phi=0)"
+    ]
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "S5_sum_kappa",
+   "what": "sum kappa = 8/(1 - xi)",
+   "paper": "PRD Sec. VII C",
+   "computed": {
+    "file": "WORK:fu/C73/C73_symbolic.json",
+    "key": [
+     "S5",
+     "sum kappa with Q=rC, N=0"
+    ]
+   },
+   "expected": {
+    "file": "expected/fu/C73/C73_symbolic.json",
+    "key": [
+     "S5",
+     "sum kappa with Q=rC, N=0"
+    ]
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "S6_hypergeometric",
+   "what": "gain ODE is hypergeometric (residual 0)",
+   "paper": "PRD Eq. eq:s-gain",
+   "computed": {
+    "file": "WORK:fu/C73/C73_symbolic.json",
+    "key": [
+     "S6",
+     "chain-rule ODE minus 4z(1-z)*hypergeometric operator"
+    ]
+   },
+   "expected": {
+    "file": "expected/fu/C73/C73_symbolic.json",
+    "key": [
+     "S6",
+     "chain-rule ODE minus 4z(1-z)*hypergeometric operator"
+    ]
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "C73_gain",
+   "what": "gain closed form / 2F1 / ODE and guaranteed lower bounds",
+   "paper": "PRD Sec. VII B (Eq. eq:s-gain)",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:fu/C73/C73_gain.json"
+   },
+   "expected": {
+    "file": "expected/fu/C73/C73_gain.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds"
+   ]
+  },
+  {
+   "id": "gain_lower_bound",
+   "what": "guaranteed aspect gain 4.500465 (free fields)",
+   "paper": "PRD Sec. VII B (NOGO-11)",
+   "computed": {
+    "file": "WORK:fu/C73/C73_gain.json",
+    "key": "lower_bounds/0/G via ODE"
+   },
+   "expected": {
+    "file": "expected/fu/C73/C73_gain.json",
+    "key": "lower_bounds/0/G via ODE"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-08
+  },
+  {
+   "id": "C83",
+   "what": "next-order shape Hessian and stiffnesses",
+   "paper": "PRD Sec. IV B; App. B 2; App. E 1",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:fu/C83/C83_results.json"
+   },
+   "expected": {
+    "file": "expected/fu/C83/C83_results.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-09,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds"
+   ]
+  },
+  {
+   "id": "kappaE_LO",
+   "what": "kappa_E = 19.324 (xi = 0.2999)",
+   "paper": "PRD App. B 2 (NOGO-05)",
+   "computed": {
+    "file": "WORK:fu/C83/C83_results.json",
+    "key": "next_order/gauss/cases/LO/kappa_E"
+   },
+   "expected": {
+    "file": "expected/fu/C83/C83_results.json",
+    "key": "next_order/gauss/cases/LO/kappa_E"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "kappaE_next",
+   "what": "next-order kappa_E = 18.04",
+   "paper": "PRD Sec. IV B; App. B 2 (NOGO-07)",
+   "computed": {
+    "file": "WORK:fu/C83/C83_results.json",
+    "key": "next_order/gauss/cases/both/kappa_E"
+   },
+   "expected": {
+    "file": "expected/fu/C83/C83_results.json",
+    "key": "next_order/gauss/cases/both/kappa_E"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "kappaT2_next",
+   "what": "next-order kappa_T2 = -8.34",
+   "paper": "PRD App. B 2 (NOGO-07)",
+   "computed": {
+    "file": "WORK:fu/C83/C83_results.json",
+    "key": "next_order/gauss/cases/both/kappa_T2"
+   },
+   "expected": {
+    "file": "expected/fu/C83/C83_results.json",
+    "key": "next_order/gauss/cases/both/kappa_T2"
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09
+  },
+  {
+   "id": "C73_thermo",
+   "what": "Gibbs / fixed-entropy shape Laplacian tests",
+   "paper": "PRD Eq. eq:s-nogo; App. E 1",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:fu/C73/C73_thermo.json"
+   },
+   "expected": {
+    "file": "expected/fu/C73/C73_thermo.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "C73_zeta",
+   "what": "Z_G(1;theta), s=1 Laplacian eigenvalues, C57 s=2 cross-check",
+   "paper": "PRD App. E 1",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:fu/C73/C73_zeta.json"
+   },
+   "expected": {
+    "file": "expected/fu/C73/C73_zeta.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds"
+   ],
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "C73_abelian_ratio",
+   "what": "abelian zero-point Laplacian ratio (mpmath string, must match)",
+   "paper": "PRD App. E 1",
+   "computed": {
+    "file": "WORK:fu/C73/C73_abelian_zeropoint.json",
+    "key": [
+     "Delta E_zp / E_zp (numeric)"
+    ]
+   },
+   "expected": {
+    "file": "expected/fu/C73/C73_abelian_zeropoint.json",
+    "key": [
+     "Delta E_zp / E_zp (numeric)"
+    ]
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09,
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "C73_abelian_trW",
+   "what": "Delta trW / trW = -4/3 (mpmath string)",
+   "paper": "PRD App. E 1",
+   "computed": {
+    "file": "WORK:fu/C73/C73_abelian_zeropoint.json",
+    "key": [
+     "Delta trW / trW (expected -4/3)"
+    ]
+   },
+   "expected": {
+    "file": "expected/fu/C73/C73_abelian_zeropoint.json",
+    "key": [
+     "Delta trW / trW (expected -4/3)"
+    ]
+   },
+   "tol_abs": null,
+   "tol_rel": 1e-09,
+   "modes": [
+    "full"
+   ]
+  },
+  {
+   "id": "C73_toy",
+   "what": "four-level toy reproduction",
+   "paper": "PRD App. E 1",
+   "mode": "tree",
+   "computed": {
+    "file": "WORK:fu/C73/C73_codex_toy_repro.json"
+   },
+   "expected": {
+    "file": "expected/fu/C73/C73_codex_toy_repro.json"
+   },
+   "tol_abs": 1e-12,
+   "tol_rel": 1e-08,
+   "ignore": [
+    "code_sha256",
+    "source_sha256",
+    "script",
+    "created",
+    "wall_s",
+    "runtime_s",
+    "time_s",
+    "elapsed_s",
+    "seconds",
+    "description",
+    "wall_seconds",
+    "cpu_seconds"
+   ],
+   "modes": [
+    "full"
+   ]
+  }
+ ]
+}

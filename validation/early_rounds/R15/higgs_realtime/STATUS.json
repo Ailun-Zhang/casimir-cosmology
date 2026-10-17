@@ -1,0 +1,20 @@
+{
+  "agent": "r15-realtime",
+  "task": "R15 independent check of D111 (Higgs late-turn realtime) + extra item 4 (xi_c with C144 U_eff)",
+  "status": "complete",
+  "completed": "2026-10-14",
+  "report": "07_reviews/R15_v12_round2/higgs_realtime/R15_D111_INDEPENDENT_CHECK_CN.md",
+  "verdicts": {
+    "item1_measure": "PASS (Gaussian w0 definition note)",
+    "item2_Psurv_xic": "PASS-with-corrections (lambda(1/L) column = frozen at u=7, undocumented; running reading gives xi_c(172.2)=0.041)",
+    "item3_usw": "PASS-with-corrections (lambda(phi) column varies 2.8e-3 at xi=0.04 over usw 5.5-6.5; D111 says <=2e-4)",
+    "item4_C144_xic_172.6": "PASS (mine 0.0748/0.0698 -> 0.0723+-0.0025 vs producer 0.0746/0.0695 -> 0.072+-0.003; Psurv(1/6)=0.8568 vs 0.8567)"
+  },
+  "numbers": {
+    "MU_xi_c_usw6": {"172.2": {"phi": 0.0589, "Lfrz7": 0.0501, "L_running": 0.0408}, "172.6": {"phi": 0.120, "Lfrz7": 0.1194, "L_running": 0.1188}},
+    "D111": {"172.2": {"phi": 0.058, "L": 0.050}, "172.6": {"phi": 0.121, "L": 0.119}},
+    "item1": {"Phaz_inf": 0.47706, "w0_b12": 1.0019, "w0_gauss_0.5_1_2": [0.534, 0.743, 0.857]}
+  },
+  "independence": "D111 code/results and C144_xi.json opened only after own numbers were computed",
+  "tool_calls_used_after_resume": 19
+}

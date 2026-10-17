@@ -1,0 +1,264 @@
+{
+ "note": "dm_c := dlam_b/|S| (producer sign convention: + means critical m_t up), S=-0.006592",
+ "mu0": {
+  "mu0_0.5": {
+   "full": 0.0011384203615805496,
+   "yt": 0.0008988725799830566,
+   "lam": 0.00024502890909123935,
+   "g3": 1.0781056499596306e-05,
+   "g2_gY": -1.723343251558429e-05,
+   "yt_QCD_tower": 0.0003648557174072229,
+   "yt_nonQCD": 0.0005340168625758337,
+   "sum_linear": 0.001137449113058308,
+   "alpha_s_dec_at_Mt_variant": 0.0011271728243645949,
+   "alpha_GF_check(own recompute - mr)": 0.0,
+   "dm_c_GeV": {
+    "full": 0.17269726358928242,
+    "yt": 0.13635809769160445,
+    "lam": 0.03717064761699626,
+    "g3": 0.0016354758039436145,
+    "g2_gY": -0.0026142949811262576,
+    "yt_QCD_tower": 0.055348258101823866,
+    "yt_nonQCD": 0.0810098395897806,
+    "sum_linear": 0.1725499261314181,
+    "alpha_s_dec_at_Mt_variant": 0.17099102311356112
+   },
+   "couplings_back_at_Mt_minus_central": {
+    "lam": 0.00016089427369880838,
+    "yt": -0.0007903770745126826,
+    "g2": -3.18765551694522e-05,
+    "gY": -8.403239149379349e-05,
+    "g3": 2.5609619029420827e-05
+   }
+  },
+  "mu0_0.707": {
+   "full": 0.0006804556167179839,
+   "yt": 0.0004924067921522716,
+   "lam": 0.0001892254804225224,
+   "g3": 6.961152455707553e-06,
+   "g2_gY": -8.536534706045026e-06,
+   "yt_QCD_tower": 0.00019119211190113394,
+   "yt_nonQCD": 0.0003012146802511377,
+   "sum_linear": 0.0006800568903244566,
+   "alpha_s_dec_at_Mt_variant": 0.0006732312803669968,
+   "alpha_GF_check(own recompute - mr)": 0.0,
+   "dm_c_GeV": {
+    "full": 0.10322445641959709,
+    "yt": 0.07469763230465286,
+    "lam": 0.028705321666037988,
+    "g3": 0.0010560000691303933,
+    "g2_gY": -0.0012949840270092578,
+    "yt_QCD_tower": 0.029003657751992408,
+    "yt_nonQCD": 0.04569397455266046,
+    "sum_linear": 0.10316397001281198,
+    "alpha_s_dec_at_Mt_variant": 0.10212853160907112
+   },
+   "couplings_back_at_Mt_minus_central": {
+    "lam": 0.00012428309340151156,
+    "yt": -0.0004327426469800111,
+    "g2": -1.684549233693655e-05,
+    "gY": -3.969334430359295e-05,
+    "g3": 1.6535494711922283e-05
+   }
+  },
+  "mu0_1.414": {
+   "full": -0.0009920476428905475,
+   "yt": -0.0005900293131744332,
+   "lam": -0.0004017941438277991,
+   "g3": -9.961137731287484e-06,
+   "g2_gY": 8.698661577467848e-06,
+   "yt_QCD_tower": -0.00020886030453845343,
+   "yt_nonQCD": -0.00038116900863597973,
+   "sum_linear": -0.0009930859331560519,
+   "alpha_s_dec_at_Mt_variant": -0.0009817822648282518,
+   "alpha_GF_check(own recompute - mr)": 0.0,
+   "dm_c_GeV": {
+    "full": -0.1504926642734447,
+    "yt": -0.08950687396456813,
+    "lam": -0.06095178152727535,
+    "g3": -0.0015110949228288053,
+    "g2_gY": 0.0013195785159993703,
+    "yt_QCD_tower": -0.03168390542148869,
+    "yt_nonQCD": -0.05782296854307945,
+    "sum_linear": -0.1506501718986729,
+    "alpha_s_dec_at_Mt_variant": -0.14893541638778093
+   },
+   "couplings_back_at_Mt_minus_central": {
+    "lam": -0.0002646025865360724,
+    "yt": 0.0005178062899406921,
+    "g2": 1.981087639868484e-05,
+    "gY": 3.561052398903808e-05,
+    "g3": -2.366026081968009e-05
+   }
+  },
+  "mu0_2": {
+   "full": -0.0023587294650500284,
+   "yt": -0.0012899237795694542,
+   "lam": -0.001069920721889453,
+   "g3": -2.2717260447708762e-05,
+   "g2_gY": 1.786118528179087e-05,
+   "yt_QCD_tower": -0.0004364836887116759,
+   "yt_nonQCD": -0.0008534400908577783,
+   "sum_linear": -0.002364700576624825,
+   "alpha_s_dec_at_Mt_variant": -0.002335427910048496,
+   "alpha_GF_check(own recompute - mr)": 0.0,
+   "dm_c_GeV": {
+    "full": -0.35781696981948247,
+    "yt": -0.19568018500750217,
+    "lam": -0.1623059347526476,
+    "g3": -0.003446186354324752,
+    "g2_gY": 0.002709524466291091,
+    "yt_QCD_tower": -0.06621415180698967,
+    "yt_nonQCD": -0.1294660332005125,
+    "sum_linear": -0.35872278164818344,
+    "alpha_s_dec_at_Mt_variant": -0.35428214654861895
+   },
+   "couplings_back_at_Mt_minus_central": {
+    "lam": -0.0007067325027427795,
+    "yt": 0.001131002735053177,
+    "g2": 4.3696431983986095e-05,
+    "gY": 6.760502955477365e-05,
+    "g3": -5.395694417531516e-05
+   }
+  }
+ },
+ "lambda3_QCD_Buttazzo_fn5": {
+  "value_at_Mt": -0.0001530761890486916,
+  "dlam_b": -0.00023262102406139233,
+  "dm_c_GeV": -0.03528838350445879
+ },
+ "Beneke2016_passages": [
+  {
+   "page": 1,
+   "text": "Including an estimate of the internal bottom and charm quark mass e\ufb00ect, we conclude that this uncertainty is around 110 MeV."
+  },
+  {
+   "page": 1,
+   "text": "We furth er estimate the additional contribution to the mass relation from the \ufb01ve-loop correct ion and beyond to be around 300 MeV."
+  },
+  {
+   "page": 2,
+   "text": "If the series is treated as an asymptotic expansion, the ambiguity in its resummation is of order of a typical hadronic scale."
+  },
+  {
+   "page": 3,
+   "text": "The ambiguity in de\ufb01ning the pole mass is therefore of similar size."
+  },
+  {
+   "page": 3,
+   "text": "2) With this behaviour the series of mass corrections reaches a minimal term of order m (2b0)n\u03b1 n+1 s n! \u2248 m \u03b1 s n\u2212 n ( \u221a 2\u03c0n n+1/ 2e\u2212 n) \u2248 m \u221a \u03c0\u03b1 s b0 exp ( \u2212 1 2b0\u03b1 s ) \u2248 \u221a \u03c0\u03b1 s b0 \u039b QCD, (2."
+  },
+  {
+   "page": 4,
+   "text": "A commonly used procedure is to de\ufb01ne this ambiguity to be equal to the im aginary part of the integral divided by Pi (see, e."
+  },
+  {
+   "page": 4,
+   "text": "8) In the range of \u03b1 s values considered in this paper, the ambiguity is close to th e size of the smallest term in ( 2."
+  },
+  {
+   "page": 4,
+   "text": "1 It can be shown [ 7] that while the precise asymptotic behaviour of the mass con version formula di\ufb00ers from the simple ansatz employed in this secti on for illustration, as discussed below, the ambiguity is exactly proportional to \u039b QCD, which evaluates to about 250 MeV in the MS scheme."
+  },
+  {
+   "page": 4,
+   "text": "8), for the following reason: The typical width of the region w here the minimal term is attained grows parametrically as \u221a 1/ (2b0\u03b1 s)."
+  },
+  {
+   "page": 4,
+   "text": "The accuracy of an asymptotic series is better estimated by the minimal term times the factor accounting for the numbe r of terms in this region, which makes (2."
+  },
+  {
+   "page": 4,
+   "text": "In case of doubt, the estimate from the ambiguity of the Borel integral should be the prefer red choice."
+  },
+  {
+   "page": 10,
+   "text": "4 The mP \u2013 m conversion factor to all orders and the ultimate top pole mass uncertainty In the following we use two methods to estimate the remainder of the mass conversion rela- tion beyond the exactly known four-loop accuracy and to esti mate the intrinsic ambiguity of summing the assumed asymptotic expansion."
+  },
+  {
+   "page": 10,
+   "text": "The \ufb01rst relie s on truncation of the expan- sion and an estimate of the minimal term."
+  },
+  {
+   "page": 11,
+   "text": "066 (ambiguity) GeV , (4.7) where we show the error due to the uncertainty in the normaliz ation N , the four-loop coef- \ufb01cient c4, and \u03b1 s(MZ )."
+  },
+  {
+   "page": 11,
+   "text": "For the irreducible renormalon ambiguity we tentatively e stimate the size of the \ufb01rst omitted term by the value of \u2206( n0 \u2212 1/ 2)."
+  },
+  {
+   "page": 12,
+   "text": "00041 (ambiguity) ."
+  },
+  {
+   "page": 12,
+   "text": "This procedure is known to usually give a reliable estima te [ 18], close to the sum to the minimal term and the estimate of the summation ambiguity by the smallest term in the series."
+  },
+  {
+   "page": 12,
+   "text": "071 (ambiguity) GeV , (4."
+  },
+  {
+   "page": 12,
+   "text": "00043 (ambiguity)."
+  },
+  {
+   "page": 13,
+   "text": "The ultimate uncertainty on the top quark pole mass, which we identify with the ambiguity of about 70 MeV, is smaller than estimates from the large-nl limit, because the normalization N is smaller."
+  },
+  {
+   "page": 13,
+   "text": "We also note that dividing the imaginary part of t he Borel integral by Pi to obtain the ambiguity is a convention that ha s proven reliable in contexts where the quantity in question is amenable of a non-perturba tive de\ufb01nition [ 18]."
+  },
+  {
+   "page": 13,
+   "text": "The dividing-by-Pi convention therefore appears reasonable, since, if the ima ginary part of the Borel transform was instead used to estimate the ambiguity, it would be almos t as large as the known four- loop term, where the series is clearly still in the regime of d ecreasing terms."
+  },
+  {
+   "page": 13,
+   "text": "We observe that, in any case, even if the ambiguity were taken to be the im aginary part of the Borel integral itself, the resulting estimate of would still be si gni\ufb01cantly below the uncertainty that can conceivably be achieved at hadron colliders."
+  },
+  {
+   "page": 13,
+   "text": "Furthermore, the minimal term is attained when the typical loop momentum i s of order \u039b QCD, hence the ambiguity should be determined by \u039b -parameter \u039b (3) QCD in the three-\ufb02avour scheme, exclud- ing the bottom and charm quark."
+  },
+  {
+   "page": 14,
+   "text": "(c) Beyond \ufb01ve loops, the remainder and the ambiguity is calculated acc ording to ( 4."
+  },
+  {
+   "page": 14,
+   "text": "The sum of (b) and (c) adds another 53 MeV to the top pole mass, s uch that the total mass e\ufb00ect is estimated to be 80 MeV."
+  },
+  {
+   "page": 14,
+   "text": "The 30 MeV error estimate aris es from an estimate of the neglected mass e\ufb00ect on c4 by extrapolation from the known lower orders."
+  },
+  {
+   "page": 14,
+   "text": "108 (ambiguity) GeV , (5."
+  },
+  {
+   "page": 14,
+   "text": "Apart from the shift of the value of \u03b4(5+)mP the ambiguity has increased to 108 MeV, which is mainly due to the fact that \u039b (3) QCD is larger than \u039b (5) QCD."
+  },
+  {
+   "page": 14,
+   "text": "Note that the ambiguity is independent of the precise value of the bottom and charm mass , as long as mb, m c \u226b \u039b QCD."
+  },
+  {
+   "page": 15,
+   "text": "00066 (ambiguity)."
+  },
+  {
+   "page": 15,
+   "text": "For the case of the top quark we \ufb01nd about 300 MeV for the for- mer, including an estimate of the e\ufb00ect of the internal botto m and charm quark mass, and 110 MeV for the ambiguity, which also represents the ultimate pr ecision that can be obtained for the pole mass."
+  },
+  {
+   "page": 16,
+   "text": "Beneke, More on ambiguities in the pole mass , Phys."
+  }
+ ]
+}
