@@ -30,7 +30,7 @@ Machine of record: Intel64 Family 6 Model 204 Stepping 2, GenuineIntel, 16 CPUs,
 ## Results → paper
 | Paper location | number (id) | output : key | archived source |
 |---|---|---|---|
-| PRD Sec. VII F, Fig. 6; report Table 22 (Sec. 15) | survival vs s (NL-01) | `r2/shape_nonlinear_threshold/run01/C142_summary.json` : `sets/amp_s*/survival` | `04_calculations/results/20261013_claude_v12_r2/shape_nonlinear_threshold/run01/C142_summary.json` |
+| PRD Sec. VII F, Fig. 6; report Table 27 (Sec. 15) | survival vs s (NL-01) | `r2/shape_nonlinear_threshold/run01/C142_summary.json` : `sets/amp_s*/survival` | `04_calculations/results/20261013_claude_v12_r2/shape_nonlinear_threshold/run01/C142_summary.json` |
 | PRD Sec. VII F | s₅₀, s₉₀ (N = 256) | same : `amp_threshold/*` | same |
 | PRD Sec. VII F | s₉₉ = 2.756 (MC 95 % 2.66–2.90), logistic 2.863 (boot 2.74–2.96); next order 3.160 / 3.294 (NL-06, 07, 09) | `r3/shape_hardening/run02/C153_run02_summary.json` : `lo_amp/s99_loglinear/central`, `lo_amp/s99_logistic_in_ln_s/s99`, `nx_amp/*` | `.../20261014_claude_v12_r3/shape_hardening/run02/C153_run02_summary.json` (shipped in `../02/expected`) |
 | PRD Sec. VII F | survival 0.9976 / 0.9834 / 0.9536 at s = 2.5 / 3.0 / 3.5 (N = 2048) (NL-03) | same : `lo_amp/rows[*]/p` | same |

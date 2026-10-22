@@ -1,0 +1,158 @@
+{
+ "-0.0001": {
+  "max_dU_dr": -0.29745825698635286,
+  "r_at_max_dU": 2.174,
+  "n_positive_slope": 0,
+  "barrier": {
+   "has_well": false,
+   "has_barrier": false
+  },
+  "r_max": 16.0,
+  "max_dV_slope": -0.002194003729925131
+ },
+ "-0.0005": {
+  "max_dU_dr": -0.30028488877902504,
+  "r_at_max_dU": 2.146,
+  "n_positive_slope": 0,
+  "barrier": {
+   "has_well": false,
+   "has_barrier": false
+  },
+  "r_max": 16.0,
+  "max_dV_slope": -0.0021826241159738427
+ },
+ "-0.001": {
+  "max_dU_dr": -0.3036462501716528,
+  "r_at_max_dU": 2.118,
+  "n_positive_slope": 0,
+  "barrier": {
+   "has_well": false,
+   "has_barrier": false
+  },
+  "r_max": 16.0,
+  "max_dV_slope": -0.002168399597613764
+ },
+ "-0.002": {
+  "max_dU_dr": -0.30989566494731946,
+  "r_at_max_dU": 2.068,
+  "n_positive_slope": 0,
+  "barrier": {
+   "has_well": false,
+   "has_barrier": false
+  },
+  "r_max": 16.0,
+  "max_dV_slope": -0.002139950557788187
+ },
+ "-0.004": {
+  "max_dU_dr": -0.32096805277232576,
+  "r_at_max_dU": 1.994,
+  "n_positive_slope": 0,
+  "barrier": {
+   "has_well": false,
+   "has_barrier": false
+  },
+  "r_max": 16.0,
+  "max_dV_slope": -0.0020830524658172747
+ },
+ "-0.006": {
+  "max_dU_dr": -0.3306717473569414,
+  "r_at_max_dU": 1.938,
+  "n_positive_slope": 0,
+  "barrier": {
+   "has_well": false,
+   "has_barrier": false
+  },
+  "r_max": 16.0,
+  "max_dV_slope": -0.0020261543573748676
+ },
+ "-0.008": {
+  "max_dU_dr": -0.33937952938731897,
+  "r_at_max_dU": 1.894,
+  "n_positive_slope": 0,
+  "barrier": {
+   "has_well": false,
+   "has_barrier": false
+  },
+  "r_max": 16.0,
+  "max_dV_slope": -0.0019692562324720715
+ },
+ "-0.01": {
+  "max_dU_dr": -0.34731591488595726,
+  "r_at_max_dU": 1.856,
+  "n_positive_slope": 0,
+  "barrier": {
+   "has_well": false,
+   "has_barrier": false
+  },
+  "r_max": 16.0,
+  "max_dV_slope": -0.0019123580910872166
+ },
+ "-0.012": {
+  "max_dU_dr": -0.3546305404395298,
+  "r_at_max_dU": 1.824,
+  "n_positive_slope": 0,
+  "barrier": {
+   "has_well": false,
+   "has_barrier": false
+  },
+  "r_max": 16.0,
+  "max_dV_slope": -0.0018554599332517453
+ },
+ "-0.016": {
+  "max_dU_dr": -0.3677886387142486,
+  "r_at_max_dU": 1.772,
+  "n_positive_slope": 0,
+  "barrier": {
+   "has_well": false,
+   "has_barrier": false
+  },
+  "r_max": 16.0,
+  "max_dV_slope": -0.0017416635681669014
+ },
+ "-0.02": {
+  "max_dU_dr": -0.37941942390209604,
+  "r_at_max_dU": 1.73,
+  "n_positive_slope": 0,
+  "barrier": {
+   "has_well": false,
+   "has_barrier": false
+  },
+  "r_max": 16.0,
+  "max_dV_slope": -0.001627867137206545
+ },
+ "-0.03": {
+  "max_dU_dr": -0.4038115099019193,
+  "r_at_max_dU": 1.65,
+  "n_positive_slope": 0,
+  "barrier": {
+   "has_well": false,
+   "has_barrier": false
+  },
+  "r_max": 16.0,
+  "max_dV_slope": 0.6077953927372728
+ },
+ "-0.04": {
+  "max_dU_dr": -0.4235854217707633,
+  "r_at_max_dU": 1.594,
+  "n_positive_slope": 0,
+  "barrier": {
+   "has_well": false,
+   "has_barrier": false
+  },
+  "r_max": 16.0,
+  "max_dV_slope": 1.0758388961935452
+ },
+ "dV_slope_lam0": {
+  "0.5": -0.0522599937533772,
+  "1.0": -0.10424549609646228,
+  "2.0": -0.20634188857031432,
+  "3.0": -0.304384242169391,
+  "4.0": -0.3969302911635566,
+  "5.0": -0.48317244845526375,
+  "8.0": -0.7074652104553252,
+  "12.0": -1.0020741366831771,
+  "20.0": -1.5096092602306332,
+  "30.0": -1.5096092602306332
+ },
+ "note": "kappa = 0: C0 = B_x = Om_eff = dE_DMC = 0 (the Gaussian collapses: gauge zero modes are free), the s channel is a free particle with threshold 0, so the radial problem is U(r) = 3/(8r^2) + lam r^4/4 + dV_MC(r) at the physical couplings"
+}

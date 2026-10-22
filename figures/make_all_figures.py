@@ -38,6 +38,11 @@ FIGS = [
     ("fig_prd_fossil_shape.py", []),
     ("fig_prd_primordial.py", []),
     ("fig_prd_fossil_sky.py", []),
+    # technical report v1.1 (static box and abelian Higgs model; data in data/higgs/{static_box_c170,abelian_c171})
+    ("fig_rep_v11_static_box.py", []),
+    ("fig_rep_v11_kappa.py", []),
+    ("fig_rep_v11_abelian_width.py", []),
+    ("fig_rep_v11_abelian_threshold.py", []),
 ]
 
 

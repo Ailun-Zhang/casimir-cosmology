@@ -34,7 +34,7 @@ Machine of record: Intel64 Family 6 Model 204 Stepping 2, GenuineIntel, 16 CPUs,
 ## Results → paper
 | Paper location | number (numbers_shape id) | output : key | archived source |
 |---|---|---|---|
-| PRD Sec. VI A, Eq. `eq:s-emptiness`; report Table 18 (Sec. 13) | Σ\|n\| < 4.762 (ξ = 0.2999), 5.047 (0.258), 4.898 (0.28), 6.80 (0); ξ(5) = 0.2649 (GATE-02..06) | `r3/shape_hardening/run01/emptiness/C153_emptiness.json` : `quanta_budget/*/budget_sum_n`, `xi_where_budget_equals/5` | `04_calculations/results/20261014_claude_v12_r3/shape_hardening/run01/emptiness/C153_emptiness.json` |
+| PRD Sec. VI A, Eq. `eq:s-emptiness`; report Table 23 (Sec. 13) | Σ\|n\| < 4.762 (ξ = 0.2999), 5.047 (0.258), 4.898 (0.28), 6.80 (0); ξ(5) = 0.2649 (GATE-02..06) | `r3/shape_hardening/run01/emptiness/C153_emptiness.json` : `quanta_budget/*/budget_sum_n`, `xi_where_budget_equals/5` | `04_calculations/results/20261014_claude_v12_r3/shape_hardening/run01/emptiness/C153_emptiness.json` |
 | PRD Sec. VI A | AAA fermion budget 5.50 (GATE-07) | same : `quanta_budget/*/fermion_budget` | same |
 | PRD Sec. VI B, Eq. `eq:s-windowR`, Fig. 5(a) | log₁₀R = 93.86 (free, j = 1); 94.04 (ξ = 0.30, j = 1); 96.48 (j = 85) (GATE-08..10) | `r5/C55_window_gate/C55_window_gate.json` : `slices/0/log10_R`; `C153_emptiness.json` : `reheating_excess/xi0.30/log10R/{1,85}` | `.../20261009_claude_R5/C55_window_gate/` |
 | report Sec. 13 | prefactor 10^97.79 (GATE-11) | `C55_window_gate.json` : `meta/log10_prefactor` | same |

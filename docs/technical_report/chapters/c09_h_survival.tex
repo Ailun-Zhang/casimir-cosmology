@@ -47,7 +47,7 @@ We interpolate $\ln\Gamma$ between the eleven nodes with a cubic spline, integra
 Twenty-nine nodes instead of eleven change $m_c$ by $7\times10^{-5}\GeV$. %
 The hazard-equivalent threshold is the Standard Model quartic at $\mub$ evaluated at the critical mass, $\lamc(\mub)\equiv\lambda_{\rm SM}(\mub;m_c)=-0.0091$, $-0.0121$, and $-0.0152$ for $\Pone=0.9$, $0.5$, and $0.1$. %
 
-If instead the width at $\tau=0$ were held for the whole branch, the static condition $\Gamma=-\ln P/\eta_\infty$, that is $\Gamma_c=3.514\times10^{-4}$ and $2.312\times10^{-3}$ for $P=0.9$ and $0.5$, would give the static thresholds $-0.00880$, $-0.01174$, and $-0.01472$ in the earlier model, which we quote only for comparison. %
+If instead the width at $\tau=0$ were held for the whole branch, the static condition $\Gamma=-\ln P/\eta_\infty$, that is $\Gamma_c=3.514\times10^{-4}$ and $2.312\times10^{-3}$ for $P=0.9$ and $0.5$, would give the static thresholds $-0.00880$, $-0.01174$, and $-0.01472$ in the earlier model, which we quote only for comparison; the static box as a system of its own, with the final model, is the subject of Sec.~\ref{sec:v11-static-box}. %
 Because $|\lambda(\mu)|$ and hence $\Gamma$ decrease along the turn, the static thresholds lie $0.0003$ to $0.0004$ above the hazard-equivalent ones of the same model. %
 For the same reason the integrand of Eq.~(\ref{eq:rb-hazard}) is largest early in the turn [Fig.~\ref{fig:rb-hazard}(a)].
 At $\alpha_s=0.1180$ we find $\Pone=0.9976$, $0.9850$, $0.9424$, $0.8426$, $0.6721$, $0.4549$, $0.2508$, $0.1093$, $0.0372$, and $0.0099$ for $m_t=172.0$ to $173.8\GeV$ in steps of $0.2\GeV$. %
@@ -287,3 +287,322 @@ These statements, derived in the one-dimensional zero-mode model, carry over to 
 
 The shape sector differs in this respect: there the branch that does not cross the turn never failed in any run, so the two-branch survival of the shape equals the single-branch survival of the crossing branch to $4\times10^{-4}$ (Sec.~\ref{rep:quantum-shape}), whereas for the Higgs zero mode both branches decay and their joint survival has no probability. %
 We quote single-branch probabilities throughout.
+
+\subsection{Survival in a static box: width law and threshold}
+\label{sec:v11-static-box}
+
+The hazard of Sec.~\ref{sec:rb-hazard} belongs to the expanding torus.
+The finite-volume threshold itself is a property of the Standard Model in a box of fixed size, and this subsection defines and computes it there.
+Section~\ref{sec:v11-kappa} shows that the barrier is due to the gauge zero modes, and Sec.~\ref{sec:v11-static-torus} gives the dependence on the couplings and on the size of the box, and the relation to the expanding torus.
+Figure~\ref{fig:v11-prl-fig1} summarizes the three results.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{prl_fig1_mechanism}
+\caption{The finite-volume threshold in a static box (Fig.~1 of the Letter~\cite{v12PRL}).
+(a)~Radial potential of the Higgs zero mode for $\lambda=-0.012$ and Standard Model couplings at $\mu=1/L=\mub$ (model without cross terms), with the couplings of the gauge zero modes scaled by $\kappa$ ($\Delta V_{\rm MC}$ fixed); for $\kappa=1$ the electroweak state is a resonance at $\varepsilon$ with width $\Gamma$.
+(b)~$\lamc$ ($P=1/2$) for $N=10^2$, $3\times10^2$ and $10^4$ light-crossing times against $\mu=1/L$ (dots: boxes E, C, B, A, D of Table~\ref{tab:v11-boxes}), and the Standard Model $\lambda(\mu)$ for $m_t=172.2$ (dashed), $172.6$ (solid) and $173.0\GeV$ (dash-dotted); diamond: hazard-equivalent threshold of the expanding torus at $\mub$ (bar: $\Pone=0.9$--$0.1$).
+(c)~$\lamc$ for $N=300$ at the scale of (a), with the gauge zero-mode couplings scaled by $\kappa$ [model of (a); shaded: no threshold] or $g_2$, $g_Y$ or $y_t$ scaled by $s$ (full model).} %
+\label{fig:v11-prl-fig1}
+\end{figure}
+
+\paragraph{Definition.}
+Consider a static flat three-torus of edge $L$, without 't~Hooft flux and with fermions antiperiodic around all three cycles, in Minkowski time and without gravity, which exists for a time $T=NL$.
+Its zero-mode problem is that of Secs.~\ref{rep:h-matching}--\ref{rep:h-cross} with $\mu=1/L$.
+For $\lambda(1/L)<0$ the electroweak state is a resonance $E=\varepsilon-i\Gamma/2$ (units $1/L$), and the probability that the zero mode is still in it after the time $T$ is
+\begin{equation}
+P=e^{-\Gamma N}.
+\label{eq:v11-P}
+\end{equation}
+The probability $P$ is conditional on the zero mode starting in the electroweak state; as for the hazard of the expanding torus, the preparation weight $w_0$ is a separate factor (Sec.~\ref{sec:rb-measure}).
+For the narrow resonances used here, corrections to the exponential law are of relative order $\Gamma/\Delta E$, with $\Delta E$ the spacing of the levels in the well.
+The finite-volume threshold $\lamc(N;P)$ is the value of $\lambda(1/L)$ at which $\Gamma(\lamc)\,N=-\ln P$; we write $\lamc(N)\equiv\lamc(N;\frac12)$ and also give $P=0.9$ and $0.1$.
+The couplings $g_2$, $g_Y$, $y_t$ and $g_3$ are fixed at their Standard Model values at $\mu=1/L$ for $m_t=172.60\GeV$, $\alpha_s(M_Z)=0.1180$ and $M_h=125.13\GeV$, with the NNLO mapping of Sec.~\ref{rep:h-smmap}, and $\lambda$ is varied freely.
+Five boxes span four decades in $\mu$: box~A at $\mub=3.37\times10^{15}\GeV$, B, C and E at $\mub/10$, $\mub/100$ and $\mub/1000$, and D at $10\,\mub$ (Table~\ref{tab:v11-boxes}). %
+Box~A has the couplings of the first node of the turn at $m_t=172.60\GeV$.
+
+\begin{table}[t]
+\centering
+\caption{Boxes of the static calculation: Standard Model couplings at $\mu=1/L$ for $m_t=172.60\GeV$, $\alpha_s(M_Z)=0.1180$ and $M_h=125.13\GeV$ ($g_3=0.5205$, $0.5357$, $0.5522$, $0.5703$ and $0.5904$ for D, A, B, C and E); the Standard Model quartic $\lambda_{\rm SM}(\mu)$ for $m_t=172.2$, $172.6$ and $173.0\GeV$; and the duration $N^*=\ln2/\Gamma(\lambda_{\rm SM})$ after which the Standard Model zero mode of the box survives with $P=1/2$, with widths computed at the couplings of the table.} %
+\label{tab:v11-boxes}
+\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lcccccccccc}
+\toprule
+ & & & & & \multicolumn{3}{c}{$10^3\,\lambda_{\rm SM}$} & \multicolumn{3}{c}{$N^*$} \\
+\cmidrule(lr){6-8}\cmidrule(lr){9-11}
+Box & $\mu$ (GeV) & $g_2$ & $g_Y$ & $y_t$ & $172.2$ & $172.6$ & $173.0$ & $172.2$ & $172.6$ & $173.0$ \\
+\midrule
+D & $3.37\times10^{16}$ & $0.5212$ & $0.4517$ & $0.4133$ & $-7.66$ & $-10.28$ & $-12.92$ & $4.9\times10^3$ & $587$ & $152$ \\ %
+A & $3.37\times10^{15}$ & $0.5278$ & $0.4428$ & $0.4278$ & $-7.16$ & $-9.77$ & $-12.41$ & $1.03\times10^4$ & $970$ & $219$ \\ %
+B & $3.37\times10^{14}$ & $0.5346$ & $0.4343$ & $0.4434$ & $-6.27$ & $-8.87$ & $-11.49$ & $3.9\times10^4$ & $2.32\times10^3$ & $404$ \\ %
+C & $3.37\times10^{13}$ & $0.5417$ & $0.4263$ & $0.4603$ & $-4.91$ & $-7.48$ & $-10.07$ & $4.8\times10^5$ & $1.05\times10^4$ & $1.14\times10^3$ \\ %
+E & $3.37\times10^{12}$ & $0.5491$ & $0.4188$ & $0.4786$ & $-2.99$ & $-5.51$ & $-8.05$ & $9.8\times10^7$ & $1.81\times10^5$ & $7.07\times10^3$ \\ %
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Method.}
+The widths come from the two-dimensional model of Eq.~(\ref{eq:rb-H2D}) with the cross terms of Sec.~\ref{rep:h-cross}, solved as multichannel Siegert states (Sec.~\ref{sec:rb-siegert}) in the standard configuration of Sec.~\ref{sec:rb-nodes}, $(N,S_{\max},h,R_{\rm out})=(24,12,0.004,16)$. %
+The calculation uses the node code of the expanding torus with the couplings and $\lambda$ entered explicitly instead of through $(m_t,\alpha_s,\tau)$, so that every $\lambda$ dependence of the matching, of the one-loop Hessians of the cross terms, of the vev mixing and of the Coulomb terms follows the scanned $\lambda$.
+With the couplings of the first and last nodes of the turn this path reproduces the archived widths of the final model exactly, and from generic starting points (the adiabatic one-dimensional root) to $7\times10^{-12}$. %
+A root counts as a narrow resonance if it passes the window and box tests of Sec.~\ref{sec:rb-siegert}, lies more than $\Gamma/2$ below the top of the adiabatic barrier, and, where the window test flags broad widths ($\Gamma\gtrsim0.02$), agrees with the adiabatic one-dimensional root to $|\ln(\Gamma_{\rm 2D}/\Gamma_{\rm 1D})|<0.25$. %
+Boxes A, B and C have 36 points each, D 18 and E 17, with $|\lambda|^{-1/2}$ from $5$ ($5.5$ for D and E) to $18$ ($19$ for E) and steps of $0.25$ in $|\lambda|^{-1/2}$ for $-0.018\le\lambda\le-0.007$; every box contains $\lambda_{\rm SM}$ for the three top masses of Table~\ref{tab:v11-boxes}. %
+The thresholds follow from $\Gamma N=-\ln P$ by a cubic spline of $\ln\Gamma$ against $|\lambda|^{-1/2}$ through the narrow points of each box; all thresholds quoted below are interpolated.
+
+\paragraph{Width law in the fit window.}
+Figure~\ref{fig:v11-static}(a) shows $\ln(\Gamma L)$ against $|\lambda|^{-1/2}$ for the five boxes.
+In the window $\lamFitLo\le\lambda\le\lamFitHi$ the 21 widths of box~A follow %
+\begin{equation}
+\ln(\Gamma L)=a-b\,|\lambda|^{-1/2},\qquad a=\aFitA,\quad b=\bFitA,
+\label{eq:v11-fit}
+\end{equation}
+with root-mean-square residual $\resFitA$ in $\ln\Gamma$. %
+This is Eq.~(\ref{eq:rb-wkb}) with the effective slope $\sigma_{\rm eff}=b/2.962=\sigEffA$. %
+The fit of the widths of the first node of the expanding torus in the earlier model, $a=5.91$ and $b=1.307$ (Sec.~\ref{sec:rb-size}), agrees with it, and the other boxes give $b=1.28$--$1.34$ with residuals $0.04$--$0.07$ (Table~\ref{tab:v11-fits}). %
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.94\textwidth]{rep_v11_static_box}
+\caption{Widths and thresholds of the static box (final model).
+(a)~$\ln(\Gamma L)$ against $|\lambda|^{-1/2}$ (upper axis: $\lambda$) for the five boxes of Table~\ref{tab:v11-boxes}; filled: narrow resonances; open: level within $\Gamma/2$ of the barrier top or above it.
+Line: fit of Eq.~(\ref{eq:v11-fit}) to box~A in the shaded window, dashed outside it; ticks on the right: the widths $\ln2/N$ that define $\lamc(N)$ for $N=10$, $300$ and $10^4$.
+(b)~$\lamc(N)$ ($P=1/2$) for the five boxes, the thresholds for $P=0.9$ and $0.1$ in box~A (dotted; $P=0.1$ only where a narrow resonance gives it), the closed form of Eq.~(\ref{eq:v11-closed}) with the fit of box~A (dashed), and $\lambda_{\rm SM}(\mub)$ for $m_t=172.60\GeV$ (dash-dotted).} %
+\label{fig:v11-static}
+\end{figure}
+
+\begin{table}[t]
+\centering
+\caption{Fits of the widths of the five boxes: $\ln(\Gamma L)=a-b|\lambda|^{-1/2}$ in the window $-0.018\le\lambda\le-0.007$ and over all narrow points, with the root-mean-square residuals in $\ln\Gamma$, the effective slope $\sigma_{\rm eff}=b/2.962$ of the window fit, and the exponent $p$ of $\ln(\Gamma L)=a-b|\lambda|^{-p}$.} %
+\label{tab:v11-fits}
+\begin{tabular}{lcccccc}
+\toprule
+Box & $a$, $b$ (rms), window & $\sigma_{\rm eff}$ & $p$, window & $a$, $b$ (rms), all narrow & $p$, all narrow \\
+\midrule
+D & $5.801$, $1.278$ ($0.070$) & $0.432$ & $0.82\pm0.02$ & $6.294$, $1.350$ ($0.31$) & $0.70\pm0.02$ \\ %
+A & $5.915$, $1.306$ ($0.059$) & $0.441$ & $0.77\pm0.01$ & $6.251$, $1.353$ ($0.23$) & $0.67\pm0.01$ \\ %
+B & $5.879$, $1.319$ ($0.051$) & $0.445$ & $0.75\pm0.01$ & $6.112$, $1.354$ ($0.19$) & $0.64\pm0.01$ \\ %
+C & $5.887$, $1.338$ ($0.046$) & $0.452$ & $0.71\pm0.01$ & $5.797$, $1.341$ ($0.18$) & $0.61\pm0.01$ \\ %
+E & $5.734$, $1.341$ ($0.043$) & $0.453$ & $0.69\pm0.02$ & $5.309$, $1.315$ ($0.16$) & $0.55\pm0.02$ \\ %
+\bottomrule
+\end{tabular}
+\end{table}
+
+The deep-well law of Eq.~(\ref{eq:rb-wkb}) would give $b=2.962\,\sigma_0=3.88$; the fitted slope is three times smaller. %
+The static box identifies four reasons.
+(i)~In the window the level lies only $0.27$--$0.87/L$ below the barrier top, with WKB exponents $2.1$--$7.9$, so the tunnelling probes the upper part of the barrier rather than a deep well. %
+(ii)~The zero-point energy of the gauge zero modes rises with slope $0.72$, $0.96$, $1.08$, $1.16$ and $1.20$ at $r=1$, $2$, $3$, $4$ and $5$, not with $\sigma_0=1.31$, which it approaches only where the gauge modes are harmonic, $r\gg1$ (Sec.~\ref{sec:rb-H0}). %
+(iii)~At $\lambda=-0.012$ the matching potential lowers this slope by a further $\dVredLo$--$\dVredHi$ at $r=1$--$5$ (Sec.~\ref{sec:v11-kappa}). %
+(iv)~The finite energy of the resonance lowers the exponent below its deep-well value even in the abelian Higgs model, whose zero-mode problem reduces exactly to two coordinates (Sec.~\ref{sec:v11-abelian}).
+A one-dimensional Langer--WKB model of box~A ranks these effects; it uses the components of the radial potential of the model without cross terms (Sec.~\ref{sec:v11-kappa}), with $\Delta V_{\rm MC}$ evaluated at each $\lambda$, and the Bohr--Sommerfeld level. %
+Its slope $dS/dx$ over the window, with $x=|\lambda|^{-1/2}$, is $1.40$, $7\%$ above the fitted $b$; without $\Delta V_{\rm MC}$ it is $2.59$, with the zero-point energy replaced by $\sigma_0r$ it is $1.82$, with both changes $3.01$, and $3.33$ for a level at the bottom of the well, against $3.88$ for the deep-well formula. %
+The matching is the largest factor ($\times1.85$ in the slope): in this model it lowers the barrier above the level at $\lambda=-0.012$ from $1.20/L$ to $0.55/L$. %
+The anharmonic zero-point energy comes second ($\times1.30$), and the distance of the level from the barrier top accounts for $10$--$20\%$. %
+The local exponent $b(x)=-d\ln\Gamma/dx$ of the computed widths of box~A rises from $1.15$ at $x=8$ through $1.34$ at $x=10$ and $1.42$ at $x=12$ to $1.43$--$1.45$ at $x=13$--$18$, that is, $\sigma\approx0.49$. %
+A three-parameter fit $\ln(\Gamma L)=a-b|\lambda|^{-p}$ gives $p=0.77\pm0.01$ in the window and $0.67\pm0.01$ over all narrow points of box~A, and $p=0.516\pm0.005$ far below the barrier top, for $-0.0072\le\lambda\le-0.0031$, where $b(x)$ is nearly constant. %
+There $b$ is still $2.7$ times smaller than $2.962\,\sigma_0$: moving the level away from the barrier top raises $b$ only from $1.31$ to $1.44$, and the remaining factor comes from the matching and the anharmonic zero-point energy. %
+
+\paragraph{Closed form and thresholds.}
+Setting $\Gamma N=-\ln P$ in Eq.~(\ref{eq:v11-fit}) gives
+\begin{equation}
+\lamc(N;P)=-\biggl[\frac{b}{a+\ln\bigl(N/(-\ln P)\bigr)}\biggr]^2,\qquad
+\lamc(N)=-\biggl[\frac{b}{a+\ln(N/\ln2)}\biggr]^2 .
+\label{eq:v11-closed}
+\end{equation}
+For box~A at $P=1/2$ the closed form lies within $\closedAccSmall$ of the computed thresholds for $10^2\le N\le10^4$ and within $\closedAccLarge$ at $N=10^5$; it deviates by $4.9\%$ at $N=10^6$, by $4.1\%$ at $N=30$ and by $14\%$ at $N=10$, where the level approaches the barrier top. %
+The computed thresholds of box~A are $\lamc=-0.0269$, $\lcAhundred$, $\lcAthree^{+\lcAthreeErrUp}_{-\lcAthreeErrDn}$ and $\lcAtenk$ at $N=10$, $100$, $300$ and $10^4$ [Fig.~\ref{fig:v11-static}(b)]. %
+The model error of $\lamc(300)$ is taken from the model total without the inflation-scale item in Table~\ref{tab:rb-budget} (the zero-mode-model row of Table~I of the Letter), $+0.027/{-0.051}\GeV$ at $\Pone=1/2$, converted with $|d\lambda(\mub)/dm_t|=0.00659\GeV^{-1}$; a lower critical mass corresponds to a shallower threshold, so the larger error lies on the shallow side. %
+Section~\ref{sec:v11-static-torus} gives the grounds for transferring this error from the expanding torus; it applies at $N\approx300$.
+Table~\ref{tab:v11-lamc} lists $\lamc(N;P)$ for the five boxes at $N=10$, $300$ and $10^4$.
+
+\begin{table}[t]
+\centering
+\caption{Static thresholds $\lamc(N;P)$ for the boxes of Table~\ref{tab:v11-boxes} (final model; cubic-spline interpolation of $\ln\Gamma$ in $|\lambda|^{-1/2}$). For $N=10$ and $P=0.1$ the required width, $0.23/L$, exceeds every narrow width, and no threshold exists.} %
+\label{tab:v11-lamc}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lccccccccc}
+\toprule
+ & \multicolumn{3}{c}{$N=10$} & \multicolumn{3}{c}{$N=300$} & \multicolumn{3}{c}{$N=10^4$} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+Box & $P=0.9$ & $0.5$ & $0.1$ & $0.9$ & $0.5$ & $0.1$ & $0.9$ & $0.5$ & $0.1$ \\
+\midrule
+D & $-0.01529$ & $-0.02621$ & --- & $-0.00862$ & $-0.01145$ & $-0.01430$ & $-0.00569$ & $-0.00702$ & $-0.00815$ \\ %
+A & $-0.01570$ & $-0.02688$ & --- & $-0.00884$ & $-0.01175$ & $-0.01468$ & $-0.00581$ & $-0.00718$ & $-0.00835$ \\ %
+B & $-0.01614$ & $-0.02761$ & --- & $-0.00907$ & $-0.01207$ & $-0.01509$ & $-0.00593$ & $-0.00735$ & $-0.00856$ \\ %
+C & $-0.01662$ & $-0.02841$ & --- & $-0.00931$ & $-0.01242$ & $-0.01554$ & $-0.00605$ & $-0.00753$ & $-0.00878$ \\ %
+E & $-0.01714$ & $-0.02929$ & --- & $-0.00956$ & $-0.01279$ & $-0.01602$ & $-0.00616$ & $-0.00771$ & $-0.00901$ \\ %
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Dependence on the duration and range of validity.}
+For $10\lesssim N\lesssim10^6$, $|\lamc|^{-1/2}$ grows linearly with $\ln N$: in box~A at $P=1/2$ it rises from $6.10$ at $N=10$ to $15.0$ at $N=10^6$, with mean slope $0.77$, equal to $1/b$ (Fig.~\ref{fig:v11-static}). %
+Equivalently $d\ln|\lamc|/d\ln N=-2/[a+\ln(N/\ln2)]=-0.17$ at $N=300$, the exponent of the hazard threshold, $|\lamc|\propto\eta_\infty^{-0.170}$ (Sec.~\ref{sec:rb-duration}). %
+Like the metastability bound of the infinite-volume theory, $\lamc$ is defined by a duration, on which it depends only logarithmically over the computed range.
+The threshold for $P=1/2$ is defined for $N\gtrsim10$ only.
+A narrow resonance, with $\varepsilon$ more than $\Gamma/2$ below the top of the barrier, exists at $\mub$ for $\lambda\ge\lamTop$: the last narrow point, $\lambda=-0.0278$, has $\Gamma L=0.075$ and a WKB exponent of $0.42$, and at $\lambda=-0.0302$ the level lies within $\Gamma/2$ of the top. %
+In all boxes the last narrow widths are $0.070$--$0.081/L$, with WKB exponents $0.33$--$0.52$. %
+Thresholds that need larger widths, such as $N=10$ at $P=0.1$ ($\Gamma L=0.23$) and $N=30$ at $P=0.1$ ($\Gamma L=0.077$, beyond the narrow range in boxes A, B and E), have no narrow-resonance meaning and are not quoted. %
+
+\subsection{The barrier is due to the gauge zero modes}
+\label{sec:v11-kappa}
+
+\paragraph{The switch $\kappa$.}
+To isolate the source of the barrier, we multiply the couplings of the gauge zero modes by $\kappa$ and keep the physical couplings for the non-zero modes.
+In Eq.~(\ref{eq:rb-H2D}) $g_2$ and $g_Y$ are replaced by $\kappa g_2$ and $\kappa g_Y$ in $C_0$, $B_x$ and $\Omega_{\rm eff}$ and in the hypercharge oscillator, that is, in the kinetic, magnetic and mass terms of the gauge zero modes, and the conditional Gaussian of Sec.~\ref{sec:rb-gauss} is recomputed for every $\kappa$; $\Delta V_{\rm MC}$ stays at the physical couplings.
+The DMC correction is carried along with the exact scaling of the zero-mode Hamiltonian.
+With $\bm x=\kappa^{-1/3}\bm y$ the kinetic term of the gauge zero modes scales as $\kappa^{2/3}$, the magnetic term as $\kappa^2\kappa^{-4/3}$, the mass term as $\kappa^2\kappa^{-2/3}r^2=\kappa^{2/3}(\kappa^{1/3}r)^2$, and the angular term $(2/r^2)[(L^1)^2+(L^2)^2]$ as $\kappa^{2/3}(\kappa^{1/3}r)^{-2}$, so that the body-frame Hamiltonian obeys
+\begin{equation}
+H_{\rm g}(\bm x,\bm w;r;\kappa g_2,\kappa g_Y)\cong\kappa^{2/3}\,H_{\rm g}(\bm y,\bm w';\kappa^{1/3}r;g_2,g_Y),
+\label{eq:v11-kappa-scaling}
+\end{equation}
+with $\bm w=\kappa^{-1/3}\bm w'$.
+Every fixed-$r$ energy of the gauge zero modes, exact or Gaussian, therefore obeys $E(\kappa;r)=\kappa^{2/3}E(1;\kappa^{1/3}r)$, and so does their difference,
+\begin{equation}
+\delta E_{\rm DMC}(\kappa;r)=\kappa^{2/3}\,\delta E_{\rm DMC}(1;\kappa^{1/3}r).
+\label{eq:v11-dmc-kappa}
+\end{equation}
+At $\kappa=1$ this model is the two-dimensional model without cross terms; dropping $\delta E_{\rm DMC}$ gives its Gaussian version 2D$_{\rm G}$, the variational bracket.
+Keeping $\delta E_{\rm DMC}$ unscaled would attach the correction of $\kappa=1$ to a different Hamiltonian, and it would survive even at $\kappa=0$.
+The cross terms are left out, because their split between zero and non-zero modes has no unique dependence on $\kappa$.
+The switch is a diagnostic: for $\kappa\neq1$ the split between zero modes at $\kappa$ and non-zero modes at the physical couplings does not follow from one Lagrangian.
+Applied also to the radial coordinate, $r=\kappa^{-1/3}r'$, the scaling gives $H(\kappa,\lambda)\cong\kappa^{2/3}H(1,\lambda/\kappa^2)$ without the matching, hence $\Gamma(\kappa,\kappa^2\lambda)=\kappa^{2/3}\Gamma(1,\lambda)$; the code reproduces this relation to $3\times10^{-6}$ at $\kappa=0.5$ and $1.5$. %
+
+\paragraph{Results.}
+Table~\ref{tab:v11-kappa} and Fig.~\ref{fig:v11-kappa} give the results at the couplings of box~A.
+At $\kappa=0$ the Gaussian collapses ($C_0=B_x=\Omega_{\rm eff}=\delta E_{\rm DMC}=0$), the gauge zero modes are free, and the radial problem is $U(r)=3/(8r^2)+\lambda r^4/4+\Delta V_{\rm MC}(r)$.
+For every $\lambda$ between $-0.04$ and $0$ this potential decreases monotonically, with $dU/dr\le-0.29$ on $0.02<r\le16$, so there is neither a barrier nor a narrow (quasi-bound) resonance [Fig.~\ref{fig:v11-prl-fig1}(a)]; without $\Delta V_{\rm MC}$ it is monotonic as well. %
+For $\kappa\le0.30$ the potential has no barrier at any $\lambda\le0$; for $0.35\le\kappa\le0.425$ it has one, but the adiabatic level lies above its top even at $\lambda=0$.
+Linear interpolation of the distance between the level and the barrier top at $\lambda=0$, between $\kappa=0.425$ and $0.45$, gives $\kappa_{\min}\approx\kappaMin$ ($0.435$ for 2D$_{\rm G}$), below which no narrow resonance exists for any $\lambda\le0$. %
+At $\kappa=0.45$ only a broad resonance at $\lambda=0$ remains, with $\Gamma L=0.016$, and at $\kappa=0.475$ the width at $\lambda=0$, $0.0030/L$, still exceeds $\ln2/300$. %
+The threshold for $N=300$ appears at $\kappa_{\rm thr}\approx\kappaZero$, from the interpolation of $\ln\Gamma(\kappa,\lambda=0)$ between $\kappa=0.475$ and $0.5$, and it deepens to $\lamc(300)=-0.0002$, $-0.0016$, $\lcKappaThreeQ$, $\lcKappaOne$, $-0.0235$ and $\lcKappaOneHalf$ at $\kappa=0.5$, $0.6$, $0.75$, $1$, $1.25$ and $1.5$. %
+Both boundaries are resolved to $\pm0.01$.
+Because $\Delta V_{\rm MC}$ is held at the physical couplings, the threshold falls faster than the factor $\kappa^2$ of the pure zero-mode scaling, which holds up to a logarithmic correction from the prefactor $\kappa^{2/3}$: from $\kappa=1$ to $0.75$ $|\lamc(300)|$ drops by a factor $0.38$ instead of $0.56$, and from $\kappa=1$ to $1.5$ it grows by $3.0$ instead of $2.25$. %
+
+\begin{table}[t]
+\centering
+\caption{The gauge zero-mode switch at the couplings of box~A (two-dimensional model without cross terms, $\Delta V_{\rm MC}$ at the physical couplings): static threshold $\lamc(300)$ ($P=1/2$) and width at $\lambda=-0.012$ with the transported DMC shape and with the Gaussian shape (2D$_{\rm G}$), and the lowest $\lambda$ at which a narrow resonance exists (transported DMC shape; for $\kappa\ge1.25$ the narrow range extends beyond the computed range).} %
+\label{tab:v11-kappa}
+\begin{tabular}{lccccc}
+\toprule
+ & \multicolumn{2}{c}{$\lamc(300)$} & \multicolumn{2}{c}{$\Gamma L$ at $\lambda=-0.012$} & narrow \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+$\kappa$ & DMC shape & 2D$_{\rm G}$ & DMC shape & 2D$_{\rm G}$ & for $\lambda\ge$ \\
+\midrule
+$0$, $0.25$, $0.30$ & \multicolumn{4}{c}{no barrier for any $\lambda\le0$} & --- \\ %
+$0.35$--$0.425$ & \multicolumn{4}{c}{level above the barrier top for all $\lambda\le0$} & --- \\ %
+$0.45$ & --- & --- & --- & --- & $0$ \\ %
+$0.475$ & --- & --- & --- & --- & $-0.0005$ \\ %
+$0.5$ & $-0.00022$ & $-0.00017$ & --- & --- & $-0.001$ \\ %
+$0.6$ & $-0.00160$ & $-0.00149$ & --- & --- & $-0.004$ \\ %
+$0.75$ & $-0.00472$ & $-0.00450$ & --- & --- & $-0.010$ \\ %
+$1$ & $-0.01250$ & $-0.01204$ & $1.81\times10^{-3}$ & $2.27\times10^{-3}$ & $-0.030$ \\ %
+$1.25$ & $-0.02351$ & $-0.02271$ & $1.14\times10^{-5}$ & $1.52\times10^{-5}$ & $<-0.04$ \\ %
+$1.5$ & $-0.03784$ & $-0.03660$ & $3.59\times10^{-8}$ & $4.99\times10^{-8}$ & $<-0.04$ \\ %
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.94\textwidth]{rep_v11_kappa}
+\caption{The gauge zero-mode switch (couplings of box~A, two-dimensional model without cross terms, $\Delta V_{\rm MC}$ at the physical couplings).
+(a)~Static threshold $\lamc(300)$ ($P=1/2$) against the factor $\kappa$ that multiplies the couplings of the gauge zero modes, with the transported DMC shape of Eq.~(\ref{eq:v11-dmc-kappa}) and with the Gaussian shape; light shading: no threshold for $N=300$ ($\kappa<\kappa_{\rm thr}$); dark shading: no narrow resonance for any $\lambda\le0$ ($\kappa<\kappa_{\min}$).
+(b)~Widths of the narrow resonances against $\lambda$ for $\kappa=0.475$ to $1.5$ (transported DMC shape); dashed: $\Gamma L=\ln2/300$, whose crossings give $\lamc(300)$.} %
+\label{fig:v11-kappa}
+\end{figure}
+
+\paragraph{Slopes and barrier heights.}
+At $\lambda=-0.012$ and $\kappa=1$ the zero-point energy of the gauge zero modes, including the transported DMC term, rises with slope $0.72$--$1.20$ at $r=1$--$5$, and $\Delta V_{\rm MC}$ falls with slope $-0.088$ to $-0.386$, which lowers the zero-point slope by $12$, $18$, $23$, $28$ and $32\%$ at $r=1$, $2$, $3$, $4$ and $5$. %
+The reduction is $17$--$44\%$ at $\kappa=0.75$ and $27$--$67\%$ at $\kappa=0.5$; at $\kappa=0.25$ it is $59\%$ at $r=1$ and $141\%$ at $r=5$, and the net slope is negative beyond $r=2.7$. %
+At $\kappa=1$ this refines the range $10$--$33\%$ of Sec.~\ref{sec:rb-size}, which was obtained with the fixed couplings of Sec.~\ref{rep:h-matching} for $\lambda=-0.010$ and $-0.013$. %
+The barrier of the radial potential above its well at $\lambda=-0.012$ is $1.26/L$ with $\Delta V_{\rm MC}$ and $2.01/L$ without it at $\kappa=1$, and $0.059/L$ and $0.386/L$ at $\kappa=0.5$. %
+A narrow resonance needs the zero-point slope to exceed the destabilizing slope of $\Delta V_{\rm MC}$ by enough to hold a level below the barrier top; at $\lambda=0$ this requires $\kappa\ge\kappa_{\min}$.
+
+\paragraph{The switched model at $\kappa=1$ and the full model.}
+At $\kappa=1$ the switched model is the two-dimensional model without cross terms.
+Its threshold, $\lamc(300)=-0.01250$, lies $0.00075$ below that of the full model of Sec.~\ref{sec:v11-static-box}, $-0.01175$, and its width at $\lambda=-0.012$ is $0.69$ times the full one; without the DMC shape the threshold is $-0.01204$ and the width ratio $0.87$. %
+The cross terms are thus net destabilizing and the DMC shape correction stabilizing, as for the expanding torus (Table~\ref{tab:rb-widths} and Sec.~\ref{sec:rb-xfinal}).
+
+\subsection{Couplings, size of the box and relation to the expanding torus}
+\label{sec:v11-static-torus}
+
+\paragraph{Couplings.}
+We multiply one of $g_2$, $g_Y$ or $y_t$ by $s$ in every part of the model of box~A, in the Gaussian profile, the matching, the cross terms and, through $\tilde m_t$, the SU(3)--top term, with $g_3$ and $\lambda$ unchanged.
+Table~\ref{tab:v11-coup} gives $\lamc(300)$ and the logarithmic derivatives from symmetric differences.
+They agree with the hazard derivatives of Eq.~(\ref{eq:rb-coupderiv}), obtained in the earlier model for $\pm10\%$ over the whole turn, to within about $6\%$, with $g_2$ and $g_Y$ slightly larger and $y_t$ slightly smaller. %
+Over $0.7\le s\le1.3$ the response is close to a power law, and $|\lamc(300)|$ moves by at most $\lcSthirtyGtwo$, $\lcSthirtyGY$ and $\lcSthirtyYt$ for $g_2$, $g_Y$ and $y_t$ [Fig.~\ref{fig:v11-prl-fig1}(c)]. %
+Increasing any of the three couplings deepens the threshold.
+
+\begin{table}[t]
+\centering
+\caption{Static threshold $\lamc(300)$ ($P=1/2$) of box~A with one coupling multiplied by $s$ in every part of the model, the logarithmic derivative $d\ln|\lamc|/d\ln g$ from symmetric differences at $s=0.85$ and $1.15$ (for $P=0.9$, $0.5$ and $0.1$) and at $s=0.7$ and $1.3$ (for $P=0.5$), and the hazard derivative of Eq.~(\ref{eq:rb-coupderiv}) (earlier model, $\Pone=1/2$).} %
+\label{tab:v11-coup}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccccccc}
+\toprule
+ & \multicolumn{5}{c}{$\lamc(300)$} & \multicolumn{2}{c}{$d\ln|\lamc|/d\ln g$} & hazard \\
+\cmidrule(lr){2-6}\cmidrule(lr){7-8}
+ & $s=0.7$ & $0.85$ & $1$ & $1.15$ & $1.3$ & $0.85/1.15$ & $0.7/1.3$ & \\
+\midrule
+$g_2$ & $-0.00919$ & $-0.01050$ & $-0.01175$ & $-0.01296$ & $-0.01418$ & $0.709$\,/\,$0.697$\,/\,$0.695$ & $0.702$ & $0.66$ \\ %
+$g_Y$ & $-0.01110$ & $-0.01144$ & $-0.01175$ & $-0.01204$ & $-0.01232$ & $0.175$\,/\,$0.170$\,/\,$0.171$ & $0.168$ & $0.16$ \\ %
+$y_t$ & $-0.00969$ & $-0.01069$ & $-0.01175$ & $-0.01279$ & $-0.01371$ & $0.552$\,/\,$0.595$\,/\,$0.608$ & $0.561$ & $0.63$ \\ %
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Size of the box.}
+Across the five boxes, four decades in $\mu$, $\lamc(300)$ changes only from $\lcDthree$ (box~D) to $\lcEthree$ (box~E), by $12\%$, and the curves $\lamc(N)$ of Fig.~\ref{fig:v11-static}(b) are nearly parallel. %
+In the renormalizable model the size of the box enters, by construction, only through the couplings at $\mu=1/L$.
+From box~D to box~E $g_2$ and $y_t$ grow and $g_Y$ falls (Table~\ref{tab:v11-boxes}), and the derivatives of Table~\ref{tab:v11-coup}, which hold $g_3$ fixed and therefore omit the $g_3$ dependence of the SU(3)--top term, predict $\lamc^{\rm E}(300)/\lamc^{\rm D}(300)=\exp(0.036-0.013+0.087)=1.117$, equal to the computed ratio to better than $1\%$. %
+A Planck-suppressed term $c\,\phi^6/\MPbar^2$ adds an explicit dependence on $\mu/\MPbar$: the shift $\Delta\lambda_{\rm eff}=4c\,r^2(\mu/\MPbar)^2$ of Sec.~\ref{sec:v11-mechanism-context} is $100$ times larger in box~D than at $\mub$, $0.022c$--$0.028c$ for $r=5.3$--$6$, and is comparable in magnitude with $\lamc(300)=\lcDthree$ of box~D already for $c\approx0.5$, so the high-$\mu$ end of Fig.~\ref{fig:v11-prl-fig1}(b) depends on the ultraviolet completion. %
+The Standard Model vacuum of a box keeps $P>1/2$ for $N<N^*=\ln2/\Gamma(\lambda_{\rm SM})$: $N^*=\NstarA$ in box~A, and $N^*$ grows from $\NstarD$ at $3.4\times10^{16}\GeV$ to $\NstarE$ at $3.4\times10^{12}\GeV$ (Table~\ref{tab:v11-boxes}), because $\lambda_{\rm SM}(\mu)$ rises much faster than $\lamc$ as $\mu$ decreases. %
+In box~A, $N^*=1.0\times10^4$ and $219$ for $m_t=172.2$ and $173.0\GeV$. %
+These widths use the couplings of $m_t=172.60\GeV$; the couplings of each mass would change $\Gamma$ at fixed $\lambda$ by $+2.2\%$ ($172.2\GeV$) and $-1.7\%$ ($173.0\GeV$). %
+
+\paragraph{Relation to the expanding torus.}
+The expanding torus of Secs.~\ref{sec:rb-turn}--\ref{sec:rb-hazard} holds the zero mode in a box at $\mu(\tau)$ for the conformal duration $\eta_\infty=299.84$ of Eq.~(\ref{eq:rb-etainf}), while $\lambda(\mu)$ rises and $\Gamma$ falls along the branch. %
+The static box at $\mub$ that gives the same hazard $I=-\ln\Pone$ at the hazard thresholds lasts
+\begin{equation}
+N_{\rm eff}=\frac{-\ln\Pone}{\Gamma_{\rm A}(\lamc^{\rm haz})}=237,\ 248,\ 255\qquad(\Pone=0.9,\ 0.5,\ 0.1),
+\label{eq:v11-Neff}
+\end{equation}
+that is, $N_{\rm eff}/\eta_\infty=0.789$, $0.827$ and $0.851$, in agreement with $I/(\Gamma(0)\eta_\infty)=0.77$, $0.82$ and $0.87$ of the earlier model (Sec.~\ref{sec:rb-size}). %
+The widths of the first node at the critical masses, with their own couplings, give $0.785$, $0.840$ and $0.877$; the difference is the coupling mismatch of box~A quoted above. %
+Conversely, the static threshold at $\mub$ for $N=\eta_\infty$, computed from the widths of the first node of the final model, is $-0.00883$, $-0.01178$ and $-0.01477$, shallower than the hazard-equivalent thresholds of Sec.~\ref{sec:rb-hazard} by $0.00030$, $0.00036$ and $0.00042$, the same differences as in the earlier model. %
+
+The model error of the expanding torus transfers to the static box item by item (Table~\ref{tab:rb-budget}).
+The full-dimensional item and the residual DMC item were computed at fixed couplings and apply to the static box directly; the numerical and preparation items are at most $0.006\GeV$. %
+The cross terms make $\lamc(300)$ of box~A shallower by $0.00075$ (Sec.~\ref{sec:v11-kappa}) and the hazard threshold shallower by $0.118\GeV\times0.00659\GeV^{-1}=0.00078$ (Sec.~\ref{sec:rb-xfinal}); this agreement of one component supports the transfer of the two cross-term items without proving it. %
+The matching-scale scan was not repeated for the static box, and its item is assumed to be the same.
+With these assumptions the model total without the inflation-scale item, converted with $d\lambda(\mub)/dm_t$, is taken as the model error of the static threshold at $N\approx300$; no model error is given for other $N$.
+
+A torus that starts with edge $\MPbar^{-1}\ll L_0\ll1/H$ and then inflates, $L(t)=L_0e^{Ht}$, holds the zero mode in a box at $\mu\approx1/L_0$ for
+\begin{equation}
+N=\int_0^\infty\frac{dt}{L(t)}=\frac{1}{HL_0}
+\label{eq:v11-Ninfl}
+\end{equation}
+light-crossing times of the initial box, its conformal duration in units of the comoving edge; as the couplings fall with $\mu=1/L(t)$, the effective static duration is somewhat shorter, as $N_{\rm eff}<\eta_\infty$ shows for the turn.
+For fermions antiperiodic around all three cycles, no 't~Hooft flux and $\xiH=1/6$, for which the curvature term of the conformal-frame zero mode vanishes (Sec.~\ref{sec:rb-late}), Fig.~\ref{fig:v11-prl-fig1}(b) is therefore a survival map of the box phase of such beginnings: the vacuum survives with probability above $1/2$ if $\lambda(1/L_0)$ lies above $\lamc$ for $N\approx1/(HL_0)$.
+For $\xiH\neq1/6$ that term, $-(1-6\xiH)(HL)^2r^2$ as in Eq.~(\ref{eq:rb-conformal}), is suppressed by $(HL)^2$ while the box is inside the Hubble radius, and for $\xiH<1/6$ the later phase lowers the survival further; for the turning torus the loss is below $1\%$ for $\xiH\gtrsim\xic$ (Secs.~\ref{sec:rb-late} and~\ref{sec:rb-xic}). %
+For the Casimir turning point $\eta_\infty=1.311/(h\Lb)$ plays the role of $1/(HL_0)$, and $N_{\rm eff}\approx\NeffHalf$ [diamond in Fig.~\ref{fig:v11-prl-fig1}(b)]. %
+Halving or doubling the duration of the turn changes $|\lamc|$ by $+13\%$ or $-11\%$ (Sec.~\ref{sec:rb-duration}), and the closed form of Eq.~(\ref{eq:v11-closed}) gives the same changes for the static box at $N=300$. %
+
+\paragraph{Threshold variants.}
+Six thresholds near $-0.012$ appear in this section; they differ in the model, the couplings and the duration, and all refer to survival probability $1/2$:
+\begin{itemize}
+\item $-0.0121$: the hazard-equivalent threshold of the expanding torus, $\lambda_{\rm SM}(\mub;m_c)$ at the critical mass, final model (Sec.~\ref{sec:rb-hazard}); %
+\item $-0.01178$ and $-0.01174$: the static threshold at $\mub$ for $N=\eta_\infty$, from the widths of the first node of the turn with the couplings of each top mass, in the final and in the earlier model (above and Sec.~\ref{sec:rb-hazard}); %
+\item $-0.01175$: box~A, with the couplings of $m_t=172.60\GeV$ held fixed, final model, $N=300$ (Sec.~\ref{sec:v11-static-box}); %
+\item $-0.01250$ and $-0.01204$: box~A, $N=300$, two-dimensional model without cross terms ($\kappa=1$), with and without the DMC shape correction (Sec.~\ref{sec:v11-kappa}). %
+\end{itemize}
+
+\paragraph{Limitations.}
+All static-box results are those of the reduced zero-mode model of Secs.~\ref{rep:h-reduced}--\ref{rep:h-cross}, with the conditional Gaussian, the two-dimensional $(r,|\bm w|)$ model, the DMC shape correction, the one-loop matching and the cross terms, under the assumptions of Sec.~\ref{rep:setup} that concern the torus and the matching.
+The couplings are frozen at those of $m_t=172.60\GeV$ for every $\lambda$, so that $\Gamma(\lambda_{\rm SM})$ for $172.2$ and $173.0\GeV$ carries the coupling mismatch of about $2\%$; the DMC shape correction keeps its fixed couplings, as for the expanding torus (Sec.~\ref{sec:rb-2d}). %
+Thresholds that need $\Gamma>0.08/L$ have no narrow-resonance meaning.
+The $\kappa$ scan is a diagnostic without cross terms, and $\kappa_{\min}$ and $\kappa_{\rm thr}$ are resolved to $\pm0.01$.
+The static-box calculation reuses the production code of the expanding torus; it was checked by regression to the archived widths, by the exact $\kappa$ scaling and by the coupling-derivative prediction (above and Sec.~\ref{sec:v11-numerics}), but it was not reimplemented independently (Sec.~\ref{sec:v19-summary}).

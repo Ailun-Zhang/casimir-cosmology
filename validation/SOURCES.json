@@ -2384,6 +2384,123 @@
    "sha256": "777ab9a5ddee801ac93d109ed1b52f23af86b488fcfac5b3b4e91ee163bb6863",
    "bytes": 2177,
    "mtime_utc": "2026-10-13T06:54:08Z"
+  },
+  "abelian_blind/code/collect.py": {
+   "source": "04_calculations/results/20261022_report_v11/blind_C171/code/collect.py",
+   "sha256": "85904748886bdb95f8f3b3d8b5c25851c2be7c23fc67649f4f65cce7e62f6472",
+   "bytes": 7070,
+   "mtime_utc": "2026-10-22T06:11:07Z",
+   "hash_in_blind_record": "not recorded"
+  },
+  "abelian_blind/code/ecs_grid.py": {
+   "source": "04_calculations/results/20261022_report_v11/blind_C171/code/ecs_grid.py",
+   "sha256": "38c66abea43d9129412cd6c0582be5766b817f354ee8f73412f87961d9c09957",
+   "bytes": 10549,
+   "mtime_utc": "2026-10-22T06:07:01Z",
+   "hash_in_blind_record": "not recorded"
+  },
+  "abelian_blind/code/ho_basis.py": {
+   "source": "04_calculations/results/20261022_report_v11/blind_C171/code/ho_basis.py",
+   "sha256": "d38da31d12e7d285b764fdb86b384e3c123e4bb7dcdc3951835334b96dd280b7",
+   "bytes": 4529,
+   "mtime_utc": "2026-10-22T05:59:54Z",
+   "hash_in_blind_record": "not recorded"
+  },
+  "abelian_blind/code/ho_mp.py": {
+   "source": "04_calculations/results/20261022_report_v11/blind_C171/code/ho_mp.py",
+   "sha256": "5115c25b5db2689bc119cd06b4f22257338b5ce02d3990628c47170249048e63",
+   "bytes": 5438,
+   "mtime_utc": "2026-10-22T06:01:30Z",
+   "hash_in_blind_record": "not recorded"
+  },
+  "abelian_blind/code/make_tables.py": {
+   "source": "04_calculations/results/20261022_report_v11/blind_C171/code/make_tables.py",
+   "sha256": "d3379c2c9408739782515dc8aa233dd370a0cb1247707324e294a48ef45694c9",
+   "bytes": 3312,
+   "mtime_utc": "2026-10-22T06:17:31Z",
+   "hash_in_blind_record": "not recorded"
+  },
+  "abelian_blind/code/run_all.py": {
+   "source": "04_calculations/results/20261022_report_v11/blind_C171/code/run_all.py",
+   "sha256": "28e4e0c888f69935c41926b98e79ae52097f7c911c757c280367488d93b57071",
+   "bytes": 1464,
+   "mtime_utc": "2026-10-22T06:17:31Z",
+   "hash_in_blind_record": "not recorded"
+  },
+  "abelian_blind/code/run_methodA.py": {
+   "source": "04_calculations/results/20261022_report_v11/blind_C171/code/run_methodA.py",
+   "sha256": "7c7b3127b8b5c12d6adf8e2a1fc4039ee042030e584937e8e6f46bc210f80e9d",
+   "bytes": 3741,
+   "mtime_utc": "2026-10-22T06:08:52Z",
+   "hash_in_blind_record": "not recorded"
+  },
+  "abelian_blind/code/run_methodB.py": {
+   "source": "04_calculations/results/20261022_report_v11/blind_C171/code/run_methodB.py",
+   "sha256": "99286e153f5c0fc0f48b8d6a5bb02fd28b236ca8079b0dde69913dbf12f2c940",
+   "bytes": 4546,
+   "mtime_utc": "2026-10-22T06:14:48Z",
+   "hash_in_blind_record": "not recorded"
+  },
+  "abelian_blind/code/slope_scan.py": {
+   "source": "04_calculations/results/20261022_report_v11/blind_C171/code/slope_scan.py",
+   "sha256": "154bcd089d17dd8bc36d4fff900f07183e81c3d33529fe0fac512850d01168b6",
+   "bytes": 2775,
+   "mtime_utc": "2026-10-22T06:10:03Z",
+   "hash_in_blind_record": "not recorded"
+  },
+  "abelian_blind/post_comparison/blind_at_c171_exact.py": {
+   "source": "04_calculations/results/20261022_report_v11/blind_C171/post_comparison/blind_at_c171_exact.py",
+   "sha256": "6f352bd55269bcaf7c1742c40c566ab6dee18a588c69c2083a662678c6c0352e",
+   "bytes": 1025,
+   "mtime_utc": "2026-10-22T06:29:38Z"
+  },
+  "abelian_blind/post_comparison/blind_at_c171_grid.json": {
+   "source": "04_calculations/results/20261022_report_v11/blind_C171/post_comparison/blind_at_c171_grid.json",
+   "sha256": "51a59562fdcc8a77ccbec7a92b899fd558f7f46c3910056f77f66794efec6609",
+   "bytes": 1222,
+   "mtime_utc": "2026-10-22T06:29:38Z"
+  },
+  "abelian_blind/post_comparison/blind_at_c171_grid.py": {
+   "source": "04_calculations/results/20261022_report_v11/blind_C171/post_comparison/blind_at_c171_grid.py",
+   "sha256": "5d094a1a0d1d6b182da8b8570769a7f757e747f3354367f5713f7288ef8b95fa",
+   "bytes": 1469,
+   "mtime_utc": "2026-10-22T06:29:38Z"
+  },
+  "abelian_blind/results/blind_results.json": {
+   "source": "04_calculations/results/20261022_report_v11/blind_C171/blind_results.json",
+   "sha256": "9bb62ed9e60701c5ee63a09b8a8c1eb9522417a60ca7c4ba43179d32d1b1c747",
+   "bytes": 33188,
+   "mtime_utc": "2026-10-22T06:24:07Z"
+  },
+  "abelian_blind/results/convergence_tables.md": {
+   "source": "04_calculations/results/20261022_report_v11/blind_C171/convergence_tables.md",
+   "sha256": "a987c96f32992dd42ba744acde82784c091967cd1654524b7c1e7abe982a6a0e",
+   "bytes": 19895,
+   "mtime_utc": "2026-10-22T06:24:39Z"
+  },
+  "abelian_blind/results/METHOD.md": {
+   "source": "04_calculations/results/20261022_report_v11/blind_C171/METHOD.md",
+   "sha256": "91901541ab5a6e563cd0cf28cd1e1249e817f88860fb83443c3bcf43e48c7ff0",
+   "bytes": 33480,
+   "mtime_utc": "2026-10-22T06:24:39Z"
+  },
+  "abelian_blind/results/methodA_results.json": {
+   "source": "04_calculations/results/20261022_report_v11/blind_C171/methodA_results.json",
+   "sha256": "30b6b042418960d1c7141af912da32967d558e9fcc7f4518e9b6837cf7c80280",
+   "bytes": 39340,
+   "mtime_utc": "2026-10-22T06:23:01Z"
+  },
+  "abelian_blind/results/methodB_results.json": {
+   "source": "04_calculations/results/20261022_report_v11/blind_C171/methodB_results.json",
+   "sha256": "48e0036fe800df29581997ac5d70a4afcddb26cfc0ec0571da3f27d808b740a8",
+   "bytes": 32910,
+   "mtime_utc": "2026-10-22T06:19:48Z"
+  },
+  "abelian_blind/results/slope_results.json": {
+   "source": "04_calculations/results/20261022_report_v11/blind_C171/slope_results.json",
+   "sha256": "950155d025d8ee4010fccd49105cba9339b74472bc9d263d3a473d2e2fd078de",
+   "bytes": 7259,
+   "mtime_utc": "2026-10-22T06:24:07Z"
   }
  }
 }

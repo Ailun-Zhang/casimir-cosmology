@@ -86,7 +86,7 @@
   {
    "id": "C137c",
    "what": "G(t_x) table",
-   "paper": "PRD Eq. eq:s-Gtx; App. E 2; report Table 19",
+   "paper": "PRD Eq. eq:s-Gtx; App. E 2; report Table 24",
    "mode": "tree",
    "computed": {
     "file": "WORK:r1/state_selection/run03/C137c_results.json"
@@ -244,7 +244,7 @@
   {
    "id": "C153_nl_summary",
    "what": "run01 analysis (S2 grid, t_*, families)",
-   "paper": "PRD Sec. VII D; report Table 20 (Sec. 15)",
+   "paper": "PRD Sec. VII D; report Table 25 (Sec. 15)",
    "mode": "tree",
    "computed": {
     "file": "WORK:r3/shape_hardening/run01/C153_nl_summary.json"

@@ -44,7 +44,7 @@ hazard-equivalent λ(μ_b), α_s = 0.1171/0.1189 if possible; optionally an own 
 (e.g. diffusion Monte Carlo) added to 2D_G ("2D with own DMC shape"); numerical errors of every number.
 
 **Pass criterion.** Any difference above 0.05 GeV in a critical mass must be located and explained; the quoted
-agreement (report Table 30): critical masses to 0.005 GeV, λ(μ_b) to 10⁻⁶, widths to 0.1 %.
+agreement (report Table 37): critical masses to 0.005 GeV, λ(μ_b) to 10⁻⁶, widths to 0.1 %.
 
 ## V2: cross terms between the zero mode and the non-zero modes
 Same blindness rules, extending the T3 implementation. Derive the one-loop energy of all non-zero modes (W±, Z,

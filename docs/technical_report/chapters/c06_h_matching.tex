@@ -71,7 +71,7 @@ where $y_i=(x_i^1,x_i^2,x_i^3,w_i)$ and, in each spatial direction,
 Its eigenvalues describe two $W$ modes of frequency $g_2r/2$, a $Z$ mode of frequency $g_Zr/2$ with $g_Z=(g_2^2+g_Y^2)^{1/2}$, and a massless photon $\propto g_Yx_i^3-g_2w_i$.
 
 The confinement of the Higgs radius follows from this mass matrix.
-For $r\gtrsim1$ the $W$ and $Z$ zero modes are nearly harmonic, and since each of the three spatial directions carries two $W$ modes and one $Z$ mode, their zero-point energy is
+For $r\gg1$ the $W$ and $Z$ zero modes are nearly harmonic (at $r=1$--$5$ the zero-point energy of the gauge zero modes rises with slope $\zpSlopeLo$--$\zpSlopeHi$, Sec.~\ref{sec:v11-static-box}), and since each of the three spatial directions carries two $W$ modes and one $Z$ mode, their zero-point energy is %
 \begin{equation}
 E_{\rm g}(r)\simeq E_{\rm g}^{(0)}+3\Bigl[2\cdot\frac12\,\frac{g_2r}{2}+\frac12\,\frac{g_Zr}{2}\Bigr]=E_{\rm g}^{(0)}+\sigma_0 r,\qquad \sigma_0=\tfrac32 g_2+\tfrac34 g_Z\simeq1.31. %
 \label{eq:rb-linear}
@@ -99,7 +99,7 @@ In the field range of the resonance all masses are small on this scale: for $r\l
 \label{sec:rb-tower}
 
 For one real degree of freedom of squared mass $m^2$ the non-zero modes have energy $\frac12\sum_{\bm k}'\omega_k$, $\omega_k^2=k^2+m^2$, where the prime removes $\bm k=0$ for periodic fields.
-We write it as the infinite-volume integral, which we regularize dimensionally, plus the convergent difference between sum and integral.
+We write it as the infinite-volume integral, which we regularize dimensionally, plus the difference between sum and integral, convergent for $m^2\geq0$ and continued analytically to $m^2<0$.
 The difference follows from the proper-time identity
 \begin{equation}
 A^{1/2}=-\frac{1}{2\sqrt\pi}\int_0^\infty\frac{ds}{s^{3/2}}\bigl(e^{-As}-1\bigr),\qquad A>0,
@@ -112,7 +112,8 @@ D_\theta(m^2)=-\frac{1}{4\sqrt\pi}\int_0^\infty\!\frac{ds}{s^{3/2}}\bigl(e^{-m^2
 \label{eq:rb-Dtheta}
 \end{equation}
 where $\delta_{\theta0}$ removes the $\bm k=0$ term of periodic fields.
-The integral converges at both ends: at small $s$ the Poisson form $K_\theta(s)-(4\pi s)^{-3/2}=(4\pi s)^{-3/2}\sum_{\bm n\neq0}e^{-n^2/4s}\cos(2\pi\bm n\cdot\bm\theta)$ is exponentially small, and at large $s$ the bracket tends to $-(4\pi s)^{-3/2}$.
+For $m^2\geq0$ the integral converges at both ends: at small $s$ the Poisson form $K_\theta(s)-(4\pi s)^{-3/2}=(4\pi s)^{-3/2}\sum_{\bm n\neq0}e^{-n^2/4s}\cos(2\pi\bm n\cdot\bm\theta)$ is exponentially small, and at large $s$ the bracket tends to $-(4\pi s)^{-3/2}$.
+For $m^2<0$ the factor $e^{-m^2s}$ grows at large $s$, and the integral is continued analytically to $m^2<0$.
 In $d=3-2\epsilon$ spatial dimensions the integral gives, after $\MSbar$ subtraction, the Coleman--Weinberg term~\cite{Coleman:1973jx}
 \begin{equation}
 V_{\rm CW}(m^2;c,\mu)=\frac{m^4}{64\pi^2}\Bigl[\ln\frac{|m^2|}{\mu^2}-c\Bigr],\qquad c=\tfrac32\ \text{for a scalar},

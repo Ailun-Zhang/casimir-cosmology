@@ -26,5 +26,5 @@ Machine of record: Intel64 Family 6 Model 204 Stepping 2, GenuineIntel, 16 CPUs,
 |---|---|---|---|
 | PRD Sec. VIII A | n_s = 0.9653407, r = 0.0034624 (N_* = 55.722) (PRIM-01, 02) | `r5/C64_plateau_ns_r/C64_results.json` : `rows/6/{ns,r}` | `04_calculations/results/20261009_claude_R5/C64_plateau_ns_r/C64_results.json` |
 | PRD Sec. VIII A | n_s = 0.9617386, r = 0.0042022 (N_* = 50.328) (PRIM-03, 04) | same : `rows/3/{ns,r}` | same |
-| report Fig. 19 (n_s, r vs N_*) | 12 values of N_* | same : `rows[*]` | same |
+| report Fig. 22 (n_s, r vs N_*) | 12 values of N_* | same : `rows[*]` | same |
 | PRD Sec. VIII A | initial-state tests | same : `initial_state_tests` | same |

@@ -73,7 +73,7 @@ The ``New'' fields quote current numbers only to identify the replacement; their
 {D116; D124 \S4; V12\_RESULTS\_INDEX \S E; numbers\_run05.csv (R5-001, R5-029, R5-030, R5-042--R5-047).}
 
 \rChist{H12}{D111: $\xi_c=0.032/\allowbreak 0.054/\allowbreak 0.120$ (MU potential); ``$\xiH\gtrsim0.03$--$0.12$, of the same order as the inflation bound $\xi\gtrsim0.06$''; stochastic nucleation with $B=192\pi^2\xi^2/|\lambda|$ ``matters only for $\xi\lesssim0.020$--$0.028$''.}
-{Current $\xi_c$ of Sec.~\ref{rep:h-universality}; compared at the same scale, the zero-mode condition is stronger than the inflation bound for $m_t\gtrsim172.1$~GeV; the Hawking--Moss coefficient is $96\pi^2$, which gives $0.028$--$0.040$ for the MU potential.}
+{Current $\xi_c$ of Sec.~\ref{rep:h-universality}; at the $1\%$ tolerance of $\xi_c$ the zero-mode condition lies above the all-mode inflation bound for $m_t\gtrsim172.1$~GeV when both are expressed at $\mub$; the Hawking--Moss coefficient is $96\pi^2$, which gives $0.028$--$0.040$ for the MU potential.} %
 {Comparison at mixed scales; a factor of two in the Hawking--Moss exponent.}
 {D129 \S0.4, \S5; D127 \S7; R16 V5, V6.}
 
@@ -174,7 +174,22 @@ The ``New'' fields quote current numbers only to identify the replacement; their
 \rChist{H32}{Zero-mode energy of the earlier draft computed with a decoupled quartic part, the ``stabilized'' $\lambda=0.01$ and $y_t=0.4585$.}
 {The Higgs zero mode is a finite-volume resonance at the Standard Model coupling $\lambda(\mub)=-0.0098$ (Secs.~\ref{rep:h-matching}--\ref{rep:h-survival}); the zero-mode share evaluated with the real part of the resonance energy is $0.298$, and the baseline $\fzm=0.30$ is kept (Sec.~\ref{rep:zeromodes}).}
 {Consequence of H1 for the zero-mode energy; the change of $\fzm$ is below $1\%$.}
-{D108 \S5; D124; long PRD draft appendices on the Casimir energy and the zero modes.}\end{description}
+{D108 \S5; D124; long PRD draft appendices on the Casimir energy and the zero modes.}
+
+\rChist{H33}{Report version 1.0, code version 1.0.0 and the first version of the paper: the MSR identification of the direct mass ``puts the measured direct mass at a pole-mass equivalent of $172.96$~GeV, at the criterion itself'', with $\Pbar=0.50$.} %
+{The offset of $0.36$~GeV between the MSR mass at $R=1.3$~GeV and the pole mass refers to the pole mass at the order of turnover, identified here with the all-orders estimate; the criterion uses the four-loop pole mass, which lies $0.272$~GeV lower, so the identification corresponds to $172.69$~GeV in the four-loop pole mass and gives $\Pbar=\PbarMSR$ (Sec.~\ref{rep:h-smmap}). The lower ends of the Bayes-factor ranges, set by this identification, move from $0.50$ to $0.61$ ($B_{\rm ex}$) and from $0.80$ to $0.98$ ($B_{\rm sel}$), and $|\ln B|\le\BayesMax$ is unchanged (Sec.~\ref{rep:h-budget}). The critical masses and all other marginal probabilities are unchanged.} %
+{The earlier value converted the MSR mass to the all-orders pole mass but compared it with a criterion computed in the four-loop pole mass.}
+{R21 review of the Letter (HP21-02); \texttt{04\_calculations/\allowbreak{}results/\allowbreak{}20261020\_\allowbreak{}msr\_\allowbreak{}consistent}; code and data version~1.1.0, \texttt{CHANGELOG.md}.}
+
+\rChist{H34}{Report version 1.0: renormalon ambiguity of the pole mass $0.07$--$0.11$~GeV.} %
+{$0.07$--$0.25$~GeV, the range of the published estimates (Sec.~\ref{rep:h-smmap}); the criterion in $\mtbar$ carries neither this ambiguity nor the truncation of the pole series, and the item remains a robustness variant outside the budget.} %
+{Version 1.0 quoted only the estimate of Ref.~\cite{Beneke:2016cbu}.}
+{R21 review of the Letter; R22 check of the second version of the paper.}
+
+\rChist{H35}{Assumption (A2) of version 1.0: the Standard Model holds up to the matching scale $\mub$.}
+{The Standard Model holds up to $2\pi\mub$, the scale of the lowest non-zero modes, which the finite-volume matching sums (Sec.~\ref{rep:setup}); the results are unchanged.}
+{The statement of the assumption was narrower than the calculation requires.}
+{R21 review of the Letter (DA-R21-05); R22 check of the second version of the paper.}\end{description}
 
 \subsection{The emptiness gate, the shape and the time symmetry}\label{sec:v23-shape}
 
@@ -289,11 +304,12 @@ The ``New'' fields quote current numbers only to identify the replacement; their
 \item[F6] \emph{Parabolic profile over the reference volume} (item C4) and \emph{an ensemble of nine realizations} (item C1). \emph{Files:} {\small C79; D117.}
 \item[F7] \emph{Wide-step Muller iterations for the two-dimensional resonance.} Started with a wide step, the iterations converged onto Siegert zeros of box states of the $s$ direction, which gave spurious width ratios ($5971$, $1245$, $163$); the roots are now started from the interior minimum of $|f|$ on the real axis and checked with a larger box (Sec.~\ref{rep:h-reduced}). \emph{Files:} {\small D112 \S0.6, \S7.4.}
 \item[F8] \emph{Sealed attempts at a finite Euclidean cap and the clock-field probes} of the separate line of calculation, which are not used (Sec.~\ref{rep:v-conditional}). \emph{Files:} {\small V12\_RESULTS\_INDEX \S B (B4, B8, B9, B13).}
+\item[F9] \emph{A one-dimensional Born--Oppenheimer model with the diagonal correction, as a model of the width.} In the abelian Higgs model, adding the diagonal Born--Oppenheimer term to the plain Born--Oppenheimer potential overestimates the widths by factors of $2.5$ to more than $200$, because the frequency of the gauge modes in the well is of the order of the radial motion, so that the adiabatic expansion has no small parameter and the diagonal term is nearly cancelled by the second-order non-adiabatic coupling; plain Born--Oppenheimer widths lie within $\abelBOdev$ of the exact ones (Sec.~\ref{sec:v11-abelian}). The reduction of Sec.~\ref{rep:h-reduced} solves $r$ and $|\mathbf w|$ together and does not use that term for $\mathbf w$. \emph{Files:} {\small C171.} %
 \end{description}
 
 \subsection{Statements retracted or not to be made}\label{sec:v23-retracted}
 
-The following statements appeared in drafts, notes or discussions and are not supported by the results; the papers avoid them.
+The following statements appeared in drafts, notes or discussions and are not supported by the results; the papers avoid them, except for item~\ref{ret:fornal}, a wording of the paper (arXiv versions 1 and 2).
 \begin{enumerate}
 \item ``The Standard Model lies above the $90\%$ threshold.'' At the measured mass $\Pone(172.60)=0.84$.
 \item The marginal probability, or the measured mass being on the safe side, as evidence for this beginning. The Bayes factors satisfy $|\ln B|\le\BayesMax$.
@@ -312,4 +328,8 @@ The following statements appeared in drafts, notes or discussions and are not su
 \item A representative point stated as an ensemble result; a ratio of divergences stated as a ratio of probabilities.
 \item Claim-layer numbers of two different model versions in one document (for example $173.41$ and $173.42$~GeV).
 \item Numbers for the effect of new particles below $\mub$ on $\lambda(\mub)$ that were not computed; only assumption~\ref{assump:A2} is stated.
+\item ``$1/B_{\rm ex}$ gives the odds against this beginning''; ``odds of about $30$ to $1$''. A Bayes factor equals the posterior odds only for equal prior odds; the papers quote the Bayes factor itself, $B_{\rm ex}\approx\BexFCC$ at the exclusion threshold of FCC-ee (Sec.~\ref{rep:h-budget}).
+\item ``The threshold of the Letter is the threshold of the paper.'' The static box of the Letter lasting $300$ light-crossing times has $\lamc=\lcAthree$, whereas the expanding torus of the paper has $\lamc(\mub)=-0.0121$; the torus is equivalent to a static box at $\mub$ lasting $N_{\rm eff}\approx\NeffHalf$ light-crossing times (Secs.~\ref{sec:v11-static-box} and~\ref{sec:v11-static-torus}). %
+\item ``The zero-mode condition on $\xiH$ is stronger than the bound from vacuum decay during inflation.'' The two bounds are defined differently; at the $1\%$ tolerance of $\xi_c$ the zero-mode condition lies above that bound for $m_t\gtrsim172.1$~GeV (Sec.~\ref{rep:h-universality}).
+\item\label{ret:fornal} ``No Higgs zero mode'', said of the scenario of Ref.~\cite{Fornal:2026qfq} in the paper (arXiv versions 1 and 2). The Higgs zero mode exists on that periodic torus as on the other tori considered here; the correct statement is that the scenario does not treat it (Secs.~\ref{rA:question} and~\ref{sec:v11-mechanism-context}).
 \end{enumerate}

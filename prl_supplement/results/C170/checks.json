@@ -1,0 +1,295 @@
+{
+ "package": "C170",
+ "n_checks": 30,
+ "n_pass": 30,
+ "checks": [
+  {
+   "name": "S0_u0_mt172.6_gamma_prod_seed",
+   "what": "Gamma of the lambda-override path (archived node couplings, production seed) vs archived run05 shard",
+   "value": 0.0,
+   "reference": 0.0,
+   "tolerance": "rel <= 1e-8",
+   "passed": true,
+   "computed_from": "S0/C170_S0.json#regression/u0_mt172.6/prod_seed/rel_gamma"
+  },
+  {
+   "name": "S0_u0_mt172.6_eps_prod_seed",
+   "what": "Re E vs archived",
+   "value": 0.0,
+   "reference": 0.0,
+   "tolerance": "abs <= 1e-10",
+   "passed": true,
+   "computed_from": "S0/C170_S0.json#regression/u0_mt172.6/prod_seed/d_eps"
+  },
+  {
+   "name": "S0_u0_mt172.6_gamma_generic_seed",
+   "what": "Gamma with this work's generic seed (1D adiabatic root) vs archived",
+   "value": 6.891265336150809e-12,
+   "reference": 0.0,
+   "tolerance": "rel <= 1e-8",
+   "passed": true,
+   "computed_from": "S0/C170_S0.json#regression/u0_mt172.6/generic_seed/rel_gamma"
+  },
+  {
+   "name": "S0_u0_mt173.0_gamma_prod_seed",
+   "what": "Gamma of the lambda-override path (archived node couplings, production seed) vs archived run05 shard",
+   "value": 0.0,
+   "reference": 0.0,
+   "tolerance": "rel <= 1e-8",
+   "passed": true,
+   "computed_from": "S0/C170_S0.json#regression/u0_mt173.0/prod_seed/rel_gamma"
+  },
+  {
+   "name": "S0_u0_mt173.0_eps_prod_seed",
+   "what": "Re E vs archived",
+   "value": 0.0,
+   "reference": 0.0,
+   "tolerance": "abs <= 1e-10",
+   "passed": true,
+   "computed_from": "S0/C170_S0.json#regression/u0_mt173.0/prod_seed/d_eps"
+  },
+  {
+   "name": "S0_u0_mt173.0_gamma_generic_seed",
+   "what": "Gamma with this work's generic seed (1D adiabatic root) vs archived",
+   "value": 9.103828801926284e-15,
+   "reference": 0.0,
+   "tolerance": "rel <= 1e-8",
+   "passed": true,
+   "computed_from": "S0/C170_S0.json#regression/u0_mt173.0/generic_seed/rel_gamma"
+  },
+  {
+   "name": "S0_u5_mt172.6_gamma_prod_seed",
+   "what": "Gamma of the lambda-override path (archived node couplings, production seed) vs archived run05 shard",
+   "value": 0.0,
+   "reference": 0.0,
+   "tolerance": "rel <= 1e-8",
+   "passed": true,
+   "computed_from": "S0/C170_S0.json#regression/u5_mt172.6/prod_seed/rel_gamma"
+  },
+  {
+   "name": "S0_u5_mt172.6_eps_prod_seed",
+   "what": "Re E vs archived",
+   "value": 0.0,
+   "reference": 0.0,
+   "tolerance": "abs <= 1e-10",
+   "passed": true,
+   "computed_from": "S0/C170_S0.json#regression/u5_mt172.6/prod_seed/d_eps"
+  },
+  {
+   "name": "S0_couplings_sm_provider",
+   "what": "sm_provider couplings at mu_b vs archived node couplings (g2, gY, y_t, lam, g3)",
+   "value": 0.0,
+   "reference": 0.0,
+   "tolerance": "abs <= 1e-15",
+   "passed": true,
+   "computed_from": "S0/C170_S0.json#couplings_vs_archive_u0"
+  },
+  {
+   "name": "S0_static_minus_hazard_P1=0.9",
+   "what": "static threshold of the archived u = 0 widths (N = eta_inf) minus the run05 hazard threshold (PRL: shallower by 0.0003-0.0004; run02 values 0.00030/0.00036/0.00042)",
+   "value": 0.0003046331162043746,
+   "reference": 0.0003,
+   "tolerance": "abs <= 3e-5",
+   "passed": true,
+   "computed_from": "S0/C170_S0.json#static_threshold_archived_u0/rows/P1=0.9/shallower_by"
+  },
+  {
+   "name": "S0_static_minus_hazard_P1=0.5",
+   "what": "static threshold of the archived u = 0 widths (N = eta_inf) minus the run05 hazard threshold (PRL: shallower by 0.0003-0.0004; run02 values 0.00030/0.00036/0.00042)",
+   "value": 0.00036229349249312925,
+   "reference": 0.00036,
+   "tolerance": "abs <= 3e-5",
+   "passed": true,
+   "computed_from": "S0/C170_S0.json#static_threshold_archived_u0/rows/P1=0.5/shallower_by"
+  },
+  {
+   "name": "S0_static_minus_hazard_P1=0.1",
+   "what": "static threshold of the archived u = 0 widths (N = eta_inf) minus the run05 hazard threshold (PRL: shallower by 0.0003-0.0004; run02 values 0.00030/0.00036/0.00042)",
+   "value": 0.0004156176784243723,
+   "reference": 0.00042,
+   "tolerance": "abs <= 3e-5",
+   "passed": true,
+   "computed_from": "S0/C170_S0.json#static_threshold_archived_u0/rows/P1=0.1/shallower_by"
+  },
+  {
+   "name": "S1_boxA_Gamma_lamSM_vs_archive",
+   "what": "box A at lambda_SM(172.6) (continuation seed) vs archived run05 u = 0 width",
+   "value": 1.7027823595583413e-11,
+   "reference": 0.0,
+   "tolerance": "rel <= 1e-8",
+   "passed": true,
+   "computed_from": "S1/C170_S1_summary.json#boxes/A/lam_SM/172.6/Gamma_direct"
+  },
+  {
+   "name": "S1_box_check",
+   "what": "max relative change of Gamma under the (N, Smax) = (28, 14) box check, all narrow points",
+   "value": 1.6289536078906153e-06,
+   "reference": 0.0,
+   "tolerance": "<= 1e-5",
+   "passed": true,
+   "computed_from": "S1/C170_S1_summary.json#boxes/*/max_box_rel_gamma"
+  },
+  {
+   "name": "S1_2D_vs_1D_adiabatic",
+   "what": "max |ln(Gamma_2D/Gamma_1D adiabatic)| over narrow points (report: 2D exceeds the adiabatic 1D width by 1.0-1.8% in the final model)",
+   "value": 0.021553635128888343,
+   "reference": 0.018,
+   "tolerance": "<= 0.05",
+   "passed": true,
+   "computed_from": "S1/C170_S1_summary.json#boxes/*/max_abs_ln_ratio_2D_1D"
+  },
+  {
+   "name": "S1_start_point_reproducible",
+   "what": "start point computed twice (up and down chains)",
+   "value": 0.0,
+   "reference": 0.0,
+   "tolerance": "rel <= 1e-10",
+   "passed": true,
+   "computed_from": "S1/C170_S1_summary.json#boxes/*/duplicate_start_point"
+  },
+  {
+   "name": "S1_N_eff_over_eta_P=0.9",
+   "what": "N_eff/eta_inf of box A at the run05 hazard threshold vs report I/(Gamma(0) eta_inf) (D128, earlier model)",
+   "value": 0.7889304531532777,
+   "reference": 0.77,
+   "tolerance": "abs <= 0.03",
+   "passed": true,
+   "computed_from": "S1/C170_S1_summary.json#boxes/A/N_eff/P=0.9"
+  },
+  {
+   "name": "S1_N_eff_over_eta_P=0.5",
+   "what": "N_eff/eta_inf of box A at the run05 hazard threshold vs report I/(Gamma(0) eta_inf) (D128, earlier model)",
+   "value": 0.8266099079175167,
+   "reference": 0.82,
+   "tolerance": "abs <= 0.03",
+   "passed": true,
+   "computed_from": "S1/C170_S1_summary.json#boxes/A/N_eff/P=0.5"
+  },
+  {
+   "name": "S1_N_eff_over_eta_P=0.1",
+   "what": "N_eff/eta_inf of box A at the run05 hazard threshold vs report I/(Gamma(0) eta_inf) (D128, earlier model)",
+   "value": 0.8511148977714906,
+   "reference": 0.87,
+   "tolerance": "abs <= 0.03",
+   "passed": true,
+   "computed_from": "S1/C170_S1_summary.json#boxes/A/N_eff/P=0.1"
+  },
+  {
+   "name": "S1_N_eff_vs_archived_u0_P=0.9",
+   "what": "N_eff/eta from box A (fixed 172.6 couplings) vs the archived u = 0 value I/(Gamma0 eta) at the critical m_t (own couplings) corrected by the measured coupling effect Gamma_A/Gamma_own = exp(s (m_c - 172.6)), s from the 172.2/173.0 columns",
+   "value": 0.7889304531532777,
+   "reference": {
+    "archived": 0.784765085633364,
+    "corrected": 0.7889178139365527,
+    "m_c": 172.50241274299054
+   },
+   "tolerance": "abs <= 0.005",
+   "passed": true,
+   "computed_from": "C170_results.json#S1/N_eff_boxA, #S1/coupling_mismatch_check_boxA; S0 static_threshold_archived_u0"
+  },
+  {
+   "name": "S1_N_eff_vs_archived_u0_P=0.5",
+   "what": "N_eff/eta from box A (fixed 172.6 couplings) vs the archived u = 0 value I/(Gamma0 eta) at the critical m_t (own couplings) corrected by the measured coupling effect Gamma_A/Gamma_own = exp(s (m_c - 172.6)), s from the 172.2/173.0 columns",
+   "value": 0.8266099079175167,
+   "reference": {
+    "archived": 0.8398773775574346,
+    "corrected": 0.82708412467695,
+    "m_c": 172.95945013527066
+   },
+   "tolerance": "abs <= 0.005",
+   "passed": true,
+   "computed_from": "C170_results.json#S1/N_eff_boxA, #S1/coupling_mismatch_check_boxA; S0 static_threshold_archived_u0"
+  },
+  {
+   "name": "S1_N_eff_vs_archived_u0_P=0.1",
+   "what": "N_eff/eta from box A (fixed 172.6 couplings) vs the archived u = 0 value I/(Gamma0 eta) at the critical m_t (own couplings) corrected by the measured coupling effect Gamma_A/Gamma_own = exp(s (m_c - 172.6)), s from the 172.2/173.0 columns",
+   "value": 0.8511148977714906,
+   "reference": {
+    "archived": 0.8772458527834726,
+    "corrected": 0.8471189227028089,
+    "m_c": 173.4183604676886
+   },
+   "tolerance": "abs <= 0.005",
+   "passed": true,
+   "computed_from": "C170_results.json#S1/N_eff_boxA, #S1/coupling_mismatch_check_boxA; S0 static_threshold_archived_u0"
+  },
+  {
+   "name": "S1_convergence_BASE",
+   "what": "max relative change of Gamma, box A points x = 6..18, FAST -> BASE",
+   "value": 6.185761496468878e-06,
+   "reference": 0.0,
+   "tolerance": "<= 1e-3",
+   "passed": true,
+   "computed_from": "S1/convergence_boxA.json"
+  },
+  {
+   "name": "S1_convergence_Rout14",
+   "what": "max relative change of Gamma, box A points x = 6..18, FAST -> Rout14",
+   "value": 5.888276313426033e-06,
+   "reference": 0.0,
+   "tolerance": "<= 1e-3",
+   "passed": true,
+   "computed_from": "S1/convergence_boxA.json"
+  },
+  {
+   "name": "S1_convergence_N32_S16",
+   "what": "max relative change of Gamma, box A points x = 6..18, FAST -> N32_S16",
+   "value": 5.359386376913022e-07,
+   "reference": 0.0,
+   "tolerance": "<= 1e-3",
+   "passed": true,
+   "computed_from": "S1/convergence_boxA.json"
+  },
+  {
+   "name": "lambdaSM_grid_vs_coup_point",
+   "what": "lambda_SM(mu) log grid (linear interpolation in ln mu) vs coup_point at the box scales",
+   "value": 3.078434471052993e-08,
+   "reference": 0.0,
+   "tolerance": "abs <= 1e-7",
+   "passed": true,
+   "computed_from": "S1/C170_lambdaSM_running.json#check_vs_boxes"
+  },
+  {
+   "name": "S2_2D_ex_path_vs_archive",
+   "what": "no-cross-term path (2D_ex, box A couplings, lambda_SM) vs archived T14b run02 root",
+   "value": 0.0,
+   "reference": 0.0,
+   "tolerance": "rel <= 1e-8",
+   "passed": true,
+   "computed_from": "S2/C170_S2_reg2dex.json"
+  },
+  {
+   "name": "S2_exact_zero_mode_scaling",
+   "what": "without the matching, Gamma(kappa, kappa^2 lam) = kappa^(2/3) Gamma(1, lam) (kappa = 0.5, 1.5; grids not scaled)",
+   "value": 2.7050927291494276e-06,
+   "reference": 0.0,
+   "tolerance": "rel <= 1e-4",
+   "passed": true,
+   "computed_from": "S2/C170_S2_scalecheck.json"
+  },
+  {
+   "name": "S2_kappa0_no_barrier",
+   "what": "kappa = 0: number of grid points with dU/dr > 0 for lambda in [-0.04, -1e-4], r in (0.02, min(16, r_series)]",
+   "value": 0,
+   "reference": 0,
+   "tolerance": "== 0",
+   "passed": true,
+   "computed_from": "S2/C170_S2_kappa0.json"
+  },
+  {
+   "name": "S2_kappa1_slope_reduction",
+   "what": "kappa = 1 (box A couplings, lambda = -0.012): local slope reduction of the zero-point energy by dV_MC at r = 1-5 (report: 10-33%)",
+   "value": [
+    0.12130893641437107,
+    0.32243317749025274
+   ],
+   "reference": [
+    0.1,
+    0.33
+   ],
+   "tolerance": "inside +-0.03",
+   "passed": true,
+   "computed_from": "S2/C170_S2_curves.json#slopes/1.00"
+  }
+ ]
+}

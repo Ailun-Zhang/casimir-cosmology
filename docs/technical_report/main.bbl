@@ -4,19 +4,20 @@
 Alan Zhang.
 \newblock {Gauge Field Fluctuations Protect the Higgs Vacuum When a Small
   Universe Begins}, 2026.
-\newblock Companion Letter.
+\newblock \href {https://arxiv.org/abs/2610.28704} {\path{arXiv:2610.28704}}.
 
 \bibitem{v12PRD}
 Alan Zhang.
 \newblock {A Casimir turning point as the beginning of a small flat universe},
   2026.
 \newblock Companion paper.
+\newblock \href {https://arxiv.org/abs/2610.24905} {\path{arXiv:2610.24905}}.
 
 \bibitem{v12Report}
 Alan Zhang.
 \newblock {Casimir Cosmology: Derivations and Numerical Validation}.
-\newblock {Companion technical report, version 1.0, Zenodo},
-  doi:\href{https://doi.org/10.5281/zenodo.23434140}{10.5281/zenodo.23434140},
+\newblock {Companion technical report, Zenodo},
+  doi:\href{https://doi.org/10.5281/zenodo.23434139}{10.5281/zenodo.23434139},
   2026.
 \newblock {N}ot independently peer reviewed.
 
@@ -66,7 +67,7 @@ J.~R. Espinosa, G.~F. Giudice, and A.~Riotto.
 
 \bibitem{Herranen:2014cua}
 Matti Herranen, Tommi Markkanen, Sami Nurmi, and Arttu Rajantie.
-\newblock Spacetime curvature and the higgs stability during inflation.
+\newblock Spacetime curvature and the {Higgs} stability during inflation.
 \newblock {\em Phys. Rev. Lett.}, 113:211102, 2014.
 \newblock \href {https://arxiv.org/abs/1407.3141} {\path{arXiv:1407.3141}},
   \href {https://doi.org/10.1103/PhysRevLett.113.211102}
@@ -126,7 +127,7 @@ Andreas Mantziris, Tommi Markkanen, and Arttu Rajantie.
 
 \bibitem{Herranen:2015ima}
 Matti Herranen, Tommi Markkanen, Sami Nurmi, and Arttu Rajantie.
-\newblock Spacetime curvature and higgs stability after inflation.
+\newblock Spacetime curvature and {Higgs} stability after inflation.
 \newblock {\em Phys. Rev. Lett.}, 115:241301, 2015.
 \newblock \href {https://arxiv.org/abs/1506.04065} {\path{arXiv:1506.04065}},
   \href {https://doi.org/10.1103/PhysRevLett.115.241301}
@@ -280,7 +281,7 @@ Pierre van Baal.
 \newblock {The Small Volume Expansion of Gauge Theories Coupled to Massless
   Fermions}.
 \newblock {\em Nucl. Phys. B}, 307:274, 1988.
-\newblock [Erratum: Nucl.Phys.B 312, 752 (1989)].
+\newblock [Erratum: Nucl. Phys. B 312, 752 (1989)].
 \newblock \href {https://doi.org/10.1016/0550-3213(88)90323-9}
   {\path{doi:10.1016/0550-3213(88)90323-9}}.
 
@@ -371,7 +372,7 @@ M.~V. Fischetti, J.~B. Hartle, and B.~L. Hu.
 B.~L. Hu and L.~Parker.
 \newblock {Anisotropy Damping Through Quantum Effects in the Early Universe}.
 \newblock {\em Phys. Rev. D}, 17:933--945, 1978.
-\newblock Erratum: Phys.Rev.D 17, 3292 (1978).
+\newblock Erratum: Phys. Rev. D 17, 3292 (1978).
 \newblock \href {https://doi.org/10.1103/PhysRevD.17.933}
   {\path{doi:10.1103/PhysRevD.17.933}}.
 
@@ -551,6 +552,13 @@ J.~B. Hartle and G.~T. Horowitz.
 \newblock \href {https://doi.org/10.1103/PhysRevD.24.257}
   {\path{doi:10.1103/PhysRevD.24.257}}.
 
+\bibitem{ParticleDataGroup:2026mpi}
+F.~Takahashi et~al.
+\newblock {Review of Particle Physics}.
+\newblock {\em Int. J. Mod. Phys. A}, 41(22):2630011, 2026.
+\newblock \href {https://doi.org/10.1142/s0217751x26300115}
+  {\path{doi:10.1142/s0217751x26300115}}.
+
 \bibitem{Casas:1999cd}
 J.~A. Casas, V.~Di~Clemente, A.~Ibarra, and M.~Quiros.
 \newblock {Massive neutrinos and the Higgs mass window}.
@@ -568,13 +576,6 @@ Werner Rodejohann and He~Zhang.
 \newblock \href {https://arxiv.org/abs/1203.3825} {\path{arXiv:1203.3825}},
   \href {https://doi.org/10.1007/JHEP06(2012)022}
   {\path{doi:10.1007/JHEP06(2012)022}}.
-
-\bibitem{ParticleDataGroup:2026mpi}
-F.~Takahashi et~al.
-\newblock {Review of Particle Physics}.
-\newblock {\em Int. J. Mod. Phys. A}, 41(22):2630011, 2026.
-\newblock \href {https://doi.org/10.1142/s0217751x26300115}
-  {\path{doi:10.1142/s0217751x26300115}}.
 
 \bibitem{Hoang:2020iah}
 Andr{\'e}~H. Hoang.
@@ -767,6 +768,68 @@ Barry Simon.
 \newblock {\em Phys. Lett. A}, 71(2-3):211--214, 1979.
 \newblock \href {https://doi.org/10.1016/0375-9601(79)90165-8}
   {\path{doi:10.1016/0375-9601(79)90165-8}}.
+
+\bibitem{Simon:1983jy}
+B.~Simon.
+\newblock {Some quantum operators with discrete spectrum but classically
+  continuous spectrum}.
+\newblock {\em Annals Phys.}, 146:209--220, 1983.
+\newblock \href {https://doi.org/10.1016/0003-4916(83)90057-X}
+  {\path{doi:10.1016/0003-4916(83)90057-X}}.
+
+\bibitem{Barbon:2005zj}
+J.~L.~F. Barbon and Carlos Hoyos-Badajoz.
+\newblock {Small volume expansion of almost supersymmetric large N theories}.
+\newblock {\em JHEP}, 2006(01):114, 2006.
+\newblock \href {https://arxiv.org/abs/hep-th/0507267}
+  {\path{arXiv:hep-th/0507267}}, \href
+  {https://doi.org/10.1088/1126-6708/2006/01/114}
+  {\path{doi:10.1088/1126-6708/2006/01/114}}.
+
+\bibitem{deWit:1988xki}
+B.~de~Wit, M.~Luscher, and H.~Nicolai.
+\newblock {The Supermembrane Is Unstable}.
+\newblock {\em Nucl. Phys. B}, 320:135--159, 1989.
+\newblock \href {https://doi.org/10.1016/0550-3213(89)90214-9}
+  {\path{doi:10.1016/0550-3213(89)90214-9}}.
+
+\bibitem{Dine:1992wr}
+Michael Dine, Robert~G. Leigh, Patrick~Y. Huet, Andrei~D. Linde, and Dmitri~A.
+  Linde.
+\newblock {Towards the theory of the electroweak phase transition}.
+\newblock {\em Phys. Rev. D}, 46:550--571, 1992.
+\newblock \href {https://arxiv.org/abs/hep-ph/9203203}
+  {\path{arXiv:hep-ph/9203203}}, \href
+  {https://doi.org/10.1103/PhysRevD.46.550}
+  {\path{doi:10.1103/PhysRevD.46.550}}.
+
+\bibitem{Arnold:1992rz}
+Peter~Brockway Arnold and Olivier Espinosa.
+\newblock {The Effective potential and first order phase transitions: Beyond
+  leading-order}.
+\newblock {\em Phys. Rev. D}, 47:3546, 1993.
+\newblock [Erratum: Phys. Rev. D 50, 6662 (1994)].
+\newblock \href {https://arxiv.org/abs/hep-ph/9212235}
+  {\path{arXiv:hep-ph/9212235}}, \href
+  {https://doi.org/10.1103/PhysRevD.47.3546}
+  {\path{doi:10.1103/PhysRevD.47.3546}}.
+
+\bibitem{Barbon:2006us}
+J.~L.~F. Barbon and Carlos Hoyos-Badajoz.
+\newblock {Dynamical Higgs potentials with a landscape}.
+\newblock {\em Phys. Rev. D}, 73:126002, 2006.
+\newblock \href {https://arxiv.org/abs/hep-th/0602285}
+  {\path{arXiv:hep-th/0602285}}, \href
+  {https://doi.org/10.1103/PhysRevD.73.126002}
+  {\path{doi:10.1103/PhysRevD.73.126002}}.
+
+\bibitem{Antoniadis:2024ent}
+Ignatios Antoniadis, Daniele Bielli, Auttakit Chatrabhuti, and Hiroshi Isono.
+\newblock {Thin-wall vacuum decay in the presence of a compact dimension}.
+\newblock {\em JHEP}, 2024(09):011, 2024.
+\newblock \href {https://arxiv.org/abs/2405.16920} {\path{arXiv:2405.16920}},
+  \href {https://doi.org/10.1007/JHEP09(2024)011}
+  {\path{doi:10.1007/JHEP09(2024)011}}.
 
 \bibitem{Hawking:1981fz}
 S.~W. Hawking and I.~G. Moss.
@@ -972,11 +1035,11 @@ Alan Zhang.
 \newblock {Code and data for: A Casimir turning point as the beginning of a
   small flat universe}.
 \newblock {Zenodo},
-  doi:\href{https://doi.org/10.5281/zenodo.23434068}{10.5281/zenodo.23434068},
+  doi:\href{https://doi.org/10.5281/zenodo.23434067}{10.5281/zenodo.23434067},
   2026.
-\newblock {V}ersion 1.0.0 [{S}oftware].
-\newblock \href {https://doi.org/10.5281/zenodo.23434068}
-  {\path{doi:10.5281/zenodo.23434068}}.
+\newblock [{S}oftware].
+\newblock \href {https://doi.org/10.5281/zenodo.23434067}
+  {\path{doi:10.5281/zenodo.23434067}}.
 
 \bibitem{Beneke:2016cbu}
 M.~Beneke, P.~Marquard, P.~Nason, and M.~Steinhauser.
@@ -1034,7 +1097,7 @@ M.~Benedikt et~al.
 \newblock {Future Circular Collider Feasibility Study Report: Volume 1,
   Physics, Experiments, Detectors}.
 \newblock {\em Eur. Phys. J. C}, 85(12):1468, 2025.
-\newblock [Erratum: Eur.Phys.J.C 86, 844 (2026)].
+\newblock [Erratum: Eur. Phys. J. C 86, 844 (2026)].
 \newblock \href {https://arxiv.org/abs/2505.00272} {\path{arXiv:2505.00272}},
   \href {https://doi.org/10.1140/epjc/s10052-025-15077-x}
   {\path{doi:10.1140/epjc/s10052-025-15077-x}}.
@@ -1058,7 +1121,7 @@ N.~D. Birrell and P.~C.~W. Davies.
 
 \bibitem{Hook:2014uia}
 Anson Hook, John Kearney, Bibhushan Shakya, and Kathryn~M. Zurek.
-\newblock Probable or improbable universe? correlating electroweak vacuum
+\newblock Probable or improbable universe? {C}orrelating electroweak vacuum
   instability with the scale of inflation.
 \newblock {\em JHEP}, 2015(01):061, 2015.
 \newblock \href {https://arxiv.org/abs/1404.5953} {\path{arXiv:1404.5953}},

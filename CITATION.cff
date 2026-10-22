@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this code or data, please cite this archive and the two papers listed under references."
 title: "Code and data for: A Casimir turning point as the beginning of a small flat universe"
 type: software
-version: "1.1.0"
+version: "1.2.0"
 date-released: "2026-10-22"
 doi: 10.5281/zenodo.23434067
 repository-code: "https://github.com/Ailun-Zhang/casimir-cosmology"
@@ -17,7 +17,9 @@ abstract: >-
   its nonlinear survival, the Higgs zero-mode criterion for the survival of the electroweak vacuum through the turn
   (critical top-quark masses, error budget, xi_H condition), and the CMB readability of the shape fossil. Every result
   directory has a quick and a full run mode and compares fresh output with the archived values under stated
-  tolerances.
+  tolerances. Version 1.2.0 adds the Letter's Supplemental Material (static box and abelian Higgs model), the figures
+  and derived numbers of the technical report version 1.1, an independent blind recalculation of the abelian Higgs
+  check, and the report itself.
 authors:
   - family-names: Zhang
     given-names: Alan
@@ -57,3 +59,11 @@ references:
     status: preprint
     url: "https://arxiv.org/abs/2610.24905"
     notes: "arXiv:2610.24905"
+  - type: report
+    title: "Casimir Cosmology: Derivations and Numerical Validation"
+    authors:
+      - family-names: Zhang
+        given-names: Alan
+        orcid: "https://orcid.org/0009-0000-1187-0755"
+    doi: 10.5281/zenodo.23434139
+    notes: "Companion technical report (all versions); version 1.1 is included in docs/technical_report/"

@@ -2,21 +2,21 @@
 \addcontentsline{toc}{section}{Reading guide}
 
 This report is the companion of a Letter~\cite{v12PRL} and a paper~\cite{v12PRD} on a flat three-torus universe whose contraction is turned around by the negative Casimir energy of the Standard Model.
-The Letter states the criterion on the top-quark mass that follows from the survival of the Higgs zero mode at the turn; the paper develops the whole scenario, from the trace anomaly to the fossil of the shape in the microwave background.
+The Letter computes the finite-volume threshold below which the Higgs zero mode of a small box with antiperiodic fermions keeps its vacuum with probability less than $1/2$, shows that it is due to the zero-point fluctuations of the constant gauge modes, and applies it to a universe that begins at the turning point, which gives a criterion on the top-quark mass; the paper develops the whole scenario, from the trace anomaly to the fossil of the shape in the microwave background.
 Both are self-contained.
 The report collects what they could not: the derivations step by step, from the definitions to the final formulas, the numerical methods, the cross-checks between different methods, the convergence of every computation, the independent reimplementations, and a guide to the code and data from which every number and figure is produced.
 It is not independently peer reviewed.
 
 \paragraph{Three parts.}
 Part~I (Secs.~\ref{rep:setup}--\ref{rep:sky}) is the final model and its derivations, in the order of the physical argument: the assumptions, the trace anomaly at a turning point, the Casimir energy and zero modes of the Standard Model on the torus, the turning solution, six sections on the Higgs zero mode (finite-volume matching, the reduced model and its resonance, the cross terms with the non-zero modes, survival along the turn, the Standard Model mapping and the top-quark criterion, the error budget and the curvature coupling), the emptiness gate, the shape of the torus and its quantum fossil, the primordial spectra, and the reading of the fossil in the sky.
-Part~II (Secs.~\ref{rep:v-fulldim}--\ref{rep:v-repro}) is the evidence that Part~I is computed correctly: the full-dimensional checks of the reduced zero-mode model, the independent (blind) reimplementations, the convergence and numerical controls, the results of a separate line of calculation that we use only as conditional evidence, and the reproduction guide.
+Part~II (Secs.~\ref{rep:v-fulldim}--\ref{rep:v-repro}) is the evidence that Part~I is computed correctly: the full-dimensional checks of the reduced zero-mode model and an exactly reducible test of the mechanism in the abelian Higgs model, the independent (blind) reimplementations, the convergence and numerical controls, the results of a separate line of calculation that we use only as conditional evidence, and the reproduction guide.
 Part~III (Sec.~\ref{rep:history}) is a record of superseded estimates, failed approaches and retracted statements; nothing in it is used in the papers.
 Appendix~\ref{rep:app-notation} lists the notation and Appendix~\ref{rep:app-numbers} the key numbers with their sources.
 
 \paragraph{Reading alongside the Letter and the paper.}
 Table~\ref{tab:guide-map} shows where the material of the two papers is expanded here.
 The paper refers to this report as ``Ref.~\cite{v12Report}, Sec.~$N$''; the section numbers of this report are fixed.
-A reader who wants the main results only can read the Letter, then Secs.~\ref{rep:h-smmap} and~\ref{rep:h-budget} for the criterion and its error budget, and Sec.~\ref{rep:v-blind} for how it was checked.
+A reader who wants the main results only can read the Letter, then Secs.~\ref{sec:v11-static-box}--\ref{sec:v11-static-torus} for the static-box threshold and Sec.~\ref{sec:v11-abelian} for the abelian test, Secs.~\ref{rep:h-smmap} and~\ref{rep:h-budget} for the criterion and its error budget, and Sec.~\ref{rep:v-blind} for how it was checked.
 
 \begin{table}[ht]
 \centering
@@ -31,7 +31,9 @@ Setup and assumptions A1--A8 & PRD II; PRL & Sec.~\ref{rep:setup} \\
 Trace anomaly at a turning point & PRD III & Sec.~\ref{rep:trace} \\
 Casimir energy, zero modes, turning solution & PRD IV and appendices & Secs.~\ref{rep:casimir}--\ref{rep:turning} \\
 Higgs zero mode: matching, reduced model, cross terms & PRD V; PRL & Secs.~\ref{rep:h-matching}--\ref{rep:h-cross} \\
+The confinement mechanism in field-theory context & PRL (introduction, Discussion) & Sec.~\ref{sec:v11-mechanism-context} \\
 Survival along the turn, preparation, two branches & PRD V; PRL & Sec.~\ref{rep:h-survival} \\
+Static box: width law, threshold $\lamc(N)$, gauge zero-mode origin, couplings & PRL (Fig.~1, End Matter A) & Sec.~\ref{sec:v11-static-box} \\
 Standard Model mapping and the top-quark criterion & PRD V; PRL & Sec.~\ref{rep:h-smmap} \\
 Error budget, marginalization, experimental reach & PRD V; PRL Table~I & Sec.~\ref{rep:h-budget} \\
 Universality and the curvature coupling $\xiH$ & PRD V; PRL & Sec.~\ref{rep:h-universality} \\
@@ -39,12 +41,19 @@ Emptiness gate & PRD VI & Sec.~\ref{rep:gate} \\
 Shape no-go, real-moment theorem, fossil & PRD VII; PRL & Secs.~\ref{rep:shape}, \ref{rep:quantum-shape} \\
 Primordial spectra and the microwave-background window & PRD VIII & Secs.~\ref{rep:spectra}, \ref{rep:sky} \\
 Full-dimensional validation, verification record & PRD V and appendices; PRL & Secs.~\ref{rep:v-fulldim}, \ref{rep:v-blind} \\
+Abelian Higgs model: an exactly reducible test & PRL End Matter A & Secs.~\ref{sec:v11-abelian}, \ref{sec:v11-blind-abelian} \\
 Convergence, numerical controls & PRD appendices & Sec.~\ref{rep:v-convergence} \\
 Conditional evidence & PRD VII F, VIII B, IX & Sec.~\ref{rep:v-conditional} \\
 Code, data, figures, numbers & Data Availability & Sec.~\ref{rep:v-repro}, App.~\ref{rep:app-numbers} \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\paragraph{Version 1.1.}
+Version 1.1 adds the material on which the Letter now rests: the confinement mechanism in field-theory context (Sec.~\ref{sec:v11-mechanism-context}); the finite-volume threshold of a static box as a function of its duration, its size and the couplings, and the gauge zero-mode origin of the barrier (Sec.~\ref{sec:v11-static-box}); an exactly reducible test of the mechanism and of the width law in the abelian Higgs model (Sec.~\ref{sec:v11-abelian}), with a blind recalculation (Sec.~\ref{sec:v11-blind-abelian}); and the numerical controls of these calculations (Sec.~\ref{sec:v11-numerics}).
+It corrects the identification of the measured top mass with the MSR mass, which now gives $\Pbar=\PbarMSR$ (Sec.~\ref{rep:h-smmap}; item H33 of Part~III), aligns the text with the final versions of the Letter and the paper, corrects one statement of the paper (item~\ref{ret:fornal} of Sec.~\ref{sec:v23-retracted}), and adds their arXiv numbers.
+The section numbers of version~1.0 are unchanged: the new material is in new subsections at the ends of Secs.~\ref{rep:h-reduced}, \ref{rep:h-survival}, \ref{rep:v-fulldim}, \ref{rep:v-blind}, \ref{rep:v-convergence} and~\ref{rep:v-repro}, and in new items of Part~III.
+Figures up to Fig.~\ref{fig:rb-hazard} and tables up to Table~\ref{tab:rb-w0} keep their numbers; the later figures and tables are renumbered.
 
 \paragraph{Conventions.}
 We state the status of every result with the same words as the papers: a result is \emph{proved} (a theorem or an identity), holds \emph{under stated conditions} (``if \ldots, then \ldots''), is \emph{found numerically} (with its precision), or is \emph{expected} without proof; a representative point is never stated as an ensemble result.

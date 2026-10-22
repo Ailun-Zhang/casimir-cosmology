@@ -36,5 +36,5 @@ Machine of record: Intel64 Family 6 Model 204 Stepping 2, GenuineIntel, 16 CPUs,
 | PRD Table III | plateau free σ_E 0.0587 | `r5/C63_rolling_fossil/C63_results.json` : `SM_AAA/modes/aspect/natural_rms` | `.../C63_rolling_fossil/` |
 | PRD Sec. VII E, Eq. `eq:s-scaling` | K(19.32) = 24.5501; dlnσ/dlnκ = 1.366; LiteBIRD 3.1 %, CMB-S4 1.6 %; σ ratio 0.6306 at r = 1e-4 (FLOOR-01, FOS-14..16) | `r2/observables/run01/C143_observables.json` : `F_kappaE`, `dlnsigma_dlnkappa`, `LiteBIRD_*`, `CMBS4_*`, `sigma_vs_r` | `.../20261013_claude_v12_r2/observables/run01/C143_observables.json` |
 | PRD Sec. VII E (error budget) | NL/linear aspect variance 1.043 / 1.045 (FOS-07) | `fu/C76/C76_summary.json` : `sets/{hi,ind}/*` ; also `../04` C142 `regression/C76_reference` | `.../C76/C76_summary.json` |
-| report Fig. 17 | fossil distributions (free 2048, ξ = 0.30 2048) | `r5/nonlinear_SM/C60_summary.json`, `fu/C76/C76_summary.json` + trajectory archives | `.../nonlinear_SM/`, `.../C76/` |
+| report Fig. 20 | fossil distributions (free 2048, ξ = 0.30 2048) | `r5/nonlinear_SM/C60_summary.json`, `fu/C76/C76_summary.json` + trajectory archives | `.../nonlinear_SM/`, `.../C76/` |
 | PRD Sec. IV C (`sec:turning`) | φ_b, N_post, hL_b of the SM pivot | `r5/C62_SM_pivot/C62_results.json` : `SM_AAA/*` | `.../C62_SM_pivot/` |

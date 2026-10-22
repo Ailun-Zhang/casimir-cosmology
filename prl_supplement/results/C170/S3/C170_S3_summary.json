@@ -1,0 +1,471 @@
+{
+ "definition": "lambda_c(N = 300; P) of box A (run05 final model) with one coupling multiplied by s in all sectors; derivatives d ln|lambda_c| / d ln g",
+ "thresholds": {
+  "g2": {
+   "1.00": {
+    "P=0.9": {
+     "x_c": 10.636933716431683,
+     "lam_c": -0.00883826652809087,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.5": {
+     "x_c": 9.224726386869674,
+     "lam_c": -0.011751492101956921,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.1": {
+     "x_c": 8.253105031657954,
+     "lam_c": -0.014681325102617297,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    }
+   },
+   "0.70": {
+    "P=0.9": {
+     "x_c": 12.033465284869182,
+     "lam_c": -0.006905872901694891,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.5": {
+     "x_c": 10.433040033393857,
+     "lam_c": -0.00918709595281501,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.1": {
+     "x_c": 9.338730164780156,
+     "lam_c": -0.011466327609210031,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "n_good": 12,
+    "newton_grad_max": 8.881784197001252e-09,
+    "newton_safe_used": false,
+    "Gamma_at_lam_m0p012": 0.00954529800627062
+   },
+   "0.85": {
+    "P=0.9": {
+     "x_c": 11.256709604744495,
+     "lam_c": -0.00789181825298177,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.5": {
+     "x_c": 9.75849750347078,
+     "lam_c": -0.010501082955524712,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.1": {
+     "x_c": 8.732190965105689,
+     "lam_c": -0.013114554748344151,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "n_good": 12,
+    "newton_grad_max": 8.881784197001252e-09,
+    "newton_safe_used": false,
+    "Gamma_at_lam_m0p012": 0.004885522881523931
+   },
+   "1.15": {
+    "P=0.9": {
+     "x_c": 10.11239055639731,
+     "lam_c": -0.009778952378457268,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.5": {
+     "x_c": 8.783063984129322,
+     "lam_c": -0.012963071213125591,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.1": {
+     "x_c": 7.861084964332958,
+     "lam_c": -0.01618210517390991,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "n_good": 12,
+    "newton_grad_max": 1.3322676295501877e-08,
+    "newton_safe_used": false,
+    "Gamma_at_lam_m0p012": 0.001436678275270713
+   },
+   "1.30": {
+    "P=0.9": {
+     "x_c": 9.635326154500516,
+     "lam_c": -0.010771276139696098,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.5": {
+     "x_c": 8.396520536880624,
+     "lam_c": -0.014184083880716913,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.1": {
+     "x_c": 7.525113105307837,
+     "lam_c": -0.017659318364545352,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "n_good": 12,
+    "newton_grad_max": 1.1102230246251564e-08,
+    "newton_safe_used": false,
+    "Gamma_at_lam_m0p012": 0.0007759353949250419
+   }
+  },
+  "gY": {
+   "1.00": {
+    "P=0.9": {
+     "x_c": 10.636933716431683,
+     "lam_c": -0.00883826652809087,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.5": {
+     "x_c": 9.224726386869674,
+     "lam_c": -0.011751492101956921,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.1": {
+     "x_c": 8.253105031657954,
+     "lam_c": -0.014681325102617297,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    }
+   },
+   "0.70": {
+    "P=0.9": {
+     "x_c": 10.941307437553112,
+     "lam_c": -0.008353366903891695,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.5": {
+     "x_c": 9.490070500873248,
+     "lam_c": -0.011103531333371124,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.1": {
+     "x_c": 8.495601405263299,
+     "lam_c": -0.013855166330576502,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "n_good": 12,
+    "newton_grad_max": 1.1102230246251564e-08,
+    "newton_safe_used": false,
+    "Gamma_at_lam_m0p012": 0.0036143720255334727
+   },
+   "0.85": {
+    "P=0.9": {
+     "x_c": 10.782351236498714,
+     "lam_c": -0.008601477351816246,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.5": {
+     "x_c": 9.349814853209882,
+     "lam_c": -0.01143915587826742,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.1": {
+     "x_c": 8.366800819728349,
+     "lam_c": -0.01428502942936274,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "n_good": 12,
+    "newton_grad_max": 1.1102230246251564e-08,
+    "newton_safe_used": false,
+    "Gamma_at_lam_m0p012": 0.003051912280707522
+   },
+   "1.15": {
+    "P=0.9": {
+     "x_c": 10.500982702324642,
+     "lam_c": -0.009068597232464467,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.5": {
+     "x_c": 9.11219608763825,
+     "lam_c": -0.012043532426153525,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.1": {
+     "x_c": 8.153170316655448,
+     "lam_c": -0.015043433503719814,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "n_good": 12,
+    "newton_grad_max": 8.881784197001252e-09,
+    "newton_safe_used": false,
+    "Gamma_at_lam_m0p012": 0.002261281688077175
+   },
+   "1.30": {
+    "P=0.9": {
+     "x_c": 10.368425630443419,
+     "lam_c": -0.009301957824898637,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.5": {
+     "x_c": 9.007975188931567,
+     "lam_c": -0.012323828255593937,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.1": {
+     "x_c": 8.063456850266073,
+     "lam_c": -0.015380040088621068,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "n_good": 12,
+    "newton_grad_max": 1.1102230246251564e-08,
+    "newton_safe_used": false,
+    "Gamma_at_lam_m0p012": 0.001967422231140624
+   }
+  },
+  "yt": {
+   "1.00": {
+    "P=0.9": {
+     "x_c": 10.636933716431683,
+     "lam_c": -0.00883826652809087,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.5": {
+     "x_c": 9.224726386869674,
+     "lam_c": -0.011751492101956921,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.1": {
+     "x_c": 8.253105031657954,
+     "lam_c": -0.014681325102617297,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    }
+   },
+   "0.70": {
+    "P=0.9": {
+     "x_c": 11.699444885402961,
+     "lam_c": -0.0073058287540201435,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.5": {
+     "x_c": 10.159518478391279,
+     "lam_c": -0.009688437698179635,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.1": {
+     "x_c": 9.080627293696361,
+     "lam_c": -0.012127416647655674,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "n_good": 12,
+    "newton_grad_max": 1.1102230246251564e-08,
+    "newton_safe_used": false,
+    "Gamma_at_lam_m0p012": 0.007293954273458845
+   },
+   "0.85": {
+    "P=0.9": {
+     "x_c": 11.133761282630461,
+     "lam_c": -0.00806707675590544,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.5": {
+     "x_c": 9.672471353116274,
+     "lam_c": -0.01068870511466426,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.1": {
+     "x_c": 8.655055505832603,
+     "lam_c": -0.01334935508530397,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "n_good": 12,
+    "newton_grad_max": 8.881784197001252e-09,
+    "newton_safe_used": false,
+    "Gamma_at_lam_m0p012": 0.004450146270298031
+   },
+   "1.15": {
+    "P=0.9": {
+     "x_c": 10.242296845462992,
+     "lam_c": -0.009532466394983502,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.5": {
+     "x_c": 8.840863639492738,
+     "lam_c": -0.012794125773938096,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.1": {
+     "x_c": 7.894892774516761,
+     "lam_c": -0.016043810661496974,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "n_good": 12,
+    "newton_grad_max": 8.881784197001252e-09,
+    "newton_safe_used": false,
+    "Gamma_at_lam_m0p012": 0.0015805899309949206
+   },
+   "1.30": {
+    "P=0.9": {
+     "x_c": 9.980230068686398,
+     "lam_c": -0.010039657427531335,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.5": {
+     "x_c": 8.540093794216004,
+     "lam_c": -0.013711176424256701,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "P=0.1": {
+     "x_c": 7.595212759894844,
+     "lam_c": -0.01733485095828003,
+     "status": "interpolated",
+     "extrap_dx": 0.0
+    },
+    "n_good": 12,
+    "newton_grad_max": 1.1102230246251564e-08,
+    "newton_safe_used": false,
+    "Gamma_at_lam_m0p012": 0.0010715871977563666
+   }
+  }
+ },
+ "derivatives": {
+  "g2": {
+   "P=0.9": {
+    "sym_0.85_1.15": 0.7092933125101738,
+    "sym_0.70_1.30": 0.7180656307022322,
+    "one_sided_0.70": 0.6917182514448285,
+    "one_sided_0.85": 0.6969293056538225,
+    "one_sided_1.15": 0.7236705107978423,
+    "one_sided_1.30": 0.7538839615204194,
+    "quadratic_fit_slope_at_1": 0.7238795114979217,
+    "quadratic_fit_curvature": 0.18846038194077863
+   },
+   "P=0.5": {
+    "sym_0.85_1.15": 0.6967898676472535,
+    "sym_0.70_1.30": 0.7016043426098131,
+    "one_sided_0.70": 0.6902092184076339,
+    "one_sided_0.85": 0.6922383122368724,
+    "one_sided_1.15": 0.7020825381716752,
+    "one_sided_1.30": 0.7170956111872482,
+    "quadratic_fit_slope_at_1": 0.7039392666785634,
+    "quadratic_fit_curvature": 0.08206808408606024
+   },
+   "P=0.1": {
+    "sym_0.85_1.15": 0.6953246778737907,
+    "sym_0.70_1.30": 0.6976115317942384,
+    "one_sided_0.70": 0.6929603069935366,
+    "one_sided_0.85": 0.6944029373497287,
+    "one_sided_1.15": 0.696396502439903,
+    "one_sided_1.30": 0.7039347075072264,
+    "quadratic_fit_slope_at_1": 0.6985620084847325,
+    "quadratic_fit_curvature": 0.03501929117733315
+   }
+  },
+  "gY": {
+   "P=0.9": {
+    "sym_0.85_1.15": 0.17494861017838498,
+    "sym_0.70_1.30": 0.1737534807736926,
+    "one_sided_0.70": 0.1582003015870553,
+    "one_sided_0.85": 0.16709924066161744,
+    "one_sided_1.15": 0.18407606726304168,
+    "one_sided_1.30": 0.19489747813065844,
+    "quadratic_fit_slope_at_1": 0.17865530836281596,
+    "quadratic_fit_curvature": 0.11642624776643748
+   },
+   "P=0.5": {
+    "sym_0.85_1.15": 0.1703236828813892,
+    "sym_0.70_1.30": 0.1684407830532286,
+    "one_sided_0.70": 0.15901600330428456,
+    "one_sided_0.85": 0.1657531442475917,
+    "one_sided_1.15": 0.17563842760638107,
+    "one_sided_1.30": 0.18125343799086796,
+    "quadratic_fit_slope_at_1": 0.17170091012083516,
+    "quadratic_fit_curvature": 0.07205323590980586
+   },
+   "P=0.1": {
+    "sym_0.85_1.15": 0.17113053756383662,
+    "sym_0.70_1.30": 0.16866845566766986,
+    "one_sided_0.70": 0.16238343232668526,
+    "one_sided_0.85": 0.1683753960481206,
+    "one_sided_1.15": 0.17433428990256075,
+    "one_sided_1.30": 0.17721272274744618,
+    "quadratic_fit_slope_at_1": 0.17115203040556032,
+    "quadratic_fit_curvature": 0.04980829580230752
+   }
+  },
+  "yt": {
+   "P=0.9": {
+    "sym_0.85_1.15": 0.5521762117728588,
+    "sym_0.70_1.30": 0.513490098189489,
+    "one_sided_0.70": 0.533870622366846,
+    "one_sided_0.85": 0.5617781441464887,
+    "one_sided_1.15": 0.5410108276636171,
+    "one_sided_1.30": 0.4857834959464023,
+    "quadratic_fit_slope_at_1": 0.5165698490384968,
+    "quadratic_fit_curvature": -0.11439106829493212
+   },
+   "P=0.5": {
+    "sym_0.85_1.15": 0.5948062587942912,
+    "sym_0.70_1.30": 0.5609953429143678,
+    "one_sided_0.70": 0.5412408092106794,
+    "one_sided_0.85": 0.5832713336754773,
+    "one_sided_1.15": 0.6082193786342729,
+    "one_sided_1.30": 0.5878509332349463,
+    "quadratic_fit_slope_at_1": 0.5747650690756364,
+    "quadratic_fit_curvature": 0.1765047370839434
+   },
+   "P=0.1": {
+    "sym_0.85_1.15": 0.6082259523516215,
+    "sym_0.70_1.30": 0.5771044037342329,
+    "one_sided_0.70": 0.5358031454005537,
+    "one_sided_0.85": 0.585213118188624,
+    "one_sided_1.15": 0.634985892213082,
+    "one_sided_1.30": 0.6332520045923881,
+    "quadratic_fit_slope_at_1": 0.5965856999496673,
+    "quadratic_fit_curvature": 0.332346960310828
+   }
+  }
+ },
+ "D128_hazard_derivatives": {
+  "g2": {
+   "P=0.5": 0.66
+  },
+  "gY": {
+   "P=0.5": 0.16
+  },
+  "yt": {
+   "P=0.9": 0.575,
+   "P=0.5": 0.627,
+   "P=0.1": 0.649
+  }
+ },
+ "D128_note": "D128: hazard (whole turn), earlier model (run02), +-10%; g2 and gY nearly equal at P1 = 0.9 and 0.1"
+}

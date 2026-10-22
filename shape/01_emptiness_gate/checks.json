@@ -283,7 +283,7 @@
   {
    "id": "C153_emptiness",
    "what": "all emptiness-gate numbers (v12); 'nq' is ignored: the archived C55 production file predates that meta key",
-   "paper": "PRD Sec. VI A-C; report Table 18 (Sec. 13)",
+   "paper": "PRD Sec. VI A-C; report Table 23 (Sec. 13)",
    "mode": "tree",
    "computed": {
     "file": "WORK:r3/shape_hardening/run01/emptiness/C153_emptiness.json"

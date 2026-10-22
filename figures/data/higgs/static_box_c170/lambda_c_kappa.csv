@@ -1,0 +1,28 @@
+# C170 S2 kappa switch (box A couplings, 2D model without cross terms): static lambda_c(N = 300, P = 1/2); Gamma at lambda = -0.012 and at lambda = 0 (units 1/L); 2D_Gdmcs = DMC shape transported by the exact zero-mode scaling (main), 2D_G = DMC shape dropped
+model,kappa,lambda_c_N300_P05,status,Gamma_lam-0.012,status_lam-0.012,Gamma_lam0,status_lam0,narrow_lam_min,narrow_lam_max
+2D_G,0.25,,no narrow resonance,,no_barrier,,no_barrier,,
+2D_G,0.3,,no narrow resonance,,,,no_barrier,,
+2D_G,0.35,,no narrow resonance,,,,flagged,,
+2D_G,0.4,,no narrow resonance,,,,flagged,,
+2D_G,0.425,,no narrow resonance,,,,flagged,,
+2D_G,0.45,,none_at_lambda_le_0,,,0.02035115062,ok_broad,0,0
+2D_G,0.475,,none_at_lambda_le_0,,,0.00424851528,ok,-0.0005,0
+2D_G,0.5,-0.0001703096836,interpolated,,above_top,0.0004247554005,ok,-0.001,0
+2D_G,0.6,-0.001489547439,interpolated,,,,,-0.004,-0.0005
+2D_G,0.75,-0.004497604837,interpolated,,above_top,,,-0.01,-0.002
+2D_G,1,-0.01203784706,interpolated,0.002268212779,ok,,,-0.026,-0.006
+2D_G,1.25,-0.02271133208,interpolated,1.515281006e-05,ok,,,-0.04,-0.012
+2D_G,1.5,-0.03660373398,interpolated,4.992589801e-08,ok,,,-0.04,-0.012
+2D_Gdmcs,0.25,,no narrow resonance,,no_barrier,,no_barrier,,
+2D_Gdmcs,0.3,,no narrow resonance,,,,no_barrier,,
+2D_Gdmcs,0.35,,no narrow resonance,,,,flagged,,
+2D_Gdmcs,0.4,,no narrow resonance,,,,flagged,,
+2D_Gdmcs,0.425,,no narrow resonance,,,,flagged,,
+2D_Gdmcs,0.45,,none_at_lambda_le_0,,,0.01596463934,ok_broad,0,0
+2D_Gdmcs,0.475,,none_at_lambda_le_0,,,0.002995725429,ok,-0.0005,0
+2D_Gdmcs,0.5,-0.0002159435313,interpolated,,above_top,0.0002709930889,ok,-0.001,0
+2D_Gdmcs,0.6,-0.001600014874,interpolated,,,,,-0.004,-0.0005
+2D_Gdmcs,0.75,-0.004715019085,interpolated,,above_top,,,-0.01,-0.002
+2D_Gdmcs,1,-0.01250333318,interpolated,0.001812705821,ok,,,-0.03,-0.006
+2D_Gdmcs,1.25,-0.0235145719,interpolated,1.137467007e-05,ok,,,-0.04,-0.012
+2D_Gdmcs,1.5,-0.03784436876,interpolated,3.589028841e-08,ok,,,-0.04,-0.012

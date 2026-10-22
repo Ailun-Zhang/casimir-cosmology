@@ -22,6 +22,7 @@
 
 \input{dnec_macros}
 \input{numbers}
+\input{numbers_c170}%
 
 \hypersetup{pdftitle={Casimir Cosmology: Derivations and Numerical Validation},pdfauthor={Alan Zhang}}
 
@@ -38,11 +39,11 @@ Perimeter Institute for Theoretical Physics, Waterloo, Ontario N2L 2Y5, Canada\\
 \href{mailto:zhana142@McMaster.ca}{zhana142@McMaster.ca}\par}
 \vspace{1.2em}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.2\textwidth}>{\raggedright\arraybackslash}p{0.72\textwidth}@{}}
-Report version & 1.0 (October 17, 2026)\\
-Report record & doi:\href{https://doi.org/10.5281/zenodo.23434140}{10.5281/zenodo.23434140} (separate from the code and data)\\
-Companion Letter & A.~Zhang, \emph{Gauge Field Fluctuations Protect the Higgs Vacuum When a Small Universe Begins} (2026)\\
-Companion paper & A.~Zhang, \emph{A Casimir turning point as the beginning of a small flat universe} (2026)\\
-Code and data & version 1.0.0, doi:\href{https://doi.org/10.5281/zenodo.23434068}{10.5281/zenodo.23434068}\\
+Report version & 1.1 (October 22, 2026); version 1.0: October 17, 2026\\
+Report record & doi:\href{https://doi.org/10.5281/zenodo.23554537}{10.5281/zenodo.23554537} (this version); all versions: doi:\href{https://doi.org/10.5281/zenodo.23434139}{10.5281/zenodo.23434139} (separate from the code and data)\\
+Companion Letter & A.~Zhang, \emph{Gauge Field Fluctuations Protect the Higgs Vacuum When a Small Universe Begins} (2026), \href{https://arxiv.org/abs/2610.28704}{arXiv:2610.28704}\\
+Companion paper & A.~Zhang, \emph{A Casimir turning point as the beginning of a small flat universe} (2026), \href{https://arxiv.org/abs/2610.24905}{arXiv:2610.24905}\\
+Code and data & doi:\href{https://doi.org/10.5281/zenodo.23434067}{10.5281/zenodo.23434067} (all versions; version 1.2.0 contains this report)\\
 Status & Companion technical report; not independently peer reviewed.
 \end{tabular}
 \end{center}
@@ -50,9 +51,9 @@ Status & Companion technical report; not independently peer reviewed.
 \begin{abstract}
 This report is the companion of a Letter and a paper on a flat three-torus universe whose contraction is turned around by the negative Casimir energy of the Standard Model, with antiperiodic fermions, at an edge of $722$ reduced Planck lengths.
 Part~I derives the model step by step: the trace anomaly at a turning point, the Casimir energy and the zero modes of the Standard Model on the torus, the turning solution, and the Higgs zero mode, whose negative quartic coupling, $\lambda(\mub)\approx-0.0098$, is confined by the zero-point energy of the constant gauge modes down to a finite-volume threshold $\lambda_c\approx-0.012$.
-We give the finite-volume matching, the reduced two-dimensional model and its resonance, the cross terms with the non-zero modes, survival along the turn, the Standard Model mapping and the top-quark criterion (survival with probability above $1/2$ for a pole mass below $172.96$~GeV, and $\bar P_1\approx\PbarOne$ for current data, given a curvature coupling $\xiH\gtrsim\xiHmin$) with its error budget.
+We give the finite-volume matching, the reduced two-dimensional model and its resonance, the cross terms with the non-zero modes, survival along the turn, the threshold of a static box, which depends on its duration only logarithmically and is due to the gauge zero modes, the Standard Model mapping and the top-quark criterion (survival with probability above $1/2$ for a pole mass below $172.96$~GeV, and $\bar P_1\approx\PbarOne$ for current data, given a curvature coupling $\xiH\gtrsim\xiHmin$) with its error budget.
 Part~I then treats the emptiness gate, the shape of the torus and its quantum fossil, the primordial spectra and the fossil in the microwave background.
-Part~II validates these results: full-dimensional diffusion Monte Carlo moves the critical mass by at most $0.031$~GeV, blind reimplementations reproduce it to $0.005$~GeV, and every computation is shown to converge; it also collects conditional evidence from a separate line of calculation and maps every number and figure to the code that produces it.
+Part~II validates these results: full-dimensional diffusion Monte Carlo moves the critical mass by at most $0.031$~GeV, blind reimplementations reproduce it to $0.005$~GeV, the abelian Higgs model, whose zero-mode problem reduces exactly to two dimensions, confirms the mechanism and the WKB barrier action at the computed resonance energy, while the deep-well form of the width holds there only asymptotically, and a blind recalculation reproduces its widths to $10^{-10}$, and every computation is shown to converge; it also collects conditional evidence from a separate line of calculation and maps every number and figure to the code that produces it.
 Part~III records superseded estimates and retracted statements.
 \end{abstract}
 \end{titlepage}

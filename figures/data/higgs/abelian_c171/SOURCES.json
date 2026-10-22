@@ -1,0 +1,26 @@
+{
+ "C171_gamma_table.csv": {
+  "source": "04_calculations/results/20261019_prl_independence/C171/C171_gamma_table.csv",
+  "sha256": "029e4f0a7b3191fd25926d269d617e41e792271757a18ed78f4d304ac95a4157"
+ },
+ "C171_thresholds.csv": {
+  "source": "04_calculations/results/20261019_prl_independence/C171/C171_thresholds.csv",
+  "sha256": "96f3ca46460ac46e7b438bec64ec378f1229ce98bc72343f47d7cab1e230a184"
+ },
+ "C171_holonomy_tails.csv": {
+  "source": "04_calculations/results/20261019_prl_independence/C171/C171_holonomy_tails.csv",
+  "sha256": "a30892625be6cb0b36cf1f37bddffe008293f7e1057e22df0d476982e46c79e4"
+ },
+ "C171_cap_crosscheck.csv": {
+  "source": "04_calculations/results/20261019_prl_independence/C171/C171_cap_crosscheck.csv",
+  "sha256": "4d946880c82993fdc337c45a4f1285f6efc9f78409324bdfe95a6f6a62ec07e4"
+ },
+ "C171_results.json": {
+  "source": "04_calculations/results/20261019_prl_independence/C171/C171_results.json",
+  "sha256": "e01b16946b416c8890066e272b04b0deb7569e60e2326a47cfb5cc7f4cf61ca3"
+ },
+ "checks.json": {
+  "source": "04_calculations/results/20261019_prl_independence/C171/checks.json",
+  "sha256": "63a4c5ada6d949f6b4376b78642c044ade8b5c1b89098f3e5ecae3435458943b"
+ }
+}

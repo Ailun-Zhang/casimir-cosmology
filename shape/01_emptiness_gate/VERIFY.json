@@ -52,7 +52,7 @@
    {
     "id": "C153_emptiness",
     "what": "all emptiness-gate numbers (v12); 'nq' is ignored: the archived C55 production file predates that meta key",
-    "paper": "PRD Sec. VI A-C; report Table 18 (Sec. 13)",
+    "paper": "PRD Sec. VI A-C; report Table 23 (Sec. 13)",
     "tol_abs": 1e-12,
     "tol_rel": 1e-09,
     "mode": "tree",
@@ -317,7 +317,7 @@
    {
     "id": "C153_emptiness",
     "what": "all emptiness-gate numbers (v12); 'nq' is ignored: the archived C55 production file predates that meta key",
-    "paper": "PRD Sec. VI A-C; report Table 18 (Sec. 13)",
+    "paper": "PRD Sec. VI A-C; report Table 23 (Sec. 13)",
     "tol_abs": 1e-12,
     "tol_rel": 1e-09,
     "mode": "tree",

@@ -1,13 +1,19 @@
 # Code and data for: A Casimir turning point as the beginning of a small flat universe
 
-Version 1.1.0 (2026-10-22) · DOI (all versions) [10.5281/zenodo.23434067](https://doi.org/10.5281/zenodo.23434067) ·
+Version 1.2.0 (2026-10-22) · DOI (all versions) [10.5281/zenodo.23434067](https://doi.org/10.5281/zenodo.23434067) ·
 repository https://github.com/Ailun-Zhang/casimir-cosmology · code MIT, data and text CC BY 4.0 (exceptions in [License](#license))
 
 Alan Zhang (ORCID [0009-0000-1187-0755](https://orcid.org/0009-0000-1187-0755)), McMaster University and Perimeter
 Institute for Theoretical Physics.
 
-Version 1.1.0 corrects the top-mass convention of one variant in the claims layer (see `CHANGELOG.md`); the
-verification totals quoted below are those of version 1.0.0, with `higgs/09_claims` re-verified (16/16).
+Version 1.2.0 adds the Letter's Supplemental Material (`prl_supplement/`), the figures and derived numbers of the
+technical report version 1.1 (`figures/`), the blind recalculation V7 of the abelian Higgs check
+(`validation/abelian_blind/`) and report version 1.1 itself (`docs/technical_report/`). The code and archived results
+of the four chains are those of version 1.1.0, which corrected the top-mass convention of one variant in the claims
+layer (see `CHANGELOG.md`). The verification totals quoted below are those of version 1.0.0, with `higgs/09_claims`
+re-verified (16/16) in version 1.1.0. For version 1.2.0 a fresh copy passes `python run_all.py --quick`: 25 of 25
+verification runs fresh and passing (241 of 242 checks, 1 optional check skipped), every figure regenerated
+byte-identically (`RELEASE_NOTES.md`).
 
 This package reproduces the numbers and figures of two papers:
 
@@ -33,13 +39,17 @@ higgs/     01-12  Higgs zero-mode criterion: SM couplings at mu_b, FV matching, 
                   inflation-era stability, two branches                                                   (Letter; paper Sec. V; Apps. C, D)
 shape/     01-06  emptiness gate, real-moment theorem, fossil, nonlinear survival, Moyal/WDW, n_s and r    (paper Secs. VI-VIII; App. E)
 cmb/       01-03  T+E covariance of the three-torus, Fisher/exact KL, fossil ensemble, joint state        (paper Sec. VIII B; App. F)
-figures/          style_v12.py, make_all_figures.py, one script per figure, data/ (inputs), out/ (PDF + PNG)
+figures/          style_v12.py, make_all_figures.py, one script per figure, data/ (inputs), out/ (PDF + PNG);
+                  derived numbers of report v1.1: derive_rep_v11_static_box.py, derive_rep_v11_wkb_split.py,
+                  tab_rep_v11_abelian.py
 tools/            verify_expected.py (checks -> VERIFY.json), verify_summary.py, sha256sums.py
 third_party/      SMDR 1.3 tarball (GPL) + fetch/verify/build script, license audit
-validation/       independent reimplementations (keystone, V1-V5, T19, R14/R15): specs, code, results; comparison
+validation/       independent reimplementations (keystone, V1-V5, V7, T19, R14/R15): specs, code, results; comparison
                   with the main calculation (compare_blind.py) and the report's own checks (run.py --quick)
 numbers/          numbers_v12.json = single source of the claim-layer numbers; make_numbers_tex.py -> numbers.tex; check_numbers.py
-docs/technical_report/  companion technical report: main.pdf (198 pages) + LaTeX source (comments removed)
+docs/technical_report/  companion technical report, version 1.1: main.pdf (223 pages) + LaTeX source (comments removed)
+prl_supplement/   the Letter's Supplemental Material (its arXiv ancillary files, byte-identical): static-box (C170)
+                  and abelian Higgs (C171) code and results, script of the Letter's Fig. 1; PACKAGE_NOTE.md
 output/           run outputs (empty in the release; created by the runs; env DNEC_OUT)
 ```
 Every result directory `<chain>/NN_<name>/` has a `README.md` (physics question, method, paper location, derivation
@@ -169,28 +179,37 @@ recommended. Details, timings and the license audit: `third_party/README.md`.
 `python figures/make_all_figures.py` (or `... <substring>` for a subset) rebuilds every figure from `figures/data/`
 into `figures/out/<name>.pdf` and `.png` (style: `figures/style_v12.py`; captions: `figures/CAPTIONS_higgs.md`,
 `figures/CAPTIONS_shape.md`). `figures/data/` holds copies of the archived results the figures need;
-`gen_casimir_slice_shape.py` recomputes the Casimir slice data (about 20 s).
+`gen_casimir_slice_shape.py` recomputes the Casimir slice data (about 20 s). The numbers that report v1.1 derives
+from the static-box and abelian-Higgs results are written by `derive_rep_v11_static_box.py` and
+`derive_rep_v11_wkb_split.py` (JSON in `figures/out/`; the latter uses the matching function of `higgs/zmlib/`,
+about 20 s) and printed by `tab_rep_v11_abelian.py`; the data are in `figures/data/higgs/static_box_c170/` and
+`abelian_c171/` (with `SOURCES*.json`).
 
 | figure | paper | script |
 |---|---|---|
 | `prl_fig1_threshold` | earlier draft of the Letter's Fig. 1 — finite-volume threshold λ_c against λ_SM(μ_b) (the Letter's present Fig. 1 is made by its Supplemental Material) | `fig_prl_fig1_threshold.py prl` |
 | `prd_threshold` | Paper Fig. 2 (`fig:h-threshold`, Sec. V A); report Fig. 9 | `fig_prd_threshold.py` |
 | `prl_fig2_criterion` | Letter Fig. 2 (`fig:criterion`) — survival P₁(m_t) and the critical masses | `fig_prl_fig2_criterion.py prl` |
-| `prd_criterion` | Paper Fig. 3 (`fig:h-criterion`, Sec. V E); report Fig. 12 | `fig_prd_criterion.py` |
-| `prl_fig3_xi` | Letter Fig. 3 (`fig:xi`); paper Fig. 4 (`fig:h-xi`, Sec. V H); report Fig. 14 — ξ_H condition | `fig_prl_fig3_xi.py` |
+| `prd_criterion` | Paper Fig. 3 (`fig:h-criterion`, Sec. V E); report Fig. 15 | `fig_prd_criterion.py` |
+| `prl_fig3_xi` | Letter Fig. 3 (`fig:xi`); paper Fig. 4 (`fig:h-xi`, Sec. V H); report Fig. 17 — ξ_H condition | `fig_prl_fig3_xi.py` |
 | `prd_higgs_wavefunction` | report Fig. 7 (Sec. 7.2) — Higgs zero-mode wave function | `fig_prd_higgs_wavefunction.py` |
 | `prd_gamma_validation` | report Fig. 8 (Sec. 7.5) — width validation | `fig_prd_gamma_validation.py` |
 | `prd_hazard_realtime` | report Fig. 11 (Sec. 9.5) — hazard and real-time evolution | `fig_prd_hazard_realtime.py` |
 | `prd_cross_terms` | report Fig. 10 (Sec. 8.6) — cross terms | `fig_prd_cross_terms.py` |
-| `prd_universality` | report Fig. 13 (Sec. 12.2) — universality | `fig_prd_universality.py` |
+| `prd_universality` | report Fig. 16 (Sec. 12.2) — universality | `fig_prd_universality.py` |
 | `prd_trace` | report Fig. 2 (Sec. 2) | `fig_prd_trace.py` |
 | `prd_casimir_shape` | Paper Fig. 1 (`fig:pa-casimir-shape`, Sec. IV A); report Fig. 3 (Sec. 3) | `gen_casimir_slice_shape.py`, `fig_prd_casimir_shape.py` |
-| `prd_emptiness_gate` | Paper Fig. 5 (`fig:s-gate`, Sec. VI B); report Fig. 15 | `fig_prd_emptiness_gate.py` |
-| `prd_turning_state` | report Fig. 16 (Sec. 15) | `fig_prd_turning_state.py` |
-| `prd_nonlinear_survival` | Paper Fig. 6 (`fig:s-survival`, Sec. VII F); report Fig. 18 | `fig_prd_nonlinear_survival.py` |
-| `prd_fossil_shape` | report Fig. 17 (Sec. 15) | `fig_prd_fossil_shape.py` |
-| `prd_primordial` | report Fig. 19 (Sec. 16) | `fig_prd_primordial.py` |
-| `prd_fossil_sky` | Paper Fig. 7 (`fig:c-sky`, Sec. VIII B); report Fig. 20 | `fig_prd_fossil_sky.py` |
+| `prd_emptiness_gate` | Paper Fig. 5 (`fig:s-gate`, Sec. VI B); report Fig. 18 | `fig_prd_emptiness_gate.py` |
+| `prd_turning_state` | report Fig. 19 (Sec. 15) | `fig_prd_turning_state.py` |
+| `prd_nonlinear_survival` | Paper Fig. 6 (`fig:s-survival`, Sec. VII F); report Fig. 21 | `fig_prd_nonlinear_survival.py` |
+| `prd_fossil_shape` | report Fig. 20 (Sec. 15) | `fig_prd_fossil_shape.py` |
+| `prd_primordial` | report Fig. 22 (Sec. 16) | `fig_prd_primordial.py` |
+| `prd_fossil_sky` | Paper Fig. 7 (`fig:c-sky`, Sec. VIII B); report Fig. 23 | `fig_prd_fossil_sky.py` |
+| `prl_fig1_mechanism` | Letter Fig. 1 (`fig:mechanism`) — finite-volume threshold in a static box: zero-mode potential with the switch κ, λ_c(N) of the boxes against λ_SM(μ), λ_c against κ and the couplings; report Fig. 12 (Sec. 9.7) | `prl_supplement/figures/fig_prl_fig1_mechanism.py` (Letter Supplemental Material) |
+| `rep_v11_static_box` | report Fig. 13 (Sec. 9.7) — static-box widths, window fit and thresholds λ_c(N) of boxes A–E | `fig_rep_v11_static_box.py` |
+| `rep_v11_kappa` | report Fig. 14 (Sec. 9.8) — gauge zero-mode switch κ: λ_c(300) against κ and the widths of the narrow resonances | `fig_rep_v11_kappa.py` |
+| `rep_v11_abelian_width` | report Fig. 25 (Sec. 18.9) — abelian Higgs model: width and local exponent | `fig_rep_v11_abelian_width.py` |
+| `rep_v11_abelian_threshold` | report Fig. 26 (Sec. 18.9) — abelian Higgs model: thresholds ΓN = ln 2 | `fig_rep_v11_abelian_threshold.py` |
 
 ## Numbers shared by the papers and the report
 `numbers/numbers_v12.json` is the single source of the claim-layer numbers that the text of all three documents uses —
@@ -308,7 +327,7 @@ the result.
 | higgs/12_two_branch | Paper Sec. V D, App. D 2 | GH interference ε 0.9948–0.99997 | same : `headline/GH_interference_eps` | 9 |
 | higgs/12_two_branch | Paper Sec. V D, App. D 2 | Fréchet bands [172.372, 172.498], [172.713, 172.954] | same : `crit` | 9 |
 | higgs/12_two_branch | Paper Sec. V D, App. D 2 | static-spectrum check | `r3/two_branch/run01/static_check.json` : `runs` | 9 |
-| shape/01_emptiness_gate | Paper Sec. VI A, Eq. `eq:s-emptiness`; report Table 18 (Sec. 13) | Σ\|n\| < 4.762 (ξ = 0.2999), 5.047 (0.258), 4.898 (0.28), 6.80 (0); ξ(5) = 0.2649 (GATE-02..06) | `r3/shape_hardening/run01/emptiness/C153_emptiness.json` : `quanta_budget/*/budget_sum_n`, `xi_where_budget_equals/5` | 13 |
+| shape/01_emptiness_gate | Paper Sec. VI A, Eq. `eq:s-emptiness`; report Table 23 (Sec. 13) | Σ\|n\| < 4.762 (ξ = 0.2999), 5.047 (0.258), 4.898 (0.28), 6.80 (0); ξ(5) = 0.2649 (GATE-02..06) | `r3/shape_hardening/run01/emptiness/C153_emptiness.json` : `quanta_budget/*/budget_sum_n`, `xi_where_budget_equals/5` | 13 |
 | shape/01_emptiness_gate | Paper Sec. VI A | AAA fermion budget 5.50 (GATE-07) | same : `quanta_budget/*/fermion_budget` | 13 |
 | shape/01_emptiness_gate | Paper Sec. VI B, Eq. `eq:s-windowR`, Fig. 5(a) | log₁₀R = 93.86 (free, j = 1); 94.04 (ξ = 0.30, j = 1); 96.48 (j = 85) (GATE-08..10) | `r5/C55_window_gate/C55_window_gate.json` : `slices/0/log10_R`; `C153_emptiness.json` : `reheating_excess/xi0.30/log10R/{1,85}` | 13 |
 | shape/01_emptiness_gate | report Sec. 13 | prefactor 10^97.79 (GATE-11) | `C55_window_gate.json` : `meta/log10_prefactor` | 13 |
@@ -316,9 +335,9 @@ the result.
 | shape/01_emptiness_gate | Paper Sec. VI C; report Sec. 13 | side ratio 4.96 (ξ = 0.30), 1.74 (free), 3.56–5.43 over the ξ band (GATE-14, 16) | `fu/C80/C80_results.json` : `runs/*` | 13 |
 | shape/02_realtime_theorem | Paper Sec. VII C, Eqs. `eq:s-T12`, `eq:s-floor`; App. E 2 | m₁₁ = 10.554, m₁₂ = 2.4685, m₂₁ = 136.37, m₂₂ = 31.99; K(19.3237) = 24.5630; K(18.0) = 20.3204 (FLOOR-01..03, 11) | `r3/shape_hardening/run01/linear/C153_linear.json` : `floor_closed_form/{19.3237,18.0}/*` | 15 |
 | shape/02_realtime_theorem | Paper Sec. VII C (footnote on conventions) | σ_floor 0.10374 (H_eff), 0.10403 (C60/C76), 0.1031 (v11 δ); next order 0.09337 (FLOOR-04..08) | same : `floor_conventions/*`, `next_order_floor/*` | 15 |
-| shape/02_realtime_theorem | Paper Sec. VII D, Thm. `thm:s-real`, Eq. `eq:s-Gtx`; App. E 2; report Table 19 | G = 2.3952, 8.2632, 45.097, 313.79, 961.71; natural/floor 1.000485 (TX-01..06, FLOOR-10) | `r1/state_selection/run03/C137c_results.json` : `rows[k]/opt_over_floor`, `rows/0/adiabatic_over_floor` | 15 |
+| shape/02_realtime_theorem | Paper Sec. VII D, Thm. `thm:s-real`, Eq. `eq:s-Gtx`; App. E 2; report Table 24 | G = 2.3952, 8.2632, 45.097, 313.79, 961.71; natural/floor 1.000485 (TX-01..06, FLOOR-10) | `r1/state_selection/run03/C137c_results.json` : `rows[k]/opt_over_floor`, `rows/0/adiabatic_over_floor` | 15 |
 | shape/02_realtime_theorem | Paper Sec. VII D | G(∞) = 2𝒢 = 1348.55 (κ = 19.3237), 1058.34 (18.0) (TX-07, 08) | `C153_linear.json` : `floor_closed_form/*/G_inf_closed_2calG` | 15 |
-| shape/02_realtime_theorem | Paper Sec. VII D, report Fig. 16; report Table 20 (Sec. 15) | S₂(τ) grid; t_*(99 %) = 0.23696 (MC 2.5–97.5 %: 0.2245–0.2518); t_*(90 %) = 0.3547 by interpolation between the N = 2048 node at 0.35 and the N = 512 node at 0.40 (68 % half-width 0.0033 from 2×10⁴ draws of the Jeffreys posteriors of the node fractions; the 0.30 node enters in 10 % of the draws; `numbers/derived_numbers.json` → `tstar90`, with the same method reproducing the archived 99 % interval 0.225–0.252), logistic 0.352; next order 0.26514 (TX-19..24) | `r3/shape_hardening/run02/C153_run02_summary.json` : `lo_t/t_star_linear_interp/0.99/*`, `lo_t/t_star_logistic/t_star/0.9`, `nx_t/...`; `r3/shape_hardening/run01/C153_nl_summary.json` : `grid[]` | 15 |
+| shape/02_realtime_theorem | Paper Sec. VII D, report Fig. 19; report Table 25 (Sec. 15) | S₂(τ) grid; t_*(99 %) = 0.23696 (MC 2.5–97.5 %: 0.2245–0.2518); t_*(90 %) = 0.3547 by interpolation between the N = 2048 node at 0.35 and the N = 512 node at 0.40 (68 % half-width 0.0033 from 2×10⁴ draws of the Jeffreys posteriors of the node fractions; the 0.30 node enters in 10 % of the draws; `numbers/derived_numbers.json` → `tstar90`, with the same method reproducing the archived 99 % interval 0.225–0.252), logistic 0.352; next order 0.26514 (TX-19..24) | `r3/shape_hardening/run02/C153_run02_summary.json` : `lo_t/t_star_linear_interp/0.99/*`, `lo_t/t_star_logistic/t_star/0.9`, `nx_t/...`; `r3/shape_hardening/run01/C153_nl_summary.json` : `grid[]` | 15 |
 | shape/02_realtime_theorem | Paper Sec. VII D | never-real two-branch survival 0.043 / 0.027; incoming single-branch 0.887 / 0.723 (TX-13..15) | `C153_nl_summary.json` : `never[*]` | 15 |
 | shape/02_realtime_theorem | Paper Sec. VII D | adiabatic states: survival 0.992 / 0.609 / 0.129 (TX-18) | `C153_nl_summary.json` : `adiab[*]/future/p` | 15 |
 | shape/02_realtime_theorem | number keys of the papers (`C153_summary.json`) | all of the above in one file | `r3/shape_hardening/run01/C153_summary.json` | 15 |
@@ -328,9 +347,9 @@ the result.
 | shape/03_fossil | Paper Table III | plateau free σ_E 0.0587 | `r5/C63_rolling_fossil/C63_results.json` : `SM_AAA/modes/aspect/natural_rms` | 15 |
 | shape/03_fossil | Paper Sec. VII E, Eq. `eq:s-scaling` | K(19.32) = 24.5501; dlnσ/dlnκ = 1.366; LiteBIRD 3.1 %, CMB-S4 1.6 %; σ ratio 0.6306 at r = 1e-4 (FLOOR-01, FOS-14..16) | `r2/observables/run01/C143_observables.json` : `F_kappaE`, `dlnsigma_dlnkappa`, `LiteBIRD_*`, `CMBS4_*`, `sigma_vs_r` | 15 |
 | shape/03_fossil | Paper Sec. VII E (error budget) | NL/linear aspect variance 1.043 / 1.045 (FOS-07) | `fu/C76/C76_summary.json` : `sets/{hi,ind}/*` ; also `../04` C142 `regression/C76_reference` | 15 |
-| shape/03_fossil | report Fig. 17 | fossil distributions (free 2048, ξ = 0.30 2048) | `r5/nonlinear_SM/C60_summary.json`, `fu/C76/C76_summary.json` + trajectory archives | 15 |
+| shape/03_fossil | report Fig. 20 | fossil distributions (free 2048, ξ = 0.30 2048) | `r5/nonlinear_SM/C60_summary.json`, `fu/C76/C76_summary.json` + trajectory archives | 15 |
 | shape/03_fossil | Paper Sec. IV C (`sec:turning`) | φ_b, N_post, hL_b of the SM pivot | `r5/C62_SM_pivot/C62_results.json` : `SM_AAA/*` | 15 |
-| shape/04_nonlinear_survival | Paper Sec. VII F, Fig. 6; report Table 22 (Sec. 15) | survival vs s (NL-01) | `r2/shape_nonlinear_threshold/run01/C142_summary.json` : `sets/amp_s*/survival` | 15 |
+| shape/04_nonlinear_survival | Paper Sec. VII F, Fig. 6; report Table 27 (Sec. 15) | survival vs s (NL-01) | `r2/shape_nonlinear_threshold/run01/C142_summary.json` : `sets/amp_s*/survival` | 15 |
 | shape/04_nonlinear_survival | Paper Sec. VII F | s₅₀, s₉₀ (N = 256) | same : `amp_threshold/*` | 15 |
 | shape/04_nonlinear_survival | Paper Sec. VII F | s₉₉ = 2.756 (MC 95 % 2.66–2.90), logistic 2.863 (boot 2.74–2.96); next order 3.160 / 3.294 (NL-06, 07, 09) | `r3/shape_hardening/run02/C153_run02_summary.json` : `lo_amp/s99_loglinear/central`, `lo_amp/s99_logistic_in_ln_s/s99`, `nx_amp/*` | 15 |
 | shape/04_nonlinear_survival | Paper Sec. VII F | survival 0.9976 / 0.9834 / 0.9536 at s = 2.5 / 3.0 / 3.5 (N = 2048) (NL-03) | same : `lo_amp/rows[*]/p` | 15 |
@@ -346,7 +365,7 @@ the result.
 | shape/05_moyal_wdw | number keys of the papers | all parts | `r3/shape_tier2/run01/C160_summary.json` | 15 |
 | shape/06_primordial_spectra | Paper Sec. VIII A | n_s = 0.9653407, r = 0.0034624 (N_* = 55.722) (PRIM-01, 02) | `r5/C64_plateau_ns_r/C64_results.json` : `rows/6/{ns,r}` | 16 |
 | shape/06_primordial_spectra | Paper Sec. VIII A | n_s = 0.9617386, r = 0.0042022 (N_* = 50.328) (PRIM-03, 04) | same : `rows/3/{ns,r}` | 16 |
-| shape/06_primordial_spectra | report Fig. 19 (n_s, r vs N_*) | 12 values of N_* | same : `rows[*]` | 16 |
+| shape/06_primordial_spectra | report Fig. 22 (n_s, r vs N_*) | 12 values of N_* | same : `rows[*]` | 16 |
 | shape/06_primordial_spectra | Paper Sec. VIII A | initial-state tests | same : `initial_state_tests` | 16 |
 | cmb/01_fisher_kl | Paper Sec. VIII B; paper App. F (covariance) | KL D_TE, D_T of the free fossil at 1.07 (end-to-end check) | `checks/kl_quick.json` : `D_TE_fresh_fresh`, `D_T_fresh_fresh` | 17 |
 | cmb/01_fisher_kl | Paper Sec. VIII B | Fisher σ(β_E) = 0.023 / 0.073 / 0.25 at L₀ = 1.05 / 1.1 / 1.2 (CMB-23, v11 values) | `r5/obs_fisher/C59_shape_fisher.json` (`--full`) | 17 |
@@ -396,8 +415,9 @@ absolute paths (`PACKAGE_PATCHES.json` uses placeholders such as `<RESEARCH_ROOT
   (notice in `validation/sm_mapping/code/drivers/LICENSE-NOTICE.txt`). MIT is GPL-compatible, so the combined program may be used and redistributed under GPL-2.0-or-later.
 
 ## Citation
-Please cite this archive (`CITATION.cff`; DOI 10.5281/zenodo.23434068) and the two papers above. SMDR: S.P. Martin and
-D.G. Robertson, arXiv:1907.02500.
+Please cite this archive (`CITATION.cff`; DOI 10.5281/zenodo.23434067, which resolves to the latest version) and the
+two papers above; the technical report has its own record (DOI 10.5281/zenodo.23434139, all versions). SMDR: S.P.
+Martin and D.G. Robertson, arXiv:1907.02500.
 
 ## Known limitations
 Summarised in `RELEASE_NOTES.md`; each chain README has a "Not packaged / partial coverage" section (for example the

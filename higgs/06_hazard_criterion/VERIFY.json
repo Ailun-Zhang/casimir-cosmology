@@ -209,7 +209,7 @@
    {
     "id": "conv_2D_direct_R14",
     "what": "convergence table: 2D direct (R14) P1 = 0.5 row",
-    "paper": "PRD Table V; report Table 14 (173.014)",
+    "paper": "PRD Table V; report Table 19 (173.014)",
     "tol_abs": 0.001,
     "tol_rel": null,
     "mode": "scalar",
@@ -223,7 +223,7 @@
    {
     "id": "conv_NNLO",
     "what": "convergence table: + NNLO mapping P1 = 0.5",
-    "paper": "report Table 14 (173.0775)",
+    "paper": "report Table 19 (173.0775)",
     "tol_abs": 0.001,
     "tol_rel": null,
     "mode": "scalar",
@@ -237,7 +237,7 @@
    {
     "id": "conv_cross_run02",
     "what": "convergence table: + cross terms (run02) P1 = 0.5",
-    "paper": "report Table 14 (172.9537)",
+    "paper": "report Table 19 (172.9537)",
     "tol_abs": 0.001,
     "tol_rel": null,
     "mode": "scalar",
@@ -251,7 +251,7 @@
    {
     "id": "conv_run04",
     "what": "convergence table: run04 P1 = 0.5",
-    "paper": "report Table 14 (172.9504)",
+    "paper": "report Table 19 (172.9504)",
     "tol_abs": 0.001,
     "tol_rel": null,
     "mode": "scalar",
@@ -492,7 +492,7 @@
    {
     "id": "conv_2D_direct_R14",
     "what": "convergence table: 2D direct (R14) P1 = 0.5 row",
-    "paper": "PRD Table V; report Table 14 (173.014)",
+    "paper": "PRD Table V; report Table 19 (173.014)",
     "tol_abs": 0.001,
     "tol_rel": null,
     "mode": "scalar",
@@ -506,7 +506,7 @@
    {
     "id": "conv_NNLO",
     "what": "convergence table: + NNLO mapping P1 = 0.5",
-    "paper": "report Table 14 (173.0775)",
+    "paper": "report Table 19 (173.0775)",
     "tol_abs": 0.001,
     "tol_rel": null,
     "mode": "scalar",
@@ -520,7 +520,7 @@
    {
     "id": "conv_cross_run02",
     "what": "convergence table: + cross terms (run02) P1 = 0.5",
-    "paper": "report Table 14 (172.9537)",
+    "paper": "report Table 19 (172.9537)",
     "tol_abs": 0.001,
     "tol_rel": null,
     "mode": "scalar",
@@ -534,7 +534,7 @@
    {
     "id": "conv_run04",
     "what": "convergence table: run04 P1 = 0.5",
-    "paper": "report Table 14 (172.9504)",
+    "paper": "report Table 19 (172.9504)",
     "tol_abs": 0.001,
     "tol_rel": null,
     "mode": "scalar",

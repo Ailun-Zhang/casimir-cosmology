@@ -295,7 +295,7 @@ S=2\int_0^{r_0}\!\sqrt{2U}\,dr=2\sqrt{2\sigma}\,r_0^{3/2}\int_0^1x^{1/2}(1-x^3)^
 \end{equation}
 where the substitution $x^3=v$ turns the integral into $\frac13B(\frac12,\frac32)=\pi/6$ and $r_0^{3/2}=2\sigma^{1/2}|\lambda|^{-1/2}$.
 The width therefore obeys $\ln\Gamma=a-b|\lambda|^{-1/2}$ with $b=2.962\,\sigma$. %
-Fits to the nodal widths give $b=1.31$--$1.38$ (at $\tau=0$: $a=5.91$, $b=1.307$), with root-mean-square residuals $0.05$--$0.09$ in $\ln\Gamma$; a three-parameter form $a-b|\lambda|^{-p}$ gives $p=0.74$ at $\tau=0$ and $0.55$ at $\tau=5$, because the local exponent flattens as the resonance approaches the barrier top. %
+Fits to the nodal widths give $b=1.31$--$1.38$ (at $\tau=0$: $a=5.91$, $b=1.307$; the static box at $\mub$ gives $a=\aFitA$ and $b=\bFitA$ for $\lamFitLo\le\lambda\le\lamFitHi$, Sec.~\ref{sec:v11-static-box}), with root-mean-square residuals $0.05$--$0.09$ in $\ln\Gamma$; a three-parameter form $a-b|\lambda|^{-p}$ gives $p=0.74$ at $\tau=0$ and $0.55$ at $\tau=5$, because the local exponent flattens as the resonance approaches the barrier top. %
 
 \paragraph{Hazard form.}
 The hazard of Sec.~\ref{rep:h-survival} integrates $\Gamma$ over the conformal duration $\eta_\infty$ of one branch.
@@ -306,7 +306,7 @@ b_{\rm eff}\equiv2|\lamc|^{3/2}\Bigl|\frac{d\ln I}{d\lambda(\mub)}\Bigr|=1.40,\ 
 \end{equation}
 at $\Pone=0.9$, $0.5$, and $0.1$, from $d\ln I/d\lambda(\mub)=-805$, $-488$, and $-319$. %
 Up to a slowly varying prefactor, $I\simeq A_{\rm eff}\,\eta_\infty\exp(-b_{\rm eff}|\lambda|^{-1/2})$, with $\lambda\equiv\lambda(\mub)$.
-The effective slope $\sigma_{\rm eff}=b_{\rm eff}/2.962=0.44$ at $\Pone=1/2$ ($0.47$ and $0.40$ at $\Pone=0.9$ and $0.1$) is about one third of the zero-point slope $\sigma_0=1.31$ of Eq.~(\ref{eq:rb-linear}): the WKB form absorbs the finite height of the barrier, and the one-loop energy of the non-zero modes lowers the local slope by $10$--$33\%$ at $r=1$--5 and roughly halves the barrier above the resonance level, without removing the confinement. %
+The effective slope $\sigma_{\rm eff}=b_{\rm eff}/2.962=0.44$ at $\Pone=1/2$ ($0.47$ and $0.40$ at $\Pone=0.9$ and $0.1$) is about one third of the zero-point slope $\sigma_0=1.31$ of Eq.~(\ref{eq:rb-linear}): in the reduced model the zero-point energy rises with slope $\zpSlopeLo$--$\zpSlopeHi$ rather than $\sigma_0$ at $r=1$--5 (Sec.~\ref{sec:v11-static-box}), the WKB form absorbs the finite height of the barrier, and the one-loop energy of the non-zero modes lowers the local slope by $10$--$33\%$ at $r=1$--5 and roughly halves the barrier above the resonance level, without removing the confinement. %
 In the reduced model of Fig.~\ref{fig:rb-threshold}(a), without cross terms, and for the radial potential including the centrifugal term $3/(8r^2)$, the barrier above the resonance level falls from $1.565/L$ to $0.715/L$ for $\lambda=-0.010$ and from $1.211/L$ to $0.534/L$ for $\lambda=-0.013$ when the matching is included. %
 The matching combines the destabilizing tadpole of the periodic bosons (Sec.~\ref{sec:rb-tower}) with the stabilizing one of the antiperiodic top tower (Sec.~\ref{sec:rb-rg}), and the hypercharge zero mode, pinned by the antiperiodic fermions (Sec.~\ref{rep:h-cross}), also enters $\sigma_{\rm eff}$. %
 
@@ -320,7 +320,8 @@ The effective prefactor $A_{\rm eff}\simeq310$ absorbs the energy of the resonan
 With $b_{\rm eff}=1.30$ and $\eta_\infty=299.8$, this value of $A_{\rm eff}$ returns $\lamc=-0.0121$ by construction; the content of the formula is the logarithmic dependence, checked directly in Sec.~\ref{rep:h-universality}. %
 The running matters at the level of the effective duration: holding the $\tau=0$ width for the whole branch would overestimate the hazard, and $I/(\Gamma(0)\eta_\infty)=0.77$, $0.82$, and $0.87$ at the three levels. %
 The duration and the prefactor enter only through the logarithm: doubling or halving $\eta_\infty$ changes $|\lamc|$ by $-11\%$ or $+13\%$, and changing $g_2$, $g_Y$, or $y_t$ by $10\%$ changes it by $6.6\%$, $1.6\%$, or $6.3\%$, so the magnitude $\lamc\approx-0.01$ is fixed to within a factor of about $1.2$. %
-The tunneling exponent at threshold, $S_c=b_{\rm eff}/|\lamc|^{1/2}=14.7$, $11.8$, and $9.7$ at the three levels, is moderate, which is why the threshold is sharp in $\lambda$ but not in $\Pone$. %
+The effective exponent at threshold, $S_c=b_{\rm eff}/|\lamc|^{1/2}=14.7$, $11.8$, and $9.7$ at the three levels, is moderate, which is why the threshold is sharp in $\lambda$ but not in $\Pone$. %
+It is the exponent of this effective law, whose prefactor $A_{\rm eff}\simeq310$ absorbs a factor of order $e^6$; the WKB barrier action is smaller, $4.3$ at the static threshold $\lamc(300)$ (Sec.~\ref{sec:v11-mechanism-context}). %
 The dependence on the duration and on the couplings is worked out in Sec.~\ref{rep:h-universality}.
 
 \begin{figure}[t]
@@ -331,3 +332,87 @@ The dependence on the duration and on the couplings is worked out in Sec.~\ref{r
 (b)~Running quartic coupling $\lambda(\mu)$ for $m_t=172.2$ (dashed), $172.6$ (solid), and $173.0\GeV$ (dash-dotted), with the band from $\alpha_s(M_Z)=0.1180\pm0.0009$; inset: the hazard-equivalent threshold $\lamc(\mub)$ for $\Pone=0.9$, $0.5$, and $0.1$, and the Standard Model value with its mapping uncertainty (Sec.~\ref{rep:h-smmap}).} %
 \label{fig:rb-threshold}
 \end{figure}
+
+\subsection{The confinement mechanism in field-theory context}
+\label{sec:v11-mechanism-context}
+
+The confinement of the Higgs zero mode rests on one term, the zero-point energy of the constant $W$ and $Z$ modes at fixed $r$, which grows linearly with $r$.
+This subsection relates that term to known structures of small-volume gauge theory, matrix models and thermal field theory, states which fields can cancel it, and compares the resonance with the decay channels of a small compact space, with inhomogeneous tunnelling and with Planck-suppressed operators.
+Numbers refer to the static box of Sec.~\ref{sec:v11-static-box}; its box~A has the Standard Model couplings at $\mu=\mub$ for $m_t=172.60\GeV$, which are those of the first node of the turn. %
+The fit window is the range $\lamFitLo\le\lambda\le\lamFitHi$ in which Sec.~\ref{sec:v11-static-box} fits the widths of box~A with Eq.~(\ref{eq:rb-wkb}), and $\kappa$ is the factor by which Sec.~\ref{sec:v11-kappa} multiplies the couplings of the gauge zero modes. %
+
+\paragraph{A linear term from the constant gauge modes.}
+At fixed $r$ the mass matrix of Eq.~(\ref{eq:rb-massmatrix}) makes the constant $W$ and $Z$ modes oscillators of frequencies $g_2r/2$ and $g_Zr/2$, whose zero-point energy rises as $\sigma_0r$ with $\sigma_0=\frac32g_2+\frac34g_Z$ [Eq.~(\ref{eq:rb-linear})]; with the couplings of box~A, $\sigma_0=1.31$. %
+Since $r=(2\Phi^\dagger\Phi)^{1/2}$, the term is linear in $|\Phi|$ and not analytic in $\Phi^\dagger\Phi$.
+It plays the role of the zero-point energy along the classically flat valleys of a quartic potential.
+At $\lambda=0$ the potential of Eq.~(\ref{eq:rb-H0}) vanishes along the whole Higgs direction $\bm x=\bm w=0$, and the zero-point energy of the transverse gauge modes closes this valley, as it makes the spectrum of $p_x^2+p_y^2+x^2y^2$ discrete although the classically allowed region extends to infinity along the axes~\cite{Simon:1983jy}.
+In SU(2) Yang--Mills theory on a small torus the same mechanism gives an abelian constant mode $C$ the conical potential $2|C|/L$ (in the normalization of Ref.~\cite{vanBaal:2000zc}), the zero-point energy of the four charged constant modes of frequency $|C|/L$ transverse to it~\cite{vanBaal:2000zc,Barbon:2005zj}, and it makes the spectra of the bosonic membrane and of bosonic matrix models discrete~\cite{deWit:1988xki,Barbon:2005zj}. %
+The Higgs zero mode differs from these examples in that its valley falls as $-|\lambda|r^4/4$ for $\lambda<0$, so the linear term holds the zero mode only up to the barrier at $r_{\rm top}=(\sigma/|\lambda|)^{1/3}$ (Sec.~\ref{sec:rb-H0}), and the bound state of the valley becomes the resonance of Sec.~\ref{sec:rb-siegert}.
+
+\paragraph{Relation to the thermal cubic term.}
+The linear term is the finite-volume counterpart, with the opposite sign, of the term cubic in the gauge-boson masses that the static Matsubara modes add to the effective potential at finite temperature~\cite{Dine:1992wr,Arnold:1992rz}.
+Both terms come from bosonic modes that have no gap from the compact directions.
+Such a mode of a real boson of mass $m$ is integrated only over its $d$ non-compact Euclidean directions, and in dimensional regularization
+\begin{equation}
+\frac12\int\!\frac{d^dk}{(2\pi)^d}\,\ln\bigl(k^2+m^2\bigr)=-\frac{\Gamma(-d/2)}{2\,(4\pi)^{d/2}}\,m^d
+=\begin{cases}+\dfrac{m}{2}, & d=1,\\[8pt] -\dfrac{m^3}{12\pi}, & d=3,\end{cases}
+\label{eq:v11-gapless}
+\end{equation}
+which follows from $\int d^dk\,(2\pi)^{-d}(k^2+m^2)^{-1}=\Gamma(1-d/2)\,m^{d-2}/(4\pi)^{d/2}$ by integration in $m^2$, with $\Gamma(-\frac12)=-2\sqrt\pi$ and $\Gamma(-\frac32)=\frac43\sqrt\pi$.
+At temperature $T$ the free-energy density of the field is $T\sum_n\frac12\int d^3k\,(2\pi)^{-3}\ln(\omega_n^2+k^2+m^2)$ with $\omega_n=2\pi nT$.
+The static mode $n=0$ is a three-dimensional field and contributes $-Tm^3/(12\pi)$, while the modes with $n\neq0$ have the gap $2\pi T$ and are analytic in $m^2$ for $|m|<2\pi T$~\cite{Dine:1992wr}.
+In the box at zero temperature the energy is $\frac12\sum_{\bm k}\omega_{\bm k}=\sum_{\bm k}\frac12\int dk_0\,(2\pi)^{-1}\ln(k_0^2+\bm k^2+m^2)$.
+The constant mode $\bm k=0$ is a quantum oscillator and contributes $+m/2$, while the modes with $\bm k\neq0$ have the gap $2\pi/L$ and give the energy $E_{\rm std}$ of Eq.~(\ref{eq:rb-Estd}), analytic in $m^2$ for $|m|<2\pi/L$.
+For the electroweak gauge bosons the counting is the same in both cases, six $W$ and three $Z$ modes, from the three polarizations of each massive vector at finite temperature and from the three spatial directions of each constant mode in the box, so that
+\begin{equation}
+\Delta V_T\supset-\frac{T}{12\pi}\bigl(6m_W^3+3m_Z^3\bigr),\qquad
+L\,\Delta E_{\rm box}=\frac L2\bigl(6m_W+3m_Z\bigr)=\sigma_0r,
+\label{eq:v11-cubic-linear}
+\end{equation}
+with $m_W=g_2r/(2L)$ and $m_Z=g_Zr/(2L)$ in the box.
+The first expression is the leading cubic term of the thermal potential, before the resummation of the static modes~\cite{Arnold:1992rz}, and the second is Eq.~(\ref{eq:rb-linear}).
+The sign is that of $-\Gamma(-d/2)$, positive for $d=1$ and negative for $d=3$: the constant spatial modes are quantum oscillators with positive zero-point energy, whereas the one-loop energy of the three-dimensional static field is negative.
+The roles differ accordingly: at finite temperature the negative cubic term produces the barrier of a first-order transition between the symmetric and the broken phase; in the box the positive linear term holds the zero mode at the origin against the negative quartic.
+
+Terms proportional to $(m^2)^{d/2}$ with odd $d$ are non-analytic in $\Phi^\dagger\Phi$~\cite{Barbon:2006us}.
+The infinite-volume effective potential at zero temperature contains no odd power of $m$: every mode is integrated over four non-compact directions, and the same integral gives, after $\MSbar$ subtraction, the Coleman--Weinberg term of Eq.~(\ref{eq:rb-VCW}), whose logarithm is the only non-analyticity of that potential.
+For masses large compared with the gap the gapped modes cancel the non-analytic term again: in the box $D_P(m^2)\to-m/2+0.8375$ for $mL\gg2\pi$ (Sec.~\ref{sec:rb-tower}). %
+Antiperiodic fermions have no mode without a gap, since their lowest momentum is $\sqrt3\,\pi/L$ in the box and $\pi T$ at finite temperature, so they give no such term; in the box they enter only through the matching potential, which is analytic in $\tilde m_t^2$ for $|\tilde m_t|<\sqrt3\,\pi/L$ (Sec.~\ref{sec:rb-tower}).
+
+\paragraph{Constant fermion modes.}
+Constant fermion modes act against the confinement.
+If all three cycles of the torus are periodic, as for the torus of Ref.~\cite{Fornal:2026qfq}, every fermion has a constant mode at trivial holonomy; an SU(3) center holonomy twists the quarks by $\pm\frac13$ and removes their constant modes, and that sector is not analysed (Sec.~\ref{sec:rb-spin}). %
+For the top quark at fixed $r$ its Hamiltonian is $\tilde m_t\,\psi_0^\dagger\gamma^0\psi_0$, summed over the three colours, with $\tilde m_t=y_tr/\sqrt2$ [Eq.~(\ref{eq:rb-masses})], and $\gamma^0$ has the eigenvalues $\pm1$, each twice degenerate.
+In the charge-conjugation symmetric ordering each of the $4\times3$ levels of energy $\pm\tilde m_t$ contributes $-\tilde m_t/2$ to the ground-state energy, the filled negative levels through $\varepsilon/2$ and the empty positive ones through $-\varepsilon/2$, so that
+\begin{equation}
+E_t^{(0)}=-12\cdot\frac{\tilde m_t}{2}=-6\tilde m_t=-\frac{6y_t}{\sqrt2}\,r\simeq-1.82\,r,
+\label{eq:v11-top-zero}
+\end{equation}
+with $y_t(\mub)=0.428$ of box~A. %
+The factor $12$ is the weight with which the top quark enters the one-loop matching (Sec.~\ref{sec:rb-rg}).
+The term exceeds $\sigma_0r=1.31\,r$, so the net linear term of the constant modes would be negative, $(1.31-1.82)\,r$, and the zero-point confinement would fail; the lighter fermions add terms smaller by their Yukawa couplings. %
+This statement is qualitative: at large $r$ the non-zero modes of both towers cancel the constant-mode terms (Sec.~\ref{sec:rb-tower}), and at trivial holonomy the fully periodic torus does not turn around (Sec.~\ref{sec:rb-spin}).
+It parallels the supermembrane, in which the fermionic zero-point energy cancels the bosonic one along the valleys and the spectrum becomes continuous~\cite{deWit:1988xki}.
+With one antiperiodic cycle or more the fermions have no constant modes (Sec.~\ref{sec:rb-spin}), and nothing cancels the confinement by the gauge zero modes.
+
+\paragraph{Uniform tunnelling in a small compact space.}
+A small compact volume speeds up vacuum decay: when the volume is small, a uniform tunnelling mode replaces the bubble~\cite{Hassan:2026cmp}, and the Schwinger effect in small compact directions proceeds through a homogeneous channel~\cite{Brown:2015kgj}; thin-wall decay with one compact dimension has been analysed for a scalar field~\cite{Antoniadis:2024ent}.
+These analyses treat a scalar field with a barrier of its own or the Schwinger discharge of an electric field; in none of them do gauge zero modes confine a scalar zero mode.
+For the Higgs field at $\lambda<0$ the uniform mode has no barrier of its own.
+With the couplings of the gauge zero modes switched off ($\kappa=0$ in Sec.~\ref{sec:v11-kappa}) its radial potential, $3/(8r^2)+\lambda r^4/4+\Delta V_{\rm MC}(r)$, falls monotonically for every $\lambda$ between $-0.04$ and $0$, and the zero mode has no narrow (quasi-bound) resonance. %
+When space is a three-torus the gauge zero modes supply the barrier.
+The decay of the electroweak state in the box is still much faster than bubble nucleation in infinite volume, as the next paragraph shows, but it is tunnelling with a finite width rather than a classical roll.
+
+\paragraph{Inhomogeneous tunnelling.}
+Section~\ref{sec:rb-siegert} compared the action of the scale-invariant bounce with the zero-mode tunnelling exponents $2$--$6$ of the earlier model.
+In the static box at $\mub$ the WKB exponents across the barrier are $2.1$--$7.9$ in the fit window $\lamFitLo\le\lambda\le\lamFitHi$ of Sec.~\ref{sec:v11-static-box}, and $3.1$, $4.3$, $7.8$ and $12.5$ at the thresholds $\lamc(N)$ for $N=10^2$, $3\times10^2$, $10^4$ and $10^6$. %
+The Fubini-type bounce of a negative quartic has the action $8\pi^2/(3|\lambda|)$ for every radius~\cite{Andreassen:2017rzq}, which is $1.8\times10^3$, $2.2\times10^3$, $3.7\times10^3$ and $5.9\times10^3$ at these thresholds, at least $450$ times the zero-mode exponent. %
+For the Standard Model couplings, a bounce of radius $R<L$ probes $\lambda$ at scales above $1/L$, where $\lambda(\mu)\ge-0.0104$ for $m_t=172.6\GeV$, with the minimum near $4\times10^{17}\GeV$; its action is therefore at least $2.5\times10^3$, and at least $2.0\times10^3$ for $m_t=173.0\GeV$. %
+Inhomogeneous decay is therefore negligible against the zero-mode channel for every duration considered here.
+
+\paragraph{Planck-suppressed operators.}
+The width depends on the potential only up to the outer turning point of the barrier, $r_{\rm out}=5.3$--$5.7$ in box~A for $\lamc(300)\le\lambda\le\lambda_{\rm SM}(\mub)$ and $6.4$ at $\lamc(10^4)$, that is, on field values $r\lesssim6$, or $\phi=r/L\lesssim0.008\,\MPbar$ at $\mub=\MPbar/722$. %
+A term $c\,\phi^6/\MPbar^2$ in the potential adds $c\,r^6(\mu/\MPbar)^2$ to $LH$ at $\mu=1/L$, which acts as a shift of the quartic coupling by $\Delta\lambda_{\rm eff}(r)=4c\,r^2(\mu/\MPbar)^2$.
+At $\mub$ and $r=6$ this is $2.8\times10^{-4}c$ ($2.2\times10^{-4}c$ and $2.5\times10^{-4}c$ at $r=5.3$ and $5.7$). %
+Through $d\lambda(\mub)/dm_t\approx-0.0066\GeV^{-1}$ (Sec.~\ref{rep:h-smmap}) it raises the critical top mass by at most about $0.04c\GeV$ for $c>0$, which is below the Standard Model error of the criterion, $\pm0.10\GeV$, for $|c|\lesssim2$. %
+Higgs-coupled states of mass $M$ between $2\pi\mub$ and $\MPbar$ would generate the same operator with $\MPbar$ replaced by $M$, which shifts the critical mass by about $0.042c\,(\MPbar/M)^2\GeV$; the magnitude of this shift stays below $0.10\GeV$ only for $M\gtrsim0.65\,|c|^{1/2}\MPbar$, so the criterion also assumes that such states, if present, lie near $\MPbar$ or couple weakly to the Higgs field. %

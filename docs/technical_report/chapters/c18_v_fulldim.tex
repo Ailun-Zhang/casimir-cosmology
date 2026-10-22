@@ -399,3 +399,291 @@ The blind reimplementation of the reduced chain (Sec.~\ref{rep:v-blind}) compute
 
 \emph{Outside this check.} The full problem is the local zero-mode Hamiltonian on $\mathbb R^{16}$ with the $r$-dependent matching; it does not contain the periodicity of large holonomies or the cross terms between zero and non-zero modes, which Sec.~\ref{rep:h-cross} treats separately, and it uses the one-loop couplings of the zero-mode calculation instead of the running couplings along the turn.
 The non-adiabatic treatment of SU(2) shape modes other than the overall width is contained in the full DMC but not in any reduced model.
+
+
+\subsection{An exactly reducible test: the abelian Higgs model in a small box}\label{sec:v11-abelian}
+
+The reduced model of Sec.~\ref{rep:h-reduced} represents the nine SU(2) zero modes by a conditional Gaussian with a DMC shape correction and solves the Higgs radius and the hypercharge modulus together; the full-dimensional calculation above tests that reduction at two couplings.
+The abelian Higgs model, restricted to its constant modes, is a case in which Gauss's law and rotation invariance reduce the zero-mode problem exactly to two coordinates.
+It therefore tests the confinement by the zero-point energy of the gauge modes (Sec.~\ref{sec:rb-H0}) and the width law of Eq.~(\ref{eq:rb-wkb}) without any reduction error, and over a range of widths far larger than the one that enters the Standard Model calculation.
+We find that the gauge zero modes alone hold the negative quartic coupling: the ground state becomes a resonance whose width falls from $0.61$ to $3.2\times10^{-18}$ (units $e^{2/3}/L$) as $\lambda/e^2$ goes from $\abelLamMin$ to $\abelLamMax$. %
+The local exponent of the width in $(e^2/|\lambda|)^{1/2}$ rises from $\abelSlopeLo$ to $\abelSlopeHi$; it stays below the deep-well value $\abelSlopeWKB$ of Eq.~(\ref{eq:rb-wkb}) with $\sigma=\sigma_0=3e/2$, by a deficit that the finite resonance energy produces and that vanishes only as $|\lambda|^{1/3}$. %
+The plain Born--Oppenheimer approximation gives the widths to within $\abelBOdev$, whereas the diagonal Born--Oppenheimer term makes them too large by factors of $2.5$ to $233$. %
+
+\paragraph{Model and exact reduction.}
+We take a complex scalar $\Phi$ of charge $e$, with $D_\mu=\partial_\mu-ieA_\mu$, potential $V=\lambda|\Phi|^4$ and no fermions, on the cubic torus of edge $L$, and keep only its spatially constant modes.
+In units $L=1$ and temporal gauge, $\Phi=(\phi_1+i\phi_2)/\sqrt2$ with $r=|\bm\phi|$ and $|\Phi|^2=r^2/2$, as in Eq.~(\ref{eq:rb-Phi}), and the constant connections $A_i=w_i$ have unit kinetic terms.
+Constant abelian connections have no magnetic energy, and $|D_i\Phi|^2=e^2w_i^2|\Phi|^2$, so that
+\begin{equation}
+H=\tfrac12\,p_\phi^2+\tfrac12\,p_w^2+\tfrac12\,e^2r^2s^2+\frac\lambda4\,r^4,\qquad s=|\bm w| .
+\label{eq:v11-ab-H}
+\end{equation}
+This is the zero-mode Hamiltonian itself: there are no constant fermion modes and no one-loop matching, and Eq.~(\ref{eq:v11-ab-H}) is the abelian analogue of Eq.~(\ref{eq:rb-H0}) without the magnetic term and without $\Delta V_{\rm MC}$.
+
+The zero mode of $A_0$ imposes Gauss's law for constant gauge transformations, which multiply $\Phi$ by a phase and leave $\bm w$ unchanged.
+Their generator is the charge $Q=\phi_1p_2-\phi_2p_1$, the angular momentum in the $\bm\phi$ plane, and physical states have $Q=0$: the angular quantum number in the plane is $m=0$.
+The Hamiltonian depends on $\bm w$ only through $s$ and is invariant under rotations of $\bm w$; the ground state, and the resonance that continues it to $\lambda<0$, lie in the s wave.
+In the sector $m=0$, $l=0$ the wave function depends on $(r,s)$ alone, with the radial measures $r\,dr$ of the plane and $s^2ds$ of three dimensions, and
+\begin{equation}
+H=-\frac12\Bigl(\partial_r^2+\frac1r\,\partial_r\Bigr)-\frac12\Bigl(\partial_s^2+\frac2s\,\partial_s\Bigr)+\tfrac12\,e^2r^2s^2+\frac\lambda4\,r^4 .
+\label{eq:v11-ab-Hrs}
+\end{equation}
+With $u=r^{1/2}s\,\psi$, the planar counterpart of Eq.~(\ref{eq:rb-centrifugal}), the operator becomes
+\begin{equation}
+H_u=-\tfrac12\,\partial_r^2-\frac{1}{8r^2}-\tfrac12\,\partial_s^2+\tfrac12\,e^2r^2s^2+\frac\lambda4\,r^4,\qquad u\propto r^{1/2}\ (r\to0),\qquad u(r,0)=0 .
+\label{eq:v11-ab-Hu}
+\end{equation}
+The term $-1/(8r^2)$ is the $m=0$ centrifugal term of the plane, the analogue of $3/(8r^2)$ for the four Higgs components; it is attractive, and regular states behave as $u\propto r^{1/2}$.
+No step of this reduction is approximate.
+In the Standard Model the corresponding symmetries leave a problem in many coordinates, and Sec.~\ref{rep:h-reduced} treats the nine SU(2) modes with a conditional Gaussian; here no trial function and no adiabatic assumption enter.
+
+The substitution $(r,s)\to e^{-1/3}(r,s)$ maps Eq.~(\ref{eq:v11-ab-Hrs}) to $e^{2/3}h(\Lambda)$, where $h$ is the same operator with $e=1$ and $\lambda$ replaced by
+\begin{equation}
+\Lambda=\frac{\lambda}{e^2},\qquad\text{so that}\qquad \varepsilon=e^{2/3}\varepsilon_1(\Lambda),\qquad \Gamma=e^{2/3}F(\Lambda) .
+\label{eq:v11-ab-scaling}
+\end{equation}
+The resonance depends on one parameter, and all scans use $e=1$; lengths are then in units of $e^{-1/3}L$ and energies and widths in units of $e^{2/3}/L$.
+Direct calculations without the scaling at $e=0.8733$ ($\lambda=-0.010$ and $-0.013$) and $e=0.5$ ($\lambda=-0.0180$) agree with $e^{2/3}F(\Lambda)$ to $7\times10^{-12}$, $5\times10^{-12}$ and $3\times10^{-14}$. %
+At $r=0$ the potential is flat along $s$; for large $s$ the $r$ motion is a planar oscillator of frequency $es$ whose $m=0$ zero-point energy $es$ confines $s$ linearly, as for the potential $x^2y^2$~\cite{Simon:1983jy}.
+Moving the end of the $s$ range from $10$ to $12$ changes $\ln\Gamma$ by at most $7\times10^{-12}$ and $\varepsilon$ by $1.4\times10^{-13}$. %
+
+\paragraph{Confinement by the gauge zero modes.}
+At fixed $r$ the three $w$ modes are oscillators of frequency $\omega=er$, with ground state $\chi_0(\bm w;r)=(\omega/\pi)^{3/4}e^{-\omega w^2/2}$ and zero-point energy $\frac32er$.
+This energy grows linearly in $r$ with slope
+\begin{equation}
+\sigma_0=\tfrac32\,e,
+\label{eq:v11-ab-sigma0}
+\end{equation}
+the abelian counterpart of Eq.~(\ref{eq:rb-linear}), and the Born--Oppenheimer (BO) potential of the $r$ motion, acting on $u$, is
+\begin{equation}
+U_{\rm BO}(r)=\tfrac32\,er-\frac{1}{8r^2}+\frac\lambda4\,r^4 .
+\label{eq:v11-ab-UBO}
+\end{equation}
+For $\lambda<0$ it has a well, a barrier and a runaway, and the ground state of the two-dimensional problem becomes a resonance $E=\varepsilon-i\Gamma/2$.
+In the WKB treatment the Langer substitution removes the $m=0$ term $-1/(8r^2)$, and the potential $\sigma_0r+\lambda r^4/4$ has exactly the form of Sec.~\ref{sec:rb-size}.
+Equation~(\ref{eq:rb-wkb}) with $\sigma=\sigma_0$ gives the deep-well exponent
+\begin{equation}
+S_{\rm asym}=\frac{2\pi\sqrt2}{3}\,\frac{\sigma_0}{|\lambda|^{1/2}}=\pi\sqrt2\,x,\qquad x\equiv|\Lambda|^{-1/2}=\Bigl(\frac{e^2}{|\lambda|}\Bigr)^{1/2},
+\label{eq:v11-ab-Sasym}
+\end{equation}
+so that a level deep in the well decays as $\Gamma\simeq A\exp(-\pi\sqrt2\,x)$, with $\pi\sqrt2=4.443$, which is the width law of the Letter for this model. %
+The top of the Langer-corrected barrier lies at $U_{\rm top}=\frac34\,\sigma_0^{4/3}|\lambda|^{-1/3}=1.288\,e^{2/3}x^{2/3}$. %
+
+\paragraph{Numerical methods.}
+The primary method solves the complex-scaled problem~(\ref{eq:v11-ab-Hrs}) on a grid in $(r,s)$.
+In $r$ we use second-order cell-centred finite differences of $-\frac12r^{-1}\partial_r(r\partial_r)$ in flux form, with nodes $\rho_i=(i-\frac12)h$ and fluxes at $\rho=jh$; the flux weight $r$ vanishes at the origin, so that the $m=0$ behaviour at $r=0$ requires no boundary condition.
+Smooth exterior complex scaling~\cite{Simon:1979ecs} rotates the radial path beyond $R_0$,
+\begin{equation}
+r(\rho)=\rho+\bigl(e^{i\theta}-1\bigr)\,\delta\,I\Bigl(\frac{\rho-R_0}{\delta}\Bigr),
+\label{eq:v11-ab-ecs}
+\end{equation}
+where $I$ is the integral of a $C^2$ smoothstep, $\theta=0.45$ and $\delta=0.6$; $R_0$ lies $1.2$ beyond the outer turning point of the BO channel at the guessed energy, and the grid ends where the outgoing WKB wave of that channel has decayed by $e^{-40}$ along the path. %
+For $0<\theta<\pi/3$ the scaled inverted quartic is a confining complex quartic, the scaled operator has a purely discrete spectrum, and resonances of any width are isolated eigenvalues.
+In $s$ we use a sine discrete-variable representation of $s\psi$ on $(0,10)$ with $70$ points ($\Delta s=0.14$), which builds in $s\psi=0$ at $s=0$. %
+Eigenvalues near a shift $\sigma$ are found by shift-invert Arnoldi iteration with an exact block-tridiagonal LU factorization of $H-\sigma$ (dense blocks in $s$); the resonance is the lowest eigenvalue localized in the well, refined by a new factorization next to it and four inverse iterations, with residuals below $10^{-11}$ and matrix dimensions up to $3.6\times10^5$. %
+
+The width follows from an exact identity of the discrete problem.
+In the unscaled region the matrix is real symmetric, with diagonal blocks $D_i$ and couplings $H_{i,i+1}=H_{i+1,i}$ between neighbouring radial nodes.
+Multiplying row $i$ of $H\Psi=E\Psi$ by $\Psi_i^\dagger$, summing over $i\le n$ and taking the imaginary part, the terms $\Psi_i^\dagger D_i\Psi_i$ are real, the couplings inside the sum combine into $2H_{i,i+1}{\rm Re}(\Psi_i^\dagger\Psi_{i+1})$, and only the link $(n,n+1)$ remains:
+\begin{equation}
+\Gamma=-2\,{\rm Im}\,E=-\frac{2\,H_{n,n+1}\,{\rm Im}\bigl(\Psi_n^\dagger\Psi_{n+1}\bigr)}{\sum_{i\le n}|\Psi_i|^2} .
+\label{eq:v11-ab-flux}
+\end{equation}
+We evaluate Eq.~(\ref{eq:v11-ab-flux}) between the outer turning point and $R_0$, where it is constant in $n$ to $5\times10^{-13}$ (typically $10^{-14}$). %
+Its numerator is the current of the outgoing wave, which is computed to relative precision, whereas ${\rm Im}\,E$ of the Rayleigh quotient is the small imaginary part of a number of order one and carries an absolute rounding error of a few times $10^{-17}$.
+The two agree to $2.5\times10^{-7}$ for $\Gamma>10^{-11}$; below that ${\rm Im}\,E$ deviates by $5\times10^{-4}$ at $\Gamma=5\times10^{-14}$ and by $16\%$ at $5\times10^{-16}$, while the flux value changes by at most $1.1\times10^{-9}$ under variations of $\theta$, $R_0$ and $\delta$ even at $\Gamma=3.2\times10^{-18}$. %
+
+Each width is computed on the grids $h=0.02$, $0.01$ and $0.005$ (scaled units) at fixed physical $R_0$ and box. %
+The ratios of successive differences of $\ln\Gamma$ lie between $3.99$ and $4.01$ at all $26$ points, the $h^2$ behaviour of the scheme, and $\ln\Gamma$ and $\varepsilon$ are extrapolated with the two Richardson steps of Eq.~(\ref{eq:v18-richardson}). %
+The numerical controls (grid, scaling parameters, box) are collected in Sec.~\ref{sec:v11-numerics}; the resulting relative uncertainty of $\Gamma$ is $4\times10^{-9}$ to $3\times10^{-8}$, and that of $\varepsilon$ at most $4\times10^{-9}$. %
+
+An independently written second code uses a complex absorbing potential~\cite{Riss:1993cap}: fourth-order finite differences of $-\frac12(\psi''+\psi'/r)$ with even reflection at $r=0$, a basis of odd harmonic-oscillator functions in $s$ ($\omega_0=2.5$; $50$ or $64$ functions, exact Galerkin matrices), and the potential $-i\eta[(r-R_c)/(r_{\max}-R_c)]^p$ beyond $R_c=r_3+1.0$ or $r_3+1.5$, where $r_3$ is the outer turning point. %
+The eigenvalue is followed along $49$ values of $\eta$ between $10^{-1}$ and $10^5$, and the estimate is the first-order corrected value $E-\eta\,dE/d\eta$ at the most stationary point of the trajectory; its starting energies come from the one-dimensional BO model only. %
+At $\Lambda=-0.416$, $-0.112$, $-0.030$ and $-0.0155$ the two methods agree to at most $6.3\times10^{-7}$ in $\Gamma$ (bound $\abelCAP$) and $1.4\times10^{-8}$ in $\varepsilon$. %
+
+The one-dimensional BO models are solved by complex-plane shooting: a Frobenius series at small $r$ ($u\propto r^a$ with $a(a-1)=2c_2$ for a term $c_2/r^2$), integration with an eighth-order Runge--Kutta method at relative tolerance $10^{-12}$ along the real axis beyond the outer turning point and then along a ray rotated by $0.45$, on which the outgoing solution decays, and Newton iteration on the condition that the solution vanish at the end of the ray. %
+Changing the angle and the starting point of the ray and the tolerance changes $\Gamma$ by at most $4\times10^{-8}$ for $\Gamma>10^{-14}$. %
+The WKB quantities use the Langer-corrected potentials, the Bohr--Sommerfeld condition $\int_0^{r_2}p\,dr=\pi/2$ of the $m=0$ ground state, the classical period $T$, the barrier action $S=2\int_{r_2}^{r_3}|p|\,dr$, and the Kemble width $\ln(1+e^{-S})/T$.
+
+\paragraph{Widths and the local exponent.}
+Table~\ref{tab:v11-ab-widths} lists representative results, and Fig.~\ref{fig:v11-ab-width}(a) shows all $24$ widths. %
+As $\Lambda$ goes from $-1$ to $-0.0065$ the resonance energy rises from $\varepsilon=1.669$ to $1.900$ and the width falls from $\Gamma=0.61$ to $3.2\times10^{-18}$. %
+The local exponent
+\begin{equation}
+b\equiv-\frac{d\ln\Gamma}{dx},
+\label{eq:v11-ab-b}
+\end{equation}
+from second-order differences of $\ln\Gamma$ on the $x$ grid, rises from $1.82$ at $\Lambda=-1$ through $3.65$ at $\Lambda=-0.030$ to $3.97$ at $\Lambda=-0.0065$, and stays below $\pi\sqrt2=4.443$ throughout. %
+Two effects lower it.
+
+First, for $x\lesssim1.56$ ($|\Lambda|\gtrsim0.41$) the level lies above $U_{\rm top}$; there $\Gamma=O(0.1$--$1)$, $b\approx1.8$--$2.0$, and the resonance is not a tunnelling state (shaded in Fig.~\ref{fig:v11-ab-width}). %
+
+Second, at every coupling the level lies at a finite height above the bottom of the well.
+The energy $\varepsilon\approx1.67$--$1.90$ is the zero-point energy of the $r$ motion in the linear well $\sigma_0r$, with non-adiabatic corrections, and does not vanish as $\Lambda\to0$: the six smallest $|\Lambda|$ extrapolate to $\varepsilon_0=1.9026$ in the form $\varepsilon=\varepsilon_0+c\,x^{-2}$. %
+For the Langer potential $U_{\rm L}=\sigma_0r-|\Lambda|r^4/4$ the barrier action at energy $E$,
+\begin{equation}
+S(E)=2\int_{r_2}^{r_3}\!dr\,\sqrt{2\,[U_{\rm L}(r)-E]},\qquad \frac{dS}{dE}=-\sqrt2\int_{r_2}^{r_3}\!\frac{dr}{\sqrt{U_{\rm L}(r)-E}},
+\label{eq:v11-ab-SE}
+\end{equation}
+has, as $E\to0$, the turning points $r_2\to0$ and $r_3\to r_0=(4\sigma_0/|\Lambda|)^{1/3}$; with $r=r_0\xi$ and $\xi^3=v$,
+\begin{equation}
+\frac{dS}{dE}\Big|_{E=0}=-\sqrt2\,\Bigl(\frac{r_0}{\sigma_0}\Bigr)^{1/2}\int_0^1\frac{d\xi}{\sqrt{\xi(1-\xi^3)}}=-\frac{\sqrt2}{3}\,B\bigl(\tfrac16,\tfrac12\bigr)\Bigl(\frac{r_0}{\sigma_0}\Bigr)^{1/2} .
+\label{eq:v11-ab-dSdE}
+\end{equation}
+Since $U_{\rm L}=x^{2/3}u(r/x^{2/3})$ with $u$ independent of $x$, $S(E)=x\,f(E\,x^{-2/3})$, and in units $e=1$ ($\sigma_0=3/2$, $r_0=6^{1/3}x^{2/3}$)
+\begin{equation}
+S(\varepsilon)=\pi\sqrt2\,x-3.78\,\varepsilon\,x^{1/3}+O\bigl(\varepsilon^2x^{-1/3}\bigr),\qquad b\simeq\frac{dS}{dx}=\pi\sqrt2-1.26\,\varepsilon\,x^{-2/3} . %
+\label{eq:v11-ab-Seps}
+\end{equation}
+The finite resonance energy lowers the exponent at every finite coupling, and $b$ approaches $\pi\sqrt2$ only as $x^{-2/3}=|\Lambda|^{1/3}$.
+With the full barrier action of the Langer BO potential at the computed energies, $dS/dx$ agrees with $b$ to within $0.0053$ for $x\ge4$ and $0.0033$ for $x\ge4.6$ [Fig.~\ref{fig:v11-ab-width}(b)]. %
+Continued with the extrapolated energy, the same action gives $b=4.28$ at $x=60$, $4.39$ at $x=300$ and $4.42$ at $x=1000$; the leading-order form~(\ref{eq:v11-ab-Seps}) differs from this continuation by $0.02$ at $x=10$ and by less than $10^{-3}$ beyond $x\approx300$. %
+
+The width itself follows the barrier action at the computed energy with a slowly varying prefactor: $\Gamma\,T\,e^{S(\varepsilon)}=0.75$--$0.80$ for $1.9\le x\le12.4$ ($0.757$ at $x=12.4$). %
+The effective prefactor of the deep-well form, $A_{\rm eff}\equiv\Gamma\,e^{\pi\sqrt2\,x}$, instead grows from $52$ at $x=1$ to $3.6\times10^3$, $6.3\times10^4$, $9.4\times10^5$ and $3.2\times10^6$ at $x=3.0$, $5.8$, $10$ and $12.4$ (Table~\ref{tab:v11-ab-widths}); at $x=10$ the energy term lowers the exponent by $\pi\sqrt2\,x-S(\varepsilon)=15.0$. %
+The form $\Gamma\simeq A\exp(-\pi\sqrt2\,x)$ with constant $A$ is therefore an asymptotic statement.
+At finite coupling the finite resonance energy lowers the local exponent, as the Letter states for this model; the same effect contributes, together with the level lying close to the barrier top and the one-loop energy $\Delta V$, to the effective slope $\sigma_{\rm eff}\approx\sigma_0/3$ of the Standard Model widths (Sec.~\ref{sec:rb-size}; Sec.~\ref{sec:v11-static-box} ranks these contributions).
+The Langer BO model with its own Bohr--Sommerfeld energy, $1.71$--$1.84$, which lies between $\varepsilon_{\rm BO}$ and $\varepsilon$, gives Kemble widths $6.5$--$18.5\%$ below the exact ones for $x\ge5$. %
+
+\begin{table}[t]
+\centering
+\caption{Resonance of the abelian Higgs zero-mode problem for representative $\Lambda=\lambda/e^2$, in units $e=1$ (energies and widths in $e^{2/3}/L$): energy $\varepsilon$ and width $\Gamma$ of the exact two-dimensional problem (relative uncertainty of $\Gamma$ below $3\times10^{-8}$, of $\varepsilon$ below $4\times10^{-9}$), the ratios of the plain Born--Oppenheimer width and of the width with the diagonal term $3/(16r^2)$ to $\Gamma$, the local exponent $b$ of Eq.~(\ref{eq:v11-ab-b}) (second-order differences, one-sided at the two ends of the grid), and the effective prefactor $A_{\rm eff}=\Gamma e^{\pi\sqrt2x}$. For $|\Lambda|>0.41$ the level lies above the barrier top.} %
+\label{tab:v11-ab-widths}
+\small
+\begin{tabular}{@{}cccccccc@{}}
+\toprule
+$\Lambda$ & $x$ & $\varepsilon$ & $\Gamma$ & $\Gamma_{\rm BO}/\Gamma$ & $\Gamma_{\rm BOD}/\Gamma$ & $b$ & $A_{\rm eff}$ \\
+\midrule
+$-1.0$ & $1.000$ & $1.6688420$ & $0.6122883$ & $1.020$ & $2.46$ & $1.825$ & $52$ \\ %
+$-0.4162$ & $1.550$ & $1.7294758$ & $0.2190070$ & $1.001$ & $3.23$ & $1.972$ & $2.1\times10^{2}$ \\ %
+$-0.2685$ & $1.930$ & $1.7732304$ & $9.919053\times10^{-2}$ & $0.986$ & $4.16$ & $2.219$ & $5.3\times10^{2}$ \\ %
+$-0.1732$ & $2.403$ & $1.8166757$ & $3.185922\times10^{-2}$ & $0.965$ & $6.18$ & $2.588$ & $1.4\times10^{3}$ \\ %
+$-0.1117$ & $2.992$ & $1.8506521$ & $6.115927\times10^{-3}$ & $0.941$ & $10.7$ & $2.986$ & $3.6\times10^{3}$ \\ %
+$-0.07208$ & $3.725$ & $1.8717463$ & $6.019318\times10^{-4}$ & $0.915$ & $19.4$ & $3.293$ & $9.3\times10^{3}$ \\ %
+$-0.04650$ & $4.637$ & $1.8837007$ & $2.675357\times10^{-5}$ & $0.886$ & $32.4$ & $3.499$ & $2.4\times10^{4}$ \\ %
+$-0.03000$ & $5.774$ & $1.8907275$ & $4.565352\times10^{-7}$ & $0.854$ & $50.5$ & $3.648$ & $6.3\times10^{4}$ \\ %
+$-0.01554$ & $8.021$ & $1.8965588$ & $1.013983\times10^{-10}$ & $0.799$ & $95.7$ & $3.818$ & $3.0\times10^{5}$ \\ %
+$-0.01003$ & $9.986$ & $1.8987197$ & $5.079043\times10^{-14}$ & $0.759$ & $148$ & $3.907$ & $9.4\times10^{5}$ \\ %
+$-0.00647$ & $12.433$ & $1.9000967$ & $3.235812\times10^{-18}$ & $0.717$ & $233$ & $3.966$ & $3.2\times10^{6}$ \\ %
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{rep_v11_abelian_width}
+\caption{Resonance of the abelian Higgs zero-mode problem against $x=(e^2/|\lambda|)^{1/2}$ (units $e=1$).
+(a)~Width $\Gamma$ of the exact two-dimensional problem (points), of the plain Born--Oppenheimer model~(\ref{eq:v11-ab-UBO}) (solid) and of the model with the diagonal term $3/(16r^2)$ (dashed); dotted: slope $-\pi\sqrt2$ of the deep-well law through the last point.
+(b)~Local exponent $b=-d\ln\Gamma/dx$: exact (points), plain Born--Oppenheimer (blue), and the WKB action of the Langer-corrected Born--Oppenheimer barrier at the computed energy (green), continued beyond $x=12.4$ with the extrapolated energy $\varepsilon_0=1.9026$; dotted: the leading-order form~(\ref{eq:v11-ab-Seps}); dashed: the deep-well value $\pi\sqrt2$. %
+Shaded: the level lies above the barrier top.} %
+\label{fig:v11-ab-width}
+\end{figure}
+
+\paragraph{Thresholds.}
+A box that exists for $N$ light-crossing times keeps the resonance with probability $e^{-\Gamma N}$, and the threshold $\Lambda_c(N)$ solves $\Gamma N=\ln2$; we interpolate $\ln\Gamma$ by a cubic spline in $x$ and include a tenth of the difference from linear interpolation in the uncertainty.
+Table~\ref{tab:v11-ab-thresholds} and Fig.~\ref{fig:v11-ab-threshold} give the results for $e=1$: $\Lambda_c=-0.2295$, $-0.09138$, $-0.05252$ and $-0.03123$ for $N=10$, $300$, $10^4$ and $10^6$, with uncertainties of at most $4\times10^{-5}$. %
+For general $e$ the condition reads $e^{2/3}F(\Lambda_c)N=\ln2$, and $\lambda_c=e^2\Lambda_c$.
+
+With a constant prefactor, $\Gamma=A\exp(-\pi\sqrt2\,x)$ gives $1/|\Lambda_c|^{1/2}=[\ln N+\ln(A/\ln2)]/(\pi\sqrt2)$, linear in $\ln N$ with slope $1/(\pi\sqrt2)$, so that $|\Lambda_c|^{1/2}\ln N\to\pi\sqrt2$ with corrections of order $1/\ln N$.
+With Eq.~(\ref{eq:v11-ab-Seps}), $\ln(N/\ln2)=S(\varepsilon,x_c)+\ln T+O(1)$ gives $|\Lambda_c|^{1/2}\ln N=\pi\sqrt2\,[1-O((\ln N)^{-2/3})]$: the energy of the level adds a slower correction, which dominates as $N\to\infty$.
+The computed thresholds approach the limit slowly: $|\Lambda_c|^{1/2}\ln N$ rises from $1.10$ at $N=10$ to $3.16$ at $N=10^{16}$, with local slope $d|\Lambda_c|^{1/2}/d(1/\ln N)$ from $0.52$ to $2.52$, and a straight line through $N=10^4$--$10^{16}$ has slope $1.76$ and intercept $+0.044$ (largest residual $0.006$). %
+A constant prefactor as large as the effective prefactors of Table~\ref{tab:v11-ab-widths} would also give a slow approach, so these numbers describe the thresholds without separating the two corrections; the evidence for the energy term is the local exponent $b$ and its agreement with $dS(\varepsilon)/dx$. %
+The continuation with the WKB action at the computed energy, anchored to the exact width at $x=12.4$, gives $|\Lambda_c|^{1/2}\ln N=3.75$, $3.98$ and $4.21$ at $N=10^{50}$, $10^{100}$ and $10^{300}$. %
+This limit is a property of the abelian model, in which $\Gamma$ vanishes at $\Lambda=0$ because the potential $\frac32er$ then confines; for the Standard Model zero-mode model, which contains $\Delta V$, only the logarithmic dependence on the duration over the computed range is claimed (Sec.~\ref{sec:v11-static-box}).
+
+At the Standard Model slope $\sigma_0=1.31$ ($e=0.8733$) the thresholds are $\lambda_c=-0.182$, $-0.071$, $-0.041$ and $-0.024$ for $N=10$, $300$, $10^4$ and $10^6$. %
+The value at $N=300$, $\abelLamcSM$, is six times deeper than the static-box threshold $\lamc(300)=\lcAthree$ of the Standard Model (Sec.~\ref{sec:v11-static-box}). %
+The abelian model lacks the two ingredients that make the Standard Model barrier more transparent: the one-loop energy $\Delta V$ of the non-zero modes, which roughly halves the barrier above the level (Sec.~\ref{sec:rb-size}), and the SU(2) zero-mode energy, through which the zero-point energy of the reduced Standard Model model rises with slope $\zpSlopeLo$--$\zpSlopeHi$ at $r=1$--$5$ instead of $\sigma_0$ (Sec.~\ref{sec:v11-static-box}). %
+At $\lambda=-0.010$ the barrier of Eq.~(\ref{eq:v11-ab-UBO}) rises $3.25/L$ above the level at this slope, against $1.57/L$ in the reduced Standard Model model without $\Delta V$ and $0.72/L$ with it (Sec.~\ref{sec:rb-size}). %
+Accordingly the abelian width there is $\Gamma=6.01\times10^{-12}/L$, against $\Gamma_{\rm 2D}=4.15\times10^{-4}/L$ in the reduced Standard Model model at fixed couplings (Table~\ref{tab:rb-widths}); its exponent $-\ln(\Gamma L\,e^{-2/3})=25.75$ lies well below the deep-well value $38.80$. %
+
+\begin{table}[t]
+\centering
+\caption{Thresholds $\Gamma N=\ln2$ of the abelian Higgs model in units $e=1$, $\Lambda_c=\lambda_c/e^2$: exact two-dimensional widths (uncertainty at most $4\times10^{-5}$ in $\Lambda_c$), plain Born--Oppenheimer (BO) and BO with the diagonal term (BOD), the combination $|\Lambda_c|^{1/2}\ln N$ with its local slope against $1/\ln N$, and $\lambda_c$ at the Standard Model slope $\sigma_0=1.31$ ($e=0.8733$). In the deep-well limit $|\Lambda_c|^{1/2}\ln N\to\pi\sqrt2=4.443$.} %
+\label{tab:v11-ab-thresholds}
+\small
+\begin{tabular}{@{}ccccccc@{}}
+\toprule
+$N$ & $\Lambda_c$ & $\Lambda_c^{\rm BO}$ & $\Lambda_c^{\rm BOD}$ & $|\Lambda_c|^{1/2}\ln N$ & $d|\Lambda_c|^{1/2}/d(1/\ln N)$ & $\lambda_c$ ($e=0.8733$) \\ %
+\midrule
+$10$ & $-0.22952$ & $-0.2315$ & $-0.1139$ & $1.103$ & $0.52$ & $-0.1818$ \\ %
+$300$ & $-0.09138$ & $-0.0927$ & $-0.0539$ & $1.724$ & $0.94$ & $-0.0709$ \\ %
+$10^{4}$ & $-0.05252$ & $-0.0533$ & $-0.0338$ & $2.111$ & $1.29$ & $-0.0405$ \\ %
+$10^{6}$ & $-0.03123$ & $-0.0317$ & $-0.0216$ & $2.441$ & $1.64$ & $-0.0240$ \\ %
+$10^{8}$ & $-0.02098$ & $-0.0213$ & $-0.0152$ & $2.668$ & $1.90$ & --- \\ %
+$10^{10}$ & $-0.01517$ & $-0.0154$ & $-0.0114$ & $2.836$ & $2.10$ & --- \\ %
+$10^{12}$ & $-0.01152$ & $-0.0117$ & $-0.0089$ & $2.966$ & $2.27$ & --- \\ %
+$10^{14}$ & $-0.00908$ & $-0.0092$ & $-0.0071$ & $3.072$ & $2.40$ & --- \\ %
+$10^{16}$ & $-0.00735$ & $-0.0075$ & --- & $3.159$ & $2.52$ & --- \\ %
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.62\textwidth]{rep_v11_abelian_threshold}
+\caption{Thresholds $\Gamma N=\ln2$ of the abelian Higgs model: $|\Lambda_c|^{1/2}\ln N$ against $\log_{10}N$ for the exact two-dimensional widths (points), the plain Born--Oppenheimer model (crosses) and the model with the diagonal term $3/(16r^2)$ (squares), and the continuation with the WKB action of the Langer-corrected Born--Oppenheimer barrier at the computed energy, anchored to the exact width at $x=12.4$ (line). The deep-well limit $\pi\sqrt2$ (dashed) is approached only as $(\ln N)^{-2/3}$.} %
+\label{fig:v11-ab-threshold}
+\end{figure}
+
+\paragraph{Accuracy of the Born--Oppenheimer approximation.}
+The diagonal BO term follows from $\chi_0$.
+With $\partial_\omega\chi_0=\bigl(\frac{3}{4\omega}-\frac{w^2}{2}\bigr)\chi_0$ and $\langle w^2/2\rangle=3/(4\omega)$,
+\begin{equation}
+\langle\partial_\omega\chi_0|\partial_\omega\chi_0\rangle={\rm Var}\Bigl(\frac{w^2}{2}\Bigr)=\frac14\sum_{i=1}^3{\rm Var}\bigl(w_i^2\bigr)=\frac14\cdot3\cdot2\Bigl(\frac{1}{2\omega}\Bigr)^2=\frac{3}{8\omega^2},
+\label{eq:v11-ab-var}
+\end{equation}
+and with $\partial_r=e\,\partial_\omega$
+\begin{equation}
+\tfrac12\,\langle\partial_r\chi_0|\partial_r\chi_0\rangle=\frac12\,e^2\,\frac{3}{8e^2r^2}=\frac{3}{16r^2},
+\label{eq:v11-ab-diag}
+\end{equation}
+independent of $e$.
+This is the Born--Huang term of the $\bm w$ motion, $B_w$ of Eq.~(\ref{eq:rb-BH}), which in the Standard Model takes this form at small $r$ [Eq.~(\ref{eq:rb-Bw})] and in the abelian model has it at every $r$.
+The function $\partial_\omega\chi_0$ is proportional to the first radial excitation $\chi_1$ of the s-wave oscillator, so that the diagonal term is $\frac12A^2$, where $A=\langle\chi_1|\partial_r\chi_0\rangle=(3/8)^{1/2}/r$ is the only non-adiabatic coupling of the ground channel, to a channel $2er$ higher.
+Adding Eq.~(\ref{eq:v11-ab-diag}) to Eq.~(\ref{eq:v11-ab-UBO}) gives $U_{\rm BOD}=\frac32er+1/(16r^2)+\lambda r^4/4$, with the Frobenius exponent $a=1.1124$ in place of $1/2$. %
+For a bound ground state the BO energy without the diagonal term is a lower bound and with it an upper bound; the computed resonance energies obey $\varepsilon_{\rm BO}<\varepsilon<\varepsilon_{\rm BOD}$ at every $\Lambda$. %
+
+The plain BO model places the level $0.096$--$0.103$ below the exact one and gives widths within $\abelBOdev$: $\Gamma_{\rm BO}/\Gamma$ falls from $1.02$ at $\Lambda=-1$ through $0.85$ at $\Lambda=-0.030$ to $0.72$ at $\Lambda=-0.0065$, and $b_{\rm BO}-b=+0.02$ to $+0.04$ (Table~\ref{tab:v11-ab-widths}, Fig.~\ref{fig:v11-ab-width}). %
+The slow drift of $\Gamma_{\rm BO}/\Gamma$ follows from the energy error through Eq.~(\ref{eq:v11-ab-Seps}), $\Delta S\approx3.78\times0.10\,x^{1/3}$, and the BO thresholds lie within $1.5\%$ of the exact ones (Table~\ref{tab:v11-ab-thresholds}). %
+With the diagonal term the level lies $0.50$--$0.65$ too high, the widths are too large by factors of $2.5$ ($\Lambda=-1$) to $233$ ($\Lambda=-0.0065$), $b$ is too low by $0.2$--$0.9$, and the thresholds are $22$--$50\%$ shallower. %
+The exact level lies at $13$--$17\%$ of the bracket $[\varepsilon_{\rm BO},\varepsilon_{\rm BOD}]$, so that the non-adiabatic couplings, leading at second order, cancel $83$--$87\%$ of the shift produced by the diagonal term. %
+The reason is the absence of a small parameter.
+By the scaling~(\ref{eq:v11-ab-scaling}) the $w$ frequency in the well, $er$ at $r\approx e^{-1/3}$, and the energy scale of the $r$ motion are both proportional to $e^{2/3}$, so their ratio does not depend on the coupling; in the well the kinetic energy of the $r$ motion, about $\varepsilon/3$ by the virial theorem for a linear well, is comparable with the gap $2er$, and the second-order energy of the coupling $A$, of order $A^2\langle p_r^2\rangle/(2er)$, is of the same order as $\frac12A^2$.
+Only under the barrier, at $r\approx|\Lambda|^{-1/3}$ in units $e=1$, is the $w$ motion fast.
+A one-dimensional reduction with the diagonal BO term is therefore unsuitable for quantitative widths, and the plain BO model, or better the BO barrier at the exact energy, is accurate to tens of per cent.
+
+The reduced Standard Model model of Sec.~\ref{rep:h-reduced} solves $r$ and $|\bm w|$ together and does not use the diagonal term for $\bm w$.
+Its hypercharge mode also has a frequency that vanishes linearly as $r\to0$, and Sec.~\ref{rep:h-reduced} found the same pattern there: the two-dimensional energy lies at $15.5\%$ of its BO bracket at $\lambda=0$, and nearly all of $B_w$ is spurious (Table~\ref{tab:rb-lam0} and the discussion of the mechanism). %
+The abelian model, solved without any reduction, shows that this is a property of a fast mode whose frequency vanishes linearly in the slow coordinate, independent of the approximations of Sec.~\ref{rep:h-reduced}, and that a one-dimensional reduction with that term would overestimate the widths by orders of magnitude.
+The SU(2) modes, which the magnetic quartic term keeps stiff at small $r$, enter the reduced model through the conditional Gaussian with the Born--Huang term $B_x\le0.012$ for $r\le3$ (Table~\ref{tab:rb-BH}); the full-dimensional calculation of Secs.~\ref{sec:v18-problem}--\ref{sec:v18-mc} tests that part directly. %
+
+\paragraph{Compactness of the holonomy.}
+The truncation treats $\bm w$ as non-compact.
+A large gauge transformation shifts each $ew_i$ by $2\pi$, so the configuration space of the constant connections is the fundamental domain $|ew_i|\le\pi$, and near its boundary a charged mode of non-zero momentum becomes as light as the constant mode, where the zero-mode Hamiltonian no longer applies.
+In the converged resonance wave functions, inside the radius of the barrier top, the probability that $e|\bm w|$ exceeds $\pi$, an upper bound on the probability that some component leaves the domain, is $1.8$--$2.6\times10^{-3}$ for $e=1$, $5.5$--$8.1\times10^{-4}$ for $e=0.873$ ($8.0\times10^{-4}$ at $\lambda=-0.010$) and $3.2$--$5.9\times10^{-7}$ for $e=0.5$. %
+Beyond $e|\bm w|=\pi/2$ it is $23$--$26\%$, $16$--$19\%$ and $1.9$--$2.4\%$; the ranges cover $\Lambda=-1$ to $-0.0065$, with the narrow resonances at the upper ends, and direct calculations at $e=0.873$ reproduce the values obtained by scaling. %
+The non-compact treatment therefore affects a probability below $\abelHolonomy$ at the Standard Model slope. %
+Its effect on $\Gamma$, through the energy of the level, was not computed; by Eq.~(\ref{eq:v11-ab-Seps}), $\delta\ln\Gamma\approx3.78\,x^{1/3}\,\delta\varepsilon\approx8\,\delta\varepsilon$ at $e=0.873$ and $\lambda=-0.010$, so a level shift of order $10^{-3}$ would change $\Gamma$ at the per-cent level. %
+The wave function is, however, not deep inside the domain for $e\approx0.87$--$1$: about a fifth of the probability lies beyond half of it. %
+
+\paragraph{Without the gauge modes.}
+For $e\to0$ at fixed $\lambda<0$ the problem is $-\frac12\nabla_\phi^2+\frac\lambda4|\bm\phi|^4$ on the plane, whose potential decreases monotonically from zero: there is no well, no barrier and no quasi-bound state.
+Scaling $r\to\mu r$ with $\mu^6=-1/|\lambda|$ maps the inverted quartic to $|\lambda|^{1/3}e^{-i\pi/3}$ times the quartic oscillator $-\frac12\nabla^2+\frac14r^4$, so that every complex-scaled eigenvalue lies on the ray $\arg E=-60^\circ$, with $\Gamma/{\rm Re}\,E=2\sqrt3$ for every $\lambda$.
+At $\lambda=-0.03$ the lowest one is $E=0.14457-0.25040\,i$, at $\arg E=-60.000000^\circ$. %
+This pole is fixed by the scaling of the inverted quartic and is not a narrow resonance.
+In the form~(\ref{eq:v11-ab-Hu}) the reduced potential $-1/(8r^2)+\lambda r^4/4$ is not monotonic: it has a maximum of negative height $-\frac{3}{16}(4|\lambda|)^{1/3}$ at $r=(4|\lambda|)^{-1/6}$.
+This maximum is not a barrier, since $-1/(8r^2)$ is the $m=0$ kinetic term of the plane, which the Langer substitution removes; the potential of the problem, $\lambda|\bm\phi|^4/4$, is monotonic.
+The narrow resonance of the model is therefore due to the gauge zero modes, as for the gauge zero-mode switch of the Standard Model calculation (Sec.~\ref{sec:v11-kappa}).
+
+\paragraph{What the test establishes.}
+\emph{Proved.} The zero-mode problem of the abelian Higgs model reduces exactly to $(r,s)$; its resonance obeys Eq.~(\ref{eq:v11-ab-scaling}); the diagonal BO term is $3/(16r^2)$. %
+
+\emph{Under stated conditions}, in the WKB approximation for the Langer-corrected BO barrier, which is asymptotically exact as $x\to\infty$: the deep-well exponent is $\pi\sqrt2\,x$, and the energy of the level lowers the barrier action by $3.78\,\varepsilon\,x^{1/3}$ at leading order. %
+
+\emph{Found numerically}, with relative precision of order $10^{-8}$ internally and $10^{-6}$ against the independent method at $-0.416\le\Lambda\le-0.0155$ (the blind recalculation of Sec.~\ref{sec:v11-blind-abelian} also covers $\Lambda=-1$ and $-0.01003$): the gauge zero modes alone confine the negative quartic, with widths from $0.61$ to $3.2\times10^{-18}$; the local exponent rises from $1.8$ to $4.0$ and is reproduced by the WKB action of the BO barrier at the computed energy; the plain BO widths lie within $30\%$ of the exact ones, and the widths with the diagonal term are too large by up to $233$; the weight beyond the fundamental domain of the holonomy is below $10^{-3}$ for $e\le0.87$. %
+
+\emph{Expected}, from the WKB continuation: $b=4.28$ and $4.42$ at $x=60$ and $1000$, and the approach of $|\Lambda_c|^{1/2}\ln N$ to $\pi\sqrt2$; these rest on the barrier action at an extrapolated energy, with a prefactor ratio that varies slowly ($0.80$ to $0.757$ over $x=3$--$12.4$). %
+
+\emph{Outside the test.} The model contains no $\Delta V$, no SU(2) modes, no fermions and no cross terms; it tests the mechanism and the WKB form of the width at the resonance energy, whereas the deep-well law with a constant prefactor holds only asymptotically, and it does not test the numbers of the Standard Model, whose threshold at $N=300$ is six times shallower than that of the model at the same zero-point slope. %
+It does not test the conditional Gaussian of the SU(2) modes or the DMC shape correction, which the full-dimensional calculation of this section tests, and it omits the compactness of the holonomy and the light charged modes near the boundary of the fundamental domain, whose weight it bounds.

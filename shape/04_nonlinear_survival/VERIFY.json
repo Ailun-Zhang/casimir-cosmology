@@ -18,7 +18,7 @@
    {
     "id": "C142_summary",
     "what": "D114 analysis (amplitude scan, R1, controls)",
-    "paper": "PRD Sec. VII F; report Table 22 (Sec. 15)",
+    "paper": "PRD Sec. VII F; report Table 27 (Sec. 15)",
     "tol_abs": 1e-12,
     "tol_rel": 1e-09,
     "mode": "tree",
@@ -254,7 +254,7 @@
    {
     "id": "C142_summary",
     "what": "D114 analysis (amplitude scan, R1, controls)",
-    "paper": "PRD Sec. VII F; report Table 22 (Sec. 15)",
+    "paper": "PRD Sec. VII F; report Table 27 (Sec. 15)",
     "tol_abs": 1e-12,
     "tol_rel": 1e-09,
     "mode": "tree",

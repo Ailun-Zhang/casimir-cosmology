@@ -4,7 +4,7 @@
   {
    "id": "C142_summary",
    "what": "D114 analysis (amplitude scan, R1, controls)",
-   "paper": "PRD Sec. VII F; report Table 22 (Sec. 15)",
+   "paper": "PRD Sec. VII F; report Table 27 (Sec. 15)",
    "mode": "tree",
    "computed": {
     "file": "WORK:r2/shape_nonlinear_threshold/run01/C142_summary.json"

@@ -4,16 +4,17 @@
 Every ingredient of the Higgs criterion, the shape theorem and its survival levels, the readability of the fossil and the key literature judgments were recomputed by separate calculations that did not use our main code.
 This section records what each check was given, what it reproduced, to what precision, and which corrections it caused.
 We find that the blind reimplementation of the reduced Higgs chain reproduces its critical top masses to $0.005\GeV$, against a pass criterion of $0.05\GeV$ fixed in advance; that the blind cross-term calculation confirms that the cross terms destabilize the zero mode, with a shift within $0.010\GeV$ of the main calculation; that the blind Standard Model mapping reproduces $\lambda(\mub)$ to $4\times10^{-6}$ with the same matching and explains a scheme difference of $0.043\GeV$; and that the blind shape calculation reproduces the real-moment theorem, the floor and the survival levels within their statistical errors. %
-No check failed its pass criterion.
+No check failed its pass criterion; V7, which had accuracy targets instead (Sec.~\ref{sec:v19-protocol}), met them.
 Most of them led to corrections, all of which are included in Part~I and recorded in Part~III; Table~\ref{tab:v19-summary} at the end of the section summarizes them.
 
 \subsection{Protocol and levels of independence}\label{sec:v19-protocol}
 
 The reimplementations (see the Acknowledgments) were made at three levels of independence; each check is labeled by the identifier of its record.
 \begin{description}
-\item[Blind (third stage: keystone, V1--V6).] Each check received a written specification with the model definitions, the inputs and the pass criteria, an earlier draft of the paper as an external anchor (for example its full-dimensional DMC value at $\lambda=0$), and access to the literature.
+\item[Blind (third stage: keystone, V1--V6; version 1.1: V7).] Each check received a written specification with the model definitions, the inputs and the pass criteria, an earlier draft of the paper as an external anchor (for example its full-dimensional DMC value at $\lambda=0$), and access to the literature.
 It had no access to the derivations, code and results of the main calculation or to the records of the other checks.
 It recorded its results, with a time stamp and the SHA-256 hash of its code, before it received any number of the main calculation; the comparison was compiled afterwards.
+V7 (Sec.~\ref{sec:v11-blind-abelian}) differs in three respects: its specification set accuracy targets but no pass criterion, it had no earlier draft as anchor, and no hash of its code was recorded before the comparison; the archived code is the code it delivered.
 \item[Compute first (first and second stages: R14, R15).] Each check computed its own numbers before opening the results of the main calculation, and compared afterwards.
 Some of these checks reused earlier independent code that the main calculation also uses (R15 checks of the matching and of the real-time evolution), and in one case the result tables of the main calculation were seen before the computation (R15 check of the two-dimensional model), which makes that check only partly independent; we state these limitations below.
 \item[Semi-blind (T19).] The check used only the claims and the non-numerical parts of the derivations, saved its own results, and then opened the result tables of the main calculation; one accidental exposure of a few of their rows is recorded in its report.
@@ -131,7 +132,7 @@ The check passed (differences $\le0.002$ in $\xi$).
 
 \subsection{V6: key literature judgments}\label{sec:v19-v6}
 
-The seventh blind check answered six questions about the literature from the original papers, with page and equation numbers, before it read the literature notes of the project.
+The blind check V6 answered six questions about the literature from the original papers, with page and equation numbers, before it read the literature notes of the project.
 It confirmed that the applicable bound for a minimally coupled plateau is that of Mantziris, Markkanen and Rajantie (2021), $\xi_{\rm EW}\ge0.059^{+0.007}_{-0.009}$, and that their 2022 bound $\xi_{\rm EW}\gtrsim0.1$ applies only to $R^2$ gravity; and that the topology searches require $L>0.97$ (Planck 2015) or $L>0.985$ (COMPACT) in units of the diameter of the last-scattering sphere, so that the window $1.02$--$1.04\,\dLSS$ is allowed. %
 It found that the earlier notes stated the relation to Branchina et al.\ too strongly and missed three references (Arkani-Hamed, Dubovsky, Nicolis and Villadoro 2007; Hamada and Shiu 2017; Arnold, Fornal and Wise 2010); the papers now cite them and state the relation conditionally. %
 
@@ -139,7 +140,7 @@ It found that the earlier notes stated the relation to Branchina et al.\ too str
 
 The semi-blind check T19 recomputed the nonlinear amplitude thresholds of the shape, a layer of the divergences of the microwave-background calculation, the closed-form scaling of the fossil and three older items.
 With $N=2048$ it gives the survival $1.000/\allowbreak 0.987/\allowbreak 0.818/\allowbreak 0.365/\allowbreak 0.067/\allowbreak 0.0015$ for amplitude factors $s=1/3/5/10/20/40$, against $1.000/\allowbreak 0.973/\allowbreak 0.824/\allowbreak 0.367/\allowbreak 0.062/\allowbreak 0.000$ in the main calculation with $N=256$, and $s_{50}/s_{90}/s_{99}=8.18/\allowbreak 4.28/\allowbreak 2.95$ against $8.2/\allowbreak 4.2/\allowbreak 2.2$. %
-The main calculation, repeated with $N=2048$, then gave $s_{99}=2.76$ (range $2.66$--$2.96$); the two values are about $2\sigma$ apart, and the papers quote $s_{99}\approx2.8$--$2.95$. %
+The main calculation, repeated with $N=2048$, then gave $s_{99}=2.76$ (range $2.66$--$2.96$); the two values are about $2\sigma$ apart, and the paper quotes $s_{99}\approx2.8$--$2.95$. %
 Its divergences for $\ell\le40$ and $\ell\le30$, $7.21855$ and $5.25558$, agree with the main calculation ($7.22572$, $5.26140$) to $0.1\%$, within the $1\%$ criterion, and it reproduces the scaling function $F(19.32)=24.550106$. %
 It found that the plateau background adds $0.4$--$0.8$ percentage points of survival, that the Moyal correction changes a variance by a factor $0.99989$, and that the photon-pair branch has its centre at $4.956$ with a $5$--$95\%$ range $2.98$--$11.9$. %
 Its corrections ($s_{99}\approx2.95$ and $\sigma(99\%)\approx0.31$ instead of $2.2$ and $0.24$; ``centre $\approx5$, $90\%$ interval $3$--$12$'' for the photon pair) were adopted (Part~III).
@@ -203,6 +204,7 @@ B & V3: claims and robustness & $\Pbar$ to $0.005$; thresholds to $0.01\GeV$ & e
 B & V4: shape & $t_*$ within errors; $G$ and floor to $0.3\%$ & $N\ge2048$ at $99\%$ levels \\
 B & V5: universality, inflation & $\xi_{\rm inf}$ to $0.002$ & none needed \\
 B & V6: literature & six questions & BFT wording; three references added \\
+B & V7: abelian Higgs model (Sec.~\ref{sec:v11-blind-abelian}) & widths to $10^{-10}$, energies to $10^{-11}$ & none needed \\
 S & T19: open items & KL to $0.1\%$; $F(19.32)$ & $s_{99}$, $\sigma(99\%)$, photon-pair range \\
 C & R14: Higgs survival, state selection & widths to $3\times10^{-4}$; $G$ to 8 digits & condition on $\xiH$; theorem statements \\
 C & R15: matching, real time, 2D, time symmetry & $m_c$ to $10^{-4}\GeV$; $\xi_c$, $w_0$ & non-adiabatic item; rule for $w_0$; B1--B3 wording \\
@@ -213,6 +215,46 @@ A & Consistency audit & 420 values & 23 items \\
 \end{table}
 
 The checks cover every input of the criterion and of the shape statements.
-Four parts were checked only within the main code: the one-loop vev-mixing, Coulomb and top-chiral terms of the cross terms (net $+0.005$ to $+0.007\GeV$, checked by renormalization-group closure and regression), the final matching-scale scan, the recomputation of $\xic$ in the final model (checked against the universal curve $\xic(\Pone)$ to $0.0002$), and the two-branch analysis of Sec.~\ref{rep:h-survival}, which compares the time-dependent and static-spectrum methods internally. %
+Five parts were checked only within the main code: the one-loop vev-mixing, Coulomb and top-chiral terms of the cross terms (net $+0.005$ to $+0.007\GeV$, checked by renormalization-group closure and regression), the final matching-scale scan, the recomputation of $\xic$ in the final model (checked against the universal curve $\xic(\Pone)$ to $0.0002$), the two-branch analysis of Sec.~\ref{rep:h-survival}, which compares the time-dependent and static-spectrum methods internally, and the static-box calculation of Secs.~\ref{sec:v11-static-box}--\ref{sec:v11-static-torus}, which reuses the production code of the expanding torus and was checked by regression to the archived widths, by the exact $\kappa$ scaling and by the coupling-derivative prediction (Sec.~\ref{sec:v11-numerics}), but was not reimplemented. %
 The final marginalization was repeated with an independently written Monte Carlo integration (Sec.~\ref{rep:h-budget}).
 The blind checks test how the stated model is implemented; the approximations of the model itself are covered by the model items of the error budget and by the full-dimensional check of Sec.~\ref{rep:v-fulldim}.
+
+\subsection{V7: the abelian Higgs model}\label{sec:v11-blind-abelian}
+
+The exactly reducible test of Sec.~\ref{sec:v11-abelian} was recomputed blind.
+The check received a written specification of the zero-mode problem, namely the Hamiltonian of Eq.~(\ref{eq:v11-ab-H}), Gauss's law and the s-wave sector, the reduced operator of Eq.~(\ref{eq:v11-ab-Hrs}) with its measures and the outgoing condition that defines the resonance, together with the couplings and the precision to be reached ($10^{-4}$ in $\Gamma$, $10^{-6}$ in $\varepsilon$). %
+It had no access to the code, results or text of Sec.~\ref{sec:v11-abelian}, to the Letter or to this report, and it recorded its results before any comparison.
+Because the specification contained the reduced operator, the check tests the numerical solution of the stated two-dimensional problem; the exact reduction is derived in Sec.~\ref{sec:v11-abelian} and was not rederived.
+Section~\ref{sec:v19-protocol} states how its protocol differs from that of the other blind checks.
+It used two methods of its own.
+(i)~A product basis of two-dimensional ($m=0$) and three-dimensional ($l=0$) oscillator functions with exact matrix elements and the complex rotation $r\to re^{i\theta}$; the eigenvector is computed in double precision and the eigenvalue as a complex-symmetric Rayleigh quotient in 40-digit arithmetic, which resolves the smallest width, whereas double precision alone scatters it by about $1\%$; bases up to $250\times100$ functions, three rotation angles, a rotation of $s$ and the oscillator frequencies were varied. %
+(ii)~A grid with eighth-order differences and smooth exterior complex scaling in $r$, solved by inverse iteration, with the width taken both from the eigenvalue and from the outgoing flux at two radii beyond the barrier, on grids $h=0.05$, $0.04$ and $0.03$ ($0.02$ at $\lambda=-1$). %
+A polynomial switch into the scaled region gave width errors of up to $3\times10^{-4}$ that depended on $\theta$, while $\varepsilon$ was unaffected; a switch built from the error function removes them, and all final values use it. %
+The two methods agree to $2\times10^{-9}$ in $\Gamma$ and $6\times10^{-11}$ in $\varepsilon$ at every coupling, including the smallest width. %
+
+Table~\ref{tab:v11-blind-abelian} compares the blind values with those of Sec.~\ref{sec:v11-abelian}.
+At $\Lambda=-1$ and $-0.03$, which both calculations used exactly, the widths agree to $9\times10^{-11}$ and $9\times10^{-13}$ and the energies to $5\times10^{-12}$ and $8\times10^{-14}$. %
+The specification quoted the two other couplings rounded to five digits, $-0.11174$ and $-0.01003$.
+Evaluated, after its results had been recorded, at the exact couplings of the grid of Sec.~\ref{sec:v11-abelian}, the blind solver agrees to $4\times10^{-12}$ and $6\times10^{-12}$ in $\Gamma$ and to $3\times10^{-14}$ in $\varepsilon$, and its values at the rounded couplings differ from these by the effect of the rounding alone. %
+The agreement lies two to four orders of magnitude below the uncertainties quoted in Sec.~\ref{sec:v11-abelian}, $4\times10^{-9}$ to $3\times10^{-8}$ in $\Gamma$. %
+The blind calculation also confirms the scaling law of Eq.~(\ref{eq:v11-ab-scaling}) at $e=0.873$, within its own results to $5\times10^{-16}$ in $\Gamma$; the local exponent, $3.651$ at $\Lambda=-0.03$ and $3.908$ at $\Lambda=-0.01003$ from a dense scan, against $3.648$ and $3.907$ from the grid of Sec.~\ref{sec:v11-abelian}; and the energy of the state at $\Lambda=0$, which is bound, $\varepsilon_0=1.9025678$, against $1.9026$ from the extrapolation there. %
+Independently of Sec.~\ref{sec:v11-abelian}, it finds that at $\Lambda=-0.01003$ the energy of the level lowers the barrier action from $44.4$, the zero-energy Born--Oppenheimer value, to $29.4$, so that the deep-well formula would underestimate the width by a factor of about $3\times10^6$. %
+The specification, code and results of the check are archived in \texttt{validation/\allowbreak abelian\_blind/} of the package from version~1.2.0.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Blind recalculation of the abelian Higgs resonance (units $e=1$, energies and widths in $e^{2/3}/L$) and its differences from the values of Sec.~\ref{sec:v11-abelian}, $\Delta\varepsilon=\varepsilon_{\rm blind}-\varepsilon$ and $\Delta\Gamma/\Gamma=\Gamma_{\rm blind}/\Gamma-1$. For $\Lambda=-0.11173797$ and $-0.01002817$ the blind solver was evaluated at the exact grid couplings after its results at the rounded couplings had been recorded. Last row: the blind calculation at $e=0.873$ and $\lambda=-0.03\,e^2$, compared with $e^{2/3}$ times the values of Sec.~\ref{sec:v11-abelian} at $e=1$ and $\Lambda=-0.03$.}
+\label{tab:v11-blind-abelian}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+$\Lambda$ & $\varepsilon$ (blind) & $\Delta\varepsilon$ & $\Gamma$ (blind) & $\Delta\Gamma/\Gamma$ \\
+\midrule
+$-1$ & $1.668842044055$ & $+5\times10^{-12}$ & $0.6122882663190$ & $-9\times10^{-11}$ \\ %
+$-0.11173797$ & $1.850652109482$ & $+1\times10^{-14}$ & $6.115927402320\times10^{-3}$ & $+4\times10^{-12}$ \\ %
+$-0.03$ & $1.890727536056$ & $-8\times10^{-14}$ & $4.565352370436\times10^{-7}$ & $+9\times10^{-13}$ \\ %
+$-0.01002817$ & $1.898719650682$ & $-3\times10^{-14}$ & $5.079042891050\times10^{-14}$ & $-6\times10^{-12}$ \\ %
+$-0.03$ ($e=0.873$) & $1.727050797782$ & $-7\times10^{-14}$ & $4.170138374334\times10^{-7}$ & $+9\times10^{-13}$ \\ %
+\bottomrule
+\end{tabular}
+\end{table}

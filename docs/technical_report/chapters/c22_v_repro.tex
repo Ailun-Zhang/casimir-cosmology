@@ -1,7 +1,8 @@
 
 \section{Reproduction guide: code, data, figures and numbers}\label{rep:v-repro}
 
-Every number and figure of the Letter~\cite{v12PRL}, the paper~\cite{v12PRD} and this report is produced by the scripts of the code and data package of Ref.~\cite{DNECv12code}, version~1.0.0, or contained in its archived outputs, including those of the independent reimplementations.
+Every number and figure of the Letter~\cite{v12PRL}, the paper~\cite{v12PRD} and this report is produced by the scripts of the code and data package of Ref.~\cite{DNECv12code}, whose versions share one DOI (this report corresponds to version~1.2.0, which contains it), or contained in its archived outputs, including those of the independent reimplementations.
+The static-box and abelian calculations of Secs.~\ref{sec:v11-static-box} and~\ref{sec:v11-abelian} are those of the Supplemental Material of the Letter, which the package contains from version~1.2.0 (Sec.~\ref{sec:v11-repro-supplement}).
 The package contains the code that produced the results, copied from the research tree with the paths rewired and the algorithms and numerical settings unchanged; the archived outputs of the original runs; a quick and a full run mode for every result; and an automatic comparison of fresh outputs with the archive under tolerances fixed in advance.
 This section explains how the package is organized (Sec.~\ref{sec:v22-structure}), how to run it (Sec.~\ref{sec:v22-run}), how its results are verified (Sec.~\ref{sec:v22-verify}), where the numbers and figures come from (Secs.~\ref{sec:v22-numbers}--\ref{sec:v22-map}), and what it does not contain (Sec.~\ref{sec:v22-limits}).
 The code is released under the MIT license and the data and text under CC~BY~4.0; SMDR~1.3 and the two files derived from it are under the GNU GPL, version~2 or later~\cite{Martin:2019lqd}.
@@ -21,6 +22,8 @@ cmb/     01-03  torus covariance, Fisher and exact KL, fossil ensemble,
                 joint state
 validation/     independent reimplementations: specifications, code, results,
                 comparison with the main calculation
+prl_supplement/ static-box and abelian-Higgs calculations of the Letter
+                (its Supplemental Material, unchanged; from version 1.2.0)
 figures/        style_v12.py, make_all_figures.py, one script per figure,
                 data/ (inputs), out/ (PDF and PNG)
 numbers/        numbers_v12.json (single source of the claim-layer numbers),
@@ -86,8 +89,9 @@ Recomputing every covariance matrix of the \texttt{cmb/02} ensemble from the shi
 The claim-layer numbers of the three documents (marginal probabilities, exclusion thresholds, reach, conditions on $\xiH$, safety margins, model-error totals) are never typed by hand.
 They are macros defined in \texttt{numbers.tex}, which \texttt{numbers/make\_numbers\_tex.py} generates from the single source \texttt{numbers/numbers\_v12.json}; the three LaTeX sources \texttt{\textbackslash input} the same file.
 To change a number one edits only the JSON file (values and displayed precision), regenerates \texttt{numbers.tex} and copies it to the three sources (\texttt{--out PATH ...}), and reruns \texttt{python numbers/check\_numbers.py --write}, which compares every number with the archived outputs of the package.
-At release all 51 macros are verified: each displayed value, sign included, equals the value at a named file and JSON pointer in the package rounded to the displayed precision, and none disagrees or lacks a source. %
-Appendix~\ref{rep:app-numbers} lists all macros with their sources, together with the run05 number registry from which most of them were taken.
+All 51 macros are verified: each displayed value, sign included, equals the value at a named file and JSON pointer in the package rounded to the displayed precision, and none disagrees or lacks a source. %
+The numbers of the static box and of the abelian model are macros of a second file, \texttt{numbers\_c170.tex}, which \texttt{prl\_supplement/\allowbreak numbers/\allowbreak make\_numbers\_c170.py} computes from the archived outputs of these calculations; the Letter and this report input the same file (Sec.~\ref{sec:v11-repro-supplement}).
+Appendix~\ref{rep:app-numbers} lists the 51 macros of \texttt{numbers.tex} with their sources, together with the run05 number registry from which most of them were taken; the 52 macros of \texttt{numbers\_c170.tex} carry their sources and unrounded values in that file. %
 Numbers that are not claim-layer macros are quoted in the text with a source comment in the LaTeX file; each is produced by the scripts of the package or contained in its archived outputs, including those of the independent reimplementations, and Table~\ref{tab:v22-mapping} below gives the package output and its archived copy for the numbers of each result directory.
 
 \subsection{Figures}\label{sec:v22-figures}
@@ -109,8 +113,51 @@ The numbers of the independent reimplementations are listed in \texttt{validatio
 
 Large intermediate files are not shipped but are regenerated by the full runs: the covariance caches of the microwave-background chains (1.3~GB, 0.7~GB, 3.3~GB and 15.5~GB) and the Higgs node tables and gauge profiles (40--170~MB per run).
 The transfer tables for $\ell\le40$ (34~MB) and $\ell\le80$ (85~MB) and the archives of the nonlinear trajectories (69~MB in six files) are shipped; the table for $\ell\le80$, needed only for \texttt{cmb/02 --full}, was computed with CAMB~2.0.4 by a script of the separate line of calculation of Sec.~\ref{rep:v-conditional}; the script and its settings are shipped with the table in \texttt{cmb/\allowbreak 02\_ensemble/\allowbreak data/}. %
-The blind reimplementations of Sec.~\ref{rep:v-blind} are described there and archived in the package's validation folder, \texttt{validation/}, whose script compares $23$ of their numbers with the main calculation; all agree within the pass criteria of the specifications. %
+The blind reimplementations of Sec.~\ref{rep:v-blind} are described there and archived in the package's validation folder, \texttt{validation/}, whose script compares $23$ of their numbers with the main calculation; all agree within the pass criteria of the specifications. The blind recalculation of the abelian model (Sec.~\ref{sec:v11-blind-abelian}) is archived from version~1.2.0 in \texttt{validation/\allowbreak abelian\_blind/}, with its comparison in \texttt{post\_comparison/\allowbreak COMPARISON.md}. %
 The original runs of the first two stages of the Higgs calculation are not repeated; where a later step depends on them, their archived outputs are staged as inputs.
 The $66$ node jobs that split the cross-term shift by groups of fields (Sec.~\ref{sec:rb-xfinal}) are archived and not rerun; \texttt{higgs/\allowbreak 04\_cross\_terms/\allowbreak cross\_decomp.py} recomputes the split from them in both modes. %
 Each chain README has a section ``Not packaged / partial coverage'' that lists the remaining gaps, for example the original scripts of the run02-based extras of the real-time step, whose outputs are archived.
 Some archived JSON and Markdown files contain absolute paths of the research machine in metadata fields; they are kept unchanged so that their SHA-256 matches the research archive, and the code never uses these fields.
+
+\subsection{The static-box and abelian calculations}\label{sec:v11-repro-supplement}
+
+The folder \texttt{prl\_supplement/} holds the Supplemental Material of the Letter, unchanged: the scripts and archived outputs of the static box (Sec.~\ref{sec:v11-static-box}; folders \texttt{c170/} and \texttt{results/C170/}) and of the abelian Higgs model (Sec.~\ref{sec:v11-abelian}; \texttt{c171/} and \texttt{results/C171/}), the script of Fig.~\ref{fig:v11-prl-fig1} (\texttt{figures/}), the generator of \texttt{numbers\_c170.tex} (\texttt{numbers/}), its own \texttt{README.txt} and \texttt{SHA256SUMS.txt}, and a note on its use inside the package (\texttt{PACKAGE\_NOTE.md}).
+The point-by-point records of the two calculations are bundled in two JSON-Lines files, which \texttt{unbundle\_records.py} restores and checks against their SHA-256.
+The static-box scripts import the production modules of the Higgs chain (\texttt{higgs/\allowbreak zmlib}, \texttt{higgs/\allowbreak 04\_cross\_terms}, \texttt{dnec\_common}), which are unchanged since version~1.0.0; \texttt{c170/\allowbreak setup\_from\_release.py} copies them from the folder named by the environment variable \texttt{DNEC\_RELEASE}, inside the package its root, and verifies their SHA-256.
+The abelian solver needs only NumPy and SciPy.
+
+The README gives three routes: (A) the analysis from the archived point records, in minutes; (B) the full recomputation, several CPU hours for the static box and about $7$~min for the abelian model; (C) the figure and the macros. %
+Route~A with \texttt{DNEC\_RELEASE} set to version~1.1.0 of the package verifies the SHA-256 of all copied modules, reproduces the archived widths of the final model exactly (and to $7\times10^{-12}$ from generic starting points), passes all 30 checks of \texttt{results/\allowbreak C170/\allowbreak checks.json}, and reproduces the table of widths and the thresholds of the abelian model. %
+Table~\ref{tab:v11-supplement-map} gives the output that contains each number of Secs.~\ref{sec:v11-static-box} and~\ref{sec:v11-abelian}; the README of the folder lists the same correspondence for the numbers of the Letter.
+The numbers of Secs.~\ref{sec:v11-mechanism-context}, \ref{sec:v11-static-box}--\ref{sec:v11-static-torus} and~\ref{sec:v11-abelian} that are computed from these outputs, among them the WKB exponents and Fubini actions at the thresholds, the closed-form deviations, the local exponent of the widths, the $\kappa$ ratios, the box ratio, the one-dimensional WKB decomposition of the slope and the abelian Born--Oppenheimer bracket, are produced by \texttt{figures/\allowbreak derive\_rep\_v11\_static\_box.py}, \texttt{figures/\allowbreak derive\_rep\_v11\_wkb\_split.py} and \texttt{figures/\allowbreak tab\_rep\_v11\_abelian.py} of the package, and the figures of these sections other than Fig.~\ref{fig:v11-prl-fig1} by the scripts \texttt{figures/\allowbreak fig\_rep\_v11\_*.py}; the inputs of these scripts are copies of the archived outputs in \texttt{figures/\allowbreak data/\allowbreak higgs/\allowbreak static\_box\_c170/} and \texttt{figures/\allowbreak data/\allowbreak higgs/\allowbreak abelian\_c171/}.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Numbers of the static box and of the abelian model and the archived outputs that contain them (paths under \texttt{prl\_supplement/\allowbreak results/} unless they start with \texttt{higgs/} or \texttt{figures/}; ``\#'' points to a key).}
+\label{tab:v11-supplement-map}
+\begin{tabular}{@{}p{0.43\textwidth}p{0.51\textwidth}@{}}
+\toprule
+Quantity & Output \\
+\midrule
+Width law in the fit window: $a$, $b$, residual, effective $\sigma$ & \texttt{C170/\allowbreak S1/\allowbreak C170\_S1\_summary.json\#boxes.A.fits} \\
+Level below the barrier top, WKB exponents in the window & \texttt{C170/\allowbreak S1/\allowbreak C170\_S1\_summary.json\#boxes.A.table} \\
+Zero-point slope and its reduction by $\Delta V$ & \texttt{C170/\allowbreak S2/\allowbreak C170\_S2\_curves.json\#slopes} \\
+$\lamc(N)$ of boxes A--E, closed-form accuracy, $\lamc(300)$ across boxes & \texttt{C170/\allowbreak S1/\allowbreak C170\_S1\_lambda\_c\_N.csv} \\
+Half-survival durations $N^*$ of the Standard Model vacuum & \texttt{C170/\allowbreak S1/\allowbreak C170\_S1\_lambdaSM\_Nstar.csv} \\
+$N_{\rm eff}$; range of the narrow resonance & \texttt{C170/\allowbreak S1/\allowbreak C170\_S1\_summary.json\#boxes.A} \\
+Regression; static minus hazard threshold & \texttt{C170/\allowbreak C170\_results.json\#S0} \\
+Model error of $\lamc(300)$ & \texttt{higgs/\allowbreak 09\_claims/\allowbreak expected/\allowbreak w/\allowbreak claims\_run05/\allowbreak run01/\allowbreak table1\_rebuild.json\#composite/\allowbreak minus\_no\_vi/\allowbreak 0.5} (shallow side) and \texttt{plus\_no\_vi/\allowbreak 0.5} of the package, times $0.00659\GeV^{-1}$ \\
+Cross-term shift of $\lamc(300)$ & \texttt{C170/\allowbreak C170\_results.json\#\allowbreak S2.\allowbreak kappa1\_vs\_\allowbreak final\_model} \\
+$\kappa$ scan: thresholds, $\kappa_{\rm thr}$, $\kappa_{\rm min}$, potentials & \texttt{C170/\allowbreak S2/\allowbreak C170\_S2\_lambda\_c\_kappa.csv}, \texttt{C170\_results.json\#S2} \\
+Coupling scans & \texttt{C170/\allowbreak S3/\allowbreak C170\_S3\_coupling\_scan.csv} \\
+Abelian model: widths, local exponent, method cross-check & \texttt{C171/\allowbreak C171\_gamma\_table.csv}, \texttt{C171/\allowbreak C171\_cap\_crosscheck.csv} \\
+Abelian model: thresholds, Born--Oppenheimer widths & \texttt{C171/\allowbreak C171\_thresholds.csv}, \texttt{C171/\allowbreak C171\_results.json} \\
+Abelian model: holonomy tails & \texttt{C171/\allowbreak C171\_holonomy\_tails.csv} \\
+Derived numbers of Secs.~\ref{sec:v11-mechanism-context}, \ref{sec:v11-static-box}--\ref{sec:v11-static-torus}: WKB exponents, Fubini actions, Planck operator, closed form, deep-well exponent, $\kappa$ ratios, box ratio & \texttt{figures/\allowbreak out/\allowbreak derived\_rep\_v11\_static\_box.json} (\texttt{figures/\allowbreak derive\_rep\_v11\_static\_box.py}) \\
+WKB decomposition of the width slope; local exponent of the widths of box~A & \texttt{figures/\allowbreak out/\allowbreak derived\_rep\_v11\_wkb\_split.json} (\texttt{figures/\allowbreak derive\_rep\_v11\_wkb\_split.py}) \\
+Derived numbers of Sec.~\ref{sec:v11-abelian}: barrier top, energy coefficient, Born--Oppenheimer bracket, Kemble widths, barrier at the Standard Model slope & \texttt{figures/\allowbreak tab\_rep\_v11\_abelian.py} \\
+Figures~\ref{fig:v11-static}, \ref{fig:v11-kappa}, \ref{fig:v11-ab-width} and~\ref{fig:v11-ab-threshold} & \texttt{figures/\allowbreak fig\_rep\_v11\_*.py}, with inputs in \texttt{figures/\allowbreak data/\allowbreak higgs/\allowbreak static\_box\_c170/} and \texttt{abelian\_c171/} \\
+\bottomrule
+\end{tabular}
+\end{table}

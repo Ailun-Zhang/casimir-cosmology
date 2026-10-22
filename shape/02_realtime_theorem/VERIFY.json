@@ -52,7 +52,7 @@
    {
     "id": "C137c",
     "what": "G(t_x) table",
-    "paper": "PRD Eq. eq:s-Gtx; App. E 2; report Table 19",
+    "paper": "PRD Eq. eq:s-Gtx; App. E 2; report Table 24",
     "tol_abs": 1e-12,
     "tol_rel": 1e-08,
     "mode": "tree",
@@ -142,7 +142,7 @@
    {
     "id": "C153_nl_summary",
     "what": "run01 analysis (S2 grid, t_*, families)",
-    "paper": "PRD Sec. VII D; report Table 20 (Sec. 15)",
+    "paper": "PRD Sec. VII D; report Table 25 (Sec. 15)",
     "tol_abs": 1e-12,
     "tol_rel": 1e-09,
     "mode": "tree",
@@ -381,7 +381,7 @@
    {
     "id": "C137c",
     "what": "G(t_x) table",
-    "paper": "PRD Eq. eq:s-Gtx; App. E 2; report Table 19",
+    "paper": "PRD Eq. eq:s-Gtx; App. E 2; report Table 24",
     "tol_abs": 1e-12,
     "tol_rel": 1e-08,
     "mode": "tree",
@@ -469,7 +469,7 @@
    {
     "id": "C153_nl_summary",
     "what": "run01 analysis (S2 grid, t_*, families)",
-    "paper": "PRD Sec. VII D; report Table 20 (Sec. 15)",
+    "paper": "PRD Sec. VII D; report Table 25 (Sec. 15)",
     "tol_abs": 1e-12,
     "tol_rel": 1e-09,
     "mode": "tree",
