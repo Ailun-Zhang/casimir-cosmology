@@ -2,9 +2,9 @@ cff-version: 1.2.0
 message: "If you use this code or data, please cite this archive and the two papers listed under references."
 title: "Code and data for: A Casimir turning point as the beginning of a small flat universe"
 type: software
-version: "1.0.0"
-date-released: "2026-10-17"
-doi: 10.5281/zenodo.23434068
+version: "1.1.0"
+date-released: "2026-10-22"
+doi: 10.5281/zenodo.23434067
 repository-code: "https://github.com/Ailun-Zhang/casimir-cosmology"
 license:
   - MIT
@@ -45,13 +45,15 @@ references:
       - family-names: Zhang
         given-names: Alan
         orcid: "https://orcid.org/0009-0000-1187-0755"
-    journal: "Physical Review Letters"
-    status: in-preparation
+    status: preprint
+    url: "https://arxiv.org/abs/2610.28704"
+    notes: "Letter, arXiv:2610.28704"
   - type: article
     title: "A Casimir turning point as the beginning of a small flat universe"
     authors:
       - family-names: Zhang
         given-names: Alan
         orcid: "https://orcid.org/0009-0000-1187-0755"
-    journal: "Physical Review D"
-    status: in-preparation
+    status: preprint
+    url: "https://arxiv.org/abs/2610.24905"
+    notes: "arXiv:2610.24905"

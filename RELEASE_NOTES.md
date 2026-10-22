@@ -1,8 +1,16 @@
+# Release notes — code and data, version 1.1.0 (2026-10-22)
+
+Version 1.1.0 corrects the top-mass convention of the MSR identification in the claims layer: the measured mass,
+identified with m_MSR(1.3 GeV), is converted to the four-loop pole mass used by the survival criterion (offset
++0.088 GeV instead of +0.36 GeV), which raises the marginalized survival probability of this variant from 0.50 to
+0.64. No other number or figure changes. The papers are now cited by arXiv number: arXiv:2610.24905 and the Letter
+arXiv:2610.28704. Details in CHANGELOG.md. The notes of version 1.0.0 follow unchanged.
+
 # Release notes — code and data, version 1.0.0 (2026-10-17)
 
 *Code and data for: A Casimir turning point as the beginning of a small flat universe* — the code, archived results
-and figure scripts behind the PRL *Gauge Field Fluctuations Protect the Higgs Vacuum When a Small Universe Begins*,
-the PRD *A Casimir turning point as the beginning of a small flat universe* and the companion technical report
+and figure scripts behind the Letter *Gauge Field Fluctuations Protect the Higgs Vacuum When a Small Universe Begins*,
+the paper *A Casimir turning point as the beginning of a small flat universe* and the companion technical report
 *Casimir Cosmology: Derivations and Numerical Validation*. Archived on Zenodo, DOI 10.5281/zenodo.23434068; development
 repository https://github.com/Ailun-Zhang/casimir-cosmology.
 
@@ -10,7 +18,7 @@ repository https://github.com/Ailun-Zhang/casimir-cosmology.
 - 24 result directories in four chains — `casimir/` 01–03, `higgs/` 01–12, `shape/` 01–06, `cmb/` 01–03 — each with
   `run.py --quick/--full`, `checks.json`, archived production outputs (`expected/`) and `VERIFY.json`.
 - `figures/`: 18 figures (PDF + PNG) with one script each and their input data; `numbers/`: the single source of the
-  51 claim-layer number macros shared by the PRL, the PRD and the report (generator + checker); `run_all.py`;
+  51 claim-layer number macros shared by the Letter, the paper and the report (generator + checker); `run_all.py`;
   `tools/`; `dnec_common/`; `third_party/` (SMDR 1.3 tarball and build script); `docs/technical_report/` (the companion report, PDF + source).
 - `validation/` (R18): the independent reimplementations (blind keystone, V1–V5; T19; R14/R15) and numerical controls
   with specifications, code and outputs, the comparison with the main calculation and the report's own checks;
@@ -56,7 +64,7 @@ repository https://github.com/Ailun-Zhang/casimir-cosmology.
   package by the workflow.
 - **Release self-test, run 3 (R18 review, 2026-10-16)**: a fresh copy of the frozen package (11:00-11:37 UTC), `python run_all.py --quick --workers 12`: **25 of 25 verification runs fresh and passing; 236 of 237 checks passed, 1 skipped** (the optional compiled-SMDR refit of higgs/01, SMDR not built); all drivers rc 0; 36.6 min on a shared machine (casimir 26 s, higgs 868 s, shape 1072 s, cmb 160 s, cmb/02 reduced 24 s, figures 46 s). 234 of the 236 compared files were written by that run; the other two are the archive-vs-literal transcription checks `conv_cross_run02` and `conv_run04` of higgs/06 (tagged `"kind": "archive_vs_literal"` in its `checks.json`). The R18 revision added 5 checks (higgs/02 `matching_vs_potential`, higgs/04 `cross_decomp_post`, higgs/09 `fcc_exclusion` and two literal checks): 242 quick checks in all.
 - **Final self-test (2026-10-17, release state after the R18 revision)**: a fresh copy without `output/`, `python run_all.py --quick --workers 8` — 25 of 25 verification runs fresh and passing, 241 of 242 checks passed and 1 skipped (the optional compiled-SMDR refit; SMDR not built), `validation/` (23 compared numbers, report checks) and the numbers (51/51, `numbers.tex` in sync) passed, all drivers exit code 0; 35.1 min on a shared machine (casimir 27 s, higgs 958 s, shape 902 s, cmb 142 s, cmb/02 reduced 23 s, figures 48 s, validation 3 s); no shipped file was changed by the run. Its quick and reduced records are written into the shipped `VERIFY.json` files (totals: quick 238/239 with 1 optional skip, reduced 3/3; full 255/257 from the packaging runs and the `cmb/02 --full` run, 2 skipped); the checks added after the full runs of their steps are quick-only.
-- **Numbers**: `numbers/numbers.tex` regenerated from `numbers_v12.json` is byte-identical to the v12 PRD/PRL
+- **Numbers**: `numbers/numbers.tex` regenerated from `numbers_v12.json` is byte-identical to the v12 paper/Letter
   `numbers.tex`; `check_numbers.py` (revised for R18: explicit file + JSON pointer for every value, sign-aware,
   key-exact): 51 of 51 verified against the archived outputs (49 + the 2 FCC-ee macros added for R18), 0 mismatches;
   all 53 rows of the run05 number registry traced to their result files (`--registry`).
@@ -90,9 +98,9 @@ repository https://github.com/Ailun-Zhang/casimir-cosmology.
   m0 − m_stab = 0.1016 GeV; added by the report agent) registered: package-relative paths in the JSON and the script,
   computed in `run.py` (quick and full), new check `abs_stability_central` (bit for bit in the rerun), README row
   (report Sec. 10.5). `higgs/01 --quick` rerun: 14/15, the optional compiled-SMDR check skipped (SMDR not built).
-- 6 PRL preamble number macros merged into `numbers/numbers_v12.json` (49 macros: 39 verified, 10 unresolved,
-  0 mismatches); `numbers.tex` regenerated and copied to the PRL, PRD and REPORT folders (byte-identical); the local
-  definitions removed from the PRL preamble; PRL (8 pp.), PRD (35 pp.) and report (191 pp.) rebuilt with 0 errors and
+- 6 Letter preamble number macros merged into `numbers/numbers_v12.json` (49 macros: 39 verified, 10 unresolved,
+  0 mismatches); `numbers.tex` regenerated and copied to the Letter, paper and REPORT folders (byte-identical); the local
+  definitions removed from the Letter preamble; Letter (8 pp.), paper (35 pp.) and report (191 pp.) rebuilt with 0 errors and
   0 undefined references/citations.
 - The report (PDF + source) copied to `docs/technical_report/` after regenerating its Sec. 22 / Appendix B tables
   from this package; the report-section column of the results → paper table filled (fixed section numbers).
@@ -126,7 +134,7 @@ repository https://github.com/Ailun-Zhang/casimir-cosmology.
   cite; this code and data record (DOI `10.5281/zenodo.23434068`) ships a copy in `docs/technical_report/`.
 
 ## Release freeze (2026-10-17)
-- Final documents built 2026-10-17: PRL 8 pp., PRD 36 pp., technical report 198 pp.; the report PDF and its LaTeX
+- Final documents built 2026-10-17: Letter 8 pp., paper 36 pp., technical report 198 pp.; the report PDF and its LaTeX
   source with the comment lines removed (the same files as the report's Zenodo source archive) are in
   `docs/technical_report/` (52 files); `numbers.tex` is byte-identical in `numbers/` and the three documents
   (SHA-256 `4b66a62f57ead014…`).

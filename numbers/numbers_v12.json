@@ -261,11 +261,11 @@
    "macro": "\\PbarMSR",
    "template": "{0}",
    "values": [
-    0.5
+    0.64
    ],
    "precision": 2,
    "pad": "        ",
-   "comment": " MSR identification: 0.4998 (R5-010)",
+   "comment": " MSR identification: 0.6386 (R5-010; v1.1.0: four-loop pole equivalent)",
    "registry_ids": [
     "R5-010"
    ],
@@ -279,7 +279,7 @@
     "status": "verified",
     "evidence": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/D3_MSR/Pbar; registry R5-010 = higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json#/marginal/equal_mass/D3_MSR/Pbar (agrees)",
     "unrounded_in_comment": [
-     "0.4998"
+     "0.6386"
     ]
    }
   },

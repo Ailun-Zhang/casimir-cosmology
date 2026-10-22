@@ -2,7 +2,7 @@
  "task": "C161 claims-run05: C154 v2 core rerun (central P1 from CFG)",
  "agent": "claims-run05",
  "date": "2026-10-15",
- "inputs_cfg": "D:\\0PhD\\Perimeter\\Research\\2026\\Directional_Null_Energy_Cosmology\\04_calculations\\code\\20261015_claude_v12_writing\\claims_run05\\C154_inputs_v2_run05.json",
+ "inputs_cfg": "D:\\0PhD\\Perimeter\\Research\\2026\\Directional_Null_Energy_Cosmology\\08_release\\casimir-cosmology\\higgs\\09_claims\\C154_inputs_v2_run05.json",
  "critical_mt": {
   "0.1171": {
    "P1=0.9": 172.15555132918962,
@@ -244,24 +244,24 @@
    "Pbar_w0_multiplicative": 0.7343945491902968
   },
   "D3_MSR": {
-   "label": "m-bar-type: m_MC = m_MSR(1.3 GeV) +- 0.5 (Hoang 2020; pole-4L equivalent +0.36)",
-   "center_pole4L_equiv": 172.96,
+   "label": "m-bar-type: m_MC = m_MSR(1.3 GeV) +- 0.5 (Hoang 2020: +0.36 to the pole mass at the order of turnover; four-loop pole equivalent +0.088 = 0.36 - pole_allorders_offset 0.272; v1.1.0)",
+   "center_pole4L_equiv": 172.688,
    "s_left": 0.5682429058070149,
    "s_right": 0.5682429058070149,
    "scheme": "msbar",
-   "P1_curve_at_center": 0.4993867130586888,
-   "Pbar": 0.4998458572713008,
+   "P1_curve_at_center": 0.775892741814846,
+   "Pbar": 0.6385806574507747,
    "mc": {
-    "mean": 0.49915712509982546,
-    "q025": 2.874329856566394e-06,
-    "q16": 0.028019459488115423,
-    "median": 0.5001331052298726,
-    "q84": 0.9695474248285413,
-    "q975": 0.9997982300647535,
-    "prob_P_ge_0p5": 0.500066,
-    "prob_P_lt_0p1": 0.251399
+    "mean": 0.6377330636731876,
+    "q025": 0.0006189260062726313,
+    "q16": 0.12846476853770783,
+    "median": 0.773956637954021,
+    "q84": 0.9968287241420993,
+    "q975": 0.9999703407912833,
+    "prob_P_ge_0p5": 0.65532,
+    "prob_P_lt_0p1": 0.142637
    },
-   "prob_P_ge_0p5": 0.49625337017503635
+   "prob_P_ge_0p5": 0.6526101004007653
   },
   "D4_direct_as_mbar": {
    "label": "m-bar formulation of the direct value (MC = pole converted with the 4-loop relation; renormalon 0.09 on the identification)",
@@ -475,21 +475,21 @@
   },
   "D3_MSR": {
    "flat_170_176": {
-    "B_existence": 0.4998458309734097,
+    "B_existence": 0.6385802498215003,
     "prior_mean_P1": 0.49331382839055604,
-    "B_selection": 1.0132410692888225,
+    "B_selection": 1.2944706048579222,
     "B_selection_max": 2.0271071728569123
    },
    "flat_150_200": {
-    "B_existence": 0.4998458572713008,
+    "B_existence": 0.6385806574507746,
     "prior_mean_P1": 0.4985051139984127,
-    "B_selection": 1.0026895276201568,
+    "B_selection": 1.2809911864872223,
     "B_selection_max": 2.0059974750894614
    },
    "flat_lambda_pm0p05": {
-    "B_existence": 0.4970120312225612,
+    "B_existence": 0.6359032957782489,
     "prior_mean_P1": 0.621700230730668,
-    "B_selection": 0.7994399980171086,
+    "B_selection": 1.0228455199878057,
     "B_selection_max": 1.608492245249332
    }
   },
@@ -953,12 +953,12 @@
   }
  },
  "sha256": {
-  "C154_core_v2.py": "f9b7ccc1baaa2771cfee43b0c4f7ec79a14ce486a21bd264d161dfe90153b5de",
-  "C154_inputs_v2.json": "ef3733d58a1ad3c2a2dff5bfc03d08ba5df2229742dd8f5dd112abc28f018f08",
-  "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run05\\post\\C149_run02_summary.json": "e861de12feec456fe79470f2427a05f09254a499f73a8543b95e0e85dd6f7046",
-  "04_calculations\\results\\20261014_claude_v12_r3\\sm_mapping\\run01\\hazard_runs\\C144_hazard_central.json": "5269a9de4b1ad9ae9a4585f249b196051d8a504227c2eada5cb1fea7b8ec0d0c",
-  "04_calculations\\results\\20261014_claude_v12_r3\\realtime_2d\\run01\\C157_summary.json": "3e80b84a31b9fa3d3c9723b3e413fb68fcda67ecd9dc42ad017042e767a4c59d",
-  "04_calculations\\results\\20261014_claude_v12_r3\\inflation_stability\\run01\\C155_summary.json": "a69cdd36dc7a112388136965d08db4c93bc766a44bc9d8603c9679004f6c8b0b"
+  "C154_core_v2.py": "9b89a126f3212f723fa6123c6a7703c5484c0965f28db32c2bb30181c5e1287c",
+  "C154_inputs_v2.json": "d74e87c80ee698cedbe7f752ebea76d4caf6a458b18f7f90d5dae643988590fa",
+  "r3/holonomy_cross/run05/post/C149_run02_summary.json": "e861de12feec456fe79470f2427a05f09254a499f73a8543b95e0e85dd6f7046",
+  "r3/sm_mapping/run01/hazard_runs/C144_hazard_central.json": "5269a9de4b1ad9ae9a4585f249b196051d8a504227c2eada5cb1fea7b8ec0d0c",
+  "r3/realtime_2d/run01/C157_summary.json": "3e80b84a31b9fa3d3c9723b3e413fb68fcda67ecd9dc42ad017042e767a4c59d",
+  "r3/inflation_stability/run01/C155_summary.json": "a69cdd36dc7a112388136965d08db4c93bc766a44bc9d8603c9679004f6c8b0b"
  },
  "files": [
   "table1_error_budget_final.csv",
@@ -974,5 +974,5 @@
   "fig2b_points.json",
   "shift_scan_mc.csv"
  ],
- "runtime_s": 11.722408056259155
+ "runtime_s": 12.774341583251953
 }

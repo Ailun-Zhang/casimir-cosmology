@@ -180,9 +180,9 @@
    "B_sel_max_over_all_bounds": 2.178268460250043
   },
   "run05": {
-   "B_ex_min": 0.4970120312225613,
+   "B_ex_min": 0.6090979106471991,
    "B_ex_max": 0.9696808419840672,
-   "B_sel_min": 0.7994399980155761,
+   "B_sel_min": 0.9797292658717119,
    "B_sel_max": 2.111690645915902,
    "abs_lnB_max": 0.7474888806439446,
    "B_sel_upper_direct_150_200": 2.1777171977484513,
@@ -738,50 +738,50 @@
   },
   "Pbar equal-mass D3_MSR": {
    "run02": 0.4968262812174938,
-   "run05": 0.49984585727130093,
-   "diff": 0.0030195760538071492,
+   "run05": 0.6385806574507749,
+   "diff": 0.14175437623328108,
    "key": "C154_correction_summary.json:marginal.equal_mass.D3_MSR.Pbar"
   },
   "P(P1>=0.5) D3_MSR": {
    "run02": 0.4928233081605821,
-   "run05": 0.4962533701750363,
-   "diff": 0.0034300620144541716,
+   "run05": 0.6526101004007653,
+   "diff": 0.15978679224018316,
    "key": "C154_correction_summary.json:marginal.equal_mass.D3_MSR.prob_P_ge_0p5"
   },
   "q025 D3_MSR": {
    "run02": 2.6146915644335623e-06,
-   "run05": 2.874329856566394e-06,
-   "diff": 2.596382921328317e-07,
+   "run05": 0.0006189260062726313,
+   "diff": 0.0006163113147081977,
    "key": "C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[0]"
   },
   "q16 D3_MSR": {
    "run02": 0.026737933991675508,
-   "run05": 0.028019459488115423,
-   "diff": 0.0012815254964399156,
+   "run05": 0.12846476853770783,
+   "diff": 0.10172683454603232,
    "key": "C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[1]"
   },
   "median D3_MSR": {
    "run02": 0.4937674914398961,
-   "run05": 0.5001331052298726,
-   "diff": 0.006365613789976521,
+   "run05": 0.773956637954021,
+   "diff": 0.2801891465141249,
    "key": "C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[2]"
   },
   "q84 D3_MSR": {
    "run02": 0.9686806450325912,
-   "run05": 0.9695474248285413,
-   "diff": 0.0008667797959500678,
+   "run05": 0.9968287241420993,
+   "diff": 0.028148079109508117,
    "key": "C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[3]"
   },
   "q975 D3_MSR": {
    "run02": 0.9997899979595927,
-   "run05": 0.9997982300647535,
-   "diff": 8.232105160876912e-06,
+   "run05": 0.9999703407912833,
+   "diff": 0.0001803428316906608,
    "key": "C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[4]"
   },
   "Pbar continuous D3_MSR": {
    "run02": 0.494173205740746,
-   "run05": 0.49719712820061285,
-   "diff": 0.0030239224598668235,
+   "run05": 0.6362258381026109,
+   "diff": 0.14205263236186488,
    "key": "C154_correction_summary.json:marginal.continuous.D3_MSR.Pbar"
   },
   "Pbar equal-mass D4_direct_as_mbar": {
@@ -1470,14 +1470,14 @@
   },
   "Bayes D3_MSR flat_170_176 B_existence": {
    "run02": 0.49682625449829265,
-   "run05": 0.49984583097341,
-   "diff": 0.003019576475117358,
+   "run05": 0.6385802498215005,
+   "diff": 0.14175399532320787,
    "key": "C154_correction_summary.json:bayes.D3_MSR.flat_170_176.B_existence"
   },
   "Bayes D3_MSR flat_170_176 B_selection": {
    "run02": 1.0091008914167723,
-   "run05": 1.013241069282596,
-   "diff": 0.004140177865823658,
+   "run05": 1.294470604849967,
+   "diff": 0.2853697134331947,
    "key": "C154_correction_summary.json:bayes.D3_MSR.flat_170_176.B_selection"
   },
   "Bayes D3_MSR flat_170_176 B_selection_max": {
@@ -1494,14 +1494,14 @@
   },
   "Bayes D3_MSR flat_150_200 B_existence": {
    "run02": 0.4968262812174937,
-   "run05": 0.49984585727130093,
-   "diff": 0.0030195760538072047,
+   "run05": 0.6385806574507749,
+   "diff": 0.14175437623328113,
    "key": "C154_correction_summary.json:bayes.D3_MSR.flat_150_200.B_existence"
   },
   "Bayes D3_MSR flat_150_200 B_selection": {
    "run02": 1.0822181427734454,
-   "run05": 1.0885200461507973,
-   "diff": 0.006301903377351925,
+   "run05": 1.3906444088863195,
+   "diff": 0.30842626611287405,
    "key": "C154_correction_summary.json:bayes.D3_MSR.flat_150_200.B_selection"
   },
   "Bayes D3_MSR flat_150_200 B_selection_max": {
@@ -1518,14 +1518,14 @@
   },
   "Bayes D3_MSR flat_lambda_pm0p05 B_existence": {
    "run02": 0.4939910499093844,
-   "run05": 0.4970120312225613,
-   "diff": 0.003020981313176907,
+   "run05": 0.6359032957782491,
+   "diff": 0.1419122458688647,
    "key": "C154_correction_summary.json:bayes.D3_MSR.flat_lambda_pm0p05.B_existence"
   },
   "Bayes D3_MSR flat_lambda_pm0p05 B_selection": {
    "run02": 0.7950721376098633,
-   "run05": 0.7994399980155761,
-   "diff": 0.004367860405712798,
+   "run05": 1.022845519985845,
+   "diff": 0.22777338237598177,
    "key": "C154_correction_summary.json:bayes.D3_MSR.flat_lambda_pm0p05.B_selection"
   },
   "Bayes D3_MSR flat_lambda_pm0p05 B_selection_max": {
@@ -3125,14 +3125,14 @@
    "key": "derived"
   },
   "Bayes ranges run05": {
-   "run02": 0.4970120312225613,
+   "run02": 0.6090979106471991,
    "run05": 0.9696808419840672,
    "diff": 0.7474888806439446,
    "key": "derived"
   }
  },
  "sha256": {
-  "C154_summary.json": "04a75b7146b4d4fa25b461b04cfdcf992c5ddaebada470e7ef05f3bfea897783",
-  "C154_correction_summary.json": "739d78e7388df1adb0bbda80afb51f45ae11fc0a05293c345ed63d90452e80cc"
+  "C154_summary.json": "fbef1794bf86060fbee72ab709fef46a8cb5db93381990a99abc88e033fb78a4",
+  "C154_correction_summary.json": "4c60f2aa31757c1c9c2c3fe92c48aa4a1c2fb0fb820a84efbe7d93f4e925f745"
  }
 }

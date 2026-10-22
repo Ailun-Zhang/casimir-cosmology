@@ -1,18 +1,33 @@
 # Changelog
 
 All notable changes of the code and data package. Each version corresponds to one Zenodo release
-(DOI 10.5281/zenodo.23434068) and to the versions of the three documents listed under it.
+(concept DOI 10.5281/zenodo.23434067; version 1.0.0: 10.5281/zenodo.23434068) and to the versions of the three documents listed under it.
+
+## [1.1.0] — 2026-10-22
+- Claims layer (`higgs/09_claims`): the identification of the measured (Monte Carlo) top mass with the MSR mass
+  m_MSR(1.3 GeV) now uses the four-loop pole mass of the survival criterion. The offset is +0.088 GeV (0.36 GeV to
+  the pole mass at the order of turnover [Hoang 2020] minus 0.272 GeV between the all-orders and the four-loop pole
+  mass, `pole_allorders_offset` of the same configuration) instead of +0.36 GeV. The marginalized survival
+  probability for this identification changes from 0.50 to 0.64 (macro `PbarMSR`; registry rows R5-010, R5-020);
+  the ranges of the Bayes factors become B_ex 0.61-0.97 and B_sel 0.98-2.11, and max |ln B| = 0.747 is unchanged.
+  No other number and no figure changes (the criterion figures regenerate byte-identically). Sixteen archived
+  files in `higgs/09_claims/expected/w/claims_run05/run01/` are updated; quick verification 16/16.
+- Metadata: the papers are cited by title and arXiv number (arXiv:2610.24905; the Letter, arXiv:2610.28704) in
+  README.md, CITATION.cff and .zenodo.json.
+- Unchanged: `docs/technical_report/` (report version 1.0, which quotes the earlier value 0.50).
+Corresponding documents: arXiv:2610.24905 (version 2) and the Letter arXiv:2610.28704 (version 1), which quote
+0.64; technical report version 1.0.
 
 ## [1.0.0] — 2026-10-17 (first archived version)
 Corresponding documents:
-- PRL: A. Zhang, *Gauge Field Fluctuations Protect the Higgs Vacuum When a Small Universe Begins* (2026), 8 pages.
-- PRD: A. Zhang, *A Casimir turning point as the beginning of a small flat universe* (2026), 36 pages.
+- Letter: A. Zhang, *Gauge Field Fluctuations Protect the Higgs Vacuum When a Small Universe Begins* (2026), 8 pages.
+- paper: A. Zhang, *A Casimir turning point as the beginning of a small flat universe* (2026), 36 pages.
 - Technical report: *Casimir Cosmology: Derivations and Numerical Validation* — version 1.0 (2026-10-17, 198 pages;
   Zenodo record DOI 10.5281/zenodo.23434140), included in `docs/technical_report/` (PDF + LaTeX source).
-- Shared numbers: `numbers/numbers_v12.json` (51 macros; the generated `numbers.tex` is the copy used by the PRL, the
-  PRD and the report).
+- Shared numbers: `numbers/numbers_v12.json` (51 macros; the generated `numbers.tex` is the copy used by the Letter, the
+  paper and the report).
 - 2026-10-16 synchronisation: `higgs/01_sm_mapping/abs_stability.py` (absolute-stability bound m_stab = 170.99 GeV,
-  report Sec. 10.5) registered with a quick check; 6 PRL preamble macros merged into the numbers; report added;
+  report Sec. 10.5) registered with a quick check; 6 Letter preamble macros merged into the numbers; report added;
   report-section column of the results → paper table filled.
 
 Contents: four chains of result directories (casimir 01–03, higgs 01–12, shape 01–06, cmb 01–03), each with
@@ -34,7 +49,7 @@ verification tools and the archive staging, clean-copy self-test. Details: `RELE
 - `validation/`: the independent reimplementations (blind keystone, V1–V5; T19; R14/R15) with specifications, code
   and results, `compare_blind.py` (23 items) and the report's own checks; called by `run_all.py`.
 - `cmb/02_ensemble/data/`: the l ≤ 80 CAMB transfer table (85 MB) with its generating script and settings.
-- Paper locations of all READMEs, `checks.json` and `VERIFY.json` rewritten for the final PRD/PRL (report-only
+- Paper locations of all READMEs, `checks.json` and `VERIFY.json` rewritten for the final paper/Letter (report-only
   figures marked); run records written to `output/verify/` (shipped `VERIFY.json` changes only with
   DNEC_RECORD=1); deterministic figure PDFs; the unlicensed palette-checker port removed; release notes updated.
 

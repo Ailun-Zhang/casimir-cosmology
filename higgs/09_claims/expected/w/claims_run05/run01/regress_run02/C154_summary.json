@@ -2,7 +2,7 @@
  "task": "C161 claims-run05: C154 v2 core rerun (central P1 from CFG)",
  "agent": "claims-run05",
  "date": "2026-10-15",
- "inputs_cfg": "D:\\0PhD\\Perimeter\\Research\\2026\\Directional_Null_Energy_Cosmology\\04_calculations\\code\\20261015_claude_v12_writing\\claims_run05\\C154_inputs_v2_regress_run02.json",
+ "inputs_cfg": "D:\\0PhD\\Perimeter\\Research\\2026\\Directional_Null_Energy_Cosmology\\08_release\\casimir-cosmology\\higgs\\09_claims\\C154_inputs_v2_regress_run02.json",
  "critical_mt": {
   "0.1171": {
    "P1=0.9": 172.15105859630214,
@@ -953,12 +953,12 @@
   }
  },
  "sha256": {
-  "C154_core_v2.py": "f9b7ccc1baaa2771cfee43b0c4f7ec79a14ce486a21bd264d161dfe90153b5de",
-  "C154_inputs_v2.json": "8b9cdaef518a8246888d416e1cfc81214a6561541cce164fa0fedc37e73c9a7d",
-  "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run02\\C149_run02_summary.json": "3a987930c158dc46f9e643f2eef23bea59366bc1dfaac1433ec9c9ed56e9f1f6",
-  "04_calculations\\results\\20261014_claude_v12_r3\\sm_mapping\\run01\\hazard_runs\\C144_hazard_central.json": "5269a9de4b1ad9ae9a4585f249b196051d8a504227c2eada5cb1fea7b8ec0d0c",
-  "04_calculations\\results\\20261014_claude_v12_r3\\realtime_2d\\run01\\C157_summary.json": "3e80b84a31b9fa3d3c9723b3e413fb68fcda67ecd9dc42ad017042e767a4c59d",
-  "04_calculations\\results\\20261014_claude_v12_r3\\inflation_stability\\run01\\C155_summary.json": "a69cdd36dc7a112388136965d08db4c93bc766a44bc9d8603c9679004f6c8b0b"
+  "C154_core_v2.py": "9b89a126f3212f723fa6123c6a7703c5484c0965f28db32c2bb30181c5e1287c",
+  "C154_inputs_v2.json": "411cdd2347757345761d12c107a7d3b3e98e6f4ff508b6bd6fe8bf32ca33659a",
+  "r3/holonomy_cross/run02/C149_run02_summary.json": "3a987930c158dc46f9e643f2eef23bea59366bc1dfaac1433ec9c9ed56e9f1f6",
+  "r3/sm_mapping/run01/hazard_runs/C144_hazard_central.json": "5269a9de4b1ad9ae9a4585f249b196051d8a504227c2eada5cb1fea7b8ec0d0c",
+  "r3/realtime_2d/run01/C157_summary.json": "3e80b84a31b9fa3d3c9723b3e413fb68fcda67ecd9dc42ad017042e767a4c59d",
+  "r3/inflation_stability/run01/C155_summary.json": "a69cdd36dc7a112388136965d08db4c93bc766a44bc9d8603c9679004f6c8b0b"
  },
  "files": [
   "table1_error_budget_final.csv",
@@ -974,5 +974,5 @@
   "fig2b_points.json",
   "shift_scan_mc.csv"
  ],
- "runtime_s": 11.837905883789062
+ "runtime_s": 16.241581678390503
 }

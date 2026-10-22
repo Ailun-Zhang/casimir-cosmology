@@ -1,10 +1,10 @@
 {
  "name": "casimir-cosmology",
- "version": "1.0.0",
+ "version": "1.1.0",
  "title": "Code and data for: A Casimir turning point as the beginning of a small flat universe",
- "generated_utc": "2026-10-17T09:18:13Z",
+ "generated_utc": "2026-10-22T04:24:43Z",
  "n_files": 1939,
- "total_bytes": 263259498,
+ "total_bytes": 263261815,
  "excluded": [
   "output/ (run outputs; regenerated)",
   "third_party/smdr/build/ (regenerated)",
@@ -15,7 +15,7 @@
  "top_level": {
   "(top level)": {
    "files": 11,
-   "bytes": 86489
+   "bytes": 89571
   },
   "casimir": {
    "files": 51,
@@ -35,15 +35,15 @@
   },
   "figures": {
    "files": 139,
-   "bytes": 8020408
+   "bytes": 8020426
   },
   "higgs": {
    "files": 1045,
-   "bytes": 12525075
+   "bytes": 12524221
   },
   "numbers": {
    "files": 7,
-   "bytes": 94085
+   "bytes": 94156
   },
   "shape": {
    "files": 119,
@@ -79,18 +79,18 @@
   },
   {
    "path": ".zenodo.json",
-   "bytes": 3527,
-   "sha256": "0ffb688cc85de0381c98914ae20df534eb3ec02941150d31020a725d47acb30e"
+   "bytes": 3767,
+   "sha256": "7a86c1380369a7281ec8dd01710b2468f8b5d0ad3f7e1617df170d482ebb58ea"
   },
   {
    "path": "CHANGELOG.md",
-   "bytes": 3652,
-   "sha256": "727a0adaf0e91e9f1bf7edb63e67eca70aab97d61c038e5c0b69c388c1d2180c"
+   "bytes": 5030,
+   "sha256": "daec0c18062b1a370d0c307e5e4447f00cc0b1a503e378f3228ab7257d4e9cf5"
   },
   {
    "path": "CITATION.cff",
-   "bytes": 2264,
-   "sha256": "ac1f8253808900fec5eba3ae289c0a1bafc4e1b1cb4c5bf484e5cd6a341ee2df"
+   "bytes": 2336,
+   "sha256": "9aea85759355992a02e8788318bf37db0fc089df086ab5ec5c60739901f5acda"
   },
   {
    "path": "LICENSE",
@@ -99,13 +99,13 @@
   },
   {
    "path": "README.md",
-   "bytes": 50161,
-   "sha256": "2b9454afba3dbf8b265896c5e3acd990fb3ff6304a8b21599cb330e56a86557d"
+   "bytes": 50912,
+   "sha256": "2820f4ae37a9358ef9fd37abfe777aa9ee5f6fa72fee4b1a336d47b8131be653"
   },
   {
    "path": "RELEASE_NOTES.md",
-   "bytes": 13420,
-   "sha256": "1542999012d2c1e1e01bf3788d68b0b54a88bd4c200c217c3106ec57549cad2e"
+   "bytes": 14061,
+   "sha256": "8ef1d58b643290387f61b8d410879c30479ae0e8800fb0f160b66586f38c195e"
   },
   {
    "path": "environment.yml",
@@ -1299,13 +1299,13 @@
   },
   {
    "path": "figures/data/higgs/claims_run05/C154_inputs_v2_run05.json",
-   "bytes": 10281,
-   "sha256": "ef3733d58a1ad3c2a2dff5bfc03d08ba5df2229742dd8f5dd112abc28f018f08"
+   "bytes": 10384,
+   "sha256": "bd2951faf51da532b4bbb4916ba4c23cc8bf134803bff57c767f9033c99d34d8"
   },
   {
    "path": "figures/data/higgs/claims_run05/C154_summary.json",
-   "bytes": 31149,
-   "sha256": "04a75b7146b4d4fa25b461b04cfdcf992c5ddaebada470e7ef05f3bfea897783"
+   "bytes": 31031,
+   "sha256": "fbef1794bf86060fbee72ab709fef46a8cb5db93381990a99abc88e033fb78a4"
   },
   {
    "path": "figures/data/higgs/claims_run05/cross_decomp_summary.json",
@@ -1324,8 +1324,8 @@
   },
   {
    "path": "figures/data/higgs/claims_run05/fig2a_ellipses.csv",
-   "bytes": 119910,
-   "sha256": "3501b2019500a7e91884955b1a119d390fa28318373ab32a0b34a034653c6c6f"
+   "bytes": 119943,
+   "sha256": "9ae2ab63477f1443d99f58ad355f6c6c0d16d148b620015f274c636d78a7ba52"
   },
   {
    "path": "figures/data/higgs/claims_run05/fig2b_points.json",
@@ -5469,13 +5469,13 @@
   },
   {
    "path": "higgs/09_claims/C154_inputs_v2_run05.json",
-   "bytes": 10029,
-   "sha256": "ccbeac2afb78723a0385e06b0ec476a29d99ab8d0dce41045f3019f7df9f5bc9"
+   "bytes": 10132,
+   "sha256": "d74e87c80ee698cedbe7f752ebea76d4caf6a458b18f7f90d5dae643988590fa"
   },
   {
    "path": "higgs/09_claims/C154_inputs_v2_run05_t1new.json",
-   "bytes": 11152,
-   "sha256": "a588c00b6b9d99ec4cdf00c55682eba679ba363319d827e31e6e35ba07e53265"
+   "bytes": 11255,
+   "sha256": "af25faf6d5f4e690877feb3ba5066c6408dae58b4a3d1ba9fbb968d8ad9d411a"
   },
   {
    "path": "higgs/09_claims/README.md",
@@ -5484,8 +5484,8 @@
   },
   {
    "path": "higgs/09_claims/VERIFY.json",
-   "bytes": 19332,
-   "sha256": "30e12ba780a367d9feb7da81d919ef8d83ade7a6bb06d76e435cd75c04e1ac73"
+   "bytes": 18659,
+   "sha256": "2064d5e12c75ab9f8891b85dec9bc94e41e408aa726a12d0dc70772d292f2191"
   },
   {
    "path": "higgs/09_claims/checks.json",
@@ -5639,28 +5639,28 @@
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/C154_correction_summary.json",
-   "bytes": 16442,
-   "sha256": "739d78e7388df1adb0bbda80afb51f45ae11fc0a05293c345ed63d90452e80cc"
+   "bytes": 16437,
+   "sha256": "4c60f2aa31757c1c9c2c3fe92c48aa4a1c2fb0fb820a84efbe7d93f4e925f745"
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/C154_summary.json",
-   "bytes": 31149,
-   "sha256": "04a75b7146b4d4fa25b461b04cfdcf992c5ddaebada470e7ef05f3bfea897783"
+   "bytes": 31031,
+   "sha256": "fbef1794bf86060fbee72ab709fef46a8cb5db93381990a99abc88e033fb78a4"
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/claims_compare.json",
-   "bytes": 123269,
-   "sha256": "67a988fd1a61a601df1e1ad7fddfafcc8d93a310d897197cb7984105ce364cd2"
+   "bytes": 123245,
+   "sha256": "e259dd74dbfa1f40fb40929fe3ef0630fd10c96d990512c18310ce33637ea22b"
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/claims_headline.csv",
-   "bytes": 70213,
-   "sha256": "badc80e5e4f53fc0d79f7ca690e33cae01ab40adb7127304e1608b28e6e8af1e"
+   "bytes": 70186,
+   "sha256": "042208d65b4a37e5730cb5d4e551b57c49de9e76de4bbd1e36df0399778373e7"
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/claims_run02_vs_run05_full.csv",
-   "bytes": 95947,
-   "sha256": "b269f31d9c0a86f1d8c8295b794c9acee411026d0ac9cc0b0b9a55e88689fe1e"
+   "bytes": 95901,
+   "sha256": "2f4a1df9dd4aec60cf177b183153c588238dbfa646a397713e39ac62a9f16ddc"
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/crit_variants.json",
@@ -5689,8 +5689,8 @@
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/fig2a_ellipses.csv",
-   "bytes": 119910,
-   "sha256": "3501b2019500a7e91884955b1a119d390fa28318373ab32a0b34a034653c6c6f"
+   "bytes": 119943,
+   "sha256": "9ae2ab63477f1443d99f58ad355f6c6c0d16d148b620015f274c636d78a7ba52"
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/fig2b_points.json",
@@ -5709,8 +5709,8 @@
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/numbers_run05.csv",
-   "bytes": 23375,
-   "sha256": "fd89b42aa9678ee1aa3a364c17b0db5cbfd427bdcdcc8e8aa73154e8be72cf5c"
+   "bytes": 23393,
+   "sha256": "196398957d8cab95bfa86aa93a6dd706bd0d38e61cae560a967c862ae5a1c016"
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/numbers_run05.csv.sha256",
@@ -5719,8 +5719,8 @@
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/pbar_direct_mc.json",
-   "bytes": 13170,
-   "sha256": "b669d6698c77b82f32cb3dddd61aec5a279778b3c914bc233478d301fa17bc5c"
+   "bytes": 13164,
+   "sha256": "20bfd536a65f114d1d934b7b1c4e340f0b7cb5d851ea3f8f10bf8e3e10d465ed"
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/table1_error_budget_run05.csv",
@@ -5754,8 +5754,8 @@
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/regress_run02/C154_summary.json",
-   "bytes": 31147,
-   "sha256": "551222e93e9e3b6a5d139802d031378100dd8b60412e620975ac2a6d30c3b7da"
+   "bytes": 30933,
+   "sha256": "34c26ce6b1e9ef2aba64bc51eea6a643b45b79f4730bfbabdcf723d32d20d0e6"
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/regress_run02/bayes_factors.csv",
@@ -5844,8 +5844,8 @@
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/t1new/C154_correction_summary.json",
-   "bytes": 16434,
-   "sha256": "31de3caeb25a96862f50138b21daff89fb9610f75e0ba968870e93767689b537"
+   "bytes": 16428,
+   "sha256": "2674fd78ff16eb0a40949f10a4005140b3c7f033cc8ddf0acf2fed43d882a462"
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/t1new/C154_err.txt",
@@ -5859,18 +5859,18 @@
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/t1new/C154_summary.json",
-   "bytes": 31132,
-   "sha256": "ca640b380098dbdc1ce901cd9279c5a58c906c14d63ef8c1ce95893ad4f88acc"
+   "bytes": 31110,
+   "sha256": "dab3d1f762b6c82061e74a407b5160d910abe7422e911b12ecf709d0ba94fe6a"
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/t1new/bayes_factors.csv",
-   "bytes": 2050,
-   "sha256": "07de747eb0251e1c356a202eb8ce9d8b98a77541b45c76594205c9ce51f6c600"
+   "bytes": 2048,
+   "sha256": "2dafab05ed7129f3e152730b64e0254ea00608394afbda1c9b91962e4cd0e1fe"
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/t1new/bayes_factors_corr.csv",
-   "bytes": 2464,
-   "sha256": "b911d45633dc76fb8586e88100091cc3bb66684aab6c5b06f1132fce2d71d82e"
+   "bytes": 2462,
+   "sha256": "a66126f0fcdde5ff972279a46e20c1c29aee03248f5cf0c7ccaa3f557d112a0f"
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/t1new/exclusion_mt.csv",
@@ -5889,8 +5889,8 @@
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/t1new/fig2a_ellipses.csv",
-   "bytes": 119910,
-   "sha256": "3501b2019500a7e91884955b1a119d390fa28318373ab32a0b34a034653c6c6f"
+   "bytes": 119943,
+   "sha256": "9ae2ab63477f1443d99f58ad355f6c6c0d16d148b620015f274c636d78a7ba52"
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/t1new/fig2b_points.json",
@@ -5914,18 +5914,18 @@
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/t1new/marginal_P1.csv",
-   "bytes": 1779,
-   "sha256": "1661f9de01e1bfe97edad50056df538060552d0727ea7bcf47b7162243c43d97"
+   "bytes": 1780,
+   "sha256": "c1feecf579c0cc94c03e989bc0b76e2918079213b079171fa6a4bec9c9c72927"
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/t1new/marginal_P1_corr.csv",
    "bytes": 1126,
-   "sha256": "61b4b2493dd39376c362300431a9778bc562e80650d9c72cca17e408cbd35bd9"
+   "sha256": "defd95fdcc11ea57f47aed0e594128aa6b43613ec6b47f73bc1a52990659f20f"
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/t1new/shift_scan_mc.csv",
    "bytes": 519,
-   "sha256": "b3ded80195c037c56564f26888af061ed7fcfed9e323a34e7160819a97a01b3f"
+   "sha256": "89f595ddd84ac72c93232abf6f8460d1a8a424acf0186aa167f8a4f4f3a04cca"
   },
   {
    "path": "higgs/09_claims/expected/w/claims_run05/run01/t1new/table1_Pbar_progression_direct.csv",
@@ -7099,13 +7099,13 @@
   },
   {
    "path": "numbers/numbers.tex",
-   "bytes": 5877,
-   "sha256": "4b66a62f57ead014d97eca6df65dcd1e3e4404ecf57528d82e66a319d6a1f843"
+   "bytes": 5912,
+   "sha256": "7a15da0ebf06eff0cd8456de0f8c1cf072ac6bb026e8c2b8b7fc4c93911619fe"
   },
   {
    "path": "numbers/numbers_v12.json",
-   "bytes": 44758,
-   "sha256": "bd6846be42154b953b55d66b5faa58ad05c067ab0cc4935a16fe819504bc6957"
+   "bytes": 44794,
+   "sha256": "42f0b3950d03b9598d6e1bce49321e02d706fb6b9e2c253bf4f12a23bad2b458"
   },
   {
    "path": "shape/PACKAGE_PATCHES.json",

@@ -1,15 +1,18 @@
 # Code and data for: A Casimir turning point as the beginning of a small flat universe
 
-Version 1.0.0 (2026-10-17) · DOI [10.5281/zenodo.23434068](https://doi.org/10.5281/zenodo.23434068) ·
+Version 1.1.0 (2026-10-22) · DOI (all versions) [10.5281/zenodo.23434067](https://doi.org/10.5281/zenodo.23434067) ·
 repository https://github.com/Ailun-Zhang/casimir-cosmology · code MIT, data and text CC BY 4.0 (exceptions in [License](#license))
 
 Alan Zhang (ORCID [0009-0000-1187-0755](https://orcid.org/0009-0000-1187-0755)), McMaster University and Perimeter
 Institute for Theoretical Physics.
 
+Version 1.1.0 corrects the top-mass convention of one variant in the claims layer (see `CHANGELOG.md`); the
+verification totals quoted below are those of version 1.0.0, with `higgs/09_claims` re-verified (16/16).
+
 This package reproduces the numbers and figures of two papers:
 
-- **PRL** — *Gauge Field Fluctuations Protect the Higgs Vacuum When a Small Universe Begins* (in preparation)
-- **PRD** — *A Casimir turning point as the beginning of a small flat universe* (in preparation)
+- *Gauge Field Fluctuations Protect the Higgs Vacuum When a Small Universe Begins*, a Letter, [arXiv:2610.28704](https://arxiv.org/abs/2610.28704)
+- *A Casimir turning point as the beginning of a small flat universe*, [arXiv:2610.24905](https://arxiv.org/abs/2610.24905)
 
 It contains the production code (copied from the research tree, paths rewired, algorithms and numerics unchanged),
 the archived production results (`expected/`), a quick and a full run mode for every result directory, and an
@@ -24,12 +27,12 @@ README.md  CHANGELOG.md  RELEASE_NOTES.md  LICENSE  CITATION.cff  .zenodo.json  
 run_all.py        one-command reproduction (--quick / --full)
 MANIFEST.json     path, size and SHA-256 of every file;  SHA256SUMS.txt (same sums, sha256sum format)
 dnec_common/      paths.py (all paths package-relative; env overrides), io.py, runner.py (driver of every run.py), sm_inputs.py
-casimir/   01-03  SM Casimir weight N_C, gauge/Higgs zero-mode energy xi, shape Hessian and gain        (PRD Secs. IV, VII; App. B)
+casimir/   01-03  SM Casimir weight N_C, gauge/Higgs zero-mode energy xi, shape Hessian and gain        (paper Secs. IV, VII; App. B)
 higgs/     01-12  Higgs zero-mode criterion: SM couplings at mu_b, FV matching, 2D model, cross terms,
                   hazard criterion, full-dimensional DMC, real-time xi_H, robustness, claims, universality,
-                  inflation-era stability, two branches                                                   (PRL; PRD Sec. V; Apps. C, D)
-shape/     01-06  emptiness gate, real-moment theorem, fossil, nonlinear survival, Moyal/WDW, n_s and r    (PRD Secs. VI-VIII; App. E)
-cmb/       01-03  T+E covariance of the three-torus, Fisher/exact KL, fossil ensemble, joint state        (PRD Sec. VIII B; App. F)
+                  inflation-era stability, two branches                                                   (Letter; paper Sec. V; Apps. C, D)
+shape/     01-06  emptiness gate, real-moment theorem, fossil, nonlinear survival, Moyal/WDW, n_s and r    (paper Secs. VI-VIII; App. E)
+cmb/       01-03  T+E covariance of the three-torus, Fisher/exact KL, fossil ensemble, joint state        (paper Sec. VIII B; App. F)
 figures/          style_v12.py, make_all_figures.py, one script per figure, data/ (inputs), out/ (PDF + PNG)
 tools/            verify_expected.py (checks -> VERIFY.json), verify_summary.py, sha256sums.py
 third_party/      SMDR 1.3 tarball (GPL) + fetch/verify/build script, license audit
@@ -170,30 +173,30 @@ into `figures/out/<name>.pdf` and `.png` (style: `figures/style_v12.py`; caption
 
 | figure | paper | script |
 |---|---|---|
-| `prl_fig1_threshold` | PRL Fig. 1 (`fig:threshold`) — finite-volume threshold λ_c against λ_SM(μ_b) | `fig_prl_fig1_threshold.py prl` |
-| `prd_threshold` | PRD Fig. 2 (`fig:h-threshold`, Sec. V A); report Fig. 9 | `fig_prd_threshold.py` |
-| `prl_fig2_criterion` | PRL Fig. 2 (`fig:criterion`) — survival P₁(m_t) and the critical masses | `fig_prl_fig2_criterion.py prl` |
-| `prd_criterion` | PRD Fig. 3 (`fig:h-criterion`, Sec. V E); report Fig. 12 | `fig_prd_criterion.py` |
-| `prl_fig3_xi` | PRL Fig. 3 (`fig:xi`); PRD Fig. 4 (`fig:h-xi`, Sec. V H); report Fig. 14 — ξ_H condition | `fig_prl_fig3_xi.py` |
+| `prl_fig1_threshold` | earlier draft of the Letter's Fig. 1 — finite-volume threshold λ_c against λ_SM(μ_b) (the Letter's present Fig. 1 is made by its Supplemental Material) | `fig_prl_fig1_threshold.py prl` |
+| `prd_threshold` | Paper Fig. 2 (`fig:h-threshold`, Sec. V A); report Fig. 9 | `fig_prd_threshold.py` |
+| `prl_fig2_criterion` | Letter Fig. 2 (`fig:criterion`) — survival P₁(m_t) and the critical masses | `fig_prl_fig2_criterion.py prl` |
+| `prd_criterion` | Paper Fig. 3 (`fig:h-criterion`, Sec. V E); report Fig. 12 | `fig_prd_criterion.py` |
+| `prl_fig3_xi` | Letter Fig. 3 (`fig:xi`); paper Fig. 4 (`fig:h-xi`, Sec. V H); report Fig. 14 — ξ_H condition | `fig_prl_fig3_xi.py` |
 | `prd_higgs_wavefunction` | report Fig. 7 (Sec. 7.2) — Higgs zero-mode wave function | `fig_prd_higgs_wavefunction.py` |
 | `prd_gamma_validation` | report Fig. 8 (Sec. 7.5) — width validation | `fig_prd_gamma_validation.py` |
 | `prd_hazard_realtime` | report Fig. 11 (Sec. 9.5) — hazard and real-time evolution | `fig_prd_hazard_realtime.py` |
 | `prd_cross_terms` | report Fig. 10 (Sec. 8.6) — cross terms | `fig_prd_cross_terms.py` |
 | `prd_universality` | report Fig. 13 (Sec. 12.2) — universality | `fig_prd_universality.py` |
 | `prd_trace` | report Fig. 2 (Sec. 2) | `fig_prd_trace.py` |
-| `prd_casimir_shape` | PRD Fig. 1 (`fig:pa-casimir-shape`, Sec. IV A); report Fig. 3 (Sec. 3) | `gen_casimir_slice_shape.py`, `fig_prd_casimir_shape.py` |
-| `prd_emptiness_gate` | PRD Fig. 5 (`fig:s-gate`, Sec. VI B); report Fig. 15 | `fig_prd_emptiness_gate.py` |
+| `prd_casimir_shape` | Paper Fig. 1 (`fig:pa-casimir-shape`, Sec. IV A); report Fig. 3 (Sec. 3) | `gen_casimir_slice_shape.py`, `fig_prd_casimir_shape.py` |
+| `prd_emptiness_gate` | Paper Fig. 5 (`fig:s-gate`, Sec. VI B); report Fig. 15 | `fig_prd_emptiness_gate.py` |
 | `prd_turning_state` | report Fig. 16 (Sec. 15) | `fig_prd_turning_state.py` |
-| `prd_nonlinear_survival` | PRD Fig. 6 (`fig:s-survival`, Sec. VII F); report Fig. 18 | `fig_prd_nonlinear_survival.py` |
+| `prd_nonlinear_survival` | Paper Fig. 6 (`fig:s-survival`, Sec. VII F); report Fig. 18 | `fig_prd_nonlinear_survival.py` |
 | `prd_fossil_shape` | report Fig. 17 (Sec. 15) | `fig_prd_fossil_shape.py` |
 | `prd_primordial` | report Fig. 19 (Sec. 16) | `fig_prd_primordial.py` |
-| `prd_fossil_sky` | PRD Fig. 7 (`fig:c-sky`, Sec. VIII B); report Fig. 20 | `fig_prd_fossil_sky.py` |
+| `prd_fossil_sky` | Paper Fig. 7 (`fig:c-sky`, Sec. VIII B); report Fig. 20 | `fig_prd_fossil_sky.py` |
 
 ## Numbers shared by the papers and the report
 `numbers/numbers_v12.json` is the single source of the claim-layer numbers that the text of all three documents uses —
-the PRL, the PRD and the companion technical report *Casimir Cosmology: Derivations and Numerical Validation*
+the Letter, the paper and the companion technical report *Casimir Cosmology: Derivations and Numerical Validation*
 (`docs/technical_report/`). The three LaTeX sources `\input` the same `numbers.tex`, generated from the JSON by
-`python numbers/make_numbers_tex.py` (byte-identical to the v12 PRL/PRD copy at import). To change a number, edit
+`python numbers/make_numbers_tex.py` (byte-identical to the v12 Letter/paper copy at import). To change a number, edit
 only the JSON (`values`, `precision`), regenerate `numbers.tex`, copy it to the three sources (`--out PATH ...`) and
 rerun `python numbers/check_numbers.py --write`, which checks every number against the archived outputs of this
 package: each macro names the package file and JSON pointer of every value (`source`), and the shown value must equal
@@ -203,7 +206,7 @@ written by `numbers/derive_numbers.py` (details in `numbers/README.md`). `run_al
 
 ## Results → paper
 Collected from the tables at the end of every result-directory README (which also give the archived source of each
-number). Paper locations are the section, figure and table numbers of the submitted PRL and PRD (compiled
+number). Paper locations are the section, figure and table numbers of the submitted Letter and paper (compiled
 2026-10-16; LaTeX labels where useful); a number that only the companion technical report gives is marked
 "report Sec. n" (or Table/Fig. n); "same" refers to the file of the row above. Output files are relative to the work
 tree `output/<chain>/<mode>/`; the archived copy has the same relative path below the step's `expected/`. The column
@@ -212,162 +215,162 @@ the result.
 
 | result directory | paper location | number / figure | output file : key | report section |
 |---|---|---|---|---|
-| casimir/01_sm_casimir_weight | PRD Sec. IV A–B, Eq. `eq:pa-NC`; Sec. I | N_C(AAA) = +25.515; N_C(PPP) = −30 | `r5/C57_spin_structure/C57_spin_structures.json` : `SM_spin_structures/AAA/N_C_signed`, `.../PPP/N_C_signed` | 3 |
-| casimir/01_sm_casimir_weight | PRD App. B 1, Table IV | eigenvalues +1902.24 / −893.20; κ_E = 13.5286, κ_T2 = −6.3524; trace identity 1e-8 | same : `SM_spin_structures/<s>/{Hess_eigs,kappa,trace_over_8_3_Z}` | 3 |
-| casimir/01_sm_casimir_weight | PRD Fig. 1(a), (c); report Fig. 3 | N_C per spin structure; gains | same : `SM_spin_structures/<s>/{N_C_signed,gains_zero_momentum}` | 3 |
-| casimir/01_sm_casimir_weight | PRD Sec. IV B; App. B 1 | PPP centre 11.19; PPP hypercharge max 17.79; AAA centre 22.74 / 9.86 | `r5/C68_holonomy_preparation/C68_results.json` : `PPP_centre_111`, `PPP_Y_iso_scan_max/NC`, `AAA_centre_100`, `AAA_centre_111` | 3 |
-| casimir/02_zero_mode_energy | PRD Sec. IV B (`sec:pa-zeromodes`), Table I; App. B 2 | ξ = 0.2993 / 0.2999 / 0.3043 | `fu/C72/C72_summary.json` : `r_band/one-loop mu=1/L_b/exact_local_dmc_r/lam{0,0.01,0.1}` | 4 |
-| casimir/02_zero_mode_energy | PRD App. B 2 (Eq. `eq:pa-gauss-bound`) | ξ ≥ 0.2580, ξ ≤ 0.3083 | same : `.../lower_operator_bound_r`, `.../upper_gauss_r/0.01` | 4 |
-| casimir/02_zero_mode_energy | PRD App. B 2 | DMC 2.1402(5), 4.1171(14), 12.5869(22) | same : `comparisons_ours_vs_codex/*` | 4 |
-| casimir/02_zero_mode_energy | PRD App. B 2 | LE_EW = 4.4478(13) / 4.4750(17); Higgs cost 1.78/L vs 0.46/L (×3.9) | `fu/C72/C72_dmc_results.json` : `extrapolated/ew_running_lam*`; `C72_summary.json` : `higgs_coupled_vs_decoupled` | 4 |
-| casimir/02_zero_mode_energy | PRD Sec. IV B (next order) | ξ → 0.2826 (≈ 0.28); dξ_hol = −0.0140, dξ_Higgs = −0.0033 | `fu/C81/C81_results.json` : `r_first_order/landau_3pol`; `fu/C78/C78_results.json` : `shifts/*` | 4 |
-| casimir/03_shape_hessian | PRD Sec. VII A, Eq. `eq:s-Hesstrace`; App. E 1 | 8/3 (eigenvalue at p = −2) | `fu/C73/C73_symbolic.json` : `S2/values/-2` | 2, 14 |
-| casimir/03_shape_hessian | PRD Sec. VII A, Eq. `eq:s-nogo` | ΔU = (8/3)[U − Q − 3N/2] | same : `S5/*` ; `C73_thermo.json` | 2, 14 |
-| casimir/03_shape_hessian | PRD Sec. VII B, Eq. `eq:s-gain` | guaranteed gain 4.500465 (NOGO-11); 𝒢(13.53) = 216.46 | `fu/C73/C73_gain.json` : `lower_bounds/0/G via ODE`, `rows/0/gain_closed` | 2, 14 |
-| casimir/03_shape_hessian | PRD Sec. VII C; App. B 2 | κ_E = 19.324, κ_T2 = −9.074 (ξ = 0.2999) (NOGO-05/06) | `fu/C83/C83_results.json` : `next_order/gauss/cases/LO/{kappa_E,kappa_T2}` | 2, 14 |
-| casimir/03_shape_hessian | PRD Sec. IV B; App. B 2; PRD Sec. VII E | κ_E = 18.04, κ_T2 = −8.34 at ξ = 0.2826 (NOGO-07); Higgs part 0.14 of the shift | same : `next_order/gauss/cases/{both,both_without_Higgs}/kappa_E` | 2, 14 |
-| casimir/03_shape_hessian | PRD App. E 1 | s = 1 Laplacian −4/3; abelian zero-point ratio −8.88 | `fu/C73/C73_zeta.json`, `C73_abelian_zeropoint.json` | 2, 14 |
-| higgs/01_sm_mapping | PRL core sentence; PRD App. D 3 | λ(μ_b) = −0.0097741 at (172.60, 0.1180, 125.13) | `r3/sm_mapping/package/sm_point.json` : `point_172p60_0p1180_125p13/lam_mu_b` | 10 |
-| higgs/01_sm_mapping | PRD App. D 3 | y_t(μ_b) = 0.4278267; g₂/g_Y/g₃ = 0.52776/0.44277/0.53565 | same file : `yt_mu_b`, `g2_mu_b`, `gY_mu_b`, `g3_mu_b` | 10 |
-| higgs/01_sm_mapping | PRL (μ_b ≈ M̄_P/722) | μ_b = 3.3726×10¹⁵ GeV | `sm_point.json` : `mu_b_GeV` | 10 |
-| higgs/01_sm_mapping | PRL headline | λ_c = λ(μ_b; m_c) = −0.0091/−0.0121/−0.0152 | `sm_point.json` : `lam_mu_b_at_run05_critical_mt` | 10 |
-| higgs/01_sm_mapping | PRL Table I (m̄ form) | m̄_t(m̄_t) 162.7281/163.1637/163.6012 (α_s 0.1180; also 0.1171/0.1189) | `r3/sm_mapping/run02/R3_mbar_run05.json` : `new_central/<α_s>/P1=*/mbar_mbar_QCD4L` | 10 |
-| higgs/01_sm_mapping | PRD App. D 3 | compiled SMDR − Python at Q = M_t; λ(μ_b) SMDR-RG / own RG / Python | `r3/sm_mapping/run02/C148r2_summary.json` : `A_match_at_Mt_compiled_minus_python`, `B_mu_b` | 10 |
-| higgs/01_sm_mapping | PRD App. D 3 | compiled matching-scale variation +0.0331/−0.0186 GeV | `C148r2_summary.json` : `E_budget_P1=0.5/a_matching_scale_compiledSMDR/common_xi` | 10 |
-| higgs/01_sm_mapping | PRD App. D 3 | benchmarks (BKPV critical M_t 171.453; r2→r3 chain +0.063 GeV) | `r3/sm_mapping/run01/C148_bench.json` (full mode) | 10 |
+| casimir/01_sm_casimir_weight | Paper Sec. IV A–B, Eq. `eq:pa-NC`; Sec. I | N_C(AAA) = +25.515; N_C(PPP) = −30 | `r5/C57_spin_structure/C57_spin_structures.json` : `SM_spin_structures/AAA/N_C_signed`, `.../PPP/N_C_signed` | 3 |
+| casimir/01_sm_casimir_weight | Paper App. B 1, Table IV | eigenvalues +1902.24 / −893.20; κ_E = 13.5286, κ_T2 = −6.3524; trace identity 1e-8 | same : `SM_spin_structures/<s>/{Hess_eigs,kappa,trace_over_8_3_Z}` | 3 |
+| casimir/01_sm_casimir_weight | Paper Fig. 1(a), (c); report Fig. 3 | N_C per spin structure; gains | same : `SM_spin_structures/<s>/{N_C_signed,gains_zero_momentum}` | 3 |
+| casimir/01_sm_casimir_weight | Paper Sec. IV B; App. B 1 | PPP centre 11.19; PPP hypercharge max 17.79; AAA centre 22.74 / 9.86 | `r5/C68_holonomy_preparation/C68_results.json` : `PPP_centre_111`, `PPP_Y_iso_scan_max/NC`, `AAA_centre_100`, `AAA_centre_111` | 3 |
+| casimir/02_zero_mode_energy | Paper Sec. IV B (`sec:pa-zeromodes`), Table I; App. B 2 | ξ = 0.2993 / 0.2999 / 0.3043 | `fu/C72/C72_summary.json` : `r_band/one-loop mu=1/L_b/exact_local_dmc_r/lam{0,0.01,0.1}` | 4 |
+| casimir/02_zero_mode_energy | Paper App. B 2 (Eq. `eq:pa-gauss-bound`) | ξ ≥ 0.2580, ξ ≤ 0.3083 | same : `.../lower_operator_bound_r`, `.../upper_gauss_r/0.01` | 4 |
+| casimir/02_zero_mode_energy | Paper App. B 2 | DMC 2.1402(5), 4.1171(14), 12.5869(22) | same : `comparisons_ours_vs_codex/*` | 4 |
+| casimir/02_zero_mode_energy | Paper App. B 2 | LE_EW = 4.4478(13) / 4.4750(17); Higgs cost 1.78/L vs 0.46/L (×3.9) | `fu/C72/C72_dmc_results.json` : `extrapolated/ew_running_lam*`; `C72_summary.json` : `higgs_coupled_vs_decoupled` | 4 |
+| casimir/02_zero_mode_energy | Paper Sec. IV B (next order) | ξ → 0.2826 (≈ 0.28); dξ_hol = −0.0140, dξ_Higgs = −0.0033 | `fu/C81/C81_results.json` : `r_first_order/landau_3pol`; `fu/C78/C78_results.json` : `shifts/*` | 4 |
+| casimir/03_shape_hessian | Paper Sec. VII A, Eq. `eq:s-Hesstrace`; App. E 1 | 8/3 (eigenvalue at p = −2) | `fu/C73/C73_symbolic.json` : `S2/values/-2` | 2, 14 |
+| casimir/03_shape_hessian | Paper Sec. VII A, Eq. `eq:s-nogo` | ΔU = (8/3)[U − Q − 3N/2] | same : `S5/*` ; `C73_thermo.json` | 2, 14 |
+| casimir/03_shape_hessian | Paper Sec. VII B, Eq. `eq:s-gain` | guaranteed gain 4.500465 (NOGO-11); 𝒢(13.53) = 216.46 | `fu/C73/C73_gain.json` : `lower_bounds/0/G via ODE`, `rows/0/gain_closed` | 2, 14 |
+| casimir/03_shape_hessian | Paper Sec. VII C; App. B 2 | κ_E = 19.324, κ_T2 = −9.074 (ξ = 0.2999) (NOGO-05/06) | `fu/C83/C83_results.json` : `next_order/gauss/cases/LO/{kappa_E,kappa_T2}` | 2, 14 |
+| casimir/03_shape_hessian | Paper Sec. IV B; App. B 2; paper Sec. VII E | κ_E = 18.04, κ_T2 = −8.34 at ξ = 0.2826 (NOGO-07); Higgs part 0.14 of the shift | same : `next_order/gauss/cases/{both,both_without_Higgs}/kappa_E` | 2, 14 |
+| casimir/03_shape_hessian | Paper App. E 1 | s = 1 Laplacian −4/3; abelian zero-point ratio −8.88 | `fu/C73/C73_zeta.json`, `C73_abelian_zeropoint.json` | 2, 14 |
+| higgs/01_sm_mapping | Letter core sentence; paper App. D 3 | λ(μ_b) = −0.0097741 at (172.60, 0.1180, 125.13) | `r3/sm_mapping/package/sm_point.json` : `point_172p60_0p1180_125p13/lam_mu_b` | 10 |
+| higgs/01_sm_mapping | Paper App. D 3 | y_t(μ_b) = 0.4278267; g₂/g_Y/g₃ = 0.52776/0.44277/0.53565 | same file : `yt_mu_b`, `g2_mu_b`, `gY_mu_b`, `g3_mu_b` | 10 |
+| higgs/01_sm_mapping | Letter (μ_b ≈ M̄_P/722) | μ_b = 3.3726×10¹⁵ GeV | `sm_point.json` : `mu_b_GeV` | 10 |
+| higgs/01_sm_mapping | Letter headline | λ_c = λ(μ_b; m_c) = −0.0091/−0.0121/−0.0152 | `sm_point.json` : `lam_mu_b_at_run05_critical_mt` | 10 |
+| higgs/01_sm_mapping | Letter Table I (m̄ form) | m̄_t(m̄_t) 162.7281/163.1637/163.6012 (α_s 0.1180; also 0.1171/0.1189) | `r3/sm_mapping/run02/R3_mbar_run05.json` : `new_central/<α_s>/P1=*/mbar_mbar_QCD4L` | 10 |
+| higgs/01_sm_mapping | Paper App. D 3 | compiled SMDR − Python at Q = M_t; λ(μ_b) SMDR-RG / own RG / Python | `r3/sm_mapping/run02/C148r2_summary.json` : `A_match_at_Mt_compiled_minus_python`, `B_mu_b` | 10 |
+| higgs/01_sm_mapping | Paper App. D 3 | compiled matching-scale variation +0.0331/−0.0186 GeV | `C148r2_summary.json` : `E_budget_P1=0.5/a_matching_scale_compiledSMDR/common_xi` | 10 |
+| higgs/01_sm_mapping | Paper App. D 3 | benchmarks (BKPV critical M_t 171.453; r2→r3 chain +0.063 GeV) | `r3/sm_mapping/run01/C148_bench.json` (full mode) | 10 |
 | higgs/01_sm_mapping | report Sec. 10.5 | absolute-stability bound m_stab = 170.99 GeV (m0 − m_stab = 0.10 GeV) | `w/abs_stability/abs_stability.json` : `central/m_stab_pole`, `central/m0_pole` | 10.5 |
-| higgs/02_finite_volume_matching | PRD Sec. V A, App. C 1 | T_B/2 = −0.1128925, c₂ = 0.0062594 | `r2/higgs_matching/run01/C138_checks.json` : `R14_fv_internal/TB_half`, `c2P` | 6 |
-| higgs/02_finite_volume_matching | PRD Sec. V A, App. C 1 | γ_φ^C(μ_b) = +2.2×10⁻⁴ | `C138_checks.json` : `RG_one_loop_consistency_lam-0.010/gamma_phi_Coulomb` | 6 |
+| higgs/02_finite_volume_matching | Paper Sec. V A, App. C 1 | T_B/2 = −0.1128925, c₂ = 0.0062594 | `r2/higgs_matching/run01/C138_checks.json` : `R14_fv_internal/TB_half`, `c2P` | 6 |
+| higgs/02_finite_volume_matching | Paper Sec. V A, App. C 1 | γ_φ^C(μ_b) = +2.2×10⁻⁴ | `C138_checks.json` : `RG_one_loop_consistency_lam-0.010/gamma_phi_Coulomb` | 6 |
 | higgs/02_finite_volume_matching | report Sec. 6 (γ table) | γ(λ = −0.010, v11) MC+CW 9.871×10⁻⁴; MU 2.051×10⁻³ | `C138_static.json` : `table/v11/MC/-0.01/gamma`, `table/v11/MU/-0.01/gamma` | 6 |
 | higgs/02_finite_volume_matching | report Sec. 11.1 (Table 14) | MC+CW (D110) 172.349/172.768 (R14 mapping) | `C138_summary.json` : `["central_MC+CW_mu=1/L"]` (full) | 6 |
-| higgs/02_finite_volume_matching | PRL Table I (round 3) 'one-loop matching' | μ ∈ [½, 2π]/L items | `C138_summary.json` : `error_budget_GeV` (full) | 6 |
-| higgs/02_finite_volume_matching | PRD Sec. V (effective slope); report Secs. 6–7 | one-loop matching lowers the local slope of the zero-point confinement by 10–33 % at r = 1–5 (λ = −0.010: 0.110–0.331; −0.013: 0.105–0.310) and roughly halves the barrier above the resonance level: radial potential U_ad 1.57 → 0.72 (λ = −0.010), 1.21 → 0.53 (−0.013); field-space potential U_g 1.55 → 0.70, 1.19 → 0.51 (units 1/L) | `w/matching_potential/matching_potential.json` : `headline`, `lambda/<λ>/slope`, `lambda/<λ>/barrier_above_Q` (`matching_potential.py`, R18; reads `figures/data/higgs/generated/potential_2Dex_lam010_013.csv` and the T14a resonance level) | 6, 7 |
-| higgs/03_zero_mode_2d | PRD Sec. V B | λ = 0: 2D_ex 4.45086, 2D_G 4.5077 vs DMC 4.4478(13) | `r2/higgs_beyond_bo/run01/C140_lam0.json` : `Q`, `test/Q_2D_ex`, `test/minus_C72` | 7, 9 |
+| higgs/02_finite_volume_matching | Letter Table I (round 3) 'one-loop matching' | μ ∈ [½, 2π]/L items | `C138_summary.json` : `error_budget_GeV` (full) | 6 |
+| higgs/02_finite_volume_matching | Paper Sec. V (effective slope); report Secs. 6–7 | one-loop matching lowers the local slope of the zero-point confinement by 10–33 % at r = 1–5 (λ = −0.010: 0.110–0.331; −0.013: 0.105–0.310) and roughly halves the barrier above the resonance level: radial potential U_ad 1.57 → 0.72 (λ = −0.010), 1.21 → 0.53 (−0.013); field-space potential U_g 1.55 → 0.70, 1.19 → 0.51 (units 1/L) | `w/matching_potential/matching_potential.json` : `headline`, `lambda/<λ>/slope`, `lambda/<λ>/barrier_above_Q` (`matching_potential.py`, R18; reads `figures/data/higgs/generated/potential_2Dex_lam010_013.csv` and the T14a resonance level) | 6, 7 |
+| higgs/03_zero_mode_2d | Paper Sec. V B | λ = 0: 2D_ex 4.45086, 2D_G 4.5077 vs DMC 4.4478(13) | `r2/higgs_beyond_bo/run01/C140_lam0.json` : `Q`, `test/Q_2D_ex`, `test/minus_C72` | 7, 9 |
 | higgs/03_zero_mode_2d | report Sec. 11.1 (Table 14) (2D direct, R14) | 172.5185/173.0140/173.5155 | `r3/twod_direct_sm/run01/C150_summary.json` : `main_2D_direct_as0.1180/critical_mt` | 7, 9 |
 | higgs/03_zero_mode_2d | report Sec. 11.1 (Table 14) (2D_G) | 172.4671/172.9412 | `…/run01/C150_summary.json` : `twoD_G_direct/critical_mt` | 7, 9 |
 | higgs/03_zero_mode_2d | report Sec. 11.1 (Table 14) (rows MU → 2D direct) | MU 172.2099/172.5837 … | `…/run01/C150_summary.json` : `convergence_table` | 7, 9 |
 | higgs/03_zero_mode_2d | report Sec. 11.1 (Table 14) (+ NNLO) | 172.5826/173.0775/173.5784 | `r3/twod_direct_sm/run02/C150_summary.json` : `main_2D_direct_as0.1180/critical_mt` | 7, 9 |
-| higgs/03_zero_mode_2d | PRD Sec. V B–D (node widths, no cross terms) | γ(m_t, u) at 11 nodes | `r3/twod_direct_sm/run02/shards2d/2Dex_*.json` : `cols/*/gamma2` | 7, 9 |
-| higgs/04_cross_terms | PRL Table I; PRD Sec. V E–F | m_c^pole 172.5024/172.9595/173.4184 (α_s 0.1180) | `r3/holonomy_cross/run05/C149_run05_summary.json` : `crit/0.1180/P1=*` | 8 |
-| higgs/04_cross_terms | PRL Fig. 2(a); Table I | α_s 0.1171: 172.156/172.611/173.069; 0.1189: 172.849/173.308/173.768 | same : `crit/0.1171`, `crit/0.1189` | 8 |
-| higgs/04_cross_terms | PRL text | P₁(172.60) = 0.8426; P₁(172.52) = 0.8909 | same : `P1/172.6`, `P1/172.52` | 8 |
-| higgs/04_cross_terms | PRL Fig. 2(a) | P₁ grid 172.0…173.8 | same : `P1_grid` | 8 |
-| higgs/04_cross_terms | PRL headline | λ_c(μ_b) −0.0091339/−0.0121415/−0.0151849 | same : `lam_c` | 8 |
-| higgs/04_cross_terms | PRL Table I (cross-term row) | −0.0802/−0.1180/−0.1600 vs no cross term | same : `shift_vs_T14b/0.1180` | 8 |
-| higgs/04_cross_terms | PRD Sec. V C, App. C 4 | RG closure 0.994/0.973/0.993/0.990 | `r3/holonomy_cross/run05/C149_coulomb_check.json` : `<r>/closure_Z` | 8 |
-| higgs/04_cross_terms | PRD Sec. V C, App. C 4 | top chiral G(m_t²), B/(q_Φ² m²) | `r3/holonomy_cross/run04/C149_top_chiral.json` | 8 |
-| higgs/04_cross_terms | PRD Sec. V C–D, App. C 4 | node widths γ(m_t, u) with cross terms | `r3/holonomy_cross/run05/shards/X_{main,als}_u*.json` : `cols/*/gamma` | 8 |
-| higgs/05_fulldim_validation | PRD Sec. V B | ΔQ (same wall) −0.0032(8) (λ = −0.010), −0.0034(9) (−0.013) | `r3/fulldim_dmc/run01/C151_summary.json` : `lam_neg/-0.01/dQ_ex_main`, `lam_neg/-0.013/dQ_ex_main` | 18 |
-| higgs/05_fulldim_validation | PRD Sec. V B | λ = 0: Q_full 4.44659(94) vs C72 4.4478(13) | same : `lam0_regression` | 18 |
-| higgs/05_fulldim_validation | PRD Sec. V B | tail amplitude A = 0.92(16)/1.03(7); WKB 0.937/0.973; CAP d ln γ/dQ | same : `lam_neg/*/tail_fit`, `wkb`, `conversion` | 18 |
-| higgs/05_fulldim_validation | PRD Sec. V B | 3D collective coordinate γ_3D/γ_2D 0.9992–1.0000 | same : `model_3D_zeta` | 18 |
-| higgs/05_fulldim_validation | PRL Table I 'full-dimensional validation' | Δm_c +0.0046(11)/+0.0075(19) GeV with the run05 slopes (`09_claims`: `w/claims_run05/run01/table1_rebuild.json` : `t14a/central`); C151 with the earlier slopes +0.0043(10)/+0.0070(17) | same : `delta_m_c` | 18 |
-| higgs/05_fulldim_validation | PRD Sec. V B | DMC energies per wall and tau | `r3/fulldim_dmc/run01/T14a_dmc_combined.json`, `shards/*.json` | 18 |
-| higgs/06_hazard_criterion | PRL Table I; core sentence | m_c^pole 172.5024/172.9595/173.4184 | `r3/holonomy_cross/run05/C149_run05_summary.json` : `crit/0.1180` | 9, 20 |
-| higgs/06_hazard_criterion | PRL Fig. 2(a) | m_c at α_s 0.1171/0.1189; slope dm_c/dα_s ≈ 387 GeV | same : `crit` | 9, 20 |
-| higgs/06_hazard_criterion | PRL headline | λ_c −0.0091/−0.0121/−0.0152 | same : `lam_c` | 9, 20 |
-| higgs/06_hazard_criterion | PRL text; PRD Sec. V E | P₁(172.60) 0.8426; P₁(172.52) 0.8909; P₁(172.2) 0.9850; P₁(173.0) 0.4549 | same : `P1` | 9, 20 |
-| higgs/06_hazard_criterion | PRL Fig. 2(a) | P₁(m_t) grid and I(m_t) | `r3/hazard_criterion/hazard_table.json` : `P1/0.1180`, `I/0.1180` | 9, 20 |
-| higgs/06_hazard_criterion | PRL Table I (m̄ form) | m̄_t 162.7281/163.1637/163.6012 | `r3/sm_mapping/run02/R3_mbar_run05.json` : `new_central` | 9, 20 |
+| higgs/03_zero_mode_2d | Paper Sec. V B–D (node widths, no cross terms) | γ(m_t, u) at 11 nodes | `r3/twod_direct_sm/run02/shards2d/2Dex_*.json` : `cols/*/gamma2` | 7, 9 |
+| higgs/04_cross_terms | Letter Table I; paper Sec. V E–F | m_c^pole 172.5024/172.9595/173.4184 (α_s 0.1180) | `r3/holonomy_cross/run05/C149_run05_summary.json` : `crit/0.1180/P1=*` | 8 |
+| higgs/04_cross_terms | Letter Fig. 2(a); Table I | α_s 0.1171: 172.156/172.611/173.069; 0.1189: 172.849/173.308/173.768 | same : `crit/0.1171`, `crit/0.1189` | 8 |
+| higgs/04_cross_terms | Letter text | P₁(172.60) = 0.8426; P₁(172.52) = 0.8909 | same : `P1/172.6`, `P1/172.52` | 8 |
+| higgs/04_cross_terms | Letter Fig. 2(a) | P₁ grid 172.0…173.8 | same : `P1_grid` | 8 |
+| higgs/04_cross_terms | Letter headline | λ_c(μ_b) −0.0091339/−0.0121415/−0.0151849 | same : `lam_c` | 8 |
+| higgs/04_cross_terms | Letter Table I (cross-term row) | −0.0802/−0.1180/−0.1600 vs no cross term | same : `shift_vs_T14b/0.1180` | 8 |
+| higgs/04_cross_terms | Paper Sec. V C, App. C 4 | RG closure 0.994/0.973/0.993/0.990 | `r3/holonomy_cross/run05/C149_coulomb_check.json` : `<r>/closure_Z` | 8 |
+| higgs/04_cross_terms | Paper Sec. V C, App. C 4 | top chiral G(m_t²), B/(q_Φ² m²) | `r3/holonomy_cross/run04/C149_top_chiral.json` | 8 |
+| higgs/04_cross_terms | Paper Sec. V C–D, App. C 4 | node widths γ(m_t, u) with cross terms | `r3/holonomy_cross/run05/shards/X_{main,als}_u*.json` : `cols/*/gamma` | 8 |
+| higgs/05_fulldim_validation | Paper Sec. V B | ΔQ (same wall) −0.0032(8) (λ = −0.010), −0.0034(9) (−0.013) | `r3/fulldim_dmc/run01/C151_summary.json` : `lam_neg/-0.01/dQ_ex_main`, `lam_neg/-0.013/dQ_ex_main` | 18 |
+| higgs/05_fulldim_validation | Paper Sec. V B | λ = 0: Q_full 4.44659(94) vs C72 4.4478(13) | same : `lam0_regression` | 18 |
+| higgs/05_fulldim_validation | Paper Sec. V B | tail amplitude A = 0.92(16)/1.03(7); WKB 0.937/0.973; CAP d ln γ/dQ | same : `lam_neg/*/tail_fit`, `wkb`, `conversion` | 18 |
+| higgs/05_fulldim_validation | Paper Sec. V B | 3D collective coordinate γ_3D/γ_2D 0.9992–1.0000 | same : `model_3D_zeta` | 18 |
+| higgs/05_fulldim_validation | Letter Table I 'full-dimensional validation' | Δm_c +0.0046(11)/+0.0075(19) GeV with the run05 slopes (`09_claims`: `w/claims_run05/run01/table1_rebuild.json` : `t14a/central`); C151 with the earlier slopes +0.0043(10)/+0.0070(17) | same : `delta_m_c` | 18 |
+| higgs/05_fulldim_validation | Paper Sec. V B | DMC energies per wall and tau | `r3/fulldim_dmc/run01/T14a_dmc_combined.json`, `shards/*.json` | 18 |
+| higgs/06_hazard_criterion | Letter Table I; core sentence | m_c^pole 172.5024/172.9595/173.4184 | `r3/holonomy_cross/run05/C149_run05_summary.json` : `crit/0.1180` | 9, 20 |
+| higgs/06_hazard_criterion | Letter Fig. 2(a) | m_c at α_s 0.1171/0.1189; slope dm_c/dα_s ≈ 387 GeV | same : `crit` | 9, 20 |
+| higgs/06_hazard_criterion | Letter headline | λ_c −0.0091/−0.0121/−0.0152 | same : `lam_c` | 9, 20 |
+| higgs/06_hazard_criterion | Letter text; paper Sec. V E | P₁(172.60) 0.8426; P₁(172.52) 0.8909; P₁(172.2) 0.9850; P₁(173.0) 0.4549 | same : `P1` | 9, 20 |
+| higgs/06_hazard_criterion | Letter Fig. 2(a) | P₁(m_t) grid and I(m_t) | `r3/hazard_criterion/hazard_table.json` : `P1/0.1180`, `I/0.1180` | 9, 20 |
+| higgs/06_hazard_criterion | Letter Table I (m̄ form) | m̄_t 162.7281/163.1637/163.6012 | `r3/sm_mapping/run02/R3_mbar_run05.json` : `new_central` | 9, 20 |
 | higgs/06_hazard_criterion | report Sec. 11.1 (Table 14) | MU → … → 2D direct (R14) → +NNLO → +cross (run02) → run04 → run05 | `r3/hazard_criterion/hazard_table.json` : `convergence_table_0p1180` | 9, 20 |
 | higgs/06_hazard_criterion | numerics | quadrature / interpolation sensitivity | `hazard_table.json` : `max_abs_diff_*` | 9, 20 |
-| higgs/07_realtime_xi | PRL ξ condition; PRD Sec. V H | ξ_c(172.6) at run05 = 0.0738 ± 0.0025 (run02: 0.0741); P₁ = 0.5 point 0.1205 | `w/claims_run05/run01/xi_run05_summary.json` | 9, 12 |
-| higgs/07_realtime_xi | PRD Sec. V H | ξ_c(m_t) table, EW image | `w/claims_run05/run01/xi_run05/C157_xi_quick.json` | 9, 12 |
-| higgs/07_realtime_xi | PRD Sec. V H | universal ξ_c(P₁): residuals of 16 run02 variants and run05 points | `xi_run05_summary.json`; `xi_run05_compare.csv` | 9, 12 |
-| higgs/07_realtime_xi | PRD Sec. V H (bands, run02 centre) | SM band 0.0750 ± 0.0130, α_s band 0.0795 ± 0.0397 (m_t = 172.6) | archive only | 9, 12 |
-| higgs/07_realtime_xi | PRD App. D 2 (2D real time) | 2D vs 1D: ΔP_surv ≤ 2×10⁻⁴ | archive only | 9, 12 |
-| higgs/08_robustness_w0 | PRL Table I row (vi) | ±0.035/±0.067/±0.112 GeV (r ∈ [10⁻³, 10⁻²]); r = 10⁻⁴ tail −0.089/−0.1725/−0.2795 | `r3/higgs_robustness/run01/C152_input_dmc.json` : `vi_inflation_scale` | 9, 11 |
-| higgs/08_robustness_w0 | PRD Sec. V D–F | d ln I/dλ_b −805.4/−487.8/−319.2 | same : `slope_update/dlnI_dlam_b` | 9, 11 |
-| higgs/08_robustness_w0 | PRD Sec. V D, App. D 2 | e-fold finite differences of hL_b (−0.170/−0.270/−0.394) | `C152_post.json` | 9, 11 |
-| higgs/08_robustness_w0 | PRD Sec. V D, App. D 2 | w₀(B3) 0.9945/0.9907/0.9852/0.9801; critical 172.4819/172.9473/173.4076 (run02 base) | `C152_mc_w0.json` : `with_B3_w0_of_mt` ; `C152_w0_B3.json` | 9, 11 |
+| higgs/07_realtime_xi | Letter ξ condition; paper Sec. V H | ξ_c(172.6) at run05 = 0.0738 ± 0.0025 (run02: 0.0741); P₁ = 0.5 point 0.1205 | `w/claims_run05/run01/xi_run05_summary.json` | 9, 12 |
+| higgs/07_realtime_xi | Paper Sec. V H | ξ_c(m_t) table, EW image | `w/claims_run05/run01/xi_run05/C157_xi_quick.json` | 9, 12 |
+| higgs/07_realtime_xi | Paper Sec. V H | universal ξ_c(P₁): residuals of 16 run02 variants and run05 points | `xi_run05_summary.json`; `xi_run05_compare.csv` | 9, 12 |
+| higgs/07_realtime_xi | Paper Sec. V H (bands, run02 centre) | SM band 0.0750 ± 0.0130, α_s band 0.0795 ± 0.0397 (m_t = 172.6) | archive only | 9, 12 |
+| higgs/07_realtime_xi | Paper App. D 2 (2D real time) | 2D vs 1D: ΔP_surv ≤ 2×10⁻⁴ | archive only | 9, 12 |
+| higgs/08_robustness_w0 | Letter Table I row (vi) | ±0.035/±0.067/±0.112 GeV (r ∈ [10⁻³, 10⁻²]); r = 10⁻⁴ tail −0.089/−0.1725/−0.2795 | `r3/higgs_robustness/run01/C152_input_dmc.json` : `vi_inflation_scale` | 9, 11 |
+| higgs/08_robustness_w0 | Paper Sec. V D–F | d ln I/dλ_b −805.4/−487.8/−319.2 | same : `slope_update/dlnI_dlam_b` | 9, 11 |
+| higgs/08_robustness_w0 | Paper Sec. V D, App. D 2 | e-fold finite differences of hL_b (−0.170/−0.270/−0.394) | `C152_post.json` | 9, 11 |
+| higgs/08_robustness_w0 | Paper Sec. V D, App. D 2 | w₀(B3) 0.9945/0.9907/0.9852/0.9801; critical 172.4819/172.9473/173.4076 (run02 base) | `C152_mc_w0.json` : `with_B3_w0_of_mt` ; `C152_w0_B3.json` | 9, 11 |
 | higgs/08_robustness_w0 | report Sec. 11.3 | h/M_P 6.054e-6 (pipeline) vs 6.116e-6 (v11): +0.0006/+0.0012/+0.0020 GeV | `C152_accounting.json` | 9, 11 |
-| higgs/09_claims | PRL claim sentence; PRD Sec. V F | P̄₁ direct 0.7300 (rebuilt Table 1 composite; round-3 composite 0.7302; run02 0.7271) | `w/claims_run05/run01/t1new/C154_correction_summary.json` : `marginal/equal_mass/D1_direct_pole/Pbar` | 11 |
-| higgs/09_claims | PRL range; PRD Sec. V F | P̄₁ for σ-pole, MSR, m̄_t, ATLAS+CMS, CMS, BKPV/FJ variant | same : `marginal/equal_mass/*` | 11 |
-| higgs/09_claims | PRL one sentence; PRD Sec. V F | Bayes B_ex, B_sel | same : `bayes` | 11 |
-| higgs/09_claims | PRD Sec. V F | HL-LHC separation 1.7–2.5σ | same : `HLLHC` | 11 |
-| higgs/09_claims | PRL Fig. 2; PRD Sec. V F | critical masses incl. P₁ = 0.05; exclusion thresholds; FCC-ee 5.3σ | `w/claims_run05/run01/C154_summary.json` : `critical_mt`, `exclusion_mt`, `future`; `future_reach.csv`, `exclusion_mt.csv` | 11 |
-| higgs/09_claims | PRL End Matter B; PRD Sec. V F | FCC-ee exclusion strength: central P₁ = 0.023 and B_ex = 0.033 at m̂ = 173.68 GeV (`\PoneAtExclFCC`, `\BexFCC`) | `w/claims_run05/run01/fcc_exclusion.json` : `headline` | 11 |
-| higgs/09_claims | PRL Fig. 2(a, b) data | P₁(m_t, α_s) grid, contours, ellipses, ξ curves | `fig2a_*.csv`, `fig2b_*` in `w/claims_run05/run01/` | 11 |
-| higgs/09_claims | PRL Table I (rebuilt) | model composite +0.0721/−0.0842 at P₁ = 0.5; matching row +0.012/−0.049 | `w/claims_run05/run01/table1_rebuild.json`, `table1_error_budget_run05.csv` | 11 |
-| higgs/09_claims | PRD Sec. V D, App. D 2 | P₂ critical 172.380/172.764/173.131; B3 172.486/172.953/173.414 | `w/claims_run05/run01/crit_variants.json` : `run05` | 11 |
-| higgs/09_claims | PRD Sec. V F | independent MC P̄₁ (0.7304 direct) | `w/claims_run05/run01/pbar_direct_mc.json` : `results` | 11 |
-| higgs/10_universality | PRD Sec. V G | b_eff 1.3992/1.2991/1.1893; dλ_c/d ln η 0.00124/0.00206/0.00315; dm_c/d ln η −0.1898/−0.3113/−0.4732 | `r3/universality/run01/C156_summary.json` : `eta` | 12 |
-| higgs/10_universality | PRD Sec. V G | ∂ln\|λ_c\|/∂ln(g₂, g_Y, y_t) 0.663/0.163/0.627 | same : `couplings` | 12 |
-| higgs/10_universality | PRD Sec. V G | N_C 13.124/20.871 → 21.068/23.669 | `C156_centre.json` | 12 |
-| higgs/10_universality | PRD Sec. V G | flux sector 100.719/L, ratio 2.3565 | `C156_twist.json` | 12 |
+| higgs/09_claims | Letter claim sentence; paper Sec. V F | P̄₁ direct 0.7300 (rebuilt Table 1 composite; round-3 composite 0.7302; run02 0.7271) | `w/claims_run05/run01/t1new/C154_correction_summary.json` : `marginal/equal_mass/D1_direct_pole/Pbar` | 11 |
+| higgs/09_claims | Letter range; paper Sec. V F | P̄₁ for σ-pole, MSR, m̄_t, ATLAS+CMS, CMS, BKPV/FJ variant | same : `marginal/equal_mass/*` | 11 |
+| higgs/09_claims | Letter one sentence; paper Sec. V F | Bayes B_ex, B_sel | same : `bayes` | 11 |
+| higgs/09_claims | Paper Sec. V F | HL-LHC separation 1.7–2.5σ | same : `HLLHC` | 11 |
+| higgs/09_claims | Letter Fig. 2; paper Sec. V F | critical masses incl. P₁ = 0.05; exclusion thresholds; FCC-ee 5.3σ | `w/claims_run05/run01/C154_summary.json` : `critical_mt`, `exclusion_mt`, `future`; `future_reach.csv`, `exclusion_mt.csv` | 11 |
+| higgs/09_claims | Letter End Matter B; paper Sec. V F | FCC-ee exclusion strength: central P₁ = 0.023 and B_ex = 0.033 at m̂ = 173.68 GeV (`\PoneAtExclFCC`, `\BexFCC`) | `w/claims_run05/run01/fcc_exclusion.json` : `headline` | 11 |
+| higgs/09_claims | Letter Fig. 2(a, b) data | P₁(m_t, α_s) grid, contours, ellipses, ξ curves | `fig2a_*.csv`, `fig2b_*` in `w/claims_run05/run01/` | 11 |
+| higgs/09_claims | Letter Table I (rebuilt) | model composite +0.0721/−0.0842 at P₁ = 0.5; matching row +0.012/−0.049 | `w/claims_run05/run01/table1_rebuild.json`, `table1_error_budget_run05.csv` | 11 |
+| higgs/09_claims | Paper Sec. V D, App. D 2 | P₂ critical 172.380/172.764/173.131; B3 172.486/172.953/173.414 | `w/claims_run05/run01/crit_variants.json` : `run05` | 11 |
+| higgs/09_claims | Paper Sec. V F | independent MC P̄₁ (0.7304 direct) | `w/claims_run05/run01/pbar_direct_mc.json` : `results` | 11 |
+| higgs/10_universality | Paper Sec. V G | b_eff 1.3992/1.2991/1.1893; dλ_c/d ln η 0.00124/0.00206/0.00315; dm_c/d ln η −0.1898/−0.3113/−0.4732 | `r3/universality/run01/C156_summary.json` : `eta` | 12 |
+| higgs/10_universality | Paper Sec. V G | ∂ln\|λ_c\|/∂ln(g₂, g_Y, y_t) 0.663/0.163/0.627 | same : `couplings` | 12 |
+| higgs/10_universality | Paper Sec. V G | N_C 13.124/20.871 → 21.068/23.669 | `C156_centre.json` | 12 |
+| higgs/10_universality | Paper Sec. V G | flux sector 100.719/L, ratio 2.3565 | `C156_twist.json` | 12 |
 | higgs/10_universality | report Sec. 12 | run02 repair | `r3/universality/run02/C156_run02.json` | 12 |
-| higgs/11_inflation_stability | PRL one sentence; PRD Sec. V H | ξ_inf(EW) 0.04877/0.05512/0.06044 (α_s 0.118) | `r3/inflation_stability/run01/xi_inf_table.csv` : column `xi_inf_ew`, rows `mt`, `als` | 12 |
-| higgs/11_inflation_stability | PRD Sec. V H | ξ_inf(μ_b) 0.03030/0.03781/0.04413 | same : `xi_inf_mub` | 12 |
-| higgs/11_inflation_stability | PRD Sec. V H | α_s = 0.1171/0.1189 rows | same | 12 |
-| higgs/11_inflation_stability | PRD Sec. V H | MMR 2021 reproduction 0.05946 | `r3/inflation_stability/run01/repro/repro_step1.json`; `C155_summary.json` : `reproduction` | 12 |
-| higgs/11_inflation_stability | PRD Sec. V H | all rows | `C155_summary.json` : `xi_inf_rows` | 12 |
-| higgs/12_two_branch | PRL one sentence; PRD Sec. V D, App. D 2 | P₂ = P₁² critical 172.376/172.759/173.124 (run02 base) | `r3/two_branch/run01/C159_summary.json` : `headline/crit_as0p1180` | 9 |
-| higgs/12_two_branch | PRD Sec. V D, App. D 2 | GH interference ε 0.9948–0.99997 | same : `headline/GH_interference_eps` | 9 |
-| higgs/12_two_branch | PRD Sec. V D, App. D 2 | Fréchet bands [172.372, 172.498], [172.713, 172.954] | same : `crit` | 9 |
-| higgs/12_two_branch | PRD Sec. V D, App. D 2 | static-spectrum check | `r3/two_branch/run01/static_check.json` : `runs` | 9 |
-| shape/01_emptiness_gate | PRD Sec. VI A, Eq. `eq:s-emptiness`; report Table 18 (Sec. 13) | Σ\|n\| < 4.762 (ξ = 0.2999), 5.047 (0.258), 4.898 (0.28), 6.80 (0); ξ(5) = 0.2649 (GATE-02..06) | `r3/shape_hardening/run01/emptiness/C153_emptiness.json` : `quanta_budget/*/budget_sum_n`, `xi_where_budget_equals/5` | 13 |
-| shape/01_emptiness_gate | PRD Sec. VI A | AAA fermion budget 5.50 (GATE-07) | same : `quanta_budget/*/fermion_budget` | 13 |
-| shape/01_emptiness_gate | PRD Sec. VI B, Eq. `eq:s-windowR`, Fig. 5(a) | log₁₀R = 93.86 (free, j = 1); 94.04 (ξ = 0.30, j = 1); 96.48 (j = 85) (GATE-08..10) | `r5/C55_window_gate/C55_window_gate.json` : `slices/0/log10_R`; `C153_emptiness.json` : `reheating_excess/xi0.30/log10R/{1,85}` | 13 |
+| higgs/11_inflation_stability | Letter one sentence; paper Sec. V H | ξ_inf(EW) 0.04877/0.05512/0.06044 (α_s 0.118) | `r3/inflation_stability/run01/xi_inf_table.csv` : column `xi_inf_ew`, rows `mt`, `als` | 12 |
+| higgs/11_inflation_stability | Paper Sec. V H | ξ_inf(μ_b) 0.03030/0.03781/0.04413 | same : `xi_inf_mub` | 12 |
+| higgs/11_inflation_stability | Paper Sec. V H | α_s = 0.1171/0.1189 rows | same | 12 |
+| higgs/11_inflation_stability | Paper Sec. V H | MMR 2021 reproduction 0.05946 | `r3/inflation_stability/run01/repro/repro_step1.json`; `C155_summary.json` : `reproduction` | 12 |
+| higgs/11_inflation_stability | Paper Sec. V H | all rows | `C155_summary.json` : `xi_inf_rows` | 12 |
+| higgs/12_two_branch | Letter one sentence; paper Sec. V D, App. D 2 | P₂ = P₁² critical 172.376/172.759/173.124 (run02 base) | `r3/two_branch/run01/C159_summary.json` : `headline/crit_as0p1180` | 9 |
+| higgs/12_two_branch | Paper Sec. V D, App. D 2 | GH interference ε 0.9948–0.99997 | same : `headline/GH_interference_eps` | 9 |
+| higgs/12_two_branch | Paper Sec. V D, App. D 2 | Fréchet bands [172.372, 172.498], [172.713, 172.954] | same : `crit` | 9 |
+| higgs/12_two_branch | Paper Sec. V D, App. D 2 | static-spectrum check | `r3/two_branch/run01/static_check.json` : `runs` | 9 |
+| shape/01_emptiness_gate | Paper Sec. VI A, Eq. `eq:s-emptiness`; report Table 18 (Sec. 13) | Σ\|n\| < 4.762 (ξ = 0.2999), 5.047 (0.258), 4.898 (0.28), 6.80 (0); ξ(5) = 0.2649 (GATE-02..06) | `r3/shape_hardening/run01/emptiness/C153_emptiness.json` : `quanta_budget/*/budget_sum_n`, `xi_where_budget_equals/5` | 13 |
+| shape/01_emptiness_gate | Paper Sec. VI A | AAA fermion budget 5.50 (GATE-07) | same : `quanta_budget/*/fermion_budget` | 13 |
+| shape/01_emptiness_gate | Paper Sec. VI B, Eq. `eq:s-windowR`, Fig. 5(a) | log₁₀R = 93.86 (free, j = 1); 94.04 (ξ = 0.30, j = 1); 96.48 (j = 85) (GATE-08..10) | `r5/C55_window_gate/C55_window_gate.json` : `slices/0/log10_R`; `C153_emptiness.json` : `reheating_excess/xi0.30/log10R/{1,85}` | 13 |
 | shape/01_emptiness_gate | report Sec. 13 | prefactor 10^97.79 (GATE-11) | `C55_window_gate.json` : `meta/log10_prefactor` | 13 |
-| shape/01_emptiness_gate | PRD Sec. VI C, Fig. 5(b) | T_max = 7.264 / 7.177; 3-dof crossing 6.909 / 6.822 (GATE-12, 13) | `C153_emptiness.json` : `preparation_window/hLb0.0044/*`, `hLb0.0048/*` | 13 |
-| shape/01_emptiness_gate | PRD Sec. VI C; report Sec. 13 | side ratio 4.96 (ξ = 0.30), 1.74 (free), 3.56–5.43 over the ξ band (GATE-14, 16) | `fu/C80/C80_results.json` : `runs/*` | 13 |
-| shape/02_realtime_theorem | PRD Sec. VII C, Eqs. `eq:s-T12`, `eq:s-floor`; App. E 2 | m₁₁ = 10.554, m₁₂ = 2.4685, m₂₁ = 136.37, m₂₂ = 31.99; K(19.3237) = 24.5630; K(18.0) = 20.3204 (FLOOR-01..03, 11) | `r3/shape_hardening/run01/linear/C153_linear.json` : `floor_closed_form/{19.3237,18.0}/*` | 15 |
-| shape/02_realtime_theorem | PRD Sec. VII C (footnote on conventions) | σ_floor 0.10374 (H_eff), 0.10403 (C60/C76), 0.1031 (v11 δ); next order 0.09337 (FLOOR-04..08) | same : `floor_conventions/*`, `next_order_floor/*` | 15 |
-| shape/02_realtime_theorem | PRD Sec. VII D, Thm. `thm:s-real`, Eq. `eq:s-Gtx`; App. E 2; report Table 19 | G = 2.3952, 8.2632, 45.097, 313.79, 961.71; natural/floor 1.000485 (TX-01..06, FLOOR-10) | `r1/state_selection/run03/C137c_results.json` : `rows[k]/opt_over_floor`, `rows/0/adiabatic_over_floor` | 15 |
-| shape/02_realtime_theorem | PRD Sec. VII D | G(∞) = 2𝒢 = 1348.55 (κ = 19.3237), 1058.34 (18.0) (TX-07, 08) | `C153_linear.json` : `floor_closed_form/*/G_inf_closed_2calG` | 15 |
-| shape/02_realtime_theorem | PRD Sec. VII D, report Fig. 16; report Table 20 (Sec. 15) | S₂(τ) grid; t_*(99 %) = 0.23696 (MC 2.5–97.5 %: 0.2245–0.2518); t_*(90 %) = 0.3547 by interpolation between the N = 2048 node at 0.35 and the N = 512 node at 0.40 (68 % half-width 0.0033 from 2×10⁴ draws of the Jeffreys posteriors of the node fractions; the 0.30 node enters in 10 % of the draws; `numbers/derived_numbers.json` → `tstar90`, with the same method reproducing the archived 99 % interval 0.225–0.252), logistic 0.352; next order 0.26514 (TX-19..24) | `r3/shape_hardening/run02/C153_run02_summary.json` : `lo_t/t_star_linear_interp/0.99/*`, `lo_t/t_star_logistic/t_star/0.9`, `nx_t/...`; `r3/shape_hardening/run01/C153_nl_summary.json` : `grid[]` | 15 |
-| shape/02_realtime_theorem | PRD Sec. VII D | never-real two-branch survival 0.043 / 0.027; incoming single-branch 0.887 / 0.723 (TX-13..15) | `C153_nl_summary.json` : `never[*]` | 15 |
-| shape/02_realtime_theorem | PRD Sec. VII D | adiabatic states: survival 0.992 / 0.609 / 0.129 (TX-18) | `C153_nl_summary.json` : `adiab[*]/future/p` | 15 |
+| shape/01_emptiness_gate | Paper Sec. VI C, Fig. 5(b) | T_max = 7.264 / 7.177; 3-dof crossing 6.909 / 6.822 (GATE-12, 13) | `C153_emptiness.json` : `preparation_window/hLb0.0044/*`, `hLb0.0048/*` | 13 |
+| shape/01_emptiness_gate | Paper Sec. VI C; report Sec. 13 | side ratio 4.96 (ξ = 0.30), 1.74 (free), 3.56–5.43 over the ξ band (GATE-14, 16) | `fu/C80/C80_results.json` : `runs/*` | 13 |
+| shape/02_realtime_theorem | Paper Sec. VII C, Eqs. `eq:s-T12`, `eq:s-floor`; App. E 2 | m₁₁ = 10.554, m₁₂ = 2.4685, m₂₁ = 136.37, m₂₂ = 31.99; K(19.3237) = 24.5630; K(18.0) = 20.3204 (FLOOR-01..03, 11) | `r3/shape_hardening/run01/linear/C153_linear.json` : `floor_closed_form/{19.3237,18.0}/*` | 15 |
+| shape/02_realtime_theorem | Paper Sec. VII C (footnote on conventions) | σ_floor 0.10374 (H_eff), 0.10403 (C60/C76), 0.1031 (v11 δ); next order 0.09337 (FLOOR-04..08) | same : `floor_conventions/*`, `next_order_floor/*` | 15 |
+| shape/02_realtime_theorem | Paper Sec. VII D, Thm. `thm:s-real`, Eq. `eq:s-Gtx`; App. E 2; report Table 19 | G = 2.3952, 8.2632, 45.097, 313.79, 961.71; natural/floor 1.000485 (TX-01..06, FLOOR-10) | `r1/state_selection/run03/C137c_results.json` : `rows[k]/opt_over_floor`, `rows/0/adiabatic_over_floor` | 15 |
+| shape/02_realtime_theorem | Paper Sec. VII D | G(∞) = 2𝒢 = 1348.55 (κ = 19.3237), 1058.34 (18.0) (TX-07, 08) | `C153_linear.json` : `floor_closed_form/*/G_inf_closed_2calG` | 15 |
+| shape/02_realtime_theorem | Paper Sec. VII D, report Fig. 16; report Table 20 (Sec. 15) | S₂(τ) grid; t_*(99 %) = 0.23696 (MC 2.5–97.5 %: 0.2245–0.2518); t_*(90 %) = 0.3547 by interpolation between the N = 2048 node at 0.35 and the N = 512 node at 0.40 (68 % half-width 0.0033 from 2×10⁴ draws of the Jeffreys posteriors of the node fractions; the 0.30 node enters in 10 % of the draws; `numbers/derived_numbers.json` → `tstar90`, with the same method reproducing the archived 99 % interval 0.225–0.252), logistic 0.352; next order 0.26514 (TX-19..24) | `r3/shape_hardening/run02/C153_run02_summary.json` : `lo_t/t_star_linear_interp/0.99/*`, `lo_t/t_star_logistic/t_star/0.9`, `nx_t/...`; `r3/shape_hardening/run01/C153_nl_summary.json` : `grid[]` | 15 |
+| shape/02_realtime_theorem | Paper Sec. VII D | never-real two-branch survival 0.043 / 0.027; incoming single-branch 0.887 / 0.723 (TX-13..15) | `C153_nl_summary.json` : `never[*]` | 15 |
+| shape/02_realtime_theorem | Paper Sec. VII D | adiabatic states: survival 0.992 / 0.609 / 0.129 (TX-18) | `C153_nl_summary.json` : `adiab[*]/future/p` | 15 |
 | shape/02_realtime_theorem | number keys of the papers (`C153_summary.json`) | all of the above in one file | `r3/shape_hardening/run01/C153_summary.json` | 15 |
-| shape/03_fossil | PRD Sec. VII C, Eqs. `eq:s-Tsym`, `eq:s-family` | floor, natural/floor, gain 216.46 (free) | `r5/C58_turning_point_states/C58_results.json` : `SM_AAA/aspect/*` | 15 |
-| shape/03_fossil | PRD Sec. VII E, Table III | σ_E: 0.0589 (free), 0.1041 (ξ = 0.2999, C60/C76 convention), vs ξ (FOS-01, 02; FLOOR-06) | `fu/C82/C82_results.json` : `sigma_E_leading/*` | 15 |
-| shape/03_fossil | PRD Table III | side difference 18 % / 10 %; median coefficient 1.588 (FOS-04, 05) | same : `typical_side_difference_plateau/*`, `median_coeff` | 15 |
-| shape/03_fossil | PRD Table III | plateau free σ_E 0.0587 | `r5/C63_rolling_fossil/C63_results.json` : `SM_AAA/modes/aspect/natural_rms` | 15 |
-| shape/03_fossil | PRD Sec. VII E, Eq. `eq:s-scaling` | K(19.32) = 24.5501; dlnσ/dlnκ = 1.366; LiteBIRD 3.1 %, CMB-S4 1.6 %; σ ratio 0.6306 at r = 1e-4 (FLOOR-01, FOS-14..16) | `r2/observables/run01/C143_observables.json` : `F_kappaE`, `dlnsigma_dlnkappa`, `LiteBIRD_*`, `CMBS4_*`, `sigma_vs_r` | 15 |
-| shape/03_fossil | PRD Sec. VII E (error budget) | NL/linear aspect variance 1.043 / 1.045 (FOS-07) | `fu/C76/C76_summary.json` : `sets/{hi,ind}/*` ; also `../04` C142 `regression/C76_reference` | 15 |
+| shape/03_fossil | Paper Sec. VII C, Eqs. `eq:s-Tsym`, `eq:s-family` | floor, natural/floor, gain 216.46 (free) | `r5/C58_turning_point_states/C58_results.json` : `SM_AAA/aspect/*` | 15 |
+| shape/03_fossil | Paper Sec. VII E, Table III | σ_E: 0.0589 (free), 0.1041 (ξ = 0.2999, C60/C76 convention), vs ξ (FOS-01, 02; FLOOR-06) | `fu/C82/C82_results.json` : `sigma_E_leading/*` | 15 |
+| shape/03_fossil | Paper Table III | side difference 18 % / 10 %; median coefficient 1.588 (FOS-04, 05) | same : `typical_side_difference_plateau/*`, `median_coeff` | 15 |
+| shape/03_fossil | Paper Table III | plateau free σ_E 0.0587 | `r5/C63_rolling_fossil/C63_results.json` : `SM_AAA/modes/aspect/natural_rms` | 15 |
+| shape/03_fossil | Paper Sec. VII E, Eq. `eq:s-scaling` | K(19.32) = 24.5501; dlnσ/dlnκ = 1.366; LiteBIRD 3.1 %, CMB-S4 1.6 %; σ ratio 0.6306 at r = 1e-4 (FLOOR-01, FOS-14..16) | `r2/observables/run01/C143_observables.json` : `F_kappaE`, `dlnsigma_dlnkappa`, `LiteBIRD_*`, `CMBS4_*`, `sigma_vs_r` | 15 |
+| shape/03_fossil | Paper Sec. VII E (error budget) | NL/linear aspect variance 1.043 / 1.045 (FOS-07) | `fu/C76/C76_summary.json` : `sets/{hi,ind}/*` ; also `../04` C142 `regression/C76_reference` | 15 |
 | shape/03_fossil | report Fig. 17 | fossil distributions (free 2048, ξ = 0.30 2048) | `r5/nonlinear_SM/C60_summary.json`, `fu/C76/C76_summary.json` + trajectory archives | 15 |
-| shape/03_fossil | PRD Sec. IV C (`sec:turning`) | φ_b, N_post, hL_b of the SM pivot | `r5/C62_SM_pivot/C62_results.json` : `SM_AAA/*` | 15 |
-| shape/04_nonlinear_survival | PRD Sec. VII F, Fig. 6; report Table 22 (Sec. 15) | survival vs s (NL-01) | `r2/shape_nonlinear_threshold/run01/C142_summary.json` : `sets/amp_s*/survival` | 15 |
-| shape/04_nonlinear_survival | PRD Sec. VII F | s₅₀, s₉₀ (N = 256) | same : `amp_threshold/*` | 15 |
-| shape/04_nonlinear_survival | PRD Sec. VII F | s₉₉ = 2.756 (MC 95 % 2.66–2.90), logistic 2.863 (boot 2.74–2.96); next order 3.160 / 3.294 (NL-06, 07, 09) | `r3/shape_hardening/run02/C153_run02_summary.json` : `lo_amp/s99_loglinear/central`, `lo_amp/s99_logistic_in_ln_s/s99`, `nx_amp/*` | 15 |
-| shape/04_nonlinear_survival | PRD Sec. VII F | survival 0.9976 / 0.9834 / 0.9536 at s = 2.5 / 3.0 / 3.5 (N = 2048) (NL-03) | same : `lo_amp/rows[*]/p` | 15 |
-| shape/04_nonlinear_survival | PRD Sec. VII D, F | past-set real states 0.623 / 0.184 / 0.133 (TX-27, 29) | `C142_summary.json` : `sets/r1_tx*/survival` | 15 |
-| shape/04_nonlinear_survival | PRD Sec. VII F | next order s₉₀ = 4.19, s₅₀ = 9.07 (NL-10) | `r3/shape_hardening/run01/C153_nl_summary.json` : `next_amp_threshold` | 15 |
-| shape/04_nonlinear_survival | PRD Sec. VII F | plateau background: 0 / 2560 fate flips (NL-14) | `r3/shape_tier2/run01/plateau/C160_plateau_summary.json` : `sets/*/n_flips` | 15 |
-| shape/05_moyal_wdw | PRD Sec. VII E (corrections) | Moyal −2.03e-4 / −1.08e-3 (ξ = 0.30); next order −1.79e-4 / −9.2e-4 (FOS-08..10) | `r3/shape_tier2/run01/moyal/C160_moyal.json` : `SM/xi030/rows/0/rel/a_Heff/{aspect,angle}`, `SM/next_order/...` | 15 |
-| shape/05_moyal_wdw | PRD App. E 2 / PRD Sec. VII E | exact 1D quantum − TWA (FOS-13 analogue) | `.../moyal/C160_moyal_1d.json` : `checks[*]` | 15 |
-| shape/05_moyal_wdw | PRD App. E 2 (shear criterion) | Δρ = 7.8e-5 (NL-17) | `r3/shape_tier2/run01/shear/C160_shear_wdw.json` : `physical`, `fits` | 15 |
-| shape/05_moyal_wdw | PRD Sec. VII D (`sec:s-equivalent`, Eq. `eq:s-WDW`) | D_re = 2.388e-6 at X = 2282.49; 3.1e-2 / 4.3e-4 / 1.5e-5 at X = 100 / 300 / 1000 (TS-01, 02) | `r3/shape_tier2/run01/b1/b1_cases.json` : `cases/A_Ai_real@<X>/rows/0/D_re` | 15 |
-| shape/05_moyal_wdw | PRD App. E 2 | R15 counterexample D_re 0.969 (ε = 1), 0.161 (ε = 0.3) (TS-03); (Ai+0.7Bi)⊗χ₀ 5.0e-4 (TS-04) | `b1_cases.json` / `.../b1/C160_b1_wdw_zs0.json` : `runs[*]` | 15 |
-| shape/05_moyal_wdw | PRD Sec. VII D; App. E 2 | B3: Var H_min = k/2m at width 1/(2m\|ω\|) (TS-05) | stdout `logs/05_moyal_wdw/C141_minvar_lemma.out.txt` | 15 |
+| shape/03_fossil | Paper Sec. IV C (`sec:turning`) | φ_b, N_post, hL_b of the SM pivot | `r5/C62_SM_pivot/C62_results.json` : `SM_AAA/*` | 15 |
+| shape/04_nonlinear_survival | Paper Sec. VII F, Fig. 6; report Table 22 (Sec. 15) | survival vs s (NL-01) | `r2/shape_nonlinear_threshold/run01/C142_summary.json` : `sets/amp_s*/survival` | 15 |
+| shape/04_nonlinear_survival | Paper Sec. VII F | s₅₀, s₉₀ (N = 256) | same : `amp_threshold/*` | 15 |
+| shape/04_nonlinear_survival | Paper Sec. VII F | s₉₉ = 2.756 (MC 95 % 2.66–2.90), logistic 2.863 (boot 2.74–2.96); next order 3.160 / 3.294 (NL-06, 07, 09) | `r3/shape_hardening/run02/C153_run02_summary.json` : `lo_amp/s99_loglinear/central`, `lo_amp/s99_logistic_in_ln_s/s99`, `nx_amp/*` | 15 |
+| shape/04_nonlinear_survival | Paper Sec. VII F | survival 0.9976 / 0.9834 / 0.9536 at s = 2.5 / 3.0 / 3.5 (N = 2048) (NL-03) | same : `lo_amp/rows[*]/p` | 15 |
+| shape/04_nonlinear_survival | Paper Sec. VII D, F | past-set real states 0.623 / 0.184 / 0.133 (TX-27, 29) | `C142_summary.json` : `sets/r1_tx*/survival` | 15 |
+| shape/04_nonlinear_survival | Paper Sec. VII F | next order s₉₀ = 4.19, s₅₀ = 9.07 (NL-10) | `r3/shape_hardening/run01/C153_nl_summary.json` : `next_amp_threshold` | 15 |
+| shape/04_nonlinear_survival | Paper Sec. VII F | plateau background: 0 / 2560 fate flips (NL-14) | `r3/shape_tier2/run01/plateau/C160_plateau_summary.json` : `sets/*/n_flips` | 15 |
+| shape/05_moyal_wdw | Paper Sec. VII E (corrections) | Moyal −2.03e-4 / −1.08e-3 (ξ = 0.30); next order −1.79e-4 / −9.2e-4 (FOS-08..10) | `r3/shape_tier2/run01/moyal/C160_moyal.json` : `SM/xi030/rows/0/rel/a_Heff/{aspect,angle}`, `SM/next_order/...` | 15 |
+| shape/05_moyal_wdw | Paper App. E 2 / paper Sec. VII E | exact 1D quantum − TWA (FOS-13 analogue) | `.../moyal/C160_moyal_1d.json` : `checks[*]` | 15 |
+| shape/05_moyal_wdw | Paper App. E 2 (shear criterion) | Δρ = 7.8e-5 (NL-17) | `r3/shape_tier2/run01/shear/C160_shear_wdw.json` : `physical`, `fits` | 15 |
+| shape/05_moyal_wdw | Paper Sec. VII D (`sec:s-equivalent`, Eq. `eq:s-WDW`) | D_re = 2.388e-6 at X = 2282.49; 3.1e-2 / 4.3e-4 / 1.5e-5 at X = 100 / 300 / 1000 (TS-01, 02) | `r3/shape_tier2/run01/b1/b1_cases.json` : `cases/A_Ai_real@<X>/rows/0/D_re` | 15 |
+| shape/05_moyal_wdw | Paper App. E 2 | R15 counterexample D_re 0.969 (ε = 1), 0.161 (ε = 0.3) (TS-03); (Ai+0.7Bi)⊗χ₀ 5.0e-4 (TS-04) | `b1_cases.json` / `.../b1/C160_b1_wdw_zs0.json` : `runs[*]` | 15 |
+| shape/05_moyal_wdw | Paper Sec. VII D; App. E 2 | B3: Var H_min = k/2m at width 1/(2m\|ω\|) (TS-05) | stdout `logs/05_moyal_wdw/C141_minvar_lemma.out.txt` | 15 |
 | shape/05_moyal_wdw | number keys of the papers | all parts | `r3/shape_tier2/run01/C160_summary.json` | 15 |
-| shape/06_primordial_spectra | PRD Sec. VIII A | n_s = 0.9653407, r = 0.0034624 (N_* = 55.722) (PRIM-01, 02) | `r5/C64_plateau_ns_r/C64_results.json` : `rows/6/{ns,r}` | 16 |
-| shape/06_primordial_spectra | PRD Sec. VIII A | n_s = 0.9617386, r = 0.0042022 (N_* = 50.328) (PRIM-03, 04) | same : `rows/3/{ns,r}` | 16 |
+| shape/06_primordial_spectra | Paper Sec. VIII A | n_s = 0.9653407, r = 0.0034624 (N_* = 55.722) (PRIM-01, 02) | `r5/C64_plateau_ns_r/C64_results.json` : `rows/6/{ns,r}` | 16 |
+| shape/06_primordial_spectra | Paper Sec. VIII A | n_s = 0.9617386, r = 0.0042022 (N_* = 50.328) (PRIM-03, 04) | same : `rows/3/{ns,r}` | 16 |
 | shape/06_primordial_spectra | report Fig. 19 (n_s, r vs N_*) | 12 values of N_* | same : `rows[*]` | 16 |
-| shape/06_primordial_spectra | PRD Sec. VIII A | initial-state tests | same : `initial_state_tests` | 16 |
-| cmb/01_fisher_kl | PRD Sec. VIII B; PRD App. F (covariance) | KL D_TE, D_T of the free fossil at 1.07 (end-to-end check) | `checks/kl_quick.json` : `D_TE_fresh_fresh`, `D_T_fresh_fresh` | 17 |
-| cmb/01_fisher_kl | PRD Sec. VIII B | Fisher σ(β_E) = 0.023 / 0.073 / 0.25 at L₀ = 1.05 / 1.1 / 1.2 (CMB-23, v11 values) | `r5/obs_fisher/C59_shape_fisher.json` (`--full`) | 17 |
-| cmb/01_fisher_kl | PRD Sec. VIII B (v11 comparison) | v11 window 1.093–1.133 for the typical fossil, circle bound 1.0931 (CMB-06, 22) | `fu/C75/C75_summary.json` : `per_sigma/*` | 17 |
-| cmb/01_fisher_kl | PRD App. F | transfer-table metadata, low-k fix | `r5/obs_fisher/C59_transfer.json` | 17 |
-| cmb/02_ensemble | PRD Sec. VIII B, Fig. 7 (P(read\|L₀)) | P_joint peak 0.3440 at 1.075 (CMB-02) | `ai/cmb_ensemble/run01/results/S3_postcheck.json` : `variants/TE80_grid/modes/mid/{Pj_max,L0_Pj_max}` | 17 |
-| cmb/02_ensemble | PRD Sec. VIII B | P_joint ≥ 0.1 for [1.0175, 1.1825]; ≥ 0.3 / 0.2 / 0.05 windows (CMB-03, 04) | same : `.../win_joint/{0.1,0.3,0.2,0.05}` | 17 |
-| cmb/02_ensemble | PRD Sec. VIII B | integrated measure 0.04223 (CMB-05); representative window [1.0931, 1.1394] (CMB-06) | same : `.../mean_span`, `.../rep_window` | 17 |
-| cmb/02_ensemble | PRD Sec. VIII B | P_cond ≥ 0.5 up to 1.090 (CMB-07) | same : `.../win_cond/0.5` | 17 |
-| cmb/02_ensemble | PRD Sec. VIII B | read edge u_max 1.021–1.039 (CMB-01) | same : `variants/TE80_grid/edges` | 17 |
-| cmb/02_ensemble | PRD Sec. VIII B | noise 0.313 / 0.0384; T only 0.286 / 0.0352 (CMB-10, 11) | same : `variants/{noise_TE80_grid,T80_grid}/modes/mid/*` | 17 |
-| cmb/02_ensemble | PRD Sec. VIII B | next order 0.377 at 1.065; [1.015, 1.1675]; 0.0421; rep window [1.082, 1.128] (CMB-14..17) | `r3/shape_hardening/run01/ensemble/C153_ensemble.json` : `results/0.0940/variants/TE80_grid/mid/*` | 17 |
-| cmb/02_ensemble | PRD Sec. VIII B, Fig. 7 (mechanism: D_prof vs u) | 55 fossils (columns: xi = sin 3θ, s = L₀/d_LSS, u) | `r3/cleanup_t12/run01/fossil_table_v2.csv` | 17 |
-| cmb/02_ensemble | PRD Sec. VIII B | near-window packet 1.7 %, α = 17.6 for P = 0.5 (CMB-12, 13) | `ai/cmb_ensemble/run01/priors/priors_summary.json`, `P4_size_prior_ens.json` | 17 |
-| cmb/02_ensemble | PRD App. F | KL table, profiles (TE30/40/80, T80, fixed/profiled), Brent, convergence | `ai/cmb_ensemble/run01/results/{kl_table,S2_profiles,S2_brent,S4_convergence,S4_noise,S3_analysis}.json` (archived; `--full` recomputes) | 17 |
-| cmb/03_joint_state | PRD Sec. VIII B (joint state) | σ_φ = 0.00973692 (JOINT-01) | `ai/joint_state/run01/joint_state_results.json` : `T3/B3/ref/sigma_B3` | 17 |
-| cmb/03_joint_state | PRD Sec. VIII B | σ_N ≥ 0.935075 (ref) / 0.938387 (window) (JOINT-02) | same : `T3/response/{ref,window}/floor_sigma_N` | 17 |
-| cmb/03_joint_state | PRD Sec. VIII B | Δφ_b = 6.1825e-4; N window [68.480, 68.516], width 0.0359 (JOINT-04, 05) | same : `T4/typical_fossil_window/dphi_window`, `T2/N_window_typical`, `T2/window_width_efold` | 17 |
-| cmb/03_joint_state | PRD Sec. VIII B | flat-dφ readability 1.389e-3 (N_max = 100) → 5.35e-5 (1e6) (JOINT-06) | same : `T4/shape_marginalised/A_fixed_typical/flat_dphi_Nmax=*` | 17 |
-| cmb/03_joint_state | PRD Sec. VIII B | S_E = 11964 (JOINT-09); φ_b(ref) = 5.57936 (BKG-03) | same : `T2/S_E_ref_closed`, `T2/phib_ref(N=68.25)` | 17 |
+| shape/06_primordial_spectra | Paper Sec. VIII A | initial-state tests | same : `initial_state_tests` | 16 |
+| cmb/01_fisher_kl | Paper Sec. VIII B; paper App. F (covariance) | KL D_TE, D_T of the free fossil at 1.07 (end-to-end check) | `checks/kl_quick.json` : `D_TE_fresh_fresh`, `D_T_fresh_fresh` | 17 |
+| cmb/01_fisher_kl | Paper Sec. VIII B | Fisher σ(β_E) = 0.023 / 0.073 / 0.25 at L₀ = 1.05 / 1.1 / 1.2 (CMB-23, v11 values) | `r5/obs_fisher/C59_shape_fisher.json` (`--full`) | 17 |
+| cmb/01_fisher_kl | Paper Sec. VIII B (v11 comparison) | v11 window 1.093–1.133 for the typical fossil, circle bound 1.0931 (CMB-06, 22) | `fu/C75/C75_summary.json` : `per_sigma/*` | 17 |
+| cmb/01_fisher_kl | Paper App. F | transfer-table metadata, low-k fix | `r5/obs_fisher/C59_transfer.json` | 17 |
+| cmb/02_ensemble | Paper Sec. VIII B, Fig. 7 (P(read\|L₀)) | P_joint peak 0.3440 at 1.075 (CMB-02) | `ai/cmb_ensemble/run01/results/S3_postcheck.json` : `variants/TE80_grid/modes/mid/{Pj_max,L0_Pj_max}` | 17 |
+| cmb/02_ensemble | Paper Sec. VIII B | P_joint ≥ 0.1 for [1.0175, 1.1825]; ≥ 0.3 / 0.2 / 0.05 windows (CMB-03, 04) | same : `.../win_joint/{0.1,0.3,0.2,0.05}` | 17 |
+| cmb/02_ensemble | Paper Sec. VIII B | integrated measure 0.04223 (CMB-05); representative window [1.0931, 1.1394] (CMB-06) | same : `.../mean_span`, `.../rep_window` | 17 |
+| cmb/02_ensemble | Paper Sec. VIII B | P_cond ≥ 0.5 up to 1.090 (CMB-07) | same : `.../win_cond/0.5` | 17 |
+| cmb/02_ensemble | Paper Sec. VIII B | read edge u_max 1.021–1.039 (CMB-01) | same : `variants/TE80_grid/edges` | 17 |
+| cmb/02_ensemble | Paper Sec. VIII B | noise 0.313 / 0.0384; T only 0.286 / 0.0352 (CMB-10, 11) | same : `variants/{noise_TE80_grid,T80_grid}/modes/mid/*` | 17 |
+| cmb/02_ensemble | Paper Sec. VIII B | next order 0.377 at 1.065; [1.015, 1.1675]; 0.0421; rep window [1.082, 1.128] (CMB-14..17) | `r3/shape_hardening/run01/ensemble/C153_ensemble.json` : `results/0.0940/variants/TE80_grid/mid/*` | 17 |
+| cmb/02_ensemble | Paper Sec. VIII B, Fig. 7 (mechanism: D_prof vs u) | 55 fossils (columns: xi = sin 3θ, s = L₀/d_LSS, u) | `r3/cleanup_t12/run01/fossil_table_v2.csv` | 17 |
+| cmb/02_ensemble | Paper Sec. VIII B | near-window packet 1.7 %, α = 17.6 for P = 0.5 (CMB-12, 13) | `ai/cmb_ensemble/run01/priors/priors_summary.json`, `P4_size_prior_ens.json` | 17 |
+| cmb/02_ensemble | Paper App. F | KL table, profiles (TE30/40/80, T80, fixed/profiled), Brent, convergence | `ai/cmb_ensemble/run01/results/{kl_table,S2_profiles,S2_brent,S4_convergence,S4_noise,S3_analysis}.json` (archived; `--full` recomputes) | 17 |
+| cmb/03_joint_state | Paper Sec. VIII B (joint state) | σ_φ = 0.00973692 (JOINT-01) | `ai/joint_state/run01/joint_state_results.json` : `T3/B3/ref/sigma_B3` | 17 |
+| cmb/03_joint_state | Paper Sec. VIII B | σ_N ≥ 0.935075 (ref) / 0.938387 (window) (JOINT-02) | same : `T3/response/{ref,window}/floor_sigma_N` | 17 |
+| cmb/03_joint_state | Paper Sec. VIII B | Δφ_b = 6.1825e-4; N window [68.480, 68.516], width 0.0359 (JOINT-04, 05) | same : `T4/typical_fossil_window/dphi_window`, `T2/N_window_typical`, `T2/window_width_efold` | 17 |
+| cmb/03_joint_state | Paper Sec. VIII B | flat-dφ readability 1.389e-3 (N_max = 100) → 5.35e-5 (1e6) (JOINT-06) | same : `T4/shape_marginalised/A_fixed_typical/flat_dphi_Nmax=*` | 17 |
+| cmb/03_joint_state | Paper Sec. VIII B | S_E = 11964 (JOINT-09); φ_b(ref) = 5.57936 (BKG-03) | same : `T2/S_E_ref_closed`, `T2/phib_ref(N=68.25)` | 17 |
 | cmb/03_joint_state | report Sec. 21 | interface to C145 | `ai/joint_state/run01/C145_interface.json` | 17 |
-| cmb/03_joint_state | PRD Sec. VIII B (B3 slope) | symbolic slope identities | stdout of `b3_slope_symbolic.py` | 17 |
-| higgs/04_cross_terms | PRL main text and End Matter A (field-by-field split); PRD Table V, row "Further cross terms"; report Sec. 8.6 | split of the run05 cross-term shift: total −0.0802/−0.1180/−0.1600 GeV; SU(3)–top −0.0403, vev mixing + Coulomb +0.0275, top chiral −0.0219 GeV at P₁ = 1/2 (R5-049…053) | `w/claims_run05/run01/cross_decomp/cross_decomp_summary.json` (`cross_decomp.py post`) | 8 |
-| validation | PRL main text and End Matter A (reimplementations); PRD Table V ("Blind" rows) | blind keystone and V1–V5, semi-blind T19, compute-first R14/R15: specifications, code, results; 23 compared numbers within their pass criteria | `validation/*/results*/`; comparison `output/validation/comparison.json` (`validation/run.py`) | 19 |
+| cmb/03_joint_state | Paper Sec. VIII B (B3 slope) | symbolic slope identities | stdout of `b3_slope_symbolic.py` | 17 |
+| higgs/04_cross_terms | Letter main text and End Matter A (field-by-field split); paper Table V, row "Further cross terms"; report Sec. 8.6 | split of the run05 cross-term shift: total −0.0802/−0.1180/−0.1600 GeV; SU(3)–top −0.0403, vev mixing + Coulomb +0.0275, top chiral −0.0219 GeV at P₁ = 1/2 (R5-049…053) | `w/claims_run05/run01/cross_decomp/cross_decomp_summary.json` (`cross_decomp.py post`) | 8 |
+| validation | Letter main text and End Matter A (reimplementations); paper Table V ("Blind" rows) | blind keystone and V1–V5, semi-blind T19, compute-first R14/R15: specifications, code, results; 23 compared numbers within their pass criteria | `validation/*/results*/`; comparison `output/validation/comparison.json` (`validation/run.py`) | 19 |
 | validation | report chapters 1–5 and 13–17 (`% [num:]` rep-A) | the report's own checks of intermediate steps (rerun) | `validation/report_checks/expected/*.out.txt` | 1–5, 13–17 |
 
 ## Archived files, absolute paths, provenance

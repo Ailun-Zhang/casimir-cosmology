@@ -90,14 +90,14 @@ Pbar variant T14a_central_correction D2b_sigma_pole_PDG2025 (v2 mixed conv.),C15
 Pbar variant vi_r1e-4 D2b_sigma_pole_PDG2025 (v2 mixed conv.),C154_summary.json:marginal.D2b_sigma_pole_PDG2025.Pbar_vi_r1e-4,0.679697,0.682061,0.002364
 Pbar variant model_without_vi D2b_sigma_pole_PDG2025 (v2 mixed conv.),C154_summary.json:marginal.D2b_sigma_pole_PDG2025.Pbar_model_without_vi,0.735402,0.737504,0.00210209
 Pbar variant w0_multiplicative D2b_sigma_pole_PDG2025 (v2 mixed conv.),C154_summary.json:marginal.D2b_sigma_pole_PDG2025.Pbar_w0_multiplicative,0.732341,0.734395,0.00205336
-Pbar equal-mass D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.Pbar,0.496826,0.499846,0.00301958
-P(P1>=0.5) D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.prob_P_ge_0p5,0.492823,0.496253,0.00343006
-q025 D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[0],2.61469e-06,2.87433e-06,2.59638e-07
-q16 D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[1],0.0267379,0.0280195,0.00128153
-median D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[2],0.493767,0.500133,0.00636561
-q84 D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[3],0.968681,0.969547,0.00086678
-q975 D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[4],0.99979,0.999798,8.23211e-06
-Pbar continuous D3_MSR,C154_correction_summary.json:marginal.continuous.D3_MSR.Pbar,0.494173,0.497197,0.00302392
+Pbar equal-mass D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.Pbar,0.496826,0.638581,0.141754
+P(P1>=0.5) D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.prob_P_ge_0p5,0.492823,0.65261,0.159787
+q025 D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[0],2.61469e-06,0.000618926,0.000616311
+q16 D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[1],0.0267379,0.128465,0.101727
+median D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[2],0.493767,0.773957,0.280189
+q84 D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[3],0.968681,0.996829,0.0281481
+q975 D3_MSR,C154_correction_summary.json:marginal.equal_mass.D3_MSR.quantiles_025_16_50_84_975[4],0.99979,0.99997,0.000180343
+Pbar continuous D3_MSR,C154_correction_summary.json:marginal.continuous.D3_MSR.Pbar,0.494173,0.636226,0.142053
 Pbar equal-mass D4_direct_as_mbar,C154_correction_summary.json:marginal.equal_mass.D4_direct_as_mbar.Pbar,0.726408,0.72951,0.00310199
 P(P1>=0.5) D4_direct_as_mbar,C154_correction_summary.json:marginal.equal_mass.D4_direct_as_mbar.prob_P_ge_0p5,0.772684,0.776402,0.00371865
 q025 D4_direct_as_mbar,C154_correction_summary.json:marginal.equal_mass.D4_direct_as_mbar.quantiles_025_16_50_84_975[0],0.0528947,0.0551599,0.00226516
@@ -212,16 +212,16 @@ Bayes D2b_sigma_pole_PDG2025 flat_lambda_pm0p05 B_existence,C154_correction_summ
 Bayes D2b_sigma_pole_PDG2025 flat_lambda_pm0p05 B_selection,C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_lambda_pm0p05.B_selection,1.18236,1.185,0.00263759
 Bayes D2b_sigma_pole_PDG2025 flat_lambda_pm0p05 B_selection_max,C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_lambda_pm0p05.B_selection_max,1.60949,1.60849,-0.000994751
 Bayes D2b_sigma_pole_PDG2025 flat_lambda_pm0p05 prior_mean_P1,C154_correction_summary.json:bayes.D2b_sigma_pole_PDG2025.flat_lambda_pm0p05.prior_mean_P1,0.621315,0.621699,0.000384244
-Bayes D3_MSR flat_170_176 B_existence,C154_correction_summary.json:bayes.D3_MSR.flat_170_176.B_existence,0.496826,0.499846,0.00301958
-Bayes D3_MSR flat_170_176 B_selection,C154_correction_summary.json:bayes.D3_MSR.flat_170_176.B_selection,1.0091,1.01324,0.00414018
+Bayes D3_MSR flat_170_176 B_existence,C154_correction_summary.json:bayes.D3_MSR.flat_170_176.B_existence,0.496826,0.63858,0.141754
+Bayes D3_MSR flat_170_176 B_selection,C154_correction_summary.json:bayes.D3_MSR.flat_170_176.B_selection,1.0091,1.29447,0.28537
 Bayes D3_MSR flat_170_176 B_selection_max,C154_correction_summary.json:bayes.D3_MSR.flat_170_176.B_selection_max,2.03109,2.02711,-0.00398696
 Bayes D3_MSR flat_170_176 prior_mean_P1,C154_correction_summary.json:bayes.D3_MSR.flat_170_176.prior_mean_P1,0.492345,0.493314,0.000968357
-Bayes D3_MSR flat_150_200 B_existence,C154_correction_summary.json:bayes.D3_MSR.flat_150_200.B_existence,0.496826,0.499846,0.00301958
-Bayes D3_MSR flat_150_200 B_selection,C154_correction_summary.json:bayes.D3_MSR.flat_150_200.B_selection,1.08222,1.08852,0.0063019
+Bayes D3_MSR flat_150_200 B_existence,C154_correction_summary.json:bayes.D3_MSR.flat_150_200.B_existence,0.496826,0.638581,0.141754
+Bayes D3_MSR flat_150_200 B_selection,C154_correction_summary.json:bayes.D3_MSR.flat_150_200.B_selection,1.08222,1.39064,0.308426
 Bayes D3_MSR flat_150_200 B_selection_max,C154_correction_summary.json:bayes.D3_MSR.flat_150_200.B_selection_max,2.17826,2.17771,-0.000551223
 Bayes D3_MSR flat_150_200 prior_mean_P1,C154_correction_summary.json:bayes.D3_MSR.flat_150_200.prior_mean_P1,0.459081,0.459198,0.000116203
-Bayes D3_MSR flat_lambda_pm0p05 B_existence,C154_correction_summary.json:bayes.D3_MSR.flat_lambda_pm0p05.B_existence,0.493991,0.497012,0.00302098
-Bayes D3_MSR flat_lambda_pm0p05 B_selection,C154_correction_summary.json:bayes.D3_MSR.flat_lambda_pm0p05.B_selection,0.795072,0.79944,0.00436786
+Bayes D3_MSR flat_lambda_pm0p05 B_existence,C154_correction_summary.json:bayes.D3_MSR.flat_lambda_pm0p05.B_existence,0.493991,0.635903,0.141912
+Bayes D3_MSR flat_lambda_pm0p05 B_selection,C154_correction_summary.json:bayes.D3_MSR.flat_lambda_pm0p05.B_selection,0.795072,1.02285,0.227773
 Bayes D3_MSR flat_lambda_pm0p05 B_selection_max,C154_correction_summary.json:bayes.D3_MSR.flat_lambda_pm0p05.B_selection_max,1.60949,1.60849,-0.000994683
 Bayes D3_MSR flat_lambda_pm0p05 prior_mean_P1,C154_correction_summary.json:bayes.D3_MSR.flat_lambda_pm0p05.prior_mean_P1,0.621316,0.6217,0.000384219
 Bayes D4_direct_as_mbar flat_170_176 B_existence,C154_correction_summary.json:bayes.D4_direct_as_mbar.flat_170_176.B_existence,0.726408,0.72951,0.00310199
@@ -488,4 +488,4 @@ probit_check_D1.Pbar_quad,C154_summary.json:probit_check_D1.Pbar_quad,0.727106,0
 probit_check_D1.sigma_tot,C154_summary.json:probit_check_D1.sigma_tot,0.462403,0.462488,8.53567e-05
 probit_check_D1.w,C154_summary.json:probit_check_D1.w,0.356563,0.357359,0.000795907
 Bayes ranges run02,derived,0.493991,0.969142,0.747186
-Bayes ranges run05,derived,0.497012,0.969681,0.747489
+Bayes ranges run05,derived,0.609098,0.969681,0.747489

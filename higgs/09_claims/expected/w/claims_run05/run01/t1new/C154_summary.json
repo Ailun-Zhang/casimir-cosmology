@@ -2,7 +2,7 @@
  "task": "C161 claims-run05: C154 v2 core rerun (central P1 from CFG)",
  "agent": "claims-run05",
  "date": "2026-10-15",
- "inputs_cfg": "D:\\0PhD\\Perimeter\\Research\\2026\\Directional_Null_Energy_Cosmology\\04_calculations\\code\\20261015_claude_v12_writing\\claims_run05\\C154_inputs_v2_run05_t1new.json",
+ "inputs_cfg": "C:\\Users\\Alan\\AppData\\Local\\Temp\\claude\\D--0PhD-Perimeter-Research-2026-Directional-Null-Energy-Cosmology\\d7eff4a0-2668-4706-b718-4dd409dba762\\scratchpad\\v110_out\\higgs\\quick\\w\\claims_run05\\run01\\C154_inputs_v2_run05_t1new.json",
  "critical_mt": {
   "0.1171": {
    "P1=0.9": 172.15555132918962,
@@ -244,24 +244,24 @@
    "Pbar_w0_multiplicative": 0.7339958923872615
   },
   "D3_MSR": {
-   "label": "m-bar-type: m_MC = m_MSR(1.3 GeV) +- 0.5 (Hoang 2020; pole-4L equivalent +0.36)",
-   "center_pole4L_equiv": 172.96,
+   "label": "m-bar-type: m_MC = m_MSR(1.3 GeV) +- 0.5 (Hoang 2020: +0.36 to the pole mass at the order of turnover; four-loop pole equivalent +0.088 = 0.36 - pole_allorders_offset 0.272; v1.1.0)",
+   "center_pole4L_equiv": 172.688,
    "s_left": 0.5682429058070149,
    "s_right": 0.5682429058070149,
    "scheme": "msbar",
-   "P1_curve_at_center": 0.4993867130586888,
-   "Pbar": 0.49975798909262564,
+   "P1_curve_at_center": 0.775892741814846,
+   "Pbar": 0.6384573858673217,
    "mc": {
-    "mean": 0.49906938404433976,
-    "q025": 2.925502074343881e-06,
-    "q16": 0.02814400516565191,
-    "median": 0.4999587874328387,
-    "q84": 0.9693559695317302,
-    "q975": 0.9997970517736723,
-    "prob_P_ge_0p5": 0.499985,
-    "prob_P_lt_0p1": 0.251159
+    "mean": 0.6376138346577953,
+    "q025": 0.0006256962653278758,
+    "q16": 0.12877119678034274,
+    "median": 0.7733959611307424,
+    "q84": 0.9967994674682824,
+    "q975": 0.9999701644152861,
+    "prob_P_ge_0p5": 0.655275,
+    "prob_P_lt_0p1": 0.142454
    },
-   "prob_P_ge_0p5": 0.4962629090603399
+   "prob_P_ge_0p5": 0.6526377911960998
   },
   "D4_direct_as_mbar": {
    "label": "m-bar formulation of the direct value (MC = pole converted with the 4-loop relation; renormalon 0.09 on the identification)",
@@ -475,21 +475,21 @@
   },
   "D3_MSR": {
    "flat_170_176": {
-    "B_existence": 0.4997579627824746,
+    "B_existence": 0.6384569780980737,
     "prior_mean_P1": 0.493282138335021,
-    "B_selection": 1.0131280335211639,
+    "B_selection": 1.2943038648288836,
     "B_selection_max": 2.0272374008418543
    },
    "flat_150_200": {
-    "B_existence": 0.4997579890926257,
+    "B_existence": 0.6384573858673217,
     "prior_mean_P1": 0.4984978009066347,
-    "B_selection": 1.0025279714046864,
+    "B_selection": 1.2807626928466642,
     "B_selection_max": 2.0060269035916836
    },
    "flat_lambda_pm0p05": {
-    "B_existence": 0.496925002762559,
+    "B_existence": 0.6357805564438771,
     "prior_mean_P1": 0.6216878463714958,
-    "B_selection": 0.7993159359039754,
+    "B_selection": 1.0226684664251262,
     "B_selection_max": 1.6085242872874823
    }
   },
@@ -953,12 +953,12 @@
   }
  },
  "sha256": {
-  "C154_core_v2.py": "f9b7ccc1baaa2771cfee43b0c4f7ec79a14ce486a21bd264d161dfe90153b5de",
-  "C154_inputs_v2.json": "2dc871dc7cbafd3b869b3bb6d759a94cbc8aa87127d77df50be6d18348334845",
-  "04_calculations\\results\\20261014_claude_v12_r3\\holonomy_cross\\run05\\post\\C149_run02_summary.json": "e861de12feec456fe79470f2427a05f09254a499f73a8543b95e0e85dd6f7046",
-  "04_calculations\\results\\20261014_claude_v12_r3\\sm_mapping\\run01\\hazard_runs\\C144_hazard_central.json": "5269a9de4b1ad9ae9a4585f249b196051d8a504227c2eada5cb1fea7b8ec0d0c",
-  "04_calculations\\results\\20261014_claude_v12_r3\\realtime_2d\\run01\\C157_summary.json": "3e80b84a31b9fa3d3c9723b3e413fb68fcda67ecd9dc42ad017042e767a4c59d",
-  "04_calculations\\results\\20261014_claude_v12_r3\\inflation_stability\\run01\\C155_summary.json": "a69cdd36dc7a112388136965d08db4c93bc766a44bc9d8603c9679004f6c8b0b"
+  "C154_core_v2.py": "9b89a126f3212f723fa6123c6a7703c5484c0965f28db32c2bb30181c5e1287c",
+  "C154_inputs_v2.json": "3a81caa1ce5f67d4c2772c54ebc0f32bd8ef5827f5360e3d3280428007632fe3",
+  "r3/holonomy_cross/run05/post/C149_run02_summary.json": "e861de12feec456fe79470f2427a05f09254a499f73a8543b95e0e85dd6f7046",
+  "r3/sm_mapping/run01/hazard_runs/C144_hazard_central.json": "5269a9de4b1ad9ae9a4585f249b196051d8a504227c2eada5cb1fea7b8ec0d0c",
+  "r3/realtime_2d/run01/C157_summary.json": "3e80b84a31b9fa3d3c9723b3e413fb68fcda67ecd9dc42ad017042e767a4c59d",
+  "r3/inflation_stability/run01/C155_summary.json": "a69cdd36dc7a112388136965d08db4c93bc766a44bc9d8603c9679004f6c8b0b"
  },
  "files": [
   "table1_error_budget_final.csv",
@@ -974,5 +974,5 @@
   "fig2b_points.json",
   "shift_scan_mc.csv"
  ],
- "runtime_s": 39.04449391365051
+ "runtime_s": 16.252179622650146
 }
